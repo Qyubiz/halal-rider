@@ -1,0 +1,14 @@
+[Unit]
+Description=Panic buyer (Binance spot)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=panicbot
+EnvironmentFile=/etc/panic-buyer.env
+ExecStart=/usr/bin/python3 /opt/panic-buyer/app/panic_buyer.py run
+Restart=always
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target

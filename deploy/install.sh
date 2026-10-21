@@ -10,7 +10,7 @@ apt-get update -y -qq
 apt-get install -y -qq python3 git >/dev/null
 id rider >/dev/null 2>&1 || useradd --system --home-dir /opt/halal-rider --shell /usr/sbin/nologin rider
 mkdir -p /opt/halal-rider "$DATA"
-if [ -d "$APP/.git" ]; then git -C "$APP" pull -q; else git clone -q "$REPO" "$APP"; fi
+if [ -d "$APP/.git" ]; then git -c safe.directory="$APP" -C "$APP" pull -q; else git clone -q "$REPO" "$APP"; fi
 chown -R rider:rider /opt/halal-rider
 install -m 755 "$APP/deploy/halal-rider-setup" /usr/local/bin/halal-rider-setup
 install -m 755 "$APP/deploy/halal-rider" /usr/local/bin/halal-rider

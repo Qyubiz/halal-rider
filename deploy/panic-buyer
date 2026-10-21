@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# panic-buyer check|status|log|stop|start|panic|update
+set -euo pipefail
+APP=/opt/panic-buyer/app
+run() { sudo -u panicbot bash -c "set -a; source /etc/panic-buyer.env; set +a; python3 $APP/panic_buyer.py $1"; }
+case "${1:-status}" in
+  check)  run check ;;
+  status) run status; systemctl is-active --quiet panic-buyer && echo "Service: RUNNING" || echo "Service: STOPPED" ;;
+  log)    tail -n 50 -f /opt/panic-buyer/data/panic.log ;;
+  stop)   sudo systemctl stop panic-buyer; run pause; echo "Stopped. Coins it holds keep their sell order on Binance (no 48h time limit while stopped)." ;;
+  start)  sudo systemctl start panic-buyer; echo "Started." ;;
+  panic)  sudo systemctl stop panic-buyer; run panic ;;
+  update) curl -sL https://raw.githubusercontent.com/Qyubiz/halal-rider/main/deploy/panic-install.sh | sudo bash ;;
+  *) echo "usage: panic-buyer check|status|log|stop|start|panic|update" ;;
+esac
