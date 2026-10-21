@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+# Asks for your key and limits, stores them only on this server (/etc/panic-buyer.env), tests, starts.
+set -euo pipefail
+[ "$(id -u)" = 0 ] || { echo "Run with sudo: sudo panic-buyer-setup"; exit 1; }
+KEY=""; SECRET=""; TG=""; TGC=""
+if [ -f /etc/halal-rider.env ]; then
+  read -rp "Use the same Binance key and Telegram as halal-rider? (Y/n): " SAME
+  case "${SAME:-Y}" in n|N|no|NO) ;; *)
+    KEY=$(grep '^BINANCE_API_KEY=' /etc/halal-rider.env | cut -d= -f2-)
+    SECRET=$(grep '^BINANCE_API_SECRET=' /etc/halal-rider.env | cut -d= -f2-)
+    TG=$(grep '^TELEGRAM_BOT_TOKEN=' /etc/halal-rider.env | cut -d= -f2- || true)
+    TGC=$(grep '^TELEGRAM_CHAT_ID=' /etc/halal-rider.env | cut -d= -f2- || true) ;;
+  esac
+fi
+if [ -z "$KEY" ]; then
+  echo "Your keys stay on this server only. Paste with right-click (or Ctrl+Shift+V)."
+  read -rp "Binance API key: " KEY
+  read -rsp "Binance API secret (hidden while you paste): " SECRET; echo
+  read -rp "Telegram bot token (press Enter to skip): " TG
+  if [ -n "$TG" ]; then read -rp "Telegram chat id: " TGC; fi
+fi
+read -rp "Most USDT this bot may use, e.g. 300 (keep halal-rider's USDT on top of this): " CAP
+read -rp "Reinvest profits? (y/N; N = profits stay as USDT you can withdraw): " CMP
+case "${CMP:-N}" in y|Y|yes|YES) CMP=yes ;; *) CMP=no ;; esac
+umask 077
+cat > /etc/panic-buyer.env <<ENV
+BINANCE_API_KEY=$KEY
+BINANCE_API_SECRET=$SECRET
+CAPITAL_USDT=$CAP
+COMPOUND=$CMP
+TELEGRAM_BOT_TOKEN=$TG
+TELEGRAM_CHAT_ID=$TGC
+PANIC_DATA=/opt/panic-buyer/data
+ENV
+chown root:panicbot /etc/panic-buyer.env
+chmod 640 /etc/panic-buyer.env
+echo ""
+echo "Testing (no orders are placed)..."
+if panic-buyer check; then
+  systemctl enable --now panic-buyer >/dev/null 2>&1
+  systemctl restart panic-buyer
+  echo ""
+  echo "STARTED. The bot now trades by itself every hour and restarts after reboots."
+  echo "  panic-buyer status   open trades and results"
+  echo "  panic-buyer log      live log (Ctrl+C to leave)"
+  echo "  panic-buyer stop     stop buying (coins it holds keep their sell order on Binance)"
+  echo "  panic-buyer panic    cancel its orders and sell its coins"
+else
+  echo "Check failed: fix the problem above, then run sudo panic-buyer-setup again."
+fi
