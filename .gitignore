@@ -1,0 +1,5 @@
+rider_state.json
+rider_trades.csv
+rider.log
+__pycache__/
+*.tmp

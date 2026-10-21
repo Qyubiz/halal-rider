@@ -1,0 +1,14 @@
+[Unit]
+Description=Halal pump-rider (Binance spot)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=rider
+EnvironmentFile=/etc/halal-rider.env
+ExecStart=/usr/bin/python3 /opt/halal-rider/app/rider.py run
+Restart=always
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target

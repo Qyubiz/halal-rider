@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# Asks for your keys and limits, stores them only on this server (/etc/halal-rider.env), tests, starts.
+set -euo pipefail
+[ "$(id -u)" = 0 ] || { echo "Run with sudo: sudo halal-rider-setup"; exit 1; }
+echo "Your keys stay on this server only. Paste with right-click (or Ctrl+Shift+V)."
+read -rp "Binance API key: " KEY
+read -rsp "Binance API secret (hidden while you paste): " SECRET; echo
+read -rp "Most USDT the bot may use, e.g. 300: " CAP
+read -rp "Telegram bot token (press Enter to skip): " TG
+TGC=""
+if [ -n "$TG" ]; then read -rp "Telegram chat id: " TGC; fi
+umask 077
+cat > /etc/halal-rider.env <<ENV
+BINANCE_API_KEY=$KEY
+BINANCE_API_SECRET=$SECRET
+CAPITAL_USDT=$CAP
+TELEGRAM_BOT_TOKEN=$TG
+TELEGRAM_CHAT_ID=$TGC
+RIDER_DATA=/opt/halal-rider/data
+ENV
+chown root:rider /etc/halal-rider.env
+chmod 640 /etc/halal-rider.env
+echo ""
+echo "Testing (no orders are placed)..."
+if halal-rider check; then
+  systemctl enable --now halal-rider >/dev/null 2>&1
+  systemctl restart halal-rider
+  echo ""
+  echo "STARTED. The bot now trades by itself and restarts after reboots."
+  echo "  halal-rider status   open trades and results"
+  echo "  halal-rider log      live log (Ctrl+C to leave)"
+  echo "  halal-rider panic    cancel everything and sell the bot's coins"
+else
+  echo "Check failed: fix the problem above, then run sudo halal-rider-setup again."
+fi

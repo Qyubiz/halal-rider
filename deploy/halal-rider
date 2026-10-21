@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# halal-rider check|status|log|panic|stop|start|update
+set -euo pipefail
+APP=/opt/halal-rider/app
+run() { sudo -u rider bash -c "set -a; source /etc/halal-rider.env; set +a; python3 $APP/rider.py $1"; }
+case "${1:-status}" in
+  check)  run check ;;
+  status) run status; systemctl is-active --quiet halal-rider && echo "Service: RUNNING" || echo "Service: STOPPED" ;;
+  log)    tail -n 50 -f /opt/halal-rider/data/rider.log ;;
+  panic)  sudo systemctl stop halal-rider; run panic ;;
+  stop)   sudo systemctl stop halal-rider; echo "Stopped. Open trades keep their stop-loss on Binance." ;;
+  start)  sudo systemctl start halal-rider; echo "Started." ;;
+  update) curl -sL https://raw.githubusercontent.com/Qyubiz/halal-rider/main/deploy/install.sh | sudo bash ;;
+  *) echo "usage: halal-rider check|status|log|panic|stop|start|update" ;;
+esac
