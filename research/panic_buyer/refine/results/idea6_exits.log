@@ -19,8 +19,8 @@ BTC<7d avg -> 24h stop                         21-23 x 6.23 DD  -28% 2022  +28% 
 PICK (2021-23 only): breadth>=85% -> 24h stop
   pick                                         21-23 x 6.42 DD  -27% 2022  +29% | 24-26 x 2.26 DD  -15% worst-mo  -7% up-mo  88%
   2024-26 check: does NOT beat the live settings
-  live, +LUNA/FTT/SRM                          21-23 x 5.29 DD  -31% 2022   +1% | 24-26 x 2.46 DD  -15% worst-mo  -6% up-mo  88%
-  pick, +LUNA/FTT/SRM                          21-23 x 5.98 DD  -32% 2022  +12% | 24-26 x 2.11 DD  -14% worst-mo  -7% up-mo  88%  FAILS
+  live, +LUNA/FTT/SRM                          21-23 x 5.22 DD  -31% 2022   +1% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  pick, +LUNA/FTT/SRM                          21-23 x 5.90 DD  -32% 2022  +12% | 24-26 x 2.22 DD  -15% worst-mo  -7% up-mo  88%  FAILS
   live, fills 0.2% worse                       21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
   pick, fills 0.2% worse                       21-23 x 4.64 DD  -28% 2022   +9% | 24-26 x 2.06 DD  -16% worst-mo  -7% up-mo  85%  FAILS
   VERDICT: rejected, live bot unchanged
