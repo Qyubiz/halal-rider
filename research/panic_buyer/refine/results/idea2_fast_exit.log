@@ -1,0 +1,19 @@
+
+######## idea 2: faster exits (1-minute candles)
+Traceback (most recent call last):
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/idea2_fast_exit.py", line 33, in <module>
+    A, hidx, Ph = mkt()
+                  ^^^^^
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/idea2_fast_exit.py", line 17, in mkt
+    idx, A, hidx, Ph = E.minute_panel(E.H19 + (list(E.DEAD) if dead else []), cuts=E.DEAD if dead else None)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/engine.py", line 259, in minute_panel
+    d = pd.read_pickle(os.path.join(DATA, sub, f"{s}.pkl"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pandas/io/pickle.py", line 220, in read_pickle
+    with get_handle(
+         ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pandas/io/common.py", line 939, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/pb_data/1m/BTCUSDT.pkl'

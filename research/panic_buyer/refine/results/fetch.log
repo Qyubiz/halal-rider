@@ -1,0 +1,29 @@
+== 1h candles, 19 coins + RNDR + LUNA/FTT/SRM
+/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/fetch_vision.py:84: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  today = pd.Timestamp.utcnow().tz_localize(None).normalize()
+Traceback (most recent call last):
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/fetch_vision.py", line 121, in <module>
+    for r in ex.map(lambda s: fetch(s, interval, start, out, tail), syms):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/fetch_vision.py", line 121, in <lambda>
+    for r in ex.map(lambda s: fetch(s, interval, start, out, tail), syms):
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/fetch_vision.py", line 89, in fetch
+    b = get(f"{ROOT}/monthly/klines/{sym}/{interval}/{sym}-{interval}-{m:%Y-%m}.zip")
+                                                                      ^^^^^^^^^
+TypeError: unsupported format string passed to Period.__format__
+4.0K	/home/runner/pb_data/1h

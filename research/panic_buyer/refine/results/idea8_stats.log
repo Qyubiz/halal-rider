@@ -1,0 +1,15 @@
+
+######## idea 8: statistical rigor (19 coins)
+Traceback (most recent call last):
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/idea8_stats.py", line 144, in <module>
+    R, Rd = grid_daily()
+            ^^^^^^^^^^^^
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/idea8_stats.py", line 26, in grid_daily
+    syms, idx, P = S.market()
+                   ^^^^^^^^^^
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/study.py", line 23, in market
+    _cache[dead] = E.panel(E.load_h19(dead=dead))
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/engine.py", line 47, in load_h19
+    raise FileNotFoundError(f"{DATA}/{sub}/{s}.csv missing: run fetch_all.sh")
+FileNotFoundError: /home/runner/pb_data/1h/BTCUSDT.csv missing: run fetch_all.sh

@@ -1,0 +1,18 @@
+
+######## idea 6: exit variants
+Traceback (most recent call last):
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/idea6_exits.py", line 44, in <module>
+    R, v = S.study("idea 6: exit variants", V, "idea6_exits")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/study.py", line 38, in study
+    base, base_e, _ = evaluate({})
+                      ^^^^^^^^^^^^
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/study.py", line 28, in evaluate
+    syms, idx, P = market(dead)
+                   ^^^^^^^^^^^^
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/study.py", line 23, in market
+    _cache[dead] = E.panel(E.load_h19(dead=dead))
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/engine.py", line 47, in load_h19
+    raise FileNotFoundError(f"{DATA}/{sub}/{s}.csv missing: run fetch_all.sh")
+FileNotFoundError: /home/runner/pb_data/1h/BTCUSDT.csv missing: run fetch_all.sh
