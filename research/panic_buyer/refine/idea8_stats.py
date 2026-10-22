@@ -100,7 +100,8 @@ def bootstrap(monthly, horizon=12, block=3, n=20000, seed=1):
         paths[i] = out[:horizon]
     eq = np.cumprod(1 + paths, axis=1)
     tot = eq[:, -1] - 1
-    dd = (eq / np.maximum.accumulate(np.concatenate([np.ones((n, 1)), eq], axis=1)[:, 1:]) - 1).min(axis=1)
+    peak = np.maximum.accumulate(np.concatenate([np.ones((n, 1)), eq], axis=1), axis=1)[:, 1:]
+    dd = (eq / peak - 1).min(axis=1)
     return {"median": np.median(tot), "p5": np.quantile(tot, 0.05), "p25": np.quantile(tot, 0.25),
             "p95": np.quantile(tot, 0.95), "p_loss": float((tot < 0).mean()), "p_dd20": float((dd < -0.20).mean())}
 

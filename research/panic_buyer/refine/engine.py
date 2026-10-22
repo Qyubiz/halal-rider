@@ -71,12 +71,15 @@ def panel(D, freq="1h"):
 
 # ------------------------------------------------------------------ hourly engine
 @njit(cache=True)
-def gkernel(o, h, l, c, ref, depth, nord, fmax, smult, tpa, part, tp2, trail, hm, cd, eps, fee, slip, pen):
+def gkernel(o, h, l, c, ref, depth, nord, fmax, smult, tpa, part, tp2, trail, hm, cd, eps, fee, slip, pen,
+            tpwait=1, tprest=True):
     """Hourly bot with fully funded resting bids on the nord[t] coins closest to ref*(1-depth[t,k]).
     Order size: min(fmax[t]*equity, cash/nsel) * smult[t,k] (smult 0 = coin skipped this hour).
     Exit: sell `part` at entry*(1+tpa[entry hour,k]) (limit, not in the fill hour); the rest (if part<1)
     sells at entry*(1+tp2) (tp2>0) or on a `trail` drop from its high, checked at each close (trail>0);
-    everything left sells at the close once held hm[t] hours. Cash from sales is usable the next hour."""
+    everything left sells at the close once held hm[t] hours. Cash from sales is usable the next hour.
+    tpwait: the take-profit is placed at the tpwait-th hourly cycle after the fill (live bot: 1). tprest=False:
+    no resting order, the bot only sells at an hourly check when the price is already at the target."""
     n, K = c.shape
     units = np.zeros(K); entry = np.zeros(K); amt0 = np.zeros(K); got = np.zeros(K); tpp = np.zeros(K)
     stage = np.zeros(K, np.int64); sbar = np.zeros(K, np.int64); peak = np.zeros(K)
@@ -114,9 +117,11 @@ def gkernel(o, h, l, c, ref, depth, nord, fmax, smult, tpa, part, tp2, trail, hm
             if units[k] > 0.0 and ebar[k] < t and not np.isnan(o[t, k]):
                 px = -1.0; why = 0.0
                 if stage[k] == 0:
-                    if o[t, k] >= tpp[k]:
+                    if t - ebar[k] < tpwait:
+                        pass
+                    elif o[t, k] >= tpp[k]:
                         px = o[t, k]
-                    elif h[t, k] >= tpp[k] * (1.0 + eps):
+                    elif tprest and h[t, k] >= tpp[k] * (1.0 + eps):
                         px = tpp[k]
                     if px > 0.0 and part < 1.0:
                         q = units[k] * part
@@ -165,12 +170,13 @@ def full(n, K, x, dtype=np.float64):
 
 
 def run(P, idx, depth=LIVE["depth"], N=LIVE["N"], fmax=LIVE["fmax"], smult=1.0, tp=LIVE["tp"], part=1.0, tp2=0.0,
-        trail=0.0, hm=LIVE["hm"], cd=LIVE["cd"], eps=EPS, fee=FEE, slip=SLIP_MAJOR, pen=0.0):
+        trail=0.0, hm=LIVE["hm"], cd=LIVE["cd"], eps=EPS, fee=FEE, slip=SLIP_MAJOR, pen=0.0, tpwait=1, tprest=True):
     O = P["o"].values; n, K = O.shape
     sl = np.full(K, slip) if np.ndim(slip) == 0 else np.asarray(slip, np.float64)
     eq, lg = gkernel(O, P["h"].values, P["l"].values, P["cf"].values, P["ref"].values,
                      full(n, K, depth), full(n, 0, N, np.int64), full(n, 0, fmax), full(n, K, smult), full(n, K, tp),
-                     float(part), float(tp2), float(trail), full(n, 0, hm, np.int64), int(cd), eps, fee, sl, pen)
+                     float(part), float(tp2), float(trail), full(n, 0, hm, np.int64), int(cd), eps, fee, sl, pen,
+                     int(tpwait), bool(tprest))
     return pd.Series(eq, idx), pd.DataFrame(lg, columns=LOG_COLS)
 
 
