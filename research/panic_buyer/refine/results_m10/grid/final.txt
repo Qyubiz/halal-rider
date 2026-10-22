@@ -1,0 +1,21 @@
+762 distinct designs searched on 2021-23; 69 pass the rule. Pick: s3.00% L5 off1 tpk1 gate btc200 liq1 stop0% cd0 hm0 hs0% trail0 coins maj5
+Next four on 2021-23: s4.00% L5 off1 tpk1 gate btc200 liq1 stop0% cd0 hm0 hs0% tra +6.0%/mo DD -29% | s2.00% L5 off2 tpk1 gate btc200&coin50 liq1 stop0% cd0 hm0 h +5.4%/mo DD -23% | s3.00% L10 off0 tpk1 gate btc200 liq1 stop0% cd0 hm0 hs0% tr +4.9%/mo DD -29% | s2.00% L5 shared Ltot10 off2 tpk1 gate btc200&coin50 liq1 st +4.8%/mo DD -34%
+
+== normal fills ==
+2021-23 (design) :  +6.47%/mo x  9.55 DD  -32.1% worst-mo  -18.6% up-mo  44% | RT win  92.0% (2277 RT, 63/mo, avg +1.46%, worst -48.4%, forced 194, open 0)
+2024-26          :  -0.04%/mo x  0.99 DD  -54.6% worst-mo  -31.4% up-mo  38% | RT win  86.1% (1176 RT, 35/mo, avg +0.45%, worst -54.1%, forced 168, open 15)
+since Jan 2025   :  -0.69%/mo x  0.86 DD  -51.4% worst-mo  -31.4% up-mo  36% | RT win  80.6% (532 RT, 25/mo, avg -0.19%, worst -54.1%, forced 103, open 15)
+2018-20 holdout  :  +0.49%/mo x  1.19 DD  -48.8% worst-mo  -14.1% up-mo  28% | RT win  92.4% (1124 RT, 31/mo, avg +0.73%, worst -68.8%, forced 80, open 13)
+per year: 2018 +8% 2019 -12% 2020 +25% 2021 +317% 2022 +0% 2023 +129% 2024 +13% 2025 -19% 2026 +7%
+exits 2021-26: grid sell: 3076 (win 3076), regime exit: 362 (win 29), open at end: 15 (win 1)
+exits holdout: grid sell: 1031 (win 1031), regime exit: 80 (win 6), open at end: 13 (win 2)
+share of hours the filter allows buying: 2018: 1% 2019: 52% 2020: 77% 2021: 71% 2022: 0% 2023: 80% 2024: 80% 2025: 73% 2026: 21%
+buy & hold same 5 coins 2024-26: +1.64%/mo, drop -63%
+buy & hold same 5 coins since 2025: -1.20%/mo, drop -63%
+buy & hold same 5 coins 2018-20: +1.44%/mo, drop -72%
+
+== every fill 0.1% worse ==
+2021-23 (design) :  +5.53%/mo x  6.93 DD  -32.6% worst-mo  -19.2% up-mo  44% | RT win  91.9% (2277 RT, 63/mo, avg +1.26%, worst -48.5%, forced 194, open 0)
+2024-26          :  -0.37%/mo x  0.88 DD  -56.3% worst-mo  -31.2% up-mo  38% | RT win  85.5% (1176 RT, 35/mo, avg +0.25%, worst -54.2%, forced 168, open 15)
+since Jan 2025   :  -0.94%/mo x  0.82 DD  -51.5% worst-mo  -31.2% up-mo  36% | RT win  80.1% (532 RT, 25/mo, avg -0.39%, worst -54.2%, forced 103, open 15)
+2018-20 holdout  :  +0.21%/mo x  1.08 DD  -49.3% worst-mo  -14.0% up-mo  28% | RT win  92.3% (1124 RT, 31/mo, avg +0.53%, worst -68.8%, forced 80, open 13)

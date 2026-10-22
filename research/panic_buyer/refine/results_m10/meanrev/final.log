@@ -1,0 +1,30 @@
+PICK meanrev 5m    normal     2021-23   +12.96%/mo x  80.17 dd -37.7% | n   508 ( 14.1/mo) win  94.9% avg +0.90% worst -20.2% acct -20.2% tstop  5.3% hold   0.6h dd_h -31.8%
+PICK meanrev 5m    normal     2024-26    +3.04%/mo x   2.75 dd -78.8% | n   128 (  3.8/mo) win  93.0% avg +0.82% worst -14.2% acct -14.2% tstop  7.0% hold   0.8h dd_h -15.1%
+PICK meanrev 5m    normal     since 2025  +2.29%/mo x   1.63 dd -78.8% | n    46 (  2.1/mo) win  93.5% avg +1.08% worst  -4.7% acct  -4.7% tstop  6.5% hold   0.8h dd_h -15.1%
+                              years: 2021 +3806%  2022 +40%  2023 +47%  2024 +68%  2025 +47%  2026 +11%
+                              worst 5 trades: DOGE 2021-05-09 03:50 -20.2%; SOL 2022-11-08 17:00 -18.5%; LTC 2021-09-13 14:00 -15.9%; LINK 2024-08-05 01:05 -14.2%; HBAR 2021-05-21 14:15 -13.7%
+                              2021-23: months up 81%, worst month -12.0% (2022-11), median +6.2%
+                              2024-26: months up 70%, worst month -14.2% (2024-08), median +2.0%
+                              since 2025: months up 67%, worst month -3.2% (2026-01), median +1.0%
+PICK meanrev 5m    0.1% worse 2021-23    +9.87%/mo x  29.58 dd -39.0% | n   503 ( 14.0/mo) win  94.2% avg +0.71% worst -20.4% acct -20.4% tstop  6.0% hold   0.7h dd_h -33.5%
+PICK meanrev 5m    0.1% worse 2024-26    +2.53%/mo x   2.32 dd -78.8% | n   128 (  3.8/mo) win  93.0% avg +0.69% worst -14.4% acct -14.4% tstop  7.0% hold   0.9h dd_h -15.4%
+PICK meanrev 5m    0.1% worse since 2025  +2.00%/mo x   1.54 dd -78.8% | n    46 (  2.1/mo) win  93.5% avg +0.95% worst  -4.9% acct  -4.9% tstop  6.5% hold   0.8h dd_h -15.2%
+                              years: 2021 +2181%  2022 +8%  2023 +20%  2024 +51%  2025 +41%  2026 +9%
+90% mode (hourly)  normal     2021-23   +13.17%/mo x  85.62 dd -64.4% | n   406 ( 11.3/mo) win  93.8% avg +1.36% worst -50.3% acct -50.3% tstop  6.2% hold  12.6h dd_h -64.4%
+90% mode (hourly)  normal     2024-26    +6.89%/mo x   9.42 dd -35.4% | n   148 (  4.4/mo) win  92.6% avg +1.61% worst -27.3% acct -27.3% tstop  7.4% hold  16.0h dd_h -35.4%
+90% mode (hourly)  normal     since 2025  +5.80%/mo x   3.39 dd -22.6% | n    73 (  3.4/mo) win  93.2% avg +1.73% worst -11.8% acct -11.8% tstop  6.8% hold  17.3h dd_h -22.6%
+                              years: 2021 +3037%  2022 +6%  2023 +158%  2024 +178%  2025 +151%  2026 +35%
+90% mode (hourly)  0.1% worse 2021-23   +10.77%/mo x  39.66 dd -64.5% | n   402 ( 11.2/mo) win  93.5% avg +1.19% worst -50.4% acct -50.4% tstop  6.5% hold  12.9h dd_h -64.5%
+90% mode (hourly)  0.1% worse 2024-26    +5.95%/mo x   7.01 dd -36.4% | n   143 (  4.2/mo) win  92.3% avg +1.45% worst -27.5% acct -27.5% tstop  7.7% hold  16.7h dd_h -36.4%
+90% mode (hourly)  0.1% worse since 2025  +4.91%/mo x   2.82 dd -22.6% | n    69 (  3.2/mo) win  92.8% avg +1.56% worst -12.0% acct -12.0% tstop  7.2% hold  18.6h dd_h -22.6%
+                              years: 2021 +1712%  2022 -6%  2023 +134%  2024 +148%  2025 +120%  2026 +29%
+PICK meanrev 5m    normal     2018-20 holdout  +7.68%/mo x  14.38 dd -33.0% | n   371 ( 10.3/mo) win  90.6% avg +0.77% worst -22.0% acct -22.0% tstop  9.7% hold   0.8h dd_h -30.7%
+                              years: 2018 +300%  2019 +55%  2020 +131%
+                              worst 5 trades: FET 2019-05-21 17:35 -22.0%; NEAR 2020-12-21 04:10 -20.0%; SOL 2020-11-07 14:05 -18.3%; NEAR 2020-10-16 04:05 -14.6%; BCH 2019-09-24 18:45 -11.5%
+                              2018-20 holdout: months up 75%, worst month -15.7% (2019-09), median +5.3%
+PICK meanrev 5m    0.1% worse 2018-20 holdout  +5.05%/mo x   5.89 dd -35.3% | n   363 ( 10.1/mo) win  89.8% avg +0.55% worst -22.2% acct -22.2% tstop 10.2% hold   0.9h dd_h -34.3%
+                              years: 2018 +167%  2019 +27%  2020 +74%
+90% mode (hourly)  normal     2018-20 holdout +10.41%/mo x  35.35 dd -66.3% | n   360 ( 10.0/mo) win  92.2% avg +1.21% worst -37.3% acct -37.3% tstop  8.1% hold  12.9h dd_h -66.3%
+                              years: 2018 +385%  2019 +97%  2020 +271%
+90% mode (hourly)  0.1% worse 2018-20 holdout  +8.68%/mo x  20.04 dd -66.9% | n   355 (  9.9/mo) win  91.8% avg +1.07% worst -37.4% acct -37.4% tstop  8.2% hold  13.2h dd_h -66.9%
+                              years: 2018 +323%  2019 +62%  2020 +192%

@@ -1,0 +1,12 @@
+1. engine.run vs mkernel {'depth': 0.14, 'N': 1, 'fmax': 1.0, 'tp': 0.025, 'hm': 96, 'cd': 3, 'g': 0.35}: x806.936130 vs x806.936130, trades 554/554 IDENTICAL
+1. engine.run vs mkernel {'depth': 0.12, 'N': 8, 'fmax': 0.2, 'tp': 0.015, 'hm': 48, 'cd': 24, 'g': 0.0}: x15.000317 vs x15.000317, trades 2565/2565 IDENTICAL
+1. engine.run vs mkernel {'depth': 0.14, 'N': 2, 'fmax': 0.5, 'tp': 0.025, 'hm': 96, 'cd': 3, 'g': 0.35, 'mtp_now': True, 'pen': 0.002}: x238.232564 vs x238.232564, trades 1177/1177 IDENTICAL
+wide panel: 322 coins, 50883 hours (2021-01-01 00:00:00 - 2026-10-22 02:00:00), loaded in 1s
+2. w90_wider_lib.wkernel vs mkernel, 19 + top30 v365 @26% x0.5 tp3% | core 14% tp2.5% N1bids hm96 cd3 g35: x883.3886 vs x883.3886, trades 597/597 IDENTICAL
+2. w90_wider_lib.wkernel vs mkernel, 19 + top60 v30 @20% x1 tp2.5% vol>=5M/day | core 14% tp2.5% N2bids hm96 cd3 g35: x75.5445 vs x75.5445, trades 2079/2079 IDENTICAL
+3. 90% mode on the wide panel, 19 coins, 0.02% slippage: 21-23 WR 93.8% +13.17%/mo dd  -64% 11.3tr/mo wt  -50% | 24-26 WR 92.6%  +6.89%/mo dd  -35%  4.4tr/mo wt  -27% | 25-26 WR 93.2%  +5.80%/mo dd  -23%  3.4tr/mo wt  -12%
+   same on the 19-coin engine panel (worst trade n/a):    21-23 WR 93.8% +13.17%/mo dd  -64% 11.3tr/mo wt -1506% | 24-26 WR 92.6%  +6.89%/mo dd  -35%  4.4tr/mo wt -8899% | 25-26 WR 93.2%  +5.80%/mo dd  -23%  3.4tr/mo wt -8899%
+   SAME trades and win rates; largest %/month gap 3.77e-06 (the two panels end 2026-10-22 02:00:00 / 2026-10-22 01:00:00)
+   90% mode, rank-based slippage + last-hour sale (the m10 reference): 21-23 WR 93.6% +12.68%/mo dd  -64% 11.3tr/mo wt  -50% | 24-26 WR 92.6%  +6.88%/mo dd  -35%  4.4tr/mo wt  -27% | 25-26 WR 93.2%  +5.80%/mo dd  -23%  3.4tr/mo wt  -12%
+4. slots on/off with N=1: IDENTICAL
+ALL CHECKS PASS

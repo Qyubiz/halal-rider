@@ -1,0 +1,48 @@
+90% mode: 2021-23 WR  93.8% +13.17%/mo DD  -64% wt  -50% 11.3 tr/mo 25 losers
+S1: 94 singles, 16s
+top singles (R): since_brd50<=72, since_b7<=72, mkt_rv>=1.2, brd_sma7>=0.8, c_r1>=0.0, btc_rv>=1.3, c_sma30<=-0.15, since_brd50<=24, c_r1>=-0.005, mkt_red>=4, brd_sma7>=0.95, btc_dd7<=-0.1, since_b10<=72, c_pre7d<=-0.1, btc_rv72>=1.6, mkt_rv>=1.4, btc_red>=4, brd_dip8>=0.75, btc_dd7<=-0.15, since_brd30<=6, btc_red>=3, btc_r72<=-0.08, since_brd50<=6, knife pre3d<=-0.03&brd_sma7>=0.8
+S2 done (371 designs), 36s
+S3 done (607 designs), 54s
+all stages: 652 designs, 58s
+
+PICK (highest 2021-23 WR with %/mo >= 90% of 90% mode and drop <= 1pt deeper): c_r1>=0.0 | mkt_rv>=1.2 | since_brd50<=72 => depth 0.26
+   rules: (c_r1>=0) OR (mkt_rv>=1.2) OR (since_brd50<=72) deep 0.26
+   2021-23 WR  97.7% +18.74%/mo DD  -46% wt  -44%  8.4 tr/mo 7 losers
+BAND95: btc_r72<=-0.08 | c_r1>=0.0 | mkt_rv>=1.2 => depth 0.18
+   rules: (btc_r72<=-0.08) OR (c_r1>=0) OR (mkt_rv>=1.2) deep 0.18
+   2021-23 WR  96.5% +21.14%/mo DD  -64% wt  -49% 11.1 tr/mo 14 losers
+BAND96: btc_r72<=-0.08 | c_r1>=0.0 | mkt_rv>=1.2 => depth 0.18
+   rules: (btc_r72<=-0.08) OR (c_r1>=0) OR (mkt_rv>=1.2) deep 0.18
+   2021-23 WR  96.5% +21.14%/mo DD  -64% wt  -49% 11.1 tr/mo 14 losers
+BAND97: btc_r72<=-0.08 | c_r1>=0.0 | mkt_rv>=1.2 => depth 0.22
+   rules: (btc_r72<=-0.08) OR (c_r1>=0) OR (mkt_rv>=1.2) deep 0.22
+   2021-23 WR  97.0% +20.79%/mo DD  -53% wt  -48% 10.3 tr/mo 11 losers
+BAND98: none
+BAND99: none
+
+Top 25 by ranking R (2021-23 only):
+  c_r1>=0.0 | mkt_rv>=1.2 | since_brd50<=72 => depth 0.26                                    2021-23 WR  97.7% +18.74%/mo DD  -46% wt  -44%  8.4 tr/mo 7 losers
+  brd_sma7>=0.8 | mkt_rv>=1.4 | since_brd50<=72 => depth 0.26                                2021-23 WR  97.5% +16.07%/mo DD  -40% wt  -24%  6.7 tr/mo 6 losers
+  brd_sma7>=0.95 | c_sma30<=-0.15 | since_brd50<=72 => depth 0.26                            2021-23 WR  97.5% +17.43%/mo DD  -54% wt  -38%  7.8 tr/mo 7 losers
+  brd_sma7>=0.8 | c_sma30<=-0.15 | since_brd50<=72 => depth 0.26                             2021-23 WR  97.4% +14.41%/mo DD  -54% wt  -38%  6.5 tr/mo 6 losers
+  brd_sma7>=0.8 | mkt_rv>=1.2 | since_brd50<=72 => depth 0.26                                2021-23 WR  97.4% +14.92%/mo DD  -40% wt  -24%  6.3 tr/mo 6 losers
+  c_r1>=0.0 | c_sma30<=-0.15 | since_brd50<=72 => depth 0.26                                 2021-23 WR  97.3% +18.07%/mo DD  -54% wt  -38%  8.3 tr/mo 8 losers
+  c_r1>=0.0 | mkt_rv>=1.2 | since_brd50<=72                                                  2021-23 WR  97.3% +14.30%/mo DD  -46% wt  -44%  7.2 tr/mo 7 losers
+  c_r1>=-0.005 | mkt_rv>=1.2 | since_brd50<=72 => depth 0.26                                 2021-23 WR  97.3% +16.17%/mo DD  -46% wt  -44%  8.1 tr/mo 8 losers
+  c_sma30<=-0.15 | knife pre3d<=-0.03&brd_sma7>=0.8 | since_brd50<=72 => depth 0.26          2021-23 WR  97.2% +16.88%/mo DD  -54% wt  -38%  7.8 tr/mo 8 losers
+  brd_sma7>=0.95 | c_sma30<=-0.15 | since_brd50<=72                                          2021-23 WR  97.1% +13.66%/mo DD  -54% wt  -38%  6.8 tr/mo 7 losers
+  c_r1>=0.0 | since_brd30<=6 | since_brd50<=72 => depth 0.26                                 2021-23 WR  97.1% +17.25%/mo DD  -62% wt  -44%  8.7 tr/mo 9 losers
+  btc_dd7<=-0.1 | c_r1>=0.0 | mkt_rv>=1.2 => depth 0.26                                      2021-23 WR  97.1% +17.32%/mo DD  -60% wt  -47%  8.6 tr/mo 9 losers
+  btc_dd7<=-0.1 | c_r1>=0.0 | mkt_rv>=1.2 => depth 0.22                                      2021-23 WR  97.0% +16.69%/mo DD  -56% wt  -48%  9.4 tr/mo 10 losers
+  brd_sma7>=0.8 | mkt_rv>=1.4 | since_brd50<=72                                              2021-23 WR  97.0% +12.06%/mo DD  -32% wt  -24%  5.6 tr/mo 6 losers
+  brd_sma7>=0.95 | c_sma30<=-0.15 | since_brd50<=72 => depth 0.22                            2021-23 WR  97.0% +14.45%/mo DD  -61% wt  -48%  8.4 tr/mo 9 losers
+  btc_r72<=-0.08 | c_r1>=0.0 | mkt_rv>=1.2 => depth 0.22                                     2021-23 WR  97.0% +20.79%/mo DD  -53% wt  -48% 10.3 tr/mo 11 losers
+  c_r1>=0.0 | mkt_rv>=1.2 | since_b7<=72                                                     2021-23 WR  97.0% +14.12%/mo DD  -46% wt  -44%  7.4 tr/mo 8 losers
+  c_r1>=0.0 | c_sma30<=-0.15 | since_brd50<=72                                               2021-23 WR  97.0% +14.18%/mo DD  -54% wt  -38%  7.3 tr/mo 8 losers
+  brd_sma7>=0.8 | c_sma30<=-0.15 | since_brd50<=72                                           2021-23 WR  97.0% +10.74%/mo DD  -54% wt  -38%  5.5 tr/mo 6 losers
+  btc_dd7<=-0.1 | btc_rv>=1.3 | c_r1>=0.0 => depth 0.22                                      2021-23 WR  97.0% +17.48%/mo DD  -58% wt  -48%  9.1 tr/mo 10 losers
+  c_r1>=0.0 | mkt_rv>=1.2 | since_b7<=72 => depth 0.26                                       2021-23 WR  97.0% +16.44%/mo DD  -46% wt  -44%  8.2 tr/mo 9 losers
+  btc_r72<=-0.08 | c_r1>=0.0 | mkt_rv>=1.2                                                   2021-23 WR  96.9% +19.97%/mo DD  -46% wt  -44%  9.1 tr/mo 10 losers
+  c_r1>=0.0 | mkt_rv>=1.2 | since_brd50<=72 => depth 0.22                                    2021-23 WR  96.9% +14.66%/mo DD  -61% wt  -48%  9.0 tr/mo 10 losers
+  c_r1>=0.0 | mkt_rv>=1.2 | since_b7<=72 => depth 0.18                                       2021-23 WR  96.9% +20.17%/mo DD  -61% wt  -48% 10.7 tr/mo 12 losers
+  c_r1>=0.0 | mkt_rv>=1.2 | since_b7<=72 => depth 0.22                                       2021-23 WR  96.9% +14.49%/mo DD  -61% wt  -48%  8.9 tr/mo 10 losers

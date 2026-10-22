@@ -1,0 +1,55 @@
+306 designs in 55s
+
+20 pass the rule (WR>=90%, DD>=-35%); top 25 by 2021-23 %/month:
+                                                                              name    mo     dd  worst_m    wr    rt_m   avg  y2021  y2022  y2023
+14    s2.00% L5 off4 tpk1 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.040 -0.265   -0.127 0.911  61.097 0.010  2.375 -0.195  0.518
+66           s3.00% L5 off3 tpk1 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.040 -0.274   -0.095 0.901  46.587 0.016  2.468 -0.128  0.350
+12           s2.00% L5 off4 tpk1 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.038 -0.341   -0.130 0.917  72.355 0.010  2.552 -0.196  0.347
+26   s2.00% L10 off2 tpk1 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.036 -0.217   -0.099 0.909 123.918 0.010  1.899 -0.154  0.435
+24          s2.00% L10 off2 tpk1 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.034 -0.302   -0.104 0.917 141.764 0.010  2.053 -0.159  0.295
+31          s2.00% L10 off4 tpk1 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.031 -0.168   -0.068 0.905 108.797 0.011  1.659 -0.130  0.310
+32   s2.00% L10 off4 tpk1 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.029 -0.137   -0.067 0.918  90.340 0.012  1.415 -0.097  0.264
+30          s2.00% L10 off4 tpk1 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.027 -0.234   -0.072 0.922 110.270 0.011  1.546 -0.100  0.155
+84          s3.00% L10 off3 tpk1 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.024 -0.173   -0.049 0.904  62.876 0.018  1.229 -0.052  0.113
+38   s2.00% L20 off0 tpk1 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.024 -0.142   -0.063 0.905 199.414 0.010  1.113 -0.093  0.217
+36          s2.00% L20 off0 tpk1 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.024 -0.225   -0.069 0.917 226.127 0.010  1.259 -0.097  0.139
+86   s3.00% L10 off3 tpk1 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.024 -0.105   -0.041 0.904  51.091 0.019  1.079 -0.050  0.174
+43          s2.00% L20 off2 tpk1 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.023 -0.108   -0.039 0.904 181.819 0.010  1.059 -0.087  0.191
+49          s2.00% L20 off4 tpk1 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.019 -0.083   -0.025 0.912 135.398 0.012  0.897 -0.050  0.111
+44   s2.00% L20 off2 tpk1 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.019 -0.098   -0.042 0.913 147.990 0.011  0.842 -0.063  0.155
+42          s2.00% L20 off2 tpk1 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.019 -0.181   -0.050 0.918 174.897 0.010  0.952 -0.067  0.094
+48          s2.00% L20 off4 tpk1 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.016 -0.139   -0.044 0.922 134.342 0.012  0.774 -0.042  0.048
+50   s2.00% L20 off4 tpk1 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.016 -0.082   -0.029 0.921 108.074 0.013  0.672 -0.039  0.091
+102         s3.00% L20 off3 tpk1 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.013 -0.077   -0.029 0.906  70.910 0.019  0.585 -0.021  0.043
+104  s3.00% L20 off3 tpk1 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.012 -0.057   -0.016 0.907  57.817 0.020  0.495 -0.019  0.063
+
+Top 15 by 2021-23 %/month, any drawdown / win rate:
+                                                                             name    mo     dd  worst_m    wr   rt_m   avg  y2021  y2022  y2023
+57          s3.00% L5 off0 tpk2 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.087 -0.369   -0.170 0.814 46.532 0.026 10.913 -0.236  1.227
+59   s3.00% L5 off0 tpk2 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.083 -0.379   -0.165 0.783 44.141 0.025  9.027 -0.238  1.271
+63          s3.00% L5 off1 tpk2 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.073 -0.373   -0.162 0.814 39.833 0.026  7.516 -0.242  0.972
+3           s2.00% L5 off0 tpk2 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.073 -0.447   -0.203 0.858 71.299 0.017  8.207 -0.292  0.929
+58          s3.00% L5 off0 tpk2 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.072 -0.472   -0.267 0.754 51.507 0.020  6.132 -0.327  1.501
+111         s4.00% L5 off0 tpk2 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.071 -0.383   -0.170 0.772 32.856 0.034  7.572 -0.242  0.837
+65   s3.00% L5 off1 tpk2 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.071 -0.348   -0.158 0.795 36.970 0.026  6.517 -0.238  1.078
+113  s4.00% L5 off0 tpk2 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.069 -0.356   -0.165 0.745 31.132 0.034  6.404 -0.227  0.945
+5    s2.00% L5 off0 tpk2 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.067 -0.445   -0.196 0.826 68.964 0.016  6.668 -0.293  0.920
+54          s3.00% L5 off0 tpk1 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.067 -0.405   -0.178 0.889 79.777 0.013  6.065 -0.258  0.957
+64          s3.00% L5 off1 tpk2 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.067 -0.427   -0.202 0.766 44.114 0.021  5.457 -0.304  1.279
+56   s3.00% L5 off0 tpk1 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.065 -0.376   -0.174 0.867 75.218 0.013  5.305 -0.259  1.065
+108         s4.00% L5 off0 tpk1 gate btc100 liq1 stop0% cd0 hm0 trail0 coins maj5 0.064 -0.358   -0.168 0.865 58.318 0.018  5.828 -0.237  0.784
+112         s4.00% L5 off0 tpk2 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.064 -0.433   -0.193 0.718 36.914 0.028  5.075 -0.278  1.092
+110  s4.00% L5 off0 tpk1 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.062 -0.320   -0.164 0.843 54.065 0.018  5.039 -0.237  0.920
+
+Top 10 by %/month / |drawdown|:
+                                                                              name    mo     dd  worst_m    wr    rt_m   avg  y2021  y2022  y2023
+151         s4.00% L20 off1 tpk1 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.017 -0.058   -0.019 0.860  66.990 0.023  0.734 -0.038  0.098
+157         s4.00% L20 off2 tpk1 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.014 -0.050   -0.013 0.875  51.313 0.026  0.607 -0.023  0.065
+103         s3.00% L20 off3 tpk1 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.016 -0.057   -0.014 0.895  73.606 0.020  0.693 -0.020  0.077
+145         s4.00% L20 off0 tpk1 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.020 -0.071   -0.028 0.847  87.199 0.020  0.901 -0.058  0.137
+95   s3.00% L20 off0 tpk2 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.024 -0.088   -0.038 0.813  66.351 0.030  1.120 -0.052  0.183
+97          s3.00% L20 off1 tpk1 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.021 -0.078   -0.027 0.878 110.909 0.016  0.912 -0.058  0.162
+139         s4.00% L10 off2 tpk1 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.027 -0.100   -0.033 0.870  47.505 0.023  1.310 -0.060  0.181
+131  s4.00% L10 off0 tpk2 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.039 -0.151   -0.076 0.769  38.554 0.038  2.274 -0.101  0.365
+149  s4.00% L20 off0 tpk2 gate btc100&coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.019 -0.072   -0.030 0.775  41.334 0.040  0.806 -0.041  0.120
+160         s4.00% L20 off2 tpk2 gate coin50 liq1 stop0% cd0 hm0 trail0 coins maj5 0.016 -0.061   -0.017 0.798  32.355 0.044  0.676 -0.027  0.071

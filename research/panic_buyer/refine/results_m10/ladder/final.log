@@ -1,0 +1,45 @@
+PICK (chosen on 2021-23 only): 12/18/25 w20:30:50 H1 cap100% tp4 hm720 cd3 g35
+  spec {'legs': ((0.12, 2), (0.18, 3), (0.25, 5)), 'H': 1, 'fmax': 1.0, 'tp': 0.04, 'hm': 720, 'cd': 3, 'guard': 0.35}
+90% mode reference: 14 w100 H1 cap100% tp2.5 hm96 cd3 g35
+  LADDER pick years: 2021 +2144% 2022 +68% 2023 +197% 2024 +78% 2025 -4% 2026 -27%
+  LADDER pick holdout years: 2018 +9% 2019 -73% 2020 +99% (16 coins)
+  90% mode years: 2021 +3038% 2022 +6% 2023 +158% 2024 +178% 2025 +151% 2026 +35%
+  90% mode holdout years: 2018 +452% 2019 +97% 2020 +271% (16 coins)
+
+WR = strict win rate; worst = worst trade as % of the account; days = mean days held per trade; d$w = money-weighted; dmax = longest; >30d = share of hours with a position older than 30 days
+
+setup      test                           period              WR  WR>0    %/mo  drop  worst tr/mo  days   d$w  dmax  >30d  ts  ml open
+LADDER pic normal                         2021-23           99.1  99.1  +14.01   -55  -38.0  12.0   1.1   2.4    30  0.0%   4   0    0
+LADDER pic normal                         2024-26           95.8  95.8   +0.63   -70  -32.2   5.0   2.5   5.2    30  0.0%   6   0    1
+LADDER pic normal                         since 2025        93.2  93.2   -1.67   -70  -32.2   3.4   3.6   7.1    30  0.0%   4   0    1
+LADDER pic normal                         2018-20 holdout   96.2  96.2   -1.52   -95  -53.4   7.3   2.1   4.6    30  0.0%   9   0    1
+LADDER pic fills 0.2% worse               2021-23           99.0  99.0  +12.22   -55  -38.3  11.2   1.3   2.6    30  0.0%   4   0    0
+LADDER pic fills 0.2% worse               2024-26           95.7  95.7   +0.15   -70  -32.4   4.9   2.6   5.3    30  0.0%   6   0    1
+LADDER pic fills 0.2% worse               since 2025        93.1  93.1   -2.00   -70  -32.4   3.3   3.7   7.2    30  0.0%   4   0    1
+LADDER pic fills 0.2% worse               2018-20 holdout   95.9  95.9   -1.92   -94  -53.6   6.8   2.3   5.0    30  0.0%  10   0    0
+LADDER pic bot timing + fills 0.2% worse  2021-23           99.0  99.0  +11.61   -55  -38.3  10.9   1.3   2.7    30  0.0%   4   0    0
+LADDER pic bot timing + fills 0.2% worse  2024-26           96.4  96.4   +1.35   -70  -32.4   5.0   2.4   4.7    30  0.0%   5   0    1
+LADDER pic bot timing + fills 0.2% worse  since 2025        93.1  93.1   -2.14   -70  -32.4   3.3   3.7   7.2    30  0.0%   4   0    1
+LADDER pic bot timing + fills 0.2% worse  2018-20 holdout   95.8  95.8   -2.27   -94  -53.8   6.6   2.4   5.2    30  0.0%  10   0    0
+LADDER pic +LUNA/FTT/SRM                  2021-23           99.1  99.1  +13.92   -55  -38.0  12.1   1.2   2.4    30  0.0%   4   0    0
+LADDER pic +LUNA/FTT/SRM                  2024-26           95.8  95.8   +0.63   -70  -32.2   5.0   2.5   5.2    30  0.0%   6   0    1
+LADDER pic +LUNA/FTT/SRM                  since 2025        93.2  93.2   -1.67   -70  -32.2   3.4   3.6   7.1    30  0.0%   4   0    1
+LADDER pic +LUNA/FTT/SRM                  2018-20 holdout   96.3  96.3   -1.26   -95  -53.4   7.5   2.1   4.5    30  0.0%   9   0    1
+
+setup      test                           period              WR  WR>0    %/mo  drop  worst tr/mo  days   d$w  dmax  >30d  ts  ml open
+90% mode   normal                         2021-23           93.8  93.8  +13.17   -64  -50.3  11.3   0.5   0.5     4  0.0%  25   0    0
+90% mode   normal                         2024-26           92.6  92.6   +6.89   -35  -27.3   4.4   0.7   0.7     4  0.0%  11   0    0
+90% mode   normal                         since 2025        93.2  93.2   +5.80   -23  -11.8   3.4   0.7   0.7     4  0.0%   5   0    0
+90% mode   normal                         2018-20 holdout   92.2  92.5  +10.82   -66  -37.3  10.0   0.5   0.5     6  0.0%  28   0    0
+90% mode   fills 0.2% worse               2021-23           93.4  93.4   +9.79   -66  -50.5  11.0   0.6   0.6     4  0.0%  26   0    0
+90% mode   fills 0.2% worse               2024-26           92.1  92.1   +5.31   -38  -27.6   4.2   0.7   0.7     4  0.0%  11   0    0
+90% mode   fills 0.2% worse               since 2025        92.6  92.6   +4.56   -23  -12.2   3.1   0.8   0.8     4  0.0%   5   0    0
+90% mode   fills 0.2% worse               2018-20 holdout   92.0  92.0   +7.41   -70  -37.5   9.7   0.6   0.6     6  0.0%  28   0    0
+90% mode   bot timing + fills 0.2% worse  2021-23           94.2  94.2  +11.20   -67  -45.9  11.5   0.5   0.5     4  0.0%  24   0    0
+90% mode   bot timing + fills 0.2% worse  2024-26           91.7  91.7   +5.49   -30  -19.1   4.3   0.7   0.7     4  0.0%  12   0    0
+90% mode   bot timing + fills 0.2% worse  since 2025        92.6  92.6   +4.44   -23  -12.2   3.1   0.8   0.8     4  0.0%   5   0    0
+90% mode   bot timing + fills 0.2% worse  2018-20 holdout   91.7  91.7   +6.31   -70  -37.5   9.7   0.6   0.6     6  0.0%  29   0    0
+90% mode   +LUNA/FTT/SRM                  2021-23           93.7  93.7  +15.66   -64  -50.3  11.8   0.5   0.5     4  0.0%  27   0    0
+90% mode   +LUNA/FTT/SRM                  2024-26           92.6  92.6   +6.89   -35  -27.3   4.4   0.7   0.7     4  0.0%  11   0    0
+90% mode   +LUNA/FTT/SRM                  since 2025        93.2  93.2   +5.80   -23  -11.8   3.4   0.7   0.7     4  0.0%   5   0    0
+90% mode   +LUNA/FTT/SRM                  2018-20 holdout   92.4  92.7  +11.59   -66  -37.3  10.3   0.5   0.5     6  0.0%  28   0    0
