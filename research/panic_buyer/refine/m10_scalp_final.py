@@ -22,6 +22,7 @@ pd.set_option("display.width", 250)
 
 def frontier():
     d = pd.concat([pd.read_csv(p) for p in sorted(glob.glob(os.path.join(S.OUT, "explore_conc*.csv")))], ignore_index=True)
+    d = d.drop_duplicates(["W", "depth", "tp", "hmm", "N", "fmax", "guard"])
     print(f"######## 2021-23 frontier over {len(d)} concentrated designs (crash guard 35%, 19 coins)")
     cols = ["W", "depth", "tp", "hmm", "N", "fmax", "win", "pm", "dd", "dd_min", "worst_trade", "tpm", "avg"]
     for wr in (0.90, 0.93, 0.95, 0.97, 0.98, 0.99):
