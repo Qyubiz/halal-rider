@@ -43,7 +43,7 @@ The real bot code was replayed with both settings and matches the backtest (90% 
 period). With fills 0.2% worse, 2024-2026 is about +6% (90% mode) and +7% (10% mode) a month.
 
 The cost is risk. Both modes were 61-66% down at their worst point (the DOGE spike of January 2021, the March
-2020 crash): RM6,000 -> about RM2,100-2,350. One trade lost about half the account (DOGE, Jan 2021); since 2024
+2020 crash): RM6,000 -> about RM2,000-2,350. One trade lost about half the account (DOGE, Jan 2021); since 2024
 the worst single trade lost 22-27%. Without the crash guard, one LUNA-type collapse would have wiped out the
 whole account. Use only money you can afford to lose; not with borrowed money.
 
