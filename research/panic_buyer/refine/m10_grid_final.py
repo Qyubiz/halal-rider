@@ -5,10 +5,8 @@ Rule (m10_grid_search.py): round-trip win rate >= 90% and max drawdown >= -35% i
 The 2021-26 run is one continuous simulation from 1 Jan 2021; the holdout is a separate run from 1 Jan 2018 to
 1 Jan 2021 (coins enter when listed; a sleeve stays in cash until its coin lists). Writes $PB_OUT/final.txt.
 """
-import ast
 import os
 
-import numpy as np
 import pandas as pd
 
 import m10_grid_lib as G
@@ -36,7 +34,7 @@ def main():
     say = lambda x="": (print(x), out.append(x))
     d, n_all, n_ok, top = pick()
     say(f"{n_all} distinct designs searched on 2021-23; {n_ok} pass the rule. Pick: {G.dname(d)}")
-    say("Next four on 2021-23: " + " | ".join(f"{x.name[:60]} {x.mo*100:+.1f}%/mo DD {x.dd*100:.0f}%"
+    say("Next four on 2021-23: " + " | ".join(f"{x['name'][:60]} {x.mo*100:+.1f}%/mo DD {x.dd*100:.0f}%"
                                                for _, x in top.iloc[1:].iterrows()))
     idx, P = G.market()
     coins = CSETS[d["cset"]]

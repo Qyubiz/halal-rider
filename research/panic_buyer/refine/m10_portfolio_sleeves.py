@@ -50,7 +50,10 @@ for sleeve, V, w in (("MOM", MOMV, [0, 1, 0, 0]), ("TREND", TRV, [0, 0, 1, 0])):
     ok = [r for r in rows if r["mult"] > 1]
     pk = max(ok, key=lambda r: r["calmar"]) if ok else None
     picks[sleeve] = pk["name"] if pk else None
-    print(f"  PICK ({sleeve}, 2021-23 CAGR/|DD|): {picks[sleeve]}")
+    print(f"  PICK ({sleeve}, 2021-23 CAGR/|DD|): {picks[sleeve] or 'none made money in 2021-23'}")
+    if pk is None:                       # keep the least-bad one (best CAGR/|DD|) for the weight grid, flagged
+        picks[sleeve] = max(rows, key=lambda r: r["calmar"])["name"]
+        print(f"  -> {picks[sleeve]} goes to the weight grid as the least-bad {sleeve} variant (it may get 0%)")
 
 print("\n==== picks on every period (all money in the sleeve), normal fills / fills 0.2% worse")
 for label, w, kw in (("90% mode alone", [1, 0, 0, 0], {}),

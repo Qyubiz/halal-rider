@@ -27,8 +27,11 @@ GRIDS = {
 }
 
 
-def main(name):
-    g = GRIDS[name]
+def main(name, Ws=None):
+    g = dict(GRIDS[name])
+    if Ws:                                   # optional split of the grid by window (for two processes)
+        g["W"] = [int(x) for x in Ws.split(",")]
+        name = f"{name}_W{Ws.replace(',', '-')}"
     A, hidx, Ph, SLIP = S.load(19)
     i1 = hidx.searchsorted(S.T24)
     guard = g.get("guard", 0.0)
@@ -49,4 +52,4 @@ def main(name):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else "pilot")
+    main(sys.argv[1] if len(sys.argv) > 1 else "pilot", sys.argv[2] if len(sys.argv) > 2 else None)
