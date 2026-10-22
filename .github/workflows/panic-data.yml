@@ -29,9 +29,14 @@ jobs:
       - name: Download anything missing
         working-directory: research/panic_buyer/refine
         run: bash fetch_all.sh | tail -5
+      - name: Download 2017-12 to 2020 hourly candles (untouched holdout)
+        working-directory: research/panic_buyer/refine
+        run: |
+          python3 fetch_vision.py 1h 2017-12-01 BTCUSDT,ETHUSDT,XRPUSDT,BNBUSDT,ADAUSDT,TRXUSDT,LTCUSDT,LINKUSDT,DOGEUSDT,HBARUSDT,FETUSDT,BCHUSDT,BCHABCUSDT,DOTUSDT,AVAXUSDT,NEARUSDT,SOLUSDT,LUNAUSDT,FTTUSDT,SRMUSDT "$PB_DATA/1h_pre"
       - name: Package
         run: |
           mkdir -p /home/runner/pkg
+          tar -C "$PB_DATA" -czf /home/runner/pkg/pb_1h_pre.tgz 1h_pre
           python3 research/panic_buyer/refine/export_npz.py "$PB_DATA/1m" /home/runner/pkg/1m
           tar -C "$PB_DATA" -czf /home/runner/pkg/pb_1h.tgz 1h univ
           tar -C /home/runner/pkg -cf /home/runner/pkg/pb_1m.tar 1m
@@ -41,5 +46,5 @@ jobs:
           gh release delete pb-data-v1 --yes --cleanup-tag || true
           gh release create pb-data-v1 --prerelease --target "$GITHUB_SHA" \
             --title "Panic Buyer research data (Binance spot candles)" \
-            --notes "Public Binance spot candles (data.binance.vision), 2021-01-01 to 2026-10-22, used by research/panic_buyer/refine. pb_1h.tgz: hourly CSVs (19 coins, RNDR, LUNA/FTT/SRM, 322 screened coins). pb_1m.tar: 1-minute OHLC as .npz. Research data only; safe to delete." \
-            /home/runner/pkg/pb_1h.tgz /home/runner/pkg/pb_1m.tar
+            --notes "Public Binance spot candles (data.binance.vision), 2021-01-01 to 2026-10-22, used by research/panic_buyer/refine. pb_1h.tgz: hourly CSVs (19 coins, RNDR, LUNA/FTT/SRM, 322 screened coins). pb_1m.tar: 1-minute OHLC as .npz. pb_1h_pre.tgz: hourly candles from Dec 2017 (holdout). Research data only; safe to delete." \
+            /home/runner/pkg/pb_1h.tgz /home/runner/pkg/pb_1m.tar /home/runner/pkg/pb_1h_pre.tgz
