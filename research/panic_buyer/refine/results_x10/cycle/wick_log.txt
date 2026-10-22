@@ -1,0 +1,5 @@
+  runs done: stressed=False C=5 (52s)
+  runs done: stressed=False C=15 (80s)
+  runs done: stressed=True C=5 (136s)
+  runs done: stressed=True C=15 (169s)
+saved 2562 combinations (212s)

@@ -27,6 +27,28 @@ is usually somewhat worse. Not financial advice.
 Biggest risk: a coin collapsing within 48 hours. In a stress test with LUNA added, one trade lost 100% of its
 order (about 13% of the bot's money). Keep the coin list to large, screened coins.
 
+## Optional: 10% mode (high risk, off by default)
+One coin at a time with all the bot's money: buy 14% under the 24h high, sell at +5%, sell after 48h, and
+skip any coin already more than 35% under its 7-day high (crash guard). Backtest per month (worst drop):
+
+| Period | Normal mode | 10% mode |
+|---|---|---|
+| 2018-2020 (never used to pick settings) | +2.3% (-45%) | +11.1% (-61%) |
+| 2021-2023 | +5.0% (-29%) | +15.0% (-61%) |
+| 2024 - Oct 2026 | +2.9% (-16%) | +8.1% (-30%) |
+| Jan 2025 - Oct 2026 | +2.0% (-15%) | +6.1% (-29%) |
+
+The cost is risk. At the worst point the account was 61% down (the DOGE spike of January 2021, the March 2020
+crash): RM6,000 -> about RM2,350. One trade lost 54% of the account (DOGE, Jan 2021); since 2024 the worst single
+trade lost 22% (HBAR, Apr 2024). Without the crash guard, one LUNA-type collapse
+would have wiped out the whole account. With fills 0.2% worse, 2024-2026 is about +7% a month. Use only money
+you can afford to lose; not with borrowed money.
+
+To switch it on (and back off by deleting the file):
+
+    sudo cp /opt/panic-buyer/app/panic_config.10pct.example.json /opt/panic-buyer/app/panic_config.json
+    sudo systemctl restart panic-buyer
+
 ## Install on the halal-rider server (Ubuntu)
     curl -sL https://raw.githubusercontent.com/Qyubiz/halal-rider/main/deploy/panic-install.sh | sudo bash
     sudo panic-buyer-setup

@@ -1,0 +1,64 @@
+ROUND 1 PICKS (2021-23 columns only):
+  A_lever_pick: T30Q watch N2x50% depth 12% tp +1.5% cd 24h hm 48h
+  B_safer_pick: none qualifies
+  C_control_19: U19 bid N1x100% depth 15% tp +3.0% cd 6h hm 48h
+  HINDSIGHT best 2024-26 of the grid: U19+T20Q watch N1x100% depth 12% tp +3.0% cd 12h hm 48h
+
+HINDSIGHT: best 2024-26 %/month per universe and mode (normal costs)
+  T20       bid    +4.18%/mo DD  -31% | 25-26 +1.85% | 21-23  +8.28% DD  -69%  (T20 bid N3x33% depth 12% tp +3.0% cd 12h hm 48h)
+  T20       watch  +5.61%/mo DD  -60% | 25-26 +1.31% | 21-23  -5.78% DD -100%  (T20 watch N1x100% depth 12% tp +3.0% cd 12h hm 48h)
+  T30       bid    +2.90%/mo DD  -32% | 25-26 +1.19% | 21-23  +5.79% DD  -58%  (T30 bid N5x20% depth 15% tp +1.5% cd 6h hm 48h)
+  T30       watch  +3.82%/mo DD  -46% | 25-26 +2.10% | 21-23 +10.24% DD  -54%  (T30 watch N3x33% depth 15% tp +1.5% cd 6h hm 48h)
+  T30Q      bid    +4.50%/mo DD  -40% | 25-26 +2.32% | 21-23  +7.39% DD  -82%  (T30Q bid N2x50% depth 12% tp +3.0% cd 24h hm 48h)
+  T30Q      watch  +6.45%/mo DD  -62% | 25-26 +3.10% | 21-23 +15.32% DD  -74%  (T30Q watch N1x100% depth 12% tp +1.5% cd 24h hm 48h)
+  T50       bid    +1.81%/mo DD  -34% | 25-26 +1.33% | 21-23  +8.23% DD  -60%  (T50 bid N5x20% depth 15% tp +5.0% cd 6h hm 48h)
+  T50       watch  +2.38%/mo DD  -39% | 25-26 -0.14% | 21-23  +8.05% DD  -48%  (T50 watch N5x20% depth 15% tp +1.5% cd 12h hm 48h)
+  T50Q      bid    +3.80%/mo DD  -41% | 25-26 +1.00% | 21-23  +4.54% DD  -87%  (T50Q bid N2x50% depth 12% tp +3.0% cd 24h hm 48h)
+  T50Q      watch  +6.87%/mo DD  -51% | 25-26 +4.61% | 21-23  +6.24% DD  -86%  (T50Q watch N2x50% depth 12% tp +3.0% cd 24h hm 48h)
+  U19       bid    +7.00%/mo DD  -49% | 25-26 +3.27% | 21-23 +17.72% DD  -61%  (U19 bid N1x100% depth 12% tp +3.0% cd 24h hm 48h)
+  U19       watch  +7.72%/mo DD  -49% | 25-26 +2.96% | 21-23 +18.89% DD  -57%  (U19 watch N1x100% depth 12% tp +3.0% cd 24h hm 48h)
+  U19+T20Q  bid    +5.35%/mo DD  -31% | 25-26 +3.79% | 21-23  -4.69% DD -100%  (U19+T20Q bid N1x100% depth 15% tp +1.5% cd 12h hm 48h)
+  U19+T20Q  watch  +7.76%/mo DD  -64% | 25-26 +1.66% | 21-23  -4.07% DD -100%  (U19+T20Q watch N1x100% depth 12% tp +3.0% cd 12h hm 48h)
+
+RULE-A PICK PER UNIVERSE (2021-23 rule applied within each universe; then its 2024-26)
+  T20       21-23  +7.40% DD  -48% -> 24-26  +3.71% DD  -24% | 25-26 +1.89%  (T20 watch N3x33% depth 15% tp +1.5% cd 24h hm 48h)
+  T30       21-23 +10.04% DD  -40% -> 24-26  +3.69% DD  -42% | 25-26 +1.19%  (T30 watch N3x33% depth 15% tp +1.5% cd 24h hm 48h)
+  T30Q      21-23 +18.59% DD  -48% -> 24-26  +5.81% DD  -34% | 25-26 +3.12%  (T30Q watch N2x50% depth 12% tp +1.5% cd 24h hm 48h)
+  T50       none qualifies
+  T50Q      21-23  +7.87% DD  -46% -> 24-26  +3.23% DD  -27% | 25-26 +1.24%  (T50Q watch N5x20% depth 15% tp +1.5% cd 24h hm 48h)
+  U19       21-23 +20.09% DD  -48% -> 24-26  +4.29% DD  -31% | 25-26 +2.28%  (U19 bid N1x100% depth 15% tp +3.0% cd 6h hm 48h)
+  U19+T20Q  21-23 +16.62% DD  -47% -> 24-26  +3.16% DD  -43% | 25-26 +0.35%  (U19+T20Q bid N2x50% depth 12% tp +1.5% cd 12h hm 48h)
+
+=== A_lever_pick: T30Q watch N2x50% depth 12% tp +1.5% cd 24h hm 48h
+  (1) 2024-01..2026-10      +5.81%/month  worst drop -33.8%  x6.71  trades 800  worst trade -14.2% of account  account P&L from coins outside the 19: +111 of +220 points (50%)
+  (2) since 2025-01-01      +3.12%/month  worst drop -33.8%  x1.95  trades 466  worst trade -14.2% of account  account P&L from coins outside the 19: +38 of +86 points (44%)
+  (3) 2021-23              +18.59%/month  worst drop -47.6%  x460.47  trades 1308  worst trade -26.5% of account  account P&L from coins outside the 19: +603 of +718 points (84%)
+  years: 2021 +4122% 2022 +313% 2023 +164% 2024 +252% 2025 +31% 2026 +49%
+  (4) fills 0.2% worse + FTT added + LUNA/FTT/SRM always eligible:
+      24-26:  +4.48%/month  worst drop -35.6%  x4.38  worst trade -14.2% of account  stuck positions 0
+      25-26:  +2.03%/month  worst drop -35.6%  x1.55  worst trade -14.2% of account  stuck positions 0
+      21-23: +10.13%/month  worst drop -74.4%  x32.2  worst trade -49.8% of account  stuck positions 0
+  watch mode, adversarial in-hour order + 0.3% extra slippage on watch fills: 24-26 +2.02%/mo DD  -50% | 25-26 -0.23%/mo DD  -50% | 21-23 +6.85%/mo DD  -80%
+  same settings on the 19 live coins only: 24-26 +4.98%/mo DD  -31% | 25-26 +2.12%/mo DD  -31% | 21-23 +11.43%/mo DD  -55%
+
+=== C_control_19: U19 bid N1x100% depth 15% tp +3.0% cd 6h hm 48h
+  (1) 2024-01..2026-10      +4.29%/month  worst drop -31.2%  x4.12  trades 114  worst trade -25.5% of account  account P&L from coins outside the 19: +0 of +158 points (0%)
+  (2) since 2025-01-01      +2.28%/month  worst drop -28.1%  x1.63  trades 53  worst trade -25.5% of account  account P&L from coins outside the 19: +0 of +57 points (0%)
+  (3) 2021-23              +20.09%/month  worst drop -48.5%  x723.95  trades 385  worst trade -45.0% of account  account P&L from coins outside the 19: +0 of +737 points (0%)
+  years: 2021 +19468% 2022 +57% 2023 +135% 2024 +153% 2025 +48% 2026 +10%
+  (4) fills 0.2% worse + FTT added + LUNA/FTT/SRM always eligible:
+      24-26:  +4.64%/month  worst drop -35.0%  x4.61  worst trade -22.0% of account  stuck positions 0
+      25-26:  +3.46%/month  worst drop -24.6%  x2.09  worst trade -14.8% of account  stuck positions 0
+      21-23:  -9.65%/month  worst drop -100.0%  x0.026  worst trade -100.0% of account  stuck positions 0
+
+=== H1_hindsight_best (HINDSIGHT): U19+T20Q watch N1x100% depth 12% tp +3.0% cd 12h hm 48h
+  (1) 2024-01..2026-10      +7.76%/month  worst drop -64.0%  x12.37  trades 363  worst trade -26.0% of account  account P&L from coins outside the 19: +118 of +310 points (38%)
+  (2) since 2025-01-01      +1.66%/month  worst drop -64.0%  x1.43  trades 206  worst trade -26.0% of account  account P&L from coins outside the 19: +6 of +74 points (8%)
+  (3) 2021-23               -4.07%/month  worst drop -100.0%  x0.22  trades 688  worst trade -100.0% of account  account P&L from coins outside the 19: +328 of +732 points (45%)
+  years: 2021 +7446% 2022 -100% 2023 +463% 2024 +771% 2025 +0% 2026 +43%
+  (4) fills 0.2% worse + FTT added + LUNA/FTT/SRM always eligible:
+      24-26:  +0.08%/month  worst drop -78.6%  x1.03  worst trade -26.1% of account  stuck positions 0
+      25-26:  -3.36%/month  worst drop -78.6%  x0.477  worst trade -26.1% of account  stuck positions 0
+      21-23: -10.75%/month  worst drop -100.0%  x0.0167  worst trade -100.0% of account  stuck positions 0
+  watch mode, adversarial in-hour order + 0.3% extra slippage on watch fills: 24-26 -1.83%/mo DD  -82% | 25-26 -5.81%/mo DD  -82% | 21-23 -7.18%/mo DD -100%
+  same settings on the 19 live coins only: 24-26 +6.75%/mo DD  -51% | 25-26 +2.56%/mo DD  -51% | 21-23 +16.05%/mo DD  -72%

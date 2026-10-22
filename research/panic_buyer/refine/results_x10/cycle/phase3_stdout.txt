@@ -1,0 +1,25 @@
+RULE B2 PICK, 1-minute checks: check 1m, trigger 1h-high -10%, tp +1.5% [plain], stop 6h, cd 0h, 1 x 100%; guards: 72h block after a loss
+  (1) 2024-26   +2.49%/mo  x   2.29  drop -79.9%
+  (2) 2025-26   +1.97%/mo  x   1.53  drop -79.9%
+  (3) 2021-23  +15.47%/mo  x 176.91  drop -50.5%  2022 +38.8%
+      trades 783, worst trade -22.3% of account (2024-26: -19.6%), 2024-26 win 94% avg +0.80%
+  (4) fills 0.2% worse + LUNA/FTT/SRM: 2024-26  +1.97%/mo drop -79.9% | 2025-26  +1.69%/mo drop -79.9% | 2021-23 +13.58%/mo drop -53.9% 2022 -26.8% | worst trade -32.9% of account
+  extra: fills 0.2% worse on buys AND sells: 2024-26 +1.34%/mo drop -80.0% | 2025-26 +1.33%/mo | 2021-23 +9.09%/mo drop -50.9%
+  extra: both sides + LUNA/FTT/SRM: 2024-26 +1.34%/mo drop -80.0% | 2025-26 +1.33%/mo | 2021-23 +8.93%/mo drop -62.8%
+  years: 2021 +7689% 2022 +39% 2023 +64% 2024 +50% 2025 +42% 2026 +7%
+  stressed years: 2021 +8017% 2022 -27% 2023 +64% 2024 +34% 2025 +34% 2026 +7%
+  2024-26 months: up 47%, worst -8.5% (2024-04), best +24.9% (2024-11), median +0.0%
+
+RULE A2 PICK, 1-minute checks: check 1m, trigger 1h-high -6%, tp +1.5% [plain], stop 12h, cd 0h, 1 x 100%; guards: skip if >30% under 7d high
+  (1) 2024-26   +4.59%/mo  x   4.54  drop -80.8%
+  (2) 2025-26   +4.38%/mo  x   2.53  drop -80.8%
+  (3) 2021-23  +30.72%/mo  x15308.39  drop -63.8%  2022 +525.5%
+      trades 2272, worst trade -41.7% of account (2024-26: -28.3%), 2024-26 win 86% avg +0.37%
+  (4) fills 0.2% worse + LUNA/FTT/SRM: 2024-26  +1.81%/mo drop -62.6% | 2025-26  +1.57%/mo drop -36.5% | 2021-23 +11.91%/mo drop -92.3% 2022 -67.9% | worst trade -74.6% of account
+  extra: fills 0.2% worse on buys AND sells: 2024-26 -0.84%/mo drop -67.7% | 2025-26 -0.31%/mo | 2021-23 +7.34%/mo drop -88.8%
+  extra: both sides + LUNA/FTT/SRM: 2024-26 -0.84%/mo drop -67.7% | 2025-26 -0.31%/mo | 2021-23 +1.38%/mo drop -98.1%
+  years: 2021 +57952% 2022 +525% 2023 +322% 2024 +79% 2025 +100% 2026 +26%
+  stressed years: 2021 +7093% 2022 -68% 2023 +148% 2024 +30% 2025 +23% 2026 +14%
+  2024-26 months: up 68%, worst -29.7% (2024-04), best +70.3% (2024-11), median +3.4%
+
+peak 3.603432 GB

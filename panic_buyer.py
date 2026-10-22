@@ -15,6 +15,8 @@ profits reinvested, 30 of 34 months positive, worst month -6%, biggest drop -16%
   4. Not sold after 48 hours: sold at market. That coin is then skipped for 24 hours.
   5. The bot only touches orders and coins it bought itself (halal-rider's trades are safe).
   6. Profits are not reinvested unless COMPOUND=yes: they stay as USDT you can withdraw.
+  Optional high-risk "10% mode" (panic_config.10pct.example.json): one coin with all the money, 14% dip,
+  +5% take-profit, and a crash guard that skips coins already 35% under their 7-day high. See PANIC_BUYER.md.
 
 Commands
   python panic_buyer.py check    test keys, balances and coins, show the nearest triggers. No orders.
@@ -60,6 +62,7 @@ DEFAULT_CFG = {
     "max_hours": 48,
     "cooldown_hours": 24,
     "fee_pct": 0.1,           # used for the P&L numbers only
+    "crash_guard_pct": 0.0,   # skip a coin whose last close is this much under its 7-day high (0 = off)
 }
 
 
@@ -180,9 +183,12 @@ class PanicBuyer:
         for sym in self.cfg["symbols"]:
             if sym not in self.info or self.info[sym]["status"] != "TRADING" or sym not in prices:
                 continue
-            ks = [k for k in self.c.klines(sym, "1h", 30) if k["close_ms"] < t]
+            guard = self.cfg.get("crash_guard_pct", 0.0) / 100
+            ks = [k for k in self.c.klines(sym, "1h", 170 if guard else 30) if k["close_ms"] < t]
             if len(ks) < 24:
                 continue
+            if guard and ks[-1]["close"] < (1 - guard) * max(k["close"] for k in ks[-168:]):
+                continue                    # already crashing for days: not a short panic, stay away
             trigger = max(k["close"] for k in ks[-24:]) * (1 - self.cfg["depth_pct"] / 100)
             out.append((prices[sym] / trigger - 1, sym, trigger, prices[sym]))
         out.sort()

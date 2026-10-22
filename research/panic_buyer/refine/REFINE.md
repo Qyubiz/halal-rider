@@ -40,6 +40,30 @@ to expect from the live bot.
    it is sold when trading resumes. With LUNA/FTT/SRM added, 2024–26 is ×2.61 (RM15,653), not ×2.46 (the
    handoff's RM14,753); 2021–23 is ×5.22 with a −31% drop.
 
+### 10% mode (opt-in, `panic_config.10pct.example.json`)
+
+From the 10%-a-month hunt (`x10_*.py`, `results_x10/`: five levers, about 12,000 designs, a critic): one coin with
+all the money, 14% dip, +5% take-profit, 48h time stop, 24h cooldown, and a crash guard that skips a coin whose
+last close is more than 35% under its 7-day high. It was found with hindsight on 2024–26, then checked once on
+the untouched 2018–20 data:
+
+| Period | Live settings | 10% mode | 10% mode, bot timing + fills 0.2% worse |
+|---|---|---|---|
+| 2018–20 (holdout) | +2.3%/mo, drop −45% | **+11.1%/mo, −61%** | +10.2%, −62% |
+| 2021–23 | +5.0%, −29% | +15.0%, −61% | +14.4%, −64% |
+| 2024–26 | +2.9%, −16% | +8.1%, −30% | +7.2%, −29% |
+| Since Jan 2025 | +2.0%, −15% | +6.1%, −29% | +5.1%, −29% |
+
+- **The real code tracks the backtest.** `panic_buyer.py` with this config, replayed through the fake exchange on
+  the 16 coins with full data, made +9.6%/month in 2024–26 and +6.5% since 2025, against the engine's +9.9% and
+  +6.9% (`results_x10/replay_10pct_mode.log`).
+- **The crash guard is essential.** Without it, LUNA in May 2022 takes the account to zero.
+- **Worst single trades:** −54% of the account (DOGE, Jan 2021), −43% (RENDER, Nov 2022), −22% since 2024.
+- **Other levers:** 1-minute "velocity" designs reached +11.7% only in hindsight. They rest on single-minute
+  wick fills and the 10 Oct 2025 flash crash; with trimmed wicks they make about 8%. Their honest pick made
+  +6.3%/month.
+- **The crash guard is opt-in** (`crash_guard_pct`, default 0 = off). Default behaviour is unchanged.
+
 ### Can it make 5–10% a month? (high-return test, `results_highreturn/`, `hr_*.py`)
 
 Only by holding 1–3 coins with a third to all of the money each, and never safely.

@@ -86,6 +86,26 @@ class Placement(unittest.TestCase):
         self.assertGreaterEqual(float(tp["price"]), 85.0 * 1.015)
 
 
+    def test_crash_guard_skips_a_coin_crashing_for_days(self):
+        rows = flat(100.0, 30) + [(60.0, 60.5, 59.5, 60.0)] * 4          # 40% under its 7-day high
+        fake, bot = make({"AAAUSDT": series(rows)}, 31, crash_guard_pct=35.0)
+        bot.cycle()
+        self.assertEqual(bot.state["positions"], {})
+        self.assertEqual(bot.state["orders"], {})
+        fake, bot = make({"AAAUSDT": series(rows)}, 31)                   # guard off: bought at market
+        bot.cycle()
+        self.assertIn("AAAUSDT", bot.state["positions"])
+
+    def test_ten_pct_mode_puts_all_money_in_the_closest_coin(self):
+        fake, bot = make(ten_coins(), 26, n_orders=1, max_order_pct=100.0, depth_pct=14.0, take_profit_pct=5.0,
+                         crash_guard_pct=35.0)
+        bot.cycle()
+        self.assertEqual(list(bot.state["orders"]), ["JJJUSDT"])
+        o = bot.state["orders"]["JJJUSDT"]
+        self.assertAlmostEqual(o["limit"], 86.0, places=3)              # 100 * (1 - 14%)
+        self.assertGreater(o["qty"] * o["limit"], 970.0)                 # about all of the 1000 USDT
+
+
 class TradeLife(unittest.TestCase):
     def crash_then(self, after_rows):
         rows = flat(100.0, 26) + [(100.0, 100.2, 87.0, 88.5)] + after_rows

@@ -1,0 +1,41 @@
+######## synthetic minutes (check_engine.synthetic)
+  synthetic {}                                     trades   348 vs   348  log identical: True  max |eq diff| 1.67e-16 (rel 4.44e-16)  final x0.292697 vs x0.292697
+  synthetic {'N': 2, 'fmax': 0.5, 'tp': 0.03}      trades   353 vs   353  log identical: True  max |eq diff| 2.22e-16 (rel 3.33e-16)  final x0.196062 vs x0.196062
+  synthetic {'N': 1, 'fmax': 1.0, 'tp': 0.03, 'hm': 96} trades   156 vs   156  log identical: True  max |eq diff| 0.00e+00 (rel 0.00e+00)  final x0.098560 vs x0.098560
+  synthetic {'delay': 5}                           trades   348 vs   348  log identical: True  max |eq diff| 0.00e+00 (rel 0.00e+00)  final x0.288400 vs x0.288400
+  synthetic {'N': 2, 'fmax': 0.5, 'tp': 0.05, 'cd': 0} trades   454 vs   454  log identical: True  max |eq diff| 3.33e-16 (rel 8.88e-16)  final x0.412231 vs x0.412231
+  synthetic {'N': 3, 'fmax': 0.33, 'tp': 0.02, 'delay': 1, 'cd': 1} trades   585 vs   585  log identical: True  max |eq diff| 2.22e-16 (rel 4.44e-16)  final x0.123089 vs x0.123089
+
+######## real 1-minute panel, 19 live coins (float32 cache, memory-mapped)
+LUNAUSDT: no trading 2022-05-13 00:39:00 .. 2026-10-22 03:00:00 -> minutes 2022-05-13 00:40:00 .. 2026-10-22 02:59:00 blanked
+FTTUSDT: no trading 2022-11-15 04:29:00 .. 2023-09-22 08:00:00 -> minutes 2022-11-15 04:30:00 .. 2023-09-22 07:59:00 blanked
+FTTUSDT: no trading 2023-09-22 08:59:00 .. 2026-10-22 03:00:00 -> minutes 2023-09-22 09:00:00 .. 2026-10-22 02:59:00 blanked
+SRMUSDT: no trading 2022-11-28 02:59:00 .. 2026-10-22 03:00:00 -> minutes 2022-11-28 03:00:00 .. 2026-10-22 02:59:00 blanked
+cache built in 64s -> /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_x10/velocity/cache
+loaded (3052980, 22) in 64s, hours 2021-01-01 00:00:00 .. 2026-10-22 02:00:00
+  real {}                                          trades  2565 vs  2565  log identical: True  max |eq diff| 4.97e-14 (rel 4.44e-15)  final x14.984660 vs x14.984660
+                                                   mkernel 1.5s, vkernel 2.4s
+  real {'N': 2, 'fmax': 0.5, 'tp': 0.03}           trades  1505 vs  1505  log identical: True  max |eq diff| 2.16e-12 (rel 4.33e-15)  final x625.801209 vs x625.801209
+                                                   mkernel 0.1s, vkernel 0.2s
+  real {'N': 1, 'fmax': 1.0, 'tp': 0.03, 'hm': 96} trades   628 vs   628  log identical: True  max |eq diff| 0.00e+00 (rel 0.00e+00)  final x1220.795045 vs x1220.795045
+                                                   mkernel 0.1s, vkernel 0.2s
+  real {'delay': 5}                                trades  2610 vs  2610  log identical: True  max |eq diff| 6.66e-14 (rel 9.21e-15)  final x7.827232 vs x7.827232
+                                                   mkernel 0.1s, vkernel 0.3s
+  real {'N': 2, 'fmax': 0.5, 'tp': 0.05, 'cd': 0}  trades  1567 vs  1567  log identical: True  max |eq diff| 6.82e-13 (rel 1.33e-15)  final x787.586640 vs x787.586640
+                                                   mkernel 0.1s, vkernel 0.2s
+  real {'N': 3, 'fmax': 0.33, 'tp': 0.02, 'delay': 1, 'cd': 1} trades  3528 vs  3528  log identical: True  max |eq diff| 7.96e-13 (rel 4.22e-15)  final x212.629156 vs x212.629156
+                                                   mkernel 0.1s, vkernel 0.2s
+  engine.run (hourly candles from the same minutes), live settings: final x14.984660, engine.mrun delay 0: x14.984660, max rel diff 0.00e+00
+
+######## new switches: sanity (whole period, normal 0.02% slippage, 19 coins)
+  {'cyc': 1}                                                   final x   13.9274 trades   2632 exits {0.0: 2452, 1.0: 180} invested 3.5% of hours-equity
+  {'rearm': 1}                                                 final x   15.6028 trades   2570 exits {0.0: 2392, 1.0: 178} invested 3.8% of hours-equity
+  {'cdm': 0}                                                   final x   30.8810 trades   4847 exits {0.0: 4487, 1.0: 360} invested 6.0% of hours-equity
+  {'near': 0.02}                                               final x   10.4689 trades   2123 exits {0.0: 1956, 1.0: 167} invested 4.9% of hours-equity
+  {'xmode': 1, 'arm': 0.015, 'trail': 0.005, 'delay': 1}       final x    8.3080 trades   2587 exits {2.0: 2420, 1.0: 167} invested 3.5% of hours-equity
+  {'xmode': 1, 'arm': 0.015, 'trail': 0.0, 'cap': 0.05, 'delay': 1} final x   10.6047 trades   2598 exits {2.0: 2377, 1.0: 166, 0.0: 55} invested 3.4% of hours-equity
+  {'spen': 0.002}                                              final x    8.4717 trades   2565 exits {0.0: 2390, 1.0: 175} invested 3.7% of hours-equity
+  {'pen': 0.002, 'spen': 0.002}                                final x    5.3814 trades   2552 exits {0.0: 2352, 1.0: 200} invested 4.0% of hours-equity
+  live settings with the volume-rank slippage panel: final x14.9498; share of coin-hours at 0.1%: 12.1% (19 coins), 74.1% (LUNA/FTT/SRM)
+VELOCITY KERNEL CHECK PASSED
+max RSS GB 4.222772
