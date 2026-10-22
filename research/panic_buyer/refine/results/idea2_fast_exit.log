@@ -1,19 +1,17 @@
 
 ######## idea 2: faster exits (1-minute candles)
-Traceback (most recent call last):
-  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/idea2_fast_exit.py", line 33, in <module>
-    A, hidx, Ph = mkt()
-                  ^^^^^
-  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/idea2_fast_exit.py", line 17, in mkt
-    idx, A, hidx, Ph = E.minute_panel(E.H19 + (list(E.DEAD) if dead else []), cuts=E.DEAD if dead else None)
-                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/engine.py", line 259, in minute_panel
-    d = pd.read_pickle(os.path.join(DATA, sub, f"{s}.pkl"))
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pandas/io/pickle.py", line 220, in read_pickle
-    with get_handle(
-         ^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pandas/io/common.py", line 939, in get_handle
-    handle = open(handle, ioargs.mode)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/pb_data/1m/BTCUSDT.pkl'
+live, hourly archive candles                   21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+live, candles built from 1m (BASE)             21-23 x 5.74 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+tp 1.00% placed 1 min after the fill           21-23 x 2.37 DD  -25% 2022  +13% | 24-26 x 1.58 DD  -19% worst-mo  -6% up-mo  79%  sold within the buy hour: 1571
+tp 1.25% placed 1 min after the fill           21-23 x 3.03 DD  -25% 2022  +21% | 24-26 x 1.74 DD  -21% worst-mo  -6% up-mo  82%  sold within the buy hour: 1367
+tp 1.50% placed 1 min after the fill           21-23 x 3.52 DD  -27% 2022  +20% | 24-26 x 1.91 DD  -21% worst-mo  -6% up-mo  85%  sold within the buy hour: 1209
+tp 2.00% placed 1 min after the fill           21-23 x 4.14 DD  -34% 2022  +13% | 24-26 x 2.38 DD  -21% worst-mo  -5% up-mo  85%  sold within the buy hour: 904
+tp 1.00% placed 5 min after the fill           21-23 x 2.59 DD  -31% 2022  +18% | 24-26 x 1.87 DD  -19% worst-mo  -5% up-mo  88%  sold within the buy hour: 1491
+tp 1.25% placed 5 min after the fill           21-23 x 3.19 DD  -30% 2022  +24% | 24-26 x 2.00 DD  -21% worst-mo  -6% up-mo  85%  sold within the buy hour: 1309
+tp 1.50% placed 5 min after the fill           21-23 x 3.82 DD  -30% 2022  +21% | 24-26 x 2.05 DD  -21% worst-mo  -9% up-mo  85%  sold within the buy hour: 1169
+tp 2.00% placed 5 min after the fill           21-23 x 4.40 DD  -36% 2022  +12% | 24-26 x 2.39 DD  -22% worst-mo -10% up-mo  85%  sold within the buy hour: 870
+tp 1.00% placed 15 min after the fill          21-23 x 3.70 DD  -30% 2022  +23% | 24-26 x 2.08 DD  -21% worst-mo  -6% up-mo  88%  sold within the buy hour: 1260
+tp 1.25% placed 15 min after the fill          21-23 x 4.25 DD  -29% 2022  +28% | 24-26 x 2.16 DD  -21% worst-mo  -5% up-mo  88%  sold within the buy hour: 1125
+tp 1.50% placed 15 min after the fill          21-23 x 4.72 DD  -31% 2022  +22% | 24-26 x 2.18 DD  -21% worst-mo  -9% up-mo  85%  sold within the buy hour: 1007
+tp 2.00% placed 15 min after the fill          21-23 x 5.25 DD  -37% 2022  +13% | 24-26 x 2.46 DD  -22% worst-mo -10% up-mo  85%  sold within the buy hour: 774
+PICK (2021-23 only): none beats the live settings in 2021-23 -> idea rejected

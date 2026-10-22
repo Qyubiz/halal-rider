@@ -1,15 +1,23 @@
 
 ######## idea 8: statistical rigor (19 coins)
-Traceback (most recent call last):
-  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/idea8_stats.py", line 144, in <module>
-    R, Rd = grid_daily()
-            ^^^^^^^^^^^^
-  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/idea8_stats.py", line 26, in grid_daily
-    syms, idx, P = S.market()
-                   ^^^^^^^^^^
-  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/study.py", line 23, in market
-    _cache[dead] = E.panel(E.load_h19(dead=dead))
-                           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/engine.py", line 47, in load_h19
-    raise FileNotFoundError(f"{DATA}/{sub}/{s}.csv missing: run fetch_all.sh")
-FileNotFoundError: /home/runner/pb_data/1h/BTCUSDT.csv missing: run fetch_all.sh
+live settings                                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+grid: 960 settings | positive in 2024-26: 91% | of the 90 that pass the 2021-23 rule: 100% positive, median 2024-26 CAGR +38%
+original rule on the 19 coins picks: depth 12% N=8 cap 20% tp 5.0% 96h -> 24-26 x3.20 DD -25%
+
+anchored walk-forward (each year chosen on earlier years only):
+  2022: chose depth 15% N=2 cap 50% tp 5.0% 96h -> +0%  (live settings +19%)
+  2023: chose depth 15% N=1 cap 33% tp 5.0% 96h -> +63%  (live settings +33%)
+  2024: chose depth 15% N=1 cap 33% tp 5.0% 96h -> +92%  (live settings +71%)
+  2025: chose depth 15% N=1 cap 33% tp 5.0% 96h -> +58%  (live settings +28%)
+  2026: chose depth 15% N=1 cap 33% tp 5.0% 96h -> +12%  (live settings +19%)
+  2022-26 chained: walk-forward x5.51 DD -48% | live settings x4.14 DD -19%
+
+block bootstrap of monthly returns (3-month blocks), next 12 months:
+  from 2024-26 months        median +38%  5th pct +19%  95th +75%  P(loss) 0.0%  P(drop >20%) 99.4%
+  from all 2021-26 months    median +47%  5th pct +14%  95th +185%  P(loss) 0.2%  P(drop >20%) 100.0%
+  from 2022-23 months only   median +25%  5th pct +4%  95th +56%  P(loss) 2.1%  P(drop >20%) 99.4%
+deflated Sharpe full 2021-26, 960 trials: Sharpe 2.41/yr, DSR 0.901 (skew -1.5, kurtosis 67)
+deflated Sharpe full 2021-26, 1960 trials: Sharpe 2.41/yr, DSR 0.859 (skew -1.5, kurtosis 67)
+deflated Sharpe 2024-26 only, 960 trials: Sharpe 2.37/yr, DSR 0.343 (skew 0.4, kurtosis 50)
+deflated Sharpe 2024-26 only, 1960 trials: Sharpe 2.37/yr, DSR 0.256 (skew 0.4, kurtosis 50)
+PBO (CSCV, 16 blocks, 12870 splits): 13% | in-sample best daily Sharpe 0.152 -> out of sample 0.104; out-of-sample Sharpe <= 0 in 0% of splits

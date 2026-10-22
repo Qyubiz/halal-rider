@@ -1,18 +1,45 @@
 
 ######## idea 3: adaptive trigger depth
-Traceback (most recent call last):
-  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/idea3_depth.py", line 39, in <module>
-    R, v = S.study("idea 3: adaptive trigger depth", V, "idea3_depth")
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/study.py", line 38, in study
-    base, base_e, _ = evaluate({})
-                      ^^^^^^^^^^^^
-  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/study.py", line 28, in evaluate
-    syms, idx, P = market(dead)
-                   ^^^^^^^^^^^^
-  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/study.py", line 23, in market
-    _cache[dead] = E.panel(E.load_h19(dead=dead))
-                           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/halal-rider/halal-rider/research/panic_buyer/refine/engine.py", line 47, in load_h19
-    raise FileNotFoundError(f"{DATA}/{sub}/{s}.csv missing: run fetch_all.sh")
-FileNotFoundError: /home/runner/pb_data/1h/BTCUSDT.csv missing: run fetch_all.sh
+LIVE SETTINGS                                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+vol k=2.0 W=7d                                 21-23 x 2.52 DD  -24% 2022   +2% | 24-26 x 1.46 DD  -25% worst-mo -13% up-mo  74%
+vol k=2.5 W=7d                                 21-23 x 2.50 DD  -22% 2022   -2% | 24-26 x 1.43 DD  -25% worst-mo -12% up-mo  82%
+vol k=3.0 W=7d                                 21-23 x 2.42 DD  -13% 2022   +5% | 24-26 x 1.34 DD  -19% worst-mo -11% up-mo  74%
+vol k=3.5 W=7d                                 21-23 x 2.65 DD   -8% 2022  +21% | 24-26 x 1.36 DD  -13% worst-mo  -6% up-mo  68%
+vol k=4.0 W=7d                                 21-23 x 2.83 DD   -7% 2022  +25% | 24-26 x 1.46 DD   -9% worst-mo  -2% up-mo  62%
+vol k=5.0 W=7d                                 21-23 x 2.79 DD   -5% 2022  +19% | 24-26 x 1.34 DD   -6% worst-mo  +0% up-mo  47%
+vol k=2.0 W=30d                                21-23 x 2.71 DD  -24% 2022   -6% | 24-26 x 2.10 DD  -19% worst-mo  -9% up-mo  74%
+vol k=2.5 W=30d                                21-23 x 2.56 DD  -26% 2022   -9% | 24-26 x 1.70 DD  -19% worst-mo  -7% up-mo  82%
+vol k=3.0 W=30d                                21-23 x 2.72 DD  -17% 2022  +11% | 24-26 x 1.54 DD  -14% worst-mo  -5% up-mo  82%
+vol k=3.5 W=30d                                21-23 x 2.71 DD  -20% 2022   +6% | 24-26 x 1.46 DD  -12% worst-mo  -4% up-mo  68%
+vol k=4.0 W=30d                                21-23 x 3.02 DD  -15% 2022  +18% | 24-26 x 1.48 DD   -8% worst-mo  -0% up-mo  65%
+vol k=5.0 W=30d                                21-23 x 3.16 DD   -7% 2022  +20% | 24-26 x 1.39 DD   -6% worst-mo  -1% up-mo  50%
+vol k=2.0 W=90d                                21-23 x 4.36 DD  -29% 2022  -12% | 24-26 x 2.61 DD  -20% worst-mo -10% up-mo  85%
+vol k=2.5 W=90d                                21-23 x 4.27 DD  -18% 2022   +6% | 24-26 x 1.84 DD  -17% worst-mo  -9% up-mo  85%
+vol k=3.0 W=90d                                21-23 x 3.54 DD  -19% 2022  +15% | 24-26 x 1.86 DD  -15% worst-mo  -4% up-mo  82%
+vol k=3.5 W=90d                                21-23 x 3.47 DD  -15% 2022   +8% | 24-26 x 1.56 DD  -12% worst-mo  -0% up-mo  74%
+vol k=4.0 W=90d                                21-23 x 3.52 DD  -15% 2022  +12% | 24-26 x 1.35 DD  -10% worst-mo  -2% up-mo  59%
+vol k=5.0 W=90d                                21-23 x 3.72 DD   -7% 2022  +16% | 24-26 x 1.38 DD   -6% worst-mo  -1% up-mo  50%
+pctl q=0.5% W=30d                              21-23 x 2.44 DD  -29% 2022  -15% | 24-26 x 1.94 DD  -18% worst-mo  -6% up-mo  82%
+pctl q=1.0% W=30d                              21-23 x 2.75 DD  -30% 2022  -17% | 24-26 x 1.99 DD  -22% worst-mo  -9% up-mo  76%
+pctl q=2.0% W=30d                              21-23 x 2.87 DD  -32% 2022  -18% | 24-26 x 2.21 DD  -19% worst-mo  -8% up-mo  74%
+pctl q=5.0% W=30d                              21-23 x 4.71 DD  -29% 2022  -13% | 24-26 x 2.39 DD  -23% worst-mo  -8% up-mo  74%
+pctl q=0.5% W=90d                              21-23 x 4.12 DD  -22% 2022   +8% | 24-26 x 2.05 DD  -16% worst-mo  -7% up-mo  85%
+pctl q=1.0% W=90d                              21-23 x 4.35 DD  -20% 2022   +6% | 24-26 x 2.16 DD  -17% worst-mo  -7% up-mo  82%
+pctl q=2.0% W=90d                              21-23 x 4.08 DD  -24% 2022   -7% | 24-26 x 2.53 DD  -20% worst-mo  -9% up-mo  79%
+pctl q=5.0% W=90d                              21-23 x 4.29 DD  -27% 2022   +4% | 24-26 x 2.03 DD  -27% worst-mo -14% up-mo  74%
+pctl q=0.5% W=180d                             21-23 x 3.75 DD  -21% 2022   +0% | 24-26 x 1.94 DD  -18% worst-mo  -8% up-mo  74%
+pctl q=1.0% W=180d                             21-23 x 4.57 DD  -20% 2022  +16% | 24-26 x 2.31 DD  -17% worst-mo  -6% up-mo  88%
+pctl q=2.0% W=180d                             21-23 x 4.29 DD  -30% 2022  -10% | 24-26 x 2.56 DD  -23% worst-mo -11% up-mo  85%
+pctl q=5.0% W=180d                             21-23 x 4.85 DD  -32% 2022  +19% | 24-26 x 2.01 DD  -27% worst-mo -18% up-mo  71%
+floor12 k=2.5 W=7d                             21-23 x 3.02 DD  -16% 2022  +11% | 24-26 x 1.87 DD  -15% worst-mo  -5% up-mo  85%
+floor12 k=3.0 W=7d                             21-23 x 2.48 DD  -15% 2022   +8% | 24-26 x 1.53 DD  -13% worst-mo  -4% up-mo  76%
+floor12 k=3.5 W=7d                             21-23 x 2.71 DD   -8% 2022  +25% | 24-26 x 1.55 DD   -8% worst-mo  -1% up-mo  71%
+floor12 k=4.0 W=7d                             21-23 x 2.84 DD   -5% 2022  +25% | 24-26 x 1.47 DD   -6% worst-mo  -0% up-mo  59%
+floor12 k=5.0 W=7d                             21-23 x 2.78 DD   -5% 2022  +19% | 24-26 x 1.36 DD   -6% worst-mo  +0% up-mo  44%
+floor12 k=2.5 W=30d                            21-23 x 3.40 DD  -17% 2022  +13% | 24-26 x 1.99 DD  -15% worst-mo  -3% up-mo  82%
+floor12 k=3.0 W=30d                            21-23 x 2.95 DD  -16% 2022  +14% | 24-26 x 1.72 DD  -14% worst-mo  -2% up-mo  71%
+floor12 k=3.5 W=30d                            21-23 x 2.95 DD  -18% 2022  +11% | 24-26 x 1.58 DD  -11% worst-mo  -2% up-mo  68%
+floor12 k=4.0 W=30d                            21-23 x 3.15 DD  -14% 2022  +21% | 24-26 x 1.51 DD   -8% worst-mo  +0% up-mo  62%
+floor12 k=5.0 W=30d                            21-23 x 3.21 DD   -6% 2022  +20% | 24-26 x 1.40 DD   -6% worst-mo  -1% up-mo  47%
+40 variants | beat live in 2021-23: 0 | in 2024-26: 0 | in both: 0
+PICK (2021-23 only): none of the variants beats the live settings in 2021-23 -> idea rejected
