@@ -1,0 +1,30 @@
+
+######## a. +LUNA/FTT/SRM in the 2021-23 data: 192 settings
+  limit -50%: 5 qualify; pick d0.12 N2 f0.50 tp2.0% hm48 cd12 (its 21-23 here: x82.60 DD -48.6% 2022 +19%) -> 24-26 normal data: +4.91%/mo DD -28%; with bot timing +5.24%/mo DD -28%  MISSES 5%; top-10 reaching 5%: 0/5, median 4.17%/mo
+  limit -45%: 3 qualify; pick d0.12 N3 f0.50 tp2.0% hm48 cd12 (its 21-23 here: x25.01 DD -44.0% 2022 +0%) -> 24-26 normal data: +4.49%/mo DD -25%; with bot timing +4.57%/mo DD -25%  MISSES 5%; top-10 reaching 5%: 0/3, median 3.87%/mo
+  limit -40%: nothing qualifies
+
+######## b. real-bot timing in 2021-23 (mtp_now, cd+1): 192 settings
+  limit -50%: 56 qualify; pick d0.12 N2 f0.50 tp2.0% hm96 cd12 (its 21-23 here: x97.79 DD -47.8% 2022 +29%) -> 24-26 normal data: +4.47%/mo DD -32%; with bot timing +5.02%/mo DD -28%  MISSES 5%; top-10 reaching 5%: 4/10, median 4.92%/mo
+  limit -45%: 37 qualify; pick d0.12 N3 f0.50 tp3.0% hm48 cd12 (its 21-23 here: x44.87 DD -43.0% 2022 +60%) -> 24-26 normal data: +5.47%/mo DD -29%; with bot timing +5.83%/mo DD -29%  >=5%; top-10 reaching 5%: 3/10, median 4.47%/mo
+  limit -40%: 6 qualify; pick d0.15 N2 f0.50 tp3.0% hm48 cd12 (its 21-23 here: x32.36 DD -39.5% 2022 +22%) -> 24-26 normal data: +4.28%/mo DD -23%; with bot timing +4.94%/mo DD -23%  MISSES 5%; top-10 reaching 5%: 0/6, median 3.36%/mo
+
+######## c. fills 0.2% worse in 2021-23: 192 settings
+  limit -50%: 32 qualify; pick d0.15 N1 f1.00 tp5.0% hm48 cd12 (its 21-23 here: x304.90 DD -49.3% 2022 +107%) -> 24-26 normal data: +5.57%/mo DD -34%; with bot timing +5.88%/mo DD -32%  >=5%; top-10 reaching 5%: 4/10, median 4.96%/mo
+  limit -45%: 17 qualify; pick d0.12 N2 f0.50 tp1.5% hm48 cd12 (its 21-23 here: x27.14 DD -44.7% 2022 +7%) -> 24-26 normal data: +4.00%/mo DD -28%; with bot timing +4.41%/mo DD -28%  MISSES 5%; top-10 reaching 5%: 0/10, median 4.00%/mo
+  limit -40%: 6 qualify; pick d0.15 N3 f0.50 tp3.0% hm48 cd12 (its 21-23 here: x11.56 DD -38.8% 2022 +22%) -> 24-26 normal data: +3.73%/mo DD -22%; with bot timing +4.19%/mo DD -22%  MISSES 5%; top-10 reaching 5%: 0/6, median 3.70%/mo
+
+######## d. all three in 2021-23: 192 settings
+  limit -50%: 1 qualify; pick d0.12 N2 f0.50 tp1.5% hm96 cd24 (its 21-23 here: x24.87 DD -48.2% 2022 +10%) -> 24-26 normal data: +4.17%/mo DD -27%; with bot timing +4.61%/mo DD -27%  MISSES 5%; top-10 reaching 5%: 0/1, median 4.17%/mo
+  limit -45%: nothing qualifies
+  limit -40%: nothing qualifies
+
+######## e. broader universe (pick grid + 960 grid), normal data: 1056 settings
+  limit -50%: 304 qualify; pick d0.12 N2 f1.00 tp5.0% hm48 cd24 (its 21-23 here: x89.88 DD -49.6% 2022 +46%) -> 24-26 normal data: +5.53%/mo DD -29%; with bot timing +5.38%/mo DD -29%  >=5%; top-10 reaching 5%: 5/10, median 5.25%/mo
+  limit -45%: 251 qualify; pick d0.12 N2 f0.50 tp1.5% hm48 cd12 (its 21-23 here: x79.12 DD -43.5% 2022 +50%) -> 24-26 normal data: +4.00%/mo DD -28%; with bot timing +4.41%/mo DD -28%  MISSES 5%; top-10 reaching 5%: 2/10, median 4.94%/mo
+  limit -40%: 158 qualify; pick d0.12 N3 f1.00 tp2.0% hm48 cd24 (its 21-23 here: x24.25 DD -39.1% 2022 +15%) -> 24-26 normal data: +4.36%/mo DD -26%; with bot timing +4.76%/mo DD -26%  MISSES 5%; top-10 reaching 5%: 0/10, median 4.18%/mo
+
+######## f. broader universe, +LUNA/FTT/SRM and real-bot timing in 2021-23: 1056 settings
+  limit -50%: 66 qualify; pick d0.12 N2 f0.50 tp2.0% hm48 cd12 (its 21-23 here: x72.62 DD -48.2% 2022 +43%) -> 24-26 normal data: +4.91%/mo DD -28%; with bot timing +5.24%/mo DD -28%  MISSES 5%; top-10 reaching 5%: 1/10, median 4.36%/mo
+  limit -45%: 47 qualify; pick d0.10 N5 f1.00 tp5.0% hm48 cd24 (its 21-23 here: x28.00 DD -44.2% 2022 +18%) -> 24-26 normal data: +2.98%/mo DD -34%; with bot timing +2.87%/mo DD -34%  MISSES 5%; top-10 reaching 5%: 0/10, median 4.09%/mo
+  limit -40%: 25 qualify; pick d0.12 N8 f1.00 tp3.0% hm96 cd24 (its 21-23 here: x14.44 DD -36.8% 2022 +11%) -> 24-26 normal data: +3.65%/mo DD -24%; with bot timing +3.71%/mo DD -24%  MISSES 5%; top-10 reaching 5%: 0/10, median 3.53%/mo

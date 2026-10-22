@@ -40,6 +40,32 @@ to expect from the live bot.
    it is sold when trading resumes. With LUNA/FTT/SRM added, 2024–26 is ×2.61 (RM15,653), not ×2.46 (the
    handoff's RM14,753); 2021–23 is ×5.22 with a −31% drop.
 
+### Can it make 5–10% a month? (high-return test, `results_highreturn/`, `hr_*.py`)
+
+Only by holding 1–3 coins with a third to all of the money each, and never safely.
+
+| Setting (12% dip, 48h, 24h cooldown) | 2018–20 holdout | 2021–23 | 2024–26 | Since Jan 2025 |
+|---|---|---|---|---|
+| Live: 8 coins × ≤20%, +1.5% | +2.3%/mo, drop −45% | +5.0%/mo, −29% | +2.9%/mo, −16% | +2.0%/mo, −16% |
+| 3 coins × 33%, +3% | +5.0%/mo, −49% | +9.9%/mo, −44% | +5.4%/mo, −30% | |
+| 2 coins × 50%, +5% (honest pick) | +5.4%/mo, −53% | +13.3%/mo, −50% | +5.5%/mo, −29% | +2.7%/mo, −29% |
+| 2 coins × 50%, +3% | +6.5%/mo, −55% | +12.9%/mo, −50% | +6.3%/mo, −30% | |
+| 1 coin × 100%, +3% | +9.3%/mo, −64% | +17.8%/mo, −61% | +7.0%/mo, −49% | |
+
+- **10% a month:** not reached in 2024–26 by any of 1,056 settings, even with hindsight (best +7.0%).
+- **Where 5% comes from:** mostly 2024 (+10.9%/month for the pick). Since Jan 2025 the pick made +2.7%/month, against
+  +2.0% for live.
+- **Real conditions:** strict 1-minute fills and the real bot's timing bring the 2-coin pick to +4.1–4.9%/month in
+  2024–26. The unmodified bot code, replayed with these settings, made +4.4–4.9%.
+- **Collapse coins:** add LUNA/FTT/SRM and all-in on one coin loses 99–100% in May 2022. The 2-coin pick's
+  2021–23 drop goes to −62%. The 19 coins are survivors, and the bot has no delisting/halt guard.
+- **Over 12 months:** with 2 coins × 50%, there is a 40–60% chance of a drop over 30% within a year. With all-in on
+  one coin, a 17–48% chance of losing over half.
+- **Adversarial check:** refuted the pick as a sound 5%/month choice. Its −50% filter sits just past its own −49.6%
+  drop, the result leans on 2024 and on single coins (RENDER, DOGE), and it falls below 5% with the real code.
+
+Not recommended for credit-card money. The live bot is unchanged.
+
 ### Rounds 2–3: every idea and its verdict
 
 Each idea: a grid of at most 8 variants written before running, chosen on 2021–23, checked on 2024–26, then
