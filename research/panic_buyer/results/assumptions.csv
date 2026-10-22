@@ -1,0 +1,15 @@
+item,assumption
+strategy,Panic Buyer as running live: hourly; buy 12% under the 24h highest hourly close on the 8 closest coins; max 20% per order; all orders fully funded; sell +1.5% or after 48h; 24h cooldown
+data,Binance spot hourly candles 2021-01-01 to 2026-10-21; delisted coins included until they stopped trading (holdings at delisting stay at the last price)
+costs per trade,0.1% fee each side; market orders extra 0.02% (top-50 liquidity) or 0.1% (other coins)
+fills,limit buy only if the price traded 0.1% through it; no take-profit in the same hour as the buy
+coin screen,"approximation of the user's screener methodology v1, not its database verdicts: see coins_used.csv / coins_excluded.csv"
+liquidity filter,median daily trading volume at least US$1.0M
+money,results in % are the same for any capital; RM values = capital x %; the bot trades USDT
+reinvest,profits stay in the bot and compound
+withdraw,"each month-end, everything above the starting capital is withdrawn; after a losing month nothing is withdrawn until it is back to the starting capital"
+warning,"backtest, not a promise: live results are usually somewhat worse; losses on borrowed money are still owed"
+capital,"taken from the credit card: you owe the capital + a one-time 0.75% fee, no monthly interest"
+monthly costs,Claude Pro RM82 + Lightsail server RM20 (US$5 at ~4.08)
+card repayment,profit left after the monthly costs repays the card; shortfalls in weak months are paid from your own pocket
+your_net_result_rm,money still in the bot + free cash received - card still owed - own pocket paid
