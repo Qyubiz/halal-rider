@@ -260,11 +260,19 @@ def mkernel(o1, h1, l1, c1, ref, depth, nord, fmax, tpa, hm, cd, eps, fee, slip,
 def minute_panel(syms, start="2021-01-01", sub="1m", cuts=None):
     """Aligned 1-minute arrays (hour-aligned, missing minutes flat at the last close) + hourly candles built
     from them. cuts: {symbol: last hour kept} for the collapse coins."""
+    def read1m(s):
+        p = os.path.join(DATA, sub, f"{s}.npz")
+        if os.path.exists(p):                      # shared format: plain arrays, no pickle
+            z = np.load(p, allow_pickle=False)
+            return pd.DataFrame({f: z[f] for f in ("o", "h", "l", "c")}, index=pd.to_datetime(z["t"], unit="s"))
+        p = os.path.join(DATA, sub, f"{s}.pkl")
+        return pd.read_pickle(p) if os.path.exists(p) else None
+
     D = {}
     for s in syms:
-        d = pd.read_pickle(os.path.join(DATA, sub, f"{s}.pkl"))
-        if s == "RENDERUSDT" and os.path.exists(os.path.join(DATA, sub, "RNDRUSDT.pkl")):
-            r = pd.read_pickle(os.path.join(DATA, sub, "RNDRUSDT.pkl"))
+        d = read1m(s)
+        if s == "RENDERUSDT" and read1m("RNDRUSDT") is not None:
+            r = read1m("RNDRUSDT")
             d = pd.concat([r, d])
             d = d[~d.index.duplicated(keep="last")].sort_index()
         D[s] = d[d.index >= start]
