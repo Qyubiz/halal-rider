@@ -60,7 +60,7 @@ def main():
         for fills, pen in (("normal", 0.0), ("fills 0.2% worse", 0.002)):
             runs = {}
             for pk, (syms, idx, P) in panels.items():
-                sm = np.ones((len(idx), len(syms))) if keep is None else M.to_panel(keep, idx_b, syms_b, idx, syms, 1.0)
+                sm = np.ones((len(idx), len(syms))) if keep is None else np.array(M.to_panel(keep, idx_b, syms_b, idx, syms, 1.0))
                 if pk == "pre":
                     sm[idx < M.WF_START] = 0.0          # no trading before the first model exists (all rows)
                 runs[pk] = W.wrun(P, idx, smult=sm, pen=pen, pens=pen, **M.F2) + (idx,)
