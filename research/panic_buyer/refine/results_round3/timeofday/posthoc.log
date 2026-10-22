@@ -1,0 +1,36 @@
+1. live trades, inside vs outside each window, by year of the order (avg return, time-stop share, n)
+  UTC 00-07:
+    2021: in +0.60% TS  8.8% n 319 / out +1.49% TS  4.0%
+    2022: in -0.06% TS 10.5% n 172 / out +0.69% TS  6.9%
+    2023: in +0.57% TS 12.3% n  57 / out +1.52% TS  4.3%
+    2024: in +1.39% TS  3.1% n 127 / out +1.17% TS  7.5%
+    2025: in +0.82% TS 12.4% n 153 / out +0.86% TS  9.0%
+    2026: in +1.52% TS  3.9% n  51 / out +1.16% TS  3.9%
+  UTC 03-06:
+    2021: in +0.14% TS 11.5% n 130 / out +1.36% TS  4.6%
+    2022: in -0.22% TS 11.7% n  94 / out +0.58% TS  7.3%
+    2023: in -1.60% TS 31.8% n  22 / out +1.60% TS  3.4%
+    2024: in +1.20% TS  2.3% n  44 / out +1.25% TS  6.6%
+    2025: in +0.93% TS 14.5% n  62 / out +0.82% TS  9.6%
+    2026: in +1.70% TS  4.8% n  21 / out +1.23% TS  3.7%
+  Sat-Sun all day:
+    2021: in +0.86% TS  8.0% n 212 / out +1.30% TS  4.9%
+    2022: in +0.46% TS  4.7% n  85 / out +0.42% TS  8.9%
+    2023: in -0.04% TS 18.2% n  33 / out +1.50% TS  4.3%
+    2024: in +1.71% TS  0.0% n  50 / out +1.17% TS  7.0%
+    2025: in +0.96% TS  6.1% n  66 / out +0.81% TS 11.4%
+    2026: in +1.70% TS  2.9% n  35 / out +1.15% TS  4.3%
+  Sat-Sun 00-07:
+    2021: in -0.92% TS 16.9% n  71 / out +1.37% TS  4.7%
+    2022: in +0.04% TS  7.5% n  40 / out +0.46% TS  8.2%
+    2023: in -0.96% TS 26.1% n  23 / out +1.53% TS  4.0%
+    2024: in +1.98% TS  0.0% n  17 / out +1.21% TS  6.4%
+    2025: in +1.30% TS  0.0% n  13 / out +0.82% TS 10.8%
+    2026: in +2.30% TS  0.0% n  16 / out +1.16% TS  4.5%
+
+2. worst 2024-26 drop: peak, trough, depth, and the positions open at the trough hour
+  LIVE SETTINGS          peak 2024-04-02 14:00:00 trough 2024-04-13 20:00:00 (Sat) drop -16.3%  open at trough: 16 positions, 109% of equity at cost; their final returns: ETH bought 04-13 20h +1.3%, BNB bought 04-13 20h +1.3%, NEAR bought 04-13 19h +1.3%, RENDER bought 04-13 19h +1.3%, HBAR bought 04-13 19h +1.3%, XRP bought 04-13 20h +1.3%, AVAX bought 04-12 17h -15.0%, SUI bought 04-12 17h -14.8%, FET bought 04-12 17h -9.4%, SOL bought 04-12 18h -8.1%, DOGE bought 04-12 18h -12.7%, ADA bought 04-12 18h -12.2%, LINK bought 04-12 18h -12.9%, LTC bought 04-12 18h -10.3%, DOT bought 04-12 18h -10.8%, ARB bought 04-12 18h -7.8%
+  UTC 03-06 depth 14%    peak 2025-02-02 13:00:00 trough 2025-02-03 02:00:00 (Mon) drop -19.6%  open at trough: 10 positions, 117% of equity at cost; their final returns: TRX bought 02-03 01h +1.3%, BNB bought 02-03 01h +1.3%, SUI bought 02-02 16h +1.3%, HBAR bought 02-02 16h +1.3%, DOGE bought 02-02 16h +1.3%, FET bought 02-02 07h -16.5%, AVAX bought 02-02 16h -9.0%, NEAR bought 02-02 16h -11.3%, ARB bought 02-02 16h -12.7%, ADA bought 02-02 17h -7.9%
+    live over the same window: -15.4%
+  Sat-Sun 00-07 skip     peak 2025-01-27 15:00:00 trough 2025-02-03 02:00:00 (Mon) drop -20.6%  open at trough: 10 positions, 121% of equity at cost; their final returns: TRX bought 02-03 01h +1.3%, BNB bought 02-03 01h +1.3%, SUI bought 02-02 16h +1.3%, HBAR bought 02-02 16h +1.3%, DOGE bought 02-02 16h +1.3%, LINK bought 02-02 16h +1.3%, AVAX bought 02-02 16h -9.0%, NEAR bought 02-02 16h -11.3%, ARB bought 02-02 16h -12.7%, ADA bought 02-02 17h -7.9%
+    live over the same window: -15.5%

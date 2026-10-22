@@ -1,0 +1,51 @@
+empty window reproduces engine.run live (dead=False, pen=0.0): True
+empty window reproduces engine.run live (dead=True, pen=0.0): True
+empty window reproduces engine.run live (dead=False, pen=0.002): True
+
+######## r3 timeofday H1: Asian-morning hours (UTC 00-07 / 03-06) skip, deeper or smaller
+LIVE SETTINGS                                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+UTC 00-07 skip                                 21-23 x 4.97 DD  -35% 2022  +20% | 24-26 x 2.12 DD  -20% worst-mo  -3% up-mo  74%
+UTC 00-07 depth 14%                            21-23 x 5.85 DD  -31% 2022  +25% | 24-26 x 2.46 DD  -20% worst-mo  -6% up-mo  76%
+UTC 00-07 depth 16%                            21-23 x 5.42 DD  -32% 2022  +22% | 24-26 x 2.30 DD  -20% worst-mo  -6% up-mo  76%
+UTC 00-07 half size                            21-23 x 5.18 DD  -27% 2022  +23% | 24-26 x 2.27 DD  -16% worst-mo  -5% up-mo  85%
+UTC 03-06 skip                                 21-23 x 6.76 DD  -33% 2022  +30% | 24-26 x 2.49 DD  -20% worst-mo  -3% up-mo  85%
+UTC 03-06 depth 14%                            21-23 x 6.45 DD  -30% 2022  +28% | 24-26 x 2.57 DD  -20% worst-mo  -7% up-mo  85%
+UTC 03-06 depth 16%                            21-23 x 7.16 DD  -31% 2022  +33% | 24-26 x 2.49 DD  -20% worst-mo  -7% up-mo  85%
+UTC 03-06 half size                            21-23 x 6.00 DD  -29% 2022  +22% | 24-26 x 2.47 DD  -16% worst-mo  -5% up-mo  88%
+8 variants | beat live in 2021-23: 2 | in 2024-26: 0 | in both: 0
+PICK (2021-23 only): UTC 03-06 depth 14%
+  pick                                         21-23 x 6.45 DD  -30% 2022  +28% | 24-26 x 2.57 DD  -20% worst-mo  -7% up-mo  85%
+  2024-26 check: does NOT beat the live settings
+  live, +LUNA/FTT/SRM                          21-23 x 5.22 DD  -31% 2022   +1% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  pick, +LUNA/FTT/SRM                          21-23 x 5.25 DD  -33% 2022   +3% | 24-26 x 2.57 DD  -20% worst-mo  -7% up-mo  85%  FAILS
+  live, fills 0.2% worse                       21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+  pick, fills 0.2% worse                       21-23 x 4.33 DD  -30% 2022   +3% | 24-26 x 2.33 DD  -20% worst-mo  -7% up-mo  82%  FAILS
+  VERDICT: rejected, live bot unchanged
+
+######## r3 timeofday H2: weekends (Sat-Sun UTC, all day / 00-07) skip, deeper or smaller
+LIVE SETTINGS                                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+Sat-Sun 00-07 skip                             21-23 x 7.49 DD  -24% 2022  +24% | 24-26 x 2.40 DD  -21% worst-mo  -6% up-mo  88%
+Sat-Sun 00-07 depth 14%                        21-23 x 6.18 DD  -29% 2022  +25% | 24-26 x 2.52 DD  -21% worst-mo  -6% up-mo  88%
+Sat-Sun 00-07 depth 16%                        21-23 x 6.94 DD  -29% 2022  +27% | 24-26 x 2.46 DD  -21% worst-mo  -6% up-mo  88%
+Sat-Sun 00-07 half size                        21-23 x 6.05 DD  -27% 2022  +20% | 24-26 x 2.48 DD  -16% worst-mo  -6% up-mo  88%
+Sat-Sun all day skip                           21-23 x 4.82 DD  -26% 2022  +32% | 24-26 x 2.14 DD  -20% worst-mo  -7% up-mo  85%
+Sat-Sun all day depth 14%                      21-23 x 4.75 DD  -29% 2022  +21% | 24-26 x 2.40 DD  -18% worst-mo  -6% up-mo  88%
+Sat-Sun all day depth 16%                      21-23 x 4.42 DD  -29% 2022  +21% | 24-26 x 2.41 DD  -16% worst-mo  -6% up-mo  88%
+Sat-Sun all day half size                      21-23 x 5.04 DD  -26% 2022  +17% | 24-26 x 2.39 DD  -15% worst-mo  -6% up-mo  88%
+8 variants | beat live in 2021-23: 4 | in 2024-26: 0 | in both: 0
+PICK (2021-23 only): Sat-Sun 00-07 skip
+  pick                                         21-23 x 7.49 DD  -24% 2022  +24% | 24-26 x 2.40 DD  -21% worst-mo  -6% up-mo  88%
+  2024-26 check: does NOT beat the live settings
+  live, +LUNA/FTT/SRM                          21-23 x 5.22 DD  -31% 2022   +1% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  pick, +LUNA/FTT/SRM                          21-23 x 6.79 DD  -26% 2022   +5% | 24-26 x 2.40 DD  -21% worst-mo  -6% up-mo  88%  FAILS
+  live, fills 0.2% worse                       21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+  pick, fills 0.2% worse                       21-23 x 5.61 DD  -24% 2022   +8% | 24-26 x 2.17 DD  -21% worst-mo  -6% up-mo  85%  FAILS
+  VERDICT: rejected, live bot unchanged
+  anatomy LIVE SETTINGS 21-23: in window: 246 trades, avg -0.15%, TS 33, sum ret x size -0.48 | out window: 1435 trades, avg +1.18%, TS 75, sum ret x size +5.23
+  anatomy LIVE SETTINGS 24-26: in window: 127 trades, avg +1.15%, TS 11, sum ret x size +1.44 | out window: 757 trades, avg +1.08%, TS 56, sum ret x size +7.81
+  anatomy UTC 03-06 depth 14% 21-23: in window: 115 trades, avg -0.08%, TS 16, sum ret x size -0.21 | out window: 1532 trades, avg +1.12%, TS 86, sum ret x size +5.66
+  anatomy UTC 03-06 depth 14% 24-26: in window: 40 trades, avg +2.00%, TS 1, sum ret x size +1.25 | out window: 811 trades, avg +1.04%, TS 60, sum ret x size +8.90
+  anatomy LIVE SETTINGS 21-23: in window: 134 trades, avg -0.64%, TS 21, sum ret x size -0.43 | out window: 1547 trades, avg +1.12%, TS 87, sum ret x size +5.18
+  anatomy LIVE SETTINGS 24-26: in window: 46 trades, avg +1.90%, TS 0, sum ret x size +1.11 | out window: 838 trades, avg +1.04%, TS 67, sum ret x size +8.14
+  anatomy Sat-Sun 00-07 skip 21-23: in window: 0 trades, avg +nan%, TS 0, sum ret x size +0.00 | out window: 1661 trades, avg +1.15%, TS 90, sum ret x size +6.49
+  anatomy Sat-Sun 00-07 skip 24-26: in window: 0 trades, avg +nan%, TS 0, sum ret x size +0.00 | out window: 857 trades, avg +1.02%, TS 68, sum ret x size +10.46
