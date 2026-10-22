@@ -4,8 +4,10 @@ set -euo pipefail
 cd "$(dirname "$0")"
 OUT="${PB_OUT:-$HOME/pb_out}"; mkdir -p "$OUT"
 python3 check_engine.py | tee "$OUT/check_engine.log"
+fail=0
 for s in baseline idea3_depth idea4_stress idea6_exits idea2_fast_exit idea5_universe idea8_stats; do
   echo "== $s"
-  python3 "$s.py" 2>&1 | tee "$OUT/$s.log"
+  python3 "$s.py" 2>&1 | tee "$OUT/$s.log" || { echo "FAILED: $s" | tee -a "$OUT/failures.log"; fail=1; }
 done
 echo "verdicts: $OUT/verdicts.csv"
+exit $fail

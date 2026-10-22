@@ -5,7 +5,8 @@ Usage: python3 fetch_vision.py INTERVAL START SYM1,SYM2,... OUTDIR [--api-tail]
 Monthly zips up to last month, daily zips for the current month. Files from 2025 on store times in
 microseconds; both units are handled. --api-tail fills the hours the archive hasn't published yet from
 data-api.binance.vision. Output: OUTDIR/SYM.pkl (1m) or OUTDIR/SYM.csv (other intervals), columns
-o h l c v qv tb indexed by the candle open time (UTC), same as code/fetch_klines.py.
+o h l c v qv tb indexed by the candle open time (UTC), same as code/fetch_klines.py
+(1m: o h l c only, float32). SKIP_EXISTING=1 skips symbols already downloaded.
 """
 import io
 import json
@@ -31,7 +32,7 @@ def get(url, tries=6):
             with urllib.request.urlopen(url, timeout=60) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
-            if e.code == 404:
+            if e.code in (403, 404):
                 return None                         # month/day not in the archive (coin not listed then)
             last = e
         except Exception as e:  # noqa: BLE001
@@ -76,6 +77,9 @@ def api_tail(sym, interval, since_ms):
 
 
 def fetch(sym, interval, start, out, tail):
+    dest = os.path.join(out, f"{sym}.{'pkl' if interval == '1m' else 'csv'}")
+    if os.environ.get("SKIP_EXISTING") == "1" and os.path.exists(dest):
+        return f"{sym}: already downloaded"
     start = pd.Timestamp(start).to_period("M")
     today = pd.Timestamp.utcnow().tz_localize(None).normalize()
     this_month = today.to_period("M")
@@ -103,9 +107,9 @@ def fetch(sym, interval, start, out, tail):
             step = pd.Timedelta(interval.replace("m", "min"))
             df = df[df.index + step <= now]       # drop the candle still forming
     if interval == "1m":
-        df.to_pickle(os.path.join(out, f"{sym}.pkl"))
+        df[["o", "h", "l", "c"]].astype("float32").to_pickle(dest)     # ~50 MB per coin
     else:
-        df.to_csv(os.path.join(out, f"{sym}.csv"))
+        df.to_csv(dest)
     return f"{sym}: {len(df)} bars {df.index[0]:%Y-%m-%d %H:%M} -> {df.index[-1]:%Y-%m-%d %H:%M}"
 
 
