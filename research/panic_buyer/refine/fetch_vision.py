@@ -81,18 +81,18 @@ def fetch(sym, interval, start, out, tail):
     if os.environ.get("SKIP_EXISTING") == "1" and os.path.exists(dest):
         return f"{sym}: already downloaded"
     start = pd.Timestamp(start).to_period("M")
-    today = pd.Timestamp.utcnow().tz_localize(None).normalize()
+    today = pd.Timestamp.now("UTC").tz_localize(None).normalize()
     this_month = today.to_period("M")
     parts = []
     days_from = this_month.start_time
     for m in pd.period_range(start, this_month - 1, freq="M"):
-        b = get(f"{ROOT}/monthly/klines/{sym}/{interval}/{sym}-{interval}-{m:%Y-%m}.zip")
+        b = get(f"{ROOT}/monthly/klines/{sym}/{interval}/{sym}-{interval}-{m.strftime('%Y-%m')}.zip")
         if b:
             parts.append(read_zip(b))
         elif m == this_month - 1:
             days_from = m.start_time                # last month not archived yet: use its daily files
     for d in pd.date_range(days_from, today - pd.Timedelta(days=1), freq="D"):
-        b = get(f"{ROOT}/daily/klines/{sym}/{interval}/{sym}-{interval}-{d:%Y-%m-%d}.zip")
+        b = get(f"{ROOT}/daily/klines/{sym}/{interval}/{sym}-{interval}-{d.strftime('%Y-%m-%d')}.zip")
         if b:
             parts.append(read_zip(b))
     if not parts:
@@ -103,7 +103,7 @@ def fetch(sym, interval, start, out, tail):
         if more is not None:
             df = pd.concat([df, to_frame(more)])
             df = df[~df.index.duplicated()].sort_index()
-            now = pd.Timestamp.utcnow().tz_localize(None)
+            now = pd.Timestamp.now("UTC").tz_localize(None)
             step = pd.Timedelta(interval.replace("m", "min"))
             df = df[df.index + step <= now]       # drop the candle still forming
     if interval == "1m":
@@ -118,5 +118,10 @@ if __name__ == "__main__":
     tail = "--api-tail" in sys.argv[5:]
     os.makedirs(out, exist_ok=True)
     with ThreadPoolExecutor(int(os.environ.get("THREADS", "6"))) as ex:
-        for r in ex.map(lambda s: fetch(s, interval, start, out, tail), syms):
+        def safe(s):
+            try:
+                return fetch(s, interval, start, out, tail)
+            except Exception as e:  # noqa: BLE001 - one bad symbol must not stop the rest
+                return f"{s}: FAILED {e!r}"[:200]
+        for r in ex.map(safe, syms):
             print(r, flush=True)
