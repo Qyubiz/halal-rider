@@ -82,6 +82,9 @@ def fetch(sym, interval, start, out, tail):
         return f"{sym}: already downloaded"
     start = pd.Timestamp(start).to_period("M")
     today = pd.Timestamp.now("UTC").tz_localize(None).normalize()
+    if os.environ.get("FETCH_END"):                 # e.g. 2021-01: stop before that month (monthly files only)
+        today = pd.Timestamp(os.environ["FETCH_END"] + "-01")
+        tail = False
     this_month = today.to_period("M")
     parts = []
     days_from = this_month.start_time
@@ -91,7 +94,7 @@ def fetch(sym, interval, start, out, tail):
             parts.append(read_zip(b))
         elif m == this_month - 1:
             days_from = m.start_time                # last month not archived yet: use its daily files
-    for d in pd.date_range(days_from, today - pd.Timedelta(days=1), freq="D"):
+    for d in (pd.date_range(days_from, today - pd.Timedelta(days=1), freq="D") if not os.environ.get("FETCH_END") else []):
         b = get(f"{ROOT}/daily/klines/{sym}/{interval}/{sym}-{interval}-{d.strftime('%Y-%m-%d')}.zip")
         if b:
             parts.append(read_zip(b))
