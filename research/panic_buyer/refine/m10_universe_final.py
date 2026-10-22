@@ -49,6 +49,8 @@ def main():
     cands = [("PICK", pick), ("90% mode", dict(M.MODE90))]
     if pick.get("M", 0) > 0:
         cands.append(("PICK, 19 coins only", dict(pick, M=0)))
+    if pick.get("N", 1) > 1:
+        cands.append(("PICK with fmax = 1/N", dict(pick, fmax=1.0 / pick["N"])))
     for lab, d in cands:
         say("=" * 150)
         say(f"{lab}: {M.name(d)}")

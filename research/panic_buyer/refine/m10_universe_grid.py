@@ -3,7 +3,10 @@
 Core = 90% mode on the user's 19 coins: 14% under the 24h-high close, +2.5% take-profit, 96h time stop, 3h cooldown,
 crash guard 35% (skip coins > 35% under their 7-day high). Tier = monthly top M other screened coins.
 
-STAGE A (132 designs): max positions N in {1, 2, 3, 4} (slots, each 1/N of the money)
+STAGE A (132 designs): max positions N in {1, 2, 3, 4} (slots=True; fmax stays 90% mode's 1.0, so each new order =
+  free cash / free slots, x tier size for tier coins. NOTE added after the run: the plan said "each 1/N of the money";
+  the code ran fmax=1.0 for every design, i.e. free cash split over free slots. m10_universe_final.py shows the pick
+  with fmax=1/N too.)
   x tier {none} + M {20, 40, 60, 100} x rank {v30, v365} x tier depth {14, 18, 22, 26%}; tier size x1, tier tp 2.5%.
 STAGE B (<= 144 designs): the 3 best tier designs (M > 0) of stage A by the score below (qualifiers first)
   x liquidity floor lmin {0, 2M, 10M, 30M USDT/day (30-day average)} x age floor amin {0, 90, 365 days}
