@@ -54,6 +54,32 @@ To switch one on (and back off by deleting the file):
 
 (for 10% mode, copy `panic_config.10pct.example.json` instead)
 
+## Optional: combined mode with hard risk limits (`panic_config.ensemble.example.json`)
+Two sleeves in one bot: 30% of the money runs 90% mode, 70% runs 10% mode, each with its own trades. On top,
+hard limits checked every hour for the whole bot (`guardrails.py`):
+
+| Limit | Value | What happens |
+|---|---|---|
+| Daily drop | 15% under the day's high | sell everything, no buys until the next UTC day |
+| 30-day drop | 25% under the 30-day high | sell everything, no buys for 7 days |
+| Stop-loss | 25% under entry, at an hourly close | sell that coin (a gap can fill worse) |
+| Per-trade risk | 20% of the money | orders cut so that order x 25% stop <= 20% of the money |
+| Losing streak | 2 losses in a row | no buys for 72 hours |
+| Spread / slow API | spread > 0.5%, any request > 5 s | no buy that hour |
+| ATR spike | off (0) | set `atr_spike_mult` (e.g. 3) to skip coins after an extreme hour |
+
+Backtest (win rate / per month / worst drop):
+
+| | 2018-20 | 2021-23 | 2024-26 | since 2025 |
+|---|---|---|---|---|
+| Combined, no limits | 88% / +11.0% / -63% | 88% / +14.6% / -62% | 86% / +7.9% / -27% | 85% / +6.0% / -27% |
+| Combined, with limits | 87% / +8.1% / -51% | 85% / +11.7% / -46% | 80% / +4.3% / -43% | 78% / +2.9% / -33% |
+
+The limits cut the worst drops in long bear markets (2018-20, 2021-23) but cost about half the profit in
+2024-26 and make its worst drop deeper: they sell at the bottom of fast V-shaped crashes, which is where a
+dip-buyer earns its money. To keep the sleeves without the limits, delete the `"risk"` block (or set a value
+to 0 to switch off one limit). `panic-buyer status` shows the limits and any active lock.
+
 ## Install on the halal-rider server (Ubuntu)
     curl -sL https://raw.githubusercontent.com/Qyubiz/halal-rider/main/deploy/panic-install.sh | sudo bash
     sudo panic-buyer-setup
