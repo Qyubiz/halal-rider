@@ -1,0 +1,228 @@
+symbol,reason
+USDCUSDT,stablecoin/fiat/gold
+USD1USDT,stablecoin/fiat/gold
+RLUSDUSDT,stablecoin/fiat/gold
+FDUSDUSDT,stablecoin/fiat/gold
+XUSDUSDT,stablecoin/fiat/gold
+EURUSDT,stablecoin/fiat/gold
+EURIUSDT,stablecoin/fiat/gold
+TUSDUSDT,stablecoin/fiat/gold
+USDEUSDT,stablecoin/fiat/gold
+USDSUSDT,stablecoin/fiat/gold
+BFUSDUSDT,stablecoin/fiat/gold
+RWUSDUSDT,stablecoin/fiat/gold
+XAUTUSDT,stablecoin/fiat/gold
+PAXGUSDT,stablecoin/fiat/gold
+AEURUSDT,stablecoin/fiat/gold
+BUSDUSDT,stablecoin/fiat/gold
+DAIUSDT,stablecoin/fiat/gold
+USDPUSDT,stablecoin/fiat/gold
+SUSDUSDT,stablecoin/fiat/gold
+PAXUSDT,stablecoin/fiat/gold
+USTUSDT,stablecoin/fiat/gold
+USTCUSDT,stablecoin/fiat/gold
+GBPUSDT,stablecoin/fiat/gold
+AUDUSDT,stablecoin/fiat/gold
+BKRWUSDT,stablecoin/fiat/gold
+USDSBUSDT,stablecoin/fiat/gold
+USDSOLDUSDT,stablecoin/fiat/gold
+FRAXUSDT,stablecoin/fiat/gold
+KGSTUSDT,stablecoin/fiat/gold
+WBTCUSDT,wrapped/staked duplicate
+WBETHUSDT,wrapped/staked duplicate
+BETHUSDT,wrapped/staked duplicate
+BNSOLUSDT,wrapped/staked duplicate
+AAVEUSDT,lending/CDP/interest/yield
+COMPUSDT,lending/CDP/interest/yield
+MORPHOUSDT,lending/CDP/interest/yield
+JSTUSDT,lending/CDP/interest/yield
+SKYUSDT,lending/CDP/interest/yield
+MKRUSDT,lending/CDP/interest/yield
+XVSUSDT,lending/CDP/interest/yield
+QIUSDT,lending/CDP/interest/yield
+KMNOUSDT,lending/CDP/interest/yield
+EULUSDT,lending/CDP/interest/yield
+LQTYUSDT,lending/CDP/interest/yield
+SYRUPUSDT,lending/CDP/interest/yield
+LISTAUSDT,lending/CDP/interest/yield
+NEXOUSDT,lending/CDP/interest/yield
+CREAMUSDT,lending/CDP/interest/yield
+ALPACAUSDT,lending/CDP/interest/yield
+HARDUSDT,lending/CDP/interest/yield
+ANCUSDT,lending/CDP/interest/yield
+CVXUSDT,lending/CDP/interest/yield
+CRVUSDT,lending/CDP/interest/yield
+SUSHIUSDT,lending/CDP/interest/yield
+PENDLEUSDT,lending/CDP/interest/yield
+ENAUSDT,lending/CDP/interest/yield
+YFIUSDT,lending/CDP/interest/yield
+YFIIUSDT,lending/CDP/interest/yield
+RESOLVUSDT,lending/CDP/interest/yield
+USUALUSDT,lending/CDP/interest/yield
+SOLVUSDT,lending/CDP/interest/yield
+BBUSDT,lending/CDP/interest/yield
+BANKUSDT,lending/CDP/interest/yield
+SPKUSDT,lending/CDP/interest/yield
+KAVAUSDT,lending/CDP/interest/yield
+FFUSDT,lending/CDP/interest/yield
+TREEUSDT,lending/CDP/interest/yield
+HUMAUSDT,lending/CDP/interest/yield
+EDENUSDT,lending/CDP/interest/yield
+ONDOUSDT,lending/CDP/interest/yield
+CFGUSDT,lending/CDP/interest/yield
+PLUMEUSDT,lending/CDP/interest/yield
+MANTRAUSDT,lending/CDP/interest/yield
+OMUSDT,lending/CDP/interest/yield
+RSRUSDT,lending/CDP/interest/yield
+SPELLUSDT,lending/CDP/interest/yield
+BELUSDT,lending/CDP/interest/yield
+BETAUSDT,lending/CDP/interest/yield
+BZRXUSDT,lending/CDP/interest/yield
+CHESSUSDT,lending/CDP/interest/yield
+DFUSDT,lending/CDP/interest/yield
+FARMUSDT,lending/CDP/interest/yield
+AUTOUSDT,lending/CDP/interest/yield
+BADGERUSDT,lending/CDP/interest/yield
+BIFIUSDT,lending/CDP/interest/yield
+BONDUSDT,lending/CDP/interest/yield
+CVPUSDT,lending/CDP/interest/yield
+HIFIUSDT,lending/CDP/interest/yield
+KP3RUSDT,lending/CDP/interest/yield
+LENDUSDT,lending/CDP/interest/yield
+OOKIUSDT,lending/CDP/interest/yield
+RGTUSDT,lending/CDP/interest/yield
+TRUUSDT,lending/CDP/interest/yield
+UFTUSDT,lending/CDP/interest/yield
+UNFIUSDT,lending/CDP/interest/yield
+WINGUSDT,lending/CDP/interest/yield
+ALCXUSDT,lending/CDP/interest/yield
+AKROUSDT,lending/CDP/interest/yield
+ACAUSDT,lending/CDP/interest/yield
+FLMUSDT,lending/CDP/interest/yield
+FORTHUSDT,lending/CDP/interest/yield
+FXSUSDT,lending/CDP/interest/yield
+TRIBEUSDT,lending/CDP/interest/yield
+RDNTUSDT,lending/CDP/interest/yield
+VGXUSDT,lending/CDP/interest/yield
+LUNCUSDT,lending/CDP/interest/yield
+SUNUSDT,lending/CDP/interest/yield
+WLFIUSDT,lending/CDP/interest/yield
+DOLOUSDT,lending/CDP/interest/yield
+OSMOUSDT,lending/CDP/interest/yield
+LINAUSDT,lending/CDP/interest/yield
+MIRUSDT,lending/CDP/interest/yield
+BTSUSDT,lending/CDP/interest/yield
+JOEUSDT,lending/CDP/interest/yield
+BLURUSDT,lending/CDP/interest/yield
+KATUSDT,lending/CDP/interest/yield
+LUMIAUSDT,lending/CDP/interest/yield
+EPXUSDT,lending/CDP/interest/yield
+YBUSDT,lending/CDP/interest/yield
+RAMPUSDT,lending/CDP/interest/yield
+STOUSDT,lending/CDP/interest/yield
+LDOUSDT,liquid staking/restaking (NEEDS_REVIEW)
+RPLUSDT,liquid staking/restaking (NEEDS_REVIEW)
+JTOUSDT,liquid staking/restaking (NEEDS_REVIEW)
+ETHFIUSDT,liquid staking/restaking (NEEDS_REVIEW)
+EIGENUSDT,liquid staking/restaking (NEEDS_REVIEW)
+REZUSDT,liquid staking/restaking (NEEDS_REVIEW)
+SSVUSDT,liquid staking/restaking (NEEDS_REVIEW)
+KERNELUSDT,liquid staking/restaking (NEEDS_REVIEW)
+HAEDALUSDT,liquid staking/restaking (NEEDS_REVIEW)
+BABYUSDT,liquid staking/restaking (NEEDS_REVIEW)
+BARDUSDT,liquid staking/restaking (NEEDS_REVIEW)
+LAYERUSDT,liquid staking/restaking (NEEDS_REVIEW)
+FISUSDT,liquid staking/restaking (NEEDS_REVIEW)
+MITOUSDT,liquid staking/restaking (NEEDS_REVIEW)
+HYPEUSDT,perps/derivatives/synthetics/leverage
+ASTERUSDT,perps/derivatives/synthetics/leverage
+DYDXUSDT,perps/derivatives/synthetics/leverage
+GMXUSDT,perps/derivatives/synthetics/leverage
+SNXUSDT,perps/derivatives/synthetics/leverage
+PERPUSDT,perps/derivatives/synthetics/leverage
+GNSUSDT,perps/derivatives/synthetics/leverage
+AEVOUSDT,perps/derivatives/synthetics/leverage
+AVNTUSDT,perps/derivatives/synthetics/leverage
+FUSDT,perps/derivatives/synthetics/leverage
+INJUSDT,perps/derivatives/synthetics/leverage
+JUPUSDT,perps/derivatives/synthetics/leverage
+RAYUSDT,perps/derivatives/synthetics/leverage
+THEUSDT,perps/derivatives/synthetics/leverage
+QUICKUSDT,perps/derivatives/synthetics/leverage
+WOOUSDT,perps/derivatives/synthetics/leverage
+UMAUSDT,perps/derivatives/synthetics/leverage
+DEXEUSDT,perps/derivatives/synthetics/leverage
+LEVERUSDT,perps/derivatives/synthetics/leverage
+BNBBEARUSDT,perps/derivatives/synthetics/leverage
+BNBBULLUSDT,perps/derivatives/synthetics/leverage
+BEARUSDT,perps/derivatives/synthetics/leverage
+BULLUSDT,perps/derivatives/synthetics/leverage
+ETHBEARUSDT,perps/derivatives/synthetics/leverage
+ETHBULLUSDT,perps/derivatives/synthetics/leverage
+EOSBEARUSDT,perps/derivatives/synthetics/leverage
+EOSBULLUSDT,perps/derivatives/synthetics/leverage
+XRPBEARUSDT,perps/derivatives/synthetics/leverage
+XRPBULLUSDT,perps/derivatives/synthetics/leverage
+BTCSTUSDT,perps/derivatives/synthetics/leverage
+WINUSDT,gambling/prediction/lottery
+FUNUSDT,gambling/prediction/lottery
+CAKEUSDT,gambling/prediction/lottery
+REPUSDT,gambling/prediction/lottery
+BSWUSDT,gambling/prediction/lottery
+NMRUSDT,gambling/prediction/lottery
+BANANAUSDT,gambling/prediction/lottery
+PUMPUSDT,gambling/prediction/lottery
+FORMUSDT,gambling/prediction/lottery
+CHZUSDT,fan tokens / sports
+BARUSDT,fan tokens / sports
+PSGUSDT,fan tokens / sports
+ACMUSDT,fan tokens / sports
+CITYUSDT,fan tokens / sports
+ATMUSDT,fan tokens / sports
+JUVUSDT,fan tokens / sports
+LAZIOUSDT,fan tokens / sports
+PORTOUSDT,fan tokens / sports
+SANTOSUSDT,fan tokens / sports
+ALPINEUSDT,fan tokens / sports
+ASRUSDT,fan tokens / sports
+OGUSDT,fan tokens / sports
+PEPEUSDT,pure memecoins
+SHIBUSDT,pure memecoins
+BONKUSDT,pure memecoins
+FLOKIUSDT,pure memecoins
+WIFUSDT,pure memecoins
+BOMEUSDT,pure memecoins
+PENGUUSDT,pure memecoins
+TRUMPUSDT,pure memecoins
+MEMEUSDT,pure memecoins
+NEIROUSDT,pure memecoins
+TURBOUSDT,pure memecoins
+PNUTUSDT,pure memecoins
+1000CATUSDT,pure memecoins
+1000CHEEMSUSDT,pure memecoins
+1000SATSUSDT,pure memecoins
+1MBABYDOGEUSDT,pure memecoins
+DOGSUSDT,pure memecoins
+BROCCOLI714USDT,pure memecoins
+MUBARAKUSDT,pure memecoins
+牛来USDT,pure memecoins
+币安人生USDT,pure memecoins
+GIGGLEUSDT,pure memecoins
+HMSTRUSDT,pure memecoins
+NOTUSDT,pure memecoins
+CATIUSDT,pure memecoins
+BANANAS31USDT,pure memecoins
+PEOPLEUSDT,pure memecoins
+TSTUSDT,pure memecoins
+ACTUSDT,pure memecoins
+TUTUSDT,pure memecoins
+ORDIUSDT,pure memecoins
+ANIMEUSDT,pure memecoins
+AIXBTUSDT,pure memecoins
+VIRTUALUSDT,pure memecoins
+FTTUSDT,exchange tokens / sanctioned
+WRXUSDT,exchange tokens / sanctioned
+TKOUSDT,exchange tokens / sanctioned
+TORNUSDT,exchange tokens / sanctioned
+POLYXUSDT,RWA/securities (NEEDS_REVIEW)
+DUSKUSDT,RWA/securities (NEEDS_REVIEW)
