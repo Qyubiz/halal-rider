@@ -1,0 +1,16 @@
+engine.run dead=False pen=0.0                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+   trun()                           identical equity and trade log: True
+   trun(ref=ref_close 24h)          identical equity and trade log: True
+   trun(cdts=24)                    identical equity and trade log: True
+   trun(cdts=24, tsloss=-0.05)      identical equity and trade log: True
+engine.run dead=True pen=0.0                   21-23 x 5.29 DD  -31% 2022   +1% | 24-26 x 2.46 DD  -15% worst-mo  -6% up-mo  88%
+   trun()                           identical equity and trade log: True
+   trun(ref=ref_close 24h)          identical equity and trade log: True
+   trun(cdts=24)                    identical equity and trade log: True
+   trun(cdts=24, tsloss=-0.05)      identical equity and trade log: True
+engine.run dead=False pen=0.002                21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+   trun()                           identical equity and trade log: True
+   trun(ref=ref_close 24h)          identical equity and trade log: True
+   trun(cdts=24)                    identical equity and trade log: True
+   trun(cdts=24, tsloss=-0.05)      identical equity and trade log: True
+OK: the lens-trigger engine reproduces engine.run exactly with its switches off

@@ -1,0 +1,71 @@
+2021-23 live trades (entered and exited before 2024): 1681, time stops 108, sum ret*amt +4.75
+
+A. by the coin's previous trade and the hours since it was sold
+                                n  time-stop %  avg ret %  TS avg %  sum ret*amt
+prev              gap                                                           
+after take-profit 24-47h    548.0         5.47       0.94    -15.86         1.36
+                  48-95h    337.0         4.15       1.20    -13.39         1.12
+                  96-167h   237.0         5.91       1.26     -6.60         0.91
+                  168-335h  183.0         8.74       0.76    -11.40         0.43
+                  >=336h    250.0        12.00       0.52     -8.78         0.43
+after time stop   24-47h     33.0         3.03       0.83    -23.66         0.09
+                  48-95h     27.0         7.41       0.84     -9.11         0.04
+                  96-167h    14.0         0.00       1.72       NaN         0.09
+                  168-335h   13.0         0.00       1.39       NaN         0.07
+                  >=336h     20.0         5.00       1.48     -2.12         0.14
+
+   overall by previous outcome
+                        n  time-stop %  avg ret %  TS avg %  sum ret*amt
+prev                                                                    
+after take-profit  1555.0         6.69       0.96    -11.55         4.26
+after time stop     107.0         3.74       1.14    -11.00         0.43
+first                19.0         0.00       1.94       NaN         0.06
+
+   re-entries after a time stop, by that time stop's return
+                    n  time-stop %  avg ret %  TS avg %  sum ret*amt
+prev_loss                                                           
+prev TS <= -10%  52.0         3.85       0.97    -17.32         0.14
+-10..-5%         35.0         0.00       1.53       NaN         0.22
+-5..0%           20.0        10.00       0.89     -4.68         0.07
+   re-entries within  48h of a time stop:  33 trades, time-stop rate   3.0%, avg +0.83%, sum ret*amt +0.093
+   re-entries within  72h of a time stop:  53 trades, time-stop rate   3.8%, avg +0.87%, sum ret*amt +0.128
+   re-entries within  96h of a time stop:  60 trades, time-stop rate   5.0%, avg +0.84%, sum ret*amt +0.131
+   re-entries within 168h of a time stop:  74 trades, time-stop rate   4.1%, avg +1.00%, sum ret*amt +0.220
+   re-entries within 336h of a time stop:  87 trades, time-stop rate   3.4%, avg +1.06%, sum ret*amt +0.290
+   re-entries within  36h of a take-profit: 388 trades, time-stop rate   7.2%, avg +0.71%, sum ret*amt +0.491
+   re-entries within  48h of a take-profit: 548 trades, time-stop rate   5.5%, avg +0.94%, sum ret*amt +1.359
+   re-entries within  72h of a take-profit: 759 trades, time-stop rate   5.1%, avg +1.05%, sum ret*amt +2.216
+   re-entries within  96h of a take-profit: 885 trades, time-stop rate   5.0%, avg +1.04%, sum ret*amt +2.475
+
+B1. hours since the 24h highest close at entry
+            n  time-stop %  avg ret %  TS avg %  sum ret*amt
+age                                                         
+1-6h    152.0         4.61       2.30    -12.71         0.88
+7-12h   301.0         5.98       1.06    -10.69         1.05
+13-18h  470.0         9.15       0.51    -11.41         0.32
+19-24h  758.0         5.28       0.98    -11.84         2.50
+
+B2. 24h highest close vs 72h highest close at entry
+                              n  time-stop %  avg ret %  TS avg %  sum ret*amt
+pre72                                                                         
+<=-10%                    217.0         9.22       0.00    -18.10        -0.19
+-10..-5%                  350.0         5.71       0.99    -10.30         0.94
+-5..0%                    522.0         6.90       0.95     -9.54         1.67
+0 (24h high is 72h high)  592.0         5.41       1.36    -10.44         2.32
+
+B3. 24h highest high vs 24h highest close at entry (how much a high-based reference would lift the trigger)
+          n  time-stop %  avg ret %  TS avg %  sum ret*amt
+hc                                                        
+0-1%  816.0         7.11       0.91    -10.20         2.35
+1-2%  462.0         4.76       1.04    -12.58         1.42
+2-4%  279.0         6.09       0.85    -16.33         0.50
+>4%   124.0         8.87       1.51     -9.05         0.48
+
+C. single-coin bots (live rules, one coin all-in), 2021-23: totals over the 19 coins
+reference  trades  time-stop %  avg ret %  TS avg %  median coin multiple  coins up  mean log multiple
+close 12h    1180        5.254      1.453   -10.908                 1.901        19              0.851
+close 24h    1723        6.384      1.036   -11.335                 1.719        18              0.853
+close 36h    2133        7.970      0.836   -10.188                 1.914        19              0.836
+close 48h    2483        9.223      0.635    -9.968                 1.852        19              0.699
+close 72h    3020       11.291      0.401    -9.359                 1.429        16              0.468
+ high 24h    2147        7.499      0.791   -11.223                 1.942        16              0.777

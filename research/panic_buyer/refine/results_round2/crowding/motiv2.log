@@ -1,0 +1,35 @@
+2021-23 trades 1681; fill minute known for 1681; at the hour open 175
+
+C. per-hour cap: trades that filled after the F-th fill of their hour (same-minute ties allowed through)
+  F=2: skipped 329 trades (avg +1.08%, time stops  6.7%, sum ret*amt +0.896) | kept 1352 (avg +0.96%, time stops  6.4%) | next-hour market buy instead: 106 bought, sum +0.102, avg +0.39%
+  F=3: skipped 192 trades (avg +1.28%, time stops  7.3%, sum ret*amt +0.649) | kept 1489 (avg +0.94%, time stops  6.3%) | next-hour market buy instead: 58 bought, sum +0.075, avg +0.62%
+  F=4: skipped 105 trades (avg +1.64%, time stops  5.7%, sum ret*amt +0.426) | kept 1576 (avg +0.94%, time stops  6.5%) | next-hour market buy instead: 32 bought, sum +0.077, avg +0.91%
+  F=5: skipped  56 trades (avg +1.35%, time stops  8.9%, sum ret*amt +0.175) | kept 1625 (avg +0.97%, time stops  6.3%) | next-hour market buy instead: 18 bought, sum -0.028, avg -0.08%
+  F=6: skipped  30 trades (avg +1.82%, time stops  6.7%, sum ret*amt +0.173) | kept 1651 (avg +0.97%, time stops  6.4%) | next-hour market buy instead: 8 bought, sum +0.019, avg +0.81%
+
+fill rank inside hours with >= 5 fills (rank 1 = first):
+  rank 1-2: 186 trades avg -0.07% time stops 13.4% sum -0.257
+  rank 3-4: 118 trades avg +0.25% time stops 11.9% sum -0.016
+  rank 5-6:  75 trades avg +1.57% time stops  5.3% sum +0.253
+  rank 7-8:  30 trades avg +1.82% time stops  6.7% sum +0.173
+
+D. rolling cap: trades with >= F earlier fills in the trailing W hours (incl. earlier minutes of the hour)
+  W= 6h F=4: 502 trades avg +1.01% time stops  7.6% sum +0.868 | others avg +0.97%
+  W= 6h F=6: 302 trades avg +1.25% time stops  6.6% sum +0.781 | others avg +0.92%
+  W= 6h F=8: 159 trades avg +1.05% time stops  8.2% sum +0.334 | others avg +0.97%
+  W=12h F=4: 657 trades avg +0.83% time stops  7.3% sum +0.829 | others avg +1.08%
+  W=12h F=6: 442 trades avg +0.95% time stops  7.0% sum +0.803 | others avg +0.99%
+  W=12h F=8: 268 trades avg +1.07% time stops  7.8% sum +0.650 | others avg +0.96%
+  W=24h F=4: 830 trades avg +0.79% time stops  7.3% sum +1.124 | others avg +1.16%
+  W=24h F=6: 614 trades avg +0.97% time stops  7.0% sum +1.302 | others avg +0.99%
+  W=24h F=8: 423 trades avg +1.15% time stops  7.1% sum +1.269 | others avg +0.92%
+
+E. second leg at ref*(1-d2) as its own money (sold with the position at the ladder's exit; crude)
+  d2=16%: leg-2 filled 548 of 1681 | leg-2 avg +2.33% win 90% | of these the position hit the time stop 11% (leg-2 avg there -9.7%) | max leg-2 positions open at once 12, hours with >=3 open 621
+           same trades, live leg-1 result: avg -0.95%, time stops 20%
+  d2=18%: leg-2 filled 381 of 1681 | leg-2 avg +3.21% win 90% | of these the position hit the time stop 12% (leg-2 avg there -7.8%) | max leg-2 positions open at once 11, hours with >=3 open 411
+           same trades, live leg-1 result: avg -1.99%, time stops 27%
+  d2=20%: leg-2 filled 262 of 1681 | leg-2 avg +3.47% win 86% | of these the position hit the time stop 17% (leg-2 avg there -7.0%) | max leg-2 positions open at once 12, hours with >=3 open 348
+           same trades, live leg-1 result: avg -3.25%, time stops 33%
+  d2=24%: leg-2 filled 153 of 1681 | leg-2 avg +5.00% win 87% | of these the position hit the time stop 18% (leg-2 avg there -4.6%) | max leg-2 positions open at once 10, hours with >=3 open 175
+           same trades, live leg-1 result: avg -6.01%, time stops 50%

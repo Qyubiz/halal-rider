@@ -27,7 +27,9 @@ FEE, EPS, SLIP_MAJOR, SLIP_OTHER = 0.001, 0.001, 0.0002, 0.001
 H19 = ["BTCUSDT", "ETHUSDT", "SOLUSDT", "XRPUSDT", "BNBUSDT", "DOGEUSDT", "ADAUSDT", "TRXUSDT", "LINKUSDT",
        "AVAXUSDT", "SUIUSDT", "LTCUSDT", "BCHUSDT", "HBARUSDT", "DOTUSDT", "NEARUSDT", "ARBUSDT", "FETUSDT",
        "RENDERUSDT"]
-DEAD = {"LUNAUSDT": "2022-05-13 23:00", "FTTUSDT": "2023-09-22 07:00", "SRMUSDT": "2022-11-28 23:00"}
+# FTT trading was halted 2022-11-15 04:00 and resumed 2023-09-22 08:00 (at -32%): keep that first hour so coins
+# held through the halt are sold when trading resumes instead of staying frozen at the pre-halt price.
+DEAD = {"LUNAUSDT": "2022-05-13 23:00", "FTTUSDT": "2023-09-22 08:00", "SRMUSDT": "2022-11-28 23:00"}
 LIVE = dict(depth=0.12, N=8, fmax=0.20, tp=0.015, hm=48, cd=24)
 LOG_COLS = ["eb", "xb", "k", "why", "ret", "amt", "entry"]      # why: 0 take-profit, 1 time stop, 2 trail, 3 tp2
 
@@ -72,18 +74,20 @@ def panel(D, freq="1h"):
 # ------------------------------------------------------------------ hourly engine
 @njit(cache=True)
 def gkernel(o, h, l, c, ref, depth, nord, fmax, smult, tpa, part, tp2, trail, hm, cd, eps, fee, slip, pen,
-            tpwait=1, tprest=True):
+            tpwait=1, tprest=True, mtp_now=False):
     """Hourly bot with fully funded resting bids on the nord[t] coins closest to ref*(1-depth[t,k]).
     Order size: min(fmax[t]*equity, cash/nsel) * smult[t,k] (smult 0 = coin skipped this hour).
     Exit: sell `part` at entry*(1+tpa[entry hour,k]) (limit, not in the fill hour); the rest (if part<1)
     sells at entry*(1+tp2) (tp2>0) or on a `trail` drop from its high, checked at each close (trail>0);
     everything left sells at the close once held hm[t] hours. Cash from sales is usable the next hour.
     tpwait: the take-profit is placed at the tpwait-th hourly cycle after the fill (live bot: 1). tprest=False:
-    no resting order, the bot only sells at an hourly check when the price is already at the target."""
+    no resting order, the bot only sells at an hourly check when the price is already at the target.
+    mtp_now=True: what panic_buyer.py does after a MARKET buy (coin already under its trigger at the open): the
+    take-profit goes up at once, so it can fill in the buy hour, and the time stop counts from the hour's start."""
     n, K = c.shape
     units = np.zeros(K); entry = np.zeros(K); amt0 = np.zeros(K); got = np.zeros(K); tpp = np.zeros(K)
     stage = np.zeros(K, np.int64); sbar = np.zeros(K, np.int64); peak = np.zeros(K)
-    ebar = np.full(K, -1, np.int64); okbar = np.zeros(K, np.int64)
+    ebar = np.full(K, -1, np.int64); okbar = np.zeros(K, np.int64); mkt = np.zeros(K, np.int64)
     lastc = np.full(K, np.nan); dist = np.empty(K)
     cash = 1.0; eq = np.empty(n); eq_prev = 1.0
     maxlog = 600000; lg = np.zeros((maxlog, 7)); nl = 0
@@ -103,21 +107,25 @@ def gkernel(o, h, l, c, ref, depth, nord, fmax, smult, tpa, part, tp2, trail, hm
             for q in range(nsel):
                 k = order[q]
                 lim = ref[t, k] * (1.0 - depth[t, k])
-                fill = -1.0
+                fill = -1.0; ismkt = 0
                 if o[t, k] <= lim:
-                    fill = o[t, k] * (1.0 + slip[k]) * (1.0 + pen)
+                    fill = o[t, k] * (1.0 + slip[k]) * (1.0 + pen); ismkt = 1
                 elif l[t, k] <= lim * (1.0 - eps):
                     fill = lim * (1.0 + pen)
                 if fill > 0.0 and cash > 1e-9:
+                    mkt[k] = ismkt if mtp_now else 0
                     a = min(per * smult[t, k], cash)
                     cash -= a; units[k] = a * (1.0 - fee) / fill
                     entry[k] = fill; amt0[k] = a; ebar[k] = t; got[k] = 0.0
                     tpp[k] = fill * (1.0 + tpa[t, k]); stage[k] = 0; peak[k] = fill
         for k in range(K):
-            if units[k] > 0.0 and ebar[k] < t and not np.isnan(o[t, k]):
+            if units[k] > 0.0 and (ebar[k] < t or mkt[k] == 1) and not np.isnan(o[t, k]):
                 px = -1.0; why = 0.0
                 if stage[k] == 0:
-                    if t - ebar[k] < tpwait:
+                    if ebar[k] == t:                     # market buy, take-profit placed at once (mtp_now)
+                        if h[t, k] >= tpp[k] * (1.0 + eps):
+                            px = tpp[k]
+                    elif t - ebar[k] < tpwait:
                         pass
                     elif o[t, k] >= tpp[k]:
                         px = o[t, k]
@@ -141,7 +149,7 @@ def gkernel(o, h, l, c, ref, depth, nord, fmax, smult, tpa, part, tp2, trail, hm
                             peak[k] = h[t, k]
                         if c[t, k] <= peak[k] * (1.0 - trail):
                             px = c[t, k] * (1.0 - slip[k]); why = 2.0
-                if px < 0.0 and t - ebar[k] >= hm[t]:
+                if px < 0.0 and t - ebar[k] >= hm[t] - mkt[k]:
                     px = c[t, k] * (1.0 - slip[k]); why = 1.0
                 if px > 0.0:
                     proceeds = units[k] * px * (1.0 - fee); cash += proceeds; got[k] += proceeds
@@ -170,13 +178,14 @@ def full(n, K, x, dtype=np.float64):
 
 
 def run(P, idx, depth=LIVE["depth"], N=LIVE["N"], fmax=LIVE["fmax"], smult=1.0, tp=LIVE["tp"], part=1.0, tp2=0.0,
-        trail=0.0, hm=LIVE["hm"], cd=LIVE["cd"], eps=EPS, fee=FEE, slip=SLIP_MAJOR, pen=0.0, tpwait=1, tprest=True):
+        trail=0.0, hm=LIVE["hm"], cd=LIVE["cd"], eps=EPS, fee=FEE, slip=SLIP_MAJOR, pen=0.0, tpwait=1, tprest=True,
+        mtp_now=False):
     O = P["o"].values; n, K = O.shape
     sl = np.full(K, slip) if np.ndim(slip) == 0 else np.asarray(slip, np.float64)
     eq, lg = gkernel(O, P["h"].values, P["l"].values, P["cf"].values, P["ref"].values,
                      full(n, K, depth), full(n, 0, N, np.int64), full(n, 0, fmax), full(n, K, smult), full(n, K, tp),
                      float(part), float(tp2), float(trail), full(n, 0, hm, np.int64), int(cd), eps, fee, sl, pen,
-                     int(tpwait), bool(tprest))
+                     int(tpwait), bool(tprest), bool(mtp_now))
     return pd.Series(eq, idx), pd.DataFrame(lg, columns=LOG_COLS)
 
 
@@ -356,3 +365,45 @@ def pick_on_design(rows, base):
 def line(name, r):
     return (f"{name:46s} 21-23 x{r['d_mult']:5.2f} DD {r['d_dd']*100:4.0f}% 2022 {r['y2022']*100:+4.0f}% | "
             f"24-26 x{r['t_mult']:5.2f} DD {r['t_dd']*100:4.0f}% worst-mo {r['t_worst_m']*100:+3.0f}% up-mo {r['t_pos_m']*100:3.0f}%")
+
+
+# ------------------------------------------------------------------ untouched holdout: Jan 2018 - Dec 2020
+HOLDOUT = os.environ.get("PB_HOLDOUT", os.path.expanduser("~/pb_holdout"))
+H_START, H_END = pd.Timestamp("2018-01-01"), pd.Timestamp("2021-01-01")
+
+
+def load_pre(dead=False):
+    """Hourly candles Dec 2017 - Dec 2020 for the live coins that existed then (BCH = BCHABC until its Nov 2019
+    rename). Early files hold a few candles that don't start on the hour (exchange outages); they are dropped."""
+    def rd(s):
+        p = os.path.join(HOLDOUT, "1h_pre", f"{s}.csv")
+        if not os.path.exists(p):
+            return None
+        d = pd.read_csv(p, index_col=0)
+        d.index = pd.to_datetime(d.index, format="mixed")
+        d = d[(d.index == d.index.floor("1h")) & (d.index < H_END)]
+        return d[~d.index.duplicated()].sort_index()
+    D = {}
+    for s in H19 + (list(DEAD) if dead else []):
+        d = rd(s)
+        if s == "BCHUSDT":
+            a = rd("BCHABCUSDT")
+            d = pd.concat([a, d]); d = d[~d.index.duplicated(keep="last")].sort_index()
+        if d is not None and len(d) > 24 * 30:
+            D[s] = d
+    return D
+
+
+def score_holdout(e, lg=None, idx=None):
+    m = metrics(e, start=H_START, end=H_END)
+    y = years(e[(e.index >= H_START) & (e.index < H_END)])
+    out = {"h_mult": m["mult"], "h_dd": m["maxdd"], "h_cagr": m["cagr"], "h_worst_m": m["worst_m"], "h_pos_m": m["pos_m"],
+           **{f"y{k}": v for k, v in y.items()}}
+    if lg is not None and idx is not None and len(lg):
+        tt = lg[(idx[lg.eb.astype(int).values] >= H_START)]
+        out.update(h_trades=len(tt), h_win=float((tt.ret > 0).mean()), h_avg=float(tt.ret.mean()))
+    return out
+
+
+def beats_holdout(c, b):
+    return c["h_mult"] > b["h_mult"] and c["h_dd"] >= b["h_dd"] - DD_TOL

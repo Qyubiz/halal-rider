@@ -1,0 +1,3 @@
+idea,variants,beat_design,beat_test,beat_both,pick,passes,pick_d_mult,pick_t_mult,pick_d_dd,pick_t_dd,base_d_mult,base_t_mult,base_d_dd,base_t_dd,check +LUNA/FTT/SRM,check fills 0.2% worse
+r2 entry H1: knife filter (coin falling before the dip + weak market),8,7,0,0,knife pre<=-3% br>=0.80 skip,False,6.191111179706382,2.0607769532060494,-0.1484636787286559,-0.1561237772961702,5.749960679975606,2.608768648326897,-0.2923819336224197,-0.1628454245693458,False,False
+r2 entry H2: no cascade in progress (last hour up),8,2,2,0,"r1h>0 & knife(-3%,0.90) depth16%",False,6.262204365136635,2.5985191325701282,-0.2856923041350271,-0.15491250311311444,5.749960679975606,2.608768648326897,-0.2923819336224197,-0.1628454245693458,False,False

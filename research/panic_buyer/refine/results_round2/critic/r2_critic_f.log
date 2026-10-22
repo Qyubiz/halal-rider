@@ -1,0 +1,18 @@
+--- dead=False pen=0.0: fkernel switches off identical to engine.run: True
+backtest (engine.run)                          21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+TP right after market buy                      21-23 x 4.84 DD  -30% 2022  +19% | 24-26 x 2.66 DD  -15% worst-mo  -3% up-mo  88%
+time stop 1h earlier (mkt)                     21-23 x 5.63 DD  -29% 2022  +20% | 24-26 x 2.62 DD  -16% worst-mo  -6% up-mo  88%
+live bot timing (both) = f                     21-23 x 4.73 DD  -30% 2022  +20% | 24-26 x 2.66 DD  -15% worst-mo  -3% up-mo  88%
+    f: 2021-23 market buys 178, sold in the buy hour 103, avg +0.09%
+--- dead=True pen=0.0: fkernel switches off identical to engine.run: True
+backtest (engine.run)                          21-23 x 5.29 DD  -31% 2022   +1% | 24-26 x 2.46 DD  -15% worst-mo  -6% up-mo  88%
+TP right after market buy                      21-23 x 5.81 DD  -34% 2022  +19% | 24-26 x 2.66 DD  -15% worst-mo  -3% up-mo  88%
+time stop 1h earlier (mkt)                     21-23 x 5.21 DD  -31% 2022   +2% | 24-26 x 2.47 DD  -15% worst-mo  -6% up-mo  88%
+live bot timing (both) = f                     21-23 x 5.69 DD  -34% 2022  +20% | 24-26 x 2.66 DD  -15% worst-mo  -3% up-mo  88%
+    f: 2021-23 market buys 228, sold in the buy hour 137, avg +0.19%
+--- dead=False pen=0.002: fkernel switches off identical to engine.run: True
+backtest (engine.run)                          21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+TP right after market buy                      21-23 x 3.38 DD  -31% 2022   -2% | 24-26 x 2.40 DD  -16% worst-mo  -3% up-mo  85%
+time stop 1h earlier (mkt)                     21-23 x 4.00 DD  -29% 2022   -0% | 24-26 x 2.38 DD  -16% worst-mo  -6% up-mo  85%
+live bot timing (both) = f                     21-23 x 3.38 DD  -31% 2022   -1% | 24-26 x 2.40 DD  -16% worst-mo  -3% up-mo  85%
+    f: 2021-23 market buys 173, sold in the buy hour 93, avg +0.20%
