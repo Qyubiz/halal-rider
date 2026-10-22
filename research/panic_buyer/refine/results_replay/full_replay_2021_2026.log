@@ -1,0 +1,9 @@
+panic_buyer.py replayed hour by hour through tests/fake_binance.py, 2021-01-03 -> 2026-10-21, on the 16 coins
+with complete data over the whole span (BTC ETH SOL XRP BNB DOGE ADA TRX LINK AVAX LTC BCH HBAR DOT NEAR FET),
+against the engine on exactly the same coins and candles (replay_bot_full.py).
+bot as coded                             21-23 x 3.73 drop  -33% | 24-26 x2.36 drop  -14% | 2021:+154% 2022:+17% 2023:+25% 2024:+60% 2025:+23% 2026:+20%
+bot + market_buy_tp_next_hour.diff       21-23 x 4.52 drop  -37% | 24-26 x2.34 drop  -14% | 2021:+168% 2022:+35% 2023:+25% 2024:+57% 2025:+24% 2026:+20%
+engine, as reported                      21-23 x 5.36 drop  -29% | 24-26 x2.38 drop  -14% | 2021:+234% 2022:+28% 2023:+25% 2024:+62% 2025:+25% 2026:+17%
+engine, cooldown from when the bot notices 21-23 x 4.86 drop  -36% | 24-26 x2.38 drop  -14% | 2021:+192% 2022:+33% 2023:+25% 2024:+59% 2025:+25% 2026:+21%
+engine, market-buy sell at once          21-23 x 4.51 drop  -30% | 24-26 x2.41 drop  -14% | 2021:+180% 2022:+29% 2023:+25% 2024:+66% 2025:+24% 2026:+18%
+engine, both (models the bot as coded)   21-23 x 3.89 drop  -34% | 24-26 x2.42 drop  -14% | 2021:+168% 2022:+16% 2023:+25% 2024:+63% 2025:+24% 2026:+20%

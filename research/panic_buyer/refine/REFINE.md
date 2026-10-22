@@ -1,11 +1,75 @@
 # Panic Buyer refinement results (22 Oct 2026)
 
-**Verdict: keep the live bot unchanged.** 105 variants across the section 8 ideas were tested. None beat the
-live settings in both 2021–23 and 2024–26 without a deeper worst drop.
+**Verdict: keep the live bot unchanged.** Three rounds, about 200 variants (plus the 960-setting grid). None beat the live settings in
+both 2021–23 and 2024–26 without a deeper worst drop. Round 1 is the section 8 ideas (below). Rounds 2–3, the
+untouched 2018–20 holdout and a replay of the real bot code are summarised first, because they change what
+to expect from the live bot.
+
+## What to expect from the live bot (rounds 2–3, holdout, replay)
+
+1. **2024–26 holds up for the real code.** `panic_buyer.py`, replayed hour by hour through the fake exchange
+   over 2021–2026 on the 16 coins with complete data (`replay_bot_full.py`, `results_replay/`), made ×2.36
+   in 2024–26 against the engine's ×2.38 on the same coins and candles (worst drop −14% both).
+2. **2021–23 does not.** The same replay made ×3.73 (worst drop −33%) against the engine's ×5.36 (−29%).
+   Two timing details explain most of it, and both matter mainly in fast crash markets like 2021:
+   - After a market buy (coin already under its trigger at the open) the bot places its +1.5% sell at once.
+     The backtest places it at the next hourly check, which lets the bounce overshoot. `engine.run(mtp_now=True)`
+     models the bot: 19 coins ×4.73 / ×2.66 instead of ×5.75 / ×2.61.
+   - The bot starts the 24h cooldown when it notices a sale (the next hourly check), one hour later than the
+     backtest. On these 16 coins, engine with both details: ×3.89 / ×2.42, close to the bot's ×3.73 / ×2.36.
+   - A fix for the first detail is in `patches/market_buy_tp_next_hour.diff`, **not applied**. Replayed, it gives
+     ×4.52 with a −37% drop in 2021–23 and ×2.34 in 2024–26: more 2021–23 return, but a deeper drop and no
+     2024–26 gain, so it doesn't pass the rule. On the 2018–20 holdout the engine version (A) beat the
+     as-coded timing (B), ×2.26 vs ×2.14 with the same drop; that was the pre-registered tie-breaker
+     (`ROUND3_PREREG.md`), but the full replay shows the real-code gain is smaller and riskier, so the bot was
+     left as is.
+3. **The 2018–20 holdout (never used before, looked at once): profitable, with a much deeper crash.** Live
+   settings on the 16 coins that existed: ×2.26 (2018 +41%, 2019 +19%, 2020 +34%), 81% of months up. Worst
+   drop **−45%**, all in the 12–13 March 2020 COVID crash: the bot bought 12% dips that fell another 20–26%,
+   and the account took until September 2020 to recover. Outside that week, the worst drop was −23% (Jan
+   2018). Plan for a −45% drop in a 2020-style crash; on RM6,000 that is about −RM2,700.
+4. **Fill realism (1-minute data):** with stricter but plausible fills (limit buys need 0.3% through,
+   take-profits 0.2% through, 1-minute delay), 2024–26 is ×2.31 instead of ×2.61. Realistic range for 2024–26:
+   ×2.3 to ×2.7. The shallow fills a stricter rule removes are the best trades (+1.3% to +1.8% on average), so fill quality
+   decides a lot of the result. `reconcile_live.py` will show the real fills after 2–4 weeks live.
+5. **Noise.** Changes that shouldn't matter (depth 11.9% or 12.1%, fee ±0.005%, starting a few days later)
+   move 2024–26 between ×2.52 and ×2.77 and the 2021–23 worst drop by up to 4 points. Every near miss in
+   rounds 1–3 is inside that band, so they are ties, not improvements (`results_round3/noise/`).
+6. **Corrected stress number.** FTT was halted on Binance from 15 Nov 2022 to 22 Sep 2023 (it reopened 32%
+   lower). The backtest kept a position bought just before the halt frozen at the pre-halt price forever. Now
+   it is sold when trading resumes. With LUNA/FTT/SRM added, 2024–26 is ×2.61 (RM15,653), not ×2.46 (the
+   handoff's RM14,753); 2021–23 is ×5.22 with a −31% drop.
+
+### Rounds 2–3: every idea and its verdict
+
+Each idea: a grid of at most 8 variants written before running, chosen on 2021–23, checked on 2024–26, then
+with LUNA/FTT/SRM and with fills 0.2% worse. Rounds 2 and 3 had adversarial verification and a completeness
+critic (`results_round2/`, `results_round3/`, scripts `r2_*.py`, `r3_*.py`).
+
+| Idea | Pick on 2021–23 | 2024–26 | Failed at |
+|---|---|---|---|
+| Break-even target after X hours | +0.5% after 6h: ×6.35 / −29% | ×2.55 | 2024–26 |
+| Sell stale losers (3–10% down at 18–24h) | 18h: ×6.62 / −24% | ×2.19 | 2024–26 |
+| Skip "falling knife" buys in weak markets | ×6.19 / −15% | ×2.06 | 2024–26 |
+| Skip buys mid-cascade | ×6.26 / −29% | ×2.60 (tie) | 2024–26, stress checks |
+| Extra second leg from free cash | 1× at 24%: ×7.51 / −30% | ×2.37 | 2024–26 |
+| Split ladder 12% / 18%, 4 coins | ×9.07 / −23% | ×2.67 (tie) | LUNA/FTT/SRM: −49% drop |
+| Same, capped at 25% per coin | ×8.85 / −23% | ×2.67 (tie) | LUNA/FTT/SRM: −44% drop |
+| Trigger window 8–72h instead of 24h | 12h, 11%: ×6.25 / −20% | ×2.54 | 2024–26 |
+| Cooldown 0–96h instead of 24h | 18h: ×6.56 / −30% | ×2.51 | 2024–26 |
+| Take-profit relative to the 24h high | 0.10 × gap: ×6.65 / −29% | ×2.63 (tie) | fills 0.2% worse |
+| Avoid UTC 00–07 / weekend dips | weekend 00–07 skip: ×7.49 / −24% | ×2.40 | 2024–26 |
+
+Patterns: many filters cut the 2021–23 losers (a bear-market effect) but then give up 2024–26, where the same
+conditions produced normal winners. Shorter cooldowns, larger orders and longer holds earn more only with
+deeper drops. A hard stop-loss loses even in 2021–23: deep losers are fresh panics that bounce.
+
+## Round 1: section 8 ideas
 
 Data: Binance spot candles, hourly and 1-minute, 1 Jan 2021 to 22 Oct 2026, downloaded fresh from
-data.binance.vision. Everything ran on GitHub Actions (`.github/workflows/panic-research.yml`); logs and
-tables are in `results/`.
+data.binance.vision. Round 1 ran on GitHub Actions (`.github/workflows/panic-research.yml`); logs and
+tables are in `results/`. This session can't reach Binance, so `.github/workflows/panic-data.yml` publishes
+the candles as the pre-release `pb-data-v1` (about 820 MB, safe to delete when the research is done).
 
 ## The rule (fixed before any result was seen)
 

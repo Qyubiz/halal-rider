@@ -1,0 +1,88 @@
+--- a/panic_buyer.py
++++ b/panic_buyer.py
+@@ -11,7 +11,8 @@
+   2. Limit BUY orders wait on Binance at the trigger of the 8 coins closest to it. Each order is at most
+      20% of the bot's money, and all orders together never exceed the bot's free money.
+      A coin already under its trigger is bought at market.
+-  3. Each buy immediately gets a limit SELL on Binance at +1.5%.
++  3. Each buy gets a limit SELL on Binance at +1.5%, placed at the hourly cycle after the buy hour (a sell
++     placed at once caps the bounce at +1.5%; placed an hour later it fills at the market price if higher).
+   4. Not sold after 48 hours: sold at market. That coin is then skipped for 24 hours.
+   5. The bot only touches orders and coins it bought itself (halal-rider's trades are safe).
+   6. Profits are not reinvested unless COMPOUND=yes: they stay as USDT you can withdraw.
+@@ -189,16 +190,19 @@
+         return out
+ 
+     # ------------------------------------------------------------- trading steps
+-    def open_position(self, sym, qty_exec, px, fill_ms):
++    def open_position(self, sym, qty_exec, px, fill_ms, tp_now=True, clock_from_ms=None):
+         base = self.info[sym]["base"]
+         free = self.c.balances().get(base, {"free": 0.0})["free"]
+         # if Binance took the fee in coins we hold a bit less; never count coins of another bot
+         qty = min(qty_exec * (1 - self.cfg["fee_pct"] / 100), free)
+         p = {"qty": qty, "entry": px, "opened_ms": int(fill_ms), "tp_id": None, "tp_price": None}
++        if clock_from_ms is not None:
++            p["clock_from_ms"] = int(clock_from_ms)
+         self.state["positions"][sym] = p
+         self.save()
+         self.log(f"BOUGHT {sym} {qty:.8g} @ {px:.8g} ({qty * px:.2f} USDT)", alert=True)
+-        self.place_tp(sym, p)
++        if tp_now:
++            self.place_tp(sym, p)
+         self.save()
+ 
+     def place_tp(self, sym, p):
+@@ -292,7 +296,7 @@
+                             self.record(sym, dict(p), q, px, "take-profit (part)")
+                             p["qty"] = max(0.0, p["qty"] - q)
+                         p["tp_id"] = None
+-                if t - p["opened_ms"] >= self.cfg["max_hours"] * HOUR_MS:
++                if t - p.get("clock_from_ms", p["opened_ms"]) >= self.cfg["max_hours"] * HOUR_MS:
+                     self.close_position(sym, f"time limit {self.cfg['max_hours']}h")
+                     continue
+                 if not p.get("tp_id"):
+@@ -324,7 +328,8 @@
+                     q, px = self.avg_fill(o)
+                     if q > 0:
+                         self.log(f"{sym}: {abs(dist) * 100:.1f}% under its trigger, bought at market")
+-                        self.open_position(sym, q, px, t)
++                        # as backtested: take-profit at the next hourly cycle, 48h counted from the hour's end
++                        self.open_position(sym, q, px, t, tp_now=False, clock_from_ms=t - t % HOUR_MS + HOUR_MS)
+                 else:
+                     limit = self.px_str(sym, trigger)
+                     qty = self.qty_str(sym, per / float(limit))
+@@ -354,7 +359,7 @@
+                  f"Closed trades {n}, wins {s.get('wins', 0)} ({(s.get('wins', 0) / n * 100 if n else 0):.0f}%), "
+                  f"profit after fees {s.get('realized_usdt', 0.0):+.2f} USDT"]
+         for sym, p in s["positions"].items():
+-            left = (p["opened_ms"] + self.cfg["max_hours"] * HOUR_MS - self.clock()) / HOUR_MS
++            left = (p.get("clock_from_ms", p["opened_ms"]) + self.cfg["max_hours"] * HOUR_MS - self.clock()) / HOUR_MS
+             lines.append(f"  holding {sym}: {p['qty']:.8g} @ {p['entry']:.8g}, sell at {p.get('tp_price') or '-'}, "
+                          f"time limit in {max(0, left):.0f}h")
+         for sym, o in s["orders"].items():
+--- a/tests/test_panic.py
++++ b/tests/test_panic.py
+@@ -81,10 +81,23 @@
+         self.assertIn("AAAUSDT", bot.state["positions"])
+         p = bot.state["positions"]["AAAUSDT"]
+         self.assertAlmostEqual(p["entry"], 85.0, places=6)
++        self.assertIsNone(p["tp_id"])                       # as backtested: the sell goes up next hour
++        fake.advance(); bot.cycle()
++        p = bot.state["positions"]["AAAUSDT"]
+         tp = fake.orders[p["tp_id"]]
+         self.assertEqual((tp["side"], tp["type"], tp["status"]), ("SELL", "LIMIT", "NEW"))
+         self.assertGreaterEqual(float(tp["price"]), 85.0 * 1.015)
+ 
++    def test_market_buy_time_stop_counts_from_the_hour_end(self):
++        c = {"AAAUSDT": series(flat(100.0, 26) + [(85.0, 85.5, 84.5, 85.0)] * 60)}
++        fake, bot = make(c, 26)
++        bot.cycle()
++        for _ in range(48):
++            fake.advance(); bot.cycle()
++            self.assertIn("AAAUSDT", bot.state["positions"])
++        fake.advance(); bot.cycle()                         # 49 cycles later = 48h after the buy hour ended
++        self.assertNotIn("AAAUSDT", bot.state["positions"])
++
+ 
+ class TradeLife(unittest.TestCase):
+     def crash_then(self, after_rows):
