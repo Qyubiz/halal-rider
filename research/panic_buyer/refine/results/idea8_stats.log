@@ -13,9 +13,9 @@ anchored walk-forward (each year chosen on earlier years only):
   2022-26 chained: walk-forward x5.51 DD -48% | live settings x4.14 DD -19%
 
 block bootstrap of monthly returns (3-month blocks), next 12 months:
-  from 2024-26 months        median +38%  5th pct +19%  95th +75%  P(loss) 0.0%  P(drop >20%) 99.4%
-  from all 2021-26 months    median +47%  5th pct +14%  95th +185%  P(loss) 0.2%  P(drop >20%) 100.0%
-  from 2022-23 months only   median +25%  5th pct +4%  95th +56%  P(loss) 2.1%  P(drop >20%) 99.4%
+  from 2024-26 months        median +38%  5th pct +19%  95th +75%  P(loss) 0.0%  P(drop >20%) 0.0%
+  from all 2021-26 months    median +47%  5th pct +14%  95th +185%  P(loss) 0.2%  P(drop >20%) 0.0%
+  from 2022-23 months only   median +25%  5th pct +4%  95th +56%  P(loss) 2.1%  P(drop >20%) 0.0%
 deflated Sharpe full 2021-26, 960 trials: Sharpe 2.41/yr, DSR 0.901 (skew -1.5, kurtosis 67)
 deflated Sharpe full 2021-26, 1960 trials: Sharpe 2.41/yr, DSR 0.859 (skew -1.5, kurtosis 67)
 deflated Sharpe 2024-26 only, 960 trials: Sharpe 2.37/yr, DSR 0.343 (skew 0.4, kurtosis 50)
