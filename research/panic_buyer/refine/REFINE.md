@@ -40,6 +40,35 @@ to expect from the live bot.
    it is sold when trading resumes. With LUNA/FTT/SRM added, 2024–26 is ×2.61 (RM15,653), not ×2.46 (the
    handoff's RM14,753); 2021–23 is ×5.22 with a −31% drop.
 
+### 90% mode (opt-in, `panic_config.90wr.example.json`)
+
+From the "90% win rate or 10% a month" hunt: four parallel agents (`w90_*.py`, `results_w90/`, about 3,400 designs),
+then the 2018–20 holdout and a real-code replay run by the lead. The critic agent did not run (session limit), so
+`results_w90/check90.log` re-checks it with the original engine instead.
+
+90% mode: one coin with all the money, 14% dip, +2.5% take-profit, 96h time stop, 3h cooldown, crash guard 35%.
+Config only, no code change.
+
+| Period | %/month | Win rate | Worst drop |
+|---|---|---|---|
+| 2018–20 holdout | +10.9 (fills 0.2% worse: +9.6) | 92.5% | −66% |
+| 2021–23 | +13.2 | 93.8% | −64% |
+| 2024–26 | +6.9 | 92.6% | −35% |
+| Since Jan 2025 | +5.8 | 93.2% | −23% |
+| Real bot code replay (16 coins) | +15.4 / +9.0 / +5.8 | 93.0 / 94.3 / 93.6% | −49 / −28 / −28% |
+
+- **Bot timing plus fills 0.2% worse:** +13.8 / +6.4 / +5.1%/month, with win rates still 92–94%.
+- **Neighbours:** depth 13.5–14.5% and take-profit 2–3% all keep a 90%+ win rate and make +4.7 to +7.3%/month
+  in 2024–26.
+- **Crash guard:** without it, LUNA takes the account to zero.
+
+Other finalists:
+- **Re-arm after a win:** needs a code change; worse on the holdout (+8.0%/month, 94% wins).
+- **Watch mode** (buy within a minute of the dip): no better than today's hourly bids once fills are realistic.
+- **Wider universe** (a top-30 tier of other screened coins at a 26% dip): +11.0%/month in 2024–26 and +11.4%
+  since 2025 in hindsight; stressed, +8.4% and +8.5%. It needs code, the holdout can't test it, and its
+  coins need the user's halal screener verdict.
+
 ### 10% mode (opt-in, `panic_config.10pct.example.json`)
 
 From the 10%-a-month hunt (`x10_*.py`, `results_x10/`: five levers, about 12,000 designs, a critic): one coin with

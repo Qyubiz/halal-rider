@@ -1,0 +1,144 @@
+#### grid5: 48 designs | qualify ten (>=10%/mo in 2021-23 AND 2024-26): 0 | qualify wr90: 15 | max 2024-26 8.42%/mo | max since-2025 7.43%/mo | max worst-of-three 7.43%/mo
+
+Top 15 by worst-of-three %/month (all designs):
+  d15 tp4 hm96 w1 | window 48h                 21-23 +14.4% dd -66 w 87 | 24-26  +7.9% dd -44 w 85 n163 | 25-  +7.4% dd -36 w 84 | min +7.43% wtrade -48%
+  d14 tp5 hm48 w1 | tpwait3                    21-23 +14.1% dd -73 w 78 | 24-26  +7.2% dd -32 w 75 n110 | 25-  +7.2% dd -29 w 75 | min +7.16% wtrade -58%
+  d15 tp4 hm96 w1 | tpwait3                    21-23 +15.8% dd -62 w 90 | 24-26  +8.0% dd -37 w 90 n 96 | 25-  +7.2% dd -22 w 90 | min +7.16% wtrade -48%
+  d14 tp5 hm48 w1 | tp vs 24h high f0.3        21-23 +17.2% dd -61 w 81 | 24-26  +7.5% dd -33 w 77 n117 | 25-  +7.1% dd -29 w 78 | min +7.08% wtrade -54%
+  d15 tp4 hm96 w1 | window 72h                 21-23 +12.1% dd -89 w 85 | 24-26  +7.0% dd -57 w 80 n205 | 25-  +7.3% dd -39 w 79 | min +7.05% wtrade -38%
+  d14 tp5 hm48 w1 | base                       21-23 +17.4% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+  d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d14 tp5 hm48 w1 | depth+0.5                  21-23 +17.6% dd -61 w 82 | 24-26  +7.0% dd -30 w 76 n109 | 25-  +6.8% dd -27 w 75 | min +6.83% wtrade -54%
+  d15 tp4 hm96 w1 | no rest tpwait1            21-23 +15.9% dd -61 w 85 | 24-26  +8.0% dd -37 w 86 n 92 | 25-  +6.7% dd -29 w 87 | min +6.74% wtrade -48%
+  d13 tp1.5 hm96 w1 | base                     21-23 +15.9% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n236 | 25-  +6.7% dd -23 w 96 | min +6.70% wtrade -48%
+  d15 tp4 hm96 w1 | hm120                      21-23 +15.4% dd -61 w 92 | 24-26  +7.7% dd -42 w 90 n102 | 25-  +6.6% dd -22 w 90 | min +6.64% wtrade -50%
+  d15 tp4 hm96 w1 | tpwait2                    21-23 +15.5% dd -62 w 90 | 24-26  +7.8% dd -37 w 90 n 98 | 25-  +6.5% dd -22 w 90 | min +6.53% wtrade -48%
+  d13 tp1.5 hm96 w1 | no rest tpwait2          21-23 +17.2% dd -66 w 92 | 24-26  +8.4% dd -39 w 91 n182 | 25-  +6.4% dd -25 w 93 | min +6.43% wtrade -48%
+  d15 tp4 hm96 w1 | no rest tpwait2            21-23 +14.0% dd -64 w 84 | 24-26  +7.4% dd -37 w 85 n 88 | 25-  +6.4% dd -29 w 87 | min +6.38% wtrade -48%
+  d14 tp5 hm48 w1 | tpwait2                    21-23 +15.8% dd -64 w 79 | 24-26  +6.8% dd -32 w 75 n113 | 25-  +6.4% dd -29 w 75 | min +6.38% wtrade -54%
+
+Top 10 by 2024-26 %/month:
+  d13 tp1.5 hm96 w1 | no rest tpwait2          21-23 +17.2% dd -66 w 92 | 24-26  +8.4% dd -39 w 91 n182 | 25-  +6.4% dd -25 w 93 | min +6.43% wtrade -48%
+  d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d13 tp1.5 hm96 w1 | no rest tpwait1          21-23 +16.0% dd -66 w 93 | 24-26  +8.1% dd -39 w 91 n190 | 25-  +6.2% dd -26 w 92 | min +6.23% wtrade -48%
+  d15 tp4 hm96 w1 | tpwait3                    21-23 +15.8% dd -62 w 90 | 24-26  +8.0% dd -37 w 90 n 96 | 25-  +7.2% dd -22 w 90 | min +7.16% wtrade -48%
+  d15 tp4 hm96 w1 | no rest tpwait1            21-23 +15.9% dd -61 w 85 | 24-26  +8.0% dd -37 w 86 n 92 | 25-  +6.7% dd -29 w 87 | min +6.74% wtrade -48%
+  d15 tp4 hm96 w1 | window 48h                 21-23 +14.4% dd -66 w 87 | 24-26  +7.9% dd -44 w 85 n163 | 25-  +7.4% dd -36 w 84 | min +7.43% wtrade -48%
+  d13 tp1.5 hm96 w1 | tpwait3                  21-23 +15.0% dd -73 w 95 | 24-26  +7.9% dd -35 w 93 n194 | 25-  +5.7% dd -33 w 93 | min +5.70% wtrade -50%
+  d15 tp4 hm96 w1 | tpwait2                    21-23 +15.5% dd -62 w 90 | 24-26  +7.8% dd -37 w 90 n 98 | 25-  +6.5% dd -22 w 90 | min +6.53% wtrade -48%
+  d15 tp4 hm96 w1 | hm120                      21-23 +15.4% dd -61 w 92 | 24-26  +7.7% dd -42 w 90 n102 | 25-  +6.6% dd -22 w 90 | min +6.64% wtrade -50%
+  d15 tp4 hm96 w1 | depth-0.5                  21-23 +17.1% dd -61 w 90 | 24-26  +7.7% dd -37 w 87 n115 | 25-  +6.1% dd -31 w 88 | min +6.07% wtrade -48%
+
+Top 10 by since-2025 %/month:
+  d15 tp4 hm96 w1 | window 48h                 21-23 +14.4% dd -66 w 87 | 24-26  +7.9% dd -44 w 85 n163 | 25-  +7.4% dd -36 w 84 | min +7.43% wtrade -48%
+  d15 tp4 hm96 w1 | window 72h                 21-23 +12.1% dd -89 w 85 | 24-26  +7.0% dd -57 w 80 n205 | 25-  +7.3% dd -39 w 79 | min +7.05% wtrade -38%
+  d14 tp5 hm48 w1 | no rest tpwait1            21-23 +15.5% dd -61 w 74 | 24-26  +5.7% dd -33 w 65 n103 | 25-  +7.3% dd -29 w 67 | min +5.66% wtrade -54%
+  d14 tp5 hm48 w1 | tpwait3                    21-23 +14.1% dd -73 w 78 | 24-26  +7.2% dd -32 w 75 n110 | 25-  +7.2% dd -29 w 75 | min +7.16% wtrade -58%
+  d15 tp4 hm96 w1 | tpwait3                    21-23 +15.8% dd -62 w 90 | 24-26  +8.0% dd -37 w 90 n 96 | 25-  +7.2% dd -22 w 90 | min +7.16% wtrade -48%
+  d14 tp5 hm48 w1 | tp vs 24h high f0.3        21-23 +17.2% dd -61 w 81 | 24-26  +7.5% dd -33 w 77 n117 | 25-  +7.1% dd -29 w 78 | min +7.08% wtrade -54%
+  d14 tp5 hm48 w1 | base                       21-23 +17.4% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+  d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d14 tp5 hm48 w1 | depth+0.5                  21-23 +17.6% dd -61 w 82 | 24-26  +7.0% dd -30 w 76 n109 | 25-  +6.8% dd -27 w 75 | min +6.83% wtrade -54%
+  d14 tp5 hm48 w1 | no rest tpwait2            21-23 +16.3% dd -64 w 74 | 24-26  +5.5% dd -33 w 65 n101 | 25-  +6.8% dd -29 w 68 | min +5.52% wtrade -55%
+
+Qualifiers q_ten (0), best 8 by the rule:
+
+Qualifiers q_wr90 (15), best 8 by the rule:
+  d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d13 tp1.5 hm96 w1 | base                     21-23 +15.9% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n236 | 25-  +6.7% dd -23 w 96 | min +6.70% wtrade -48%
+  d15 tp4 hm96 w1 | hm120                      21-23 +15.4% dd -61 w 92 | 24-26  +7.7% dd -42 w 90 n102 | 25-  +6.6% dd -22 w 90 | min +6.64% wtrade -50%
+  d13 tp1.5 hm96 w1 | no rest tpwait2          21-23 +17.2% dd -66 w 92 | 24-26  +8.4% dd -39 w 91 n182 | 25-  +6.4% dd -25 w 93 | min +6.43% wtrade -48%
+  d13 tp1.5 hm96 w1 | hm120                    21-23 +15.4% dd -64 w 97 | 24-26  +6.9% dd -39 w 95 n233 | 25-  +6.4% dd -23 w 96 | min +6.35% wtrade -50%
+  d13 tp1.5 hm96 w1 | no rest tpwait1          21-23 +16.0% dd -66 w 93 | 24-26  +8.1% dd -39 w 91 n190 | 25-  +6.2% dd -26 w 92 | min +6.23% wtrade -48%
+  d13 tp1.5 hm96 w1 | depth-0.5                21-23 +17.3% dd -65 w 96 | 24-26  +7.5% dd -37 w 94 n274 | 25-  +6.1% dd -25 w 94 | min +6.08% wtrade -48%
+  d13 tp1.5 hm96 w1 | tpwait2                  21-23 +16.3% dd -67 w 95 | 24-26  +7.0% dd -35 w 94 n207 | 25-  +5.7% dd -24 w 94 | min +5.71% wtrade -48%
+
+Frontier: best design at each win-rate level (win rate = lower of 2021-23 and 2024-26):
+  win 90-100%: d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  win 85-90%: d15 tp4 hm96 w1 | window 48h                 21-23 +14.4% dd -66 w 87 | 24-26  +7.9% dd -44 w 85 n163 | 25-  +7.4% dd -36 w 84 | min +7.43% wtrade -48%
+  win 80-85%: d15 tp4 hm96 w1 | window 72h                 21-23 +12.1% dd -89 w 85 | 24-26  +7.0% dd -57 w 80 n205 | 25-  +7.3% dd -39 w 79 | min +7.05% wtrade -38%
+  win 75-80%: d14 tp5 hm48 w1 | tp vs 24h high f0.3        21-23 +17.2% dd -61 w 81 | 24-26  +7.5% dd -33 w 77 n117 | 25-  +7.1% dd -29 w 78 | min +7.08% wtrade -54%
+  win 70-75%: d14 tp5 hm48 w1 | tpwait3                    21-23 +14.1% dd -73 w 78 | 24-26  +7.2% dd -32 w 75 n110 | 25-  +7.2% dd -29 w 75 | min +7.16% wtrade -58%
+  win 0-70%: d14 tp5 hm48 w1 | no rest tpwait1            21-23 +15.5% dd -61 w 74 | 24-26  +5.7% dd -33 w 65 n103 | 25-  +7.3% dd -29 w 67 | min +5.66% wtrade -54%
+
+Pareto set (win rate, worst-of-three %/mo, worst drop): 12 designs
+  d14 tp5 hm48 w1 | tp vs 24h high f0.3        21-23 +17.2% dd -61 w 81 | 24-26  +7.5% dd -33 w 77 n117 | 25-  +7.1% dd -29 w 78 | min +7.08% wtrade -54%
+  d15 tp4 hm96 w1 | tp vs 24h high f0.3        21-23 +16.5% dd -61 w 87 | 24-26  +6.6% dd -35 w 81 n 89 | 25-  +5.4% dd -28 w 78 | min +5.44% wtrade -48%
+  d15 tp4 hm96 w1 | window 48h                 21-23 +14.4% dd -66 w 87 | 24-26  +7.9% dd -44 w 85 n163 | 25-  +7.4% dd -36 w 84 | min +7.43% wtrade -48%
+  d15 tp4 hm96 w1 | depth-0.5                  21-23 +17.1% dd -61 w 90 | 24-26  +7.7% dd -37 w 87 n115 | 25-  +6.1% dd -31 w 88 | min +6.07% wtrade -48%
+  d15 tp4 hm96 w1 | tpwait3                    21-23 +15.8% dd -62 w 90 | 24-26  +8.0% dd -37 w 90 n 96 | 25-  +7.2% dd -22 w 90 | min +7.16% wtrade -48%
+  d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | window 12h                 21-23 +12.6% dd -61 w 92 | 24-26  +5.2% dd -28 w 95 n 59 | 25-  +3.7% dd -25 w 96 | min +3.74% wtrade -48%
+  d13 tp1.5 hm96 w1 | hm72                     21-23 +17.9% dd -61 w 96 | 24-26  +6.6% dd -29 w 95 n240 | 25-  +5.6% dd -23 w 94 | min +5.60% wtrade -38%
+  d13 tp1.5 hm96 w1 | depth+0.5                21-23 +13.3% dd -63 w 96 | 24-26  +6.0% dd -44 w 95 n207 | 25-  +5.3% dd -23 w 95 | min +5.26% wtrade -48%
+  d13 tp1.5 hm96 w1 | hm120                    21-23 +15.4% dd -64 w 97 | 24-26  +6.9% dd -39 w 95 n233 | 25-  +6.4% dd -23 w 96 | min +6.35% wtrade -50%
+  d13 tp1.5 hm96 w1 | base                     21-23 +15.9% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n236 | 25-  +6.7% dd -23 w 96 | min +6.70% wtrade -48%
+  d13 tp1.5 hm96 w1 | window 12h               21-23 +13.4% dd -61 w 96 | 24-26  +5.3% dd -28 w 97 n137 | 25-  +4.8% dd -25 w 98 | min +4.79% wtrade -48%
+
+Stressed version (bot timing cd+1, buys and sells 0.2% worse, +LUNA/FTT/SRM sold at their last hour):
+d15 tp4 hm96 w1 | window 48h
+   2021-23 +14.42%/mo dd  -66% win 87.3% n  362 | 2024-26  +7.94%/mo dd  -44% win 85.3% n  163 | since 2025  +7.43%/mo dd  -36% win 84.2% | worst trade (acct) -48% / -30% / -30%
+   STRESSED 2021-23 -22.09% dd -100% | 2024-26  +4.87% dd  -46% | since 2025  +4.63% dd  -37% | win 87.7/83.6/82.2% | worst trade -100% / -29% / -29%
+d14 tp5 hm48 w1 | tpwait3
+   2021-23 +14.07%/mo dd  -73% win 77.9% n  307 | 2024-26  +7.16%/mo dd  -32% win 74.5% n  110 | since 2025  +7.17%/mo dd  -29% win 75.4% | worst trade (acct) -58% / -22% / -11%
+   STRESSED 2021-23 +10.96% dd  -75% | 2024-26  +5.19% dd  -37% | since 2025  +5.24% dd  -29% | win 77.8/72.5/71.9% | worst trade -41% / -21% / -13%
+d15 tp4 hm96 w1 | tpwait3
+   2021-23 +15.79%/mo dd  -62% win 89.8% n  274 | 2024-26  +7.99%/mo dd  -37% win 89.6% n   96 | since 2025  +7.16%/mo dd  -22% win 89.8% | worst trade (acct) -48% / -27% / -11%
+   STRESSED 2021-23 +15.33% dd  -63% | 2024-26  +5.61% dd  -38% | since 2025  +4.96% dd  -31% | win 89.1/87.8/87.2% | worst trade -45% / -27% / -15%
+d14 tp5 hm48 w1 | tp vs 24h high f0.3
+   2021-23 +17.18%/mo dd  -61% win 81.0% n  326 | 2024-26  +7.49%/mo dd  -33% win 76.9% n  117 | since 2025  +7.08%/mo dd  -29% win 77.6% | worst trade (acct) -54% / -22% / -11%
+   STRESSED 2021-23 +10.96% dd  -66% | 2024-26  +5.50% dd  -37% | since 2025  +5.09% dd  -29% | win 80.3/75.2/75.0% | worst trade -52% / -21% / -12%
+
+d14 tp5 hm48 w1:
+   d14 tp5 hm48 w1 | base                       21-23 +17.4% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+   d14 tp5 hm48 w1 | window 12h                 21-23 +15.5% dd -65 w 86 | 24-26  +7.1% dd -27 w 86 n 69 | 25-  +5.1% dd -22 w 83 | min +5.14% wtrade -54%
+   d14 tp5 hm48 w1 | window 36h                 21-23 +18.2% dd -61 w 80 | 24-26  +7.3% dd -42 w 73 n172 | 25-  +4.8% dd -42 w 69 | min +4.83% wtrade -54%
+   d14 tp5 hm48 w1 | window 48h                 21-23 +15.3% dd -61 w 77 | 24-26  +4.5% dd -42 w 67 n202 | 25-  +2.0% dd -42 w 63 | min +2.02% wtrade -54%
+   d14 tp5 hm48 w1 | window 72h                 21-23 +10.7% dd -73 w 72 | 24-26  +5.1% dd -61 w 66 n278 | 25-  +5.8% dd -47 w 66 | min +5.05% wtrade -54%
+   d14 tp5 hm48 w1 | tpwait2                    21-23 +15.8% dd -64 w 79 | 24-26  +6.8% dd -32 w 75 n113 | 25-  +6.4% dd -29 w 75 | min +6.38% wtrade -54%
+   d14 tp5 hm48 w1 | tpwait3                    21-23 +14.1% dd -73 w 78 | 24-26  +7.2% dd -32 w 75 n110 | 25-  +7.2% dd -29 w 75 | min +7.16% wtrade -58%
+   d14 tp5 hm48 w1 | no rest tpwait1            21-23 +15.5% dd -61 w 74 | 24-26  +5.7% dd -33 w 65 n103 | 25-  +7.3% dd -29 w 67 | min +5.66% wtrade -54%
+   d14 tp5 hm48 w1 | no rest tpwait2            21-23 +16.3% dd -64 w 74 | 24-26  +5.5% dd -33 w 65 n101 | 25-  +6.8% dd -29 w 68 | min +5.52% wtrade -55%
+   d14 tp5 hm48 w1 | tp vs 24h high f0.3        21-23 +17.2% dd -61 w 81 | 24-26  +7.5% dd -33 w 77 n117 | 25-  +7.1% dd -29 w 78 | min +7.08% wtrade -54%
+   d14 tp5 hm48 w1 | tp vs 24h high f0.4        21-23 +17.9% dd -61 w 75 | 24-26  +5.2% dd -33 w 63 n101 | 25-  +6.3% dd -29 w 65 | min +5.18% wtrade -54%
+   d14 tp5 hm48 w1 | tp vs 24h high f0.5        21-23 +12.3% dd -67 w 67 | 24-26  +5.4% dd -34 w 60 n 98 | 25-  +5.5% dd -29 w 59 | min +5.42% wtrade -55%
+   d14 tp5 hm48 w1 | hm72                       21-23 +15.1% dd -69 w 84 | 24-26  +7.1% dd -33 w 79 n116 | 25-  +5.8% dd -31 w 78 | min +5.76% wtrade -54%
+   d14 tp5 hm48 w1 | hm120                      21-23 +16.8% dd -61 w 89 | 24-26  +7.4% dd -41 w 81 n110 | 25-  +5.8% dd -28 w 80 | min +5.76% wtrade -50%
+   d14 tp5 hm48 w1 | depth-0.5                  21-23 +19.1% dd -61 w 81 | 24-26  +5.3% dd -40 w 70 n131 | 25-  +3.9% dd -40 w 66 | min +3.87% wtrade -54%
+   d14 tp5 hm48 w1 | depth+0.5                  21-23 +17.6% dd -61 w 82 | 24-26  +7.0% dd -30 w 76 n109 | 25-  +6.8% dd -27 w 75 | min +6.83% wtrade -54%
+
+d15 tp4 hm96 w1:
+   d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+   d15 tp4 hm96 w1 | window 12h                 21-23 +12.6% dd -61 w 92 | 24-26  +5.2% dd -28 w 95 n 59 | 25-  +3.7% dd -25 w 96 | min +3.74% wtrade -48%
+   d15 tp4 hm96 w1 | window 36h                 21-23 +15.3% dd -61 w 88 | 24-26  +6.2% dd -44 w 85 n132 | 25-  +5.1% dd -34 w 84 | min +5.13% wtrade -48%
+   d15 tp4 hm96 w1 | window 48h                 21-23 +14.4% dd -66 w 87 | 24-26  +7.9% dd -44 w 85 n163 | 25-  +7.4% dd -36 w 84 | min +7.43% wtrade -48%
+   d15 tp4 hm96 w1 | window 72h                 21-23 +12.1% dd -89 w 85 | 24-26  +7.0% dd -57 w 80 n205 | 25-  +7.3% dd -39 w 79 | min +7.05% wtrade -38%
+   d15 tp4 hm96 w1 | tpwait2                    21-23 +15.5% dd -62 w 90 | 24-26  +7.8% dd -37 w 90 n 98 | 25-  +6.5% dd -22 w 90 | min +6.53% wtrade -48%
+   d15 tp4 hm96 w1 | tpwait3                    21-23 +15.8% dd -62 w 90 | 24-26  +8.0% dd -37 w 90 n 96 | 25-  +7.2% dd -22 w 90 | min +7.16% wtrade -48%
+   d15 tp4 hm96 w1 | no rest tpwait1            21-23 +15.9% dd -61 w 85 | 24-26  +8.0% dd -37 w 86 n 92 | 25-  +6.7% dd -29 w 87 | min +6.74% wtrade -48%
+   d15 tp4 hm96 w1 | no rest tpwait2            21-23 +14.0% dd -64 w 84 | 24-26  +7.4% dd -37 w 85 n 88 | 25-  +6.4% dd -29 w 87 | min +6.38% wtrade -48%
+   d15 tp4 hm96 w1 | tp vs 24h high f0.3        21-23 +16.5% dd -61 w 87 | 24-26  +6.6% dd -35 w 81 n 89 | 25-  +5.4% dd -28 w 78 | min +5.44% wtrade -48%
+   d15 tp4 hm96 w1 | tp vs 24h high f0.4        21-23 +18.4% dd -61 w 82 | 24-26  +5.0% dd -43 w 69 n 78 | 25-  +4.8% dd -38 w 66 | min +4.78% wtrade -48%
+   d15 tp4 hm96 w1 | tp vs 24h high f0.5        21-23 +14.1% dd -77 w 75 | 24-26  +3.6% dd -48 w 60 n 72 | 25-  +3.3% dd -47 w 56 | min +3.34% wtrade -48%
+   d15 tp4 hm96 w1 | hm72                       21-23 +17.3% dd -61 w 90 | 24-26  +7.5% dd -35 w 88 n104 | 25-  +5.8% dd -22 w 84 | min +5.84% wtrade -38%
+   d15 tp4 hm96 w1 | hm120                      21-23 +15.4% dd -61 w 92 | 24-26  +7.7% dd -42 w 90 n102 | 25-  +6.6% dd -22 w 90 | min +6.64% wtrade -50%
+   d15 tp4 hm96 w1 | depth-0.5                  21-23 +17.1% dd -61 w 90 | 24-26  +7.7% dd -37 w 87 n115 | 25-  +6.1% dd -31 w 88 | min +6.07% wtrade -48%
+   d15 tp4 hm96 w1 | depth+0.5                  21-23 +13.4% dd -61 w 91 | 24-26  +6.7% dd -35 w 89 n 93 | 25-  +5.2% dd -29 w 90 | min +5.23% wtrade -48%
+
+d13 tp1.5 hm96 w1:
+   d13 tp1.5 hm96 w1 | base                     21-23 +15.9% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n236 | 25-  +6.7% dd -23 w 96 | min +6.70% wtrade -48%
+   d13 tp1.5 hm96 w1 | window 12h               21-23 +13.4% dd -61 w 96 | 24-26  +5.3% dd -28 w 97 n137 | 25-  +4.8% dd -25 w 98 | min +4.79% wtrade -48%
+   d13 tp1.5 hm96 w1 | window 36h               21-23 +14.0% dd -67 w 95 | 24-26  +5.9% dd -37 w 93 n342 | 25-  +5.3% dd -35 w 93 | min +5.28% wtrade -48%
+   d13 tp1.5 hm96 w1 | window 48h               21-23 +12.4% dd -61 w 94 | 24-26  +6.3% dd -41 w 92 n397 | 25-  +5.1% dd -38 w 91 | min +5.06% wtrade -48%
+   d13 tp1.5 hm96 w1 | window 72h               21-23  +6.2% dd -85 w 92 | 24-26  +3.6% dd -52 w 90 n473 | 25-  +2.3% dd -47 w 89 | min +2.34% wtrade -48%
+   d13 tp1.5 hm96 w1 | tpwait2                  21-23 +16.3% dd -67 w 95 | 24-26  +7.0% dd -35 w 94 n207 | 25-  +5.7% dd -24 w 94 | min +5.71% wtrade -48%
+   d13 tp1.5 hm96 w1 | tpwait3                  21-23 +15.0% dd -73 w 95 | 24-26  +7.9% dd -35 w 93 n194 | 25-  +5.7% dd -33 w 93 | min +5.70% wtrade -50%
+   d13 tp1.5 hm96 w1 | no rest tpwait1          21-23 +16.0% dd -66 w 93 | 24-26  +8.1% dd -39 w 91 n190 | 25-  +6.2% dd -26 w 92 | min +6.23% wtrade -48%
+   d13 tp1.5 hm96 w1 | no rest tpwait2          21-23 +17.2% dd -66 w 92 | 24-26  +8.4% dd -39 w 91 n182 | 25-  +6.4% dd -25 w 93 | min +6.43% wtrade -48%
+   d13 tp1.5 hm96 w1 | tp vs 24h high f0.3      21-23 +20.3% dd -65 w 88 | 24-26  +3.9% dd -47 w 74 n133 | 25-  +2.6% dd -34 w 74 | min +2.55% wtrade -48%
+   d13 tp1.5 hm96 w1 | tp vs 24h high f0.4      21-23 +19.6% dd -61 w 83 | 24-26  +2.0% dd -62 w 67 n114 | 25-  +1.7% dd -40 w 67 | min +1.68% wtrade -48%
+   d13 tp1.5 hm96 w1 | tp vs 24h high f0.5      21-23 +20.5% dd -70 w 78 | 24-26  +4.2% dd -62 w 66 n108 | 25-  +3.5% dd -49 w 67 | min +3.49% wtrade -48%
+   d13 tp1.5 hm96 w1 | hm72                     21-23 +17.9% dd -61 w 96 | 24-26  +6.6% dd -29 w 95 n240 | 25-  +5.6% dd -23 w 94 | min +5.60% wtrade -38%
+   d13 tp1.5 hm96 w1 | hm120                    21-23 +15.4% dd -64 w 97 | 24-26  +6.9% dd -39 w 95 n233 | 25-  +6.4% dd -23 w 96 | min +6.35% wtrade -50%
+   d13 tp1.5 hm96 w1 | depth-0.5                21-23 +17.3% dd -65 w 96 | 24-26  +7.5% dd -37 w 94 n274 | 25-  +6.1% dd -25 w 94 | min +6.08% wtrade -48%
+   d13 tp1.5 hm96 w1 | depth+0.5                21-23 +13.3% dd -63 w 96 | 24-26  +6.0% dd -44 w 95 n207 | 25-  +5.3% dd -23 w 95 | min +5.26% wtrade -48%

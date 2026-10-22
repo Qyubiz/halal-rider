@@ -1,0 +1,27 @@
+engine.run vs wrun, 19 coins {}: IDENTICAL (x15.0003 vs x15.0003, 2565 trades)
+engine.run vs wrun, 19 coins {'N': 2, 'fmax': 0.5, 'tp': 0.03, 'cd': 12, 'depth': 0.1}: IDENTICAL (x245.2478 vs x245.2478, 2460 trades)
+engine.run vs wrun, 19 coins {'N': 1, 'fmax': 1.0, 'tp': 0.05, 'cd': 24, 'depth': 0.14, 'hm': 48}: IDENTICAL (x8814.0419 vs x8814.0419, 431 trades)
+engine.run vs wrun, 19 coins {'N': 1, 'fmax': 1.0, 'tp': 0.05, 'cd': 25, 'depth': 0.14, 'mtp_now': True, 'pen': 0.002}: IDENTICAL (x2654.2674 vs x2654.2674, 426 trades)
+engine.run vs wrun, 19 coins {'N': 3, 'fmax': 0.33, 'tp': 0.015, 'cd': 24, 'mtp_now': True, 'tpwait': 2}: IDENTICAL (x64.4829 vs x64.4829, 2158 trades)
+engine.run vs wrun, 19 coins {'N': 4, 'fmax': 0.25, 'tp': 0.02, 'cd': 6, 'tprest': False, 'hm': 96}: IDENTICAL (x119.4474 vs x119.4474, 2410 trades)
+10% mode with crash guard, 19 coins: IDENTICAL
+10% mode, engine.run on the 19 coins (pb_data/1h, slip 0.02%): 21-23 WR 81.1% +15.03%/mo dd  -61% | 24-26 WR 76.5% +8.13%/mo dd  -30% | 25-26 WR 75.0% +6.08%/mo dd  -29%
+portable_spec/runner (M=0) on the 19-coin panel = engine.run 10% mode: True
+engine.run vs wrun, 22 coins {}: IDENTICAL (x13.6228 vs x13.6228, 2855 trades)
+engine.run vs wrun, 22 coins {'N': 2, 'fmax': 0.5, 'tp': 0.03, 'cd': 12, 'depth': 0.1}: IDENTICAL (x188.9773 vs x188.9773, 2599 trades)
+engine.run vs wrun, 22 coins {'N': 1, 'fmax': 1.0, 'tp': 0.05, 'cd': 24, 'depth': 0.14, 'hm': 48}: IDENTICAL (x0.2566 vs x0.2566, 412 trades)
+engine.run vs wrun, 22 coins {'N': 1, 'fmax': 1.0, 'tp': 0.05, 'cd': 25, 'depth': 0.14, 'mtp_now': True, 'pen': 0.002}: IDENTICAL (x1218.2487 vs x1218.2487, 454 trades)
+engine.run vs wrun, 22 coins {'N': 3, 'fmax': 0.33, 'tp': 0.015, 'cd': 24, 'mtp_now': True, 'tpwait': 2}: IDENTICAL (x58.6646 vs x58.6646, 2369 trades)
+engine.run vs wrun, 22 coins {'N': 4, 'fmax': 0.25, 'tp': 0.02, 'cd': 6, 'tprest': False, 'hm': 96}: IDENTICAL (x112.8870 vs x112.8870, 2695 trades)
+10% mode with crash guard, 22 coins: IDENTICAL
+
+wider panel: 299 coins, 50883 hours 2021-01-01 00:00:00 .. 2026-10-22 02:00:00
+x10 urun (bid) vs wrun, 297 coins {'M': 50, 'rk': 'v30', 'dt': 0.2, 'st': 0.5} {'N': 1, 'fmax': 1.0, 'cd': 24}: IDENTICAL (x290.5, 874 trades)
+x10 urun (bid) vs wrun, 297 coins {'M': 50, 'rk': 'v30', 'dt': 0.2, 'st': 0.5} {'N': 2, 'fmax': 1.0, 'cd': 12, 'mtp_now': True, 'pen': 0.002}: IDENTICAL (x178.7, 1785 trades)
+x10 urun (bid) vs wrun, 142 coins {'M': 30, 'rk': 'v365', 'dt': 0.18, 'st': 1.0, 'tt': 0.08} {'N': 1, 'fmax': 1.0, 'cd': 24}: IDENTICAL (x389.7, 519 trades)
+x10 urun (bid) vs wrun, 142 coins {'M': 30, 'rk': 'v365', 'dt': 0.18, 'st': 1.0, 'tt': 0.08} {'N': 2, 'fmax': 1.0, 'cd': 12, 'mtp_now': True, 'pen': 0.002}: IDENTICAL (x174.9, 1113 trades)
+
+ALL IDENTICAL
+coins whose data ends before the panel end (84): ACX 2026-08-17, AGIX 2024-07-01, AION 2023-02-27, AMB 2025-02-24, ARDR 2026-07-10, ATA 2026-05-27, BAKE 2025-09-17, CLV 2025-02-24, COCOS 2023-05-29, CTXC 2025-04-16, DAR 2025-01-06, DATA 2026-02-13, DEGO 2026-04-28, DENT 2026-04-28, DOCK 2024-07-22, DREP 2024-04-03, D 2026-06-19, ELF 2025-04-16, EOS 2025-05-26, FIO 2026-04-23, FIRO 2025-04-16, FRONT 2024-08-27, FTM 2025-01-13, GFT 2024-12-03, GTO 2022-11-28, HFT 2026-08-17, HIGH 2026-06-19, HOOK 2026-04-01, ICX 2026-09-03, IDEX 2026-04-01, KDA 2025-11-12, KEY 2024-12-10, KLAY 2024-10-28, KMD 2025-07-04, LIT 2025-02-10, LOKA 2025-07-28, LOOM 2024-08-26, LRC 2026-04-01, LTO 2025-07-04, LUNA 2022-05-13, MATIC 2024-09-10, MBOX 2026-06-19, MDT 2026-04-23, MDX 2024-07-22, MOB 2024-04-03, MULTI 2024-02-20, NANO 2022-01-24, NFP 2026-07-10, NKN 2026-02-13, NTRN 2026-04-01, NULS 2025-04-16, OCEAN 2024-07-01, OMG 2024-06-17, OMNI 2025-09-29, ORN 2024-10-15, OXT 2026-04-23, PERL 2023-12-07, PHB 2026-05-27, PNT 2024-04-03, POND 2026-07-10, PYR 2026-08-17, REI 2025-12-17, REN 2024-12-10, SCRT 2026-09-03, SRM 2022-11-28, STG 2026-10-06, STMX 2025-02-24, STORJ 2026-09-03, STPT 2025-05-19, SXP 2026-04-01, SYS 2026-05-27, TOMO 2023-11-20, TON 2026-06-30, TROY 2025-04-16, UTK 2026-04-14, VANRY 2026-08-17, VIB 2025-05-02, VIC 2026-08-17, VITE 2025-02-24, VOXEL 2025-12-17, WAVES 2024-06-17, XEM 2024-06-17, XMR 2024-02-20, FTT 2023-09-22
+10% mode, 19 only, universe slippage, sold at last data hour: 21-23 WR 81.1% +14.95%/mo dd  -61% | 24-26 WR 76.5% +8.13%/mo dd  -30% | 25-26 WR 75.0% +6.08%/mo dd  -29%
+   stressed: 21-23 WR 79.9% +12.16%/mo dd  -75% | 24-26 WR 76.1% +6.47%/mo dd  -30% | 25-26 WR 73.2% +4.60%/mo dd  -29%

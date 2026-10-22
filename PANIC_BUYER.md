@@ -27,27 +27,32 @@ is usually somewhat worse. Not financial advice.
 Biggest risk: a coin collapsing within 48 hours. In a stress test with LUNA added, one trade lost 100% of its
 order (about 13% of the bot's money). Keep the coin list to large, screened coins.
 
-## Optional: 10% mode (high risk, off by default)
-One coin at a time with all the bot's money: buy 14% under the 24h high, sell at +5%, sell after 48h, and
-skip any coin already more than 35% under its 7-day high (crash guard). Backtest per month (worst drop):
+## Optional high-return modes (high risk, off by default)
+Both put all the bot's money on one coin at a time and skip any coin already more than 35% under its 7-day
+high (crash guard). Backtest per month, win rate and worst drop:
 
-| Period | Normal mode | 10% mode |
-|---|---|---|
-| 2018-2020 (never used to pick settings) | +2.3% (-45%) | +11.1% (-61%) |
-| 2021-2023 | +5.0% (-29%) | +15.0% (-61%) |
-| 2024 - Oct 2026 | +2.9% (-16%) | +8.1% (-30%) |
-| Jan 2025 - Oct 2026 | +2.0% (-15%) | +6.1% (-29%) |
+| Period | Normal mode | 90% mode | 10% mode |
+|---|---|---|---|
+| Settings | 8 coins, 12% dip, +1.5%, 48h | 1 coin, 14% dip, +2.5%, 96h, 3h cooldown | 1 coin, 14% dip, +5%, 48h |
+| 2018-2020 (never used to pick settings) | +2.3%, 91% wins, -45% | **+10.9%, 92% wins**, -66% | +11.1%, 80% wins, -61% |
+| 2021-2023 | +5.0%, 94% wins, -29% | +13.2%, 94% wins, -64% | +15.0%, 81% wins, -61% |
+| 2024 - Oct 2026 | +2.9%, 93% wins, -16% | +6.9%, 93% wins, -35% | +8.1%, 77% wins, -30% |
+| Jan 2025 - Oct 2026 | +2.0%, 92% wins, -15% | +5.8%, 93% wins, -23% | +6.1%, 75% wins, -29% |
 
-The cost is risk. At the worst point the account was 61% down (the DOGE spike of January 2021, the March 2020
-crash): RM6,000 -> about RM2,350. One trade lost 54% of the account (DOGE, Jan 2021); since 2024 the worst single
-trade lost 22% (HBAR, Apr 2024). Without the crash guard, one LUNA-type collapse
-would have wiped out the whole account. With fills 0.2% worse, 2024-2026 is about +7% a month. Use only money
-you can afford to lose; not with borrowed money.
+The real bot code was replayed with both settings and matches the backtest (90% mode: 93-94% wins in every
+period). With fills 0.2% worse, 2024-2026 is about +6% (90% mode) and +7% (10% mode) a month.
 
-To switch it on (and back off by deleting the file):
+The cost is risk. Both modes were 61-66% down at their worst point (the DOGE spike of January 2021, the March
+2020 crash): RM6,000 -> about RM2,100-2,350. One trade lost about half the account (DOGE, Jan 2021); since 2024
+the worst single trade lost 22-27%. Without the crash guard, one LUNA-type collapse would have wiped out the
+whole account. Use only money you can afford to lose; not with borrowed money.
 
-    sudo cp /opt/panic-buyer/app/panic_config.10pct.example.json /opt/panic-buyer/app/panic_config.json
+To switch one on (and back off by deleting the file):
+
+    sudo cp /opt/panic-buyer/app/panic_config.90wr.example.json /opt/panic-buyer/app/panic_config.json
     sudo systemctl restart panic-buyer
+
+(for 10% mode, copy `panic_config.10pct.example.json` instead)
 
 ## Install on the halal-rider server (Ubuntu)
     curl -sL https://raw.githubusercontent.com/Qyubiz/halal-rider/main/deploy/panic-install.sh | sudo bash

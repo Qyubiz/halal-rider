@@ -1,0 +1,40 @@
+========================================================================================================================
+F1s rule winner + 30% stop (hindsight grid F)  NORMAL
+   2021-23 WR  96.2% ( 660 tr) +10.71%/mo drop -63.6% worst trade  -37.0% acct | avg win +1.59% loss -21.37%
+   2024-26 WR  96.3% ( 245 tr)  +6.64%/mo drop -38.0% worst trade  -27.3% acct | avg win +1.39% loss -11.02%
+   since-25 WR  96.8% ( 124 tr)  +5.85%/mo drop -23.4% worst trade  -12.9% acct | open at end 0
+   STRESSED (bot timing, buys+sells 0.2% worse, +LUNA/FTT/SRM)
+   2021-23 WR  96.5% ( 713 tr)  +4.10%/mo drop -74.0% worst trade  -35.9% acct | avg win +1.05% loss -19.64%
+   2024-26 WR  96.7% ( 239 tr)  +5.09%/mo drop -24.6% worst trade  -14.1% acct | avg win +1.08% loss -9.50%
+   since-25 WR  96.7% ( 120 tr)  +3.81%/mo drop -23.6% worst trade  -13.2% acct | open at end 0
+   stressed, buy-side-only penalty (REFINE.md convention)
+   2021-23 WR  96.5% ( 713 tr)  +8.32%/mo drop -67.0% worst trade  -35.7% acct | avg win +1.25% loss -19.48%
+   2024-26 WR  96.7% ( 239 tr)  +6.59%/mo drop -24.3% worst trade  -13.9% acct | avg win +1.28% loss -9.32%
+   since-25 WR  96.7% ( 120 tr)  +4.97%/mo drop -23.6% worst trade  -13.0% acct | open at end 0
+   per year: 2021: +1549% (WR 97%, 383 tr) 2022: -14% (WR 95%, 171 tr) 2023: +174% (WR 97%, 106 tr) 2024: +154% (WR 96%, 121 tr) 2025: +122% (WR 96%, 83 tr) 2026: +54% (WR 98%, 41 tr)
+   worst month -41.2% (2022-05), months up 74%, longest hold 96h, trades/month 2024-26 7.3
+   worst trades (% of account): DOGE 2021-01-29 -37.0% (trade -37.0%); DOGE 2021-04-20 -36.3% (trade -36.3%); NEAR 2022-05-11 -35.6% (trade -35.6%); RENDER 2022-06-11 -33.5% (trade -33.5%)
+   neighbours (14): min(%/mo) min +4.16 median +5.35 max +6.40 | 2024-26 %/mo +5.28..+7.31 | since-25 +4.16..+6.40 | WR>=90% both: 100% | worst drop -73..-58%
+      weakest neighbour: N=1.0, fmax=1.0, depth=0.135, tp=0.0125, hm=96.0, cd=3.0, guard=0.35, hs=0.3 -> +12.5/+5.3/+4.2, WR 96.5/95.7
+   fresh starts 2024-01-01+0..29d: %/mo +6.26 / median +6.36 / +6.65, worst drop -38%
+   fresh starts 2025-01-01+0..29d: %/mo +5.14 / median +5.65 / +5.93, worst drop -23%
+========================================================================================================================
+M mid drop (hindsight grid F)  NORMAL
+   2021-23 WR  92.4% ( 786 tr) +10.48%/mo drop -35.1% worst trade  -25.1% acct | avg win +2.65% loss -15.29%
+   2024-26 WR  92.0% ( 264 tr)  +5.47%/mo drop -25.3% worst trade  -13.7% acct | avg win +2.59% loss -8.93%
+   since-25 WR  90.9% ( 132 tr)  +4.01%/mo drop -20.4% worst trade   -5.9% acct | open at end 0
+   STRESSED (bot timing, buys+sells 0.2% worse, +LUNA/FTT/SRM)
+   2021-23 WR  93.2% ( 803 tr)  +8.19%/mo drop -41.4% worst trade  -23.0% acct | avg win +2.25% loss -15.55%
+   2024-26 WR  91.9% ( 260 tr)  +4.27%/mo drop -25.3% worst trade  -11.0% acct | avg win +2.36% loss -9.39%
+   since-25 WR  90.7% ( 129 tr)  +3.09%/mo drop -20.5% worst trade   -6.1% acct | open at end 0
+   stressed, buy-side-only penalty (REFINE.md convention)
+   2021-23 WR  93.2% ( 803 tr)  +9.90%/mo drop -40.2% worst trade  -22.9% acct | avg win +2.46% loss -15.38%
+   2024-26 WR  91.9% ( 260 tr)  +4.90%/mo drop -25.3% worst trade  -10.9% acct | avg win +2.56% loss -9.21%
+   since-25 WR  90.7% ( 129 tr)  +3.56%/mo drop -20.5% worst trade   -6.0% acct | open at end 0
+   per year: 2021: +1584% (WR 95%, 516 tr) 2022: +3% (WR 85%, 169 tr) 2023: +109% (WR 94%, 101 tr) 2024: +156% (WR 93%, 132 tr) 2025: +92% (WR 92%, 91 tr) 2026: +22% (WR 88%, 41 tr)
+   worst month -18.2% (2022-01), months up 79%, longest hold 96h, trades/month 2024-26 7.8
+   worst trades (% of account): DOGE 2021-01-29 -25.1% (trade -50.3%); RENDER 2022-06-11 -22.9% (trade -45.7%); FET 2021-05-19 -16.7% (trade -44.2%); RENDER 2022-11-07 -14.2% (trade -37.7%)
+   neighbours (14): min(%/mo) min +2.96 median +3.96 max +4.80 | 2024-26 %/mo +4.60..+6.14 | since-25 +2.96..+4.80 | WR>=90% both: 93% | worst drop -45..-33%
+      weakest neighbour: N=2.0, fmax=0.5, depth=0.14, tp=0.025, hm=72.0, cd=3.0, guard=0.25 -> +10.3/+4.8/+3.0, WR 91.5/89.8
+   fresh starts 2024-01-01+0..29d: %/mo +5.15 / median +5.20 / +5.48, worst drop -25%
+   fresh starts 2025-01-01+0..29d: %/mo +3.49 / median +4.00 / +4.06, worst drop -20%

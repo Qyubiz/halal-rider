@@ -1,0 +1,99 @@
+FINALISTS (2021-23 / 2024-26 / since 2025); stressed = real bot timing (market-buy take-profit at once, cooldown +1h), every fill 0.2% worse on buys and sells, LUNA/FTT/SRM added
+
+wr90 F1: 1x100%, 13%, +1.25%, 96h, cd3, guard35, stop30
+  bot config: {'n_orders': 1, 'max_order_pct': 100.0, 'depth_pct': 13.0, 'take_profit_pct': 1.25, 'max_hours': 96, 'cooldown_hours': 3, 'crash_guard_pct': 35.0}  + code change: sell at an hourly close <= entry x 0.70
+  normal            WR 96.2/96.3/96.8% | %/mo +10.71/+6.64/+5.85 | drop -64/-38/-23% | worst trade -37/-27/-13% of account | trades 660/245/124, 2022 -14%
+  STRESSED          WR 96.5/96.7/96.7% | %/mo +4.10/+5.09/+3.81 | drop -74/-25/-24% | worst trade -36/-14/-13% of account
+  stressed buy-only WR 96.5/96.7/96.7% | %/mo +8.32/+6.59/+4.97 | drop -67/-24/-24% | worst trade -36/-14/-13% of account  (REFINE.md convention)
+  holdout_candidate path reproduces the normal run: yes (engine.score: 2021-23 x38.93 dd -64%, 2024-26 x8.71)
+  via holdout path, pen=0.002: %/mo +8.45/+5.45/+5.02; +LUNA/FTT/SRM (no liquidation, as holdout_eval runs it): +12.11/+6.64/+5.85 drop -62%
+
+wr90 F1 config-only: 1x100%, 13%, +1.25%, 96h, cd3, guard35
+  bot config: {'n_orders': 1, 'max_order_pct': 100.0, 'depth_pct': 13.0, 'take_profit_pct': 1.25, 'max_hours': 96, 'cooldown_hours': 3, 'crash_guard_pct': 35.0}
+  normal            WR 96.5/96.3/96.8% | %/mo +11.44/+6.64/+5.85 | drop -67/-38/-23% | worst trade -50/-27/-13% of account | trades 624/245/124, 2022 -28%
+  STRESSED          WR 96.6/96.7/96.7% | %/mo +6.85/+5.09/+3.81 | drop -71/-25/-24% | worst trade -47/-14/-13% of account
+  stressed buy-only WR 96.6/96.7/96.7% | %/mo +10.99/+6.59/+4.97 | drop -66/-24/-24% | worst trade -46/-14/-13% of account  (REFINE.md convention)
+  holdout_candidate path reproduces the normal run: yes (engine.score: 2021-23 x49.30 dd -67%, 2024-26 x8.71)
+  via holdout path, pen=0.002: %/mo +9.31/+5.45/+5.02; +LUNA/FTT/SRM (no liquidation, as holdout_eval runs it): +13.49/+6.64/+5.85 drop -67%
+
+wr90 F2: 1x100%, 14%, +2.5%, 96h, cd3, guard35
+  bot config: {'n_orders': 1, 'max_order_pct': 100.0, 'depth_pct': 14.000000000000002, 'take_profit_pct': 2.5, 'max_hours': 96, 'cooldown_hours': 3, 'crash_guard_pct': 35.0}
+  normal            WR 93.8/92.6/93.2% | %/mo +13.17/+6.89/+5.80 | drop -64/-35/-23% | worst trade -50/-27/-12% of account | trades 406/148/73, 2022 +6%
+  STRESSED          WR 93.7/91.7/92.6% | %/mo +10.96/+5.49/+4.44 | drop -65/-30/-23% | worst trade -46/-19/-12% of account
+  stressed buy-only WR 93.7/91.7/92.6% | %/mo +13.63/+6.40/+5.09 | drop -62/-28/-23% | worst trade -46/-19/-12% of account  (REFINE.md convention)
+  holdout_candidate path reproduces the normal run: yes (engine.score: 2021-23 x85.65 dd -64%, 2024-26 x9.42)
+  via holdout path, pen=0.002: %/mo +12.22/+6.19/+5.22; +LUNA/FTT/SRM (no liquidation, as holdout_eval runs it): +15.91/+6.89/+5.80 drop -64%
+
+wr90 M: 2x50%, 14%, +2.5%, 96h, cd3, guard25
+  bot config: {'n_orders': 2, 'max_order_pct': 50.0, 'depth_pct': 14.000000000000002, 'take_profit_pct': 2.5, 'max_hours': 96, 'cooldown_hours': 3, 'crash_guard_pct': 25.0}
+  normal            WR 92.4/92.0/90.9% | %/mo +10.48/+5.47/+4.01 | drop -35/-25/-20% | worst trade -25/-14/-6% of account | trades 786/264/132, 2022 +3%
+  STRESSED          WR 93.2/91.9/90.7% | %/mo +8.19/+4.27/+3.09 | drop -41/-25/-21% | worst trade -23/-11/-6% of account
+  stressed buy-only WR 93.2/91.9/90.7% | %/mo +9.90/+4.90/+3.56 | drop -40/-25/-20% | worst trade -23/-11/-6% of account  (REFINE.md convention)
+  holdout_candidate path reproduces the normal run: yes (engine.score: 2021-23 x36.07 dd -35%, 2024-26 x6.01)
+  via holdout path, pen=0.002: %/mo +9.27/+5.02/+3.56; +LUNA/FTT/SRM (no liquidation, as holdout_eval runs it): +11.72/+5.47/+4.01 drop -40%
+
+wr90 LOWDD (reference): 4x<=50%, 16%, +2%, 96h, cd24, guard35
+  bot config: {'n_orders': 4, 'max_order_pct': 50.0, 'depth_pct': 16.0, 'take_profit_pct': 2.0, 'max_hours': 96, 'cooldown_hours': 24, 'crash_guard_pct': 35.0}
+  normal            WR 96.6/97.5/96.3% | %/mo +5.88/+3.04/+1.95 | drop -19/-14/ -8% | worst trade -12/-7/-5% of account | trades 620/275/134, 2022 +32%
+  STRESSED          WR 96.2/97.0/94.7% | %/mo +4.10/+2.55/+1.26 | drop -34/-14/-13% | worst trade -25/-5/-5% of account
+  stressed buy-only WR 96.2/97.0/94.7% | %/mo +4.89/+2.85/+1.47 | drop -32/-14/-13% | worst trade -25/-5/-5% of account  (REFINE.md convention)
+  holdout_candidate path reproduces the normal run: yes (engine.score: 2021-23 x7.81 dd -19%, 2024-26 x2.74)
+  via holdout path, pen=0.002: %/mo +5.33/+2.67/+1.49; +LUNA/FTT/SRM (no liquidation, as holdout_eval runs it): +5.08/+3.04/+1.95 drop -32%
+
+FRONTIER BY WIN-RATE BAND (1220 designs with the normal time stop; win rate = lower of 2021-23 and 2024-26)
+band: best min(%/mo) [rule] | best with worst drop >= -40% | best with worst drop >= -25%
+  WR 85-88% (51):
+     N1x100% d14 tp3 hm48 cd24 g35: +9.7/+6.2/+4.2 dd -72% (stressed +9.5/+4.6/+2.5 dd -58%)
+     N4x25% d12 tp3 hm48 cd24 g35: +8.0/+5.2/+3.5 dd -34% (stressed +6.4/+3.6/+2.3 dd -37%)
+     none
+  WR 88-90% (70):
+     N1x100% d14 tp3 hm96 cd12 g35: +15.4/+5.4/+4.6 dd -56% (stressed +14.1/+4.8/+3.6 dd -53%)
+     N2x50% d14 tp3 hm48 cd24 g35: +9.7/+5.5/+3.6 dd -39% (stressed +5.9/+4.5/+2.7 dd -62%)
+     none
+  WR 90-92% (197):
+     N1x100% d14 tp3 hm96 cd3 g35: +14.3/+6.9/+5.3 dd -64% (stressed +13.9/+5.3/+4.2 dd -60%)
+     N2x50% d14 tp2.5 hm72 cd3 g35: +11.7/+5.9/+4.0 dd -40% (stressed +6.3/+4.5/+2.7 dd -72%)
+     none
+  WR 92-94% (248):
+     N1x100% d14 tp2.5 hm96 cd3 g35 stop50: +12.6/+6.9/+5.8 dd -62% (stressed +10.5/+5.5/+4.4 dd -69%)
+     N2x50% d15 tp3 hm96 cd3 g35 stop40: +10.9/+5.7/+4.5 dd -39% (stressed +7.5/+4.7/+3.7 dd -60%)
+     N5x20% d16 tp3 hm96 cd24 g35: +4.9/+2.9/+1.6 dd -25% (stressed +3.7/+2.4/+1.3 dd -42%)
+  WR 94-95% (154):
+     N1x100% d12 tp1.25 hm96 cd3 g35: +14.8/+6.6/+5.8 dd -72% (stressed +4.9/+2.8/-0.5 dd -70%)
+     N2x50% d15 tp2.5 hm120 cd3 g35: +10.3/+5.1/+4.1 dd -38% (stressed +4.6/+4.3/+3.2 dd -59%)
+     N4x25% d17 tp3 hm96 cd6 g35: +6.4/+3.0/+1.9 dd -23% (stressed +3.7/+2.5/+1.5 dd -40%)
+  WR 95-96% (212):
+     N1x100% d12 tp1 hm96 cd3 g35: +14.1/+6.3/+5.4 dd -66% (stressed +2.5/+3.3/+1.3 dd -77%)
+     N2x50% d14 tp1.5 hm96 cd3 g35: +11.1/+5.2/+4.1 dd -38% (stressed +4.4/+3.6/+2.3 dd -73%)
+     N4x25% d17 tp2.5 hm96 cd6 g35: +5.6/+2.8/+1.8 dd -24% (stressed +3.5/+2.4/+1.4 dd -38%)
+  WR 96-97% (193):
+     N1x100% d13 tp1.25 hm96 cd3 g35 stop30: +10.7/+6.6/+5.8 dd -64% (stressed +4.1/+5.1/+3.8 dd -74%)
+     N3x33% d12 tp1 hm96 cd12 g35: +8.2/+4.6/+4.0 dd -36% (stressed +2.7/+2.8/+1.9 dd -50%)
+     N4x50% d16 tp2 hm96 cd24 g35: +5.9/+3.0/+2.0 dd -19% (stressed +4.1/+2.5/+1.3 dd -34%)
+  WR 97-98% (66):
+     N1x100% d15 tp1.25 hm120 cd3 g35: +10.8/+5.1/+4.3 dd -64% (stressed +6.5/+2.9/+2.5 dd -75%)
+     N2x100% d14 tp1 hm96 cd24 g35: +7.9/+3.9/+2.8 dd -33% (stressed +2.0/+3.2/+1.7 dd -76%)
+     N3x33% d17 tp1.5 hm168 cd24 g35: +6.0/+2.4/+1.8 dd -24% (stressed +2.0/+1.9/+1.1 dd -52%)
+  WR 98-100%: none
+
+At WR>=90% (normal time stop, 1070 designs): max 2024-26 +7.31%/mo, max since-2025 +5.85%/mo, max 2021-23 +17.96%/mo; designs >= 10%/mo in both 2021-23 and 2024-26: 0; any design (any WR) >= 10% in 2024-26: 0 of 1328
+
+PROFIT-ONLY TIME STOP (after hm hours the target drops to break-even +0.25%; no forced loss unless a stop)
+  F2 plain time stop                   WR 93.8/92.6/93.2% | %/mo +13.17/+6.89/+5.80 | drop -64/-35/-23% | worst trade -50/-27/-12% of account
+                                       longest hold 96h (4 days): HBAR bought 2021-01-09, sold at -12%; holds > 30 days: 0; open at end: 0 | stressed WR 93.7/91.7% %/mo +11.0/+5.5/+4.4 drop -65%
+  F2 profit-only, no stop              WR 100.0/99.1/98.4% | %/mo +12.17/+6.58/+5.10 | drop -93/-71/-55% | worst trade +0/-25/-25% of account
+                                       longest hold 16973h (707 days): RENDER bought 2022-01-05, sold at +0%; holds > 30 days: 5; open at end: 1 | stressed WR 94.2/91.9% %/mo +10.3/+3.9/+2.6 drop -93%
+  F2 profit-only, stop 40%             WR 96.8/96.9/97.0% | %/mo +6.57/+3.47/+3.14 | drop -92/-69/-49% | worst trade -46/-43/-41% of account
+                                       longest hold 1719h (72 days): NEAR bought 2025-11-20, sold at -41%; holds > 30 days: 7; open at end: 1 | stressed WR 93.3/91.8% %/mo +5.4/+0.2/+0.6 drop -88%
+  F2 profit-only, max hold 30 days     WR 97.5/96.3/95.6% | %/mo +11.88/+5.72/+3.76 | drop -80/-47/-34% | worst trade -53/-28/-27% of account
+                                       longest hold 720h (30 days): BNB bought 2021-05-19, sold at -20%; holds > 30 days: 0; open at end: 1 | stressed WR 93.8/91.5% %/mo +7.9/+4.0/+2.9 drop -77%
+  M plain time stop                    WR 92.4/92.0/90.9% | %/mo +10.48/+5.47/+4.01 | drop -35/-25/-20% | worst trade -25/-14/-6% of account
+                                       longest hold 96h (4 days): HBAR bought 2021-01-09, sold at -14%; holds > 30 days: 0; open at end: 0 | stressed WR 93.2/91.9% %/mo +8.2/+4.3/+3.1 drop -41%
+  M profit-only, no stop               WR 99.7/99.6/99.2% | %/mo +9.05/+5.11/+3.31 | drop -70/-45/-35% | worst trade -22/-12/-12% of account
+                                       longest hold 47715h (1988 days): BCH bought 2021-05-12, still open, marked at -79%; holds > 30 days: 22; open at end: 3 | stressed WR 92.6/92.7% %/mo +7.4/+3.9/+2.3 drop -67%
+  M profit-only, max hold 30 days      WR 97.6/96.2/94.7% | %/mo +10.85/+4.78/+2.82 | drop -56/-27/-27% | worst trade -26/-14/-13% of account
+                                       longest hold 720h (30 days): BCH bought 2021-02-22, sold at -15%; holds > 30 days: 0; open at end: 1 | stressed WR 92.9/91.9% %/mo +7.9/+3.6/+2.0 drop -55%
+  LIVE plain                           WR 93.6/92.5/91.5% | %/mo +4.98/+2.89/+1.96 | drop -29/-16/-15% | worst trade -5/-3/-2% of account
+                                       longest hold 49h (2 days): FET bought 2021-04-18, sold at -22%; holds > 30 days: 0; open at end: 0 | stressed WR 92.7/92.0% %/mo +1.7/+2.1/+1.2 drop -43%
+  LIVE profit-only, no stop            WR 99.8/99.0/98.0% | %/mo +5.98/+1.68/-0.17 | drop -35/-32/-32% | worst trade -6/-9/-9% of account
+                                       longest hold 47565h (1982 days): LINK bought 2021-05-19, still open, marked at -68%; holds > 30 days: 33; open at end: 8 | stressed WR 93.4/92.6% %/mo +3.5/+1.2/-0.6 drop -50%

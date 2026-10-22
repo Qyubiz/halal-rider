@@ -1,0 +1,84 @@
+1010 designs run in grids 1-6, 943 with distinct results | qualify ten: 0 | qualify wr90: 198 | max 2021-23 22.77%/mo | max 2024-26 8.76%/mo | max since 2025 7.46%/mo | max worst-of-three 7.43%/mo
+designs >= 10%/mo in 2024-26: 0; >= 9%: 0; >= 8%: 16 | since 2025 >= 10%: 0; >= 8%: 0; >= 7%: 25
+
+1. Best design at each win-rate level (win rate = lower of 2021-23 and 2024-26):
+  win 95-100%: g3 d13 tp1.5 hm96 w1 g40/168h                21-23 +17.3% dd -61 w 96 | 24-26  +7.2% dd -35 w 95 n236 | 25-  +6.7% dd -23 w 96 | min +6.75% wtrade -48%
+      stressed: 21-23 -24.7% dd-100 | 24-26  +4.5% dd -37 | 25-  +4.1% dd -24 | win 96.4/94.6/95.7% | worst trade -100%
+  win 90-95%: g3 d15 tp4 hm96 w1 g40/168h                  21-23 +18.5% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+      stressed: 21-23 +16.9% dd -56 | 24-26  +5.6% dd -38 | 25-  +4.4% dd -31 | win 90.8/88.4/87.2% | worst trade -45%
+  win 85-90%: g5 d15 tp4 hm96 w1 | window 48h              21-23 +14.4% dd -66 w 87 | 24-26  +7.9% dd -44 w 85 n163 | 25-  +7.4% dd -36 w 84 | min +7.43% wtrade -48%
+      stressed: 21-23 -22.1% dd-100 | 24-26  +4.9% dd -46 | 25-  +4.6% dd -37 | win 87.7/83.6/82.2% | worst trade -100%
+  win 80-85%: g5 d15 tp4 hm96 w1 | window 72h              21-23 +12.1% dd -89 w 85 | 24-26  +7.0% dd -57 w 80 n205 | 25-  +7.3% dd -39 w 79 | min +7.05% wtrade -38%
+      stressed: 21-23 -25.7% dd-100 | 24-26  +3.9% dd -59 | 25-  +3.9% dd -39 | win 83.9/78.4/76.1% | worst trade -100%
+  win 75-80%: g4 d14 tp5 hm48 w1 | tpf0.55 mkt             21-23 +16.5% dd -64 w 79 | 24-26  +7.5% dd -31 w 75 n112 | 25-  +7.2% dd -29 w 76 | min +7.24% wtrade -55%
+      stressed: 21-23 +12.1% dd -69 | 24-26  +5.4% dd -37 | 25-  +5.2% dd -29 | win 76.9/73.9/73.2% | worst trade -39%
+  win 70-75%: g5 d14 tp5 hm48 w1 | tpwait3                 21-23 +14.1% dd -73 w 78 | 24-26  +7.2% dd -32 w 75 n110 | 25-  +7.2% dd -29 w 75 | min +7.16% wtrade -58%
+      stressed: 21-23 +11.0% dd -75 | 24-26  +5.2% dd -37 | 25-  +5.2% dd -29 | win 77.8/72.5/71.9% | worst trade -41%
+  win 0-70%: g2 A d15 tp6 hm48 w1 calm+0 wild-1 tpcalm+0  21-23 +14.4% dd -61 w 76 | 24-26  +6.7% dd -33 w 69 n109 | 25-  +7.1% dd -29 w 68 | min +6.73% wtrade -54%
+      stressed: 21-23  +7.5% dd -75 | 24-26  +4.2% dd -34 | 25-  +4.0% dd -29 | win 74.3/66.0/64.2% | worst trade -52%
+
+2. Win rate >= 90% in 2021-23 and 2024-26: best design at each worst-drop level (worst of the three periods):
+  worst drop >= -30%: g6 N3 x33% d14 tp2 hm96 cd24                 21-23  +7.8% dd -29 w 94 | 24-26  +4.3% dd -21 w 95 n407 | 25-  +2.8% dd -21 w 93 | min +2.78% wtrade -16% | worst drop -29%
+      stressed: 21-23  +3.5% dd -55 | 24-26  +3.7% dd -21 | 25-  +2.1% dd -21 | win 93.3/95.0/93.4% | worst trade -29%
+  worst drop >= -40%: g6 N3 x33% d13 tp2 hm96 cd24 w1              21-23 +11.8% dd -40 w 94 | 24-26  +5.1% dd -25 w 93 n657 | 25-  +3.7% dd -25 w 93 | min +3.74% wtrade -16% | worst drop -40%
+      stressed: 21-23  +7.6% dd -52 | 24-26  +3.5% dd -25 | 25-  +2.3% dd -25 | win 94.3/92.2/91.9% | worst trade -16%
+  worst drop >= -50%: g4 d13 tp1.5 hm96 w1 | N2 x50%               21-23 +12.5% dd -48 w 96 | 24-26  +6.3% dd -26 w 96 n535 | 25-  +5.1% dd -23 w 95 | min +5.07% wtrade -24% | worst drop -48%
+      stressed: 21-23  +5.8% dd -67 | 24-26  +4.2% dd -26 | 25-  +3.2% dd -22 | win 95.5/94.3/93.5% | worst trade -26%
+  worst drop >= -60%: g4 d13 tp1.5 hm96 w1 | N2 x50%               21-23 +12.5% dd -48 w 96 | 24-26  +6.3% dd -26 w 96 n535 | 25-  +5.1% dd -23 w 95 | min +5.07% wtrade -24% | worst drop -48%
+      stressed: 21-23  +5.8% dd -67 | 24-26  +4.2% dd -26 | 25-  +3.2% dd -22 | win 95.5/94.3/93.5% | worst trade -26%
+  worst drop >= -100%: g3 d15 tp4 hm96 w1 g40/168h                  21-23 +18.5% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48% | worst drop -61%
+      stressed: 21-23 +16.9% dd -56 | 24-26  +5.6% dd -38 | 25-  +4.4% dd -31 | win 90.8/88.4/87.2% | worst trade -45%
+
+   same, win rate >= 90% in all three periods (2021-23, 2024-26 and since 2025) AND in the stressed version:
+  worst drop >= -30%: g6 N3 x33% d14 tp2 hm96 cd24                 21-23  +7.8% dd -29 w 94 | 24-26  +4.3% dd -21 w 95 n407 | 25-  +2.8% dd -21 w 93 | min +2.78% wtrade -16% | worst drop -29%
+      stressed: 21-23  +3.5% dd -55 | 24-26  +3.7% dd -21 | 25-  +2.1% dd -21 | win 93.3/95.0/93.4% | worst trade -29%
+  worst drop >= -40%: g6 N3 x33% d13 tp2 hm96 cd24 w1              21-23 +11.8% dd -40 w 94 | 24-26  +5.1% dd -25 w 93 n657 | 25-  +3.7% dd -25 w 93 | min +3.74% wtrade -16% | worst drop -40%
+      stressed: 21-23  +7.6% dd -52 | 24-26  +3.5% dd -25 | 25-  +2.3% dd -25 | win 94.3/92.2/91.9% | worst trade -16%
+  worst drop >= -50%: g4 d13 tp1.5 hm96 w1 | N2 x50%               21-23 +12.5% dd -48 w 96 | 24-26  +6.3% dd -26 w 96 n535 | 25-  +5.1% dd -23 w 95 | min +5.07% wtrade -24% | worst drop -48%
+      stressed: 21-23  +5.8% dd -67 | 24-26  +4.2% dd -26 | 25-  +3.2% dd -22 | win 95.5/94.3/93.5% | worst trade -26%
+  worst drop >= -60%: g4 d13 tp1.5 hm96 w1 | N2 x50%               21-23 +12.5% dd -48 w 96 | 24-26  +6.3% dd -26 w 96 n535 | 25-  +5.1% dd -23 w 95 | min +5.07% wtrade -24% | worst drop -48%
+      stressed: 21-23  +5.8% dd -67 | 24-26  +4.2% dd -26 | 25-  +3.2% dd -22 | win 95.5/94.3/93.5% | worst trade -26%
+  worst drop >= -100%: g3 d13 tp1.5 hm96 w1 g40/168h                21-23 +17.3% dd -61 w 96 | 24-26  +7.2% dd -35 w 95 n236 | 25-  +6.7% dd -23 w 96 | min +6.75% wtrade -48% | worst drop -61%
+      stressed: 21-23 -24.7% dd-100 | 24-26  +4.5% dd -37 | 25-  +4.1% dd -24 | win 96.4/94.6/95.7% | worst trade -100%
+
+3. Stressed version of the 40 best designs by worst-of-three (normal); sorted by stressed worst-of-three:
+  g3 d15 tp6 hm48 cd24 g40/168h                              normal min +6.87 (24-26 +7.98, 25- +6.87) | stressed 21-23 +6.72 24-26 +7.08 25- +5.93 min +5.93 dd  -71% | win 76% (stressed 74%)
+  g1 N1 d15 tp6 hm48 cd24                                    normal min +6.87 (24-26 +7.98, 25- +6.87) | stressed 21-23 +6.54 24-26 +7.08 25- +5.93 min +5.93 dd  -71% | win 76% (stressed 74%)
+  g4 d15 tp6 hm48 w1 | tpf0.25 mkt                           normal min +7.01 (24-26 +7.01, 25- +7.29) | stressed 21-23 +10.88 24-26 +5.85 25- +5.94 min +5.85 dd  -80% | win 74% (stressed 72%)
+  g2 A d15 tp6 hm48 w1 calm+0 wild+0 tpcalm-2                normal min +7.12 (24-26 +7.12, 25- +7.46) | stressed 21-23 +10.94 24-26 +5.72 25- +5.74 min +5.72 dd  -75% | win 75% (stressed 71%)
+  g1 N1 d15 tp6 hm48 cd24w1                                  normal min +7.01 (24-26 +7.01, 25- +7.29) | stressed 21-23 +10.32 24-26 +5.72 25- +5.74 min +5.72 dd  -80% | win 74% (stressed 71%)
+  g3 d15 tp6 hm48 w1 g40/168h                                normal min +7.01 (24-26 +7.01, 25- +7.29) | stressed 21-23 +11.83 24-26 +5.72 25- +5.74 min +5.72 dd  -81% | win 74% (stressed 71%)
+  g4 d15 tp6 hm48 w1 | cd48 w1                               normal min +7.01 (24-26 +7.01, 25- +7.29) | stressed 21-23 +10.73 24-26 +5.72 25- +5.74 min +5.72 dd  -72% | win 74% (stressed 71%)
+  g3 d15 tp6 hm48 cd24 g40/336h                              normal min +6.87 (24-26 +7.80, 25- +6.87) | stressed 21-23 +5.72 24-26 +6.91 25- +5.93 min +5.72 dd  -77% | win 76% (stressed 74%)
+  g4 d15 tp6 hm48 w1 | tpf0.55 mkt                           normal min +6.80 (24-26 +6.80, 25- +7.46) | stressed 21-23 +12.32 24-26 +5.68 25- +5.91 min +5.68 dd  -70% | win 73% (stressed 71%)
+  g4 d15 tp6 hm48 w1 | cd12 w1                               normal min +6.90 (24-26 +6.90, 25- +7.12) | stressed 21-23 +10.32 24-26 +5.60 25- +5.56 min +5.56 dd  -80% | win 73% (stressed 70%)
+  g3 d15 tp6 hm48 w1 g40/336h                                normal min +6.83 (24-26 +6.83, 25- +7.29) | stressed 21-23 +10.84 24-26 +5.55 25- +5.74 min +5.55 dd  -86% | win 73% (stressed 71%)
+  g4 d15 tp6 hm48 w1 | tpf0.4 mkt                            normal min +6.81 (24-26 +6.81, 25- +7.32) | stressed 21-23 +10.92 24-26 +5.49 25- +5.77 min +5.49 dd  -71% | win 74% (stressed 71%)
+  g4 d14 tp5 hm48 w1 | tpf0.55 mkt                           normal min +7.24 (24-26 +7.47, 25- +7.24) | stressed 21-23 +12.11 24-26 +5.44 25- +5.24 min +5.24 dd  -69% | win 75% (stressed 74%)
+  g4 d14 tp5 hm48 w1 | tpf0.25 mkt                           normal min +7.03 (24-26 +7.53, 25- +7.03) | stressed 21-23 +11.12 24-26 +5.38 25- +5.19 min +5.19 dd  -66% | win 75% (stressed 73%)
+  g5 d14 tp5 hm48 w1 | tpwait3                               normal min +7.16 (24-26 +7.16, 25- +7.17) | stressed 21-23 +10.96 24-26 +5.19 25- +5.24 min +5.19 dd  -75% | win 75% (stressed 72%)
+  g4 d14 tp5 hm48 w1 | tpf0.4 mkt                            normal min +7.10 (24-26 +7.35, 25- +7.10) | stressed 21-23 +11.08 24-26 +5.31 25- +5.10 min +5.10 dd  -68% | win 75% (stressed 74%)
+  g5 d14 tp5 hm48 w1 | tp vs 24h high f0.3                   normal min +7.08 (24-26 +7.49, 25- +7.08) | stressed 21-23 +10.96 24-26 +5.50 25- +5.09 min +5.09 dd  -66% | win 77% (stressed 75%)
+  g5 d15 tp4 hm96 w1 | tpwait3                               normal min +7.16 (24-26 +7.99, 25- +7.16) | stressed 21-23 +15.33 24-26 +5.61 25- +4.96 min +4.96 dd  -63% | win 90% (stressed 88%)
+  g5 d14 tp5 hm48 w1 | depth+0.5                             normal min +6.83 (24-26 +7.03, 25- +6.83) | stressed 21-23 +13.16 24-26 +5.26 25- +4.91 min +4.91 dd  -75% | win 76% (stressed 74%)
+  g5 d15 tp4 hm96 w1 | no rest tpwait1                       normal min +6.74 (24-26 +7.99, 25- +6.74) | stressed 21-23 +14.12 24-26 +6.01 25- +4.59 min +4.59 dd  -76% | win 85% (stressed 84%)
+  g1 N1 d14 tp5 hm48 cd24w1                                  normal min +7.02 (24-26 +7.50, 25- +7.02) | stressed 21-23 +11.57 24-26 +4.87 25- +4.44 min +4.44 dd  -75% | win 75% (stressed 73%)
+  g2 A d14 tp5 hm48 w1 calm+0 wild+0 tpcalm-2                normal min +6.83 (24-26 +7.37, 25- +6.83) | stressed 21-23 +11.82 24-26 +4.87 25- +4.44 min +4.44 dd  -75% | win 75% (stressed 73%)
+  g3 d14 tp5 hm48 w1 g40/336h                                normal min +7.02 (24-26 +7.50, 25- +7.02) | stressed 21-23 +12.58 24-26 +4.87 25- +4.44 min +4.44 dd  -76% | win 75% (stressed 73%)
+  g4 d14 tp5 hm48 w1 | cd48 w1                               normal min +7.02 (24-26 +7.15, 25- +7.02) | stressed 21-23 +11.80 24-26 +4.53 25- +4.44 min +4.44 dd  -71% | win 74% (stressed 72%)
+  g3 d14 tp5 hm48 w1 g40/168h                                normal min +7.02 (24-26 +7.50, 25- +7.02) | stressed 21-23 +14.97 24-26 +4.87 25- +4.44 min +4.44 dd  -73% | win 75% (stressed 73%)
+  g3 d15 tp4 hm96 w1 g40/336h                                normal min +6.96 (24-26 +8.15, 25- +6.96) | stressed 21-23 +14.04 24-26 +5.49 25- +4.44 min +4.44 dd  -64% | win 90% (stressed 88%)
+  g2 A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm-2                normal min +6.85 (24-26 +8.20, 25- +6.85) | stressed 21-23 +15.58 24-26 +5.60 25- +4.44 min +4.44 dd  -59% | win 90% (stressed 88%)
+  g4 d15 tp4 hm96 w1 | tpf0.25 mkt                           normal min +6.96 (24-26 +8.35, 25- +6.96) | stressed 21-23 +13.61 24-26 +5.67 25- +4.44 min +4.44 dd  -61% | win 90% (stressed 88%)
+  g4 d15 tp4 hm96 w1 | tpf0.4 mkt                            normal min +6.96 (24-26 +8.38, 25- +6.96) | stressed 21-23 +11.40 24-26 +5.94 25- +4.44 min +4.44 dd  -69% | win 90% (stressed 88%)
+  g3 d15 tp4 hm96 w1 g40/168h                                normal min +6.96 (24-26 +8.27, 25- +6.96) | stressed 21-23 +16.88 24-26 +5.60 25- +4.44 min +4.44 dd  -56% | win 90% (stressed 88%)
+  g1 N1 d15 tp4 hm96 cd24w1                                  normal min +6.96 (24-26 +8.27, 25- +6.96) | stressed 21-23 +15.73 24-26 +5.60 25- +4.44 min +4.44 dd  -59% | win 90% (stressed 88%)
+  g4 d15 tp4 hm96 w1 | cd12 w1                               normal min +6.96 (24-26 +8.27, 25- +6.96) | stressed 21-23 +15.84 24-26 +5.60 25- +4.44 min +4.44 dd  -59% | win 90% (stressed 88%)
+  g4 d15 tp4 hm96 w1 | tpf0.55 mkt                           normal min +6.96 (24-26 +8.28, 25- +6.96) | stressed 21-23 +13.21 24-26 +5.91 25- +4.44 min +4.44 dd  -68% | win 90% (stressed 88%)
+  g3 d15 tp4 hm96 w1 g35/336h                                normal min +6.77 (24-26 +7.91, 25- +6.77) | stressed 21-23 +12.99 24-26 +5.27 25- +4.27 min +4.27 dd  -66% | win 90% (stressed 88%)
+  g2 A d15 tp6 hm48 w1 calm+0 wild-1 tpcalm+0                normal min +6.73 (24-26 +6.73, 25- +7.13) | stressed 21-23 +7.45 24-26 +4.18 25- +4.02 min +4.02 dd  -75% | win 69% (stressed 66%)
+  g3 d13 tp1.5 hm96 w1 g40/336h                              normal min +6.73 (24-26 +6.90, 25- +6.73) | stressed 21-23 +9.06 24-26 +4.27 25- +4.00 min +4.00 dd  -62% | win 95% (stressed 94%)
+  g2 A d14 tp5 hm48 w1 calm-2 wild+0 tpcalm+0                normal min +7.18 (24-26 +8.12, 25- +7.18) | stressed 21-23 +12.06 24-26 +4.28 25- +3.19 min +3.19 dd  -74% | win 76% (stressed 72%)
+  g5 d15 tp4 hm96 w1 | window 48h                            normal min +7.43 (24-26 +7.94, 25- +7.43) | stressed 21-23 -22.09 24-26 +4.87 25- +4.63 min -22.09 dd -100% | win 85% (stressed 84%)
+  g3 d13 tp1.5 hm96 w1 g40/168h                              normal min +6.75 (24-26 +7.15, 25- +6.75) | stressed 21-23 -24.72 24-26 +4.48 25- +4.05 min -24.72 dd -100% | win 95% (stressed 95%)
+  g5 d15 tp4 hm96 w1 | window 72h                            normal min +7.05 (24-26 +7.05, 25- +7.32) | stressed 21-23 -25.73 24-26 +3.90 25- +3.93 min -25.73 dd -100% | win 80% (stressed 78%)

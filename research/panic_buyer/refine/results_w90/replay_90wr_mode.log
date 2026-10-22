@@ -1,0 +1,7 @@
+90% mode (panic_config.90wr.example.json), 16 coins with full data, columns 2021-23 | 2024-26 | since 2025
+real panic_buyer.py, replayed      +15.4%/mo drop  -49% |  +9.0%/mo drop  -28% |  +5.8%/mo drop  -28%
+engine                             +12.0%/mo drop  -64% |  +6.4%/mo drop  -35% |  +6.1%/mo drop  -28%
+engine with the bot's timing       +14.6%/mo drop  -56% |  +7.6%/mo drop  -28% |  +6.0%/mo drop  -28%
+real bot win rate 2021..: 93.0% of 626 closed trades
+real bot win rate 2024..: 94.3% of 281 closed trades
+real bot win rate 2025..: 93.6% of 140 closed trades

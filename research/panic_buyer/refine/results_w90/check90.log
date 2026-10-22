@@ -1,0 +1,12 @@
+columns: 2021-23 | 2024-26 | since 2025
+LIVE                                      +5.0%/mo win 93.6% drop  -29% worst trade   -5% |  +2.9%/mo win 92.5% drop  -16% worst trade   -3% |  +2.0%/mo win 91.5% drop  -15% worst trade   -2%
+10% mode                                 +15.0%/mo win 81.1% drop  -61% worst trade  -54% |  +8.1%/mo win 76.5% drop  -30% worst trade  -22% |  +6.1%/mo win 75.0% drop  -29% worst trade  -11%
+90% mode                                 +13.2%/mo win 93.8% drop  -64% worst trade  -50% |  +6.9%/mo win 92.6% drop  -35% worst trade  -27% |  +5.8%/mo win 93.2% drop  -23% worst trade  -12%
+90% mode, bot timing                     +15.9%/mo win 94.6% drop  -63% worst trade  -46% |  +8.2%/mo win 93.0% drop  -26% worst trade  -13% |  +5.7%/mo win 93.2% drop  -23% worst trade  -12%
+90% mode, bot timing + fills 0.2% worse  +13.8%/mo win 94.2% drop  -63% worst trade  -46% |  +6.4%/mo win 91.7% drop  -28% worst trade  -19% |  +5.1%/mo win 92.6% drop  -23% worst trade  -12%
+90% mode +LUNA/FTT/SRM                   +15.9%/mo win 93.7% drop  -64% worst trade  -50% |  +6.9%/mo win 92.6% drop  -35% worst trade  -27% |  +5.8%/mo win 93.2% drop  -23% worst trade  -12%
+90% mode, no crash guard +LUNA/FTT/SRM   -22.1%/mo win 93.9% drop -100% worst trade  -50% |  +0.0%/mo win  nan% drop    0% worst trade  nan% |  +0.0%/mo win  nan% drop    0% worst trade  nan%
+  neighbour depth 13.5% tp 2.5%          +14.4%/mo win 93.7% drop  -64% worst trade  -50% |  +6.3%/mo win 91.6% drop  -42% worst trade  -27% |  +5.1%/mo win 92.3% drop  -26% worst trade  -16%
+  neighbour depth 14.5% tp 2.5%          +14.0%/mo win 94.1% drop  -63% worst trade  -48% |  +7.3%/mo win 94.4% drop  -37% worst trade  -27% |  +5.8%/mo win 94.1% drop  -22% worst trade  -11%
+  neighbour depth 14.0% tp 2.0%          +12.9%/mo win 95.0% drop  -66% worst trade  -50% |  +6.5%/mo win 94.0% drop  -38% worst trade  -27% |  +4.7%/mo win 93.5% drop  -23% worst trade  -12%
+  neighbour depth 14.0% tp 3.0%          +14.3%/mo win 92.6% drop  -64% worst trade  -50% |  +6.9%/mo win 90.2% drop  -35% worst trade  -27% |  +5.3%/mo win 90.8% drop  -27% worst trade  -15%

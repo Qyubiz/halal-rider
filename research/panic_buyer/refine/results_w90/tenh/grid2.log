@@ -1,0 +1,90 @@
+#### grid2: 320 designs | qualify ten (>=10%/mo in 2021-23 AND 2024-26): 0 | qualify wr90: 2 | max 2024-26 8.76%/mo | max since-2025 7.46%/mo | max worst-of-three 7.18%/mo
+
+Top 15 by worst-of-three %/month (all designs):
+  A d14 tp5 hm48 w1 calm-2 wild+0 tpcalm+0     21-23 +17.4% dd -61 w 81 | 24-26  +8.1% dd -30 w 76 n127 | 25-  +7.2% dd -29 w 74 | min +7.18% wtrade -54%
+  A d15 tp6 hm48 w1 calm+0 wild+0 tpcalm-2     21-23 +18.4% dd -61 w 81 | 24-26  +7.1% dd -36 w 75 n 91 | 25-  +7.5% dd -27 w 76 | min +7.12% wtrade -54%
+  A d14 tp5 hm48 w1 calm+0 wild+0 tpcalm+0     21-23 +17.4% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+  A d15 tp6 hm48 w1 calm+0 wild+0 tpcalm+0     21-23 +17.7% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+  A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm+0     21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm-2     21-23 +17.3% dd -61 w 91 | 24-26  +8.2% dd -37 w 90 n104 | 25-  +6.9% dd -22 w 90 | min +6.85% wtrade -48%
+  A d14 tp5 hm48 w1 calm+0 wild+0 tpcalm-2     21-23 +17.4% dd -61 w 81 | 24-26  +7.4% dd -32 w 75 n118 | 25-  +6.8% dd -29 w 75 | min +6.83% wtrade -54%
+  A d15 tp6 hm48 w1 calm+0 wild-1 tpcalm+0     21-23 +14.4% dd -61 w 76 | 24-26  +6.7% dd -33 w 69 n109 | 25-  +7.1% dd -29 w 68 | min +6.73% wtrade -54%
+  A d15 tp6 hm48 w1 calm+0 wild-1 tpcalm-2     21-23 +14.5% dd -61 w 76 | 24-26  +6.7% dd -33 w 69 n109 | 25-  +7.0% dd -29 w 68 | min +6.67% wtrade -54%
+  A d14 tp5 hm48 w1 calm-2 wild+0 tpcalm-2     21-23 +17.5% dd -61 w 81 | 24-26  +7.3% dd -30 w 76 n127 | 25-  +6.6% dd -29 w 74 | min +6.60% wtrade -54%
+  A d15 tp6 hm48 w1 calm-2 wild+0 tpcalm+0     21-23 +17.8% dd -61 w 81 | 24-26  +6.8% dd -35 w 73 n 95 | 25-  +6.4% dd -32 w 71 | min +6.44% wtrade -54%
+  A d15 tp4 hm96 w1 calm-2 wild+0 tpcalm-2     21-23 +17.4% dd -61 w 92 | 24-26  +7.9% dd -35 w 90 n109 | 25-  +6.3% dd -29 w 89 | min +6.34% wtrade -48%
+  A d15 tp6 hm48 w1 calm-2 wild+0 tpcalm-2     21-23 +18.1% dd -61 w 81 | 24-26  +6.5% dd -35 w 73 n 95 | 25-  +6.3% dd -32 w 71 | min +6.30% wtrade -54%
+  A d14 tp5 hm48 cd24 calm-2 wild+0 tpcalm+0   21-23 +15.1% dd -61 w 80 | 24-26  +8.8% dd -29 w 77 n124 | 25-  +6.2% dd -29 w 75 | min +6.24% wtrade -54%
+  A d14 tp5 hm48 cd24 calm+0 wild+0 tpcalm+0   21-23 +15.0% dd -61 w 81 | 24-26  +8.1% dd -30 w 77 n115 | 25-  +6.1% dd -29 w 75 | min +6.08% wtrade -54%
+
+Top 10 by 2024-26 %/month:
+  A d14 tp5 hm48 cd24 calm-2 wild+0 tpcalm+0   21-23 +15.1% dd -61 w 80 | 24-26  +8.8% dd -29 w 77 n124 | 25-  +6.2% dd -29 w 75 | min +6.24% wtrade -54%
+  A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm+0     21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm-2     21-23 +17.3% dd -61 w 91 | 24-26  +8.2% dd -37 w 90 n104 | 25-  +6.9% dd -22 w 90 | min +6.85% wtrade -48%
+  A d14 tp5 hm48 cd24 calm+0 wild+0 tpcalm+0   21-23 +15.0% dd -61 w 81 | 24-26  +8.1% dd -30 w 77 n115 | 25-  +6.1% dd -29 w 75 | min +6.08% wtrade -54%
+  A d14 tp5 hm48 w1 calm-2 wild+0 tpcalm+0     21-23 +17.4% dd -61 w 81 | 24-26  +8.1% dd -30 w 76 n127 | 25-  +7.2% dd -29 w 74 | min +7.18% wtrade -54%
+  A d14 tp5 hm48 cd24 calm+0 wild+0 tpcalm-2   21-23 +15.4% dd -61 w 81 | 24-26  +8.0% dd -30 w 77 n115 | 25-  +5.9% dd -29 w 75 | min +5.90% wtrade -54%
+  A d15 tp4 hm96 w1 calm-2 wild+0 tpcalm-2     21-23 +17.4% dd -61 w 92 | 24-26  +7.9% dd -35 w 90 n109 | 25-  +6.3% dd -29 w 89 | min +6.34% wtrade -48%
+  A d14 tp5 hm48 cd24 calm-2 wild+0 tpcalm-2   21-23 +15.4% dd -61 w 82 | 24-26  +7.9% dd -29 w 77 n124 | 25-  +5.6% dd -29 w 75 | min +5.58% wtrade -54%
+  A d15 tp4 hm96 w1 calm-2 wild+0 tpcalm+0     21-23 +18.0% dd -61 w 91 | 24-26  +7.7% dd -34 w 89 n108 | 25-  +5.9% dd -29 w 87 | min +5.92% wtrade -48%
+  A d14 tp5 hm48 w1 calm+0 wild+0 tpcalm+0     21-23 +17.4% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+
+Top 10 by since-2025 %/month:
+  A d15 tp6 hm48 w1 calm+0 wild+0 tpcalm-2     21-23 +18.4% dd -61 w 81 | 24-26  +7.1% dd -36 w 75 n 91 | 25-  +7.5% dd -27 w 76 | min +7.12% wtrade -54%
+  A d15 tp6 hm48 w1 calm+0 wild+0 tpcalm+0     21-23 +17.7% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+  A d14 tp5 hm48 w1 calm-2 wild+0 tpcalm+0     21-23 +17.4% dd -61 w 81 | 24-26  +8.1% dd -30 w 76 n127 | 25-  +7.2% dd -29 w 74 | min +7.18% wtrade -54%
+  A d15 tp6 hm48 w1 calm+0 wild-1 tpcalm+0     21-23 +14.4% dd -61 w 76 | 24-26  +6.7% dd -33 w 69 n109 | 25-  +7.1% dd -29 w 68 | min +6.73% wtrade -54%
+  A d15 tp6 hm48 w1 calm+0 wild-1 tpcalm-2     21-23 +14.5% dd -61 w 76 | 24-26  +6.7% dd -33 w 69 n109 | 25-  +7.0% dd -29 w 68 | min +6.67% wtrade -54%
+  A d14 tp5 hm48 w1 calm+0 wild+0 tpcalm+0     21-23 +17.4% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+  A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm+0     21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  A d15 tp6 hm48 w1 calm-4 wild+0 tpcalm+0     21-23 +14.6% dd -72 w 78 | 24-26  +5.5% dd -41 w 69 n101 | 25-  +6.9% dd -28 w 74 | min +5.51% wtrade -54%
+  A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm-2     21-23 +17.3% dd -61 w 91 | 24-26  +8.2% dd -37 w 90 n104 | 25-  +6.9% dd -22 w 90 | min +6.85% wtrade -48%
+  A d14 tp5 hm48 w1 calm+0 wild+0 tpcalm-2     21-23 +17.4% dd -61 w 81 | 24-26  +7.4% dd -32 w 75 n118 | 25-  +6.8% dd -29 w 75 | min +6.83% wtrade -54%
+
+Qualifiers q_ten (0), best 8 by the rule:
+
+Qualifiers q_wr90 (2), best 8 by the rule:
+  A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm+0     21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm-2     21-23 +17.3% dd -61 w 91 | 24-26  +8.2% dd -37 w 90 n104 | 25-  +6.9% dd -22 w 90 | min +6.85% wtrade -48%
+
+Frontier: best design at each win-rate level (win rate = lower of 2021-23 and 2024-26):
+  win 90-100%: A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm+0     21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  win 85-90%: A d15 tp4 hm96 w1 calm-2 wild+0 tpcalm-2     21-23 +17.4% dd -61 w 92 | 24-26  +7.9% dd -35 w 90 n109 | 25-  +6.3% dd -29 w 89 | min +6.34% wtrade -48%
+  win 80-85%: A d15 tp4 hm96 w1 calm+0 wild-1 tpcalm-2     21-23 +18.2% dd -61 w 91 | 24-26  +6.6% dd -35 w 83 n121 | 25-  +5.9% dd -27 w 85 | min +5.93% wtrade -48%
+  win 75-80%: A d14 tp5 hm48 w1 calm-2 wild+0 tpcalm+0     21-23 +17.4% dd -61 w 81 | 24-26  +8.1% dd -30 w 76 n127 | 25-  +7.2% dd -29 w 74 | min +7.18% wtrade -54%
+  win 70-75%: A d15 tp6 hm48 w1 calm+0 wild+0 tpcalm-2     21-23 +18.4% dd -61 w 81 | 24-26  +7.1% dd -36 w 75 n 91 | 25-  +7.5% dd -27 w 76 | min +7.12% wtrade -54%
+  win 0-70%: A d15 tp6 hm48 w1 calm+0 wild-1 tpcalm+0     21-23 +14.4% dd -61 w 76 | 24-26  +6.7% dd -33 w 69 n109 | 25-  +7.1% dd -29 w 68 | min +6.73% wtrade -54%
+
+Pareto set (win rate, worst-of-three %/mo, worst drop): 12 designs
+  A d14 tp5 hm48 cd24 calm-4 wild+0 tpcalm+0   21-23 +16.1% dd -49 w 79 | 24-26  +5.6% dd -34 w 70 n125 | 25-  +3.8% dd -29 w 67 | min +3.79% wtrade -43%
+  A d14 tp5 hm48 cd24 calm-4 wild+1 tpcalm+0   21-23 +15.1% dd -49 w 80 | 24-26  +4.1% dd -39 w 70 n107 | 25-  +3.2% dd -29 w 67 | min +3.23% wtrade -45%
+  A d14 tp5 hm48 cd24 calm-4 wild+2 tpcalm+0   21-23 +14.6% dd -51 w 80 | 24-26  +3.2% dd -41 w 70 n 98 | 25-  +2.5% dd -29 w 70 | min +2.48% wtrade -38%
+  A d14 tp5 hm48 cd24 calm-4 wild+2 tpcalm-2   21-23 +13.2% dd -51 w 83 | 24-26  +2.2% dd -43 w 75 n103 | 25-  +1.5% dd -29 w 75 | min +1.48% wtrade -38%
+  A d14 tp5 hm48 w1 calm+0 wild+0 tpcalm+0     21-23 +17.4% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+  A d14 tp5 hm48 w1 calm-2 wild+0 tpcalm+0     21-23 +17.4% dd -61 w 81 | 24-26  +8.1% dd -30 w 76 n127 | 25-  +7.2% dd -29 w 74 | min +7.18% wtrade -54%
+  A d14 tp5 hm48 cd24 calm+0 wild+0 tpcalm+0   21-23 +15.0% dd -61 w 81 | 24-26  +8.1% dd -30 w 77 n115 | 25-  +6.1% dd -29 w 75 | min +6.08% wtrade -54%
+  A d14 tp5 hm48 cd24 calm-2 wild+0 tpcalm+0   21-23 +15.1% dd -61 w 80 | 24-26  +8.8% dd -29 w 77 n124 | 25-  +6.2% dd -29 w 75 | min +6.24% wtrade -54%
+  A d15 tp4 hm96 w1 calm-4 wild+0 tpcalm+0     21-23 +15.5% dd -61 w 90 | 24-26  +6.5% dd -43 w 87 n109 | 25-  +5.8% dd -30 w 85 | min +5.84% wtrade -48%
+  A d15 tp4 hm96 w1 calm-2 wild+0 tpcalm+0     21-23 +18.0% dd -61 w 91 | 24-26  +7.7% dd -34 w 89 n108 | 25-  +5.9% dd -29 w 87 | min +5.92% wtrade -48%
+  A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm+0     21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm-2     21-23 +17.3% dd -61 w 91 | 24-26  +8.2% dd -37 w 90 n104 | 25-  +6.9% dd -22 w 90 | min +6.85% wtrade -48%
+
+Stressed version (bot timing cd+1, buys and sells 0.2% worse, +LUNA/FTT/SRM sold at their last hour):
+A d14 tp5 hm48 w1 calm-2 wild+0 tpcalm+0
+   2021-23 +17.38%/mo dd  -61% win 80.5% n  329 | 2024-26  +8.12%/mo dd  -30% win 76.4% n  127 | since 2025  +7.18%/mo dd  -29% win 74.2% | worst trade (acct) -54% / -22% / -11%
+   STRESSED 2021-23 +12.06% dd  -74% | 2024-26  +4.28% dd  -37% | since 2025  +3.19% dd  -29% | win 78.9/72.3/67.9% | worst trade -39% / -21% / -13%
+A d15 tp6 hm48 w1 calm+0 wild+0 tpcalm-2
+   2021-23 +18.43%/mo dd  -61% win 80.5% n  277 | 2024-26  +7.12%/mo dd  -36% win 74.7% n   91 | since 2025  +7.46%/mo dd  -27% win 75.5% | worst trade (acct) -54% / -22% / -10%
+   STRESSED 2021-23 +10.94% dd  -75% | 2024-26  +5.72% dd  -37% | since 2025  +5.74% dd  -27% | win 78.3/71.1/68.8% | worst trade -52% / -21% / -10%
+A d14 tp5 hm48 w1 calm+0 wild+0 tpcalm+0
+   2021-23 +17.37%/mo dd  -61% win 80.7% n  332 | 2024-26  +7.50%/mo dd  -32% win 75.4% n  118 | since 2025  +7.02%/mo dd  -29% win 74.6% | worst trade (acct) -54% / -22% / -11%
+   STRESSED 2021-23 +11.57% dd  -75% | 2024-26  +4.87% dd  -37% | since 2025  +4.44% dd  -29% | win 79.1/73.5/71.9% | worst trade -39% / -21% / -13%
+A d15 tp6 hm48 w1 calm+0 wild+0 tpcalm+0
+   2021-23 +17.65%/mo dd  -61% win 79.9% n  274 | 2024-26  +7.01%/mo dd  -36% win 73.6% n   91 | since 2025  +7.29%/mo dd  -27% win 73.5% | worst trade (acct) -54% / -22% / -10%
+   STRESSED 2021-23 +10.32% dd  -80% | 2024-26  +5.72% dd  -37% | since 2025  +5.74% dd  -27% | win 77.8/71.1/68.8% | worst trade -52% / -21% / -10%
+A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm+0
+   2021-23 +17.60%/mo dd  -61% win 91.1% n  303 | 2024-26  +8.27%/mo dd  -37% win 90.3% n  103 | since 2025  +6.96%/mo dd  -22% win 90.0% | worst trade (acct) -48% / -27% / -11%
+   STRESSED 2021-23 +15.73% dd  -59% | 2024-26  +5.60% dd  -38% | since 2025  +4.44% dd  -31% | win 90.6/88.4/87.2% | worst trade -45% / -27% / -15%
+A d15 tp4 hm96 w1 calm+0 wild+0 tpcalm-2
+   2021-23 +17.35%/mo dd  -61% win 91.1% n  303 | 2024-26  +8.20%/mo dd  -37% win 90.4% n  104 | since 2025  +6.85%/mo dd  -22% win 90.2% | worst trade (acct) -48% / -27% / -11%
+   STRESSED 2021-23 +15.58% dd  -59% | 2024-26  +5.60% dd  -38% | since 2025  +4.44% dd  -31% | win 90.7/88.4/87.2% | worst trade -45% / -27% / -15%
