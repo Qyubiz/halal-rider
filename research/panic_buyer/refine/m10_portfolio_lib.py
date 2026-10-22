@@ -57,8 +57,17 @@ def market(holdout=False):
     return _mk[holdout]
 
 
+_dc = {}
+
+
 def daily_close(sym):
     """Completed UTC daily closes, holdout file (Dec 2017 - 2020) joined to the main file (2021 -)."""
+    if sym not in _dc:
+        _dc[sym] = _daily_close(sym)
+    return _dc[sym]
+
+
+def _daily_close(sym):
     a = os.path.join(E.HOLDOUT, "1h_pre", f"{sym}.csv")
     parts = []
     if os.path.exists(a):
@@ -562,6 +571,7 @@ def pkernel(o, h, l, c, ref, gm, hod, mstart,
 
 
 LOGC = ["eb", "xb", "k", "why", "ret", "amt", "eq0", "sl"]
+_gm, _tt, _ev = {}, {}, {}
 TREND_DEF = dict(assets=("BTCUSDT", "ETHUSDT"), aw=(0.5, 0.5), rule="sma", n=200, unknown_on=False)
 
 
@@ -572,20 +582,33 @@ def prun(holdout, w, dips=(L.MODE90,), mom=None, trend=None, rb=2, guard=0.35, p
     O = P["o"].values; n, K = O.shape
     trend = dict(TREND_DEF, **(trend or {}))
     if ev is None:
-        ev = mom_events(holdout, mom) if w[len(dips)] > 0 else np.zeros((0, 8))
+        if w[len(dips)] > 0:
+            ekey = (holdout, tuple(sorted((mom or {}).items())))
+            if ekey not in _ev:
+                _ev[ekey] = np.ascontiguousarray(mom_events(holdout, mom), dtype=np.float64)
+            ev = _ev[ekey]
+        else:
+            ev = np.zeros((0, 8))
     slots = int(dict(MOM_DEF, **(mom or {}))["slots"])
-    gm = L.guard_mask(P, guard) if guard > 0 else np.ones((n, K))
+    gkey = (holdout, guard)
+    if gkey not in _gm:
+        _gm[gkey] = np.ascontiguousarray(L.guard_mask(P, guard) if guard > 0 else np.ones((n, K)), dtype=np.float64)
+    gm = _gm[gkey]
     hod = np.asarray(idx.hour, np.int64)
     ms = np.asarray((idx.day == 1) & (idx.hour == 0), np.int64)
     tk = np.array([syms.index(a) for a in trend["assets"]], np.int64)
     taw = np.asarray(trend["aw"], np.float64)
-    tt = np.column_stack([trend_target(idx, a, trend["rule"], trend["n"], trend["unknown_on"]) for a in trend["assets"]])
+    tkey = (holdout, tuple(trend["assets"]), trend["rule"], trend["n"], trend["unknown_on"])
+    if tkey not in _tt:
+        _tt[tkey] = np.ascontiguousarray(np.column_stack(
+            [trend_target(idx, a, trend["rule"], trend["n"], trend["unknown_on"]) for a in trend["assets"]]))
+    tt = _tt[tkey]
     a = lambda key, dt=np.float64: np.array([d[key] for d in dips], dt)  # noqa: E731
     eq, seq, lg = pkernel(O, P["h"].values, P["l"].values, P["cf"].values, P["ref"].values,
-                          np.ascontiguousarray(gm, dtype=np.float64), hod, ms,
+                          gm, hod, ms,
                           a("depth"), a("N", np.int64), a("fmax"), a("tp"), a("hm", np.int64),
                           a("cd", np.int64) + int(cd_add),
-                          np.ascontiguousarray(ev, dtype=np.float64), slots, tk, taw, np.ascontiguousarray(tt),
+                          np.ascontiguousarray(ev, dtype=np.float64), slots, tk, taw, tt,
                           np.asarray(w, np.float64), int(rb), E.EPS, E.FEE, np.full(K, E.SLIP_MAJOR), float(pen),
                           float(pens), 1, bool(mtp_now))
     names = [f"dip{i}" for i in range(len(dips))] + ["mom", "trend", "cash"]
