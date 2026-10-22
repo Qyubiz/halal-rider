@@ -87,6 +87,22 @@ to 0 to switch off one limit). `panic-buyer status` shows the limits and any act
 Setup can reuse halal-rider's Binance key and Telegram. Keep enough USDT in the account for both bots
 (this bot's capital plus halal-rider's), because this bot's waiting buy orders lock its USDT.
 
+## Paper trading (try it first, no real money)
+Runs the real bot logic on Binance's live prices with pretend money: nothing is sent to your Binance account and
+no API key is needed. Three paper bots run side by side, 650 USDT (about RM3,000) pretend money each, profits
+reinvested: `normal`, `90wr` (90% mode) and `ensemble` (combined mode with the risk limits).
+
+    panic-buyer paper start      start all three
+    panic-buyer paper status     pretend profit, trades and win rate of each
+    panic-buyer paper log 90wr   live log of one (normal, 90wr or ensemble)
+    panic-buyer paper stop       stop them (results are kept)
+    panic-buyer paper reset      stop them and delete their results
+
+Paper fills follow the backtest rules (a waiting buy fills only if an hourly candle trades 0.1% through it), so
+paper results are a check that the bot works on your server, not a promise of live fills. Telegram messages from
+paper bots start with [PAPER ...]. Paper bots keep their own folders (/opt/panic-buyer/paper-*) and never touch
+the live bot's data.
+
 ## Everyday commands
     panic-buyer status    open trades, waiting buys, profit
     panic-buyer log       live log

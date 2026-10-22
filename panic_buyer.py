@@ -48,6 +48,7 @@ sys.path.insert(0, HERE)
 
 from binance_spot import BinanceError, BinanceSpot, round_step  # noqa: E402
 from guardrails import RiskGuard  # noqa: E402
+from paper_exchange import PaperExchange  # noqa: E402
 
 MYT = timezone(timedelta(hours=8))
 HOUR_MS = 3600 * 1000
@@ -550,14 +551,14 @@ class Ensemble:
         return "\n".join(parts)
 
 
-def telegram():
+def telegram(prefix="Panic buyer: "):
     token, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
     if not token or not chat:
         return None
 
     def send(msg):
         try:
-            data = urllib.parse.urlencode({"chat_id": chat, "text": "Panic buyer: " + msg}).encode()
+            data = urllib.parse.urlencode({"chat_id": chat, "text": prefix + msg}).encode()
             urllib.request.urlopen(f"https://api.telegram.org/bot{token}/sendMessage", data=data, timeout=10)
         except Exception:  # noqa: BLE001 - alerts must never stop trading
             pass
@@ -565,7 +566,7 @@ def telegram():
 
 
 def load_cfg():
-    path = os.path.join(HERE, "panic_config.json")
+    path = os.environ.get("PANIC_CONFIG") or os.path.join(HERE, "panic_config.json")
     cfg = dict(DEFAULT_CFG)
     if os.path.exists(path):
         with open(path) as f:
@@ -578,14 +579,30 @@ def main(argv=None):
     ap.add_argument("command", choices=["check", "run", "status", "pause", "panic"])
     a = ap.parse_args(argv)
     cfg = load_cfg()
-    client = BinanceSpot()
-    capital = float(os.environ.get("CAPITAL_USDT", "0") or 0)
-    compound = os.environ.get("COMPOUND", "no").strip().lower() in ("yes", "y", "true", "1")
-    ens = Ensemble(client, cfg, capital, compound=compound, notify=telegram())
+    yes = ("yes", "y", "true", "1")
+    paper = os.environ.get("PAPER", "no").strip().lower() in yes
+    compound = os.environ.get("COMPOUND", "no").strip().lower() in yes
+    if paper:   # real prices, pretend money: nothing is ever sent to the Binance account
+        capital = float(os.environ.get("PAPER_USDT") or os.environ.get("CAPITAL_USDT") or 650)
+        root = os.environ.get("PAPER_DATA") or os.environ.get("PANIC_DATA") or HERE   # never the live data folder
+        client = PaperExchange(root, capital)
+        notify = telegram(f"[PAPER {os.environ.get('PAPER_NAME', 'test')}] ")
+    else:
+        capital = float(os.environ.get("CAPITAL_USDT", "0") or 0)
+        client = BinanceSpot()
+        notify = telegram()
+        root = None
+    ens = Ensemble(client, cfg, capital, compound=compound, root=root, notify=notify)
     bot = ens.bots[0]
     n_min = max(5 * b.cfg["n_orders"] / (b.capital / capital) for b in ens.bots) if capital else 5
 
     if a.command == "status":
+        if paper:
+            v = client.value()
+            st = client.a["start_usdt"]
+            days = (now_ms() - client.a["started_ms"]) / 86400000
+            print(f"PAPER TRADING (pretend money) since {myt(client.a['started_ms'])}, {days:.1f} days: "
+                  f"{st:.2f} -> {v:.2f} USDT ({(v / st - 1) * 100:+.2f}%)")
         print(ens.summary())
         return 0
 
@@ -598,6 +615,10 @@ def main(argv=None):
         return 1
     if a.command == "check":
         print(f"Binance reachable, clock offset {client.offset_ms} ms, {len(bot.info)} of {len(cfg['symbols'])} coins found")
+        if paper:
+            print(f"PAPER mode: pretend account {client.value():.2f} USDT, no API key used.")
+            print("CHECK PASSED")
+            return 0
         try:
             bal = client.balances()
         except BinanceError as err:
@@ -627,7 +648,7 @@ def main(argv=None):
     if capital < n_min:
         print("CAPITAL_USDT is missing or too small in /etc/panic-buyer.env, refusing to trade.")
         return 1
-    bot.log(f"Started. Capital {capital:.2f} USDT, {len(ens.bots)} sleeve(s), {len(bot.info)} coins, profits "
+    bot.log(f"Started{' PAPER TRADING (pretend money)' if paper else ''}. Capital {capital:.2f} USDT, {len(ens.bots)} sleeve(s), {len(bot.info)} coins, profits "
             f"{'reinvested' if compound else 'set aside'}. {ens.guard.status(now_ms())}", alert=True)
     last_info = time.time()
     while True:
