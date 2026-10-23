@@ -289,7 +289,8 @@ def market(which):
                  slip=np.ascontiguousarray(np.repeat(sl[None, :], n, 0)))
     o, h, l, c, ref = M["o"], M["h"], M["l"], M["c"], M["ref"]
     M["gm"] = (V.guard_mask({"cf": pd.DataFrame(np.asarray(c))}, 0.35) > 0).astype(np.uint8)
-    M["bits"], M["rng"] = _bits_and_rng(o, h, l, c, ref, M["core"], M["syms"].index("BTCUSDT"))
+    h19 = np.array([s in E.H19 for s in M["syms"]])      # market votes (breadth) from the 19 coins only
+    M["bits"], M["rng"] = _bits_and_rng(o, h, l, c, ref, h19, M["syms"].index("BTCUSDT"))
     M["R2"] = {}
     _MK[which] = M
     return M
