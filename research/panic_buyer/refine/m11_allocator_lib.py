@@ -7,8 +7,9 @@ with its own m10 engine, costs and fill rules).
 How the one account works (exact, no approximation):
   * The account = a CASH pool + one sub-balance per sleeve. Each sleeve trades only its own sub-balance, with its
     own unchanged rules (so every order is fully funded and the sum of all orders never exceeds the account's cash).
-  * At each rebalance time (first hour of the month by default; or weekly, Monday 00:00) the allocator sets a target
-    w_s x (account equity at the last close) for every sleeve, from trailing results known before that hour.
+  * At each rebalance time (first hour of the month by default; or weekly, Monday 00:00) the allocator sets new
+    weights w_s for every sleeve, from trailing results known before that hour; a sleeve's target is w_s x the
+    account equity at the last close before the hour in which its balance is adjusted.
   * A sleeve's sub-balance is changed ONLY at the start of an hour in which it holds no position (it is all cash
     then): a sleeve above target releases the excess to the pool; a sleeve below target takes what the pool has (it
     stays pending, and tops up at its next flat hour, until the next rebalance). Open positions are never sold for
@@ -216,17 +217,25 @@ def akernel(U, NF, rbt, Wt, t0):
     t0 first hour of the account. Returns account equity (n,), lambda (n,S), pool (n,)."""
     n, S = U.shape
     lam = np.zeros(S); pend = np.zeros(S, np.bool_); tgt = np.zeros(S)
+    row = 0
     pool = 1.0
     eq = np.ones(n); LAM = np.zeros((n, S)); PO = np.ones(n)
     for t in range(t0, n):
         if rbt[t] >= 0:
+            row = rbt[t]
+            for s in range(S):
+                pend[s] = True
+        anyp = False
+        for s in range(S):
+            if pend[s]:
+                anyp = True
+        if anyp:                                            # target = weight x account equity at the last close
             A = pool
             for s in range(S):
                 up = U[t - 1, s] if t > 0 else 1.0
                 A += lam[s] * up
             for s in range(S):
-                tgt[s] = Wt[rbt[t], s] * A
-                pend[s] = True
+                tgt[s] = Wt[row, s] * A
         for s in range(S):                                  # releases first
             if pend[s] and not NF[t, s]:
                 up = U[t - 1, s] if t > 0 else 1.0
@@ -253,6 +262,9 @@ def akernel(U, NF, rbt, Wt, t0):
     return eq, LAM, PO
 
 
+_trail = {}
+
+
 def run(scen, design, freq=None, day=None, start=None):
     """One account on scenario scen. freq/day override the design's calendar; start = first hour (Timestamp)."""
     idx, U, NF, T = load(scen)
@@ -264,7 +276,10 @@ def run(scen, design, freq=None, day=None, start=None):
     if design.get("static") is not None:
         Wt = np.tile(np.asarray(design["static"], np.float64), (len(pos), 1))
     else:
-        Wt = weights(trailing(scen, taus, design["L"]), design)
+        key = (scen, freq, day, t0, design["L"])
+        if key not in _trail:
+            _trail[key] = trailing(scen, taus, design["L"])
+        Wt = weights(_trail[key], design)
     rbt = np.full(len(idx), -1, np.int64)
     rbt[pos] = np.arange(len(pos))
     eq, LAM, PO = akernel(U, NF, rbt, np.ascontiguousarray(Wt), t0)
