@@ -127,7 +127,59 @@ def stage_b1():
     print(f"stage B1 designs: {len(df)}, pass literal {int(df['pass'].sum())}, pass fallback {int(df['pass_fb'].sum())}")
 
 
+def stage_b2():
+    """Small refinement around the B1 passers (cash rules only; S2 rules from stage A)."""
+    syms, idx, P = V.market(False)
+    c, d, a = S2C["S2c 24h-10% +1% 96h"], S2C["S2d 24h-10% +1% 48h"], S2C["S2a 24h-12% +1% 96h"]
+    L = [("S2c pm0 armx0.08 0.2x5", dict(s2=dict(c, fs2=0.2, n2=5), pm=0, armx=0.08)),
+         ("S2c pm0 armx0.05 0.2x5 watch", dict(s2=dict(c, fs2=0.2, n2=5), pm=0, armx=0.05, watch=1)),
+         ("S2c pm0 armx0.02 0.2x5 watch", dict(s2=dict(c, fs2=0.2, n2=5), pm=0, armx=0.02, watch=1)),
+         ("S2c pm0 armx0.05 0.25x4", dict(s2=dict(c, fs2=0.25, n2=4), pm=0, armx=0.05)),
+         ("S2c pm0 armx0.05 0.15x6", dict(s2=dict(c, fs2=0.15, n2=6), pm=0, armx=0.05)),
+         ("S2c pm0 armx0.05 0.33x3", dict(s2=dict(c, fs2=0.33, n2=3), pm=0, armx=0.05)),
+         ("S2c pm0 armx0.05 0.2x3", dict(s2=dict(c, fs2=0.2, n2=3), pm=0, armx=0.05)),
+         ("S2c pm0 armx0.05 0.2x5 pause48", dict(s2=dict(c, fs2=0.2, n2=5), pm=0, armx=0.05, pause_cl=48)),
+         ("S2c pm0 armx0.05 0.2x5 cut0.5", dict(s2=dict(c, fs2=0.2, n2=5), pm=0, armx=0.05, cut_s2=0.5)),
+         ("S2c pm1 armx0.08 0.2x5", dict(s2=dict(c, fs2=0.2, n2=5), pm=1, armx=0.08)),
+         ("S2d pm0 armx0.08 0.2x5", dict(s2=dict(d, fs2=0.2, n2=5), pm=0, armx=0.08)),
+         ("S2a pm0 armx0.08 0.2x5", dict(s2=dict(a, fs2=0.2, n2=5), pm=0, armx=0.08))]
+    rows = [evalrow(P, idx, "B2 " + nm, kw) for nm, kw in L]
+    df = pd.DataFrame(rows)
+    df.to_csv(os.path.join(OUT, "grid_b2.csv"), index=False)
+    print(f"stage B2 designs: {len(df)}, pass literal {int(df['pass'].sum())}, pass fallback {int(df['pass_fb'].sum())}")
+
+
+VERSIONS = (("as designed", {}), ("cooldowns -1h", dict(cd_add=-1)), ("cooldowns +1h", dict(cd_add=1)),
+            ("bot timing", dict(mtp_now=True)), ("start 2021-01-15", dict(t0=pd.Timestamp("2021-01-15"))))
+
+
+def stage_c():
+    """5 versions of every design that passes (literal rule; fallback rule only if none passes literally)."""
+    syms, idx, P = V.market(False)
+    df = pd.concat([pd.read_csv(os.path.join(OUT, f)) for f in ("grid_b1.csv", "grid_b2.csv")], ignore_index=True)
+    print(f"designs searched: A {len(pd.read_csv(os.path.join(OUT, 'grid_a.csv')))} + B {len(df)}")
+    ok = df[df["pass"]]
+    rule = "literal"
+    if ok.empty:
+        ok, rule = df[df["pass_fb"]], "fallback"
+    print(f"{len(ok)} designs pass ({rule} rule)")
+    out = []
+    for _, x in ok.iterrows():
+        kw = json.loads(x["kw"])
+        mos = []
+        for vn, v in VERSIONS:
+            r = run(P, idx, dict(kw, **v))
+            mos.append(r["d_mo"])
+        out.append(dict(name=x["name"], kw=x["kw"], mo=x["mo"], wr=x["wr"], wr_w=x["wr_w"], dd=x["dd"], dd_w=x["dd_w"],
+                        avg5=float(np.mean(mos)), versions=" ".join(f"{m*100:+.2f}" for m in mos)))
+        print(f"{x['name']:52s} avg of 5 versions {np.mean(mos)*100:+6.2f}%/mo [{out[-1]['versions']}] WR {x['wr']*100:.1f} "
+              f"worse WR {x['wr_w']*100:.1f} dd {x['dd']*100:.1f} worse dd {x['dd_w']*100:.1f}", flush=True)
+    res = pd.DataFrame(out).sort_values("avg5", ascending=False)
+    res.to_csv(os.path.join(OUT, "grid_c.csv"), index=False)
+    print("PICK:", res.iloc[0]["name"], res.iloc[0]["kw"])
+
+
 if __name__ == "__main__":
     t = time.time()
-    {"A": stage_a, "B1": stage_b1}[sys.argv[1]]()
+    {"A": stage_a, "B1": stage_b1, "B2": stage_b2, "C": stage_c}[sys.argv[1]]()
     print(f"{time.time()-t:.0f}s")
