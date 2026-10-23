@@ -1,0 +1,29 @@
+  A only normal (19 coins) vs vk           trades 554 vs 554 log identical True max rel eq diff 0.0e+00 x806.9364 vs x806.9364
+     (28s)
+    normal 2021-23               win  93.8% | +13.17%/mo | drop -64.4% (1-min -67.9%) | worst trade  -50.3% acct |  11.3 tr/mo | A 406 93.8% E 0  nan% F 0  nan% | sold-for-A 0 | flat 80.5%
+    normal 2024-26               win  92.6% |  +6.89%/mo | drop -35.4% (1-min -53.7%) | worst trade  -27.3% acct |   4.4 tr/mo | A 148 92.6% E 0  nan% F 0  nan% | sold-for-A 0 | flat 90.4%
+    normal since 2025            win  93.2% |  +5.80%/mo | drop -22.6% (1-min -53.7%) | worst trade  -11.8% acct |   3.4 tr/mo | A 73 93.2% E 0  nan% F 0  nan% | sold-for-A 0 | flat 92.0%
+  A only worse (19 coins) vs vk            trades 534 vs 534 log identical True max rel eq diff 0.0e+00 x164.2358 vs x164.2358
+     (1s)
+    worse 2021-23                win  93.4% |  +9.79%/mo | drop -65.9% (1-min -68.0%) | worst trade  -50.5% acct |  11.0 tr/mo | A 394 93.4% E 0  nan% F 0  nan% | sold-for-A 0 | flat 80.0%
+    worse 2024-26                win  92.1% |  +5.31%/mo | drop -37.5% (1-min -53.7%) | worst trade  -27.6% acct |   4.2 tr/mo | A 140 92.1% E 0  nan% F 0  nan% | sold-for-A 0 | flat 90.1%
+    worse since 2025             win  92.6% |  +4.56%/mo | drop -22.7% (1-min -53.7%) | worst trade  -12.2% acct |   3.1 tr/mo | A 68 92.6% E 0  nan% F 0  nan% | sold-for-A 0 | flat 91.8%
+  A only stressed (22 coins) vs vk         trades 572 vs 572 log identical True max rel eq diff 0.0e+00 x254.9376 vs x254.9376
+     (8s)
+    stressed 2021-23             win  93.7% | +10.96%/mo | drop -65.0% (1-min -65.5%) | worst trade  -45.9% acct |  11.9 tr/mo | A 427 93.7% E 0  nan% F 0  nan% | sold-for-A 0 | flat 78.9%
+    stressed 2024-26             win  91.7% |  +5.49%/mo | drop -30.3% (1-min -53.7%) | worst trade  -19.1% acct |   4.3 tr/mo | A 145 91.7% E 0  nan% F 0  nan% | sold-for-A 0 | flat 90.0%
+    stressed since 2025          win  92.6% |  +4.44%/mo | drop -22.7% (1-min -53.7%) | worst trade  -12.2% acct |   3.1 tr/mo | A 68 92.6% E 0  nan% F 0  nan% | sold-for-A 0 | flat 91.8%
+    normal 2018-20 (1m data)     win  92.2% | +10.41%/mo | drop -66.3% (1-min -69.9%) | worst trade  -37.3% acct |  10.0 tr/mo | A 360 92.2% E 0  nan% F 0  nan% | sold-for-A 0 | flat 82.3%
+    worse 2018-20 (1m data)      win  91.7% |  +7.03%/mo | drop -69.9% (1-min -73.1%) | worst trade  -37.5% acct |   9.7 tr/mo | A 349 91.7% E 0  nan% F 0  nan% | sold-for-A 0 | flat 82.0%
+  published (hourly CSV candles): 2021-23 93.8/+13.17/-64.4, 2024-26 92.6/+6.89/-35.4, since 2025 93.2/+5.80/-22.6, 2018-20 92.5/+10.82/-66.3; worse 2024-26 +5.31; stressed 2024-26 91.7/+5.49/-30.3
+  E only vs meanrev (5m bars)              trades 636 vs 636 log identical True max rel eq diff 0.0e+00 x220.1369 vs x220.1369
+    E only 2021-23               win  94.9% | +12.96%/mo | drop -31.8% (1-min -40.4%) | worst trade  -20.2% acct |  14.1 tr/mo | A 0  nan% E 508 94.9% F 0  nan% | sold-for-A 0 | flat 98.8%
+  F only vs scalp (slip panel)             trades 1922 vs 1922 log identical True max rel eq diff 5.6e-15 x17.2543 vs x17.2543
+    F only 2021-23 (slip panel)  win  96.0% |  +6.27%/mo | drop -36.6% (1-min -37.0%) | worst trade  -13.6% acct |  42.3 tr/mo | A 0  nan% E 0  nan% F 1522 96.0% | sold-for-A 0 | flat 78.6%
+  2021-23 90% mode fills whose hour opened <=   0% above the trigger:  18.2% of trades,   5.2% of the log-profit
+  2021-23 90% mode fills whose hour opened <=   2% above the trigger:  53.4% of trades,  42.3% of the log-profit
+  2021-23 90% mode fills whose hour opened <=   4% above the trigger:  84.2% of trades,  71.5% of the log-profit
+  2021-23 90% mode fills whose hour opened <=   6% above the trigger:  94.6% of trades,  88.2% of the log-profit
+  2021-23 90% mode fills whose hour opened <=   8% above the trigger:  97.8% of trades,  92.6% of the log-profit
+  2021-23 90% mode fills whose hour opened <=  10% above the trigger:  98.3% of trades,  93.8% of the log-profit
+M11 STACK CHECK PASSED
