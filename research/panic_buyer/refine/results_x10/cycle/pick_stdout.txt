@@ -1,0 +1,56 @@
+RULE A: 2087 settings qualify; RULE B (stressed 2021-23): 5 qualify
+RULE A PICK (chosen on 2021-23 only): check 15m, trigger 1h-high -6%, tp +1.0%, stop 12h, cooldown 0h, 1 coin(s) x 100%
+  (1) 2024-26   +4.45%/mo  x   4.33  drop -44.0%
+  (2) 2025-26   +4.35%/mo  x   2.52  drop -44.0%
+  (3) 2021-23  +28.18%/mo  x7556.56  drop -48.2%  2022 +218.9%
+      trades 1629, worst trade -36.2% of account (2024-26: -26.4%), 2024-26 win 91% avg +0.51%
+  (4) fills 0.2% worse + LUNA/FTT/SRM: 2024-26  +0.00%/mo drop   0.0% | 2025-26  +0.00%/mo drop   0.0% | 2021-23  -2.23%/mo drop -99.9% 2022 -99.8% | worst trade -98.4% of account
+  extra: fills 0.2% worse on buys AND sells: 2024-26 +0.50%/mo drop -44.2% | 2025-26 +0.81%/mo | 2021-23 +9.59%/mo drop -66.3%
+  extra: both sides + LUNA/FTT/SRM: 2024-26 +0.00%/mo drop 0.0% | 2025-26 +0.00%/mo | 2021-23 -9.08%/mo drop -100.0%
+  years: 2021 +147361% 2022 +219% 2023 +61% 2024 +72% 2025 +85% 2026 +36%
+  2024-26 months: up 71%, worst -26.9% (2024-04), best +61.5% (2024-11), median +3.4%
+
+RULE B PICK (chosen on stressed 2021-23 only): check 15m, trigger 2h-high -8%, tp +3.0%, stop 6h, cooldown 2h, 3 coin(s) x 33%
+  (1) 2024-26   +2.48%/mo  x   2.28  drop -37.5%
+  (2) 2025-26   +1.48%/mo  x   1.38  drop -37.5%
+  (3) 2021-23  +11.47%/mo  x  49.65  drop -35.4%  2022 +16.4%
+      trades 2118, worst trade -11.4% of account (2024-26: -6.9%), 2024-26 win 75% avg +0.98%
+  (4) fills 0.2% worse + LUNA/FTT/SRM: 2024-26  +1.99%/mo drop -37.6% | 2025-26  +1.15%/mo drop -37.6% | 2021-23  +8.26%/mo drop -64.0% 2022 -29.9% | worst trade -28.8% of account
+  extra: fills 0.2% worse on buys AND sells: 2024-26 +1.35%/mo drop -37.6% | 2025-26 +0.72%/mo | 2021-23 +7.24%/mo drop -40.5%
+  extra: both sides + LUNA/FTT/SRM: 2024-26 +1.35%/mo drop -37.6% | 2025-26 +0.72%/mo | 2021-23 +5.77%/mo drop -68.7%
+  years: 2021 +2600% 2022 +16% 2023 +58% 2024 +66% 2025 +13% 2026 +22%
+  2024-26 months: up 65%, worst -9.4% (2024-04), best +27.5% (2024-11), median +1.0%
+
+HINDSIGHT best 2024-26: check 5m, trigger 3h-high -8%, tp +3.0%, stop 6h, cooldown 0h, 1 coin(s) x 100%
+  (1) 2024-26   +8.85%/mo  x  17.39  drop -79.0%
+  (2) 2025-26   +7.11%/mo  x   4.42  drop -79.0%
+  (3) 2021-23  +20.17%/mo  x 743.25  drop -79.4%  2022 -22.7%
+      trades 1548, worst trade -43.6% of account (2024-26: -19.9%), 2024-26 win 74% avg +0.90%
+  (4) fills 0.2% worse + LUNA/FTT/SRM: 2024-26  +0.00%/mo drop   0.0% | 2025-26  +0.00%/mo drop   0.0% | 2021-23 -11.21%/mo drop -100.0% 2022 -100.0% | worst trade -89.7% of account
+  extra: fills 0.2% worse on buys AND sells: 2024-26 +5.43%/mo drop -79.1% | 2025-26 +4.57%/mo | 2021-23 +3.37%/mo drop -89.7%
+  extra: both sides + LUNA/FTT/SRM: 2024-26 +0.00%/mo drop 0.0% | 2025-26 +0.00%/mo | 2021-23 -17.26%/mo drop -100.0%
+  years: 2021 +30492% 2022 -23% 2023 +214% 2024 +293% 2025 +169% 2026 +65%
+  2024-26 months: up 82%, worst -21.5% (2024-04), best +70.4% (2024-11), median +6.4%
+
+HINDSIGHT best 2024-26 with 2024-26 drop >= -50%: check 15m, trigger 3h-high -8%, tp +3.0%, stop 12h, cooldown 0h, 1 coin(s) x 100%
+  (1) 2024-26   +8.75%/mo  x  16.84  drop -33.4%
+  (2) 2025-26   +5.33%/mo  x   3.08  drop -33.4%
+  (3) 2021-23  +19.85%/mo  x 675.48  drop -69.9%  2022 -21.1%
+      trades 1163, worst trade -42.6% of account (2024-26: -24.5%), 2024-26 win 77% avg +1.13%
+  (4) fills 0.2% worse + LUNA/FTT/SRM: 2024-26  +0.00%/mo drop   0.0% | 2025-26  +0.00%/mo drop   0.0% | 2021-23 -10.05%/mo drop -100.0% 2022 -100.0% | worst trade -94.0% of account
+  extra: fills 0.2% worse on buys AND sells: 2024-26 +5.51%/mo drop -37.6% | 2025-26 +3.46%/mo | 2021-23 +8.31%/mo drop -87.0%
+  extra: both sides + LUNA/FTT/SRM: 2024-26 +0.00%/mo drop 0.0% | 2025-26 +0.00%/mo | 2021-23 -14.43%/mo drop -100.0%
+  years: 2021 +17533% 2022 -21% 2023 +386% 2024 +447% 2025 +83% 2026 +68%
+  2024-26 months: up 79%, worst -22.0% (2024-04), best +76.2% (2024-11), median +5.6%
+
+HINDSIGHT best since 2025: check 5m, trigger 3h-high -8%, tp +3.0%, stop 12h, cooldown 0h, 1 coin(s) x 100%
+  (1) 2024-26   +8.76%/mo  x  16.92  drop -79.0%
+  (2) 2025-26   +8.30%/mo  x   5.63  drop -79.0%
+  (3) 2021-23  +23.10%/mo  x1764.71  drop -73.4%  2022 -14.9%
+      trades 1330, worst trade -36.1% of account (2024-26: -24.8%), 2024-26 win 77% avg +1.00%
+  (4) fills 0.2% worse + LUNA/FTT/SRM: 2024-26  +0.00%/mo drop   0.0% | 2025-26  +0.00%/mo drop   0.0% | 2021-23  -9.23%/mo drop -100.0% 2022 -100.0% | worst trade -96.5% of account
+  extra: fills 0.2% worse on buys AND sells: 2024-26 +5.24%/mo drop -79.1% | 2025-26 +5.41%/mo | 2021-23 +8.04%/mo drop -92.4%
+  extra: both sides + LUNA/FTT/SRM: 2024-26 +0.00%/mo drop 0.0% | 2025-26 +0.00%/mo | 2021-23 -14.33%/mo drop -100.0%
+  years: 2021 +54441% 2022 -15% 2023 +280% 2024 +201% 2025 +202% 2026 +86%
+  2024-26 months: up 85%, worst -26.6% (2024-04), best +48.4% (2024-11), median +6.3%
+

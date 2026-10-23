@@ -1,0 +1,25 @@
+5m {'depth': 0.06, 'N': 1, 'fmax': 1.0, 'tp': 0.01, 'hm': 144, 'cd': 0} W1: x4698.2435 vs x4698.2435 trades 2412/2412 IDENTICAL
+5m {'depth': 0.08, 'N': 1, 'fmax': 1.0, 'tp': 0.03, 'hm': 144, 'cd': 0, 'depth2': 0.12} W3: x20390.6184 vs x20390.6184 trades 2048/2048 IDENTICAL
+5m {'depth': 0.08, 'N': 2, 'fmax': 0.5, 'tp': 0.03, 'hm': 72, 'cd': 24, 'part': 0.0, 'trail': 0.01, 'depth2': 0.12} W2: x56.8936 vs x56.8936 trades 5947/5947 IDENTICAL
+5m {'depth': 0.1, 'N': 3, 'fmax': 0.3333333333333333, 'tp': 0.02, 'hm': 72, 'cd': 0, 'tpwait': 4, 'pen': 0.002, 'pens': 0.002} W6: x6.6913 vs x6.6913 trades 3760/3760 IDENTICAL
+      liquidation on: x0.0194, 1 forced sales
+5m +dead {'depth': 0.06, 'N': 1, 'fmax': 1.0, 'tp': 0.01, 'hm': 144, 'cd': 0} W1: x0.0043 vs x0.0043 trades 2115/2115 IDENTICAL
+      liquidation on: x0.0023, 2 forced sales
+5m +dead {'depth': 0.08, 'N': 1, 'fmax': 1.0, 'tp': 0.03, 'hm': 144, 'cd': 0, 'depth2': 0.12} W3: x0.0002 vs x0.0002 trades 1069/1069 IDENTICAL
+      liquidation on: x20.2214, 1 forced sales
+5m +dead {'depth': 0.08, 'N': 2, 'fmax': 0.5, 'tp': 0.03, 'hm': 72, 'cd': 24, 'part': 0.0, 'trail': 0.01, 'depth2': 0.12} W2: x19.3911 vs x19.3911 trades 6648/6648 IDENTICAL
+      liquidation on: x1.5748, 1 forced sales
+5m +dead {'depth': 0.1, 'N': 3, 'fmax': 0.3333333333333333, 'tp': 0.02, 'hm': 72, 'cd': 0, 'tpwait': 4, 'pen': 0.002, 'pens': 0.002} W6: x1.3797 vs x1.3797 trades 4254/4254 IDENTICAL
+15m {'depth': 0.06, 'N': 1, 'fmax': 1.0, 'tp': 0.01, 'hm': 48, 'cd': 0} W1: x32756.5523 vs x32756.5523 trades 1629/1629 IDENTICAL
+15m {'depth': 0.08, 'N': 1, 'fmax': 1.0, 'tp': 0.03, 'hm': 48, 'cd': 0, 'depth2': 0.12} W3: x7920.5609 vs x7920.5609 trades 1835/1835 IDENTICAL
+15m {'depth': 0.08, 'N': 2, 'fmax': 0.5, 'tp': 0.03, 'hm': 24, 'cd': 8, 'part': 0.0, 'trail': 0.01, 'depth2': 0.12} W2: x99.4590 vs x99.4590 trades 5077/5077 IDENTICAL
+15m {'depth': 0.1, 'N': 3, 'fmax': 0.3333333333333333, 'tp': 0.02, 'hm': 24, 'cd': 0, 'tpwait': 4, 'pen': 0.002, 'pens': 0.002} W6: x13.9046 vs x13.9046 trades 2650/2650 IDENTICAL
+      liquidation on: x0.0448, 1 forced sales
+15m +dead {'depth': 0.06, 'N': 1, 'fmax': 1.0, 'tp': 0.01, 'hm': 48, 'cd': 0} W1: x0.0092 vs x0.0092 trades 1390/1390 IDENTICAL
+      liquidation on: x0.0017, 2 forced sales
+15m +dead {'depth': 0.08, 'N': 1, 'fmax': 1.0, 'tp': 0.03, 'hm': 48, 'cd': 0, 'depth2': 0.12} W3: x0.0002 vs x0.0002 trades 935/935 IDENTICAL
+      liquidation on: x39.2115, 1 forced sales
+15m +dead {'depth': 0.08, 'N': 2, 'fmax': 0.5, 'tp': 0.03, 'hm': 24, 'cd': 8, 'part': 0.0, 'trail': 0.01, 'depth2': 0.12} W2: x30.9737 vs x30.9737 trades 5590/5590 IDENTICAL
+      liquidation on: x3.2268, 1 forced sales
+15m +dead {'depth': 0.1, 'N': 3, 'fmax': 0.3333333333333333, 'tp': 0.02, 'hm': 24, 'cd': 0, 'tpwait': 4, 'pen': 0.002, 'pens': 0.002} W6: x2.7554 vs x2.7554 trades 3016/3016 IDENTICAL
+ALL CHECKS PASS

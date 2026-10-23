@@ -1,0 +1,146 @@
+######## 1. re-run the 192-setting pick grid and re-apply the rule on 2021-23 columns only
+  192 settings; matched with saved pick_grid.csv: 192; max |d_mult diff| 5.68e-14, max |t_mult diff| 8.88e-16, max |d_dd diff| 5.55e-17
+  54 qualify; rule picks d0.12 N2.0 f0.50 tp5.0% hm48.0 cd24.0; 2021-23 drop -49.60%
+  margin to the -50% limit: 0.40 points; the 2nd choice is d0.12 N2.0 f0.50 tp3.0% hm48.0 cd24.0
+  earlier rounds' pick rule (engine.pick_on_design): nothing qualifies on this grid
+
+######## 2. headline numbers
+  PICK base                         21-23 x  89.88 +13.32%/mo DD  -50% 2022   +46% worst-mo  -19% | 24-26 x  6.12 +5.53%/mo DD  -29% worst-mo  -21% up-mo  74% trades 424 win 71% avg +1.51%
+  PICK bot timing (mtp_now, cd+1)   21-23 x  95.67 +13.52%/mo DD  -46% 2022   +37% worst-mo  -19% | 24-26 x  5.85 +5.38%/mo DD  -29% worst-mo  -21% up-mo  74% trades 424 win 71% avg +1.49%
+  PICK fills 0.2% worse             21-23 x  56.25 +11.85%/mo DD  -54% 2022   +22% worst-mo  -20% | 24-26 x  5.13 +4.97%/mo DD  -31% worst-mo  -22% up-mo  74% trades 422 win 70% avg +1.36%
+  PICK +LUNA/FTT/SRM                21-23 x  28.32 +9.74%/mo DD  -62% 2022   -28% worst-mo  -35% | 24-26 x  6.12 +5.53%/mo DD  -29% worst-mo  -21% up-mo  74% trades 424 win 71% avg +1.51%
+  PICK all three                    21-23 x  19.46 +8.60%/mo DD  -61% 2022   -36% worst-mo  -35% | 24-26 x  4.86 +4.80%/mo DD  -30% worst-mo  -21% up-mo  74% trades 423 win 71% avg +1.39%
+  LIVE base                         21-23 x   5.75 +4.98%/mo DD  -29% 2022   +19% worst-mo   -7% | 24-26 x  2.61 +2.89%/mo DD  -16% worst-mo   -6% up-mo  88% trades 884 win 93% avg +1.09%
+  LIVE bot timing (mtp_now, cd+1)   21-23 x   4.13 +4.02%/mo DD  -34% 2022    +9% worst-mo  -11% | 24-26 x  2.67 +2.96%/mo DD  -16% worst-mo   -3% up-mo  85% trades 880 win 93% avg +1.07%
+  LIVE fills 0.2% worse             21-23 x   3.98 +3.92%/mo DD  -29% 2022    -2% worst-mo  -15% | 24-26 x  2.37 +2.59%/mo DD  -16% worst-mo   -6% up-mo  85% trades 882 win 92% avg +0.99%
+  LIVE +LUNA/FTT/SRM                21-23 x   5.22 +4.70%/mo DD  -31% 2022    +1% worst-mo   -9% | 24-26 x  2.61 +2.89%/mo DD  -16% worst-mo   -6% up-mo  88% trades 884 win 93% avg +1.09%
+  LIVE all three                    21-23 x   2.82 +2.93%/mo DD  -38% 2022   -25% worst-mo  -16% | 24-26 x  2.42 +2.66%/mo DD  -16% worst-mo   -4% up-mo  85% trades 879 win 92% avg +0.97%
+  check vs stress.csv PICK base: t_mult 6.1177 vs 6.1177, d_mult 89.8803 vs 89.8803
+  check vs stress.csv PICK bot timing (mtp_now, cd 25): t_mult 5.8487 vs 5.8487, d_mult 95.6673 vs 95.6673
+  check vs stress.csv PICK all three: t_mult 4.8559 vs 4.8559, d_mult 19.4610 vs 19.4610
+  check vs stress.csv LIVE base: t_mult 2.6088 vs 2.6088, d_mult 5.7500 vs 5.7500
+
+######## TRADE CONCENTRATION 2024-26: PICK base
+  equity x6.118 (+5.53%/mo over 33.7 months); 424 trades; sum of trade P&L 459.982 vs equity change 459.982 (account units, 2021-01-01 = 1.0)
+  product of (1 + account-relative trade return) = x6.454 (check vs x6.118)
+  top  1 trades by P&L:   2.7% of net P&L,   0.9% of gross profit
+  top  2 trades by P&L:   5.5% of net P&L,   1.9% of gross profit
+  top  5 trades by P&L:  13.6% of net P&L,   4.7% of gross profit
+  top 10 trades by P&L:  26.5% of net P&L,   9.1% of gross profit
+  top 20 trades by P&L:  50.9% of net P&L,  17.5% of gross profit
+  top 10 trades:
+    RENDER 2026-10-15 02h -> 2026-10-15 15h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.568 ( 2.7% of net)
+    ARB    2026-10-15 02h -> 2026-10-15 04h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.568 ( 2.7% of net)
+    AVAX   2026-10-08 15h -> 2026-10-09 08h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.531 ( 2.7% of net)
+    NEAR   2026-10-08 15h -> 2026-10-10 04h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.531 ( 2.7% of net)
+    FET    2026-06-02 19h -> 2026-06-03 04h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.284 ( 2.7% of net)
+    HBAR   2026-09-23 14h -> 2026-09-24 14h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.170 ( 2.6% of net)
+    NEAR   2026-05-26 23h -> 2026-05-27 19h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.039 ( 2.6% of net)
+    ARB    2026-09-22 10h -> 2026-09-22 23h ret  +4.79% size   50% of account, account + 2.40%, P&L 11.886 ( 2.6% of net)
+    FET    2026-08-22 10h -> 2026-08-23 14h ret  +4.79% size   50% of account, account + 2.40%, P&L 11.842 ( 2.6% of net)
+    FET    2026-09-15 18h -> 2026-09-16 23h ret  +4.79% size   50% of account, account + 2.40%, P&L 11.590 ( 2.5% of net)
+  top 5 trades by account-relative return: FET 2024-02-28 ret +12.1% size 50% -> account +6.03%; ETH 2025-04-10 ret +4.8% size 50% -> account +2.40%; NEAR 2025-11-16 ret +4.8% size 50% -> account +2.40%; FET 2026-08-22 ret +4.8% size 50% -> account +2.40%; FET 2024-08-27 ret +4.8% size 50% -> account +2.40%
+  top  1 trades by account-relative return:   3.1% of the log growth; without them: (a) compounding the other 423: x6.087 = +5.51%/mo; (b) actual x6.118 divided by their growth factors: x5.770 = +5.34%/mo
+  top  2 trades by account-relative return:   4.4% of the log growth; without them: (a) compounding the other 422: x5.944 = +5.44%/mo; (b) actual x6.118 divided by their growth factors: x5.635 = +5.27%/mo
+  top  5 trades by account-relative return:   8.2% of the log growth; without them: (a) compounding the other 419: x5.537 = +5.21%/mo; (b) actual x6.118 divided by their growth factors: x5.249 = +5.05%/mo
+  top 10 trades by account-relative return:  14.6% of the log growth; without them: (a) compounding the other 414: x4.919 = +4.84%/mo; (b) actual x6.118 divided by their growth factors: x4.663 = +4.68%/mo
+  top 20 trades by account-relative return:  27.3% of the log growth; without them: (a) compounding the other 404: x3.882 = +4.11%/mo; (b) actual x6.118 divided by their growth factors: x3.680 = +3.94%/mo
+  without the best 1 month(s) (2024-11 +49.3%): x4.098 = +4.28%/mo over the full 33.7 months
+  without the best 2 month(s) (2024-11 +49.3%, 2024-03 +42.3%): x2.881 = +3.19%/mo over the full 33.7 months
+  without the best 3 month(s) (2024-11 +49.3%, 2024-03 +42.3%, 2024-08 +26.6%): x2.275 = +2.47%/mo over the full 33.7 months
+  by coin (net P&L share / log-growth share):  SUI 21%/14% (43)  RENDER 16%/19% (57)  DOGE 13%/13% (28)  ARB 13%/7% (41)  DOT 11%/9% (13)  BCH 9%/4% (16)  HBAR 9%/4% (25)  XRP 8%/7% (11)  SOL 7%/6% (15)  NEAR 6%/8% (45)  LTC 3%/3% (10)  AVAX 3%/5% (18)  ETH 2%/1% (6)  TRX 2%/2% (2)  BNB -1%/-0% (1)  LINK -2%/-1% (9)  ADA -9%/-4% (16)  FET -10%/5% (68)
+  top 5 months by P&L (by exit month): 2024-11 21%, 2026-02 12%, 2026-05 11%, 2024-03 10%, 2025-05 10%
+  log-growth share by exit year: 2024 68% (196 trades), 2025 18% (149 trades), 2026 14% (79 trades)
+  positions held at once, 2024-26: max 9, hours with >2 held 5.2%, with >=1 held 22.6%; largest single position 50% of the account, median 31%
+  win rate 71%, avg +1.51%, worst trade -21.7%, worst account hit from one trade -10.9%, time-stop exits 34%
+
+######## TRADE CONCENTRATION 2024-26: PICK bot timing (mtp_now, cd+1)
+  equity x5.849 (+5.38%/mo over 33.7 months); 424 trades; sum of trade P&L 463.861 vs equity change 463.861 (account units, 2021-01-01 = 1.0)
+  product of (1 + account-relative trade return) = x6.176 (check vs x5.849)
+  top  1 trades by P&L:   2.8% of net P&L,   0.9% of gross profit
+  top  2 trades by P&L:   5.6% of net P&L,   1.9% of gross profit
+  top  5 trades by P&L:  13.8% of net P&L,   4.6% of gross profit
+  top 10 trades by P&L:  27.1% of net P&L,   9.0% of gross profit
+  top 20 trades by P&L:  52.3% of net P&L,  17.4% of gross profit
+  top 10 trades:
+    FET    2026-06-02 19h -> 2026-06-03 04h ret  +4.79% size   50% of account, account + 2.40%, P&L 13.032 ( 2.8% of net)
+    RENDER 2026-10-15 02h -> 2026-10-15 15h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.788 ( 2.8% of net)
+    ARB    2026-10-15 02h -> 2026-10-15 04h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.788 ( 2.8% of net)
+    NEAR   2026-05-26 23h -> 2026-05-27 19h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.773 ( 2.8% of net)
+    NEAR   2026-10-08 15h -> 2026-10-10 04h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.751 ( 2.7% of net)
+    AVAX   2026-10-08 15h -> 2026-10-09 08h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.751 ( 2.7% of net)
+    HBAR   2026-09-23 14h -> 2026-09-24 14h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.384 ( 2.7% of net)
+    RENDER 2026-05-22 23h -> 2026-05-23 18h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.189 ( 2.6% of net)
+    ARB    2026-09-22 10h -> 2026-09-22 23h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.094 ( 2.6% of net)
+    FET    2026-08-22 10h -> 2026-08-23 14h ret  +4.79% size   50% of account, account + 2.40%, P&L 12.072 ( 2.6% of net)
+  top 5 trades by account-relative return: FET 2024-02-28 ret +12.1% size 50% -> account +6.03%; RENDER 2026-05-22 ret +4.8% size 50% -> account +2.40%; FET 2026-06-02 ret +4.8% size 50% -> account +2.40%; ARB 2026-02-27 ret +4.8% size 50% -> account +2.40%; FET 2024-08-11 ret +4.8% size 50% -> account +2.40%
+  top  1 trades by account-relative return:   3.2% of the log growth; without them: (a) compounding the other 423: x5.825 = +5.37%/mo; (b) actual x5.849 divided by their growth factors: x5.516 = +5.20%/mo
+  top  2 trades by account-relative return:   4.5% of the log growth; without them: (a) compounding the other 422: x5.689 = +5.30%/mo; (b) actual x5.849 divided by their growth factors: x5.387 = +5.13%/mo
+  top  5 trades by account-relative return:   8.4% of the log growth; without them: (a) compounding the other 419: x5.299 = +5.08%/mo; (b) actual x5.849 divided by their growth factors: x5.018 = +4.91%/mo
+  top 10 trades by account-relative return:  14.9% of the log growth; without them: (a) compounding the other 414: x4.707 = +4.71%/mo; (b) actual x5.849 divided by their growth factors: x4.458 = +4.54%/mo
+  top 20 trades by account-relative return:  27.9% of the log growth; without them: (a) compounding the other 404: x3.715 = +3.97%/mo; (b) actual x5.849 divided by their growth factors: x3.518 = +3.81%/mo
+  without the best 1 month(s) (2024-11 +47.5%): x3.964 = +4.17%/mo over the full 33.7 months
+  without the best 2 month(s) (2024-11 +47.5%, 2024-03 +42.7%): x2.778 = +3.08%/mo over the full 33.7 months
+  without the best 3 month(s) (2024-11 +47.5%, 2024-03 +42.7%, 2024-08 +26.6%): x2.193 = +2.36%/mo over the full 33.7 months
+  by coin (net P&L share / log-growth share):  SUI 21%/14% (43)  RENDER 17%/20% (57)  ARB 13%/7% (40)  DOGE 13%/13% (28)  DOT 12%/9% (13)  BCH 9%/4% (16)  HBAR 9%/4% (25)  XRP 8%/7% (11)  SOL 7%/6% (16)  NEAR 3%/6% (44)  LTC 3%/3% (10)  AVAX 3%/5% (18)  ETH 2%/1% (6)  TRX 2%/2% (2)  BNB -1%/-0% (1)  LINK -2%/-1% (9)  FET -10%/5% (68)  ADA -10%/-4% (17)
+  top 5 months by P&L (by exit month): 2024-11 22%, 2026-02 13%, 2026-05 11%, 2024-03 10%, 2025-05 10%
+  log-growth share by exit year: 2024 69% (195 trades), 2025 19% (151 trades), 2026 12% (78 trades)
+  positions held at once, 2024-26: max 9, hours with >2 held 5.1%, with >=1 held 22.6%; largest single position 50% of the account, median 31%
+  win rate 71%, avg +1.49%, worst trade -20.6%, worst account hit from one trade -10.3%, time-stop exits 34%
+
+######## TRADE CONCENTRATION 2024-26: LIVE base
+  equity x2.609 (+2.89%/mo over 33.7 months); 884 trades; sum of trade P&L 9.250 vs equity change 9.250 (account units, 2021-01-01 = 1.0)
+  product of (1 + account-relative trade return) = x2.640 (check vs x2.609)
+  top  1 trades by P&L:   1.2% of net P&L,   0.8% of gross profit
+  top  2 trades by P&L:   2.2% of net P&L,   1.4% of gross profit
+  top  5 trades by P&L:   4.9% of net P&L,   3.1% of gross profit
+  top 10 trades by P&L:   8.6% of net P&L,   5.5% of gross profit
+  top 20 trades by P&L:  15.0% of net P&L,   9.6% of gross profit
+  top 10 trades:
+    LTC    2024-11-12 04h -> 2024-11-12 05h ret +11.34% size   12% of account, account + 1.42%, P&L 0.115 ( 1.2% of net)
+    FET    2024-02-28 17h -> 2024-02-28 18h ret +12.05% size   12% of account, account + 1.51%, P&L 0.093 ( 1.0% of net)
+    ARB    2026-08-22 05h -> 2026-08-22 06h ret  +4.93% size   12% of account, account + 0.62%, P&L 0.086 ( 0.9% of net)
+    NEAR   2026-08-22 05h -> 2026-08-22 06h ret  +4.73% size   12% of account, account + 0.59%, P&L 0.082 ( 0.9% of net)
+    BCH    2026-08-22 05h -> 2026-08-22 06h ret  +4.45% size   12% of account, account + 0.56%, P&L 0.078 ( 0.8% of net)
+    FET    2026-08-22 05h -> 2026-08-22 06h ret  +4.11% size   12% of account, account + 0.51%, P&L 0.072 ( 0.8% of net)
+    BCH    2026-06-04 02h -> 2026-06-04 03h ret  +4.73% size   11% of account, account + 0.52%, P&L 0.070 ( 0.8% of net)
+    ARB    2026-06-04 02h -> 2026-06-04 03h ret  +4.67% size   11% of account, account + 0.51%, P&L 0.069 ( 0.8% of net)
+    BTC    2024-12-05 22h -> 2024-12-05 23h ret  +5.83% size   12% of account, account + 0.73%, P&L 0.067 ( 0.7% of net)
+    ADA    2026-08-22 05h -> 2026-08-22 06h ret  +3.81% size   12% of account, account + 0.48%, P&L 0.066 ( 0.7% of net)
+  top 5 trades by account-relative return: FET 2024-02-28 ret +12.1% size 12% -> account +1.51%; LTC 2024-11-12 ret +11.3% size 12% -> account +1.42%; NEAR 2024-02-28 ret +7.8% size 12% -> account +0.97%; SUI 2024-02-28 ret +6.0% size 12% -> account +0.75%; BTC 2024-12-05 ret +5.8% size 12% -> account +0.73%
+  top  1 trades by account-relative return:   1.5% of the log growth; without them: (a) compounding the other 883: x2.601 = +2.88%/mo; (b) actual x2.609 divided by their growth factors: x2.570 = +2.84%/mo
+  top  2 trades by account-relative return:   3.0% of the log growth; without them: (a) compounding the other 882: x2.564 = +2.84%/mo; (b) actual x2.609 divided by their growth factors: x2.534 = +2.80%/mo
+  top  5 trades by account-relative return:   5.5% of the log growth; without them: (a) compounding the other 879: x2.502 = +2.76%/mo; (b) actual x2.609 divided by their growth factors: x2.473 = +2.73%/mo
+  top 10 trades by account-relative return:   8.6% of the log growth; without them: (a) compounding the other 874: x2.428 = +2.67%/mo; (b) actual x2.609 divided by their growth factors: x2.399 = +2.63%/mo
+  top 20 trades by account-relative return:  14.2% of the log growth; without them: (a) compounding the other 864: x2.300 = +2.50%/mo; (b) actual x2.609 divided by their growth factors: x2.273 = +2.47%/mo
+  without the best 1 month(s) (2024-03 +13.8%): x2.293 = +2.49%/mo over the full 33.7 months
+  without the best 2 month(s) (2024-03 +13.8%, 2024-11 +10.5%): x2.075 = +2.19%/mo over the full 33.7 months
+  without the best 3 month(s) (2024-03 +13.8%, 2024-11 +10.5%, 2024-12 +9.9%): x1.887 = +1.90%/mo over the full 33.7 months
+  by coin (net P&L share / log-growth share):  FET 16%/17% (108)  RENDER 10%/10% (92)  ADA 8%/7% (44)  SUI 8%/7% (72)  HBAR 7%/7% (58)  BCH 6%/5% (36)  NEAR 6%/7% (81)  ARB 6%/6% (69)  DOGE 5%/6% (55)  XRP 5%/5% (34)  LINK 4%/4% (36)  DOT 4%/4% (45)  SOL 3%/3% (33)  ETH 3%/3% (21)  AVAX 3%/3% (48)  LTC 3%/3% (30)  BNB 1%/1% (12)  BTC 1%/1% (5)  TRX 1%/1% (5)
+  top 5 months by P&L (by exit month): 2024-12 10%, 2024-03 10%, 2024-11 9%, 2026-08 5%, 2025-04 5%
+  log-growth share by exit year: 2024 56% (392 trades), 2025 26% (364 trades), 2026 18% (128 trades)
+  positions held at once, 2024-26: max 16, hours with >2 held 3.6%, with >=1 held 11.3%; largest single position 20% of the account, median 12%
+  win rate 93%, avg +1.09%, worst trade -21.7%, worst account hit from one trade -2.7%, time-stop exits 8%
+
+######## 4. leave one coin out (coin never traded, exact engine re-run), 2024-26 %/month
+  PICK base: min +5.09%/mo (without RENDER), median +5.48, max +5.88; coins whose removal drops it below 5%/mo: 0 of 19
+    -RENDER +5.09% (-29%), -DOGE +5.10% (-29%), -NEAR +5.24% (-28%), -DOT +5.30% (-29%), -SUI +5.31% (-31%), -XRP +5.36% (-29%), -SOL +5.43% (-29%), -TRX +5.44% (-29%), -BCH +5.46% (-30%), -LTC +5.48% (-30%), -ADA +5.50% (-29%), -BTC +5.53% (-29%), -ETH +5.54% (-29%), -HBAR +5.55% (-30%), -AVAX +5.59% (-29%), -ARB +5.60% (-30%), -BNB +5.61% (-29%), -LINK +5.67% (-31%), -FET +5.88% (-29%)
+  PICK bot timing: min +4.87%/mo (without RENDER), median +5.35, max +5.71; coins whose removal drops it below 5%/mo: 2 of 19
+    -RENDER +4.87% (-29%), -DOGE +4.93% (-28%), -DOT +5.15% (-29%), -SUI +5.18% (-31%), -NEAR +5.20% (-28%), -SOL +5.20% (-29%), -XRP +5.23% (-29%), -ADA +5.27% (-29%), -TRX +5.29% (-29%), -BCH +5.35% (-29%), -LTC +5.36% (-30%), -BTC +5.38% (-29%), -HBAR +5.40% (-29%), -ETH +5.40% (-29%), -AVAX +5.47% (-29%), -BNB +5.47% (-29%), -ARB +5.49% (-29%), -LINK +5.61% (-31%), -FET +5.71% (-29%)
+  LIVE base: min +2.53%/mo (without FET), median +2.87, max +2.93; coins whose removal drops it below 5%/mo: 19 of 19
+    -FET +2.53% (-16%), -RENDER +2.73% (-15%), -ADA +2.77% (-15%), -XRP +2.79% (-16%), -DOGE +2.80% (-15%), -HBAR +2.80% (-15%), -BCH +2.85% (-16%), -SUI +2.85% (-14%), -LINK +2.86% (-16%), -NEAR +2.87% (-15%), -ETH +2.88% (-17%), -LTC +2.89% (-16%), -BNB +2.89% (-17%), -ARB +2.90% (-16%), -SOL +2.90% (-16%), -DOT +2.92% (-16%), -TRX +2.92% (-17%), -AVAX +2.92% (-14%), -BTC +2.93% (-17%)
+  PICK base without its top-2 profit coins ['RENDER', 'SUI']: 24-26 x  4.89 +4.83%/mo DD  -30% worst-mo  -19% up-mo  65% (+4.83%/mo)
+  PICK bot timing without its top-2 profit coins ['RENDER', 'SUI']: 24-26 x  4.60 +4.64%/mo DD  -30% worst-mo  -18% up-mo  65% (+4.64%/mo)
+
+######## 5. per calendar year, pick vs live (equity curve of the full run; %/mo = compounded monthly rate)
+  2021-01..2022-01: | PICK base  +1550% +26.34%/mo DD  -50% | PICK bot timing  +1824% +27.96%/mo DD  -46% | PICK all three   +801% +20.12%/mo DD  -55% | LIVE base   +262% +11.34%/mo DD  -29% | LIVE bot timing   +184% +9.11%/mo DD  -34% | LIVE all three   +194% +9.40%/mo DD  -38%
+  2022-01..2023-01: | PICK base    +46% +3.23%/mo DD  -38% | PICK bot timing    +37% +2.66%/mo DD  -38% | PICK all three    -36% -3.63%/mo DD  -54% | LIVE base    +19% +1.47%/mo DD  -20% | LIVE bot timing     +9% +0.74%/mo DD  -27% | LIVE all three    -25% -2.42%/mo DD  -35%
+  2023-01..2024-01: | PICK base   +272% +11.58%/mo DD  -30% | PICK bot timing   +263% +11.36%/mo DD  -30% | PICK all three   +236% +10.65%/mo DD  -30% | LIVE base    +33% +2.42%/mo DD   -7% | LIVE bot timing    +33% +2.41%/mo DD   -7% | LIVE all three    +29% +2.14%/mo DD   -7%
+  2024-01..2025-01: | PICK base   +247% +10.90%/mo DD  -28% | PICK bot timing   +242% +10.76%/mo DD  -28% | PICK all three   +212% +9.94%/mo DD  -28% | LIVE base    +71% +4.57%/mo DD  -16% | LIVE bot timing    +74% +4.69%/mo DD  -16% | LIVE all three    +68% +4.39%/mo DD  -16%
+  2025-01..2026-01: | PICK base    +37% +2.66%/mo DD  -28% | PICK bot timing    +39% +2.76%/mo DD  -28% | PICK all three    +29% +2.13%/mo DD  -28% | LIVE base    +28% +2.06%/mo DD  -15% | LIVE bot timing    +26% +1.93%/mo DD  -15% | LIVE all three    +20% +1.56%/mo DD  -16%
+  2026-01..2026-10: | PICK base    +29% +2.65%/mo DD  -22% | PICK bot timing    +23% +2.21%/mo DD  -22% | PICK all three    +21% +1.97%/mo DD  -22% | LIVE base    +19% +1.84%/mo DD   -7% | LIVE bot timing    +22% +2.11%/mo DD   -7% | LIVE all three    +20% +1.91%/mo DD   -8%
+  2025-01..2026-10: | PICK base    +76% +2.66%/mo DD  -29% | PICK bot timing    +71% +2.51%/mo DD  -28% | PICK all three    +55% +2.06%/mo DD  -30% | LIVE base    +52% +1.96%/mo DD  -15% | LIVE bot timing    +54% +2.01%/mo DD  -15% | LIVE all three    +45% +1.72%/mo DD  -16%
+  2024-01..2026-10: | PICK base   +512% +5.53%/mo DD  -29% | PICK bot timing   +485% +5.38%/mo DD  -29% | PICK all three   +386% +4.80%/mo DD  -30% | LIVE base   +161% +2.89%/mo DD  -16% | LIVE bot timing   +167% +2.96%/mo DD  -16% | LIVE all three   +142% +2.66%/mo DD  -16%
+  PICK base: 2024-26 months 34, best 3 2024-11 +49.3%, 2024-03 +42.3%, 2024-08 +26.6%; worst 3 2024-04 -21.3%, 2025-10 -11.2%, 2025-11 -7.2%; months >= +5%: 16, median month +4.27%
+  LIVE base: 2024-26 months 34, best 3 2024-03 +13.8%, 2024-11 +10.5%, 2024-12 +9.9%; worst 3 2024-04 -6.3%, 2025-10 -1.2%, 2026-03 +0.0%; months >= +5%: 6, median month +2.49%
+  PICK bot timing (mtp_now, cd+1): 2024-26 months 34, best 3 2024-11 +47.5%, 2024-03 +42.7%, 2024-08 +26.6%; worst 3 2024-04 -20.7%, 2025-10 -11.4%, 2026-06 -10.8%; months >= +5%: 16, median month +3.90%

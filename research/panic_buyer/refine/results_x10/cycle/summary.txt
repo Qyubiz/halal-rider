@@ -1,0 +1,34 @@
+variants: phase 1 7680, phase 2 6912, phase 4 2562 combinations, phase 3 2 runs (each normal + stressed) -> 17156 designs
+
+PHASE 1
+  rule A (normal 2021-23): 2087 qualify; pick {'C': np.int64(15), 'W': np.int64(1), 'depth': np.float64(0.06), 'tp': np.float64(0.01), 'hm': np.int64(12), 'cd': np.int64(0), 'N': np.int64(1), 'fmax': np.float64(1.0)}
+    (1) 24-26 +4.45%/mo dd -44.0% | (2) 25-26 +4.35%/mo dd -44.0% | (3) 21-23 +28.18%/mo dd -48.2% | (4) stressed 24-26 +2.31%/mo dd -44.1%, 25-26 +2.18%/mo dd -44.1%, 21-23 -2.13%/mo dd -99.9%, whole-run dd -99.9%
+    worst trade -36.2% of account (stressed -98.4%)
+    qualifiers' normal 2024-26: median +2.16%/mo, max +6.64%/mo, >= 10%/mo: 0
+  rule B (stressed 2021-23): 5 qualify; pick {'C': np.int64(15), 'W': np.int64(2), 'depth': np.float64(0.08), 'tp': np.float64(0.03), 'hm': np.int64(6), 'cd': np.int64(2), 'N': np.int64(3), 'fmax': np.float64(0.3333)}
+    (1) 24-26 +2.50%/mo dd -37.5% | (2) 25-26 +1.48%/mo dd -37.5% | (3) 21-23 +11.59%/mo dd -35.4% | (4) stressed 24-26 +2.02%/mo dd -37.6%, 25-26 +1.15%/mo dd -37.6%, 21-23 +9.44%/mo dd -48.2%, whole-run dd -48.2%
+    worst trade -11.4% of account (stressed -13.8%)
+    qualifiers' normal 2024-26: median +2.21%/mo, max +2.50%/mo, >= 10%/mo: 0
+  HINDSIGHT best normal 2024-26: {'C': np.int64(5), 'W': np.int64(3), 'depth': np.float64(0.08), 'tp': np.float64(0.03), 'hm': np.int64(6), 'cd': np.int64(0), 'N': np.int64(1), 'fmax': np.float64(1.0)}
+    (1) 24-26 +8.85%/mo dd -79.0% | (2) 25-26 +7.11%/mo dd -79.0% | (3) 21-23 +20.17%/mo dd -79.4% | (4) stressed 24-26 +7.56%/mo dd -79.1%, 25-26 +6.10%/mo dd -79.1%, 21-23 -10.40%/mo dd -100.0%, whole-run dd -100.0%
+    settings >= 10%/mo (normal 2024-26): 0; of those with stressed whole-run drop above -99%: 0; with stressed 2024-26 >= 10%/mo: 0; best stressed 2024-26 +7.56%/mo; best since 2025 +8.30%/mo
+
+PHASE 2
+  rule A (normal 2021-23): 2281 qualify; pick {'C': np.int64(5), 'W': np.int64(1), 'depth': np.float64(0.06), 'tp': np.float64(0.015), 'hm': np.int64(12), 'cd': np.int64(0), 'N': np.int64(1), 'fmax': np.float64(1.0), 'lcd': np.int64(0), 'stop': np.float64(0.0), 'skip': np.float64(0.3), 'exit': 'plain', 'dual': np.float64(0.0)}
+    (1) 24-26 +4.27%/mo dd -79.2% | (2) 25-26 +3.77%/mo dd -79.2% | (3) 21-23 +27.63%/mo dd -50.0% | (4) stressed 24-26 +2.89%/mo dd -79.3%, 25-26 +2.57%/mo dd -79.3%, 21-23 +15.95%/mo dd -88.7%, whole-run dd -88.7%
+    worst trade -40.9% of account (stressed -75.2%)
+    qualifiers' normal 2024-26: median +2.13%/mo, max +7.88%/mo, >= 10%/mo: 0
+  rule B (stressed 2021-23): 534 qualify; pick {'C': np.int64(5), 'W': np.int64(1), 'depth': np.float64(0.1), 'tp': np.float64(0.015), 'hm': np.int64(6), 'cd': np.int64(0), 'N': np.int64(1), 'fmax': np.float64(1.0), 'lcd': np.int64(72), 'stop': np.float64(0.0), 'skip': np.float64(0.0), 'exit': 'plain', 'dual': np.float64(0.0)}
+    (1) 24-26 +2.39%/mo dd -78.3% | (2) 25-26 +2.31%/mo dd -78.3% | (3) 21-23 +15.48%/mo dd -48.4% | (4) stressed 24-26 +1.92%/mo dd -78.4%, 25-26 +2.23%/mo dd -78.4%, 21-23 +15.43%/mo dd -48.5%, whole-run dd -78.4%
+    worst trade -19.5% of account (stressed -30.3%)
+    qualifiers' normal 2024-26: median +1.38%/mo, max +4.29%/mo, >= 10%/mo: 0
+  HINDSIGHT best normal 2024-26: {'C': np.int64(5), 'W': np.int64(3), 'depth': np.float64(0.06), 'tp': np.float64(0.015), 'hm': np.int64(12), 'cd': np.int64(0), 'N': np.int64(1), 'fmax': np.float64(1.0), 'lcd': np.int64(0), 'stop': np.float64(0.15), 'skip': np.float64(0.0), 'exit': 'wait', 'dual': np.float64(0.12)}
+    (1) 24-26 +11.27%/mo dd -49.3% | (2) 25-26 +9.17%/mo dd -49.3% | (3) 21-23 +12.12%/mo dd -91.2% | (4) stressed 24-26 +4.78%/mo dd -52.2%, 25-26 +3.98%/mo dd -52.2%, 21-23 -39.51%/mo dd -100.0%, whole-run dd -100.0%
+    settings >= 10%/mo (normal 2024-26): 14; of those with stressed whole-run drop above -99%: 4; with stressed 2024-26 >= 10%/mo: 0; best stressed 2024-26 +8.32%/mo; best since 2025 +10.61%/mo
+    the >=10% settings: 2021-23 %/mo +8.5..+20.0, 2021-23 drop -91..-56%, sizing N = [1]
+
+PHASE 4 (wick layer)
+  rule B4: 1006 qualify; pick main=phase-2 B2 pick a=0.0 (a=0: the main bot alone)
+  HINDSIGHT best normal 2024-26: main=- a=1.0 wick C5 W3 depth 0.15 tp 0.1 hm 24 N1 lcd 72: 24-26 +6.83%/mo dd -77.3%, 21-23 +10.75%/mo dd -73.4%
+
+HIGHEST 2024-26 %/month of any variant (hindsight, normal runs): +11.27%

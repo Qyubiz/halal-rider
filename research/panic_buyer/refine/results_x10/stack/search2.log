@@ -1,0 +1,32 @@
+######## (A) honest walk-forward of the coordinate ascent (scored on 2021-23 only)
+== start N1 x 100% +3% cd24: score -inf
+    pass 1: N1x100 cd24 tp3 rest1 lad off tpf0 btc0 hm48 d12 -> stressed 2021-23 -inf%/mo (42 designs)
+== start N2 x 50% +3% cd24: score -inf
+    pass 1: N2x50 cd24 tp3 rest1 lad 67/18 tpf0 btc0.03 hm48 d12 -> stressed 2021-23 +8.85%/mo (79 designs)
+    pass 2: N2x50 cd24 tp3 rest1 lad 67/18 tpf0 btc0.03 hm48 d12 -> stressed 2021-23 +8.85%/mo (109 designs)
+== start grid pick: score +9.90
+    pass 1: N2x50 cd6 tp5 rest1 lad 50/18 tpf0.2 btc0 hm48 d12 -> stressed 2021-23 +9.90%/mo (151 designs)
+PICK (2021-23 only): N2x50 cd6 tp5 rest1 lad 50/18 tpf0.2 btc0 hm48 d12
+N2x50 cd6 tp5 rest1 lad 50/18 tpf0.2 btc0 hm48 d12
+  (1) 2024-26   +4.75%/mo  x   4.78  drop -26.6%
+  (2) 2025-26   +2.28%/mo  x   1.63  drop -26.6%
+  (3) 2021-23  +13.40%/mo  x  92.12  drop -47.4%  2022 +84.9%
+      trades 1581, worst trade -19.0% of account (2021-23 -19.0%, 2024-26 -10.7%), worst trade ret -45.8%; 2024-26 win 79% avg +2.53%
+  (4) fills 0.2% worse (buys and sells) + LUNA/FTT/SRM: 2024-26  +3.66%/mo drop -28.3% | 2025-26  +1.19%/mo drop -26.9% | 2021-23  +9.90%/mo drop -53.7% 2022 +13.9% | worst trade -17.2% of account
+
+######## (B) HINDSIGHT pair search around the ceiling winner (normal 2024-26 %/month)
+741 pair designs: 2024-26 %/month max 8.87, median 6.13, >= 10%/mo: 0, >= 9%/mo: 0
+  N1x100 cd24 tp2.5 rest3 lad off tpf0.2 btc0.08 hm48 d12        21-23 +12.76%/mo DD -69.6% | 24-26  +8.87%/mo DD -41.5% | 25-26  +5.08%/mo DD -41.5%
+  N1x100 cd24 tp2.5 rest3 lad off tpf0.2 btc0.03 hm48 d12        21-23 +12.76%/mo DD -69.6% | 24-26  +8.87%/mo DD -41.5% | 25-26  +5.08%/mo DD -41.5%
+  N1x100 cd24 tp2.5 rest3 lad off tpf0.2 btc0.05 hm48 d12        21-23 +12.76%/mo DD -69.6% | 24-26  +8.87%/mo DD -41.5% | 25-26  +5.08%/mo DD -41.5%
+  N1x100 cd24 tp3 rest3 lad off tpf0.3 btc0.05 hm48 d12          21-23 +19.45%/mo DD -65.7% | 24-26  +8.80%/mo DD -41.5% | 25-26  +4.75%/mo DD -41.5%
+  N1x100 cd24 tp3 rest3 lad off tpf0.3 btc0.03 hm48 d12          21-23 +19.45%/mo DD -65.7% | 24-26  +8.80%/mo DD -41.5% | 25-26  +4.75%/mo DD -41.5%
+  N1x100 cd24 tp3 rest3 lad off tpf0.3 btc0.08 hm48 d12          21-23 +19.45%/mo DD -65.7% | 24-26  +8.80%/mo DD -41.5% | 25-26  +4.75%/mo DD -41.5%
+  N1x100 cd24 tp2.5 rest3 lad off tpf0.3 btc0 hm48 d12           21-23 +14.71%/mo DD -66.2% | 24-26  +8.79%/mo DD -41.5% | 25-26  +5.15%/mo DD -41.5%
+  N1x100 cd36 tp2.5 rest3 lad off tpf0.2 btc0 hm48 d12           21-23 +12.10%/mo DD -60.8% | 24-26  +8.65%/mo DD -41.5% | 25-26  +5.07%/mo DD -41.5%
+HINDSIGHT pair-search best: N1x100 cd24 tp2.5 rest3 lad off tpf0.2 btc0.08 hm48 d12
+  (1) 2024-26   +8.87%/mo  x  17.52  drop -41.5%
+  (2) 2025-26   +5.08%/mo  x   2.92  drop -41.5%
+  (3) 2021-23  +12.76%/mo  x  75.33  drop -69.6%  2022 -15.0%
+      trades 678, worst trade -41.6% of account (2021-23 -41.6%, 2024-26 -21.7%), worst trade ret -41.6%; 2024-26 win 85% avg +1.36%
+  (4) fills 0.2% worse (buys and sells) + LUNA/FTT/SRM: 2024-26  +6.50%/mo drop -42.7% | 2025-26  +3.10%/mo drop -42.7% | 2021-23 -16.29%/mo drop -100.0% 2022 -100.0% | worst trade -100.0% of account

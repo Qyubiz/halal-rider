@@ -1,0 +1,2 @@
+idea,variants,beat_design,beat_test,beat_both,pick,passes,pick_d_mult,pick_t_mult,pick_d_dd,pick_t_dd,base_d_mult,base_t_mult,base_d_dd,base_t_dd,check +LUNA/FTT/SRM,check fills 0.2% worse
+r3 tphigh: take-profit part of the way back to the reference 24h high,8,4,5,4,"tp = 0.10 x (ref - entry), no floor",False,6.651783121282129,2.6254697021365505,-0.2930136197714751,-0.15601910241437833,5.749960679975606,2.608768648326897,-0.2923819336224197,-0.1628454245693458,True,False

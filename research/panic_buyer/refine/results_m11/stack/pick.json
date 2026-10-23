@@ -1,0 +1,17 @@
+{
+ "design": "AE-s1-near6-pre0-g3",
+ "params": {
+  "A": 1,
+  "E": 1,
+  "F": 0,
+  "nslots": 1,
+  "fsE": 1.0,
+  "fsF": 1.0,
+  "nordF": 1,
+  "nmaxF": 1,
+  "nearA": 0.06,
+  "pre": 0,
+  "gEF": 0.03
+ },
+ "note": ""
+}

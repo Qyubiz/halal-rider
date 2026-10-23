@@ -15,6 +15,8 @@ profits reinvested, 30 of 34 months positive, worst month -6%, biggest drop -16%
   4. Not sold after 48 hours: sold at market. That coin is then skipped for 24 hours.
   5. The bot only touches orders and coins it bought itself (halal-rider's trades are safe).
   6. Profits are not reinvested unless COMPOUND=yes: they stay as USDT you can withdraw.
+  Optional high-risk "10% mode" (panic_config.10pct.example.json): one coin with all the money, 14% dip,
+  +5% take-profit, and a crash guard that skips coins already 35% under their 7-day high. See PANIC_BUYER.md.
 
 Commands
   python panic_buyer.py check    test keys, balances and coins, show the nearest triggers. No orders.
@@ -45,6 +47,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
 from binance_spot import BinanceError, BinanceSpot, round_step  # noqa: E402
+from guardrails import RiskGuard  # noqa: E402
+from paper_exchange import PaperExchange  # noqa: E402
 
 MYT = timezone(timedelta(hours=8))
 HOUR_MS = 3600 * 1000
@@ -60,6 +64,7 @@ DEFAULT_CFG = {
     "max_hours": 48,
     "cooldown_hours": 24,
     "fee_pct": 0.1,           # used for the P&L numbers only
+    "crash_guard_pct": 0.0,   # skip a coin whose last close is this much under its 7-day high (0 = off)
 }
 
 
@@ -85,6 +90,8 @@ class PanicBuyer:
         self.clock = clock
         self.state = self.load_state()
         self.info = {}
+        self.on_close = None        # set by Ensemble: called with (pnl, time) after every closed trade
+        self.max_call_ms = 0.0      # slowest market-data request of the last triggers() call
 
     # ------------------------------------------------------------- state
     @property
@@ -132,6 +139,8 @@ class PanicBuyer:
                         reason, myt(p["opened_ms"])])
         self.log(f"SOLD {sym} @ {exit_px:.8g} ({reason}): {(exit_px / p['entry'] - 1) * 100:+.2f}%, "
                  f"{pnl:+.2f} USDT after fees. Total {st['realized_usdt']:+.2f} USDT", alert=True)
+        if self.on_close:
+            self.on_close(pnl, self.clock())
 
     # ------------------------------------------------------------- helpers
     def load_info(self):
@@ -173,15 +182,39 @@ class PanicBuyer:
         in_use += sum(o["limit"] * o["qty"] for o in self.state["orders"].values())
         return max(0.0, total), max(0.0, total - in_use)
 
-    def triggers(self, t):
-        """Distance of every tradable coin to its trigger: list of (distance, sym, trigger, price)."""
-        prices = self.c.prices(self.cfg["symbols"])
+    def equity(self, prices):
+        """The sleeve's money marked to market: capital + realized P&L - cost of open coins + their value now."""
+        eq = self.capital + self.state.get("realized_usdt", 0.0)
+        for sym, p in self.state["positions"].items():
+            eq += p["qty"] * (prices.get(sym, p["entry"]) - p["entry"])
+        return eq
+
+    def _timed(self, fn, *a):
+        t0 = time.perf_counter()
+        try:
+            return fn(*a)
+        finally:
+            self.max_call_ms = max(self.max_call_ms, (time.perf_counter() - t0) * 1000)
+
+    def triggers(self, t, risk=None):
+        """Distance of every tradable coin to its trigger: list of (distance, sym, trigger, price).
+        risk (a RiskGuard) adds the ATR-spike filter and the request timing used by the latency limit."""
+        self.max_call_ms = 0.0
+        prices = self._timed(self.c.prices, self.cfg["symbols"])
+        atr = bool(risk and risk.r["atr_spike_mult"])
         out = []
         for sym in self.cfg["symbols"]:
             if sym not in self.info or self.info[sym]["status"] != "TRADING" or sym not in prices:
                 continue
-            ks = [k for k in self.c.klines(sym, "1h", 30) if k["close_ms"] < t]
+            guard = self.cfg.get("crash_guard_pct", 0.0) / 100
+            ks = [k for k in self._timed(self.c.klines, sym, "1h", 722 if atr else 170 if guard else 30)
+                  if k["close_ms"] < t]
             if len(ks) < 24:
+                continue
+            if guard and ks[-1]["close"] < (1 - guard) * max(k["close"] for k in ks[-168:]):
+                continue                    # already crashing for days: not a short panic, stay away
+            if atr and not risk.atr_ok(ks):
+                self.log(f"{sym}: last hour's range is an extreme spike, no buy (risk limit)")
                 continue
             trigger = max(k["close"] for k in ks[-24:]) * (1 - self.cfg["depth_pct"] / 100)
             out.append((prices[sym] / trigger - 1, sym, trigger, prices[sym]))
@@ -191,9 +224,13 @@ class PanicBuyer:
     # ------------------------------------------------------------- trading steps
     def open_position(self, sym, qty_exec, px, fill_ms):
         base = self.info[sym]["base"]
-        free = self.c.balances().get(base, {"free": 0.0})["free"]
-        # if Binance took the fee in coins we hold a bit less; never count coins of another bot
-        qty = min(qty_exec * (1 - self.cfg["fee_pct"] / 100), free)
+        qty = qty_exec * (1 - self.cfg["fee_pct"] / 100)
+        try:
+            free = self.c.balances().get(base, {"free": 0.0})["free"]
+            # if Binance took the fee in coins we hold a bit less; never count coins of another bot
+            qty = min(qty, free)
+        except BinanceError as err:     # never lose track of coins we bought: keep the fill quantity
+            self.log(f"ALERT {sym}: balance check failed after the buy, using the fill quantity: {err}", alert=True)
         p = {"qty": qty, "entry": px, "opened_ms": int(fill_ms), "tp_id": None, "tp_price": None}
         self.state["positions"][sym] = p
         self.save()
@@ -218,7 +255,14 @@ class PanicBuyer:
     def close_position(self, sym, reason):
         """Cancel the take-profit (keeping anything it already sold) and sell the rest at market."""
         p = self.state["positions"][sym]
-        sold_q, sold_quote = 0.0, 0.0
+        if self.info.get(sym, {}).get("status", "TRADING") != "TRADING":
+            if not p.get("frozen"):     # halted or delisted: one loud alert, then wait for trading to resume
+                p["frozen"] = True
+                self.save()
+                self.log(f"ALERT {sym}: Binance has stopped trading this coin; the bot cannot sell it. It will sell "
+                         f"when trading resumes. Check Binance announcements.", alert=True)
+            return
+        p.pop("frozen", None)
         if p.get("tp_id"):
             try:
                 self.c.cancel_order(sym, p["tp_id"])
@@ -226,24 +270,29 @@ class PanicBuyer:
                 pass
             o = self.order_status(sym, p["tp_id"])
             q, px = self.avg_fill(o)
-            sold_q, sold_quote = q, q * px
             p["tp_id"] = None
             if o.get("status") == "FILLED":
                 self.record(sym, p, q, px, f"take-profit +{self.cfg['take_profit_pct']}%")
                 del self.state["positions"][sym]
                 self.save()
                 return
-        left = self.qty_str(sym, p["qty"] - sold_q)
+            if q > 0:                   # part sold: book it now, so a failure below can never sell it twice
+                self.record(sym, dict(p), q, px, "take-profit (part)")
+                p["qty"] = max(0.0, p["qty"] - q)
+            self.save()
+        left = self.qty_str(sym, p["qty"])
         price_now = self.c.prices([sym]).get(sym, p["entry"])
         if float(left) > 0 and float(left) * price_now >= self.min_notional(sym):
             o = self.c.new_order(symbol=sym, side="SELL", type="MARKET", quantity=left,
                                  newClientOrderId=self.cid("out", sym))
             q, px = self.avg_fill(o)
-            sold_q, sold_quote = sold_q + q, sold_quote + q * px
-        elif float(left) > 0:
+            if q > 0:
+                self.record(sym, p, q, px, reason)
+            else:
+                self.state["cooldown"][sym] = self.clock() + self.cfg["cooldown_hours"] * HOUR_MS
+        elif float(left) > 0:           # worth less than Binance's minimum order: book the loss at market value
             self.log(f"{sym}: {float(left):.8g} left is below Binance's minimum order, left in the account")
-        if sold_q > 0:
-            self.record(sym, p, sold_q, sold_quote / sold_q, reason)
+            self.record(sym, p, float(left), price_now, f"{reason}, left as dust")
         else:
             self.state["cooldown"][sym] = self.clock() + self.cfg["cooldown_hours"] * HOUR_MS
         del self.state["positions"][sym]
@@ -292,6 +341,12 @@ class PanicBuyer:
                             self.record(sym, dict(p), q, px, "take-profit (part)")
                             p["qty"] = max(0.0, p["qty"] - q)
                         p["tp_id"] = None
+                stop = self.cfg.get("stop_loss_pct", 0.0)
+                if stop:
+                    ks = [k for k in self.c.klines(sym, "1h", 3) if k["close_ms"] < t]
+                    if ks and ks[-1]["close"] <= p["entry"] * (1 - stop / 100):
+                        self.close_position(sym, f"stop-loss -{stop:g}%")
+                        continue
                 if t - p["opened_ms"] >= self.cfg["max_hours"] * HOUR_MS:
                     self.close_position(sym, f"time limit {self.cfg['max_hours']}h")
                     continue
@@ -301,10 +356,16 @@ class PanicBuyer:
             except BinanceError as err:
                 self.log(f"ALERT {sym}: managing the trade failed: {err}", alert=True)
 
-    def place_orders(self):
+    def place_orders(self, risk=None, money=None):
+        """risk: a RiskGuard (latency, spread and per-trade risk limits); money: the account-level money the
+        per-trade risk cap is measured against (default: this sleeve's money)."""
         t = self.clock()
         total, free_budget = self.budget()
-        cand = [x for x in self.triggers(t) if x[1] not in self.state["positions"] and x[1] not in self.state["orders"]
+        trig = self.triggers(t, risk)
+        if risk and not risk.latency_ok(self.max_call_ms):
+            self.log(f"Binance answered slowly ({self.max_call_ms:.0f} ms), no new buys this hour (risk limit)")
+            return
+        cand = [x for x in trig if x[1] not in self.state["positions"] and x[1] not in self.state["orders"]
                 and self.state["cooldown"].get(x[1], 0) <= t]
         sel = cand[: self.cfg["n_orders"]]
         if not sel:
@@ -312,15 +373,28 @@ class PanicBuyer:
         usdt_free = self.c.balances().get("USDT", {"free": 0.0})["free"]
         cash = min(free_budget, usdt_free * 0.98)
         per = min(self.cfg["max_order_pct"] / 100 * total, cash / len(sel))
+        cap = risk.max_order(money if money is not None else total) if risk else None
+        if cap is not None and per > cap:
+            self.log(f"order cut from {per:.2f} to {cap:.2f} USDT by the per-trade risk limit")
+            per = cap
         for dist, sym, trigger, price in sel:
+            if risk and risk.r["max_spread_pct"]:
+                try:
+                    bid, ask = self.c.book_ticker(sym)
+                except BinanceError as err:
+                    self.log(f"{sym}: no order book, no buy: {err}")
+                    continue
+                if not risk.spread_ok(bid, ask):
+                    self.log(f"{sym}: spread {bid:.8g}/{ask:.8g} is too wide, no buy (risk limit)")
+                    continue
             if per < self.min_notional(sym):
                 if cash >= self.min_notional(sym):
                     self.log(f"{per:.2f} USDT per order is below Binance's minimum: raise CAPITAL_USDT")
                 break
+            cid = self.cid("buy", sym)
             try:
                 if dist <= 0:
-                    o = self.c.new_order(symbol=sym, side="BUY", type="MARKET", quoteOrderQty=f"{per:.2f}",
-                                         newClientOrderId=self.cid("buy", sym))
+                    o = self._send_buy(sym, cid, type="MARKET", quoteOrderQty=f"{per:.2f}")
                     q, px = self.avg_fill(o)
                     if q > 0:
                         self.log(f"{sym}: {abs(dist) * 100:.1f}% under its trigger, bought at market")
@@ -330,13 +404,27 @@ class PanicBuyer:
                     qty = self.qty_str(sym, per / float(limit))
                     if float(qty) < self.info[sym]["min_qty"] or float(qty) * float(limit) < self.min_notional(sym):
                         continue
-                    o = self.c.new_order(symbol=sym, side="BUY", type="LIMIT", timeInForce="GTC", quantity=qty,
-                                         price=limit, newClientOrderId=self.cid("buy", sym))
+                    o = self._send_buy(sym, cid, type="LIMIT", timeInForce="GTC", quantity=qty, price=limit)
                     self.state["orders"][sym] = {"order_id": o["orderId"], "limit": float(limit), "qty": float(qty),
                                                  "placed_ms": t}
                 self.save()
             except BinanceError as err:
                 self.log(f"ALERT {sym}: buy order failed: {err}", alert=True)
+
+    def _send_buy(self, sym, cid, **kw):
+        """Send a buy. If the request fails without a clear answer (timeout, 5xx), ask Binance whether it took
+        the order anyway, so a buy that went through is never lost or doubled."""
+        try:
+            return self.c.new_order(symbol=sym, side="BUY", newClientOrderId=cid, **kw)
+        except BinanceError as err:
+            if err.code is not None:
+                raise
+            try:
+                o = self.c.get_order_by_cid(sym, cid)
+            except BinanceError:
+                raise err
+            self.log(f"{sym}: the buy request failed ({err}) but Binance has the order; tracking it")
+            return o
 
     def cycle(self):
         self.check_orders()
@@ -389,14 +477,88 @@ class PanicBuyer:
         self.save()
 
 
-def telegram():
+class Ensemble:
+    """One or more sleeves (each a PanicBuyer with its own settings, share of the capital and state folder) run
+    under one account-level RiskGuard. Without "sleeves" in the config it is the plain bot plus the risk limits
+    (all off unless set), with the same state files as before."""
+
+    def __init__(self, client, cfg, capital, compound=False, root=None, out=print, notify=None, clock=now_ms):
+        root = root or os.environ.get("PANIC_DATA") or HERE
+        os.makedirs(root, exist_ok=True)
+        base = {k: v for k, v in cfg.items() if k not in ("sleeves", "risk")}
+        risk = dict(cfg.get("risk", {}))
+        self.c, self.clock = client, clock
+        self.bots = []
+        for sv in cfg.get("sleeves") or [{}]:
+            c = dict(base)
+            c.update({k: v for k, v in sv.items() if k not in ("name", "weight")})
+            c["stop_loss_pct"] = risk.get("stop_loss_pct", 0.0)
+            name = sv.get("name")
+            bot = PanicBuyer(client, c, capital * float(sv.get("weight", 1.0)), compound=compound,
+                             root=os.path.join(root, name) if name else root, out=out, notify=notify, clock=clock)
+            bot.name = name or "main"
+            self.bots.append(bot)
+        self.log = self.bots[0].log
+        self.guard = RiskGuard(risk, root, clock, log=self.log)
+        for bot in self.bots:
+            bot.on_close = self.guard.on_trade_closed
+        self.symbols = sorted({s for b in self.bots for s in b.cfg["symbols"]})
+
+    def load_info(self):
+        for bot in self.bots:
+            bot.load_info()
+
+    def money(self):
+        """All sleeves' money at market prices (what the kill-switch watches)."""
+        held = sorted({s for b in self.bots for s in b.state["positions"]})
+        prices = self.c.prices(held) if held else {}
+        return sum(b.equity(prices) for b in self.bots)
+
+    def cycle(self):
+        t = self.clock()
+        for bot in self.bots:
+            bot.check_orders()
+        tripped = self.guard.update_equity(self.money(), t)
+        if tripped:
+            self.log(f"RISK KILL-SWITCH: {tripped}. Selling everything and stopping new buys.", alert=True)
+            self.panic()
+            return
+        for bot in self.bots:
+            bot.manage_positions()
+        ok, why = self.guard.entries_allowed(t)
+        if not ok:
+            self.log(f"no new buys: {why}")
+            return
+        money = self.money()
+        for bot in self.bots:
+            bot.place_orders(self.guard, money)
+            bot.save()
+
+    def panic(self):
+        for bot in self.bots:
+            bot.panic()
+
+    def cancel_buys(self):
+        for bot in self.bots:
+            bot.cancel_buys()
+
+    def summary(self):
+        parts = []
+        for bot in self.bots:
+            head = f"[{bot.name}] " if len(self.bots) > 1 else ""
+            parts.append(head + bot.summary())
+        parts.append(self.guard.status(self.clock()))
+        return "\n".join(parts)
+
+
+def telegram(prefix="Panic buyer: "):
     token, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
     if not token or not chat:
         return None
 
     def send(msg):
         try:
-            data = urllib.parse.urlencode({"chat_id": chat, "text": "Panic buyer: " + msg}).encode()
+            data = urllib.parse.urlencode({"chat_id": chat, "text": prefix + msg}).encode()
             urllib.request.urlopen(f"https://api.telegram.org/bot{token}/sendMessage", data=data, timeout=10)
         except Exception:  # noqa: BLE001 - alerts must never stop trading
             pass
@@ -404,7 +566,7 @@ def telegram():
 
 
 def load_cfg():
-    path = os.path.join(HERE, "panic_config.json")
+    path = os.environ.get("PANIC_CONFIG") or os.path.join(HERE, "panic_config.json")
     cfg = dict(DEFAULT_CFG)
     if os.path.exists(path):
         with open(path) as f:
@@ -417,24 +579,46 @@ def main(argv=None):
     ap.add_argument("command", choices=["check", "run", "status", "pause", "panic"])
     a = ap.parse_args(argv)
     cfg = load_cfg()
-    client = BinanceSpot()
-    capital = float(os.environ.get("CAPITAL_USDT", "0") or 0)
-    compound = os.environ.get("COMPOUND", "no").strip().lower() in ("yes", "y", "true", "1")
-    bot = PanicBuyer(client, cfg, capital, compound=compound, notify=telegram())
+    yes = ("yes", "y", "true", "1")
+    paper = os.environ.get("PAPER", "no").strip().lower() in yes
+    compound = os.environ.get("COMPOUND", "no").strip().lower() in yes
+    if paper:   # real prices, pretend money: nothing is ever sent to the Binance account
+        capital = float(os.environ.get("PAPER_USDT") or os.environ.get("CAPITAL_USDT") or 650)
+        root = os.environ.get("PAPER_DATA") or os.environ.get("PANIC_DATA") or HERE   # never the live data folder
+        client = PaperExchange(root, capital)
+        notify = telegram(f"[PAPER {os.environ.get('PAPER_NAME', 'test')}] ")
+    else:
+        capital = float(os.environ.get("CAPITAL_USDT", "0") or 0)
+        client = BinanceSpot()
+        notify = telegram()
+        root = None
+    ens = Ensemble(client, cfg, capital, compound=compound, root=root, notify=notify)
+    bot = ens.bots[0]
+    n_min = max(5 * b.cfg["n_orders"] / (b.capital / capital) for b in ens.bots) if capital else 5
 
     if a.command == "status":
-        print(bot.summary())
+        if paper:
+            v = client.value()
+            st = client.a["start_usdt"]
+            days = (now_ms() - client.a["started_ms"]) / 86400000
+            print(f"PAPER TRADING (pretend money) since {myt(client.a['started_ms'])}, {days:.1f} days: "
+                  f"{st:.2f} -> {v:.2f} USDT ({(v / st - 1) * 100:+.2f}%)")
+        print(ens.summary())
         return 0
 
     try:
         client.sync_time()
-        bot.load_info()
+        ens.load_info()
     except BinanceError as err:
         print(f"Binance not reachable or key rejected: {err}")
         print("CHECK FAILED" if a.command == "check" else "Not started, will retry.")
         return 1
     if a.command == "check":
         print(f"Binance reachable, clock offset {client.offset_ms} ms, {len(bot.info)} of {len(cfg['symbols'])} coins found")
+        if paper:
+            print(f"PAPER mode: pretend account {client.value():.2f} USDT, no API key used.")
+            print("CHECK PASSED")
+            return 0
         try:
             bal = client.balances()
         except BinanceError as err:
@@ -446,33 +630,34 @@ def main(argv=None):
         print(f"CAPITAL_USDT (the most this bot may use): {capital:.2f}, profits {'reinvested' if compound else 'set aside'}")
         near = bot.triggers(now_ms())[: cfg["n_orders"]]
         print("Coins closest to their buy trigger now: " + ", ".join(f"{s[:-4]} {d * 100:+.1f}%" for d, s, _, _ in near))
-        if capital < 5 * cfg["n_orders"]:
-            print(f"CAPITAL_USDT must be at least {5 * cfg['n_orders']} (8 orders of 5 USDT minimum).")
+        print(ens.guard.status(now_ms()))
+        if capital < n_min:
+            print(f"CAPITAL_USDT must be at least {n_min:.0f} (every order must be at least 5 USDT).")
             print("CHECK FAILED")
             return 1
         print("CHECK PASSED")
         return 0
     if a.command == "pause":
-        bot.cancel_buys()
+        ens.cancel_buys()
         print("Waiting buy orders cancelled. Coins already bought keep their take-profit sell on Binance.")
         return 0
     if a.command == "panic":
-        bot.panic()
+        ens.panic()
         print("All panic-buyer orders cancelled and its coins sold.")
         return 0
-    if capital < 5 * cfg["n_orders"]:
+    if capital < n_min:
         print("CAPITAL_USDT is missing or too small in /etc/panic-buyer.env, refusing to trade.")
         return 1
-    bot.log(f"Started. Capital {capital:.2f} USDT, {len(bot.info)} coins, profits "
-            f"{'reinvested' if compound else 'set aside'}.", alert=True)
+    bot.log(f"Started{' PAPER TRADING (pretend money)' if paper else ''}. Capital {capital:.2f} USDT, {len(ens.bots)} sleeve(s), {len(bot.info)} coins, profits "
+            f"{'reinvested' if compound else 'set aside'}. {ens.guard.status(now_ms())}", alert=True)
     last_info = time.time()
     while True:
         try:
-            if time.time() - last_info > 6 * 3600:
-                bot.load_info()
+            if time.time() - last_info > 3500:          # coin status (halts, delistings) refreshed every hour
+                ens.load_info()
                 client.sync_time()
                 last_info = time.time()
-            bot.cycle()
+            ens.cycle()
         except BinanceError as err:
             bot.log(f"ALERT: cycle error: {err}", alert=True)
         except Exception as err:  # noqa: BLE001 - keep running; sells wait on Binance anyway

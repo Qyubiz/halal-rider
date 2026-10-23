@@ -1,0 +1,52 @@
+lrun, exits off, dead=False pen=0.0            21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%  identical to engine.run: True
+lrun, exits off, dead=True pen=0.0             21-23 x 5.29 DD  -31% 2022   +1% | 24-26 x 2.46 DD  -15% worst-mo  -6% up-mo  88%  identical to engine.run: True
+lrun, exits off, dead=False pen=0.002          21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%  identical to engine.run: True
+lrun with beh=sx=100000 identical: True
+
+######## r2 losers H1: break-even target after X hours
+LIVE SETTINGS                                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+break-even +0.2% after 6h                      21-23 x 6.12 DD  -29% 2022  +34% | 24-26 x 2.49 DD  -16% worst-mo  -6% up-mo  85%
+break-even +0.5% after 6h                      21-23 x 6.35 DD  -29% 2022  +36% | 24-26 x 2.55 DD  -16% worst-mo  -6% up-mo  85%
+break-even +0.2% after 12h                     21-23 x 5.65 DD  -29% 2022  +24% | 24-26 x 2.49 DD  -16% worst-mo  -6% up-mo  85%
+break-even +0.5% after 12h                     21-23 x 6.03 DD  -29% 2022  +30% | 24-26 x 2.53 DD  -16% worst-mo  -6% up-mo  85%
+break-even +0.2% after 18h                     21-23 x 5.73 DD  -29% 2022  +20% | 24-26 x 2.51 DD  -16% worst-mo  -6% up-mo  85%
+break-even +0.5% after 18h                     21-23 x 5.98 DD  -29% 2022  +24% | 24-26 x 2.54 DD  -16% worst-mo  -6% up-mo  85%
+break-even +0.2% after 24h                     21-23 x 5.64 DD  -29% 2022  +20% | 24-26 x 2.56 DD  -16% worst-mo  -6% up-mo  85%
+break-even +0.5% after 24h                     21-23 x 5.70 DD  -29% 2022  +21% | 24-26 x 2.58 DD  -16% worst-mo  -6% up-mo  88%
+8 variants | beat live in 2021-23: 4 | in 2024-26: 0 | in both: 0
+PICK (2021-23 only): break-even +0.5% after 6h
+  pick                                         21-23 x 6.35 DD  -29% 2022  +36% | 24-26 x 2.55 DD  -16% worst-mo  -6% up-mo  85%
+  2024-26 check: does NOT beat the live settings
+  live, +LUNA/FTT/SRM                          21-23 x 5.29 DD  -31% 2022   +1% | 24-26 x 2.46 DD  -15% worst-mo  -6% up-mo  88%
+  pick, +LUNA/FTT/SRM                          21-23 x 5.81 DD  -32% 2022  +14% | 24-26 x 2.40 DD  -15% worst-mo  -6% up-mo  85%  FAILS
+  live, fills 0.2% worse                       21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+  pick, fills 0.2% worse                       21-23 x 3.90 DD  -30% 2022   +4% | 24-26 x 2.23 DD  -16% worst-mo  -6% up-mo  85%  FAILS
+  VERDICT: rejected, live bot unchanged
+
+######## r2 losers H2: stale-loser exit at hour X
+LIVE SETTINGS                                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+stale exit at 18h if 0%..10% under             21-23 x 6.57 DD  -24% 2022  +29% | 24-26 x 2.13 DD  -15% worst-mo  -4% up-mo  76%
+stale exit at 18h if >=0% under                21-23 x 6.01 DD  -25% 2022  +35% | 24-26 x 1.97 DD  -15% worst-mo  -6% up-mo  76%
+stale exit at 18h if 3%..10% under             21-23 x 6.62 DD  -24% 2022  +32% | 24-26 x 2.19 DD  -15% worst-mo  -3% up-mo  79%
+stale exit at 18h if >=3% under                21-23 x 6.14 DD  -25% 2022  +38% | 24-26 x 2.02 DD  -15% worst-mo  -5% up-mo  76%
+stale exit at 24h if 0%..10% under             21-23 x 7.34 DD  -28% 2022  +24% | 24-26 x 2.36 DD  -15% worst-mo  -5% up-mo  85%
+stale exit at 24h if >=0% under                21-23 x 6.36 DD  -28% 2022  +28% | 24-26 x 2.14 DD  -15% worst-mo  -7% up-mo  85%
+stale exit at 24h if 3%..10% under             21-23 x 7.43 DD  -28% 2022  +24% | 24-26 x 2.31 DD  -15% worst-mo  -5% up-mo  85%
+stale exit at 24h if >=3% under                21-23 x 6.46 DD  -27% 2022  +28% | 24-26 x 2.10 DD  -15% worst-mo  -7% up-mo  85%
+8 variants | beat live in 2021-23: 8 | in 2024-26: 0 | in both: 0
+PICK (2021-23 only): stale exit at 18h if 3%..10% under
+  pick                                         21-23 x 6.62 DD  -24% 2022  +32% | 24-26 x 2.19 DD  -15% worst-mo  -3% up-mo  79%
+  2024-26 check: does NOT beat the live settings
+  live, +LUNA/FTT/SRM                          21-23 x 5.29 DD  -31% 2022   +1% | 24-26 x 2.46 DD  -15% worst-mo  -6% up-mo  88%
+  pick, +LUNA/FTT/SRM                          21-23 x 5.88 DD  -27% 2022  +10% | 24-26 x 2.08 DD  -15% worst-mo  -3% up-mo  79%  FAILS
+  live, fills 0.2% worse                       21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+  pick, fills 0.2% worse                       21-23 x 5.06 DD  -24% 2022  +19% | 24-26 x 1.99 DD  -16% worst-mo  -4% up-mo  76%  FAILS
+  VERDICT: rejected, live bot unchanged
+  anatomy LIVE SETTINGS 21-23: 1681 trades | TP: 1573 (+9.84, avg +1.8%) | time stop: 108 (-5.09, avg -11.5%)
+  anatomy LIVE SETTINGS 24-26: 884 trades | TP: 817 (+14.44, avg +1.8%) | time stop: 67 (-5.18, avg -7.2%)
+  anatomy break-even +0.5% after 6h 21-23: 1700 trades | TP: 1377 (+9.46, avg +1.9%) | BE: 237 (+0.30, avg +0.3%) | time stop: 86 (-4.41, avg -11.8%)
+  anatomy break-even +0.5% after 6h 24-26: 889 trades | TP: 690 (+13.83, avg +1.9%) | BE: 151 (+0.56, avg +0.3%) | time stop: 48 (-4.53, avg -8.4%)
+  anatomy LIVE SETTINGS 21-23: 1681 trades | TP: 1573 (+9.84, avg +1.8%) | time stop: 108 (-5.09, avg -11.5%)
+  anatomy LIVE SETTINGS 24-26: 884 trades | TP: 817 (+14.44, avg +1.8%) | time stop: 67 (-5.18, avg -7.2%)
+  anatomy stale exit at 18h if 3%..10% under 21-23: 1717 trades | TP: 1590 (+10.52, avg +1.8%) | stale: 80 (-2.25, avg -6.2%) | time stop: 47 (-2.65, avg -13.3%)
+  anatomy stale exit at 18h if 3%..10% under 24-26: 892 trades | TP: 797 (+15.22, avg +1.8%) | stale: 67 (-4.84, avg -5.8%) | time stop: 28 (-2.48, avg -8.0%)

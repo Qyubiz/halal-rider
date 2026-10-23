@@ -1,0 +1,48 @@
+
+REF live settings
+  settings {}
+  (1-3) 19 coins                       24-26 +2.89%/mo DD  -16% | 25-26 +1.96%/mo DD  -15% | 21-23 +4.97%/mo DD  -29% | worst trade %acct 24-26 -2.7%, 21-23 -5.3% (RENDERUSDT) | 2024-26 x2.61, trades 884
+  +LUNA/FTT/SRM                        24-26 +2.89%/mo DD  -16% | 25-26 +1.96%/mo DD  -15% | 21-23 +4.69%/mo DD  -31% | worst trade %acct 24-26 -2.7%, 21-23 -14.9% (LUNAUSDT) | 2024-26 x2.61, trades 884
+  fills 0.2% worse                     24-26 +2.04%/mo DD  -16% | 25-26 +1.20%/mo DD  -16% | 21-23 +2.82%/mo DD  -30% | worst trade %acct 24-26 -2.8%, 21-23 -5.4% (TRXUSDT) | 2024-26 x1.97, trades 882
+  (4) fills 0.2% worse +LUNA/FTT/SRM   24-26 +2.04%/mo DD  -16% | 25-26 +1.20%/mo DD  -16% | 21-23 +2.40%/mo DD  -40% | worst trade %acct 24-26 -2.8%, 21-23 -14.9% (LUNAUSDT) | 2024-26 x1.97, trades 882
+  strict limit fills (0.3% through)    24-26 +2.48%/mo DD  -18% | 25-26 +1.55%/mo DD  -15% | 21-23 +3.55%/mo DD  -30% | worst trade %acct 24-26 -2.7%, 21-23 -5.4% (RENDERUSDT) | 2024-26 x2.28, trades 846
+
+R1 PICK (honest): S2 N2 | C4 1min | cd24h | E5 trail a3 t0 c8
+  settings {'N': 2, 'fmax': 0.5, 'cyc': 1, 'rearm': 1, 'cdm': -1, 'cd': 24, 'xmode': 1, 'arm': 0.03, 'trail': 0.0, 'cap': 0.08, 'delay': 1}
+  (1-3) 19 coins                       24-26 +6.32%/mo DD  -27% | 25-26 +3.72%/mo DD  -27% | 21-23 +16.13%/mo DD  -45% | worst trade %acct 24-26 -12.6%, 21-23 -15.7% (ADAUSDT) | 2024-26 x7.87, trades 642
+  +LUNA/FTT/SRM                        24-26 +6.32%/mo DD  -27% | 25-26 +3.72%/mo DD  -27% | 21-23 +13.74%/mo DD  -56% | worst trade %acct 24-26 -12.6%, 21-23 -34.9% (LUNAUSDT) | 2024-26 x7.87, trades 642
+  fills 0.2% worse                     24-26 +3.87%/mo DD  -27% | 25-26 +2.23%/mo DD  -27% | 21-23 +10.70%/mo DD  -48% | worst trade %acct 24-26 -12.7%, 21-23 -15.9% (ADAUSDT) | 2024-26 x3.59, trades 635
+  (4) fills 0.2% worse +LUNA/FTT/SRM   24-26 +3.87%/mo DD  -27% | 25-26 +2.23%/mo DD  -27% | 21-23 +8.44%/mo DD  -62% | worst trade %acct 24-26 -12.7%, 21-23 -34.4% (LUNAUSDT) | 2024-26 x3.59, trades 635
+  strict limit fills (0.3% through)    24-26 +5.62%/mo DD  -27% | 25-26 +2.90%/mo DD  -27% | 21-23 +14.60%/mo DD  -42% | worst trade %acct 24-26 -12.6%, 21-23 -15.7% (ADAUSDT) | 2024-26 x6.31, trades 657
+
+R2 PICK: N2 | 15min | trail a3 | hm48 | flash3h8 | cd24h
+  settings {'N': 2, 'fmax': 0.5, 'cyc': 15, 'rearm': 1, 'xmode': 1, 'arm': 0.03, 'trail': 0.0, 'cap': 0.08, 'delay': 1, 'hm': 48, 'look2': 3, 'depth2': 0.08, 'cdm': -1, 'cd': 24}
+  (1-3) 19 coins                       24-26 +5.81%/mo DD  -30% | 25-26 +4.34%/mo DD  -28% | 21-23 +16.36%/mo DD  -45% | worst trade %acct 24-26 -14.2%, 21-23 -17.2% (DOTUSDT) | 2024-26 x6.69, trades 571
+  +LUNA/FTT/SRM                        24-26 +5.81%/mo DD  -30% | 25-26 +4.34%/mo DD  -28% | 21-23 +16.50%/mo DD  -51% | worst trade %acct 24-26 -14.2%, 21-23 -28.6% (SRMUSDT) | 2024-26 x6.69, trades 571
+  fills 0.2% worse                     24-26 +3.14%/mo DD  -34% | 25-26 +2.21%/mo DD  -28% | 21-23 +10.44%/mo DD  -52% | worst trade %acct 24-26 -14.4%, 21-23 -20.0% (SOLUSDT) | 2024-26 x2.84, trades 558
+  (4) fills 0.2% worse +LUNA/FTT/SRM   24-26 +3.14%/mo DD  -34% | 25-26 +2.21%/mo DD  -28% | 21-23 +10.08%/mo DD  -57% | worst trade %acct 24-26 -14.4%, 21-23 -28.7% (SRMUSDT) | 2024-26 x2.84, trades 558
+  strict limit fills (0.3% through)    24-26 +4.93%/mo DD  -31% | 25-26 +3.49%/mo DD  -28% | 21-23 +14.18%/mo DD  -47% | worst trade %acct 24-26 -14.2%, 21-23 -13.5% (FETUSDT) | 2024-26 x5.06, trades 537
+
+R3 PICK (hindsight-located grid): N1 f0.7 | trail a3 | hm24 | flash3h8 | redip3/60m | lossCD 72h
+  settings {'cyc': 1, 'rearm': 1, 'N': 1, 'fmax': 0.7, 'xmode': 1, 'arm': 0.03, 'trail': 0.0, 'cap': 0.08, 'delay': 1, 'hm': 24, 'look2': 3, 'depth2': 0.08, 'cdm': 0, 'redip': 0.03, 'rewin': 60, 'cdl': 4320}
+  (1-3) 19 coins                       24-26 +9.23%/mo DD  -32% | 25-26 +7.72%/mo DD  -27% | 21-23 +22.25%/mo DD  -47% | worst trade %acct 24-26 -21.2%, 21-23 -39.6% (DOGEUSDT) | 2024-26 x19.59, trades 588
+  +LUNA/FTT/SRM                        24-26 +9.23%/mo DD  -32% | 25-26 +7.72%/mo DD  -27% | 21-23 +21.16%/mo DD  -57% | worst trade %acct 24-26 -21.2%, 21-23 -39.6% (DOGEUSDT) | 2024-26 x19.59, trades 588
+  fills 0.2% worse                     24-26 +5.59%/mo DD  -39% | 25-26 +4.59%/mo DD  -30% | 21-23 +14.13%/mo DD  -57% | worst trade %acct 24-26 -21.4%, 21-23 -26.9% (NEARUSDT) | 2024-26 x6.25, trades 558
+  (4) fills 0.2% worse +LUNA/FTT/SRM   24-26 +5.59%/mo DD  -39% | 25-26 +4.59%/mo DD  -30% | 21-23 +13.82%/mo DD  -71% | worst trade %acct 24-26 -21.4%, 21-23 -26.9% (NEARUSDT) | 2024-26 x6.25, trades 558
+  strict limit fills (0.3% through)    24-26 +8.73%/mo DD  -33% | 25-26 +7.57%/mo DD  -27% | 21-23 +18.69%/mo DD  -50% | worst trade %acct 24-26 -21.2%, 21-23 -41.0% (DOGEUSDT) | 2024-26 x16.74, trades 574
+
+HINDSIGHT BEST: N1 f1 | trail a3 | hm24 | flash3h8 | redip3/60m | lossCD 24h
+  settings {'cyc': 1, 'rearm': 1, 'N': 1, 'fmax': 1.0, 'xmode': 1, 'arm': 0.03, 'trail': 0.0, 'cap': 0.08, 'delay': 1, 'hm': 24, 'look2': 3, 'depth2': 0.08, 'cdm': 0, 'redip': 0.03, 'rewin': 60, 'cdl': 1440}
+  (1-3) 19 coins                       24-26 +11.71%/mo DD  -39% | 25-26 +10.06%/mo DD  -31% | 21-23 +24.89%/mo DD  -60% | worst trade %acct 24-26 -30.4%, 21-23 -56.5% (DOGEUSDT) | 2024-26 x41.62, trades 368
+  +LUNA/FTT/SRM                        24-26 +11.71%/mo DD  -39% | 25-26 +10.06%/mo DD  -31% | 21-23 +13.05%/mo DD  -97% | worst trade %acct 24-26 -30.4%, 21-23 -83.5% (LUNAUSDT) | 2024-26 x41.62, trades 368
+  fills 0.2% worse                     24-26 +6.73%/mo DD  -45% | 25-26 +5.38%/mo DD  -31% | 21-23 +13.02%/mo DD  -71% | worst trade %acct 24-26 -30.6%, 21-23 -53.9% (DOGEUSDT) | 2024-26 x8.96, trades 353
+  (4) fills 0.2% worse +LUNA/FTT/SRM   24-26 +6.73%/mo DD  -45% | 25-26 +5.38%/mo DD  -31% | 21-23 +5.09%/mo DD  -99% | worst trade %acct 24-26 -30.6%, 21-23 -83.6% (LUNAUSDT) | 2024-26 x8.96, trades 353
+  strict limit fills (0.3% through)    24-26 +10.23%/mo DD  -40% | 25-26 +8.99%/mo DD  -31% | 21-23 +21.92%/mo DD  -62% | worst trade %acct 24-26 -30.4%, 21-23 -57.7% (DOGEUSDT) | 2024-26 x26.56, trades 348
+
+HINDSIGHT >=10% least hurt by LUNA: N1 f1 | trail a3 | hm12 | flash3h8 | redip3/60m | lossCD 168h
+  settings {'cyc': 1, 'rearm': 1, 'N': 1, 'fmax': 1.0, 'xmode': 1, 'arm': 0.03, 'trail': 0.0, 'cap': 0.08, 'delay': 1, 'hm': 12, 'look2': 3, 'depth2': 0.08, 'cdm': 0, 'redip': 0.03, 'rewin': 60, 'cdl': 10080}
+  (1-3) 19 coins                       24-26 +10.51%/mo DD  -36% | 25-26 +8.65%/mo DD  -27% | 21-23 +25.34%/mo DD  -60% | worst trade %acct 24-26 -24.5%, 21-23 -44.5% (XRPUSDT) | 2024-26 x28.96, trades 392
+  +LUNA/FTT/SRM                        24-26 +10.51%/mo DD  -36% | 25-26 +8.65%/mo DD  -27% | 21-23 +22.46%/mo DD  -62% | worst trade %acct 24-26 -24.5%, 21-23 -44.5% (XRPUSDT) | 2024-26 x28.96, trades 392
+  fills 0.2% worse                     24-26 +5.66%/mo DD  -46% | 25-26 +4.97%/mo DD  -27% | 21-23 +11.99%/mo DD  -50% | worst trade %acct 24-26 -24.8%, 21-23 -44.7% (XRPUSDT) | 2024-26 x6.39, trades 378
+  (4) fills 0.2% worse +LUNA/FTT/SRM   24-26 +5.66%/mo DD  -46% | 25-26 +4.97%/mo DD  -27% | 21-23 +10.96%/mo DD  -64% | worst trade %acct 24-26 -24.8%, 21-23 -44.7% (XRPUSDT) | 2024-26 x6.39, trades 378
+  strict limit fills (0.3% through)    24-26 +9.02%/mo DD  -37% | 25-26 +6.35%/mo DD  -27% | 21-23 +22.05%/mo DD  -67% | worst trade %acct 24-26 -24.5%, 21-23 -44.5% (XRPUSDT) | 2024-26 x18.32, trades 375

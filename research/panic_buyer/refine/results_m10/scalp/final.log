@@ -1,0 +1,91 @@
+######## 2021-23 frontier over 216 concentrated designs (crash guard 35%, 19 coins)
+  win >= 90%  best: W60 d6% tp1.5% hold24h N1: win 92.6% +15.63%/mo DD -73% worst trade -56.1% 40.8 tr/mo
+               best with DD >= -40%: W240 d10% tp2.0% hold24h N4: win 91.7% +6.55%/mo DD -40% worst trade -13.7% 59.2 tr/mo
+  win >= 93%  best: W240 d10% tp2.0% hold96h N1: win 94.7% +14.64%/mo DD -68% worst trade -57.1% 19.3 tr/mo
+               best with DD >= -40%: W60 d8% tp2.0% hold96h N4: win 96.0% +6.27%/mo DD -37% worst trade -13.6% 42.3 tr/mo
+  win >= 95%  best: W240 d10% tp1.5% hold96h N1: win 96.3% +14.44%/mo DD -68% worst trade -57.1% 24.0 tr/mo
+               best with DD >= -40%: W60 d8% tp2.0% hold96h N4: win 96.0% +6.27%/mo DD -37% worst trade -13.6% 42.3 tr/mo
+  win >= 97%  best: W60 d8% tp1.5% hold96h N1: win 97.2% +10.34%/mo DD -68% worst trade -54.6% 20.0 tr/mo
+               best with DD >= -40%: W60 d8% tp1.5% hold96h N4: win 97.3% +4.81%/mo DD -37% worst trade -13.6% 47.9 tr/mo
+  win >= 98%  best: W240 d12% tp1.0% hold96h N1: win 98.7% +8.63%/mo DD -68% worst trade -55.3% 21.4 tr/mo
+               best with DD >= -40%: W60 d8% tp1.0% hold96h N4: win 98.1% +3.06%/mo DD -35% worst trade -13.6% 56.4 tr/mo
+  win >= 99%: none
+
+PICK (rule: 2021-23 win >= 95%, 1-min DD >= -40%, max %/month):
+W                60.000000
+depth             0.080000
+tp                0.020000
+hmm            5760.000000
+N                 4.000000
+fmax              0.250000
+win               0.959921
+pm                0.062718
+dd               -0.365791
+dd_min           -0.370101
+worst_trade      -0.136449
+tpm              42.308345
+avg               0.010132
+
+next best under the same rule (2021-23):
+  W  depth    tp  hmm  N  fmax    win     pm      dd  dd_min  worst_trade     tpm    avg
+ 60   0.08 0.020 5760  4  0.25 0.9599 0.0627 -0.3658 -0.3701      -0.1364 42.3083 0.0101
+240   0.10 0.015 5760  4  0.25 0.9602 0.0557 -0.3742 -0.3772      -0.1432 66.4091 0.0054
+240   0.12 0.020 5760  4  0.25 0.9630 0.0501 -0.3456 -0.3721      -0.1392 33.0239 0.0090
+ 60   0.08 0.015 1440  4  0.25 0.9533 0.0495 -0.2635 -0.3511      -0.1365 48.8130 0.0070
+ 60   0.08 0.015 5760  4  0.25 0.9727 0.0481 -0.3615 -0.3653      -0.1364 47.8679 0.0069
+240   0.12 0.015 5760  4  0.25 0.9723 0.0366 -0.3461 -0.3483      -0.1392 38.0831 0.0058
+240   0.12 0.015 1440  4  0.25 0.9541 0.0344 -0.2433 -0.3460      -0.1375 38.7780 0.0059
+ 60   0.10 0.020 1440  4  0.25 0.9580 0.0323 -0.2467 -0.2986      -0.1424 21.1542 0.0103
+
+spec: {'W': 60, 'depth': 0.08, 'tp': 0.02, 'hmm': 5760, 'N': 4, 'fmax': 0.25, 'guard': 0.35}
+
+######## fills 0.00% worse, wicks>0.5% trimmed
+  2018-20    win  91.0% |  +1.73%/mo x     1.85 | DD  -33% (1-min  -37%) | worst trade  -10.0% of acct |   22.9 trades/mo | avg +0.493% | worst mo  -16% | TS 77 SL 0 BE 0
+  2021-23    win  96.0% |  +6.27%/mo x     8.92 | DD  -37% (1-min  -37%) | worst trade  -13.6% of acct |   42.3 trades/mo | avg +1.013% | worst mo  -16% | TS 62 SL 0 BE 0
+  2024-26    win  95.0% |  +1.98%/mo x     1.93 | DD  -20% (1-min  -64%) | worst trade   -8.7% of acct |   11.9 trades/mo | avg +1.129% | worst mo   -9% | TS 20 SL 0 BE 0
+  since 2025 win  91.1% |  +0.75%/mo x     1.18 | DD  -20% (1-min  -64%) | worst trade   -3.4% of acct |    5.7 trades/mo | avg +0.604% | worst mo   -6% | TS 11 SL 0 BE 0
+    2018       win  94.1% |  +2.99%/mo x     1.42 | DD  -33% (1-min  -34%) | worst trade   -9.4% of acct |   15.6 trades/mo | avg +0.843% | worst mo  -16% | TS 12 SL 0 BE 0
+    2019       win  86.8% |  +0.14%/mo x     1.02 | DD  -21% (1-min  -22%) | worst trade   -9.9% of acct |   23.4 trades/mo | avg +0.123% | worst mo  -15% | TS 38 SL 0 BE 0
+    2020       win  92.7% |  +2.07%/mo x     1.28 | DD  -31% (1-min  -35%) | worst trade  -10.0% of acct |   29.8 trades/mo | avg +0.602% | worst mo  -11% | TS 27 SL 0 BE 0
+    2021       win  97.5% | +17.16%/mo x     6.68 | DD  -25% (1-min  -37%) | worst trade  -13.6% of acct |   92.7 trades/mo | avg +1.172% | worst mo   -3% | TS 29 SL 0 BE 0
+    2022       win  91.0% |  -0.08%/mo x     0.99 | DD  -37% (1-min  -37%) | worst trade   -9.6% of acct |   18.4 trades/mo | avg +0.117% | worst mo  -16% | TS 20 SL 0 BE 0
+    2023       win  93.2% |  +2.52%/mo x     1.35 | DD   -8% (1-min  -13%) | worst trade   -5.5% of acct |   15.8 trades/mo | avg +1.127% | worst mo   -3% | TS 13 SL 0 BE 0
+    2024       win  96.7% |  +4.23%/mo x     1.64 | DD  -18% (1-min  -21%) | worst trade   -8.7% of acct |   23.0 trades/mo | avg +1.365% | worst mo   -9% | TS 9 SL 0 BE 0
+    2025       win  93.0% |  +1.35%/mo x     1.17 | DD  -20% (1-min  -64%) | worst trade   -3.4% of acct |    7.2 trades/mo | avg +0.755% | worst mo   -4% | TS 6 SL 0 BE 0
+    2026       win  86.8% |  +0.01%/mo x     1.00 | DD   -6% (1-min   -9%) | worst trade   -3.4% of acct |    3.9 trades/mo | avg +0.262% | worst mo   -6% | TS 5 SL 0 BE 0
+    worst trades 2021-26: DOGE 2021-01-29 -54.6% (-13.6% of acct); NEAR 2021-12-15 -42.3% (-10.6% of acct); SOL 2022-11-08 -48.8% (-9.6% of acct); RENDER 2022-06-10 -38.1% (-9.5% of acct); HBAR 2024-04-24 -34.9% (-8.7% of acct); RENDER 2022-11-07 -34.6% (-8.6% of acct)
+    worst trades 2018-20: NEAR 2020-10-14 -40.0% (-10.0% of acct); FET 2019-05-21 -39.6% (-9.9% of acct); XRP 2018-09-21 -37.6% (-9.4% of acct); FET 2020-08-18 -31.2% (-7.8% of acct)
+
+######## fills 0.00% worse, wicks>1.0% trimmed
+  2018-20    win  91.9% |  +2.71%/mo x     2.62 | DD  -33% (1-min  -35%) | worst trade  -10.0% of acct |   25.1 trades/mo | avg +0.641% | worst mo  -15% | TS 76 SL 0 BE 0
+  2021-23    win  96.2% |  +7.78%/mo x    14.81 | DD  -37% (1-min  -37%) | worst trade  -13.6% of acct |   46.4 trades/mo | avg +1.055% | worst mo  -16% | TS 64 SL 0 BE 0
+  2024-26    win  95.5% |  +2.39%/mo x     2.22 | DD  -20% (1-min  -64%) | worst trade   -8.7% of acct |   13.3 trades/mo | avg +1.203% | worst mo   -8% | TS 20 SL 0 BE 0
+  since 2025 win  92.5% |  +1.09%/mo x     1.26 | DD  -20% (1-min  -64%) | worst trade   -3.4% of acct |    6.8 trades/mo | avg +0.795% | worst mo   -6% | TS 11 SL 0 BE 0
+
+######## fills 0.00% worse, raw wicks
+  2018-20    win  93.4% |  +4.24%/mo x     4.46 | DD  -31% (1-min  -35%) | worst trade  -10.0% of acct |   28.6 trades/mo | avg +0.808% | worst mo  -14% | TS 70 SL 0 BE 0
+  2021-23    win  96.6% |  +9.35%/mo x    24.93 | DD  -37% (1-min  -37%) | worst trade  -13.6% of acct |   51.3 trades/mo | avg +1.130% | worst mo  -15% | TS 64 SL 0 BE 0
+  2024-26    win  96.5% |  +3.12%/mo x     2.81 | DD  -17% (1-min  -64%) | worst trade   -8.7% of acct |   17.7 trades/mo | avg +1.378% | worst mo   -5% | TS 21 SL 0 BE 0
+  since 2025 win  94.7% |  +1.66%/mo x     1.43 | DD  -10% (1-min  -64%) | worst trade   -3.4% of acct |   10.5 trades/mo | avg +1.227% | worst mo   -4% | TS 12 SL 0 BE 0
+
+######## fills 0.05% worse, wicks>0.5% trimmed
+  2018-20    win  90.6% |  +1.23%/mo x     1.55 | DD  -36% (1-min  -40%) | worst trade  -10.0% of acct |   22.5 trades/mo | avg +0.383% | worst mo  -16% | TS 79 SL 0 BE 0
+  2021-23    win  95.8% |  +5.71%/mo x     7.38 | DD  -37% (1-min  -37%) | worst trade  -13.7% of acct |   41.8 trades/mo | avg +0.916% | worst mo  -17% | TS 64 SL 0 BE 0
+  2024-26    win  94.9% |  +1.83%/mo x     1.84 | DD  -20% (1-min  -64%) | worst trade   -8.7% of acct |   11.7 trades/mo | avg +1.067% | worst mo   -9% | TS 20 SL 0 BE 0
+  since 2025 win  91.1% |  +0.69%/mo x     1.16 | DD  -20% (1-min  -64%) | worst trade   -3.4% of acct |    5.7 trades/mo | avg +0.550% | worst mo   -6% | TS 11 SL 0 BE 0
+
+######## fills 0.10% worse, wicks>0.5% trimmed
+  2018-20    win  90.4% |  +0.93%/mo x     1.40 | DD  -37% (1-min  -41%) | worst trade  -10.0% of acct |   22.4 trades/mo | avg +0.321% | worst mo  -16% | TS 79 SL 0 BE 0
+  2021-23    win  95.7% |  +5.13%/mo x     6.05 | DD  -37% (1-min  -38%) | worst trade  -13.7% of acct |   41.4 trades/mo | avg +0.832% | worst mo  -18% | TS 66 SL 0 BE 0
+  2024-26    win  94.9% |  +1.71%/mo x     1.77 | DD  -20% (1-min  -64%) | worst trade   -8.8% of acct |   11.7 trades/mo | avg +1.012% | worst mo  -10% | TS 20 SL 0 BE 0
+  since 2025 win  91.1% |  +0.63%/mo x     1.15 | DD  -20% (1-min  -64%) | worst trade   -3.4% of acct |    5.7 trades/mo | avg +0.496% | worst mo   -6% | TS 11 SL 0 BE 0
+
+######## with LUNA/FTT/SRM added (22 coins), normal fills
+  2021-23    win  95.8% |  +4.93%/mo x     5.65 | DD  -50% (1-min  -50%) | worst trade  -17.5% of acct |   47.2 trades/mo | avg +0.875% | worst mo  -45% | TS 72 SL 0 BE 0
+  2024-26    win  95.0% |  +1.75%/mo x     1.79 | DD  -18% (1-min  -58%) | worst trade   -7.6% of acct |   11.9 trades/mo | avg +1.129% | worst mo   -8% | TS 20 SL 0 BE 0
+
+######## reference: 90% mode (hourly bids, 24h reference, engine fill rules) through the same kernel
+  2018-20    win  92.2% | +10.34%/mo x    34.61 | DD  -66% (1-min  -70%) | worst trade  -37.3% of acct |   10.0 trades/mo | avg +1.204% | worst mo  -43% | TS 29 SL 0 BE 0
+  2021-23    win  93.8% | +13.19%/mo x    86.32 | DD  -64% (1-min  -68%) | worst trade  -50.3% of acct |   11.3 trades/mo | avg +1.365% | worst mo  -30% | TS 25 SL 0 BE 0
+  2024-26    win  92.6% |  +6.89%/mo x     9.42 | DD  -35% (1-min  -54%) | worst trade  -27.3% of acct |    4.4 trades/mo | avg +1.606% | worst mo  -12% | TS 11 SL 0 BE 0
+  since 2025 win  93.2% |  +5.80%/mo x     3.39 | DD  -23% (1-min  -54%) | worst trade  -11.8% of acct |    3.4 trades/mo | avg +1.726% | worst mo  -12% | TS 5 SL 0 BE 0

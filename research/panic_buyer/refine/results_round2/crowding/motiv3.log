@@ -1,0 +1,7 @@
+F. first hour at which the low trades through ref_fill*(1-d2) before the live exit (or 48h)
+  d2=16%: in the fill hour 297 | later, before the exit 251
+  d2=18%: in the fill hour 159 | later, before the exit 222
+  d2=20%: in the fill hour  97 | later, before the exit 165
+  d2=24%: in the fill hour  50 | later, before the exit 103
+
+G. 2021-23 share of equity held in coins (cost basis, hourly): mean 5%, median 0%, hours with nothing held 84%, hours above 50% 3%, above 80% 1%

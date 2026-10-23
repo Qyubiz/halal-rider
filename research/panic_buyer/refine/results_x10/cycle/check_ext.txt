@@ -1,0 +1,17 @@
+5m {'depth': 0.06, 'N': 2, 'fmax': 0.5, 'tp': 0.02, 'hm': 48, 'cd': 12} W2: x480.7329 vs x480.7329 trades 5476/5476 IDENTICAL
+5m {'depth': 0.08, 'N': 1, 'fmax': 1.0, 'tp': 0.03, 'hm': 72, 'cd': 0} W3: x12927.2486 vs x12927.2486 trades 1548/1548 IDENTICAL
+5m {'depth': 0.05, 'N': 4, 'fmax': 0.25, 'tp': 0.015, 'hm': 144, 'cd': 24, 'part': 0.0, 'trail': 0.01} W1: x14.3166 vs x14.3166 trades 6403/6403 IDENTICAL
+5m {'depth': 0.1, 'N': 3, 'fmax': 0.3333333333333333, 'tp': 0.01, 'hm': 24, 'cd': 0, 'tpwait': 4, 'tprest': False, 'pen': 0.002, 'pens': 0.002} W6: x0.2470 vs x0.2470 trades 6147/6147 IDENTICAL
+5m +dead {'depth': 0.06, 'N': 2, 'fmax': 0.5, 'tp': 0.02, 'hm': 48, 'cd': 12} W2: x80.6170 vs x80.6170 trades 6101/6101 IDENTICAL
+5m +dead {'depth': 0.08, 'N': 1, 'fmax': 1.0, 'tp': 0.03, 'hm': 72, 'cd': 0} W3: x0.2663 vs x0.2663 trades 1312/1312 IDENTICAL
+5m +dead {'depth': 0.05, 'N': 4, 'fmax': 0.25, 'tp': 0.015, 'hm': 144, 'cd': 24, 'part': 0.0, 'trail': 0.01} W1: x5.8222 vs x5.8222 trades 7058/7058 IDENTICAL
+5m +dead {'depth': 0.1, 'N': 3, 'fmax': 0.3333333333333333, 'tp': 0.01, 'hm': 24, 'cd': 0, 'tpwait': 4, 'tprest': False, 'pen': 0.002, 'pens': 0.002} W6: x0.0241 vs x0.0241 trades 7053/7053 IDENTICAL
+15m {'depth': 0.06, 'N': 2, 'fmax': 0.5, 'tp': 0.02, 'hm': 16, 'cd': 4} W2: x191.3956 vs x191.3956 trades 4126/4126 IDENTICAL
+15m {'depth': 0.08, 'N': 1, 'fmax': 1.0, 'tp': 0.03, 'hm': 24, 'cd': 0} W3: x12194.1860 vs x12194.1860 trades 1297/1297 IDENTICAL
+15m {'depth': 0.05, 'N': 4, 'fmax': 0.25, 'tp': 0.015, 'hm': 48, 'cd': 8, 'part': 0.0, 'trail': 0.01} W1: x11.1580 vs x11.1580 trades 4849/4849 IDENTICAL
+15m {'depth': 0.1, 'N': 3, 'fmax': 0.3333333333333333, 'tp': 0.01, 'hm': 8, 'cd': 0, 'tpwait': 4, 'tprest': False, 'pen': 0.002, 'pens': 0.002} W6: x2.5231 vs x2.5231 trades 3947/3947 IDENTICAL
+15m +dead {'depth': 0.06, 'N': 2, 'fmax': 0.5, 'tp': 0.02, 'hm': 16, 'cd': 4} W2: x9.4029 vs x9.4029 trades 4537/4537 IDENTICAL
+15m +dead {'depth': 0.08, 'N': 1, 'fmax': 1.0, 'tp': 0.03, 'hm': 24, 'cd': 0} W3: x0.0403 vs x0.0403 trades 1088/1088 IDENTICAL
+15m +dead {'depth': 0.05, 'N': 4, 'fmax': 0.25, 'tp': 0.015, 'hm': 48, 'cd': 8, 'part': 0.0, 'trail': 0.01} W1: x4.3066 vs x4.3066 trades 5290/5290 IDENTICAL
+15m +dead {'depth': 0.1, 'N': 3, 'fmax': 0.3333333333333333, 'tp': 0.01, 'hm': 8, 'cd': 0, 'tpwait': 4, 'tprest': False, 'pen': 0.002, 'pens': 0.002} W6: x0.5108 vs x0.5108 trades 4535/4535 IDENTICAL
+ALL CHECKS PASS

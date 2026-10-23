@@ -1,0 +1,66 @@
+PICK (rule, 2021-23 only): AE-s1-near6-pre0-g3
+
+PICK: {"A": 1, "E": 1, "F": 0, "nslots": 1, "fsE": 1.0, "fsF": 1.0, "nordF": 1, "nmaxF": 1, "nearA": 0.06, "pre": 0, "gEF": 0.03}
+  normal 2021-23               win  95.3% | +25.50%/mo | drop -60.2% (1-min -62.7%) | worst trade  -45.7% acct |  17.8 tr/mo | A 419 95.5% E 222 95.0% F 0  nan% | sold-for-A 0 | flat 82.2%
+  normal 2024-26               win  90.7% |  +6.06%/mo | drop -37.9% (1-min -80.2%) | worst trade  -27.3% acct |   5.8 tr/mo | A 130 90.0% E 64 92.2% F 0  nan% | sold-for-A 0 | flat 90.1%
+  normal since 2025            win  91.2% |  +6.01%/mo | drop -29.4% (1-min -80.2%) | worst trade  -11.8% acct |   4.2 tr/mo | A 68 92.6% E 23 87.0% F 0  nan% | sold-for-A 0 | flat 92.3%
+    worst trades: A RENDER 2022-06-11 08:00 -45.7%; A NEAR 2021-05-19 02:00 -39.9%; A RENDER 2022-11-07 15:00 -37.7%; A DOGE 2021-05-09 03:00 -30.7%; A HBAR 2024-04-24 06:00 -27.3%; A RENDER 2022-05-05 15:00 -26.0%
+    years: 2021 +59647%  2022 +92%  2023 +208%  2024 +105%  2025 +208%  2026 +15%
+  normal 2018-20 holdout       win  92.0% | +12.16%/mo | drop -66.7% (1-min -70.2%) | worst trade  -37.3% acct |  14.2 tr/mo | A 317 91.5% E 196 92.9% F 0  nan% | sold-for-A 0 | flat 82.7%
+  worse 2021-23                win  94.1% | +15.93%/mo | drop -61.2% (1-min -63.6%) | worst trade  -45.9% acct |  17.3 tr/mo | A 404 95.0% E 219 92.2% F 0  nan% | sold-for-A 0 | flat 81.4%
+  worse 2024-26                win  90.4% |  +4.18%/mo | drop -41.6% (1-min -80.2%) | worst trade  -27.6% acct |   5.6 tr/mo | A 122 89.3% E 65 92.3% F 0  nan% | sold-for-A 0 | flat 89.9%
+  worse since 2025             win  90.7% |  +4.52%/mo | drop -29.5% (1-min -80.2%) | worst trade  -12.2% acct |   4.0 tr/mo | A 63 92.1% E 23 87.0% F 0  nan% | sold-for-A 0 | flat 92.2%
+  worse 2018-20 holdout        win  91.3% |  +6.63%/mo | drop -69.9% (1-min -73.1%) | worst trade  -37.5% acct |  13.7 tr/mo | A 304 90.8% E 191 92.1% F 0  nan% | sold-for-A 0 | flat 82.2%
+  stressed 2021-23             win  93.7% | +15.65%/mo | drop -63.8% (1-min -64.3%) | worst trade  -45.9% acct |  17.8 tr/mo | A 426 95.3% E 213 90.6% F 0  nan% | sold-for-A 0 | flat 80.6%
+  stressed 2024-26             win  91.1% |  +4.93%/mo | drop -32.1% (1-min -80.2%) | worst trade  -18.0% acct |   5.6 tr/mo | A 129 89.9% E 61 93.4% F 0  nan% | sold-for-A 0 | flat 90.1%
+  stressed since 2025          win  92.0% |  +4.91%/mo | drop -22.7% (1-min -80.2%) | worst trade  -12.2% acct |   4.1 tr/mo | A 67 92.5% E 21 90.5% F 0  nan% | sold-for-A 0 | flat 92.3%
+  slip panel 2021-23           win  95.1% | +24.24%/mo | drop -60.2% (1-min -62.8%) | worst trade  -45.8% acct |  17.7 tr/mo | A 415 95.2% E 222 95.0% F 0  nan% | sold-for-A 0 | flat 81.9%
+  slip panel 2024-26           win  90.7% |  +6.06%/mo | drop -37.9% (1-min -80.2%) | worst trade  -27.3% acct |   5.8 tr/mo | A 130 90.0% E 64 92.2% F 0  nan% | sold-for-A 0 | flat 90.1%
+  slip panel since 2025        win  91.2% |  +6.01%/mo | drop -29.4% (1-min -80.2%) | worst trade  -11.8% acct |   4.2 tr/mo | A 68 92.6% E 23 87.0% F 0  nan% | sold-for-A 0 | flat 92.3%
+  cd-1h 2021-23                win  94.2% | +20.01%/mo | drop -64.4% (1-min -67.9%) | worst trade  -50.3% acct |  18.8 tr/mo | A 391 94.1% E 285 94.4% F 0  nan% | sold-for-A 0 | flat 80.9%
+  cd-1h 2024-26                win  90.7% |  +6.18%/mo | drop -43.4% (1-min -80.2%) | worst trade  -20.8% acct |   6.4 tr/mo | A 130 90.0% E 84 91.7% F 0  nan% | sold-for-A 0 | flat 89.9%
+  cd-1h since 2025             win  90.8% |  +5.81%/mo | drop -29.4% (1-min -80.2%) | worst trade  -11.8% acct |   4.5 tr/mo | A 66 92.4% E 32 87.5% F 0  nan% | sold-for-A 0 | flat 92.1%
+  cd+1h 2021-23                win  94.7% | +20.07%/mo | drop -58.5% (1-min -59.1%) | worst trade  -45.7% acct |  16.7 tr/mo | A 395 94.9% E 206 94.2% F 0  nan% | sold-for-A 0 | flat 82.0%
+  cd+1h 2024-26                win  91.1% |  +6.65%/mo | drop -39.5% (1-min -80.2%) | worst trade  -27.3% acct |   5.7 tr/mo | A 131 90.1% E 61 93.4% F 0  nan% | sold-for-A 0 | flat 90.2%
+  cd+1h since 2025             win  92.2% |  +6.81%/mo | drop -29.4% (1-min -80.2%) | worst trade  -11.8% acct |   4.2 tr/mo | A 69 92.8% E 21 90.5% F 0  nan% | sold-for-A 0 | flat 92.4%
+  bot timing 2021-23           win  94.7% | +19.75%/mo | drop -59.0% (1-min -59.6%) | worst trade  -45.7% acct |  17.4 tr/mo | A 413 95.2% E 213 93.9% F 0  nan% | sold-for-A 0 | flat 82.6%
+  bot timing 2024-26           win  91.4% |  +6.93%/mo | drop -28.5% (1-min -80.2%) | worst trade  -17.7% acct |   5.9 tr/mo | A 137 90.5% E 61 93.4% F 0  nan% | sold-for-A 0 | flat 90.3%
+  bot timing since 2025        win  92.5% |  +6.45%/mo | drop -22.6% (1-min -80.2%) | worst trade  -11.8% acct |   4.3 tr/mo | A 72 93.1% E 21 90.5% F 0  nan% | sold-for-A 0 | flat 92.5%
+  start 2021-01-15 2021-23     win  95.2% | +23.91%/mo | drop -60.2% (1-min -62.7%) | worst trade  -45.7% acct |  16.9 tr/mo | A 403 95.5% E 198 94.4% F 0  nan% | sold-for-A 0 | flat 82.6%
+  start 2021-01-15 2024-26     win  90.7% |  +6.06%/mo | drop -37.9% (1-min -80.2%) | worst trade  -27.3% acct |   5.8 tr/mo | A 130 90.0% E 64 92.2% F 0  nan% | sold-for-A 0 | flat 90.1%
+  start 2021-01-15 since 2025  win  91.2% |  +6.01%/mo | drop -29.4% (1-min -80.2%) | worst trade  -11.8% acct |   4.2 tr/mo | A 68 92.6% E 23 87.0% F 0  nan% | sold-for-A 0 | flat 92.3%
+
+MODE90 (90% mode, same engine): {"A": 1, "E": 0, "F": 0, "fsA": 1.0, "fsE": 1.0, "fsF": 0.25, "nmaxA": 1, "nmaxE": 1, "nmaxF": 99, "nslots": 1, "nordF": 4, "nearA": 1000000000.0, "gEF": -1.0, "pre": 0, "lots": 0, "mtp_now": 0, "cd_add": 0, "pen": 0.0, "pens": 0.0, "depA": 0.14, "tpA": 0.025, "hmA": 96, "cdA": 3, "tpE": 0.012, "hmE": 72, "cdE": 12, "depF": 0.08, "tpF": 0.02, "hmF": 5760, "cdF": 0, "W": 60, "gF": 0.35, "wickF": 0.005}
+  normal 2021-23               win  93.8% | +13.17%/mo | drop -64.4% (1-min -67.9%) | worst trade  -50.3% acct |  11.3 tr/mo | A 406 93.8% E 0  nan% F 0  nan% | sold-for-A 0 | flat 80.5%
+  normal 2024-26               win  92.6% |  +6.89%/mo | drop -35.4% (1-min -53.7%) | worst trade  -27.3% acct |   4.4 tr/mo | A 148 92.6% E 0  nan% F 0  nan% | sold-for-A 0 | flat 90.4%
+  normal since 2025            win  93.2% |  +5.80%/mo | drop -22.6% (1-min -53.7%) | worst trade  -11.8% acct |   3.4 tr/mo | A 73 93.2% E 0  nan% F 0  nan% | sold-for-A 0 | flat 92.0%
+  normal 2018-20 holdout       win  92.2% | +10.41%/mo | drop -66.3% (1-min -69.9%) | worst trade  -37.3% acct |  10.0 tr/mo | A 360 92.2% E 0  nan% F 0  nan% | sold-for-A 0 | flat 82.3%
+  worse 2021-23                win  93.4% |  +9.79%/mo | drop -65.9% (1-min -68.0%) | worst trade  -50.5% acct |  11.0 tr/mo | A 394 93.4% E 0  nan% F 0  nan% | sold-for-A 0 | flat 80.0%
+  worse 2024-26                win  92.1% |  +5.31%/mo | drop -37.5% (1-min -53.7%) | worst trade  -27.6% acct |   4.2 tr/mo | A 140 92.1% E 0  nan% F 0  nan% | sold-for-A 0 | flat 90.1%
+  worse since 2025             win  92.6% |  +4.56%/mo | drop -22.7% (1-min -53.7%) | worst trade  -12.2% acct |   3.1 tr/mo | A 68 92.6% E 0  nan% F 0  nan% | sold-for-A 0 | flat 91.8%
+  worse 2018-20 holdout        win  91.7% |  +7.03%/mo | drop -69.9% (1-min -73.1%) | worst trade  -37.5% acct |   9.7 tr/mo | A 349 91.7% E 0  nan% F 0  nan% | sold-for-A 0 | flat 82.0%
+  stressed 2021-23             win  93.7% | +10.96%/mo | drop -65.0% (1-min -65.5%) | worst trade  -45.9% acct |  11.9 tr/mo | A 427 93.7% E 0  nan% F 0  nan% | sold-for-A 0 | flat 78.9%
+  stressed 2024-26             win  91.7% |  +5.49%/mo | drop -30.3% (1-min -53.7%) | worst trade  -19.1% acct |   4.3 tr/mo | A 145 91.7% E 0  nan% F 0  nan% | sold-for-A 0 | flat 90.0%
+  stressed since 2025          win  92.6% |  +4.44%/mo | drop -22.7% (1-min -53.7%) | worst trade  -12.2% acct |   3.1 tr/mo | A 68 92.6% E 0  nan% F 0  nan% | sold-for-A 0 | flat 91.8%
+
+RUNNER-UP with F (AEF-s1-near6-pre0-g3; NOT the pick): {"A": 1, "E": 1, "F": 1, "nslots": 1, "fsE": 1.0, "fsF": 1.0, "nordF": 1, "nmaxF": 1, "nearA": 0.06, "pre": 0, "gEF": 0.03}
+  normal 2021-23               win  94.7% | +20.10%/mo | drop -64.4% (1-min -67.8%) | worst trade  -54.6% acct |  18.8 tr/mo | A 346 95.1% E 82 93.9% F 247 94.3% | sold-for-A 0 | flat 77.5%
+  normal 2024-26               win  92.6% |  +7.40%/mo | drop -40.6% (1-min -80.2%) | worst trade  -35.0% acct |   6.1 tr/mo | A 119 90.8% E 28 92.9% F 57 96.5% | sold-for-A 0 | flat 89.4%
+  normal since 2025            win  92.2% |  +6.40%/mo | drop -29.4% (1-min -80.2%) | worst trade  -11.8% acct |   4.2 tr/mo | A 64 92.2% E 12 83.3% F 14 100.0% | sold-for-A 0 | flat 92.0%
+  normal 2018-20 holdout       win  92.2% |  +8.57%/mo | drop -74.6% (1-min -75.0%) | worst trade  -53.3% acct |  14.9 tr/mo | A 263 92.0% E 59 91.5% F 214 92.5% | sold-for-A 0 | flat 78.6%
+  worse 2021-23                win  94.1% | +13.38%/mo | drop -64.4% (1-min -67.8%) | worst trade  -54.8% acct |  17.9 tr/mo | A 335 94.9% E 83 90.4% F 227 94.3% | sold-for-A 0 | flat 77.6%
+  worse 2024-26                win  92.3% |  +5.36%/mo | drop -44.8% (1-min -80.2%) | worst trade  -35.2% acct |   5.8 tr/mo | A 111 90.1% E 30 93.3% F 54 96.3% | sold-for-A 0 | flat 89.2%
+  worse since 2025             win  91.8% |  +4.93%/mo | drop -29.5% (1-min -80.2%) | worst trade  -12.2% acct |   3.9 tr/mo | A 59 91.5% E 13 84.6% F 13 100.0% | sold-for-A 0 | flat 91.9%
+  worse 2018-20 holdout        win  91.0% |  +3.36%/mo | drop -84.7% (1-min -85.9%) | worst trade  -53.5% acct |  13.9 tr/mo | A 242 89.7% E 58 89.7% F 202 93.1% | sold-for-A 0 | flat 77.9%
+  stressed 2021-23             win  93.6% | +13.17%/mo | drop -77.2% (1-min -77.4%) | worst trade  -38.3% acct |  17.8 tr/mo | A 359 95.0% E 75 88.0% F 206 93.2% | sold-for-A 0 | flat 76.3%
+  stressed 2024-26             win  92.4% |  +6.28%/mo | drop -29.1% (1-min -80.2%) | worst trade  -18.0% acct |   5.8 tr/mo | A 119 89.9% E 28 92.9% F 50 98.0% | sold-for-A 0 | flat 89.4%
+  stressed since 2025          win  91.9% |  +4.85%/mo | drop -22.7% (1-min -80.2%) | worst trade  -12.2% acct |   4.0 tr/mo | A 62 91.9% E 13 84.6% F 11 100.0% | sold-for-A 0 | flat 92.0%
+
+VERDICT (pick vs 90% mode, same engine and data): win rate and %/month
+  normal   2024-26    win  90.7 vs  92.6 (NO) | %/mo  +6.06 vs  +6.89 (NO) | drop -37.9 vs -35.4
+  normal   since 2025 win  91.2 vs  93.2 (NO) | %/mo  +6.01 vs  +5.80 (beats) | drop -29.4 vs -22.6
+  normal   2018-20    win  92.0 vs  92.2 (NO) | %/mo +12.16 vs +10.41 (beats) | drop -66.7 vs -66.3
+  worse    2024-26    win  90.4 vs  92.1 (NO) | %/mo  +4.18 vs  +5.31 (NO) | drop -41.6 vs -37.5
+  worse    since 2025 win  90.7 vs  92.6 (NO) | %/mo  +4.52 vs  +4.56 (NO) | drop -29.5 vs -22.7
+  worse    2018-20    win  91.3 vs  91.7 (NO) | %/mo  +6.63 vs  +7.03 (NO) | drop -69.9 vs -69.9
+  stressed 2024-26    win  91.1 vs  91.7 (NO) | %/mo  +4.93 vs  +5.49 (NO) | drop -32.1 vs -30.3

@@ -1,0 +1,44 @@
+live 2021-23 x5.75, 1681 trades closed before 2024
+
+UTC 00-07: share of hours 33.3%
+  inside  all years: n  548 win  90.3% avg +0.39% TS  9.7% sum ret x size +0.47 hold  8.5h
+  outside all years: n 1133 win  95.1% avg +1.27% TS  4.9% sum ret x size +4.28 hold  5.3h
+  2021 inside n  319 win  91.2% avg +0.60% TS  8.8% sum ret x size +0.47 hold  7.5h | outside n  674 win  96.0% avg +1.49% TS  4.0% sum ret x size +2.15 hold  4.7h
+  2022 inside n  172 win  89.5% avg -0.06% TS 10.5% sum ret x size -0.19 hold 10.2h | outside n  319 win  93.1% avg +0.69% TS  6.9% sum ret x size +0.88 hold  6.9h
+  2023 inside n   57 win  87.7% avg +0.57% TS 12.3% sum ret x size +0.19 hold  9.0h | outside n  140 win  95.7% avg +1.52% TS  4.3% sum ret x size +1.25 hold  5.0h
+
+UTC 03-06: share of hours 16.7%
+  inside  all years: n  246 win  86.6% avg -0.15% TS 13.4% sum ret x size -0.48 hold 10.5h
+  outside all years: n 1435 win  94.8% avg +1.18% TS  5.2% sum ret x size +5.23 hold  5.7h
+  2021 inside n  130 win  88.5% avg +0.14% TS 11.5% sum ret x size +0.01 hold  9.0h | outside n  863 win  95.4% avg +1.36% TS  4.6% sum ret x size +2.62 hold  5.1h
+  2022 inside n   94 win  88.3% avg -0.22% TS 11.7% sum ret x size -0.26 hold 10.8h | outside n  397 win  92.7% avg +0.58% TS  7.3% sum ret x size +0.95 hold  7.4h
+  2023 inside n   22 win  68.2% avg -1.60% TS 31.8% sum ret x size -0.23 hold 18.5h | outside n  175 win  96.6% avg +1.60% TS  3.4% sum ret x size +1.67 hold  4.6h
+
+Sat-Sun: share of hours 28.7%
+  inside  all years: n  330 win  91.8% avg +0.67% TS  8.2% sum ret x size +0.43 hold  7.2h
+  outside all years: n 1351 win  94.0% avg +1.06% TS  6.0% sum ret x size +4.32 hold  6.2h
+  2021 inside n  212 win  92.0% avg +0.86% TS  8.0% sum ret x size +0.35 hold  6.7h | outside n  781 win  95.1% avg +1.30% TS  4.9% sum ret x size +2.27 hold  5.3h
+  2022 inside n   85 win  95.3% avg +0.46% TS  4.7% sum ret x size +0.11 hold  6.7h | outside n  406 win  91.1% avg +0.42% TS  8.9% sum ret x size +0.58 hold  8.4h
+  2023 inside n   33 win  81.8% avg -0.04% TS 18.2% sum ret x size -0.03 hold 11.7h | outside n  164 win  95.7% avg +1.50% TS  4.3% sum ret x size +1.47 hold  5.1h
+
+Sat-Sun 00-07: share of hours 9.6%
+  inside  all years: n  134 win  84.3% avg -0.64% TS 15.7% sum ret x size -0.43 hold 12.3h
+  outside all years: n 1547 win  94.4% avg +1.12% TS  5.6% sum ret x size +5.18 hold  5.9h
+  2021 inside n   71 win  83.1% avg -0.92% TS 16.9% sum ret x size -0.26 hold 12.2h | outside n  922 win  95.3% avg +1.37% TS  4.7% sum ret x size +2.88 hold  5.1h
+  2022 inside n   40 win  92.5% avg +0.04% TS  7.5% sum ret x size -0.03 hold 10.4h | outside n  451 win  91.8% avg +0.46% TS  8.2% sum ret x size +0.72 hold  7.9h
+  2023 inside n   23 win  73.9% avg -0.96% TS 26.1% sum ret x size -0.14 hold 15.8h | outside n  174 win  96.0% avg +1.53% TS  4.0% sum ret x size +1.58 hold  4.9h
+
+Standalone (each coin alone), ALL trades: sum of returns, hours held, return per hour held
+  live            : n 1723 sum +17.85 hours  10853 bp/h 16.45 TS 110
+  UTC 00-07     skip     : n 1556 sum +17.28 hours   9308 bp/h 18.56 TS 92
+  UTC 00-07     depth 14%: n 1611 sum +18.83 hours   9357 bp/h 20.12 TS 94
+  UTC 00-07     depth 16%: n 1577 sum +17.94 hours   9400 bp/h 19.08 TS 95
+  UTC 03-06     skip     : n 1677 sum +18.53 hours   9569 bp/h 19.36 TS 93
+  UTC 03-06     depth 14%: n 1686 sum +18.67 hours  10066 bp/h 18.54 TS 101
+  UTC 03-06     depth 16%: n 1681 sum +19.05 hours   9782 bp/h 19.47 TS 97
+  Sat-Sun       skip     : n 1444 sum +15.04 hours   9166 bp/h 16.41 TS 91
+  Sat-Sun       depth 14%: n 1619 sum +16.85 hours   9927 bp/h 16.98 TS 101
+  Sat-Sun       depth 16%: n 1549 sum +15.94 hours   9820 bp/h 16.24 TS 97
+  Sat-Sun 00-07 skip     : n 1695 sum +20.40 hours   9581 bp/h 21.29 TS 88
+  Sat-Sun 00-07 depth 14%: n 1698 sum +18.65 hours  10280 bp/h 18.14 TS 102
+  Sat-Sun 00-07 depth 16%: n 1698 sum +20.00 hours   9864 bp/h 20.28 TS 92

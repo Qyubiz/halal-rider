@@ -1,0 +1,91 @@
+panel 2017-12-01 00:00:00 .. 2026-10-22 01:00:00, 19 coins, 21502 candidate hours, take-profit rate 92.9%
+walk-forward lgb
+   retrain 2018-06: 1171 training candidates (win rate 97.6%), 9s
+   retrain 2019-06: 2919 training candidates (win rate 92.6%), 12s
+   retrain 2020-06: 5042 training candidates (win rate 91.4%), 19s
+   retrain 2021-06: 11227 training candidates (win rate 93.4%), 29s
+   retrain 2022-06: 15342 training candidates (win rate 93.2%), 43s
+   retrain 2023-06: 17122 training candidates (win rate 92.7%), 58s
+   retrain 2024-06: 18232 training candidates (win rate 92.5%), 74s
+   retrain 2025-06: 20392 training candidates (win rate 93.0%), 91s
+   retrain 2026-06: 21257 training candidates (win rate 93.0%), 109s
+walk-forward logit
+   retrain 2018-06: 1171 training candidates (win rate 97.6%), 1s
+   retrain 2019-06: 2919 training candidates (win rate 92.6%), 4s
+   retrain 2020-06: 5042 training candidates (win rate 91.4%), 8s
+   retrain 2021-06: 11227 training candidates (win rate 93.4%), 10s
+   retrain 2022-06: 15342 training candidates (win rate 93.2%), 19s
+   retrain 2023-06: 17122 training candidates (win rate 92.7%), 51s
+   retrain 2024-06: 18232 training candidates (win rate 92.5%), 100s
+   retrain 2025-06: 20392 training candidates (win rate 93.0%), 163s
+   retrain 2026-06: 21257 training candidates (win rate 93.0%), 232s
+
+Out-of-sample AUC (prediction = P(take-profit within 96h); 0.5 = no skill). n = candidates, lose = losers
+model    year  auc_all  n_all  lose_all  auc_first  n_first  lose_first  auc_bot  n_bot  lose_bot
+  lgb    2018    0.602   1117       106      0.506      183          21    0.409     49         5
+  lgb    2019    0.589   1547       178      0.568      332          40    0.495    105        11
+  lgb    2020    0.518   2863       235      0.441      523          44    0.540    143        10
+  lgb    2021    0.579   6777       292      0.562     1238          58    0.519    244        13
+  lgb    2022    0.591   3326       389      0.533      522          69    0.453     99         8
+  lgb    2023    0.580    704        51      0.751      163          12    0.661     63         4
+  lgb    2024    0.642   1787       127      0.554      431          26    0.560     75         6
+  lgb    2025    0.691   1728        75      0.658      332          25    0.695     50         3
+  lgb    2026    0.687    482        43      0.622      118           9    0.381     23         2
+  lgb 2018-20    0.560   5527       519      0.504     1038         105    0.496    297        26
+  lgb 2021-23    0.624  10807       732      0.598     1923         139    0.521    406        25
+  lgb 2024-26    0.666   3997       245      0.610      881          60    0.577    148        11
+  lgb 2025-26    0.682   2210       118      0.646      450          34    0.562     73         5
+logit    2018    0.688   1117       106      0.602      183          21    0.686     49         5
+logit    2019    0.614   1547       178      0.543      332          40    0.493    105        11
+logit    2020    0.481   2863       235      0.519      523          44    0.470    143        10
+logit    2021    0.550   6777       292      0.545     1238          58    0.503    244        13
+logit    2022    0.597   3326       389      0.570      522          69    0.386     99         8
+logit    2023    0.591    704        51      0.671      163          12    0.733     63         4
+logit    2024    0.636   1787       127      0.565      431          26    0.592     75         6
+logit    2025    0.677   1728        75      0.634      332          25    0.489     50         3
+logit    2026    0.690    482        43      0.740      118           9    0.524     23         2
+logit 2018-20    0.564   5527       519      0.544     1038         105    0.514    297        26
+logit 2021-23    0.630  10807       732      0.625     1923         139    0.511    406        25
+logit 2024-26    0.663   3997       245      0.613      881          60    0.550    148        11
+logit 2025-26    0.701   2210       118      0.658      450          34    0.518     73         5
+
+feature importance (gain, last model):
+vol168            0.076
+age               0.071
+btc_r7d           0.069
+mkt_c1ref         0.053
+r30d              0.050
+dow               0.048
+qv24              0.042
+vol_ratio         0.039
+ndips30           0.037
+dd30              0.037
+dd90              0.036
+btc_c1ref         0.034
+up30low           0.027
+btc_r24           0.027
+breadth7          0.026
+taker24           0.024
+vol24             0.024
+rng1              0.023
+r7d               0.023
+rel24             0.022
+pre3d             0.021
+btc_r6            0.021
+dd7               0.020
+frac_deep         0.018
+hour              0.018
+low24_ref         0.015
+hrs_since_high    0.014
+r24               0.013
+c1_ref            0.012
+r3                0.011
+btc_r1            0.010
+r12               0.009
+open_gap          0.007
+r6                0.006
+qv1               0.005
+r1                0.003
+clv1              0.003
+fill_depth        0.002
+taker1            0.001

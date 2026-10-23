@@ -1,0 +1,23 @@
+loaded (3052980, 22) in 1s
+  K=19 live                                 trades  2565 vs  2565 log identical True max rel eq diff 0.0e+00 final x14.9498 vs x14.9498
+  K=19 R1 pick                              trades  1992 vs  1992 log identical True max rel eq diff 0.0e+00 final x1706.67 vs x1706.67
+  K=19 R2 pick                              trades  1864 vs  1864 log identical True max rel eq diff 0.0e+00 final x1558.22 vs x1558.22
+  K=19 hindsight best                       trades  1214 vs  1214 log identical True max rel eq diff 0.0e+00 final x123403 vs x123403
+  K=19 hindsight best, fills 0.2% worse     trades  1169 vs  1169 log identical True max rel eq diff 0.0e+00 final x733.051 vs x733.051
+  K=19 N1 tp5 depth14 hourly                trades   431 vs   431 log identical True max rel eq diff 0.0e+00 final x9187.25 vs x9187.25
+  K=19 N1 1min tp3 d30 cd0                  trades   920 vs   920 log identical True max rel eq diff 0.0e+00 final x23367.5 vs x23367.5
+  K=22 live                                 trades  2855 vs  2855 log identical True max rel eq diff 0.0e+00 final x13.5757 vs x13.5757
+  K=22 R1 pick                              trades  2209 vs  2209 log identical True max rel eq diff 0.0e+00 final x808.144 vs x808.144
+  K=22 R2 pick                              trades  2066 vs  2066 log identical True max rel eq diff 0.0e+00 final x1630.28 vs x1630.28
+  K=22 hindsight best                       trades  1160 vs  1160 log identical True max rel eq diff 0.0e+00 final x3433.27 vs x3433.27
+  K=22 hindsight best, fills 0.2% worse     trades  1223 vs  1223 log identical True max rel eq diff 0.0e+00 final x53.4647 vs x53.4647
+  K=22 N1 tp5 depth14 hourly                trades   412 vs   412 log identical True max rel eq diff 0.0e+00 final x0.263623 vs x0.263623
+  K=22 N1 1min tp3 d30 cd0                  trades   490 vs   490 log identical True max rel eq diff 0.0e+00 final x0.00335271 vs x0.00335271
+
+minute watch (cyc 60) vs universe hourly watch kernel, no cash competition (N 19, fmax 0.05)
+  guard 0.0 {'depth': 0.14, 'tp': 0.05, 'hm': 48, 'cd': 24}: trades 1610 vs 1610; same trades True; max rel eq diff 4.4e-16; final x5.63236 vs x5.63236
+  guard 0.0 {'depth': 0.12, 'tp': 0.015, 'hm': 48, 'cd': 24}: trades 2644 vs 2644; same trades True; max rel eq diff 5.8e-15; final x4.01886 vs x4.01886
+  guard 0.35 {'depth': 0.14, 'tp': 0.05, 'hm': 48, 'cd': 24}: trades 1526 vs 1526; same trades True; max rel eq diff 2.0e-15; final x5.52178 vs x5.52178
+  guard 0.35 {'depth': 0.12, 'tp': 0.015, 'hm': 48, 'cd': 24}: trades 2534 vs 2534; same trades True; max rel eq diff 5.8e-15; final x3.85636 vs x3.85636
+CRITIC KERNEL CHECK PASSED
+max RSS GB 1.541848

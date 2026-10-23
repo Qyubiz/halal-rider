@@ -1,0 +1,45 @@
+normal            live: d_mult 5.7500 d_dd -0.2924 y2022 +0.1906 | t_mult 2.6088 t_dd -0.1628
+normal            pick: d_mult 8.8469 d_dd -0.2257 y2022 +0.3907 | t_mult 2.6723 t_dd -0.1512
++LUNA/FTT/SRM     live: d_mult 5.2219 d_dd -0.3144 y2022 +0.0073 | t_mult 2.6088 t_dd -0.1628
++LUNA/FTT/SRM     pick: d_mult 5.1628 d_dd -0.4422 y2022 +0.1372 | t_mult 2.6723 t_dd -0.1512
+fills 0.2% worse  live: d_mult 3.9847 d_dd -0.2945 y2022 -0.0156 | t_mult 2.3675 t_dd -0.1621
+fills 0.2% worse  pick: d_mult 7.4070 d_dd -0.2232 y2022 +0.3474 | t_mult 2.4866 t_dd -0.1529
+
++dead, live: 2021-23 drop -31.4% from 2021-05-18 07:00:00 to 2021-05-23 16:00:00
+  drop episodes deeper than -10%: 2021-05-18 07:00 -> 2021-05-23 16:00 -31.4%; 2022-11-07 02:00 -> 2022-11-09 21:00 -24.7%; 2022-05-10 12:00 -> 2022-05-11 12:00 -17.7%
+  trades entered in the worst window: 80, sum contrib -20.2% of equity; largest losses:
+    2021-05-21 14:00:00 -> 2021-05-23 14:00:00 DOTUSDT   why 1 leg2 0 budget 14.3% of equity, ret -34.4%, contrib -4.9%
+    2021-05-21 14:00:00 -> 2021-05-23 14:00:00 XRPUSDT   why 1 leg2 0 budget 14.3% of equity, ret -32.4%, contrib -4.6%
+    2021-05-21 14:00:00 -> 2021-05-23 14:00:00 LTCUSDT   why 1 leg2 0 budget 14.3% of equity, ret -27.4%, contrib -3.9%
+    2021-05-21 14:00:00 -> 2021-05-23 14:00:00 BCHUSDT   why 1 leg2 0 budget 14.3% of equity, ret -26.8%, contrib -3.8%
+    2021-05-19 01:00:00 -> 2021-05-21 01:00:00 SRMUSDT   why 1 leg2 0 budget 12.5% of equity, ret -23.0%, contrib -2.9%
+    2021-05-21 14:00:00 -> 2021-05-23 14:00:00 DOGEUSDT  why 1 leg2 0 budget 14.3% of equity, ret -17.9%, contrib -2.6%
+  of which LUNA/FTT/SRM: 12 trades, sum contrib -5.7% of equity
+  LUNA: 103 trades, sum contrib +0.7%; the 4 worst: 2022-05-10 13:00 budget 14.9% ret -100.0% contrib -14.9%; 2021-03-22 21:00 budget 6.3% ret -17.5% contrib -1.1%; 2022-01-21 12:00 budget 6.6% ret -8.5% contrib -0.6%; 2022-01-28 07:00 budget 12.5% ret -4.1% contrib -0.5%
+  equity 2022-05-07 / 2022-05-14 / 2022-05-31: 4.260 / 3.998 / 4.316 | equity at the LUNA cut 3.995
+
++dead, r2 uncapped pick (cap 40%): 2021-23 drop -49.0% from 2021-05-18 07:00:00 to 2021-05-23 18:00:00
+  drop episodes deeper than -10%: 2021-05-18 07:00 -> 2021-05-23 18:00 -49.0%; 2022-11-07 02:00 -> 2022-11-09 21:00 -30.5%; 2022-05-10 04:00 -> 2022-05-11 12:00 -27.2%
+  trades entered in the worst window: 68, sum contrib -45.1% of equity; largest losses:
+    2021-05-22 00:00:00 -> 2021-05-24 00:00:00 LUNAUSDT  why 1 leg2 1 budget 40.0% of equity, ret -47.4%, contrib -19.0%
+    2021-05-21 12:00:00 -> 2021-05-23 12:00:00 SOLUSDT   why 1 leg2 1 budget 23.8% of equity, ret -43.3%, contrib -10.3%
+    2021-05-22 01:00:00 -> 2021-05-24 01:00:00 SRMUSDT   why 1 leg2 1 budget 19.4% of equity, ret -32.2%, contrib -6.2%
+    2021-05-21 14:00:00 -> 2021-05-23 14:00:00 NEARUSDT  why 1 leg2 1 budget 19.1% of equity, ret -30.5%, contrib -5.8%
+    2021-05-19 01:00:00 -> 2021-05-21 01:00:00 SRMUSDT   why 1 leg2 1 budget 25.0% of equity, ret -20.2%, contrib -5.1%
+    2021-05-19 10:00:00 -> 2021-05-21 10:00:00 FETUSDT   why 1 leg2 1 budget  9.6% of equity, ret -23.3%, contrib -2.2%
+  of which LUNA/FTT/SRM: 11 trades, sum contrib -30.5% of equity
+  LUNA: 100 trades, sum contrib -28.6%; the 4 worst: 2022-05-10 13:00 budget 25.0% ret -100.0% contrib -25.0%; 2021-05-22 00:00 budget 40.0% ret -47.4% contrib -19.0%; 2021-03-22 22:00 budget 12.6% ret -9.8% contrib -1.2%; 2022-01-21 12:00 budget 5.9% ret -5.1% contrib -0.3%
+  equity 2022-05-07 / 2022-05-14 / 2022-05-31: 3.997 / 3.486 / 3.761 | equity at the LUNA cut 3.483
+
++dead, r3 pick (cap 25%): 2021-23 drop -44.2% from 2021-05-18 07:00:00 to 2021-05-23 18:00:00
+  drop episodes deeper than -10%: 2021-05-18 07:00 -> 2021-05-23 18:00 -44.2%; 2022-05-10 04:00 -> 2022-11-09 21:00 -31.2%; 2022-01-20 22:00 -> 2022-01-22 09:00 -15.0%
+  trades entered in the worst window: 84, sum contrib -40.1% of equity; largest losses:
+    2021-05-22 00:00:00 -> 2021-05-24 00:00:00 LUNAUSDT  why 1 leg2 1 budget 25.0% of equity, ret -47.4%, contrib -11.9%
+    2021-05-21 12:00:00 -> 2021-05-23 12:00:00 SOLUSDT   why 1 leg2 1 budget 23.8% of equity, ret -43.3%, contrib -10.3%
+    2021-05-22 01:00:00 -> 2021-05-24 01:00:00 SRMUSDT   why 1 leg2 1 budget 25.0% of equity, ret -32.2%, contrib -8.0%
+    2021-05-21 14:00:00 -> 2021-05-23 14:00:00 NEARUSDT  why 1 leg2 1 budget 19.1% of equity, ret -30.5%, contrib -5.8%
+    2021-05-19 01:00:00 -> 2021-05-21 01:00:00 SRMUSDT   why 1 leg2 1 budget 25.0% of equity, ret -20.2%, contrib -5.1%
+    2021-05-19 10:00:00 -> 2021-05-21 10:00:00 FETUSDT   why 1 leg2 1 budget  9.6% of equity, ret -23.3%, contrib -2.2%
+  of which LUNA/FTT/SRM: 12 trades, sum contrib -25.3% of equity
+  LUNA: 100 trades, sum contrib -21.7%; the 4 worst: 2022-05-10 13:00 budget 25.0% ret -100.0% contrib -25.0%; 2021-05-22 00:00 budget 25.0% ret -47.4% contrib -11.9%; 2021-03-22 22:00 budget 12.6% ret -9.8% contrib -1.2%; 2022-01-21 12:00 budget 5.9% ret -5.1% contrib -0.3%
+  equity 2022-05-07 / 2022-05-14 / 2022-05-31: 4.335 / 3.764 / 4.061 | equity at the LUNA cut 3.761
