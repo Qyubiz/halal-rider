@@ -95,12 +95,13 @@ def ck(o1, h1, l1, c1, ho, hcf, refA, gm, gref, limE, slip, lastb,
     eq = np.empty(nh); eqlo = np.empty(nh); inv = np.empty(nh)
     lg = np.zeros((maxlog, 11)); nl = 0
     lo_t = 1e300
+    held = np.zeros(3, np.int64)
     for i in range(nm):
         t = i // 60; j = i - 60 * t; b = i // 5; jb = i - 5 * b
         if j == 0:
             lo_t = 1e300
-        held = np.zeros(3, np.int64)
         for s in range(3):
+            held[s] = 0
             for k in range(K):
                 if units[s, k] > 0.0:
                     held[s] += 1
@@ -295,7 +296,7 @@ def ck(o1, h1, l1, c1, ho, hcf, refA, gm, gref, limE, slip, lastb,
                                 fill = o1[i, k] * (1.0 + slip[t, k]) * (1.0 + pen)
                                 cash -= a; units[2, k] = a * (1.0 - fee) / fill; entry[2, k] = fill; amt0[2, k] = a
                                 ebh[2, k] = t; fmn[2, k] = i; eq0[2, k] = eqm; tpp[2, k] = fill * (1.0 + tp[2])
-                                act[2, k] = i + 1; lastm[k] = fill if np.isnan(lastm[k]) else lastm[k]
+                                act[2, k] = i + 1
                                 held[2] += 1; nheld += 1
                         else:
                             resv[2, k] = per; rlim[2, k] = lim; rsum += per; eq0[2, k] = eqm

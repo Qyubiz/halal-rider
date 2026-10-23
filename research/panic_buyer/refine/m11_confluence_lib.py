@@ -328,8 +328,9 @@ def score(M, votes):
     """Number of the listed votes that are on, (n, K) int8."""
     b = M["bits"]
     s = np.zeros(b.shape, np.int8)
-    for v in votes:
-        s += ((b >> VOTES.index(v)) & 1).astype(np.int8)
+    for v in votes:                      # "-name" = the vote is ON when the fact is FALSE
+        x = ((b >> VOTES.index(v.lstrip("-"))) & 1).astype(np.int8)
+        s += (1 - x) if v.startswith("-") else x
     return s
 
 
@@ -364,13 +365,14 @@ def tables(d):
     return tiers
 
 
-def run(M, d, pen=0.0, pens=0.0, mtp_now=False, cd_add=0, start=None):
-    """Run design d on market M. Returns (equity Series, log DataFrame)."""
+def run(M, d, pen=0.0, pens=0.0, mtp_now=False, cd_add=0, start=None, end=None):
+    """Run design d on market M (from `start`, up to `end` exclusive). Returns (equity Series, log DataFrame)."""
     tiers = tables(d)
     S = len(tiers)
     cd = d.get("cd", 3)
     i0 = 0 if start is None else int(np.searchsorted(M["idx"], pd.Timestamp(start)))
-    sl = slice(i0, None)
+    i1 = None if end is None else int(np.searchsorted(M["idx"], pd.Timestamp(end)))
+    sl = slice(i0, i1)
     sc = np.ascontiguousarray(score(M, d.get("votes", []))[sl])
     stress = bool(M["core"][M["syms"].index("LUNAUSDT")]) if "LUNAUSDT" in M["syms"] else False
     X = d.get("X")
