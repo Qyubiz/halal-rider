@@ -59,6 +59,8 @@ def save(name, scen, idx_target, U, eb, xb, ret, amt):
 def to_target(e_idx, U, eb, xb, idx_t):
     """Re-index an hourly run onto the target index (identical hours expected; checked)."""
     pos = idx_t.get_indexer(e_idx)
+    late = (pos < 0) & (e_idx > idx_t[-1])          # the 1-minute cache runs 1 hour past the hourly panel
+    pos = np.where(late, len(idx_t) - 1, pos)
     assert (pos >= 0).all(), "run hours outside the target index"
     Ut = pd.Series(np.asarray(U), e_idx).reindex(idx_t).ffill().fillna(1.0).values
     return Ut, pos[np.asarray(eb, np.int64)], pos[np.asarray(xb, np.int64)]
