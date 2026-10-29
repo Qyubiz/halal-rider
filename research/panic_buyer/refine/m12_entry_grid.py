@@ -22,8 +22,11 @@ SEARCH (~230 designs + neighbour checks)
   S3  on the best 3 so far: majors (BTC ETH BNB SOL XRP) depth -2..+2pt vs the rest; volatility depth
       k x 30-day median hourly range, k 9/11/12/13/15/17 clipped 10-25%, and k 11/13/15 clipped 12-25% (13 each).
   S4  combine: the best design of S3 with the best S2 coin-choice option and the best S2 anchor option (<= 3).
-Usage: PB_DATA=... PB_HOLDOUT=... PB_OUT=... NUMBA_NUM_THREADS=1 python3 m12_entry_grid.py
+Usage: PB_DATA=... PB_HOLDOUT=... PB_OUT=... NUMBA_NUM_THREADS=1 python3 m12_entry_grid.py [noproxy]
 Writes $PB_OUT/grid.csv, grid.log, pick.json.
+DEVIATION (decided after the first run gave NO pick, before any look at 2024-26/2018-20): `noproxy` reruns the same
+search with the optional -60% proxy off, i.e. M12_PREREG.md's bars only; writes *_noproxy files. Its pick is a
+secondary candidate, labelled as such.
 """
 import json
 import os
@@ -41,7 +44,11 @@ WR, DD, MO_N, MO_W, PROXY = 0.925, -0.6445, 0.1317, 0.0979, -0.60
 NB = dict(depth=[0.12, 0.13, 0.14, 0.15, 0.16, 0.17], dmaj=[0.12, 0.13, 0.14, 0.15, 0.16, 0.17],
           tp=[0.015, 0.02, 0.025, 0.03, 0.035, 0.04], hm=[48, 72, 96, 120, 144], cd=[0, 1, 2, 3, 4, 6],
           near=[0.01, 0.02, 0.03, 0.05], vk=[9, 11, 12, 13, 15, 17], vlo=[0.08, 0.10, 0.12], vhi=[0.20, 0.25, 0.30])
-LOG = open(os.path.join(L.OUT, "grid.log"), "a")
+NOPROXY = len(sys.argv) > 1 and sys.argv[1] == "noproxy"
+SFX = "_noproxy" if NOPROXY else ""
+if NOPROXY:
+    PROXY = -9.0
+LOG = open(os.path.join(L.OUT, f"grid{SFX}.log"), "a")
 SEEN, ROWS = {}, []
 USE_PROXY = [True]
 SHIFT = {}
@@ -168,14 +175,14 @@ def main():
             f"{med['w_dd']*100:.1f} -> {'PASS' if ok else 'fail'}")
         if ok:
             pick = d; break
-    pd.DataFrame(ROWS).to_csv(os.path.join(L.OUT, "grid.csv"), index=False)
+    pd.DataFrame(ROWS).to_csv(os.path.join(L.OUT, f"grid{SFX}.csv"), index=False)
     say(f"total designs incl. neighbours: {len(SEEN)}")
     if pick is None:
         say("PICK: none (nothing passes the 2021-23 selection)")
     else:
         say("PICK: " + L.describe(pick) + "  " + json.dumps(dict(L.BASE, **pick), sort_keys=True))
     json.dump({"pick": dict(L.BASE, **pick) if pick else None, "proxy_used": USE_PROXY[0]},
-              open(os.path.join(L.OUT, "pick.json"), "w"), indent=1)
+              open(os.path.join(L.OUT, f"pick{SFX}.json"), "w"), indent=1)
 
 
 if __name__ == "__main__":
