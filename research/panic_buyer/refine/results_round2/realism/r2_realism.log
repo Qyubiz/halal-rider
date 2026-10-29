@@ -1,0 +1,141 @@
+######## lens realism: 19 live coins, 1-minute candles
+live, hourly archive (engine.run)              21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+1-minute panel 2021-01-01 00:00:00 -> 2026-10-22 02:59:00, (3052980, 19), loaded in 39s
+live, hourly built from 1m (engine.run)        21-23 x 5.74 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+live, 1-minute engine.mrun(delay=0)            21-23 x 5.74 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+live, r2_realism_lib.rrun (switches off)       21-23 x 5.74 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+EQUIVALENCE rrun(switches off) vs engine.mrun(delay=0): max |equity diff| 0, trade logs identical: True
+  (and engine.mrun vs engine.run on hourly candles built from the same minutes: max |equity diff| 0)
+
+######## (a) anatomy of the live limit-buy fills (1-minute engine, live settings)
+
+2021-23: 1506 resting limit-buy fills (sum of return x order size +4.41, avg return +0.95%)
+  fill minute within the hour: median 26, in minute 0: 28 (1.9%), minutes 0-4: 10.0%
+  how far through the limit (lowest low from the fill to the hour end): p10 0.25% p25 0.55% median 1.25% p75 2.60% p90 4.95%
+    share of fills that traded less than X through: <0.2%: 6.4%  <0.3%: 12.5%  <0.5%: 22.2%  <1.0%: 42.2%  <2.0%: 66.6%
+    in the fill minute itself: median 0.36%, <0.3%: 43.4%
+  consecutive minutes with low <= limit (run holding the fill minute): p10 1 p25 2 median 4 p75 12 | <2: 16.5%  <5: 52.1%
+  longest run of minute closes <= limit in the hour: p10 0 p25 1 median 5 p75 16 | <2: 27.1%  <5: 47.9%
+  minutes in the hour with low <= limit: p10 2 p25 4 median 11 p75 25 | <2: 8.2%  <5: 29.7%
+  minutes in the hour with close <= limit: p10 0 p25 2 median 7 p75 21 | <2: 24.5%  <5: 41.2%
+  minutes from the fill until a minute's low is back above the limit (cap 240): p10 1 p25 2 median 4 p75 15 | <2: 18.3%  <5: 50.4%
+  fills a stricter rule would NOT have taken (same hour, live path; static count):
+    through >= 0.3%                      drops  189 (12.5%): avg return +1.81%, sum ret x size +1.21, time stops 1 | kept avg +0.83%
+    through >= 0.5%                      drops  335 (22.2%): avg return +1.66%, sum ret x size +1.97, time stops 5 | kept avg +0.75%
+    low<=limit >= 2 consecutive min      drops  139 ( 9.2%): avg return +2.23%, sum ret x size +1.11, time stops 2 | kept avg +0.82%
+    low<=limit >= 5 consecutive min      drops  531 (35.3%): avg return +1.80%, sum ret x size +3.30, time stops 13 | kept avg +0.49%
+    close<=limit >= 2 consecutive min    drops  409 (27.2%): avg return +2.05%, sum ret x size +2.97, time stops 3 | kept avg +0.54%
+    close<=limit >= 5 consecutive min    drops  721 (47.9%): avg return +1.59%, sum ret x size +3.76, time stops 23 | kept avg +0.37%
+    fills in minute 0 (order may not be up yet): 28, avg return +1.28%, sum ret x size +0.02
+  avg return by how far through the limit it traded:
+     0.0-  0.2%:   96 fills, avg +1.76%, time stops   1, sum ret x size +0.60
+     0.2-  0.3%:   93 fills, avg +1.87%, time stops   0, sum ret x size +0.62
+     0.3-  0.5%:  146 fills, avg +1.45%, time stops   4, sum ret x size +0.76
+     0.5-  1.0%:  300 fills, avg +1.31%, time stops  10, sum ret x size +1.04
+     1.0-  2.0%:  368 fills, avg +1.25%, time stops  16, sum ret x size +1.61
+     2.0-  5.0%:  360 fills, avg +0.65%, time stops  34, sum ret x size +0.66
+     5.0-100.0%:  143 fills, avg -1.43%, time stops  29, sum ret x size -0.87
+
+2024-26: 826 resting limit-buy fills (sum of return x order size +9.10, avg return +1.07%)
+  fill minute within the hour: median 26, in minute 0: 13 (1.6%), minutes 0-4: 13.4%
+  how far through the limit (lowest low from the fill to the hour end): p10 0.25% p25 0.48% median 1.05% p75 2.40% p90 4.79%
+    share of fills that traded less than X through: <0.2%: 7.3%  <0.3%: 13.4%  <0.5%: 25.9%  <1.0%: 47.7%  <2.0%: 71.3%
+    in the fill minute itself: median 0.33%, <0.3%: 46.6%
+  consecutive minutes with low <= limit (run holding the fill minute): p10 1 p25 2 median 4 p75 11 | <2: 15.3%  <5: 54.5%
+  longest run of minute closes <= limit in the hour: p10 0 p25 1 median 5 p75 15 | <2: 29.4%  <5: 49.8%
+  minutes in the hour with low <= limit: p10 2 p25 4 median 9 p75 26 | <2: 8.0%  <5: 31.2%
+  minutes in the hour with close <= limit: p10 0 p25 1 median 6 p75 22 | <2: 26.4%  <5: 44.2%
+  minutes from the fill until a minute's low is back above the limit (cap 240): p10 1 p25 2 median 4 p75 16 | <2: 16.7%  <5: 53.0%
+  fills a stricter rule would NOT have taken (same hour, live path; static count):
+    through >= 0.3%                      drops  111 (13.4%): avg return +1.32%, sum ret x size +1.45, time stops 5 | kept avg +1.04%
+    through >= 0.5%                      drops  214 (25.9%): avg return +1.25%, sum ret x size +2.79, time stops 11 | kept avg +1.01%
+    low<=limit >= 2 consecutive min      drops   80 ( 9.7%): avg return +2.09%, sum ret x size +1.68, time stops 3 | kept avg +0.97%
+    low<=limit >= 5 consecutive min      drops  315 (38.1%): avg return +1.58%, sum ret x size +5.17, time stops 16 | kept avg +0.76%
+    close<=limit >= 2 consecutive min    drops  243 (29.4%): avg return +1.63%, sum ret x size +4.03, time stops 14 | kept avg +0.84%
+    close<=limit >= 5 consecutive min    drops  411 (49.8%): avg return +1.58%, sum ret x size +6.81, time stops 18 | kept avg +0.57%
+    fills in minute 0 (order may not be up yet): 13, avg return +2.04%, sum ret x size +0.28
+  avg return by how far through the limit it traded:
+     0.0-  0.2%:   60 fills, avg +1.23%, time stops   3, sum ret x size +0.78
+     0.2-  0.3%:   51 fills, avg +1.41%, time stops   2, sum ret x size +0.67
+     0.3-  0.5%:  103 fills, avg +1.18%, time stops   6, sum ret x size +1.34
+     0.5-  1.0%:  180 fills, avg +1.57%, time stops   5, sum ret x size +2.91
+     1.0-  2.0%:  195 fills, avg +1.22%, time stops  13, sum ret x size +2.14
+     2.0-  5.0%:  160 fills, avg +0.86%, time stops  17, sum ret x size +1.33
+     5.0-100.0%:   77 fills, avg -0.49%, time stops  18, sum ret x size -0.05
+
+######## (d) market buys at the hour open vs the next minutes (live run)
+
+2021-23: 175 market buys (open already under the trigger; median -4.28% under it, p10 -17.26%), avg trade return +1.21%, sum ret x size +0.34
+  price vs the open (+ = later price higher = the open was a better buy):
+    close of minute 0            mean +0.054% median +0.059% p10 -0.675% p90 +0.723% | higher than the open  52.0%
+    close of minute 1            mean +0.194% median +0.000% p10 -0.677% p90 +1.111% | higher than the open  49.1%
+    close of minute 2            mean +0.202% median +0.057% p10 -0.926% p90 +1.416% | higher than the open  51.4%
+    close of minute 3            mean +0.138% median +0.000% p10 -1.069% p90 +1.403% | higher than the open  49.1%
+    close of minute 4            mean +0.151% median +0.000% p10 -1.236% p90 +1.626% | higher than the open  48.0%
+    high of minute 0             mean +0.401% median +0.281% p10 +0.000% p90 +0.870% | higher than the open  87.4%
+    highest high, minutes 0-4    mean +1.079% median +0.736% p10 +0.077% p90 +2.052% | higher than the open  96.0%
+    lowest low, minutes 0-4      mean -0.971% median -0.721% p10 -2.016% p90 -0.074% | higher than the open   0.0%
+
+2024-26: 58 market buys (open already under the trigger; median -2.85% under it, p10 -15.62%), avg trade return +1.25%, sum ret x size +0.14
+  price vs the open (+ = later price higher = the open was a better buy):
+    close of minute 0            mean -0.004% median +0.012% p10 -0.652% p90 +0.506% | higher than the open  53.4%
+    close of minute 1            mean -0.220% median +0.000% p10 -1.522% p90 +0.799% | higher than the open  46.6%
+    close of minute 2            mean -0.065% median -0.018% p10 -1.348% p90 +1.197% | higher than the open  46.6%
+    close of minute 3            mean -0.210% median +0.059% p10 -1.944% p90 +1.096% | higher than the open  53.4%
+    close of minute 4            mean -0.426% median +0.027% p10 -2.248% p90 +1.201% | higher than the open  50.0%
+    high of minute 0             mean +0.450% median +0.271% p10 +0.050% p90 +0.948% | higher than the open  91.4%
+    highest high, minutes 0-4    mean +0.797% median +0.603% p10 +0.142% p90 +1.712% | higher than the open  96.6%
+    lowest low, minutes 0-4      mean -1.138% median -0.423% p10 -3.076% p90 -0.073% | higher than the open   0.0%
+
+  take-profits that sold at an open already above target (sell side: - = later price lower = the open was better)
+  2021-23: 488 of 1573 take-profits sold at an open (31%; 484 at the first cycle), avg +3.05% vs +1.30% for the resting fills
+    close of minute 0    mean -0.037% median -0.051% | lower than the open  54.9%
+    close of minute 1    mean -0.069% median -0.041% | lower than the open  51.4%
+    close of minute 2    mean -0.027% median +0.000% | lower than the open  49.6%
+    low of minute 0      mean -0.365% median -0.272% | lower than the open  94.5%
+  2024-26: 256 of 817 take-profits sold at an open (31%; 253 at the first cycle), avg +2.79% vs +1.30% for the resting fills
+    close of minute 0    mean -0.062% median -0.074% | lower than the open  55.9%
+    close of minute 1    mean -0.150% median -0.140% | lower than the open  60.9%
+    close of minute 2    mean -0.120% median -0.096% | lower than the open  54.3%
+    low of minute 0      mean -0.315% median -0.268% | lower than the open  93.8%
+
+######## (b)-(h) re-runs of the live strategy with stricter / later fills (1-minute engine)
+LIVE (1-minute engine)                         21-23 x 5.74 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88% | trades 1681/884 mkt 175/58 ts 108/67 avg +0.98/+1.09%
+ref: every fill 0.2% worse                     21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85% | trades 1670/882 mkt 170/59 ts 126/74 avg +0.79/+0.99%
+(b) buy must trade 0.3% through                21-23 x 4.25 DD  -29% 2022  +11% | 24-26 x 2.34 DD  -18% worst-mo  -8% up-mo  85% | trades 1611/846 mkt 183/63 ts 113/74 avg +0.87/+0.99%
+(b) buy must trade 0.5% through                21-23 x 3.22 DD  -30% 2022   +8% | 24-26 x 2.11 DD  -18% worst-mo  -9% up-mo  88% | trades 1551/808 mkt 208/84 ts 120/76 avg +0.75/+0.90%
+(b) buy: low<=limit 2 consecutive min          21-23 x 3.59 DD  -29% 2022   +6% | 24-26 x 2.05 DD  -18% worst-mo  -8% up-mo  85% | trades 1611/843 mkt 176/65 ts 114/75 avg +0.78/+0.89%
+(b) buy: low<=limit 5 consecutive min          21-23 x 1.66 DD  -30% 2022   -8% | 24-26 x 1.53 DD  -20% worst-mo  -9% up-mo  79% | trades 1461/753 mkt 248/100 ts 130/74 avg +0.42/+0.67%
+(b) buy: close<=limit 2 consecutive min        21-23 x 1.97 DD  -28% 2022   -3% | 24-26 x 1.63 DD  -20% worst-mo  -9% up-mo  76% | trades 1502/772 mkt 184/71 ts 132/75 avg +0.48/+0.72%
+(b) buy: close<=limit 5 consecutive min        21-23 x 1.29 DD  -33% 2022   -9% | 24-26 x 1.28 DD  -20% worst-mo -10% up-mo  71% | trades 1382/706 mkt 284/122 ts 138/78 avg +0.27/+0.51%
+(c) take-profit must trade 0.2% through        21-23 x 5.17 DD  -29% 2022  +13% | 24-26 x 2.59 DD  -16% worst-mo  -6% up-mo  88% | trades 1681/883 mkt 177/60 ts 116/69 avg +0.93/+1.08%
+(d) market buys at 1st-minute close            21-23 x 5.83 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88% | trades 1683/884 mkt 174/58 ts 106/67 avg +0.98/+1.09%
+(d) market buys at 1st-minute high             21-23 x 5.50 DD  -29% 2022  +18% | 24-26 x 2.59 DD  -16% worst-mo  -6% up-mo  88% | trades 1680/884 mkt 174/58 ts 109/67 avg +0.96/+1.08%
+(e) 1-minute latency on all hourly actions     21-23 x 5.78 DD  -29% 2022  +16% | 24-26 x 2.58 DD  -16% worst-mo  -6% up-mo  88% | trades 1682/883 mkt 174/58 ts 107/67 avg +0.97/+1.07%
+(f) live-bot timing for market buys            21-23 x 4.72 DD  -30% 2022  +20% | 24-26 x 2.66 DD  -15% worst-mo  -3% up-mo  88% | trades 1688/886 mkt 178/59 ts 109/66 avg +0.86/+1.06%
+(g) realistic-strict 0.3%+tp0.2%+latency       21-23 x 3.70 DD  -30% 2022   -2% | 24-26 x 2.31 DD  -18% worst-mo  -8% up-mo  85% | trades 1610/847 mkt 182/65 ts 118/76 avg +0.79/+0.97%
+(g+f) realistic-strict + live mkt timing       21-23 x 3.31 DD  -31% 2022   +4% | 24-26 x 2.35 DD  -17% worst-mo  -5% up-mo  85% | trades 1621/850 mkt 187/66 ts 116/73 avg +0.72/+0.97%
+(h) stress 0.5%&5min+tp0.2%+lat+1st-min hi     21-23 x 1.43 DD  -34% 2022  -17% | 24-26 x 1.46 DD  -19% worst-mo -10% up-mo  79% | trades 1449/736 mkt 266/117 ts 139/79 avg +0.33/+0.61%
+kernel rule check: all fills follow their rule
+
+######## change vs live (1-minute engine)
+  ref: every fill 0.2% worse                     21-23 x 3.98 (-30.7%) DD  -29% | 24-26 x 2.37 ( -9.2%) DD  -16% | CAGR  +59% /  +36% (live +79% / +41%)
+  (b) buy must trade 0.3% through                21-23 x 4.25 (-25.9%) DD  -29% | 24-26 x 2.34 (-10.2%) DD  -18% | CAGR  +62% /  +35% (live +79% / +41%)
+  (b) buy must trade 0.5% through                21-23 x 3.22 (-44.0%) DD  -30% | 24-26 x 2.11 (-19.3%) DD  -18% | CAGR  +48% /  +30% (live +79% / +41%)
+  (b) buy: low<=limit 2 consecutive min          21-23 x 3.59 (-37.5%) DD  -29% | 24-26 x 2.05 (-21.5%) DD  -18% | CAGR  +53% /  +29% (live +79% / +41%)
+  (b) buy: low<=limit 5 consecutive min          21-23 x 1.66 (-71.0%) DD  -30% | 24-26 x 1.53 (-41.5%) DD  -20% | CAGR  +19% /  +16% (live +79% / +41%)
+  (b) buy: close<=limit 2 consecutive min        21-23 x 1.97 (-65.7%) DD  -28% | 24-26 x 1.63 (-37.5%) DD  -20% | CAGR  +25% /  +19% (live +79% / +41%)
+  (b) buy: close<=limit 5 consecutive min        21-23 x 1.29 (-77.5%) DD  -33% | 24-26 x 1.28 (-51.0%) DD  -20% | CAGR   +9% /   +9% (live +79% / +41%)
+  (c) take-profit must trade 0.2% through        21-23 x 5.17 (-10.1%) DD  -29% | 24-26 x 2.59 ( -0.7%) DD  -16% | CAGR  +73% /  +40% (live +79% / +41%)
+  (d) market buys at 1st-minute close            21-23 x 5.83 ( +1.4%) DD  -29% | 24-26 x 2.61 ( -0.1%) DD  -16% | CAGR  +80% /  +41% (live +79% / +41%)
+  (d) market buys at 1st-minute high             21-23 x 5.50 ( -4.2%) DD  -29% | 24-26 x 2.59 ( -0.5%) DD  -16% | CAGR  +77% /  +40% (live +79% / +41%)
+  (e) 1-minute latency on all hourly actions     21-23 x 5.78 ( +0.7%) DD  -29% | 24-26 x 2.58 ( -1.0%) DD  -16% | CAGR  +80% /  +40% (live +79% / +41%)
+  (f) live-bot timing for market buys            21-23 x 4.72 (-17.8%) DD  -30% | 24-26 x 2.66 ( +2.1%) DD  -15% | CAGR  +68% /  +42% (live +79% / +41%)
+  (g) realistic-strict 0.3%+tp0.2%+latency       21-23 x 3.70 (-35.6%) DD  -30% | 24-26 x 2.31 (-11.3%) DD  -18% | CAGR  +55% /  +35% (live +79% / +41%)
+  (g+f) realistic-strict + live mkt timing       21-23 x 3.31 (-42.3%) DD  -31% | 24-26 x 2.35 ( -9.8%) DD  -17% | CAGR  +49% /  +36% (live +79% / +41%)
+  (h) stress 0.5%&5min+tp0.2%+lat+1st-min hi     21-23 x 1.43 (-75.2%) DD  -34% | 24-26 x 1.46 (-44.1%) DD  -19% | CAGR  +13% /  +14% (live +79% / +41%)
+
+######## plausible live range (rule fixed before the run)
+  low end  (g) realistic-strict 0.3%+tp0.2%+latency     2021-23 x3.70 DD -30% 2022 -2% | 2024-26 x2.31 DD -18%
+  high end (f) live-bot timing for market buys          2021-23 x4.72 DD -30% 2022 +20% | 2024-26 x2.66 DD -15%
+done in 46s

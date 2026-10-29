@@ -1,0 +1,8 @@
+worst: LUNAUSDT 2022-05-09 17:00:00 -> 2022-05-13 00:00:00 why 5 tier 0 ret -100.0% acct -100.0%
+worst: DOGEUSDT 2021-01-29 13:00:00 -> 2021-02-02 12:00:00 why 1 tier 0 ret -47.1% acct -47.1%
+worst: SRMUSDT 2021-05-19 03:00:00 -> 2021-05-23 02:00:00 why 1 tier 0 ret -45.4% acct -45.4%
+worst: RENDERUSDT 2022-11-07 14:00:00 -> 2022-11-09 14:00:00 why 1 tier 1 ret -42.2% acct -42.2%
+HINDSIGHT pick with guard 0.35 (stressed):
+  normal   d 94.5 +24.10 -61 wt -48 | t 92.7 +8.42 -41 wt -22 | s 93.5 +7.83 -29 wt -10 | h 89.5 +9.82 -59 wt -36
+  worse    d 93.9 +16.09 -61 wt -48 | t 91.1 +6.21 -39 wt -22 | s 89.3 +4.86 -26 wt -15 | h 88.1 +4.71 -78 wt -36
+  stressed d 94.2 +16.73 -65 wt -47 | t 91.4 +6.41 -33 wt -17 | s 89.5 +4.57 -24 wt -15 | h 87.8 +3.48 -73 wt -36

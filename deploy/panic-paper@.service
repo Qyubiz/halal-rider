@@ -1,0 +1,16 @@
+[Unit]
+Description=Panic buyer PAPER trading, %i settings (pretend money, real prices)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=panicbot
+EnvironmentFile=-/etc/panic-buyer.env
+Environment=PAPER=yes PAPER_NAME=%i PAPER_USDT=650 COMPOUND=yes
+Environment=PAPER_DATA=/opt/panic-buyer/paper-%i PANIC_CONFIG=/opt/panic-buyer/app/panic_config.%i.example.json
+ExecStart=/usr/bin/python3 /opt/panic-buyer/app/panic_buyer.py run
+Restart=always
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target

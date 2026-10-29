@@ -1,0 +1,5 @@
+18 coins: BTC, ETH, SOL, XRP, BNB, DOGE, ADA, TRX, LINK, AVAX, SUI, LTC, BCH, HBAR, DOT, NEAR, ARB, FET; settings {'depth': 0.12, 'N': 8, 'fmax': 0.2, 'tp': 0.015, 'hm': 48, 'cd': 24}; bot trades 807; replay took 535s
+  2024-01-01..2025-01-01 | REAL BOT (panic_buyer.py): x  1.63 +4.17%/mo DD  -18% | engine, backtest timing: x  1.65 +4.25%/mo DD  -15% | engine, bot timing (mtp_now, cd+1): x  1.66 +4.30%/mo DD  -15%
+  2025-01-01..2026-01-01 | REAL BOT (panic_buyer.py): x  1.24 +1.81%/mo DD  -15% | engine, backtest timing: x  1.25 +1.89%/mo DD  -15% | engine, bot timing (mtp_now, cd+1): x  1.24 +1.78%/mo DD  -15%
+  2026-01-01..2026-10-22 | REAL BOT (panic_buyer.py): x  1.23 +2.14%/mo DD   -6% | engine, backtest timing: x  1.20 +1.92%/mo DD   -6% | engine, bot timing (mtp_now, cd+1): x  1.23 +2.16%/mo DD   -6%
+  2025-01-01..2026-10-22 | REAL BOT (panic_buyer.py): x  1.52 +1.96%/mo DD  -15% | engine, backtest timing: x  1.50 +1.90%/mo DD  -15% | engine, bot timing (mtp_now, cd+1): x  1.52 +1.95%/mo DD  -15%

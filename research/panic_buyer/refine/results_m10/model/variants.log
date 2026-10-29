@@ -1,0 +1,62 @@
+no model (90% mode): 2021-23 WR 93.8% (406 trades) +13.17%/mo drop -64%
+lgb_all | 0.603 | 0.521 | WR 94.0% n400 +13.30%/mo dd -62% | WR 93.2% n369 +11.44%/mo dd -72% | WR 94.7% n360 +13.35%/mo dd -56%
+walk-forward lgb_first
+   retrain 2018-06: 232 rows, 0s
+   retrain 2020-06: 965 rows, 5s
+   retrain 2022-06: 2789 rows, 24s
+   retrain 2024-06: 3387 rows, 53s
+   retrain 2026-06: 4013 rows, 77s
+lgb_first | 0.563 | 0.490 | WR 94.0% n397 +13.42%/mo dd -64% | WR 93.9% n379 +12.11%/mo dd -66% | WR 93.7% n366 +11.25%/mo dd -64%
+walk-forward lgb_guard
+   retrain 2018-06: 908 rows, 0s
+   retrain 2020-06: 3773 rows, 13s
+   retrain 2022-06: 11502 rows, 39s
+   retrain 2024-06: 13862 rows, 68s
+   retrain 2026-06: 16688 rows, 96s
+lgb_guard | 0.565 | 0.517 | WR 93.9% n394 +12.74%/mo dd -63% | WR 93.6% n360 +10.23%/mo dd -71% | WR 93.7% n334 +11.53%/mo dd -58%
+walk-forward lgb_guard_w
+   retrain 2018-06: 908 rows, 0s
+   retrain 2020-06: 3773 rows, 10s
+   retrain 2022-06: 11502 rows, 30s
+   retrain 2024-06: 13862 rows, 54s
+   retrain 2026-06: 16688 rows, 81s
+lgb_guard_w | 0.568 | 0.562 | WR 93.8% n386 +12.11%/mo dd -65% | WR 94.2% n365 +15.22%/mo dd -55% | WR 95.0% n343 +14.81%/mo dd -63%
+walk-forward lgb_small
+   retrain 2018-06: 908 rows, 0s
+   retrain 2020-06: 3773 rows, 6s
+   retrain 2022-06: 11502 rows, 18s
+   retrain 2024-06: 13862 rows, 33s
+   retrain 2026-06: 16688 rows, 49s
+lgb_small | 0.565 | 0.496 | WR 94.2% n396 +13.06%/mo dd -67% | WR 93.4% n366 +11.17%/mo dd -66% | WR 94.5% n346 +13.26%/mo dd -53%
+walk-forward lgb_reg
+   retrain 2018-06: 908 rows, 0s
+   retrain 2020-06: 3773 rows, 9s
+   retrain 2022-06: 11502 rows, 28s
+   retrain 2024-06: 13862 rows, 48s
+   retrain 2026-06: 16688 rows, 71s
+lgb_reg | 0.551 | 0.547 | WR 94.1% n404 +15.60%/mo dd -66% | WR 94.6% n389 +15.56%/mo dd -64% | WR 94.2% n347 +13.01%/mo dd -69%
+walk-forward lgb_slow
+   retrain 2018-06: 908 rows, 0s
+   retrain 2020-06: 3773 rows, 3s
+   retrain 2022-06: 11502 rows, 9s
+   retrain 2024-06: 13862 rows, 18s
+   retrain 2026-06: 16688 rows, 29s
+lgb_slow | 0.580 | 0.530 | WR 94.0% n401 +12.74%/mo dd -65% | WR 93.4% n376 +10.68%/mo dd -71% | WR 94.6% n351 +11.22%/mo dd -64%
+walk-forward logit_guard
+   retrain 2018-06: 908 rows, 0s
+   retrain 2020-06: 3773 rows, 3s
+   retrain 2022-06: 11502 rows, 5s
+   retrain 2024-06: 13862 rows, 20s
+   retrain 2026-06: 16688 rows, 34s
+logit_guard | 0.638 | 0.532 | WR 93.3% n390 +11.81%/mo dd -70% | WR 94.8% n382 +13.02%/mo dd -64% | WR 95.5% n353 +13.55%/mo dd -64%
+
+2021-23 only:
+    variant  auc_first_guard  auc_bot                              q10                              q20                              q30
+    lgb_all            0.603    0.521 WR 94.0% n400 +13.30%/mo dd -62% WR 93.2% n369 +11.44%/mo dd -72% WR 94.7% n360 +13.35%/mo dd -56%
+  lgb_first            0.563    0.490 WR 94.0% n397 +13.42%/mo dd -64% WR 93.9% n379 +12.11%/mo dd -66% WR 93.7% n366 +11.25%/mo dd -64%
+  lgb_guard            0.565    0.517 WR 93.9% n394 +12.74%/mo dd -63% WR 93.6% n360 +10.23%/mo dd -71% WR 93.7% n334 +11.53%/mo dd -58%
+lgb_guard_w            0.568    0.562 WR 93.8% n386 +12.11%/mo dd -65% WR 94.2% n365 +15.22%/mo dd -55% WR 95.0% n343 +14.81%/mo dd -63%
+  lgb_small            0.565    0.496 WR 94.2% n396 +13.06%/mo dd -67% WR 93.4% n366 +11.17%/mo dd -66% WR 94.5% n346 +13.26%/mo dd -53%
+    lgb_reg            0.551    0.547 WR 94.1% n404 +15.60%/mo dd -66% WR 94.6% n389 +15.56%/mo dd -64% WR 94.2% n347 +13.01%/mo dd -69%
+   lgb_slow            0.580    0.530 WR 94.0% n401 +12.74%/mo dd -65% WR 93.4% n376 +10.68%/mo dd -71% WR 94.6% n351 +11.22%/mo dd -64%
+logit_guard            0.638    0.532 WR 93.3% n390 +11.81%/mo dd -70% WR 94.8% n382 +13.02%/mo dd -64% WR 95.5% n353 +13.55%/mo dd -64%

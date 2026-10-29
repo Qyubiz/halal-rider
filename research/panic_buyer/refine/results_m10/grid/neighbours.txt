@@ -1,0 +1,15 @@
+s3.00% L5 off1 tpk1 gate btc200 liq1 stop0% cd0 hm0 hs0% trail0 coins maj5
+   t:  -0.04%/mo x  0.99 DD  -54.6% worst-mo  -31.4% up-mo  38% | RT win  86.1% (1176 RT, 35/mo, avg +0.45%, worst -54.1%, forced 168, open 15)
+   s:  -0.69%/mo x  0.86 DD  -51.4% worst-mo  -31.4% up-mo  36% | RT win  80.6% (532 RT, 25/mo, avg -0.19%, worst -54.1%, forced 103, open 15)
+s4.00% L5 off1 tpk1 gate btc200 liq1 stop0% cd0 hm0 hs0% trail0 coins maj5
+   t:  +0.25%/mo x  1.09 DD  -51.1% worst-mo  -30.1% up-mo  47% | RT win  83.9% (830 RT, 25/mo, avg +0.80%, worst -53.7%, forced 137, open 13)
+   s:  -0.33%/mo x  0.93 DD  -48.1% worst-mo  -30.1% up-mo  45% | RT win  78.1% (370 RT, 17/mo, avg -0.11%, worst -53.7%, forced 83, open 13)
+s2.00% L5 off2 tpk1 gate btc200&coin50 liq1 stop0% cd0 hm0 hs0% trail0 coins maj5
+   t:  -0.73%/mo x  0.78 DD  -42.2% worst-mo  -14.4% up-mo  32% | RT win  84.4% (1540 RT, 46/mo, avg +0.32%, worst -26.4%, forced 262, open 0)
+   s:  -1.00%/mo x  0.80 DD  -30.1% worst-mo   -9.6% up-mo  23% | RT win  81.8% (649 RT, 30/mo, avg -0.01%, worst -25.2%, forced 129, open 0)
+s3.00% L10 off0 tpk1 gate btc200 liq1 stop0% cd0 hm0 hs0% trail0 coins maj5
+   t:  +0.44%/mo x  1.16 DD  -44.2% worst-mo  -29.1% up-mo  44% | RT win  86.3% (2132 RT, 63/mo, avg +0.59%, worst -55.4%, forced 295, open 20)
+   s:  -0.47%/mo x  0.90 DD  -44.2% worst-mo  -29.1% up-mo  41% | RT win  81.5% (981 RT, 45/mo, avg -0.05%, worst -55.4%, forced 179, open 20)
+s2.00% L5 shared Ltot10 off2 tpk1 gate btc200&coin50 liq1 stop0% cd0 hm0 hs0% trail0 coins maj5
+   t:  -0.13%/mo x  0.96 DD  -30.8% worst-mo  -12.6% up-mo  35% | RT win  82.5% (1159 RT, 34/mo, avg +0.02%, worst -26.4%, forced 222, open 0)
+   s:  -0.28%/mo x  0.94 DD  -30.8% worst-mo  -11.0% up-mo  27% | RT win  80.2% (541 RT, 25/mo, avg -0.25%, worst -25.2%, forced 116, open 0)

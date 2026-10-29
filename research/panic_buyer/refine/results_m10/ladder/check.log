@@ -1,0 +1,23 @@
+19 coins {'depth': 0.12, 'N': 8, 'fmax': 0.2, 'tp': 0.015, 'hm': 48, 'cd': 24}: engine x15.000317 m10 x15.000317 trades 2565/2565 -> IDENTICAL; wrun incl. open-at-end rows: IDENTICAL
+19 coins {'depth': 0.14, 'N': 1, 'fmax': 1.0, 'tp': 0.025, 'hm': 96, 'cd': 3}: engine x806.936130 m10 x806.936130 trades 554/554 -> IDENTICAL; wrun incl. open-at-end rows: IDENTICAL
+19 coins {'depth': 0.12, 'N': 2, 'fmax': 0.5, 'tp': 0.02, 'hm': 96, 'cd': 6, 'mtp_now': True, 'pen': 0.002}: engine x72.062151 m10 x72.062151 trades 1915/1915 -> IDENTICAL; wrun incl. open-at-end rows: IDENTICAL
+19 coins {'depth': 0.16, 'N': 4, 'fmax': 0.25, 'tp': 0.01, 'hm': 168, 'cd': 12, 'tpwait': 2}: engine x14.824799 m10 x14.824799 trades 1131/1131 -> IDENTICAL; wrun incl. open-at-end rows: IDENTICAL
+22 coins {'depth': 0.12, 'N': 8, 'fmax': 0.2, 'tp': 0.015, 'hm': 48, 'cd': 24}: engine x13.622758 m10 x13.622758 trades 2855/2855 -> IDENTICAL; wrun incl. open-at-end rows: IDENTICAL
+22 coins {'depth': 0.14, 'N': 1, 'fmax': 1.0, 'tp': 0.025, 'hm': 96, 'cd': 3}: engine x1909.885612 m10 x1909.885612 trades 577/577 -> IDENTICAL; wrun incl. open-at-end rows: IDENTICAL
+22 coins {'depth': 0.12, 'N': 2, 'fmax': 0.5, 'tp': 0.02, 'hm': 96, 'cd': 6, 'mtp_now': True, 'pen': 0.002}: engine x62.168085 m10 x62.168085 trades 2060/2060 -> IDENTICAL; wrun incl. open-at-end rows: IDENTICAL
+22 coins {'depth': 0.16, 'N': 4, 'fmax': 0.25, 'tp': 0.01, 'hm': 168, 'cd': 12, 'tpwait': 2}: engine x10.700614 m10 x10.700614 trades 1236/1236 -> IDENTICAL; wrun incl. open-at-end rows: IDENTICAL
+r3_ladder 19 coins w0.50 N4 cap0.25 d2 0.18 pen 0.0 mtp False: r3 x23.641512 m10 x23.641512 trades 2426/2426 max equity gap 0.0e+00 -> IDENTICAL
+r3_ladder 19 coins w0.67 N5 cap0.2 d2 0.2 pen 0.0 mtp False: r3 x17.157439 m10 x17.157439 trades 2484/2484 max equity gap 1.1e-15 -> SAME up to rounding
+r3_ladder 22 coins w0.50 N4 cap0.25 d2 0.18 pen 0.0 mtp False: r3 x13.796585 m10 x13.796585 trades 2677/2677 max equity gap 0.0e+00 -> IDENTICAL
+r3_ladder 22 coins w0.67 N5 cap0.2 d2 0.2 pen 0.0 mtp False: r3 x12.982993 m10 x12.982993 trades 2738/2738 max equity gap 8.9e-16 -> SAME up to rounding
+r3_ladder 19 coins w0.50 N4 cap0.25 d2 0.18 pen 0.002 mtp True: r3 x16.686417 m10 x16.686417 trades 2437/2437 max equity gap 0.0e+00 -> IDENTICAL
+r3_ladder 19 coins w0.67 N5 cap0.2 d2 0.2 pen 0.002 mtp True: r3 x11.091833 m10 x11.091833 trades 2475/2475 max equity gap 1.1e-15 -> SAME up to rounding
+  1 three legs, tp on the average: exit hour [3.0] legs [3.0] ret [0.017961020000000216] (want 0.0179610200) -> ok
+  1b reserve-mode equity after leg 1: 0.992266666667 (want 0.992266666667) -> ok
+  2 time stop from the first fill: exit hour [4.0] why [1.0] -> ok
+  3 max-loss 9% under the average: exit hour [2.0, 6.0] why [4.0, 9.0] -> ok
+  4 break-even target after 4h: exit hour [6.0] ret [0.0009950030000003274] (want 0.000995); without it still open (why [9.0]) -> ok
+  5 two coins, B's budget lazy 0.498992 (want 0.498992) reserve 0.498992 (want 0.498992) -> ok
+  6 holdings cap H=1: positions [0.0] -> ok
+  7 lazy: A legs 2 budget 0.5000 spent 0.3333; B budget 0.6667 -> ok
+ALL CHECKS PASS

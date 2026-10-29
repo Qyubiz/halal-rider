@@ -1,0 +1,42 @@
+1. F2 tier-depth fine scan (everything else F2)
+   tier depth 24.0%: 21-23 WR 81.0% +15.60%/mo dd  -61% | 24-26 WR 75.5% +8.10%/mo dd  -34% | 25-26 WR 75.3% +7.14%/mo dd  -29% | worst-of-three 7.14
+   tier depth 24.5%: 21-23 WR 81.0% +15.77%/mo dd  -61% | 24-26 WR 77.9% +10.62%/mo dd  -30% | 25-26 WR 78.2% +9.98%/mo dd  -29% | worst-of-three 9.98
+   tier depth 25.0%: 21-23 WR 81.0% +16.11%/mo dd  -61% | 24-26 WR 77.5% +10.39%/mo dd  -30% | 25-26 WR 77.6% +9.58%/mo dd  -29% | worst-of-three 9.58
+   tier depth 25.5%: 21-23 WR 80.9% +14.97%/mo dd  -61% | 24-26 WR 77.9% +10.16%/mo dd  -31% | 25-26 WR 79.7% +10.09%/mo dd  -29% | worst-of-three 10.09
+   tier depth 26.0%: 21-23 WR 81.1% +15.12%/mo dd  -61% | 24-26 WR 78.1% +11.03%/mo dd  -31% | 25-26 WR 80.0% +11.37%/mo dd  -29% | worst-of-three 11.03
+   tier depth 26.5%: 21-23 WR 81.0% +14.97%/mo dd  -61% | 24-26 WR 76.5% +9.88%/mo dd  -30% | 25-26 WR 77.5% +9.76%/mo dd  -29% | worst-of-three 9.76
+   tier depth 27.0%: 21-23 WR 81.1% +15.13%/mo dd  -61% | 24-26 WR 76.3% +9.76%/mo dd  -30% | 25-26 WR 77.5% +9.67%/mo dd  -29% | worst-of-three 9.67
+   tier depth 27.5%: 21-23 WR 81.1% +15.13%/mo dd  -61% | 24-26 WR 75.8% +9.20%/mo dd  -30% | 25-26 WR 76.5% +8.73%/mo dd  -29% | worst-of-three 8.73
+   tier depth 28.0%: 21-23 WR 80.9% +14.83%/mo dd  -61% | 24-26 WR 76.4% +9.58%/mo dd  -30% | 25-26 WR 76.1% +8.77%/mo dd  -29% | worst-of-three 8.77
+   mean over the scan: worst-of-three 9.42%/month, 2024-26 9.86%, 4 of 9 qualify
+
+   same scan for F3 (v30 top20 x0.75), tier depth 18-22%
+   tier depth 18.0%: 21-23 WR 79.9% +12.00%/mo dd  -63% | 24-26 WR 74.3% +6.83%/mo dd  -41% | 25-26 WR 73.5% +4.68%/mo dd  -41% | worst-of-three 4.68
+   tier depth 18.5%: 21-23 WR 79.8% +11.24%/mo dd  -65% | 24-26 WR 74.8% +7.41%/mo dd  -41% | 25-26 WR 72.4% +4.45%/mo dd  -41% | worst-of-three 4.45
+   tier depth 19.0%: 21-23 WR 80.2% +12.23%/mo dd  -67% | 24-26 WR 76.6% +10.03%/mo dd  -43% | 25-26 WR 75.7% +8.45%/mo dd  -43% | worst-of-three 8.45
+   tier depth 19.5%: 21-23 WR 79.7% +11.37%/mo dd  -68% | 24-26 WR 77.0% +10.67%/mo dd  -46% | 25-26 WR 76.8% +9.73%/mo dd  -46% | worst-of-three 9.73
+   tier depth 20.0%: 21-23 WR 79.6% +10.96%/mo dd  -67% | 24-26 WR 78.3% +10.89%/mo dd  -43% | 25-26 WR 77.8% +10.35%/mo dd  -43% | worst-of-three 10.35
+   tier depth 20.5%: 21-23 WR 79.5% +11.02%/mo dd  -67% | 24-26 WR 78.3% +10.34%/mo dd  -33% | 25-26 WR 78.4% +9.70%/mo dd  -33% | worst-of-three 9.70
+   tier depth 21.0%: 21-23 WR 79.6% +10.62%/mo dd  -69% | 24-26 WR 79.6% +10.79%/mo dd  -31% | 25-26 WR 80.7% +10.50%/mo dd  -31% | worst-of-three 10.50
+   tier depth 21.5%: 21-23 WR 80.0% +11.10%/mo dd  -65% | 24-26 WR 80.1% +11.21%/mo dd  -29% | 25-26 WR 81.4% +11.04%/mo dd  -29% | worst-of-three 11.04
+   tier depth 22.0%: 21-23 WR 80.4% +11.98%/mo dd  -66% | 24-26 WR 79.3% +10.03%/mo dd  -30% | 25-26 WR 80.6% +9.45%/mo dd  -29% | worst-of-three 9.45
+   mean over the scan: worst-of-three 8.71%/month, 2024-26 9.80%, 7 of 9 qualify
+
+2. leave-coin-out (2024-26 biggest outside-19 contributors)
+   F1 without HEMI: 21-23 WR 80.3% +16.01%/mo dd  -58% | 24-26 WR 77.0% +9.88%/mo dd  -31% | 25-26 WR 78.9% +10.14%/mo dd  -29%
+   F2 without HEMI: 21-23 WR 81.1% +15.12%/mo dd  -61% | 24-26 WR 77.4% +9.83%/mo dd  -31% | 25-26 WR 78.9% +9.51%/mo dd  -29%
+   F2 without HEMI, ZEC, MOVE, MIRA: 21-23 WR 81.1% +15.12%/mo dd  -61% | 24-26 WR 76.7% +9.22%/mo dd  -31% | 25-26 WR 77.6% +8.57%/mo dd  -29%
+   F3 without HEMI: 21-23 WR 79.6% +10.96%/mo dd  -67% | 24-26 WR 77.9% +10.10%/mo dd  -43% | 25-26 WR 77.3% +9.13%/mo dd  -43%
+   F3 without HEMI, PROM, DASH, ZEC: 21-23 WR 79.6% +10.96%/mo dd  -67% | 24-26 WR 76.2% +8.05%/mo dd  -43% | 25-26 WR 74.4% +5.98%/mo dd  -43%
+
+3. core depth scan with the F2 tier (tier 26%) vs the 19 alone
+   core 13.0%: with tier 21-23 WR 79.8% +16.50%/mo dd  -71% | 24-26 WR 70.8% +7.83%/mo dd  -42% | 25-26 WR 69.9% +7.02%/mo dd  -42%
+               19 only   21-23 WR 80.0% +16.53%/mo dd  -71% | 24-26 WR 68.7% +5.46%/mo dd  -40% | 25-26 WR 63.5% +2.40%/mo dd  -40%
+   core 13.5%: with tier 21-23 WR 80.1% +13.49%/mo dd  -71% | 24-26 WR 73.7% +8.98%/mo dd  -38% | 25-26 WR 71.8% +8.26%/mo dd  -38%
+               19 only   21-23 WR 80.5% +14.21%/mo dd  -71% | 24-26 WR 72.5% +6.71%/mo dd  -33% | 25-26 WR 66.7% +3.76%/mo dd  -33%
+   core 14.0%: with tier 21-23 WR 81.1% +15.12%/mo dd  -61% | 24-26 WR 78.1% +11.03%/mo dd  -31% | 25-26 WR 80.0% +11.37%/mo dd  -29%
+               19 only   21-23 WR 81.1% +14.95%/mo dd  -61% | 24-26 WR 76.5% +8.13%/mo dd  -30% | 25-26 WR 75.0% +6.08%/mo dd  -29%
+   core 14.5%: with tier 21-23 WR 81.7% +14.50%/mo dd  -73% | 24-26 WR 78.3% +10.36%/mo dd  -37% | 25-26 WR 81.1% +11.45%/mo dd  -27%
+               19 only   21-23 WR 82.0% +14.55%/mo dd  -73% | 24-26 WR 76.4% +7.33%/mo dd  -34% | 25-26 WR 75.9% +5.93%/mo dd  -27%
+   core 15.0%: with tier 21-23 WR 82.1% +13.03%/mo dd  -73% | 24-26 WR 80.3% +10.03%/mo dd  -33% | 25-26 WR 80.9% +10.92%/mo dd  -27%
+               19 only   21-23 WR 81.9% +12.55%/mo dd  -73% | 24-26 WR 78.7% +7.01%/mo dd  -33% | 25-26 WR 75.0% +5.43%/mo dd  -27%

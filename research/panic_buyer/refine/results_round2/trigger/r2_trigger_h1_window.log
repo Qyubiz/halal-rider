@@ -1,0 +1,20 @@
+
+######## r2 trigger H1: reference window (highest close of the last w hours)
+LIVE SETTINGS                                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+ref = highest close 8h                         21-23 x 4.72 DD  -16% 2022  +24% | 24-26 x 2.03 DD  -15% worst-mo  -6% up-mo  74%
+ref = highest close 12h                        21-23 x 5.63 DD  -18% 2022  +24% | 24-26 x 2.28 DD  -17% worst-mo  -8% up-mo  82%
+ref = highest close 16h                        21-23 x 4.56 DD  -27% 2022  +25% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  82%
+ref = highest close 20h                        21-23 x 5.20 DD  -28% 2022  +19% | 24-26 x 2.47 DD  -16% worst-mo  -6% up-mo  88%
+ref = highest close 36h                        21-23 x 5.31 DD  -32% 2022   -3% | 24-26 x 2.44 DD  -24% worst-mo  -7% up-mo  82%
+ref = highest close 48h                        21-23 x 4.25 DD  -39% 2022  -19% | 24-26 x 2.15 DD  -23% worst-mo -11% up-mo  79%
+ref = highest close 72h                        21-23 x 2.24 DD  -60% 2022  -47% | 24-26 x 1.86 DD  -25% worst-mo -16% up-mo  76%
+ref = highest close 12h, depth 11%             21-23 x 6.25 DD  -20% 2022  +30% | 24-26 x 2.54 DD  -14% worst-mo  -5% up-mo  82%
+8 variants | beat live in 2021-23: 1 | in 2024-26: 1 | in both: 0
+PICK (2021-23 only): ref = highest close 12h, depth 11%
+  pick                                         21-23 x 6.25 DD  -20% 2022  +30% | 24-26 x 2.54 DD  -14% worst-mo  -5% up-mo  82%
+  2024-26 check: does NOT beat the live settings
+  live, +LUNA/FTT/SRM                          21-23 x 5.29 DD  -31% 2022   +1% | 24-26 x 2.46 DD  -15% worst-mo  -6% up-mo  88%
+  pick, +LUNA/FTT/SRM                          21-23 x 6.09 DD  -22% 2022  +19% | 24-26 x 2.54 DD  -14% worst-mo  -5% up-mo  82%  ok
+  live, fills 0.2% worse                       21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+  pick, fills 0.2% worse                       21-23 x 4.42 DD  -20% 2022  +12% | 24-26 x 2.35 DD  -17% worst-mo  -7% up-mo  85%  FAILS
+  VERDICT: rejected, live bot unchanged

@@ -1,0 +1,3 @@
+idea,variants,beat_design,beat_test,beat_both,pick,passes,pick_d_mult,pick_t_mult,pick_d_dd,pick_t_dd,base_d_mult,base_t_mult,base_d_dd,base_t_dd,check +LUNA/FTT/SRM,check fills 0.2% worse
+"r3 timeofday H1: Asian-morning hours (UTC 00-07 / 03-06) skip, deeper or smaller",8,2,0,0,UTC 03-06 depth 14%,False,6.44750621891204,2.574533394164186,-0.2988483260715594,-0.1962691316163802,5.749960679975606,2.608768648326897,-0.2923819336224197,-0.1628454245693458,False,False
+"r3 timeofday H2: weekends (Sat-Sun UTC, all day / 00-07) skip, deeper or smaller",8,4,0,0,Sat-Sun 00-07 skip,False,7.493885976853179,2.395445074362851,-0.23738275844539436,-0.20595509629048325,5.749960679975606,2.608768648326897,-0.2923819336224197,-0.1628454245693458,False,False

@@ -1,0 +1,71 @@
+
+== start: N1 x 100% +3% cd24: 2024-26 +7.00%/mo
+    pass 1: N1x100 cd24 tp3 rest3 lad off tpf0.2 btc0 hm48 d12 -> 2024-26 +9.00%/mo  (designs evaluated so far 42)
+    pass 2: N1x100 cd24 tp3 rest3 lad off tpf0.2 btc0 hm48 d12 -> 2024-26 +9.00%/mo  (designs evaluated so far 69)
+
+== start: N2 x 50% +3% cd24: 2024-26 +6.31%/mo
+    pass 1: N1x100 cd24 tp3 rest3 lad off tpf0.2 btc0 hm48 d12 -> 2024-26 +9.00%/mo  (designs evaluated so far 69)
+    pass 2: N1x100 cd24 tp3 rest3 lad off tpf0.2 btc0 hm48 d12 -> 2024-26 +9.00%/mo  (designs evaluated so far 69)
+
+== start: honest pick (N2 x 50%, cd6, ladder 50/18, +5%, tpf .2 mkt): 2024-26 +4.75%/mo
+    pass 1: N1x100 cd24 tp3.5 rest3 lad 67/16 tpf0.2 btc0 hm48 d12 -> 2024-26 +7.91%/mo  (designs evaluated so far 110)
+    pass 2: N1x100 cd24 tp3 rest3 lad off tpf0.2 btc0 hm48 d12 -> 2024-26 +9.00%/mo  (designs evaluated so far 131)
+    pass 3: N1x100 cd24 tp3 rest3 lad off tpf0.2 btc0 hm48 d12 -> 2024-26 +9.00%/mo  (designs evaluated so far 131)
+
+######## END POINTS (hindsight: chosen on 2024-26)
+from 'N1 x 100% +3% cd24': N1x100 cd24 tp3 rest3 lad off tpf0.2 btc0 hm48 d12
+  (1) 2024-26   +9.00%/mo  x  18.21  drop -41.5%
+  (2) 2025-26   +4.87%/mo  x   2.80  drop -41.5%
+  (3) 2021-23  +18.70%/mo  x 477.41  drop -64.3%  2022  +6.1%
+      trades 659, worst trade -41.6% of account (2021-23 -41.6%, 2024-26 -21.7%), worst trade ret -41.6%; 2024-26 win 82% avg +1.44%
+  (4) fills 0.2% worse (buys and sells) + LUNA/FTT/SRM: 2024-26  +5.88%/mo drop -47.3% | 2025-26  +2.20%/mo drop -47.3% | 2021-23 -13.32%/mo drop -100.0% 2022 -100.0% | worst trade -100.0% of account
+    2021: normal +13111.4%  stressed +6682.1%
+    2022: normal    +6.1%  stressed  -100.0%
+    2023: normal  +240.6%  stressed   +14.4%
+    2024: normal  +551.0%  stressed  +327.6%
+    2025: normal   +76.0%  stressed   +44.7%
+    2026: normal   +59.0%  stressed   +10.7%
+from 'N2 x 50% +3% cd24': N1x100 cd24 tp3 rest3 lad off tpf0.2 btc0 hm48 d12
+  (1) 2024-26   +9.00%/mo  x  18.21  drop -41.5%
+  (2) 2025-26   +4.87%/mo  x   2.80  drop -41.5%
+  (3) 2021-23  +18.70%/mo  x 477.41  drop -64.3%  2022  +6.1%
+      trades 659, worst trade -41.6% of account (2021-23 -41.6%, 2024-26 -21.7%), worst trade ret -41.6%; 2024-26 win 82% avg +1.44%
+  (4) fills 0.2% worse (buys and sells) + LUNA/FTT/SRM: 2024-26  +5.88%/mo drop -47.3% | 2025-26  +2.20%/mo drop -47.3% | 2021-23 -13.32%/mo drop -100.0% 2022 -100.0% | worst trade -100.0% of account
+    2021: normal +13111.4%  stressed +6682.1%
+    2022: normal    +6.1%  stressed  -100.0%
+    2023: normal  +240.6%  stressed   +14.4%
+    2024: normal  +551.0%  stressed  +327.6%
+    2025: normal   +76.0%  stressed   +44.7%
+    2026: normal   +59.0%  stressed   +10.7%
+from 'honest pick (N2 x 50%, cd6, ladder 50/18, +5%, tpf .2 mkt)': N1x100 cd24 tp3 rest3 lad off tpf0.2 btc0 hm48 d12
+  (1) 2024-26   +9.00%/mo  x  18.21  drop -41.5%
+  (2) 2025-26   +4.87%/mo  x   2.80  drop -41.5%
+  (3) 2021-23  +18.70%/mo  x 477.41  drop -64.3%  2022  +6.1%
+      trades 659, worst trade -41.6% of account (2021-23 -41.6%, 2024-26 -21.7%), worst trade ret -41.6%; 2024-26 win 82% avg +1.44%
+  (4) fills 0.2% worse (buys and sells) + LUNA/FTT/SRM: 2024-26  +5.88%/mo drop -47.3% | 2025-26  +2.20%/mo drop -47.3% | 2021-23 -13.32%/mo drop -100.0% 2022 -100.0% | worst trade -100.0% of account
+    2021: normal +13111.4%  stressed +6682.1%
+    2022: normal    +6.1%  stressed  -100.0%
+    2023: normal  +240.6%  stressed   +14.4%
+    2024: normal  +551.0%  stressed  +327.6%
+    2025: normal   +76.0%  stressed   +44.7%
+    2026: normal   +59.0%  stressed   +10.7%
+
+######## JITTER of the winner (N1x100 cd24 tp3 rest3 lad off tpf0.2 btc0 hm48 d12, 2024-26 +9.00%/mo): one step per factor
+  siz=N2x50      21-23 +11.40%/mo DD -52.8% | 24-26  +6.61%/mo DD -30.2% | 25-26  +3.90%/mo
+  cd=12          21-23 +19.21%/mo DD -63.8% | 24-26  +7.36%/mo DD -41.5% | 25-26  +4.67%/mo
+  cd=36          21-23 +16.99%/mo DD -58.3% | 24-26  +8.06%/mo DD -48.0% | 25-26  +4.09%/mo
+  tp=0.025       21-23 +12.76%/mo DD -69.6% | 24-26  +8.87%/mo DD -41.5% | 25-26  +5.08%/mo
+  tp=0.035       21-23 +18.44%/mo DD -62.6% | 24-26  +6.84%/mo DD -50.5% | 25-26  +3.28%/mo
+  exit=rest2     21-23 +18.97%/mo DD -59.6% | 24-26  +7.99%/mo DD -47.9% | 25-26  +3.98%/mo
+  exit=rest4     21-23 +17.04%/mo DD -64.0% | 24-26  +7.50%/mo DD -51.0% | 25-26  +4.03%/mo
+  lad=50/18      21-23 +17.24%/mo DD -60.5% | 24-26  +7.84%/mo DD -37.0% | 25-26  +3.90%/mo
+  tpf=0.1        21-23 +18.75%/mo DD -66.9% | 24-26  +8.53%/mo DD -42.6% | 25-26  +4.33%/mo
+  tpf=0.3        21-23 +19.45%/mo DD -65.7% | 24-26  +8.80%/mo DD -41.5% | 25-26  +4.75%/mo
+  btc=0.03       21-23 +18.70%/mo DD -64.3% | 24-26  +9.00%/mo DD -41.5% | 25-26  +4.87%/mo
+  hm=36          21-23 +21.22%/mo DD -57.3% | 24-26  +8.41%/mo DD -41.4% | 25-26  +3.97%/mo
+  hm=60          21-23 +17.59%/mo DD -63.1% | 24-26  +8.06%/mo DD -50.7% | 25-26  +3.92%/mo
+  depth=0.11     21-23 +19.79%/mo DD -67.8% | 24-26  +3.86%/mo DD -59.8% | 25-26  +1.52%/mo
+  depth=0.13     21-23 +18.32%/mo DD -70.9% | 24-26  +6.54%/mo DD -39.5% | 25-26  +2.82%/mo
+  neighbours 2024-26 %/month: median 7.99, min 3.86, max 9.00
+
+all 131 designs evaluated: 2024-26 %/month max 9.00, >= 10%/mo: 0, since-2025 max 5.08

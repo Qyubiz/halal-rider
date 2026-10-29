@@ -1,0 +1,36 @@
+rule winner N1 d12 tp1 hm48 cd6 g50      normal          WR 95.9/93.3/93.8 mo +14.61/ +5.72/ +5.77 dd  -57/ -33/ -24 n 836/345/193
+                                         bot timing      WR 96.1/93.2/93.1 mo +10.04/ +4.56/ +3.80 dd  -57/ -35/ -35 worst trade -43%
+                                         buys 0.2% worse WR 95.7/92.9/92.4 mo +10.72/ +3.92/ +3.35 dd  -60/ -35/ -34 worst trade -43%
+                                         sells 0.2% worse WR 95.9/93.3/93.8 mo  +9.40/ +3.57/ +3.90 dd  -60/ -37/ -26 worst trade -43%
+                                         +LUNA/FTT/SRM   WR 96.1/93.3/93.8 mo +16.22/ +5.72/ +5.77 dd  -57/ -33/ -24 worst trade -48%
+                                         all (STRESSED)  WR 96.0/92.2/91.8 mo  -5.89/ +0.33/ -0.05 dd  -99/ -47/ -47 worst trade -96%
+N1 d12 tp1 hm48 cd6 g35                  normal          WR 95.9/93.2/93.7 mo +12.70/ +5.55/ +5.57 dd  -61/ -33/ -24 n 813/339/189
+                                         bot timing      WR 96.3/93.5/93.5 mo +11.43/ +4.96/ +4.45 dd  -50/ -32/ -25 worst trade -42%
+                                         buys 0.2% worse WR 95.4/92.8/92.3 mo  +8.04/ +3.77/ +3.17 dd  -61/ -35/ -34 worst trade -54%
+                                         sells 0.2% worse WR 95.9/93.2/93.7 mo  +7.71/ +3.44/ +3.74 dd  -61/ -37/ -26 worst trade -54%
+                                         +LUNA/FTT/SRM   WR 96.2/93.2/93.7 mo +14.56/ +5.55/ +5.57 dd  -61/ -33/ -24 worst trade -54%
+                                         all (STRESSED)  WR 95.7/92.4/92.2 mo  +2.40/ +0.74/ +0.61 dd  -69/ -39/ -39 worst trade -43%
+N1 d14 tp2 hm96 cd6 g50                  normal          WR 95.8/94.6/93.3 mo +16.17/ +7.07/ +4.56 dd  -64/ -34/ -23 n 457/168/75
+                                         bot timing      WR 95.9/92.9/93.3 mo +15.32/ +5.38/ +4.46 dd  -59/ -41/ -23 worst trade -46%
+                                         buys 0.2% worse WR 95.4/93.7/93.2 mo +13.58/ +5.95/ +4.26 dd  -65/ -34/ -23 worst trade -53%
+                                         sells 0.2% worse WR 95.8/94.6/93.3 mo +13.26/ +6.01/ +3.84 dd  -67/ -34/ -23 worst trade -53%
+                                         +LUNA/FTT/SRM   WR 95.4/94.6/93.3 mo +16.84/ +7.07/ +4.56 dd  -62/ -34/ -23 worst trade -46%
+                                         all (STRESSED)  WR 95.6/92.5/93.2 mo +11.11/ +3.88/ +3.47 dd  -63/ -43/ -23 worst trade -46%
+N1 d14 tp3 hm96 cd6 g35                  normal          WR 93.6/90.2/90.5 mo +16.83/ +6.68/ +5.01 dd  -61/ -32/ -27 n 375/132/63
+                                         bot timing      WR 93.7/89.6/90.2 mo +17.06/ +6.29/ +4.74 dd  -59/ -27/ -27 worst trade -46%
+                                         buys 0.2% worse WR 93.6/88.5/90.3 mo +15.33/ +6.12/ +4.70 dd  -61/ -34/ -27 worst trade -48%
+                                         sells 0.2% worse WR 93.6/90.2/90.5 mo +14.42/ +5.85/ +4.40 dd  -61/ -33/ -27 worst trade -48%
+                                         +LUNA/FTT/SRM   WR 92.8/90.2/90.5 mo +16.38/ +6.68/ +5.01 dd  -61/ -32/ -27 worst trade -48%
+                                         all (STRESSED)  WR 93.7/87.8/90.0 mo +15.57/ +4.66/ +3.86 dd  -60/ -36/ -27 worst trade -46%
+N2x50 d14 tp3 hm96 cd6 g35               normal          WR 92.1/91.2/91.0 mo +12.27/ +6.23/ +4.65 dd  -50/ -25/ -22 n 793/284/144
+                                         bot timing      WR 92.1/90.9/90.7 mo +12.37/ +5.83/ +4.33 dd  -50/ -25/ -22 worst trade -23%
+                                         buys 0.2% worse WR 91.8/90.8/90.9 mo +11.20/ +5.77/ +4.42 dd  -50/ -25/ -22 worst trade -24%
+                                         sells 0.2% worse WR 92.1/91.2/91.0 mo +10.61/ +5.57/ +4.14 dd  -50/ -25/ -22 worst trade -24%
+                                         +LUNA/FTT/SRM   WR 91.9/91.2/91.0 mo +10.58/ +6.23/ +4.65 dd  -74/ -25/ -22 worst trade -50%
+                                         all (STRESSED)  WR 91.7/90.5/90.6 mo  +7.95/ +4.61/ +3.59 dd  -75/ -25/ -22 worst trade -50%
+LIVE                                     normal          WR 93.6/92.5/91.5 mo  +4.98/ +2.89/ +1.96 dd  -29/ -16/ -15 n 1681/884/492
+                                         bot timing      WR 93.6/92.7/91.6 mo  +4.02/ +2.96/ +2.01 dd  -34/ -16/ -15 worst trade -5%
+                                         buys 0.2% worse WR 92.6/91.7/90.0 mo  +3.92/ +2.59/ +1.67 dd  -29/ -16/ -16 worst trade -5%
+                                         sells 0.2% worse WR 93.6/92.5/91.5 mo  +3.87/ +2.32/ +1.48 dd  -29/ -17/ -16 worst trade -5%
+                                         +LUNA/FTT/SRM   WR 93.5/92.5/91.5 mo  +4.69/ +2.89/ +1.96 dd  -31/ -16/ -15 worst trade -15%
+                                         all (STRESSED)  WR 92.7/92.0/90.4 mo  +1.72/ +2.11/ +1.24 dd  -43/ -16/ -16 worst trade -20%

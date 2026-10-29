@@ -1,0 +1,41 @@
+1. Jitter band, live settings (each a tiny perturbation of the live bot):
+  live                                         21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  depth 0.119                                  21-23 x 5.41 DD  -33% 2022  +19% | 24-26 x 2.77 DD  -17% worst-mo  -6% up-mo  88%
+  depth 0.121                                  21-23 x 5.54 DD  -30% 2022  +22% | 24-26 x 2.69 DD  -16% worst-mo  -4% up-mo  88%
+  fee 0.00095                                  21-23 x 5.86 DD  -29% 2022  +20% | 24-26 x 2.63 DD  -16% worst-mo  -6% up-mo  88%
+  fee 0.00105                                  21-23 x 5.64 DD  -29% 2022  +18% | 24-26 x 2.58 DD  -16% worst-mo  -6% up-mo  88%
+  start +1d                                    21-23 x 5.71 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  start +2d                                    21-23 x 5.45 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  start +3d                                    21-23 x 5.44 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  start +5d                                    21-23 x 5.31 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  start +7d                                    21-23 x 5.17 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  start +10d                                   21-23 x 4.32 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  start +14d                                   21-23 x 4.63 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  band: 2021-23 x4.32..x5.86, 2024-26 x2.58..x2.77
+
+2. Exit anatomy, normal fills vs fills 0.2% worse. Sums are return x order size divided by the equity at the
+   start of the period (so +1.00 = one start-of-period equity earned, before compounding):
+  pen 0.000 LIVE     21-23: trades 1681, TP 1573 (+9.84, avg +1.84%), time stops 108 (-5.09, avg -11.5%), net +4.75 [limit fills +4.42, market buys 175 +0.33], avg held 6.4h
+  pen 0.000 LIVE     24-26: trades 884, TP 817 (+2.51, avg +1.77%), time stops 67 (-0.90, avg -7.2%), net +1.61 [limit fills +1.58, market buys 58 +0.02], avg held 7.7h
+  pen 0.000 pick     21-23: trades 1690, TP 1592 (+10.77, avg +1.81%), time stops 98 (-5.12, avg -11.7%), net +5.65 [limit fills +4.73, market buys 176 +0.92], avg held 5.9h
+  pen 0.000 pick     24-26: trades 891, TP 828 (+2.47, avg +1.70%), time stops 63 (-0.84, avg -7.0%), net +1.63 [limit fills +1.58, market buys 61 +0.05], avg held 7.3h
+  pen 0.000 B f=0.10 21-23: trades 1678, TP 1569 (+10.77, avg +1.89%), time stops 109 (-5.36, avg -11.4%), net +5.40 [limit fills +4.60, market buys 172 +0.80], avg held 6.4h
+  pen 0.000 B f=0.10 24-26: trades 884, TP 816 (+2.54, avg +1.79%), time stops 68 (-0.91, avg -7.1%), net +1.63 [limit fills +1.59, market buys 58 +0.04], avg held 7.8h
+  pen 0.002 LIVE     21-23: trades 1670, TP 1544 (+7.67, avg +1.79%), time stops 126 (-4.69, avg -11.4%), net +2.98 [limit fills +2.66, market buys 170 +0.33], avg held 7.2h
+  pen 0.002 LIVE     24-26: trades 882, TP 808 (+2.28, avg +1.72%), time stops 74 (-0.91, avg -7.0%), net +1.37 [limit fills +1.34, market buys 59 +0.03], avg held 8.4h
+  pen 0.002 pick     21-23: trades 1680, TP 1568 (+8.06, avg +1.73%), time stops 112 (-4.44, avg -11.5%), net +3.62 [limit fills +2.91, market buys 174 +0.70], avg held 6.6h
+  pen 0.002 pick     24-26: trades 884, TP 814 (+2.09, avg +1.63%), time stops 70 (-0.85, avg -7.2%), net +1.23 [limit fills +1.20, market buys 59 +0.04], avg held 8.0h
+  pen 0.002 B f=0.10 21-23: trades 1672, TP 1546 (+8.46, avg +1.84%), time stops 126 (-4.94, avg -11.3%), net +3.52 [limit fills +2.81, market buys 170 +0.72], avg held 7.2h
+  pen 0.002 B f=0.10 24-26: trades 882, TP 807 (+2.30, avg +1.74%), time stops 75 (-0.92, avg -6.9%), net +1.39 [limit fills +1.35, market buys 59 +0.04], avg held 8.4h
+
+3. Floored near-misses under the stress checks (post-hoc, NOT eligible):
+  live, +LUNA/FTT/SRM                          21-23 x 5.22 DD  -31% 2022   +1% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  tp = max(1.5%, 0.06 x (ref - entry, +LUNA/   21-23 x 5.64 DD  -31% 2022   +2% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%  beats
+  tp = max(1.5%, 0.08 x (ref - entry, +LUNA/   21-23 x 5.99 DD  -31% 2022   +7% | 24-26 x 2.62 DD  -16% worst-mo  -6% up-mo  88%  beats
+  tp = max(1.5%, 0.10 x (ref - entry, +LUNA/   21-23 x 6.15 DD  -30% 2022   +6% | 24-26 x 2.63 DD  -16% worst-mo  -6% up-mo  88%  beats
+  tp = 0.10 x (ref - entry), no floo, +LUNA/   21-23 x 6.43 DD  -30% 2022  +15% | 24-26 x 2.63 DD  -16% worst-mo  -3% up-mo  88%  beats
+  live, fills 0.2% worse                       21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+  tp = max(1.5%, 0.06 x (ref - entry, fills    21-23 x 4.11 DD  -29% 2022   +0% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%  beats
+  tp = max(1.5%, 0.08 x (ref - entry, fills    21-23 x 4.37 DD  -29% 2022   +5% | 24-26 x 2.38 DD  -16% worst-mo  -6% up-mo  85%  beats
+  tp = max(1.5%, 0.10 x (ref - entry, fills    21-23 x 4.52 DD  -29% 2022   +6% | 24-26 x 2.39 DD  -16% worst-mo  -6% up-mo  85%  beats
+  tp = 0.10 x (ref - entry), no floo, fills    21-23 x 4.62 DD  -29% 2022  +17% | 24-26 x 2.23 DD  -16% worst-mo  -7% up-mo  85%  fails

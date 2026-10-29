@@ -1,0 +1,17 @@
+{
+ "pick": {
+  "depth": 0.15,
+  "tp": 0.03,
+  "hm": 96,
+  "cd": 0,
+  "anchor": "c",
+  "rank": "d7deep",
+  "near": 0.01,
+  "dmaj": 0.14,
+  "vk": 0.0,
+  "vlo": 0.1,
+  "vhi": 0.25,
+  "guard": 0.35
+ },
+ "proxy_used": true
+}

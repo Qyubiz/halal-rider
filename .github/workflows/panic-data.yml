@@ -1,0 +1,56 @@
+# Package the Binance candles cached by panic-research.yml as a pre-release, so research sessions that can't
+# reach Binance can download them from GitHub. Delete the release when the research is done.
+name: panic-buyer-data
+on:
+  push:
+    branches: [claude/charming-dijkstra-0orbab]
+    paths: [".github/workflows/panic-data.yml"]
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      PB_DATA: /home/runner/pb_data
+      THREADS: "16"
+      SKIP_EXISTING: "1"
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy pandas
+      - uses: actions/cache/restore@v4
+        with:
+          path: /home/runner/pb_data
+          key: pb-data-v1
+      - name: Download anything missing
+        working-directory: research/panic_buyer/refine
+        run: bash fetch_all.sh | tail -5
+      - name: Download 2017-12 to 2020 hourly candles (untouched holdout)
+        working-directory: research/panic_buyer/refine
+        run: |
+          python3 fetch_vision.py 1h 2017-12-01 BTCUSDT,ETHUSDT,XRPUSDT,BNBUSDT,ADAUSDT,TRXUSDT,LTCUSDT,LINKUSDT,DOGEUSDT,HBARUSDT,FETUSDT,BCHUSDT,BCHABCUSDT,DOTUSDT,AVAXUSDT,NEARUSDT,SOLUSDT,LUNAUSDT,FTTUSDT,SRMUSDT "$PB_DATA/1h_pre"
+      - name: Download Dec 2017 - Dec 2020 1-minute candles (holdout)
+        working-directory: research/panic_buyer/refine
+        run: |
+          FETCH_END=2021-01 python3 fetch_vision.py 1m 2017-12-01 BTCUSDT,ETHUSDT,XRPUSDT,BNBUSDT,ADAUSDT,TRXUSDT,LTCUSDT,LINKUSDT,DOGEUSDT,HBARUSDT,FETUSDT,BCHUSDT,BCHABCUSDT,DOTUSDT,AVAXUSDT,NEARUSDT,SOLUSDT "$PB_DATA/1m_pre_pkl"
+          python3 export_npz.py "$PB_DATA/1m_pre_pkl" /home/runner/pkg_pre/1m_pre
+      - name: Package
+        run: |
+          mkdir -p /home/runner/pkg
+          tar -C /home/runner/pkg_pre -cf /home/runner/pkg/pb_1m_pre.tar 1m_pre
+          tar -C "$PB_DATA" -czf /home/runner/pkg/pb_1h_pre.tgz 1h_pre
+          python3 research/panic_buyer/refine/export_npz.py "$PB_DATA/1m" /home/runner/pkg/1m
+          tar -C "$PB_DATA" -czf /home/runner/pkg/pb_1h.tgz 1h univ
+          tar -C /home/runner/pkg -cf /home/runner/pkg/pb_1m.tar 1m
+          ls -la /home/runner/pkg
+      - name: Publish as a pre-release
+        run: |
+          gh release delete pb-data-v1 --yes --cleanup-tag || true
+          gh release create pb-data-v1 --prerelease --target "$GITHUB_SHA" \
+            --title "Panic Buyer research data (Binance spot candles)" \
+            --notes "Public Binance spot candles (data.binance.vision), 2021-01-01 to 2026-10-22, used by research/panic_buyer/refine. pb_1h.tgz: hourly CSVs (19 coins, RNDR, LUNA/FTT/SRM, 322 screened coins). pb_1m.tar: 1-minute OHLC as .npz. pb_1h_pre.tgz / pb_1m_pre.tar: hourly and 1-minute candles Dec 2017 - Dec 2020 (holdout). Research data only; safe to delete." \
+            /home/runner/pkg/pb_1h.tgz /home/runner/pkg/pb_1m.tar /home/runner/pkg/pb_1h_pre.tgz /home/runner/pkg/pb_1m_pre.tar

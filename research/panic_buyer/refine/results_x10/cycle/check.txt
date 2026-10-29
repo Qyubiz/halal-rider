@@ -1,0 +1,30 @@
+1. hourly candles: engine.run vs ckernel
+   live                             engine x 15.0003 cycle x 15.0003 trades 2565/2565 IDENTICAL
+   2 coins x50% tp5% hm96 cd12      engine x226.3695 cycle x226.3695 trades 1285/1285 IDENTICAL
+   1 coin x100% d15 tp3%            engine x477.7481 cycle x477.7481 trades 446/446 IDENTICAL
+   part 0.5 + tp2 4%                engine x 73.9758 cycle x 73.9758 trades 3824/3824 IDENTICAL
+   part 0.5 + trail 3%              engine x 80.5779 cycle x 80.5779 trades 3178/3178 IDENTICAL
+   tpwait 3, no resting             engine x 22.4744 cycle x 22.4744 trades 2408/2408 IDENTICAL
+   mtp_now, pen 0.2%                engine x213.9837 cycle x213.9837 trades 1449/1449 IDENTICAL
+   dead live                             engine x 13.5865 cycle x 13.5865 trades 2855/2855 IDENTICAL
+   dead 2 coins x50% tp5% hm96 cd12      engine x166.2919 cycle x166.2919 trades 1412/1412 IDENTICAL
+   dead 1 coin x100% d15 tp3%            engine x417.7452 cycle x417.7452 trades 470/470 IDENTICAL
+   dead part 0.5 + tp2 4%                engine x 61.3604 cycle x 61.3604 trades 4224/4224 IDENTICAL
+   dead part 0.5 + trail 3%              engine x 50.5489 cycle x 50.5489 trades 3524/3524 IDENTICAL
+   dead tpwait 3, no resting             engine x 19.2525 cycle x 19.2525 trades 2675/2675 IDENTICAL
+   dead mtp_now, pen 0.2%                engine x141.8751 cycle x141.8751 trades 1621/1621 IDENTICAL
+2. 1-minute data: build_bars(60) vs engine.minute_panel, ckernel vs engine.mrun(delay=0)
+   bars: index same, o/h/l/c IDENTICAL
+   ref (24-bar high close) and ffilled close IDENTICAL
+   live                             mrun x 11.3847 cycle x 11.3847 trades 1113/1113 IDENTICAL
+   2 coins x50% tp3%                mrun x243.4435 cycle x243.4435 trades 1103/1103 IDENTICAL
+   1 coin x100% d10 tp2% cd0        mrun x318.7590 cycle x318.7590 trades 1356/1356 IDENTICAL
+3. 5m/15m bars aggregate to the 60m bars
+   5m: IDENTICAL
+   5m +dead: IDENTICAL
+   15m: IDENTICAL
+   15m +dead: IDENTICAL
+4. metrics: Clock vs lab.metrics, live settings on hourly candles
+   2021-23 lab x5.7500 DD -29.24% | Clock x5.7500 DD -29.24%
+   2024-26 lab x2.6088 DD -16.28% | Clock x2.6088 DD -16.28% +2.89%/mo; since 2025 +1.96%/mo DD -15.49%
+ALL CHECKS PASS

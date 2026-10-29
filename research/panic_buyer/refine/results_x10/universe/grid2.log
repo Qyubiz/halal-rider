@@ -1,0 +1,31 @@
+L10: on average 8.7 of the 10 are live coins; coins ever included 30
+L20: on average 13.5 of the 20 are live coins; coins ever included 54
+L30: on average 15.7 of the 30 are live coins; coins ever included 85
+depth 0.1 tp 0.015 cd 6: 40 rows, 23s
+depth 0.1 tp 0.015 cd 12: 80 rows, 47s
+depth 0.1 tp 0.015 cd 24: 120 rows, 66s
+depth 0.1 tp 0.03 cd 6: 160 rows, 86s
+depth 0.1 tp 0.03 cd 12: 200 rows, 106s
+depth 0.1 tp 0.03 cd 24: 240 rows, 125s
+depth 0.1 tp 0.05 cd 6: 280 rows, 146s
+depth 0.1 tp 0.05 cd 12: 320 rows, 169s
+depth 0.1 tp 0.05 cd 24: 360 rows, 189s
+depth 0.12 tp 0.015 cd 6: 400 rows, 210s
+depth 0.12 tp 0.015 cd 12: 440 rows, 234s
+depth 0.12 tp 0.015 cd 24: 480 rows, 254s
+depth 0.12 tp 0.03 cd 6: 520 rows, 272s
+depth 0.12 tp 0.03 cd 12: 560 rows, 291s
+depth 0.12 tp 0.03 cd 24: 600 rows, 311s
+depth 0.12 tp 0.05 cd 6: 640 rows, 330s
+depth 0.12 tp 0.05 cd 12: 680 rows, 351s
+depth 0.12 tp 0.05 cd 24: 720 rows, 369s
+depth 0.15 tp 0.015 cd 6: 760 rows, 386s
+depth 0.15 tp 0.015 cd 12: 800 rows, 407s
+depth 0.15 tp 0.015 cd 24: 840 rows, 424s
+depth 0.15 tp 0.03 cd 6: 880 rows, 444s
+depth 0.15 tp 0.03 cd 12: 920 rows, 463s
+depth 0.15 tp 0.03 cd 24: 960 rows, 487s
+depth 0.15 tp 0.05 cd 6: 1000 rows, 509s
+depth 0.15 tp 0.05 cd 12: 1040 rows, 527s
+depth 0.15 tp 0.05 cd 24: 1080 rows, 545s
+grid2 done 1080

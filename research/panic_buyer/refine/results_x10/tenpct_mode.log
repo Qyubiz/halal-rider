@@ -1,0 +1,7 @@
+columns: 2021-23 | 2024-26 | since 2025 | 2022 | 2021-23 +LUNA/FTT/SRM | 2018-20 holdout
+LIVE (current) |  +5.0%/mo dd  -29% |  +2.9%/mo dd  -16% |  +2.0%/mo dd  -15% | 2022 +19% |  +4.7%/mo dd  -31% |  +2.3%/mo dd  -45%
+10% mode: 1 coin, 14%, +5%, guard 35% | +15.0%/mo dd  -61% |  +8.1%/mo dd  -30% |  +6.1%/mo dd  -29% | 2022 +39% | +15.1%/mo dd  -70% | +11.1%/mo dd  -61%
+  same, real bot timing | +17.0%/mo dd  -59% |  +7.7%/mo dd  -29% |  +5.3%/mo dd  -29% | 2022 +21% | +17.1%/mo dd  -70% | +11.1%/mo dd  -61%
+  same, bot timing + fills 0.2% worse | +14.4%/mo dd  -64% |  +7.2%/mo dd  -29% |  +5.1%/mo dd  -29% | 2022 -15% | +14.2%/mo dd  -74% | +10.2%/mo dd  -62%
+  same, no crash guard | +20.0%/mo dd  -64% |  +7.8%/mo dd  -30% |  +5.5%/mo dd  -29% | 2022 +24% | -10.2%/mo dd -100% | +11.7%/mo dd  -59%
+2 coins x50%, 14%, +5%, guard 35% | +11.4%/mo dd  -42% |  +6.8%/mo dd  -26% |  +4.9%/mo dd  -24% | 2022 +36% | +10.5%/mo dd  -46% |  +7.3%/mo dd  -58%

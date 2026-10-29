@@ -1,0 +1,590 @@
+hr_stress  PB_DATA=/tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_data  PB_OUT=/tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_hr/stress
+hourly panels: 19 coins 2021-01-01 00:00:00 .. 2026-10-22 01:00:00; 22 coins 2021-01-01 00:00:00 .. 2026-10-22 01:00:00
+
+A d12 N1 f1.00 tp3% 48h: normal  [ 491/ 225 trades] 21-23 +17.8%/mo x  361.85 DD  -61% | 24-26  +7.0%/mo x  9.78 DD  -49% worst-mo  -24%  reproduces grid960: yes
+  bot timing             [ 495/ 226 trades] 21-23 +17.7%/mo x  349.56 DD  -58% | 24-26  +7.3%/mo x 10.69 DD  -48% worst-mo  -24%
+  fills 0.2% worse       [ 470/ 218 trades] 21-23 +13.6%/mo x   99.69 DD  -62% | 24-26  +5.7%/mo x  6.42 DD  -52% worst-mo  -24%
+  +LUNA/FTT/SRM          [ 453/ 225 trades] 21-23 -12.2%/mo x    0.01 DD -100% | 24-26  +7.0%/mo x  9.78 DD  -49% worst-mo  -24%
+
+B d12 N1 f1.00 tp1.5% 96h: normal  [ 579/ 255 trades] 21-23 +16.6%/mo x  252.32 DD  -59% | 24-26  +5.7%/mo x  6.57 DD  -30% worst-mo  -14%  reproduces grid960: yes
+  bot timing             [ 592/ 256 trades] 21-23 +14.4%/mo x  126.88 DD  -59% | 24-26  +6.5%/mo x  8.27 DD  -30% worst-mo  -13%
+  fills 0.2% worse       [ 557/ 248 trades] 21-23 +14.4%/mo x  128.00 DD  -59% | 24-26  +5.0%/mo x  5.25 DD  -31% worst-mo  -14%
+  +LUNA/FTT/SRM          [ 410/   0 trades] 21-23 -25.4%/mo x    0.00 DD -100% | 24-26  +0.0%/mo x  1.00 DD    0% worst-mo   +0%
+      FROZEN from 2022-05-13 00:00:00 to the end at x2.62e-05 of the start: LUNAUSDT data ends 2022-05-13 00:00:00
+
+C d12 N2 f0.50 tp3% 48h: normal  [1027/ 478 trades] 21-23 +12.9%/mo x   79.74 DD  -50% | 24-26  +6.3%/mo x  7.85 DD  -30% worst-mo  -10%  reproduces grid960: yes
+  bot timing             [1007/ 476 trades] 21-23 +12.3%/mo x   64.27 DD  -50% | 24-26  +6.7%/mo x  8.91 DD  -30% worst-mo   -6%
+  fills 0.2% worse       [1010/ 471 trades] 21-23 +11.1%/mo x   43.75 DD  -52% | 24-26  +5.0%/mo x  5.21 DD  -31% worst-mo  -10%
+  +LUNA/FTT/SRM          [1182/ 478 trades] 21-23 +10.9%/mo x   40.84 DD  -65% | 24-26  +6.3%/mo x  7.85 DD  -30% worst-mo  -10%
+
+D d12 N2 f0.50 tp3% 96h: normal  [ 941/ 462 trades] 21-23 +12.2%/mo x   63.40 DD  -53% | 24-26  +6.0%/mo x  7.12 DD  -28% worst-mo  -14%  reproduces grid960: yes
+  bot timing             [ 958/ 459 trades] 21-23 +11.8%/mo x   56.06 DD  -53% | 24-26  +6.2%/mo x  7.57 DD  -28% worst-mo  -11%
+  fills 0.2% worse       [ 921/ 457 trades] 21-23 +10.4%/mo x   35.35 DD  -54% | 24-26  +4.7%/mo x  4.69 DD  -28% worst-mo  -14%
+  +LUNA/FTT/SRM          [1123/ 462 trades] 21-23 +12.1%/mo x   62.04 DD  -56% | 24-26  +6.0%/mo x  7.12 DD  -28% worst-mo  -14%
+
+E d12 N2 f0.50 tp5% 48h: normal  [ 919/ 424 trades] 21-23 +13.3%/mo x   89.88 DD  -50% | 24-26  +5.5%/mo x  6.12 DD  -29% worst-mo  -21%  reproduces grid960: yes
+  bot timing             [ 897/ 424 trades] 21-23 +13.5%/mo x   95.67 DD  -46% | 24-26  +5.4%/mo x  5.85 DD  -29% worst-mo  -21%
+  fills 0.2% worse       [ 903/ 422 trades] 21-23 +11.8%/mo x   56.25 DD  -54% | 24-26  +5.0%/mo x  5.13 DD  -31% worst-mo  -22%
+  +LUNA/FTT/SRM          [1031/ 424 trades] 21-23  +9.7%/mo x   28.32 DD  -62% | 24-26  +5.5%/mo x  6.12 DD  -29% worst-mo  -21%
+
+F d15 N1 f1.00 tp5% 48h: normal  [ 285/  95 trades] 21-23 +17.5%/mo x  333.94 DD  -53% | 24-26  +6.5%/mo x  8.37 DD  -33% worst-mo  -16%  reproduces grid960: yes
+  bot timing             [ 285/  95 trades] 21-23 +18.3%/mo x  429.65 DD  -53% | 24-26  +6.7%/mo x  9.01 DD  -32% worst-mo  -15%
+  fills 0.2% worse       [ 279/  94 trades] 21-23 +16.0%/mo x  208.06 DD  -54% | 24-26  +6.2%/mo x  7.57 DD  -34% worst-mo  -17%
+  +LUNA/FTT/SRM          [ 267/  95 trades] 21-23  -2.4%/mo x    0.42 DD -100% | 24-26  +6.5%/mo x  8.37 DD  -33% worst-mo  -16%
+
+G d12 N3 f0.33 tp3% 48h: normal  [1320/ 626 trades] 21-23  +9.9%/mo x   30.08 DD  -44% | 24-26  +5.4%/mo x  5.98 DD  -30% worst-mo   -8%  reproduces grid960: yes
+  bot timing             [1327/ 626 trades] 21-23 +10.1%/mo x   32.28 DD  -42% | 24-26  +5.8%/mo x  6.75 DD  -30% worst-mo   -1%
+  fills 0.2% worse       [1300/ 621 trades] 21-23  +8.6%/mo x   19.53 DD  -47% | 24-26  +4.4%/mo x  4.21 DD  -30% worst-mo   -8%
+  +LUNA/FTT/SRM          [1499/ 626 trades] 21-23  +8.7%/mo x   19.95 DD  -51% | 24-26  +5.4%/mo x  5.98 DD  -30% worst-mo   -8%
+
+LIVE d12 N8 f0.20 tp1.5% 48h: normal  [1681/ 884 trades] 21-23  +5.0%/mo x    5.75 DD  -29% | 24-26  +2.9%/mo x  2.61 DD  -16% worst-mo   -6%  reproduces grid960: yes
+  bot timing             [1678/ 880 trades] 21-23  +4.0%/mo x    4.13 DD  -34% | 24-26  +3.0%/mo x  2.67 DD  -16% worst-mo   -3%
+  fills 0.2% worse       [1670/ 882 trades] 21-23  +3.9%/mo x    3.98 DD  -29% | 24-26  +2.6%/mo x  2.37 DD  -16% worst-mo   -6%
+  +LUNA/FTT/SRM          [1971/ 884 trades] 21-23  +4.7%/mo x    5.22 DD  -31% | 24-26  +2.9%/mo x  2.61 DD  -16% worst-mo   -6%
+
+hourly part done in 26s
+1-minute panel: (3052980, 22) 2021-01-01 00:00:00 .. 2026-10-22 02:00:00, loaded in 52s, max RSS 4.2 GB
+LUNAUSDT: no trading 2022-05-13 00:39:00 .. 2026-10-22 03:00:00 -> minutes 2022-05-13 00:40:00 .. 2026-10-22 02:59:00 blanked
+FTTUSDT: no trading 2022-11-15 04:29:00 .. 2023-09-22 08:00:00 -> minutes 2022-11-15 04:30:00 .. 2023-09-22 07:59:00 blanked
+FTTUSDT: no trading 2023-09-22 08:59:00 .. 2026-10-22 03:00:00 -> minutes 2023-09-22 09:00:00 .. 2026-10-22 02:59:00 blanked
+SRMUSDT: no trading 2022-11-28 02:59:00 .. 2026-10-22 03:00:00 -> minutes 2022-11-28 03:00:00 .. 2026-10-22 02:59:00 blanked
+FTT ref at the reopen hour (should be nan): nan
+  A d12 N1 f1.00 tp3% 48h      1-min ref              [ 491/ 225 trades] 21-23 +17.8%/mo x  361.85 DD  -61% | 24-26  +7.0%/mo x  9.78 DD  -49% worst-mo  -24%  (3s)
+  A d12 N1 f1.00 tp3% 48h      strict 1-min fills     [ 458/ 213 trades] 21-23 +15.1%/mo x  156.73 DD  -57% | 24-26  +5.7%/mo x  6.55 DD  -51% worst-mo  -25%  (0s)
+  A d12 N1 f1.00 tp3% 48h      strict + bot timing    [ 453/ 212 trades] 21-23 +13.8%/mo x  105.28 DD  -57% | 24-26  +5.2%/mo x  5.60 DD  -50% worst-mo  -25%  (0s)
+  A d12 N1 f1.00 tp3% 48h      worst combined         [ 491/ 212 trades] 21-23 +12.7%/mo x   74.86 DD  -76% | 24-26  +5.2%/mo x  5.60 DD  -50% worst-mo  -25%  (2s)
+      FTT trade around the halt: bought 2022-11-06 16:00:00 sold 2022-11-06 16:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-09 00:00:00 sold 2022-11-09 00:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-10 01:00:00 sold 2022-11-10 01:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-11 05:00:00 sold 2022-11-11 05:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-15 00:00:00 sold 2022-11-15 00:00:00 +2.8%
+  B d12 N1 f1.00 tp1.5% 96h    1-min ref              [ 579/ 255 trades] 21-23 +16.6%/mo x  252.12 DD  -59% | 24-26  +5.7%/mo x  6.57 DD  -30% worst-mo  -14%  (0s)
+  B d12 N1 f1.00 tp1.5% 96h    strict 1-min fills     [ 552/ 238 trades] 21-23 +12.7%/mo x   74.29 DD  -58% | 24-26  +5.0%/mo x  5.18 DD  -33% worst-mo  -16%  (0s)
+  B d12 N1 f1.00 tp1.5% 96h    strict + bot timing    [ 561/ 239 trades] 21-23 +10.5%/mo x   36.64 DD  -58% | 24-26  +6.0%/mo x  7.06 DD  -33% worst-mo  -16%  (0s)
+  B d12 N1 f1.00 tp1.5% 96h    worst combined         [ 408/   0 trades] 21-23 -22.7%/mo x    0.00 DD -100% | 24-26  +0.0%/mo x  1.00 DD    0% worst-mo   +0%  (0s)
+      FROZEN from 2022-05-12 23:00:00 to the end at x9.437e-05 of the start: LUNAUSDT data ends 2022-05-12 23:00:00
+  C d12 N2 f0.50 tp3% 48h      1-min ref              [1027/ 478 trades] 21-23 +12.9%/mo x   79.74 DD  -50% | 24-26  +6.3%/mo x  7.85 DD  -30% worst-mo  -10%  (0s)
+  C d12 N2 f0.50 tp3% 48h      strict 1-min fills     [ 981/ 453 trades] 21-23 +11.7%/mo x   53.22 DD  -53% | 24-26  +4.9%/mo x  5.03 DD  -30% worst-mo  -11%  (0s)
+  C d12 N2 f0.50 tp3% 48h      strict + bot timing    [ 947/ 449 trades] 21-23 +11.0%/mo x   42.23 DD  -53% | 24-26  +5.0%/mo x  5.20 DD  -30% worst-mo  -10%  (0s)
+  C d12 N2 f0.50 tp3% 48h      worst combined         [1102/ 449 trades] 21-23  +9.9%/mo x   29.69 DD  -55% | 24-26  +5.0%/mo x  5.20 DD  -30% worst-mo  -10%  (0s)
+      FTT trade around the halt: bought 2022-11-06 16:00:00 sold 2022-11-06 16:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-08 03:00:00 sold 2022-11-08 16:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-10 14:00:00 sold 2022-11-10 14:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-11 16:00:00 sold 2022-11-11 16:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-12 17:00:00 sold 2022-11-12 17:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-13 18:00:00 sold 2022-11-14 04:00:00 +2.8%
+  D d12 N2 f0.50 tp3% 96h      1-min ref              [ 941/ 462 trades] 21-23 +12.2%/mo x   63.40 DD  -53% | 24-26  +6.0%/mo x  7.12 DD  -28% worst-mo  -14%  (0s)
+  D d12 N2 f0.50 tp3% 96h      strict 1-min fills     [ 894/ 436 trades] 21-23 +10.8%/mo x   39.98 DD  -58% | 24-26  +4.6%/mo x  4.52 DD  -28% worst-mo  -15%  (0s)
+  D d12 N2 f0.50 tp3% 96h      strict + bot timing    [ 894/ 432 trades] 21-23 +10.4%/mo x   35.09 DD  -58% | 24-26  +4.6%/mo x  4.57 DD  -28% worst-mo  -15%  (0s)
+  D d12 N2 f0.50 tp3% 96h      worst combined         [1023/ 432 trades] 21-23 +11.3%/mo x   47.29 DD  -64% | 24-26  +4.6%/mo x  4.57 DD  -28% worst-mo  -15%  (0s)
+      FTT trade around the halt: bought 2022-11-06 16:00:00 sold 2022-11-06 16:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-08 03:00:00 sold 2022-11-08 16:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-11 01:00:00 sold 2022-11-11 09:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-12 10:00:00 sold 2023-09-22 08:00:00 -53.1%
+  E d12 N2 f0.50 tp5% 48h      1-min ref              [ 919/ 424 trades] 21-23 +13.3%/mo x   89.85 DD  -50% | 24-26  +5.5%/mo x  6.12 DD  -29% worst-mo  -21%  (0s)
+  E d12 N2 f0.50 tp5% 48h      strict 1-min fills     [ 863/ 398 trades] 21-23 +12.1%/mo x   61.12 DD  -49% | 24-26  +4.2%/mo x  3.96 DD  -34% worst-mo  -22%  (0s)
+  E d12 N2 f0.50 tp5% 48h      strict + bot timing    [ 856/ 397 trades] 21-23 +12.7%/mo x   73.15 DD  -48% | 24-26  +4.1%/mo x  3.90 DD  -32% worst-mo  -22%  (0s)
+  E d12 N2 f0.50 tp5% 48h      worst combined         [ 960/ 397 trades] 21-23  +9.0%/mo x   22.14 DD  -63% | 24-26  +4.1%/mo x  3.90 DD  -32% worst-mo  -22%  (0s)
+      FTT trade around the halt: bought 2022-11-06 16:00:00 sold 2022-11-06 16:00:00 +4.8%
+      FTT trade around the halt: bought 2022-11-08 03:00:00 sold 2022-11-08 16:00:00 +4.8%
+      FTT trade around the halt: bought 2022-11-11 01:00:00 sold 2022-11-11 09:00:00 +4.8%
+      FTT trade around the halt: bought 2022-11-12 10:00:00 sold 2022-11-14 09:00:00 -31.4%
+  F d15 N1 f1.00 tp5% 48h      1-min ref              [ 285/  95 trades] 21-23 +17.5%/mo x  334.01 DD  -53% | 24-26  +6.5%/mo x  8.37 DD  -33% worst-mo  -16%  (0s)
+  F d15 N1 f1.00 tp5% 48h      strict 1-min fills     [ 271/  87 trades] 21-23 +14.2%/mo x  119.65 DD  -50% | 24-26  +5.2%/mo x  5.53 DD  -33% worst-mo  -17%  (0s)
+  F d15 N1 f1.00 tp5% 48h      strict + bot timing    [ 271/  87 trades] 21-23 +15.7%/mo x  191.60 DD  -49% | 24-26  +5.4%/mo x  5.95 DD  -32% worst-mo  -15%  (0s)
+  F d15 N1 f1.00 tp5% 48h      worst combined         [ 298/  87 trades] 21-23  -0.7%/mo x    0.77 DD -100% | 24-26  +5.4%/mo x  5.95 DD  -32% worst-mo  -15%  (0s)
+      FTT trade around the halt: bought 2022-11-06 16:00:00 sold 2022-11-06 17:00:00 +6.5%
+      FTT trade around the halt: bought 2022-11-09 18:00:00 sold 2022-11-10 14:00:00 +4.8%
+      FTT trade around the halt: bought 2022-11-11 15:00:00 sold 2022-11-11 15:00:00 +4.8%
+      FTT trade around the halt: bought 2022-11-13 17:00:00 sold 2022-11-14 04:00:00 +4.8%
+  G d12 N3 f0.33 tp3% 48h      1-min ref              [1320/ 626 trades] 21-23  +9.9%/mo x   30.08 DD  -44% | 24-26  +5.4%/mo x  5.98 DD  -30% worst-mo   -8%  (0s)
+  G d12 N3 f0.33 tp3% 48h      strict 1-min fills     [1277/ 586 trades] 21-23  +8.9%/mo x   21.69 DD  -43% | 24-26  +4.1%/mo x  3.93 DD  -30% worst-mo   -9%  (0s)
+  G d12 N3 f0.33 tp3% 48h      strict + bot timing    [1264/ 586 trades] 21-23  +9.3%/mo x   24.34 DD  -38% | 24-26  +4.2%/mo x  3.98 DD  -30% worst-mo   -9%  (0s)
+  G d12 N3 f0.33 tp3% 48h      worst combined         [1452/ 586 trades] 21-23  +7.3%/mo x   12.50 DD  -52% | 24-26  +4.2%/mo x  3.98 DD  -30% worst-mo   -9%  (0s)
+      FTT trade around the halt: bought 2022-11-06 15:00:00 sold 2022-11-06 16:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-08 02:00:00 sold 2022-11-08 16:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-09 17:00:00 sold 2022-11-09 17:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-11 01:00:00 sold 2022-11-11 09:00:00 +2.8%
+      FTT trade around the halt: bought 2022-11-12 10:00:00 sold 2022-11-14 09:00:00 -31.4%
+  LIVE d12 N8 f0.20 tp1.5% 48h 1-min ref              [1681/ 884 trades] 21-23  +5.0%/mo x    5.74 DD  -29% | 24-26  +2.9%/mo x  2.61 DD  -16% worst-mo   -6%  (0s)
+  LIVE d12 N8 f0.20 tp1.5% 48h strict 1-min fills     [1610/ 847 trades] 21-23  +3.7%/mo x    3.70 DD  -30% | 24-26  +2.5%/mo x  2.31 DD  -18% worst-mo   -8%  (0s)
+  LIVE d12 N8 f0.20 tp1.5% 48h strict + bot timing    [1608/ 846 trades] 21-23  +3.0%/mo x    2.93 DD  -35% | 24-26  +2.5%/mo x  2.33 DD  -18% worst-mo   -5%  (0s)
+  LIVE d12 N8 f0.20 tp1.5% 48h worst combined         [1895/ 846 trades] 21-23  +3.4%/mo x    3.38 DD  -37% | 24-26  +2.5%/mo x  2.33 DD  -18% worst-mo   -5%  (0s)
+      FTT trade around the halt: bought 2022-11-06 15:00:00 sold 2022-11-06 16:00:00 +1.3%
+      FTT trade around the halt: bought 2022-11-08 02:00:00 sold 2022-11-08 16:00:00 +1.3%
+      FTT trade around the halt: bought 2022-11-09 17:00:00 sold 2022-11-09 17:00:00 +1.3%
+      FTT trade around the halt: bought 2022-11-11 01:00:00 sold 2022-11-11 09:00:00 +1.3%
+      FTT trade around the halt: bought 2022-11-12 10:00:00 sold 2022-11-12 14:00:00 +1.3%
+      FTT trade around the halt: bought 2022-11-13 15:00:00 sold 2022-11-13 15:00:00 +1.3%
+      FTT trade around the halt: bought 2022-11-14 16:00:00 sold 2022-11-14 16:00:00 +1.3%
+1-minute part done in 64s
+
+================ SUMMARY: %/month and worst drop (2021-23 | 2024-26)
+
+A d12 N1 f1.00 tp3% 48h
+  normal                 [ 491/ 225 trades] 21-23 +17.8%/mo x  361.85 DD  -61% | 24-26  +7.0%/mo x  9.78 DD  -49% worst-mo  -24%  2022    +7%
+  bot timing             [ 495/ 226 trades] 21-23 +17.7%/mo x  349.56 DD  -58% | 24-26  +7.3%/mo x 10.69 DD  -48% worst-mo  -24%  2022    +9%
+  1-min ref              [ 491/ 225 trades] 21-23 +17.8%/mo x  361.85 DD  -61% | 24-26  +7.0%/mo x  9.78 DD  -49% worst-mo  -24%  2022    +7%
+  strict 1-min fills     [ 458/ 213 trades] 21-23 +15.1%/mo x  156.73 DD  -57% | 24-26  +5.7%/mo x  6.55 DD  -51% worst-mo  -25%  2022   +29%
+  strict + bot timing    [ 453/ 212 trades] 21-23 +13.8%/mo x  105.28 DD  -57% | 24-26  +5.2%/mo x  5.60 DD  -50% worst-mo  -25%  2022    +2%
+  fills 0.2% worse       [ 470/ 218 trades] 21-23 +13.6%/mo x   99.69 DD  -62% | 24-26  +5.7%/mo x  6.42 DD  -52% worst-mo  -24%  2022    -2%
+  +LUNA/FTT/SRM          [ 453/ 225 trades] 21-23 -12.2%/mo x    0.01 DD -100% | 24-26  +7.0%/mo x  9.78 DD  -49% worst-mo  -24%  2022  -100%
+  worst combined         [ 491/ 212 trades] 21-23 +12.7%/mo x   74.86 DD  -76% | 24-26  +5.2%/mo x  5.60 DD  -50% worst-mo  -25%  2022   -32%
+  jitter band (9 runs)   21-23 +16.4..+17.8%/mo DD -62..-60% | 24-26 +6.5..+7.2%/mo DD -52..-49%
+  2024 fresh +0..29d     24-26 +6.7..+7.3%/mo (median +7.0%) DD -49..-49% (median -49%); runs under 5%/mo: 0/30
+      depth 11.9%    21-23 +16.6%/mo DD  -60% | 24-26  +7.2%/mo DD  -49%
+      depth 12.1%    21-23 +17.3%/mo DD  -62% | 24-26  +6.5%/mo DD  -52%
+      start +1d      21-23 +17.8%/mo DD  -61% | 24-26  +7.0%/mo DD  -49%
+      start +2d      21-23 +16.8%/mo DD  -61% | 24-26  +7.0%/mo DD  -49%
+      start +3d      21-23 +17.3%/mo DD  -61% | 24-26  +6.8%/mo DD  -49%
+      start +4d      21-23 +17.1%/mo DD  -61% | 24-26  +6.7%/mo DD  -49%
+      start +5d      21-23 +17.2%/mo DD  -61% | 24-26  +7.1%/mo DD  -49%
+      start +6d      21-23 +16.4%/mo DD  -61% | 24-26  +6.9%/mo DD  -49%
+      start +7d      21-23 +16.4%/mo DD  -61% | 24-26  +6.9%/mo DD  -49%
+
+B d12 N1 f1.00 tp1.5% 96h
+  normal                 [ 579/ 255 trades] 21-23 +16.6%/mo x  252.32 DD  -59% | 24-26  +5.7%/mo x  6.57 DD  -30% worst-mo  -14%  2022  +146%
+  bot timing             [ 592/ 256 trades] 21-23 +14.4%/mo x  126.88 DD  -59% | 24-26  +6.5%/mo x  8.27 DD  -30% worst-mo  -13%  2022  +116%
+  1-min ref              [ 579/ 255 trades] 21-23 +16.6%/mo x  252.12 DD  -59% | 24-26  +5.7%/mo x  6.57 DD  -30% worst-mo  -14%  2022  +146%
+  strict 1-min fills     [ 552/ 238 trades] 21-23 +12.7%/mo x   74.29 DD  -58% | 24-26  +5.0%/mo x  5.18 DD  -33% worst-mo  -16%  2022   +35%
+  strict + bot timing    [ 561/ 239 trades] 21-23 +10.5%/mo x   36.64 DD  -58% | 24-26  +6.0%/mo x  7.06 DD  -33% worst-mo  -16%  2022   +12%
+  fills 0.2% worse       [ 557/ 248 trades] 21-23 +14.4%/mo x  128.00 DD  -59% | 24-26  +5.0%/mo x  5.25 DD  -31% worst-mo  -14%  2022   +99%
+  +LUNA/FTT/SRM          [ 410/   0 trades] 21-23 -25.4%/mo x    0.00 DD -100% | 24-26  +0.0%/mo x  1.00 DD    0% worst-mo   +0%  2022  -100%
+                         ^ no trades in 2024-26: the account is wiped or stuck in a delisted coin
+  worst combined         [ 408/   0 trades] 21-23 -22.7%/mo x    0.00 DD -100% | 24-26  +0.0%/mo x  1.00 DD    0% worst-mo   +0%  2022  -100%
+                         ^ no trades in 2024-26: the account is wiped or stuck in a delisted coin
+  jitter band (9 runs)   21-23 +15.4..+17.0%/mo DD -61..-59% | 24-26 +5.3..+5.8%/mo DD -32..-29%
+  2024 fresh +0..29d     24-26 +5.5..+5.8%/mo (median +5.5%) DD -30..-30% (median -30%); runs under 5%/mo: 0/30
+      depth 11.9%    21-23 +15.4%/mo DD  -61% | 24-26  +5.7%/mo DD  -29%
+      depth 12.1%    21-23 +15.5%/mo DD  -59% | 24-26  +5.3%/mo DD  -32%
+      start +1d      21-23 +16.6%/mo DD  -59% | 24-26  +5.8%/mo DD  -30%
+      start +2d      21-23 +15.7%/mo DD  -59% | 24-26  +5.8%/mo DD  -30%
+      start +3d      21-23 +17.0%/mo DD  -59% | 24-26  +5.6%/mo DD  -30%
+      start +4d      21-23 +16.1%/mo DD  -59% | 24-26  +5.6%/mo DD  -30%
+      start +5d      21-23 +16.6%/mo DD  -59% | 24-26  +5.7%/mo DD  -30%
+      start +6d      21-23 +15.7%/mo DD  -59% | 24-26  +5.6%/mo DD  -30%
+      start +7d      21-23 +15.7%/mo DD  -59% | 24-26  +5.6%/mo DD  -30%
+
+C d12 N2 f0.50 tp3% 48h
+  normal                 [1027/ 478 trades] 21-23 +12.9%/mo x   79.74 DD  -50% | 24-26  +6.3%/mo x  7.85 DD  -30% worst-mo  -10%  2022   +35%
+  bot timing             [1007/ 476 trades] 21-23 +12.3%/mo x   64.27 DD  -50% | 24-26  +6.7%/mo x  8.91 DD  -30% worst-mo   -6%  2022   +37%
+  1-min ref              [1027/ 478 trades] 21-23 +12.9%/mo x   79.74 DD  -50% | 24-26  +6.3%/mo x  7.85 DD  -30% worst-mo  -10%  2022   +35%
+  strict 1-min fills     [ 981/ 453 trades] 21-23 +11.7%/mo x   53.22 DD  -53% | 24-26  +4.9%/mo x  5.03 DD  -30% worst-mo  -11%  2022   +29%
+  strict + bot timing    [ 947/ 449 trades] 21-23 +11.0%/mo x   42.23 DD  -53% | 24-26  +5.0%/mo x  5.20 DD  -30% worst-mo  -10%  2022   +26%
+  fills 0.2% worse       [1010/ 471 trades] 21-23 +11.1%/mo x   43.75 DD  -52% | 24-26  +5.0%/mo x  5.21 DD  -31% worst-mo  -10%  2022   +16%
+  +LUNA/FTT/SRM          [1182/ 478 trades] 21-23 +10.9%/mo x   40.84 DD  -65% | 24-26  +6.3%/mo x  7.85 DD  -30% worst-mo  -10%  2022   -29%
+  worst combined         [1102/ 449 trades] 21-23  +9.9%/mo x   29.69 DD  -55% | 24-26  +5.0%/mo x  5.20 DD  -30% worst-mo  -10%  2022   -12%
+  jitter band (9 runs)   21-23 +12.0..+13.1%/mo DD -52..-50% | 24-26 +5.9..+6.3%/mo DD -30..-29%
+  2024 fresh +0..29d     24-26 +6.1..+6.3%/mo (median +6.2%) DD -30..-30% (median -30%); runs under 5%/mo: 0/30
+      depth 11.9%    21-23 +12.3%/mo DD  -52% | 24-26  +6.2%/mo DD  -29%
+      depth 12.1%    21-23 +13.1%/mo DD  -50% | 24-26  +5.9%/mo DD  -30%
+      start +1d      21-23 +12.8%/mo DD  -50% | 24-26  +6.3%/mo DD  -30%
+      start +2d      21-23 +12.4%/mo DD  -50% | 24-26  +6.3%/mo DD  -30%
+      start +3d      21-23 +12.4%/mo DD  -50% | 24-26  +6.1%/mo DD  -30%
+      start +4d      21-23 +12.4%/mo DD  -50% | 24-26  +6.1%/mo DD  -30%
+      start +5d      21-23 +12.2%/mo DD  -50% | 24-26  +6.1%/mo DD  -30%
+      start +6d      21-23 +12.0%/mo DD  -50% | 24-26  +6.2%/mo DD  -30%
+      start +7d      21-23 +12.0%/mo DD  -50% | 24-26  +6.2%/mo DD  -30%
+
+D d12 N2 f0.50 tp3% 96h
+  normal                 [ 941/ 462 trades] 21-23 +12.2%/mo x   63.40 DD  -53% | 24-26  +6.0%/mo x  7.12 DD  -28% worst-mo  -14%  2022    -6%
+  bot timing             [ 958/ 459 trades] 21-23 +11.8%/mo x   56.06 DD  -53% | 24-26  +6.2%/mo x  7.57 DD  -28% worst-mo  -11%  2022    -2%
+  1-min ref              [ 941/ 462 trades] 21-23 +12.2%/mo x   63.40 DD  -53% | 24-26  +6.0%/mo x  7.12 DD  -28% worst-mo  -14%  2022    -6%
+  strict 1-min fills     [ 894/ 436 trades] 21-23 +10.8%/mo x   39.98 DD  -58% | 24-26  +4.6%/mo x  4.52 DD  -28% worst-mo  -15%  2022    -7%
+  strict + bot timing    [ 894/ 432 trades] 21-23 +10.4%/mo x   35.09 DD  -58% | 24-26  +4.6%/mo x  4.57 DD  -28% worst-mo  -15%  2022    -2%
+  fills 0.2% worse       [ 921/ 457 trades] 21-23 +10.4%/mo x   35.35 DD  -54% | 24-26  +4.7%/mo x  4.69 DD  -28% worst-mo  -14%  2022   -17%
+  +LUNA/FTT/SRM          [1123/ 462 trades] 21-23 +12.1%/mo x   62.04 DD  -56% | 24-26  +6.0%/mo x  7.12 DD  -28% worst-mo  -14%  2022    -4%
+  worst combined         [1023/ 432 trades] 21-23 +11.3%/mo x   47.29 DD  -64% | 24-26  +4.6%/mo x  4.57 DD  -28% worst-mo  -15%  2022   -10%
+  jitter band (9 runs)   21-23 +11.3..+13.2%/mo DD -53..-52% | 24-26 +5.7..+6.1%/mo DD -28..-28%
+  2024 fresh +0..29d     24-26 +5.8..+6.0%/mo (median +5.9%) DD -28..-28% (median -28%); runs under 5%/mo: 0/30
+      depth 11.9%    21-23 +12.1%/mo DD  -53% | 24-26  +6.1%/mo DD  -28%
+      depth 12.1%    21-23 +13.2%/mo DD  -52% | 24-26  +5.7%/mo DD  -28%
+      start +1d      21-23 +12.1%/mo DD  -53% | 24-26  +6.0%/mo DD  -28%
+      start +2d      21-23 +11.5%/mo DD  -53% | 24-26  +6.0%/mo DD  -28%
+      start +3d      21-23 +11.7%/mo DD  -53% | 24-26  +5.8%/mo DD  -28%
+      start +4d      21-23 +11.7%/mo DD  -53% | 24-26  +5.8%/mo DD  -28%
+      start +5d      21-23 +11.5%/mo DD  -53% | 24-26  +5.9%/mo DD  -28%
+      start +6d      21-23 +11.3%/mo DD  -53% | 24-26  +5.9%/mo DD  -28%
+      start +7d      21-23 +11.3%/mo DD  -53% | 24-26  +5.9%/mo DD  -28%
+
+E d12 N2 f0.50 tp5% 48h
+  normal                 [ 919/ 424 trades] 21-23 +13.3%/mo x   89.88 DD  -50% | 24-26  +5.5%/mo x  6.12 DD  -29% worst-mo  -21%  2022   +46%
+  bot timing             [ 897/ 424 trades] 21-23 +13.5%/mo x   95.67 DD  -46% | 24-26  +5.4%/mo x  5.85 DD  -29% worst-mo  -21%  2022   +37%
+  1-min ref              [ 919/ 424 trades] 21-23 +13.3%/mo x   89.85 DD  -50% | 24-26  +5.5%/mo x  6.12 DD  -29% worst-mo  -21%  2022   +46%
+  strict 1-min fills     [ 863/ 398 trades] 21-23 +12.1%/mo x   61.12 DD  -49% | 24-26  +4.2%/mo x  3.96 DD  -34% worst-mo  -22%  2022   +43%
+  strict + bot timing    [ 856/ 397 trades] 21-23 +12.7%/mo x   73.15 DD  -48% | 24-26  +4.1%/mo x  3.90 DD  -32% worst-mo  -22%  2022   +42%
+  fills 0.2% worse       [ 903/ 422 trades] 21-23 +11.8%/mo x   56.25 DD  -54% | 24-26  +5.0%/mo x  5.13 DD  -31% worst-mo  -22%  2022   +22%
+  +LUNA/FTT/SRM          [1031/ 424 trades] 21-23  +9.7%/mo x   28.32 DD  -62% | 24-26  +5.5%/mo x  6.12 DD  -29% worst-mo  -21%  2022   -28%
+  worst combined         [ 960/ 397 trades] 21-23  +9.0%/mo x   22.14 DD  -63% | 24-26  +4.1%/mo x  3.90 DD  -32% worst-mo  -22%  2022   -36%
+  jitter band (9 runs)   21-23 +12.4..+13.8%/mo DD -50..-47% | 24-26 +4.8..+5.5%/mo DD -33..-29%
+  2024 fresh +0..29d     24-26 +5.3..+5.6%/mo (median +5.5%) DD -29..-29% (median -29%); runs under 5%/mo: 0/30
+      depth 11.9%    21-23 +13.0%/mo DD  -50% | 24-26  +5.4%/mo DD  -32%
+      depth 12.1%    21-23 +13.8%/mo DD  -47% | 24-26  +4.8%/mo DD  -33%
+      start +1d      21-23 +13.3%/mo DD  -50% | 24-26  +5.5%/mo DD  -29%
+      start +2d      21-23 +12.8%/mo DD  -50% | 24-26  +5.5%/mo DD  -29%
+      start +3d      21-23 +12.9%/mo DD  -50% | 24-26  +5.4%/mo DD  -29%
+      start +4d      21-23 +12.6%/mo DD  -50% | 24-26  +5.4%/mo DD  -29%
+      start +5d      21-23 +12.5%/mo DD  -50% | 24-26  +5.4%/mo DD  -29%
+      start +6d      21-23 +12.4%/mo DD  -50% | 24-26  +5.5%/mo DD  -29%
+      start +7d      21-23 +12.5%/mo DD  -50% | 24-26  +5.5%/mo DD  -29%
+
+F d15 N1 f1.00 tp5% 48h
+  normal                 [ 285/  95 trades] 21-23 +17.5%/mo x  333.94 DD  -53% | 24-26  +6.5%/mo x  8.37 DD  -33% worst-mo  -16%  2022   +54%
+  bot timing             [ 285/  95 trades] 21-23 +18.3%/mo x  429.65 DD  -53% | 24-26  +6.7%/mo x  9.01 DD  -32% worst-mo  -15%  2022   +30%
+  1-min ref              [ 285/  95 trades] 21-23 +17.5%/mo x  334.01 DD  -53% | 24-26  +6.5%/mo x  8.37 DD  -33% worst-mo  -16%  2022   +54%
+  strict 1-min fills     [ 271/  87 trades] 21-23 +14.2%/mo x  119.65 DD  -50% | 24-26  +5.2%/mo x  5.53 DD  -33% worst-mo  -17%  2022   +45%
+  strict + bot timing    [ 271/  87 trades] 21-23 +15.7%/mo x  191.60 DD  -49% | 24-26  +5.4%/mo x  5.95 DD  -32% worst-mo  -15%  2022   +18%
+  fills 0.2% worse       [ 279/  94 trades] 21-23 +16.0%/mo x  208.06 DD  -54% | 24-26  +6.2%/mo x  7.57 DD  -34% worst-mo  -17%  2022   +30%
+  +LUNA/FTT/SRM          [ 267/  95 trades] 21-23  -2.4%/mo x    0.42 DD -100% | 24-26  +6.5%/mo x  8.37 DD  -33% worst-mo  -16%  2022   -99%
+  worst combined         [ 298/  87 trades] 21-23  -0.7%/mo x    0.77 DD -100% | 24-26  +5.4%/mo x  5.95 DD  -32% worst-mo  -15%  2022   -99%
+  jitter band (9 runs)   21-23 +16.6..+17.5%/mo DD -54..-53% | 24-26 +6.3..+6.5%/mo DD -33..-33%
+  2024 fresh +0..29d     24-26 +6.1..+6.5%/mo (median +6.4%) DD -33..-33% (median -33%); runs under 5%/mo: 0/30
+      depth 14.9%    21-23 +17.1%/mo DD  -54% | 24-26  +6.4%/mo DD  -33%
+      depth 15.1%    21-23 +17.0%/mo DD  -53% | 24-26  +6.3%/mo DD  -33%
+      start +1d      21-23 +17.5%/mo DD  -53% | 24-26  +6.5%/mo DD  -33%
+      start +2d      21-23 +16.8%/mo DD  -53% | 24-26  +6.5%/mo DD  -33%
+      start +3d      21-23 +17.1%/mo DD  -53% | 24-26  +6.4%/mo DD  -33%
+      start +4d      21-23 +16.8%/mo DD  -53% | 24-26  +6.4%/mo DD  -33%
+      start +5d      21-23 +16.7%/mo DD  -53% | 24-26  +6.4%/mo DD  -33%
+      start +6d      21-23 +16.6%/mo DD  -53% | 24-26  +6.3%/mo DD  -33%
+      start +7d      21-23 +16.6%/mo DD  -53% | 24-26  +6.3%/mo DD  -33%
+
+G d12 N3 f0.33 tp3% 48h
+  normal                 [1320/ 626 trades] 21-23  +9.9%/mo x   30.08 DD  -44% | 24-26  +5.4%/mo x  5.98 DD  -30% worst-mo   -8%  2022   +44%
+  bot timing             [1327/ 626 trades] 21-23 +10.1%/mo x   32.28 DD  -42% | 24-26  +5.8%/mo x  6.75 DD  -30% worst-mo   -1%  2022   +48%
+  1-min ref              [1320/ 626 trades] 21-23  +9.9%/mo x   30.08 DD  -44% | 24-26  +5.4%/mo x  5.98 DD  -30% worst-mo   -8%  2022   +44%
+  strict 1-min fills     [1277/ 586 trades] 21-23  +8.9%/mo x   21.69 DD  -43% | 24-26  +4.1%/mo x  3.93 DD  -30% worst-mo   -9%  2022   +20%
+  strict + bot timing    [1264/ 586 trades] 21-23  +9.3%/mo x   24.34 DD  -38% | 24-26  +4.2%/mo x  3.98 DD  -30% worst-mo   -9%  2022   +19%
+  fills 0.2% worse       [1300/ 621 trades] 21-23  +8.6%/mo x   19.53 DD  -47% | 24-26  +4.4%/mo x  4.21 DD  -30% worst-mo   -8%  2022   +32%
+  +LUNA/FTT/SRM          [1499/ 626 trades] 21-23  +8.7%/mo x   19.95 DD  -51% | 24-26  +5.4%/mo x  5.98 DD  -30% worst-mo   -8%  2022   -19%
+  worst combined         [1452/ 586 trades] 21-23  +7.3%/mo x   12.50 DD  -52% | 24-26  +4.2%/mo x  3.98 DD  -30% worst-mo   -9%  2022   -24%
+  jitter band (9 runs)   21-23 +9.2..+10.5%/mo DD -45..-44% | 24-26 +5.2..+5.7%/mo DD -30..-27%
+  2024 fresh +0..29d     24-26 +5.3..+5.5%/mo (median +5.4%) DD -30..-30% (median -30%); runs under 5%/mo: 0/30
+      depth 11.9%    21-23 +10.5%/mo DD  -44% | 24-26  +5.7%/mo DD  -27%
+      depth 12.1%    21-23 +10.2%/mo DD  -45% | 24-26  +5.2%/mo DD  -30%
+      start +1d      21-23  +9.9%/mo DD  -44% | 24-26  +5.5%/mo DD  -30%
+      start +2d      21-23  +9.6%/mo DD  -44% | 24-26  +5.5%/mo DD  -30%
+      start +3d      21-23  +9.6%/mo DD  -44% | 24-26  +5.4%/mo DD  -30%
+      start +4d      21-23  +9.5%/mo DD  -44% | 24-26  +5.3%/mo DD  -30%
+      start +5d      21-23  +9.5%/mo DD  -44% | 24-26  +5.4%/mo DD  -30%
+      start +6d      21-23  +9.4%/mo DD  -44% | 24-26  +5.4%/mo DD  -30%
+      start +7d      21-23  +9.2%/mo DD  -44% | 24-26  +5.4%/mo DD  -30%
+
+LIVE d12 N8 f0.20 tp1.5% 48h
+  normal                 [1681/ 884 trades] 21-23  +5.0%/mo x    5.75 DD  -29% | 24-26  +2.9%/mo x  2.61 DD  -16% worst-mo   -6%  2022   +19%
+  bot timing             [1678/ 880 trades] 21-23  +4.0%/mo x    4.13 DD  -34% | 24-26  +3.0%/mo x  2.67 DD  -16% worst-mo   -3%  2022    +9%
+  1-min ref              [1681/ 884 trades] 21-23  +5.0%/mo x    5.74 DD  -29% | 24-26  +2.9%/mo x  2.61 DD  -16% worst-mo   -6%  2022   +19%
+  strict 1-min fills     [1610/ 847 trades] 21-23  +3.7%/mo x    3.70 DD  -30% | 24-26  +2.5%/mo x  2.31 DD  -18% worst-mo   -8%  2022    -2%
+  strict + bot timing    [1608/ 846 trades] 21-23  +3.0%/mo x    2.93 DD  -35% | 24-26  +2.5%/mo x  2.33 DD  -18% worst-mo   -5%  2022    -1%
+  fills 0.2% worse       [1670/ 882 trades] 21-23  +3.9%/mo x    3.98 DD  -29% | 24-26  +2.6%/mo x  2.37 DD  -16% worst-mo   -6%  2022    -2%
+  +LUNA/FTT/SRM          [1971/ 884 trades] 21-23  +4.7%/mo x    5.22 DD  -31% | 24-26  +2.9%/mo x  2.61 DD  -16% worst-mo   -6%  2022    +1%
+  worst combined         [1895/ 846 trades] 21-23  +3.4%/mo x    3.38 DD  -37% | 24-26  +2.5%/mo x  2.33 DD  -18% worst-mo   -5%  2022    +2%
+  jitter band (9 runs)   21-23 +4.7..+5.0%/mo DD -33..-29% | 24-26 +2.8..+3.1%/mo DD -17..-16%
+  2024 fresh +0..29d     24-26 +2.8..+2.9%/mo (median +2.8%) DD -16..-16% (median -16%); runs under 5%/mo: 30/30
+      depth 11.9%    21-23  +4.8%/mo DD  -33% | 24-26  +3.1%/mo DD  -17%
+      depth 12.1%    21-23  +4.9%/mo DD  -30% | 24-26  +3.0%/mo DD  -16%
+      start +1d      21-23  +5.0%/mo DD  -29% | 24-26  +2.9%/mo DD  -16%
+      start +2d      21-23  +4.8%/mo DD  -29% | 24-26  +2.9%/mo DD  -16%
+      start +3d      21-23  +4.8%/mo DD  -29% | 24-26  +2.8%/mo DD  -16%
+      start +4d      21-23  +4.8%/mo DD  -29% | 24-26  +2.8%/mo DD  -16%
+      start +5d      21-23  +4.8%/mo DD  -29% | 24-26  +2.8%/mo DD  -16%
+      start +6d      21-23  +4.8%/mo DD  -29% | 24-26  +2.8%/mo DD  -16%
+      start +7d      21-23  +4.7%/mo DD  -29% | 24-26  +2.8%/mo DD  -16%
+
+================ CONCENTRATION RISK (single-trade losses as % of equity; worst day / week)
+
+A d12 N1 f1.00 tp3% 48h
+  [normal] 2021-23: 491 trades | trades losing >5% of equity 40, >10% 27, >20% 7 | worst day -37.4% (2021-02-01) | worst week -45.0% (to 2021-05-23) | worst month -24.2% | worst 6m -31.4% (17% of 6m windows lose) | worst 12m -26.1% (1% of 12m windows lose) | longest under water 265 days
+      RENDERUSDT bought 2022-06-11 08:00 sold 2022-06-13 08:00  trade  -41.6%  size 100.0% of equity  ->  -41.6% of equity
+      SOLUSDT    bought 2021-05-21 11:00 sold 2021-05-23 11:00  trade  -39.9%  size 100.0% of equity  ->  -39.9% of equity
+      XRPUSDT    bought 2021-02-01 12:00 sold 2021-02-03 12:00  trade  -39.0%  size 100.0% of equity  ->  -39.0% of equity
+      RENDERUSDT bought 2022-01-20 22:00 sold 2022-01-22 22:00  trade  -26.9%  size 100.0% of equity  ->  -26.9% of equity
+      SOLUSDT    bought 2022-11-06 23:00 sold 2022-11-08 23:00  trade  -25.1%  size 100.0% of equity  ->  -25.1% of equity
+  [normal] 2024-26: 225 trades | trades losing >5% of equity 21, >10% 9, >20% 2 | worst day -29.5% (2025-10-10) | worst week -21.7% (to 2024-04-28) | worst month -23.9% | worst 6m -41.6% (24% of 6m windows lose) | worst 12m -22.2% (26% of 12m windows lose) | longest under water 369 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 06:00  trade  -21.7%  size 100.0% of equity  ->  -21.7% of equity
+      FETUSDT    bought 2025-10-09 16:00 sold 2025-10-11 16:00  trade  -20.6%  size 100.0% of equity  ->  -20.6% of equity
+      RENDERUSDT bought 2026-01-29 18:00 sold 2026-01-31 18:00  trade  -16.3%  size 100.0% of equity  ->  -16.3% of equity
+      NEARUSDT   bought 2025-11-20 18:00 sold 2025-11-22 18:00  trade  -14.4%  size 100.0% of equity  ->  -14.4% of equity
+      FETUSDT    bought 2025-10-14 06:00 sold 2025-10-16 06:00  trade  -13.2%  size 100.0% of equity  ->  -13.2% of equity
+  [+LUNA/FTT/SRM] 2021-23: 453 trades | trades losing >5% of equity 41, >10% 28, >20% 11 | worst day -99.6% (2022-05-12) | worst week -100.0% (to 2022-05-15) | worst month -100.0% | worst 6m -100.0% (44% of 6m windows lose) | worst 12m -100.0% (73% of 12m windows lose) | longest under water 605 days
+      LUNAUSDT   bought 2022-05-10 21:00 sold 2022-05-12 21:00  trade -100.0%  size 100.0% of equity  -> -100.0% of equity
+      LUNAUSDT   bought 2021-05-21 11:00 sold 2021-05-23 11:00  trade  -45.5%  size 100.0% of equity  ->  -45.5% of equity
+      RENDERUSDT bought 2022-06-11 08:00 sold 2022-06-13 08:00  trade  -41.6%  size 100.0% of equity  ->  -41.6% of equity
+      SRMUSDT    bought 2022-11-11 16:00 sold 2022-11-13 16:00  trade  -39.6%  size 100.0% of equity  ->  -39.6% of equity
+      LUNAUSDT   bought 2022-05-07 21:00 sold 2022-05-09 21:00  trade  -39.5%  size 100.0% of equity  ->  -39.5% of equity
+  [+LUNA/FTT/SRM] 2024-26: 225 trades | trades losing >5% of equity 21, >10% 9, >20% 2 | worst day -29.5% (2025-10-10) | worst week -21.7% (to 2024-04-28) | worst month -23.9% | worst 6m -41.6% (24% of 6m windows lose) | worst 12m -22.2% (26% of 12m windows lose) | longest under water 369 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 06:00  trade  -21.7%  size 100.0% of equity  ->  -21.7% of equity
+      FETUSDT    bought 2025-10-09 16:00 sold 2025-10-11 16:00  trade  -20.6%  size 100.0% of equity  ->  -20.6% of equity
+      RENDERUSDT bought 2026-01-29 18:00 sold 2026-01-31 18:00  trade  -16.3%  size 100.0% of equity  ->  -16.3% of equity
+      NEARUSDT   bought 2025-11-20 18:00 sold 2025-11-22 18:00  trade  -14.4%  size 100.0% of equity  ->  -14.4% of equity
+      FETUSDT    bought 2025-10-14 06:00 sold 2025-10-16 06:00  trade  -13.2%  size 100.0% of equity  ->  -13.2% of equity
+  [worst combined] 2021-23: 491 trades | trades losing >5% of equity 46, >10% 29, >20% 8 | worst day -44.3% (2022-11-13) | worst week -49.9% (to 2022-11-13) | worst month -41.3% | worst 6m -57.9% (22% of 6m windows lose) | worst 12m -61.8% (29% of 12m windows lose) | longest under water 553 days
+      RENDERUSDT bought 2022-06-11 08:00 sold 2022-06-13 08:00  trade  -41.3%  size 100.0% of equity  ->  -41.3% of equity
+      LUNAUSDT   bought 2022-05-07 21:00 sold 2022-05-09 21:00  trade  -39.8%  size 100.0% of equity  ->  -39.8% of equity
+      SRMUSDT    bought 2021-09-19 22:00 sold 2021-09-21 22:00  trade  -27.7%  size 100.0% of equity  ->  -27.7% of equity
+      RENDERUSDT bought 2022-01-20 22:00 sold 2022-01-22 22:00  trade  -26.9%  size 100.0% of equity  ->  -26.9% of equity
+      FETUSDT    bought 2021-05-21 04:00 sold 2021-05-23 04:00  trade  -25.8%  size 100.0% of equity  ->  -25.8% of equity
+  [worst combined] 2024-26: 212 trades | trades losing >5% of equity 23, >10% 10, >20% 2 | worst day -29.5% (2025-10-10) | worst week -21.3% (to 2024-04-28) | worst month -25.5% | worst 6m -42.8% (31% of 6m windows lose) | worst 12m -34.1% (35% of 12m windows lose) | longest under water 392 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 05:00  trade  -21.3%  size 100.0% of equity  ->  -21.3% of equity
+      FETUSDT    bought 2025-10-09 17:00 sold 2025-10-11 17:00  trade  -20.2%  size 100.0% of equity  ->  -20.2% of equity
+      NEARUSDT   bought 2026-06-05 05:00 sold 2026-06-07 04:00  trade  -14.9%  size 100.0% of equity  ->  -14.9% of equity
+      RENDERUSDT bought 2026-01-29 19:00 sold 2026-01-31 19:00  trade  -14.7%  size 100.0% of equity  ->  -14.7% of equity
+      NEARUSDT   bought 2025-11-20 18:00 sold 2025-11-22 18:00  trade  -14.4%  size 100.0% of equity  ->  -14.4% of equity
+
+B d12 N1 f1.00 tp1.5% 96h
+  [normal] 2021-23: 579 trades | trades losing >5% of equity 19, >10% 14, >20% 6 | worst day -33.6% (2021-05-19) | worst week -49.8% (to 2021-05-23) | worst month -22.4% | worst 6m -2.2% (1% of 6m windows lose) | worst 12m +32.8% (0% of 12m windows lose) | longest under water 185 days
+      NEARUSDT   bought 2021-05-19 01:00 sold 2021-05-23 01:00  trade  -39.7%  size 100.0% of equity  ->  -39.7% of equity
+      RENDERUSDT bought 2022-11-07 14:00 sold 2022-11-11 14:00  trade  -39.2%  size 100.0% of equity  ->  -39.2% of equity
+      HBARUSDT   bought 2021-09-17 05:00 sold 2021-09-21 05:00  trade  -29.7%  size 100.0% of equity  ->  -29.7% of equity
+      RENDERUSDT bought 2022-05-05 14:00 sold 2022-05-09 14:00  trade  -27.2%  size 100.0% of equity  ->  -27.2% of equity
+      RENDERUSDT bought 2022-01-20 22:00 sold 2022-01-24 22:00  trade  -22.8%  size 100.0% of equity  ->  -22.8% of equity
+  [normal] 2024-26: 255 trades | trades losing >5% of equity 15, >10% 4, >20% 1 | worst day -14.7% (2024-04-24) | worst week -27.3% (to 2024-04-28) | worst month -13.6% | worst 6m -16.5% (21% of 6m windows lose) | worst 12m -18.9% (7% of 12m windows lose) | longest under water 344 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-28 06:00  trade  -27.3%  size 100.0% of equity  ->  -27.3% of equity
+      ARBUSDT    bought 2026-09-07 03:00 sold 2026-09-11 03:00  trade  -17.8%  size 100.0% of equity  ->  -17.8% of equity
+      BCHUSDT    bought 2026-06-03 03:00 sold 2026-06-07 03:00  trade  -13.9%  size 100.0% of equity  ->  -13.9% of equity
+      LTCUSDT    bought 2024-12-18 20:00 sold 2024-12-22 20:00  trade  -10.7%  size 100.0% of equity  ->  -10.7% of equity
+      HBARUSDT   bought 2026-09-29 14:00 sold 2026-10-03 14:00  trade   -9.6%  size 100.0% of equity  ->   -9.6% of equity
+  [+LUNA/FTT/SRM] 2021-23: 410 trades | trades losing >5% of equity 15, >10% 11, >20% 5 | worst day -100.0% (2022-05-12) | worst week -100.0% (to 2022-05-15) | worst month -100.0% | worst 6m -100.0% (20% of 6m windows lose) | worst 12m -100.0% (50% of 12m windows lose) | longest under water 614 days
+      NEARUSDT   bought 2021-05-19 01:00 sold 2021-05-23 01:00  trade  -39.7%  size 100.0% of equity  ->  -39.7% of equity
+      HBARUSDT   bought 2021-09-17 05:00 sold 2021-09-21 05:00  trade  -29.7%  size 100.0% of equity  ->  -29.7% of equity
+      RENDERUSDT bought 2022-05-05 14:00 sold 2022-05-09 14:00  trade  -27.2%  size 100.0% of equity  ->  -27.2% of equity
+      XRPUSDT    bought 2021-02-22 22:00 sold 2021-02-26 22:00  trade  -26.2%  size 100.0% of equity  ->  -26.2% of equity
+      RENDERUSDT bought 2022-01-20 22:00 sold 2022-01-24 22:00  trade  -22.8%  size 100.0% of equity  ->  -22.8% of equity
+  [+LUNA/FTT/SRM] 2024-26: 0 trades | trades losing >5% of equity 0, >10% 0, >20% 0 | worst day +0.0% (2024-01-01) | worst week +0.0% (to 2024-01-07) | worst month +0.0% | worst 6m +0.0% (0% of 6m windows lose) | worst 12m +0.0% (0% of 12m windows lose) | longest under water 0 days
+  [worst combined] 2021-23: 408 trades | trades losing >5% of equity 15, >10% 10, >20% 5 | worst day -100.0% (2022-05-12) | worst week -100.0% (to 2022-05-15) | worst month -100.0% | worst 6m -100.0% (20% of 6m windows lose) | worst 12m -100.0% (50% of 12m windows lose) | longest under water 733 days
+      NEARUSDT   bought 2021-05-19 01:00 sold 2021-05-23 01:00  trade  -39.5%  size 100.0% of equity  ->  -39.5% of equity
+      SOLUSDT    bought 2022-01-21 01:00 sold 2022-01-25 01:00  trade  -30.0%  size 100.0% of equity  ->  -30.0% of equity
+      HBARUSDT   bought 2021-09-17 06:00 sold 2021-09-21 05:00  trade  -29.9%  size 100.0% of equity  ->  -29.9% of equity
+      RENDERUSDT bought 2022-05-05 14:00 sold 2022-05-09 14:00  trade  -27.0%  size 100.0% of equity  ->  -27.0% of equity
+      XRPUSDT    bought 2021-02-22 23:00 sold 2021-02-26 22:00  trade  -26.0%  size 100.0% of equity  ->  -26.0% of equity
+  [worst combined] 2024-26: 0 trades | trades losing >5% of equity 0, >10% 0, >20% 0 | worst day +0.0% (2024-01-01) | worst week +0.0% (to 2024-01-07) | worst month +0.0% | worst 6m +0.0% (0% of 6m windows lose) | worst 12m +0.0% (0% of 12m windows lose) | longest under water 0 days
+
+C d12 N2 f0.50 tp3% 48h
+  [normal] 2021-23: 1027 trades | trades losing >5% of equity 29, >10% 10, >20% 1 | worst day -33.1% (2021-05-19) | worst week -36.5% (to 2021-05-23) | worst month -24.8% | worst 6m -11.4% (1% of 6m windows lose) | worst 12m -3.3% (0% of 12m windows lose) | longest under water 124 days
+      RENDERUSDT bought 2022-06-11 08:00 sold 2022-06-13 08:00  trade  -41.6%  size  50.0% of equity  ->  -20.8% of equity
+      XRPUSDT    bought 2021-02-01 12:00 sold 2021-02-03 12:00  trade  -39.0%  size  50.0% of equity  ->  -19.5% of equity
+      DOTUSDT    bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -34.4%  size  50.0% of equity  ->  -17.2% of equity
+      XRPUSDT    bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -32.4%  size  50.0% of equity  ->  -16.2% of equity
+      RENDERUSDT bought 2022-01-20 22:00 sold 2022-01-22 22:00  trade  -26.9%  size  50.0% of equity  ->  -13.4% of equity
+  [normal] 2024-26: 478 trades | trades losing >5% of equity 11, >10% 2, >20% 0 | worst day -16.6% (2025-10-10) | worst week -11.8% (to 2024-04-14) | worst month -9.8% | worst 6m -11.6% (1% of 6m windows lose) | worst 12m +10.1% (0% of 12m windows lose) | longest under water 156 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 06:00  trade  -21.7%  size  50.0% of equity  ->  -10.9% of equity
+      FETUSDT    bought 2025-10-09 16:00 sold 2025-10-11 16:00  trade  -20.6%  size  50.0% of equity  ->  -10.3% of equity
+      RENDERUSDT bought 2026-01-29 18:00 sold 2026-01-31 18:00  trade  -16.3%  size  50.0% of equity  ->   -8.1% of equity
+      SUIUSDT    bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.8%  size  50.0% of equity  ->   -7.4% of equity
+      NEARUSDT   bought 2025-11-20 18:00 sold 2025-11-22 18:00  trade  -14.4%  size  50.0% of equity  ->   -7.2% of equity
+  [+LUNA/FTT/SRM] 2021-23: 1182 trades | trades losing >5% of equity 37, >10% 14, >20% 2 | worst day -38.6% (2022-05-11) | worst week -45.9% (to 2022-05-15) | worst month -39.4% | worst 6m -49.3% (21% of 6m windows lose) | worst 12m -42.7% (30% of 12m windows lose) | longest under water 544 days
+      LUNAUSDT   bought 2022-05-10 21:00 sold 2022-05-12 21:00  trade -100.0%  size  34.8% of equity  ->  -34.8% of equity
+      RENDERUSDT bought 2022-06-11 08:00 sold 2022-06-13 08:00  trade  -41.6%  size  50.0% of equity  ->  -20.8% of equity
+      XRPUSDT    bought 2021-02-01 12:00 sold 2021-02-03 12:00  trade  -39.0%  size  50.0% of equity  ->  -19.5% of equity
+      LUNAUSDT   bought 2022-05-07 21:00 sold 2022-05-09 21:00  trade  -39.5%  size  43.3% of equity  ->  -17.1% of equity
+      SRMUSDT    bought 2021-09-19 22:00 sold 2021-09-21 22:00  trade  -27.8%  size  50.0% of equity  ->  -13.9% of equity
+  [+LUNA/FTT/SRM] 2024-26: 478 trades | trades losing >5% of equity 11, >10% 2, >20% 0 | worst day -16.6% (2025-10-10) | worst week -11.8% (to 2024-04-14) | worst month -9.8% | worst 6m -11.6% (1% of 6m windows lose) | worst 12m +10.1% (0% of 12m windows lose) | longest under water 156 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 06:00  trade  -21.7%  size  50.0% of equity  ->  -10.9% of equity
+      FETUSDT    bought 2025-10-09 16:00 sold 2025-10-11 16:00  trade  -20.6%  size  50.0% of equity  ->  -10.3% of equity
+      RENDERUSDT bought 2026-01-29 18:00 sold 2026-01-31 18:00  trade  -16.3%  size  50.0% of equity  ->   -8.1% of equity
+      SUIUSDT    bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.8%  size  50.0% of equity  ->   -7.4% of equity
+      NEARUSDT   bought 2025-11-20 18:00 sold 2025-11-22 18:00  trade  -14.4%  size  50.0% of equity  ->   -7.2% of equity
+  [worst combined] 2021-23: 1102 trades | trades losing >5% of equity 37, >10% 9, >20% 0 | worst day -33.1% (2021-05-19) | worst week -45.9% (to 2021-05-23) | worst month -27.0% | worst 6m -27.3% (12% of 6m windows lose) | worst 12m -15.3% (8% of 12m windows lose) | longest under water 303 days
+      LUNAUSDT   bought 2022-05-07 21:00 sold 2022-05-09 21:00  trade  -39.8%  size  43.3% of equity  ->  -17.2% of equity
+      SRMUSDT    bought 2021-09-19 22:00 sold 2021-09-21 22:00  trade  -27.7%  size  50.0% of equity  ->  -13.8% of equity
+      RENDERUSDT bought 2022-01-20 22:00 sold 2022-01-22 22:00  trade  -26.9%  size  50.0% of equity  ->  -13.4% of equity
+      FETUSDT    bought 2021-05-21 04:00 sold 2021-05-23 04:00  trade  -25.8%  size  50.0% of equity  ->  -12.9% of equity
+      SOLUSDT    bought 2022-11-06 23:00 sold 2022-11-08 23:00  trade  -25.2%  size  50.0% of equity  ->  -12.6% of equity
+  [worst combined] 2024-26: 449 trades | trades losing >5% of equity 11, >10% 2, >20% 0 | worst day -16.2% (2025-10-10) | worst week -11.6% (to 2024-04-14) | worst month -10.2% | worst 6m -19.3% (11% of 6m windows lose) | worst 12m +1.5% (0% of 12m windows lose) | longest under water 252 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 05:00  trade  -21.3%  size  50.0% of equity  ->  -10.6% of equity
+      FETUSDT    bought 2025-10-09 17:00 sold 2025-10-11 17:00  trade  -20.2%  size  50.0% of equity  ->  -10.1% of equity
+      RENDERUSDT bought 2026-01-29 19:00 sold 2026-01-31 19:00  trade  -14.7%  size  50.0% of equity  ->   -7.4% of equity
+      SUIUSDT    bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.7%  size  50.0% of equity  ->   -7.3% of equity
+      NEARUSDT   bought 2025-11-20 18:00 sold 2025-11-22 18:00  trade  -14.4%  size  50.0% of equity  ->   -7.2% of equity
+
+D d12 N2 f0.50 tp3% 96h
+  [normal] 2021-23: 941 trades | trades losing >5% of equity 26, >10% 7, >20% 2 | worst day -33.1% (2021-05-19) | worst week -44.7% (to 2021-05-23) | worst month -19.9% | worst 6m -22.8% (12% of 6m windows lose) | worst 12m -12.8% (4% of 12m windows lose) | longest under water 146 days
+      RENDERUSDT bought 2022-06-11 08:00 sold 2022-06-15 08:00  trade  -47.0%  size  50.0% of equity  ->  -23.5% of equity
+      SOLUSDT    bought 2022-11-06 23:00 sold 2022-11-10 23:00  trade  -45.7%  size  50.0% of equity  ->  -22.9% of equity
+      NEARUSDT   bought 2021-05-19 01:00 sold 2021-05-23 01:00  trade  -39.7%  size  50.0% of equity  ->  -19.8% of equity
+      LTCUSDT    bought 2021-05-19 01:00 sold 2021-05-23 01:00  trade  -37.1%  size  50.0% of equity  ->  -18.6% of equity
+      RENDERUSDT bought 2022-05-05 14:00 sold 2022-05-09 14:00  trade  -27.2%  size  50.0% of equity  ->  -13.6% of equity
+  [normal] 2024-26: 462 trades | trades losing >5% of equity 11, >10% 3, >20% 0 | worst day -16.6% (2025-10-10) | worst week -13.0% (to 2024-04-28) | worst month -14.1% | worst 6m -7.3% (0% of 6m windows lose) | worst 12m +8.9% (0% of 12m windows lose) | longest under water 144 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-28 06:00  trade  -27.3%  size  50.0% of equity  ->  -13.7% of equity
+      FETUSDT    bought 2025-10-09 16:00 sold 2025-10-13 16:00  trade  -25.0%  size  50.0% of equity  ->  -12.5% of equity
+      RENDERUSDT bought 2024-04-10 02:00 sold 2024-04-14 02:00  trade  -21.4%  size  50.0% of equity  ->  -10.7% of equity
+      ARBUSDT    bought 2026-09-07 03:00 sold 2026-09-11 03:00  trade  -17.8%  size  50.0% of equity  ->   -8.9% of equity
+      LINKUSDT   bought 2025-02-02 02:00 sold 2025-02-06 02:00  trade  -14.4%  size  50.0% of equity  ->   -7.2% of equity
+  [+LUNA/FTT/SRM] 2021-23: 1123 trades | trades losing >5% of equity 27, >10% 7, >20% 2 | worst day -33.4% (2022-11-09) | worst week -47.2% (to 2021-05-23) | worst month -19.7% | worst 6m -23.3% (21% of 6m windows lose) | worst 12m -10.6% (10% of 12m windows lose) | longest under water 372 days
+      RENDERUSDT bought 2022-06-11 08:00 sold 2022-06-15 08:00  trade  -47.0%  size  50.0% of equity  ->  -23.5% of equity
+      SOLUSDT    bought 2022-11-06 23:00 sold 2022-11-10 23:00  trade  -45.7%  size  50.0% of equity  ->  -22.9% of equity
+      NEARUSDT   bought 2021-05-19 01:00 sold 2021-05-23 01:00  trade  -39.7%  size  44.9% of equity  ->  -17.8% of equity
+      LTCUSDT    bought 2021-05-19 01:00 sold 2021-05-23 01:00  trade  -37.1%  size  44.9% of equity  ->  -16.7% of equity
+      RENDERUSDT bought 2022-05-05 14:00 sold 2022-05-09 14:00  trade  -27.2%  size  50.0% of equity  ->  -13.6% of equity
+  [+LUNA/FTT/SRM] 2024-26: 462 trades | trades losing >5% of equity 11, >10% 3, >20% 0 | worst day -16.6% (2025-10-10) | worst week -13.0% (to 2024-04-28) | worst month -14.1% | worst 6m -7.3% (0% of 6m windows lose) | worst 12m +8.9% (0% of 12m windows lose) | longest under water 144 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-28 06:00  trade  -27.3%  size  50.0% of equity  ->  -13.7% of equity
+      FETUSDT    bought 2025-10-09 16:00 sold 2025-10-13 16:00  trade  -25.0%  size  50.0% of equity  ->  -12.5% of equity
+      RENDERUSDT bought 2024-04-10 02:00 sold 2024-04-14 02:00  trade  -21.4%  size  50.0% of equity  ->  -10.7% of equity
+      ARBUSDT    bought 2026-09-07 03:00 sold 2026-09-11 03:00  trade  -17.8%  size  50.0% of equity  ->   -8.9% of equity
+      LINKUSDT   bought 2025-02-02 02:00 sold 2025-02-06 02:00  trade  -14.4%  size  50.0% of equity  ->   -7.2% of equity
+  [worst combined] 2021-23: 1023 trades | trades losing >5% of equity 28, >10% 5, >20% 1 | worst day -33.4% (2022-11-09) | worst week -55.6% (to 2021-05-23) | worst month -27.2% | worst 6m -20.0% (18% of 6m windows lose) | worst 12m -16.4% (6% of 12m windows lose) | longest under water 368 days
+      SOLUSDT    bought 2022-11-06 23:00 sold 2022-11-10 23:00  trade  -44.9%  size  50.0% of equity  ->  -22.4% of equity
+      NEARUSDT   bought 2021-05-19 01:00 sold 2021-05-23 01:00  trade  -39.5%  size  50.0% of equity  ->  -19.8% of equity
+      LTCUSDT    bought 2021-05-19 01:00 sold 2021-05-23 01:00  trade  -37.3%  size  50.0% of equity  ->  -18.7% of equity
+      RENDERUSDT bought 2022-05-05 14:00 sold 2022-05-09 14:00  trade  -27.0%  size  50.0% of equity  ->  -13.5% of equity
+      ETHUSDT    bought 2022-06-11 09:00 sold 2022-06-15 09:00  trade  -33.8%  size  38.3% of equity  ->  -12.9% of equity
+  [worst combined] 2024-26: 432 trades | trades losing >5% of equity 11, >10% 3, >20% 0 | worst day -16.2% (2025-10-10) | worst week -13.4% (to 2024-04-28) | worst month -14.6% | worst 6m -16.9% (10% of 6m windows lose) | worst 12m -7.3% (3% of 12m windows lose) | longest under water 251 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-28 05:00  trade  -28.2%  size  50.0% of equity  ->  -14.1% of equity
+      FETUSDT    bought 2025-10-09 17:00 sold 2025-10-13 17:00  trade  -25.8%  size  50.0% of equity  ->  -12.9% of equity
+      RENDERUSDT bought 2024-04-10 02:00 sold 2024-04-14 02:00  trade  -21.4%  size  50.0% of equity  ->  -10.7% of equity
+      ARBUSDT    bought 2026-09-07 03:00 sold 2026-09-11 03:00  trade  -17.9%  size  50.0% of equity  ->   -9.0% of equity
+      FETUSDT    bought 2025-10-14 18:00 sold 2025-10-18 17:00  trade  -20.6%  size  36.9% of equity  ->   -7.6% of equity
+
+E d12 N2 f0.50 tp5% 48h
+  [normal] 2021-23: 919 trades | trades losing >5% of equity 37, >10% 8, >20% 0 | worst day -24.9% (2021-05-19) | worst week -33.0% (to 2021-05-23) | worst month -19.1% | worst 6m -30.7% (8% of 6m windows lose) | worst 12m +4.3% (0% of 12m windows lose) | longest under water 287 days
+      XRPUSDT    bought 2021-02-01 12:00 sold 2021-02-03 12:00  trade  -39.0%  size  50.0% of equity  ->  -19.5% of equity
+      RENDERUSDT bought 2022-11-06 11:00 sold 2022-11-08 11:00  trade  -27.2%  size  50.0% of equity  ->  -13.6% of equity
+      RENDERUSDT bought 2022-01-20 22:00 sold 2022-01-22 22:00  trade  -26.9%  size  50.0% of equity  ->  -13.4% of equity
+      DOTUSDT    bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -34.4%  size  38.8% of equity  ->  -13.3% of equity
+      LINKUSDT   bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -33.8%  size  38.8% of equity  ->  -13.1% of equity
+  [normal] 2024-26: 424 trades | trades losing >5% of equity 15, >10% 2, >20% 0 | worst day -15.6% (2025-10-10) | worst week -12.2% (to 2024-04-14) | worst month -21.3% | worst 6m -19.1% (16% of 6m windows lose) | worst 12m -4.8% (2% of 12m windows lose) | longest under water 246 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 06:00  trade  -21.7%  size  50.0% of equity  ->  -10.9% of equity
+      FETUSDT    bought 2025-10-09 16:00 sold 2025-10-11 16:00  trade  -20.6%  size  50.0% of equity  ->  -10.3% of equity
+      SUIUSDT    bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.8%  size  50.0% of equity  ->   -7.4% of equity
+      FETUSDT    bought 2025-11-02 21:00 sold 2025-11-04 21:00  trade  -14.6%  size  50.0% of equity  ->   -7.3% of equity
+      NEARUSDT   bought 2025-11-20 18:00 sold 2025-11-22 18:00  trade  -14.4%  size  50.0% of equity  ->   -7.2% of equity
+  [+LUNA/FTT/SRM] 2021-23: 1031 trades | trades losing >5% of equity 44, >10% 12, >20% 1 | worst day -34.5% (2021-05-19) | worst week -45.2% (to 2022-11-13) | worst month -34.6% | worst 6m -54.1% (23% of 6m windows lose) | worst 12m -47.1% (17% of 12m windows lose) | longest under water 348 days
+      LUNAUSDT   bought 2022-05-10 21:00 sold 2022-05-12 21:00  trade -100.0%  size  24.1% of equity  ->  -24.1% of equity
+      XRPUSDT    bought 2021-02-01 12:00 sold 2021-02-03 12:00  trade  -39.0%  size  50.0% of equity  ->  -19.5% of equity
+      SRMUSDT    bought 2022-11-08 17:00 sold 2022-11-10 17:00  trade  -43.6%  size  36.9% of equity  ->  -16.1% of equity
+      SRMUSDT    bought 2022-11-12 00:00 sold 2022-11-14 00:00  trade  -61.7%  size  25.4% of equity  ->  -15.7% of equity
+      LUNAUSDT   bought 2022-05-07 21:00 sold 2022-05-09 21:00  trade  -39.5%  size  36.0% of equity  ->  -14.2% of equity
+  [+LUNA/FTT/SRM] 2024-26: 424 trades | trades losing >5% of equity 15, >10% 2, >20% 0 | worst day -15.6% (2025-10-10) | worst week -12.2% (to 2024-04-14) | worst month -21.3% | worst 6m -19.1% (16% of 6m windows lose) | worst 12m -4.8% (2% of 12m windows lose) | longest under water 246 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 06:00  trade  -21.7%  size  50.0% of equity  ->  -10.9% of equity
+      FETUSDT    bought 2025-10-09 16:00 sold 2025-10-11 16:00  trade  -20.6%  size  50.0% of equity  ->  -10.3% of equity
+      SUIUSDT    bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.8%  size  50.0% of equity  ->   -7.4% of equity
+      FETUSDT    bought 2025-11-02 21:00 sold 2025-11-04 21:00  trade  -14.6%  size  50.0% of equity  ->   -7.3% of equity
+      NEARUSDT   bought 2025-11-20 18:00 sold 2025-11-22 18:00  trade  -14.4%  size  50.0% of equity  ->   -7.2% of equity
+  [worst combined] 2021-23: 960 trades | trades losing >5% of equity 39, >10% 8, >20% 0 | worst day -38.4% (2022-05-11) | worst week -45.3% (to 2021-05-23) | worst month -35.8% | worst 6m -56.8% (30% of 6m windows lose) | worst 12m -52.9% (28% of 12m windows lose) | longest under water 631 days
+      SRMUSDT    bought 2022-11-12 00:00 sold 2022-11-13 23:00  trade  -64.3%  size  25.4% of equity  ->  -16.3% of equity
+      SRMUSDT    bought 2022-11-08 17:00 sold 2022-11-10 17:00  trade  -43.3%  size  36.9% of equity  ->  -16.0% of equity
+      LUNAUSDT   bought 2022-05-07 21:00 sold 2022-05-09 21:00  trade  -39.8%  size  36.0% of equity  ->  -14.3% of equity
+      SRMUSDT    bought 2021-09-19 22:00 sold 2021-09-21 22:00  trade  -27.7%  size  50.0% of equity  ->  -13.8% of equity
+      RENDERUSDT bought 2022-11-06 11:00 sold 2022-11-08 11:00  trade  -27.7%  size  50.0% of equity  ->  -13.8% of equity
+  [worst combined] 2024-26: 397 trades | trades losing >5% of equity 15, >10% 2, >20% 0 | worst day -15.3% (2025-10-10) | worst week -12.4% (to 2024-04-28) | worst month -21.7% | worst 6m -23.3% (21% of 6m windows lose) | worst 12m -12.1% (15% of 12m windows lose) | longest under water 393 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 05:00  trade  -21.3%  size  50.0% of equity  ->  -10.6% of equity
+      FETUSDT    bought 2025-10-09 17:00 sold 2025-10-11 17:00  trade  -20.2%  size  50.0% of equity  ->  -10.1% of equity
+      ADAUSDT    bought 2026-06-04 02:00 sold 2026-06-06 02:00  trade  -19.1%  size  38.6% of equity  ->   -7.4% of equity
+      SUIUSDT    bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.7%  size  50.0% of equity  ->   -7.3% of equity
+      FETUSDT    bought 2025-11-02 21:00 sold 2025-11-04 21:00  trade  -14.6%  size  50.0% of equity  ->   -7.3% of equity
+
+F d15 N1 f1.00 tp5% 48h
+  [normal] 2021-23: 285 trades | trades losing >5% of equity 32, >10% 17, >20% 5 | worst day -39.8% (2021-02-01) | worst week -31.8% (to 2021-05-23) | worst month -19.9% | worst 6m -24.4% (18% of 6m windows lose) | worst 12m +7.7% (0% of 12m windows lose) | longest under water 207 days
+      RENDERUSDT bought 2022-11-07 17:00 sold 2022-11-09 17:00  trade  -44.9%  size 100.0% of equity  ->  -44.9% of equity
+      XRPUSDT    bought 2021-02-01 12:00 sold 2021-02-03 12:00  trade  -39.0%  size 100.0% of equity  ->  -39.0% of equity
+      SOLUSDT    bought 2021-05-21 11:00 sold 2021-05-23 11:00  trade  -37.7%  size 100.0% of equity  ->  -37.7% of equity
+      RENDERUSDT bought 2022-06-11 09:00 sold 2022-06-13 09:00  trade  -35.2%  size 100.0% of equity  ->  -35.2% of equity
+      RENDERUSDT bought 2022-01-21 00:00 sold 2022-01-23 00:00  trade  -21.6%  size 100.0% of equity  ->  -21.6% of equity
+  [normal] 2024-26: 95 trades | trades losing >5% of equity 11, >10% 2, >20% 1 | worst day -14.7% (2024-04-24) | worst week -21.7% (to 2024-04-28) | worst month -16.4% | worst 6m -12.3% (5% of 6m windows lose) | worst 12m +22.7% (0% of 12m windows lose) | longest under water 172 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 06:00  trade  -21.7%  size 100.0% of equity  ->  -21.7% of equity
+      FETUSDT    bought 2025-10-14 19:00 sold 2025-10-16 19:00  trade  -14.6%  size 100.0% of equity  ->  -14.6% of equity
+      FETUSDT    bought 2024-06-27 18:00 sold 2024-06-29 18:00  trade  -10.0%  size 100.0% of equity  ->  -10.0% of equity
+      ARBUSDT    bought 2025-05-30 00:00 sold 2025-06-01 00:00  trade   -9.6%  size 100.0% of equity  ->   -9.6% of equity
+      LTCUSDT    bought 2024-12-18 20:00 sold 2024-12-20 20:00  trade   -8.4%  size 100.0% of equity  ->   -8.4% of equity
+  [+LUNA/FTT/SRM] 2021-23: 267 trades | trades losing >5% of equity 29, >10% 21, >20% 9 | worst day -93.8% (2022-05-11) | worst week -99.5% (to 2022-05-15) | worst month -99.4% | worst 6m -99.5% (47% of 6m windows lose) | worst 12m -99.7% (76% of 12m windows lose) | longest under water 605 days
+      LUNAUSDT   bought 2022-05-10 07:00 sold 2022-05-12 07:00  trade  -99.6%  size 100.0% of equity  ->  -99.6% of equity
+      RENDERUSDT bought 2022-11-07 17:00 sold 2022-11-09 17:00  trade  -44.9%  size 100.0% of equity  ->  -44.9% of equity
+      LUNAUSDT   bought 2021-05-21 11:00 sold 2021-05-23 11:00  trade  -43.7%  size 100.0% of equity  ->  -43.7% of equity
+      XRPUSDT    bought 2021-02-01 12:00 sold 2021-02-03 12:00  trade  -39.0%  size 100.0% of equity  ->  -39.0% of equity
+      FTTUSDT    bought 2022-11-11 16:00 sold 2022-11-13 16:00  trade  -35.9%  size 100.0% of equity  ->  -35.9% of equity
+  [+LUNA/FTT/SRM] 2024-26: 95 trades | trades losing >5% of equity 11, >10% 2, >20% 1 | worst day -14.7% (2024-04-24) | worst week -21.7% (to 2024-04-28) | worst month -16.4% | worst 6m -12.3% (5% of 6m windows lose) | worst 12m +22.7% (0% of 12m windows lose) | longest under water 172 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 06:00  trade  -21.7%  size 100.0% of equity  ->  -21.7% of equity
+      FETUSDT    bought 2025-10-14 19:00 sold 2025-10-16 19:00  trade  -14.6%  size 100.0% of equity  ->  -14.6% of equity
+      FETUSDT    bought 2024-06-27 18:00 sold 2024-06-29 18:00  trade  -10.0%  size 100.0% of equity  ->  -10.0% of equity
+      ARBUSDT    bought 2025-05-30 00:00 sold 2025-06-01 00:00  trade   -9.6%  size 100.0% of equity  ->   -9.6% of equity
+      LTCUSDT    bought 2024-12-18 20:00 sold 2024-12-20 20:00  trade   -8.4%  size 100.0% of equity  ->   -8.4% of equity
+  [worst combined] 2021-23: 298 trades | trades losing >5% of equity 31, >10% 22, >20% 7 | worst day -93.8% (2022-05-11) | worst week -99.4% (to 2022-05-15) | worst month -99.3% | worst 6m -99.4% (37% of 6m windows lose) | worst 12m -99.4% (55% of 12m windows lose) | longest under water 605 days
+      LUNAUSDT   bought 2022-05-10 07:00 sold 2022-05-12 06:00  trade  -99.5%  size 100.0% of equity  ->  -99.5% of equity
+      LUNAUSDT   bought 2021-05-21 12:00 sold 2021-05-23 12:00  trade  -51.0%  size 100.0% of equity  ->  -51.0% of equity
+      RENDERUSDT bought 2022-11-07 17:00 sold 2022-11-09 17:00  trade  -45.1%  size 100.0% of equity  ->  -45.1% of equity
+      SRMUSDT    bought 2022-11-11 16:00 sold 2022-11-13 16:00  trade  -38.4%  size 100.0% of equity  ->  -38.4% of equity
+      RENDERUSDT bought 2022-06-11 09:00 sold 2022-06-13 09:00  trade  -34.2%  size 100.0% of equity  ->  -34.2% of equity
+  [worst combined] 2024-26: 87 trades | trades losing >5% of equity 11, >10% 2, >20% 1 | worst day -15.7% (2024-04-24) | worst week -21.3% (to 2024-04-28) | worst month -15.3% | worst 6m -16.4% (5% of 6m windows lose) | worst 12m +17.8% (0% of 12m windows lose) | longest under water 173 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 05:00  trade  -21.3%  size 100.0% of equity  ->  -21.3% of equity
+      FETUSDT    bought 2025-10-14 19:00 sold 2025-10-16 19:00  trade  -14.2%  size 100.0% of equity  ->  -14.2% of equity
+      FETUSDT    bought 2024-06-27 18:00 sold 2024-06-29 18:00  trade   -9.9%  size 100.0% of equity  ->   -9.9% of equity
+      ARBUSDT    bought 2025-05-30 00:00 sold 2025-06-01 00:00  trade   -9.7%  size 100.0% of equity  ->   -9.7% of equity
+      LTCUSDT    bought 2024-12-18 20:00 sold 2024-12-20 20:00  trade   -8.1%  size 100.0% of equity  ->   -8.1% of equity
+
+G d12 N3 f0.33 tp3% 48h
+  [normal] 2021-23: 1320 trades | trades losing >5% of equity 18, >10% 3, >20% 0 | worst day -29.3% (2021-05-19) | worst week -33.2% (to 2021-05-23) | worst month -19.4% | worst 6m -11.0% (3% of 6m windows lose) | worst 12m +13.0% (0% of 12m windows lose) | longest under water 165 days
+      XRPUSDT    bought 2021-02-01 12:00 sold 2021-02-03 12:00  trade  -39.0%  size  33.0% of equity  ->  -12.9% of equity
+      ADAUSDT    bought 2021-05-21 12:00 sold 2021-05-23 12:00  trade  -31.4%  size  33.0% of equity  ->  -10.4% of equity
+      RENDERUSDT bought 2022-11-07 15:00 sold 2022-11-09 15:00  trade  -45.8%  size  22.6% of equity  ->  -10.4% of equity
+      RENDERUSDT bought 2022-01-20 22:00 sold 2022-01-22 22:00  trade  -26.9%  size  33.0% of equity  ->   -8.9% of equity
+      SOLUSDT    bought 2022-11-06 23:00 sold 2022-11-08 23:00  trade  -25.1%  size  33.0% of equity  ->   -8.3% of equity
+  [normal] 2024-26: 626 trades | trades losing >5% of equity 3, >10% 0, >20% 0 | worst day -11.8% (2024-04-13) | worst week -10.9% (to 2024-04-14) | worst month -7.6% | worst 6m +2.0% (0% of 6m windows lose) | worst 12m +22.4% (0% of 12m windows lose) | longest under water 87 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 06:00  trade  -21.7%  size  33.0% of equity  ->   -7.2% of equity
+      FETUSDT    bought 2025-10-09 16:00 sold 2025-10-11 16:00  trade  -20.6%  size  33.0% of equity  ->   -6.8% of equity
+      RENDERUSDT bought 2026-01-29 18:00 sold 2026-01-31 18:00  trade  -16.3%  size  33.0% of equity  ->   -5.4% of equity
+      SUIUSDT    bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.8%  size  33.0% of equity  ->   -4.9% of equity
+      NEARUSDT   bought 2025-11-20 18:00 sold 2025-11-22 18:00  trade  -14.4%  size  33.0% of equity  ->   -4.7% of equity
+  [+LUNA/FTT/SRM] 2021-23: 1499 trades | trades losing >5% of equity 21, >10% 6, >20% 1 | worst day -35.2% (2021-05-19) | worst week -39.9% (to 2021-05-23) | worst month -22.2% | worst 6m -31.9% (25% of 6m windows lose) | worst 12m -25.4% (14% of 12m windows lose) | longest under water 362 days
+      LUNAUSDT   bought 2022-05-10 21:00 sold 2022-05-12 21:00  trade -100.0%  size  25.5% of equity  ->  -25.5% of equity
+      XRPUSDT    bought 2021-02-01 12:00 sold 2021-02-03 12:00  trade  -39.0%  size  33.0% of equity  ->  -12.9% of equity
+      SRMUSDT    bought 2022-11-11 14:00 sold 2022-11-13 14:00  trade  -36.3%  size  33.0% of equity  ->  -12.0% of equity
+      LUNAUSDT   bought 2022-05-07 21:00 sold 2022-05-09 21:00  trade  -39.5%  size  28.9% of equity  ->  -11.4% of equity
+      ADAUSDT    bought 2021-05-21 12:00 sold 2021-05-23 12:00  trade  -31.4%  size  33.0% of equity  ->  -10.4% of equity
+  [+LUNA/FTT/SRM] 2024-26: 626 trades | trades losing >5% of equity 3, >10% 0, >20% 0 | worst day -11.8% (2024-04-13) | worst week -10.9% (to 2024-04-14) | worst month -7.6% | worst 6m +2.0% (0% of 6m windows lose) | worst 12m +22.4% (0% of 12m windows lose) | longest under water 87 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 06:00  trade  -21.7%  size  33.0% of equity  ->   -7.2% of equity
+      FETUSDT    bought 2025-10-09 16:00 sold 2025-10-11 16:00  trade  -20.6%  size  33.0% of equity  ->   -6.8% of equity
+      RENDERUSDT bought 2026-01-29 18:00 sold 2026-01-31 18:00  trade  -16.3%  size  33.0% of equity  ->   -5.4% of equity
+      SUIUSDT    bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.8%  size  33.0% of equity  ->   -4.9% of equity
+      NEARUSDT   bought 2025-11-20 18:00 sold 2025-11-22 18:00  trade  -14.4%  size  33.0% of equity  ->   -4.7% of equity
+  [worst combined] 2021-23: 1452 trades | trades losing >5% of equity 19, >10% 5, >20% 0 | worst day -35.2% (2021-05-19) | worst week -42.7% (to 2021-05-23) | worst month -25.7% | worst 6m -25.1% (28% of 6m windows lose) | worst 12m -29.5% (15% of 12m windows lose) | longest under water 313 days
+      SRMUSDT    bought 2022-11-11 14:00 sold 2022-11-13 14:00  trade  -36.9%  size  33.0% of equity  ->  -12.2% of equity
+      DOTUSDT    bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -35.0%  size  33.0% of equity  ->  -11.5% of equity
+      LINKUSDT   bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -34.4%  size  33.0% of equity  ->  -11.3% of equity
+      LUNAUSDT   bought 2022-05-07 21:00 sold 2022-05-09 21:00  trade  -39.8%  size  28.1% of equity  ->  -11.2% of equity
+      XRPUSDT    bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -32.6%  size  33.0% of equity  ->  -10.8% of equity
+  [worst combined] 2024-26: 586 trades | trades losing >5% of equity 2, >10% 0, >20% 0 | worst day -14.7% (2025-10-10) | worst week -10.8% (to 2024-04-14) | worst month -8.5% | worst 6m -10.7% (3% of 6m windows lose) | worst 12m +7.2% (0% of 12m windows lose) | longest under water 237 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 05:00  trade  -21.3%  size  33.0% of equity  ->   -7.0% of equity
+      FETUSDT    bought 2025-10-09 17:00 sold 2025-10-11 17:00  trade  -20.2%  size  33.0% of equity  ->   -6.7% of equity
+      RENDERUSDT bought 2026-01-29 19:00 sold 2026-01-31 19:00  trade  -14.7%  size  33.0% of equity  ->   -4.9% of equity
+      SUIUSDT    bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.7%  size  33.0% of equity  ->   -4.8% of equity
+      NEARUSDT   bought 2025-11-20 18:00 sold 2025-11-22 18:00  trade  -14.4%  size  33.0% of equity  ->   -4.7% of equity
+
+LIVE d12 N8 f0.20 tp1.5% 48h
+  [normal] 2021-23: 1681 trades | trades losing >5% of equity 1, >10% 0, >20% 0 | worst day -14.9% (2022-11-09) | worst week -20.4% (to 2021-05-23) | worst month -7.0% | worst 6m -6.1% (5% of 6m windows lose) | worst 12m +4.0% (0% of 12m windows lose) | longest under water 147 days
+      RENDERUSDT bought 2022-11-07 14:00 sold 2022-11-09 14:00  trade  -42.6%  size  12.5% of equity  ->   -5.3% of equity
+      DOTUSDT    bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -34.4%  size  14.3% of equity  ->   -4.9% of equity
+      TRXUSDT    bought 2022-06-13 05:00 sold 2022-06-15 05:00  trade  -26.8%  size  17.5% of equity  ->   -4.7% of equity
+      XRPUSDT    bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -32.4%  size  14.3% of equity  ->   -4.6% of equity
+      LTCUSDT    bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -27.4%  size  14.3% of equity  ->   -3.9% of equity
+  [normal] 2024-26: 884 trades | trades losing >5% of equity 0, >10% 0, >20% 0 | worst day -8.1% (2025-10-10) | worst week -5.7% (to 2024-04-14) | worst month -6.3% | worst 6m -0.3% (0% of 6m windows lose) | worst 12m +16.7% (0% of 12m windows lose) | longest under water 92 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 06:00  trade  -21.7%  size  12.5% of equity  ->   -2.7% of equity
+      RENDERUSDT bought 2026-01-29 18:00 sold 2026-01-31 18:00  trade  -16.3%  size  12.5% of equity  ->   -2.0% of equity
+      NEARUSDT   bought 2026-06-05 02:00 sold 2026-06-07 02:00  trade  -16.1%  size  12.5% of equity  ->   -2.0% of equity
+      AVAXUSDT   bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -15.0%  size  12.5% of equity  ->   -1.9% of equity
+      SUIUSDT    bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.8%  size  12.5% of equity  ->   -1.9% of equity
+  [+LUNA/FTT/SRM] 2021-23: 1971 trades | trades losing >5% of equity 2, >10% 1, >20% 0 | worst day -19.7% (2022-11-09) | worst week -24.0% (to 2021-05-23) | worst month -9.5% | worst 6m -9.5% (13% of 6m windows lose) | worst 12m -10.9% (4% of 12m windows lose) | longest under water 170 days
+      LUNAUSDT   bought 2022-05-10 13:00 sold 2022-05-12 13:00  trade -100.0%  size  14.9% of equity  ->  -14.9% of equity
+      RENDERUSDT bought 2022-11-07 14:00 sold 2022-11-09 14:00  trade  -42.6%  size  12.5% of equity  ->   -5.3% of equity
+      DOTUSDT    bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -34.4%  size  14.3% of equity  ->   -4.9% of equity
+      XRPUSDT    bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -32.4%  size  14.3% of equity  ->   -4.6% of equity
+      SRMUSDT    bought 2022-11-11 14:00 sold 2022-11-13 14:00  trade  -36.3%  size  12.5% of equity  ->   -4.5% of equity
+  [+LUNA/FTT/SRM] 2024-26: 884 trades | trades losing >5% of equity 0, >10% 0, >20% 0 | worst day -8.1% (2025-10-10) | worst week -5.7% (to 2024-04-14) | worst month -6.3% | worst 6m -0.3% (0% of 6m windows lose) | worst 12m +16.7% (0% of 12m windows lose) | longest under water 92 days
+      HBARUSDT   bought 2024-04-24 06:00 sold 2024-04-26 06:00  trade  -21.7%  size  12.5% of equity  ->   -2.7% of equity
+      RENDERUSDT bought 2026-01-29 18:00 sold 2026-01-31 18:00  trade  -16.3%  size  12.5% of equity  ->   -2.0% of equity
+      NEARUSDT   bought 2026-06-05 02:00 sold 2026-06-07 02:00  trade  -16.1%  size  12.5% of equity  ->   -2.0% of equity
+      AVAXUSDT   bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -15.0%  size  12.5% of equity  ->   -1.9% of equity
+      SUIUSDT    bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.8%  size  12.5% of equity  ->   -1.9% of equity
+  [worst combined] 2021-23: 1895 trades | trades losing >5% of equity 1, >10% 0, >20% 0 | worst day -20.8% (2021-05-19) | worst week -28.5% (to 2021-05-23) | worst month -15.7% | worst 6m -10.9% (9% of 6m windows lose) | worst 12m -8.3% (3% of 12m windows lose) | longest under water 360 days
+      RENDERUSDT bought 2022-11-07 14:00 sold 2022-11-09 13:00  trade  -40.9%  size  12.5% of equity  ->   -5.1% of equity
+      DOTUSDT    bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -35.0%  size  14.3% of equity  ->   -5.0% of equity
+      FETUSDT    bought 2021-05-19 08:00 sold 2021-05-21 07:00  trade  -24.8%  size  20.0% of equity  ->   -5.0% of equity
+      XRPUSDT    bought 2021-05-21 14:00 sold 2021-05-23 14:00  trade  -32.6%  size  14.3% of equity  ->   -4.7% of equity
+      SRMUSDT    bought 2022-11-11 14:00 sold 2022-11-13 14:00  trade  -36.9%  size  12.5% of equity  ->   -4.6% of equity
+  [worst combined] 2024-26: 846 trades | trades losing >5% of equity 0, >10% 0, >20% 0 | worst day -9.1% (2025-10-10) | worst week -7.2% (to 2024-04-14) | worst month -5.2% | worst 6m -3.3% (0% of 6m windows lose) | worst 12m +8.7% (0% of 12m windows lose) | longest under water 83 days
+      AVAXUSDT   bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.8%  size  12.5% of equity  ->   -1.9% of equity
+      RENDERUSDT bought 2026-01-29 19:00 sold 2026-01-31 19:00  trade  -14.7%  size  12.5% of equity  ->   -1.8% of equity
+      SUIUSDT    bought 2024-04-12 17:00 sold 2024-04-14 17:00  trade  -14.7%  size  12.5% of equity  ->   -1.8% of equity
+      FETUSDT    bought 2025-10-14 06:00 sold 2025-10-16 06:00  trade  -13.1%  size  12.5% of equity  ->   -1.6% of equity
+      DOTUSDT    bought 2025-10-10 20:00 sold 2025-10-12 20:00  trade  -12.8%  size  12.5% of equity  ->   -1.6% of equity
+
+done in 89s, max RSS 4.2 GB

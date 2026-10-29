@@ -27,12 +27,81 @@ is usually somewhat worse. Not financial advice.
 Biggest risk: a coin collapsing within 48 hours. In a stress test with LUNA added, one trade lost 100% of its
 order (about 13% of the bot's money). Keep the coin list to large, screened coins.
 
+## Optional high-return modes (high risk, off by default)
+Both put all the bot's money on one coin at a time and skip any coin already more than 35% under its 7-day
+high (crash guard). Backtest per month, win rate and worst drop:
+
+| Period | Normal mode | 90% mode | 10% mode |
+|---|---|---|---|
+| Settings | 8 coins, 12% dip, +1.5%, 48h | 1 coin, 14% dip, +2.5%, 96h, 3h cooldown | 1 coin, 14% dip, +5%, 48h |
+| 2018-2020 (never used to pick settings) | +2.3%, 91% wins, -45% | **+10.9%, 92% wins**, -66% | +11.1%, 80% wins, -61% |
+| 2021-2023 | +5.0%, 94% wins, -29% | +13.2%, 94% wins, -64% | +15.0%, 81% wins, -61% |
+| 2024 - Oct 2026 | +2.9%, 93% wins, -16% | +6.9%, 93% wins, -35% | +8.1%, 77% wins, -30% |
+| Jan 2025 - Oct 2026 | +2.0%, 92% wins, -15% | +5.8%, 93% wins, -23% | +6.1%, 75% wins, -29% |
+
+The real bot code was replayed with both settings and matches the backtest (90% mode: 93-94% wins in every
+period). With fills 0.2% worse, 2024-2026 is about +6% (90% mode) and +7% (10% mode) a month.
+
+The cost is risk. Both modes were 61-66% down at their worst point (the DOGE spike of January 2021, the March
+2020 crash): RM6,000 -> about RM2,000-2,350. One trade lost about half the account (DOGE, Jan 2021); since 2024
+the worst single trade lost 22-27%. Without the crash guard, one LUNA-type collapse would have wiped out the
+whole account. Use only money you can afford to lose; not with borrowed money.
+
+To switch one on (and back off by deleting the file):
+
+    sudo cp /opt/panic-buyer/app/panic_config.90wr.example.json /opt/panic-buyer/app/panic_config.json
+    sudo systemctl restart panic-buyer
+
+(for 10% mode, copy `panic_config.10pct.example.json` instead)
+
+## Optional: combined mode with hard risk limits (`panic_config.ensemble.example.json`)
+Two sleeves in one bot: 30% of the money runs 90% mode, 70% runs 10% mode, each with its own trades. On top,
+hard limits checked every hour for the whole bot (`guardrails.py`):
+
+| Limit | Value | What happens |
+|---|---|---|
+| Daily drop | 15% under the day's high | sell everything, no buys until the next UTC day |
+| 30-day drop | 25% under the 30-day high | sell everything, no buys for 7 days |
+| Stop-loss | 25% under entry, at an hourly close | sell that coin (a gap can fill worse) |
+| Per-trade risk | 20% of the money | orders cut so that order x 25% stop <= 20% of the money |
+| Losing streak | 2 losses in a row | no buys for 72 hours |
+| Spread / slow API | spread > 0.5%, any request > 5 s | no buy that hour |
+| ATR spike | off (0) | set `atr_spike_mult` (e.g. 3) to skip coins after an extreme hour |
+
+Backtest (win rate / per month / worst drop):
+
+| | 2018-20 | 2021-23 | 2024-26 | since 2025 |
+|---|---|---|---|---|
+| Combined, no limits | 88% / +11.0% / -63% | 88% / +14.6% / -62% | 86% / +7.9% / -27% | 85% / +6.0% / -27% |
+| Combined, with limits | 87% / +8.1% / -51% | 85% / +11.7% / -46% | 80% / +4.3% / -43% | 78% / +2.9% / -33% |
+
+The limits cut the worst drops in long bear markets (2018-20, 2021-23) but cost about half the profit in
+2024-26 and make its worst drop deeper: they sell at the bottom of fast V-shaped crashes, which is where a
+dip-buyer earns its money. To keep the sleeves without the limits, delete the `"risk"` block (or set a value
+to 0 to switch off one limit). `panic-buyer status` shows the limits and any active lock.
+
 ## Install on the halal-rider server (Ubuntu)
     curl -sL https://raw.githubusercontent.com/Qyubiz/halal-rider/main/deploy/panic-install.sh | sudo bash
     sudo panic-buyer-setup
 
 Setup can reuse halal-rider's Binance key and Telegram. Keep enough USDT in the account for both bots
 (this bot's capital plus halal-rider's), because this bot's waiting buy orders lock its USDT.
+
+## Paper trading (try it first, no real money)
+Runs the real bot logic on Binance's live prices with pretend money: nothing is sent to your Binance account and
+no API key is needed. Three paper bots run side by side, 650 USDT (about RM3,000) pretend money each, profits
+reinvested: `normal`, `90wr` (90% mode) and `ensemble` (combined mode with the risk limits).
+
+    panic-buyer paper start      start all three
+    panic-buyer paper status     pretend profit, trades and win rate of each
+    panic-buyer paper log 90wr   live log of one (normal, 90wr or ensemble)
+    panic-buyer paper stop       stop them (results are kept)
+    panic-buyer paper reset      stop them and delete their results
+
+Paper fills follow the backtest rules (a waiting buy fills only if an hourly candle trades 0.1% through it), so
+paper results are a check that the bot works on your server, not a promise of live fills. Telegram messages from
+paper bots start with [PAPER ...]. Paper bots keep their own folders (/opt/panic-buyer/paper-*) and never touch
+the live bot's data.
 
 ## Everyday commands
     panic-buyer status    open trades, waiting buys, profit

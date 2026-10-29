@@ -1,0 +1,24 @@
+104 single-rule designs; 90% mode per year WR 94.7/91.9/93.7% %/mo +33.29/+0.46/+8.23
+qualify (year-by-year rule, 2021-23 only): 4
+  calm coin c_vol7<=0.08                   2021-23 WR  95.8% +15.11%/mo DD  -64% | per year WR 95.7/94.7/97.7 %/mo +35.30/+4.45/+7.93
+  since_b10<=72                            2021-23 WR  94.5% +14.32%/mo DD  -64% | per year WR 95.8/92.0/93.7 %/mo +37.44/+0.45/+8.23
+  brd_dip8>=0.75                           2021-23 WR  94.3% +12.98%/mo DD  -64% | per year WR 95.2/92.6/93.7 %/mo +32.95/+0.23/+8.23
+  brd_dip10>=0.6                           2021-23 WR  94.0% +13.60%/mo DD  -64% | per year WR 95.0/91.9/93.7 %/mo +34.84/+0.46/+8.23
+
+ROUND-2 PICK: calm coin c_vol7<=0.08
+
+ROUND-2 PICK: calm coin c_vol7<=0.08
+  rules: (c_vol7<=0.08)  -> blocked hours: no bid
+                     period     win%    %/mo  maxDD worst tr  tr/mo losers
+  normal             2018-20    92.2   +6.91  -59.0    -31.6    7.1     20
+  normal             2021-23    95.8  +15.11  -64.4    -50.3    9.8     15
+  normal             2024-26    95.7   +4.97  -39.5    -30.0    2.8      4
+  normal             since25    97.2   +3.09  -29.7    -22.4    1.7      1
+  fills 0.2% worse   2018-20    91.0   +4.03  -65.9    -31.9    6.8     22
+  fills 0.2% worse   2021-23    95.3  +12.02  -64.6    -50.5    9.5     16
+  fills 0.2% worse   2024-26    95.5   +3.98  -40.0    -30.3    2.6      4
+  fills 0.2% worse   since25    97.0   +2.39  -29.8    -22.7    1.5      1
+  bot+0.2%+LUNA      2018-20    91.1   +4.33  -64.7    -32.5    7.2     23
+  bot+0.2%+LUNA      2021-23    95.8  +13.29  -54.4    -45.4   10.6     16
+  bot+0.2%+LUNA      2024-26    94.7   +3.89  -40.0    -30.3    2.8      5
+  bot+0.2%+LUNA      since25    97.1   +2.17  -29.8    -22.7    1.6      1

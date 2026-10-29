@@ -27,6 +27,7 @@ class FakeBinance:
         self.status = {s: "TRADING" for s in candles}
         self.partial = {}                   # orderId -> share of the order to fill (tests)
         self.calls = []
+        self.spread = {}                    # symbol -> bid/ask spread as a fraction (tests)
         self.ref = next(iter(candles))
 
     # --------------------------------------------------------------- time
@@ -59,6 +60,17 @@ class FakeBinance:
 
     def balances(self):
         return {a: dict(v) for a, v in self.bal.items()}
+
+    def book_ticker(self, symbol):
+        px = self.price(symbol)
+        half = self.spread.get(symbol, 0.0) / 2
+        return px * (1 - half), px * (1 + half)
+
+    def get_order_by_cid(self, symbol, cid):
+        for o in self.orders.values():
+            if o.get("clientOrderId") == cid:
+                return dict(o)
+        raise BinanceError("HTTP 400: Order does not exist.", -2013)
 
     def get_order(self, symbol, oid):
         self.calls.append(("get", symbol, oid))

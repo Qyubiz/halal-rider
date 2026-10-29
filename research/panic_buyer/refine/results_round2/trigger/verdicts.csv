@@ -1,0 +1,3 @@
+idea,variants,beat_design,beat_test,beat_both,pick,passes,pick_d_mult,pick_t_mult,pick_d_dd,pick_t_dd,base_d_mult,base_t_mult,base_d_dd,base_t_dd,check +LUNA/FTT/SRM,check fills 0.2% worse
+r2 trigger H1: reference window (highest close of the last w hours),8,1,1,0,"ref = highest close 12h, depth 11%",False,6.246600923896194,2.542413766438052,-0.1982122869114223,-0.1422886008282733,5.749960679975606,2.608768648326897,-0.2923819336224197,-0.1628454245693458,True,False
+r2 trigger H2: cooldown after a sale,8,1,0,0,cooldown 18h,False,6.564560739655499,2.508619827251108,-0.2957045611143162,-0.17289213400826853,5.749960679975606,2.608768648326897,-0.2923819336224197,-0.1628454245693458,False,False

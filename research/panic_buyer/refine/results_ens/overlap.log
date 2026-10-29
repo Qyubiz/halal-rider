@@ -1,0 +1,21 @@
+entries: 90% mode 554, 10% mode 412, same coin+hour 312 (75.7% of 10% mode entries, 56.3% of 90% mode entries)
+monthly-return correlation 2021-02..2026-10:
+          Normal  90% mode  10% mode
+Normal     1.000     0.548     0.764
+90% mode   0.548     1.000     0.810
+10% mode   0.764     0.810     1.000
+correlation 2024-26:
+          Normal  90% mode  10% mode
+Normal     1.000     0.339     0.666
+90% mode   0.339     1.000     0.568
+10% mode   0.666     0.568     1.000
+correlation since 2025:
+          Normal  90% mode  10% mode
+Normal     1.000     0.222     0.099
+90% mode   0.222     1.000     0.700
+10% mode   0.099     0.700     1.000
+months both 90% and 10% mode negative: 7 of 69; months 90% mode <0: 13, 10% mode <0: 14, Normal <0: 11
+worst months:
+Normal      -7.00
+90% mode   -30.24
+10% mode   -20.50

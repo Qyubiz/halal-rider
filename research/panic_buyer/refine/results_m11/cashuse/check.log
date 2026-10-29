@@ -1,0 +1,26 @@
+2021-26 19 coins {}: vk x806.936130 ck x806.936130 S2-blocked x806.936130 trades 554/554/554 IDENTICAL
+2021-26 19 coins {'pen': 0.002, 'pens': 0.002}: vk x164.235780 ck x164.235780 S2-blocked x164.235780 trades 534/534/534 IDENTICAL
+2021-26 19 coins {'mtp_now': True, 'cd_add': 1, 'pen': 0.002, 'pens': 0.002}: vk x276.020392 ck x276.020392 S2-blocked x276.020392 trades 557/557/557 IDENTICAL
+2021-26 22 coins {}: vk x1768.567598 ck x1768.567598 S2-blocked x1768.567598 trades 574/574/574 IDENTICAL
+2021-26 22 coins {'pen': 0.002, 'pens': 0.002}: vk x276.830634 ck x276.830634 S2-blocked x276.830634 trades 558/558/558 IDENTICAL
+2021-26 22 coins {'mtp_now': True, 'cd_add': 1, 'pen': 0.002, 'pens': 0.002}: vk x254.937476 ck x254.937476 S2-blocked x254.937476 trades 572/572/572 IDENTICAL
+holdout 19 coins {}: vk x75.868747 ck x75.868747 S2-blocked x75.868747 trades 391/391/391 IDENTICAL
+holdout 19 coins {'pen': 0.002, 'pens': 0.002}: vk x22.734451 ck x22.734451 S2-blocked x22.734451 trades 380/380/380 IDENTICAL
+holdout 19 coins {'mtp_now': True, 'cd_add': 1, 'pen': 0.002, 'pens': 0.002}: vk x18.710476 ck x18.710476 S2-blocked x18.710476 trades 381/381/381 IDENTICAL
+holdout 22 coins {}: vk x97.582063 ck x97.582063 S2-blocked x97.582063 trades 400/400/400 IDENTICAL
+holdout 22 coins {'pen': 0.002, 'pens': 0.002}: vk x35.855462 ck x35.855462 S2-blocked x35.855462 trades 393/393/393 IDENTICAL
+holdout 22 coins {'mtp_now': True, 'cd_add': 1, 'pen': 0.002, 'pens': 0.002}: vk x16.862176 ck x16.862176 S2-blocked x16.862176 trades 380/380/380 IDENTICAL
+
+90% mode through m11_cashuse_lib (second engine off)
+  normal    2021-23          win  93.8% | +13.17%/mo | max drop  -64.4% | worst trade  -50.3% of acct |  11.3 trades/mo
+  normal    2024-26          win  92.6% |  +6.89%/mo | max drop  -35.4% | worst trade  -27.3% of acct |   4.4 trades/mo
+  normal    since 2025       win  93.2% |  +5.80%/mo | max drop  -22.6% | worst trade  -11.8% of acct |   3.4 trades/mo
+  normal    2018-20 holdout  win  92.5% | +10.82%/mo | max drop  -66.3% | worst trade  -37.3% of acct |  10.0 trades/mo
+  worse     2021-23          win  93.4% |  +9.79%/mo | max drop  -65.9% | worst trade  -50.5% of acct |  11.0 trades/mo
+  worse     2024-26          win  92.1% |  +5.31%/mo | max drop  -37.5% | worst trade  -27.6% of acct |   4.2 trades/mo
+  worse     since 2025       win  92.6% |  +4.56%/mo | max drop  -22.7% | worst trade  -12.2% of acct |   3.1 trades/mo
+  worse     2018-20 holdout  win  92.0% |  +7.41%/mo | max drop  -69.9% | worst trade  -37.5% of acct |   9.7 trades/mo
+  stressed  2021-23          win  93.7% | +10.96%/mo | max drop  -65.0% | worst trade  -45.9% of acct |  11.9 trades/mo
+  stressed  2024-26          win  91.7% |  +5.49%/mo | max drop  -30.3% | worst trade  -19.1% of acct |   4.3 trades/mo
+  stressed  since 2025       win  92.6% |  +4.44%/mo | max drop  -22.7% | worst trade  -12.2% of acct |   3.1 trades/mo
+  stressed  2018-20 holdout  win  91.4% |  +6.00%/mo | max drop  -69.5% | worst trade  -37.5% of acct |   9.7 trades/mo

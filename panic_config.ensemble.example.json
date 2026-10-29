@@ -1,0 +1,20 @@
+{
+  "sleeves": [
+    {"name": "wr90", "weight": 0.3, "n_orders": 1, "max_order_pct": 100.0, "depth_pct": 14.0,
+     "take_profit_pct": 2.5, "max_hours": 96, "cooldown_hours": 3, "crash_guard_pct": 35.0},
+    {"name": "r10", "weight": 0.7, "n_orders": 1, "max_order_pct": 100.0, "depth_pct": 14.0,
+     "take_profit_pct": 5.0, "max_hours": 48, "cooldown_hours": 24, "crash_guard_pct": 35.0}
+  ],
+  "risk": {
+    "daily_dd_pct": 15,
+    "monthly_dd_pct": 25,
+    "monthly_lock_hours": 168,
+    "stop_loss_pct": 25,
+    "max_trade_risk_pct": 20,
+    "max_spread_pct": 0.5,
+    "max_latency_ms": 5000,
+    "atr_spike_mult": 0,
+    "loss_streak": 2,
+    "loss_pause_hours": 72
+  }
+}

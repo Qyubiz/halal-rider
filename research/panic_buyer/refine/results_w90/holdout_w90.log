@@ -1,0 +1,25 @@
+2018-01 .. 2020-12, 16 coins (hourly). %/month compounded | worst drop | win rate | trades | years
+LIVE (current)                                                            +2.30%/mo | drop  -45% | win  90.9% |  927 | 2018   +41% 2019   +19% 2020   +34%
+LIVE (current) +0.2% worse                                                +1.70%/mo | drop  -45% | win  89.9% |  921 | 2018   +31% 2019   +15% 2020   +22%
+10% MODE (published)                                                     +11.09%/mo | drop  -61% | win  80.5% |  215 | 2018  +350% 2019   +81% 2020  +444%
+10% MODE (published) +0.2% worse                                         +10.16%/mo | drop  -62% | win  79.8% |  213 | 2018  +313% 2019   +66% 2020  +374%
+wr90 F1: 1x100%, 13%, +1.25%, 96h, cd3, guard35, stop30                   +8.58%/mo | drop  -70% | win  95.5% |  550 | 2018  +289% 2019    +7% 2020  +364%
+wr90 F1: 1x100%, 13%, +1.25%, 96h, cd3, guard35, stop30 +0.2% worse       +4.16%/mo | drop  -76% | win  94.4% |  503 | 2018  +132% 2019    -9% 2020  +107%
+wr90 F1 config-only: 1x100%, 13%, +1.25%, 96h, cd3, guard3                +8.80%/mo | drop  -69% | win  95.4% |  523 | 2018  +394% 2019    -1% 2020  +326%
+wr90 F1 config-only: 1x100%, 13%, +1.25%, 96h, cd3, guard3 +0.2% worse    +4.86%/mo | drop  -75% | win  94.4% |  480 | 2018  +195% 2019   -13% 2020  +115%
+wr90 F2: 1x100%, 14%, +2.5%, 96h, cd3, guard35                           +10.88%/mo | drop  -66% | win  92.5% |  361 | 2018  +464% 2019   +97% 2020  +271%
+wr90 F2: 1x100%, 14%, +2.5%, 96h, cd3, guard35 +0.2% worse                +9.59%/mo | drop  -69% | win  92.0% |  350 | 2018  +439% 2019   +74% 2020  +188%
+wr90 M: 2x50%, 14%, +2.5%, 96h, cd3, guard25                              +6.44%/mo | drop  -47% | win  90.8% |  554 | 2018  +126% 2019   +70% 2020  +146%
+wr90 M: 2x50%, 14%, +2.5%, 96h, cd3, guard25 +0.2% worse                  +5.45%/mo | drop  -51% | win  90.3% |  536 | 2018  +106% 2019   +55% 2020  +111%
+wr90 LOWDD (reference): 4x<=50%, 16%, +2%, 96h, cd24, guar                +2.88%/mo | drop  -48% | win  93.0% |  372 | 2018  +101% 2019   +22% 2020   +14%
+wr90 LOWDD (reference): 4x<=50%, 16%, +2%, 96h, cd24, guar +0.2% worse    +2.53%/mo | drop  -48% | win  92.7% |  372 | 2018   +87% 2019   +19% 2020   +11%
+F1 wr90 pick: N1 x100% d15 tp4 hm96 cd24 re-arm-after-win                 +9.85%/mo | drop  -71% | win  88.6% |  254 | 2018  +903% 2019   +77% 2020   +65%
+F1 wr90 pick: N1 x100% d15 tp4 hm96 cd24 re-arm-after-win  +0.2% worse    +8.04%/mo | drop  -72% | win  88.0% |  241 | 2018  +802% 2019   +38% 2020   +30%
+F2 robust 95% win: N1 x100% d13 tp1.5 hm96 cd24 re-arm-aft                +7.98%/mo | drop  -70% | win  94.0% |  517 | 2018  +242% 2019   +76% 2020  +163%
+F2 robust 95% win: N1 x100% d13 tp1.5 hm96 cd24 re-arm-aft +0.2% worse    +4.82%/mo | drop  -74% | win  93.3% |  476 | 2018  +165% 2019    -2% 2020  +110%
+F3 ten-direction, config only: N1 x100% d15 tp6 hm48 cd24                +10.16%/mo | drop  -60% | win  74.3% |  179 | 2018  +467% 2019   +13% 2020  +409%
+F3 ten-direction, config only: N1 x100% d15 tp6 hm48 cd24  +0.2% worse   +10.23%/mo | drop  -60% | win  74.4% |  180 | 2018  +418% 2019    +8% 2020  +493%
+F1 wr90 rule pick: 1x100%, d15 tp3.5 g35 hm96 [hourly bid,                +5.15%/mo | drop  -67% | win  89.2% |  204 | 2018  +187% 2019   -22% 2020  +170%
+F1 wr90 rule pick: 1x100%, d15 tp3.5 g35 hm96 [hourly bid, +0.2% worse    +4.12%/mo | drop  -70% | win  88.5% |  200 | 2018  +180% 2019   -26% 2020  +106%
+F2 wr90 low-drop: 3x33%, d14 tp3 g35 hm96 [hourly bid, con                +4.30%/mo | drop  -52% | win  89.4% |  517 | 2018  +134% 2019   +25% 2020   +56%
+F2 wr90 low-drop: 3x33%, d14 tp3 g35 hm96 [hourly bid, con +0.2% worse    +3.22%/mo | drop  -52% | win  88.1% |  513 | 2018   +94% 2019   +18% 2020   +37%

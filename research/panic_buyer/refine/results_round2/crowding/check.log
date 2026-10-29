@@ -1,0 +1,9 @@
+crun, ladder off, dead=False pen=0.0           21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%  identical to engine.run: True
+crun, ladder off, dead=True pen=0.0            21-23 x 5.29 DD  -31% 2022   +1% | 24-26 x 2.46 DD  -15% worst-mo  -6% up-mo  88%  identical to engine.run: True
+crun, ladder off, dead=False pen=0.002         21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%  identical to engine.run: True
+crun, ladder off, dead=True pen=0.002          21-23 x 3.63 DD  -32% 2022  -16% | 24-26 x 2.24 DD  -15% worst-mo  -6% up-mo  85%  identical to engine.run: True
+  extra leg 2: trades 1, leg2 [1.0], exit hour [2.0], ret [0.012971014999999753] (want 0.012971014999999753) -> ok
+  split leg 2: trades 1, leg2 [1.0], exit hour [2.0], ret [0.012971014999999753] (want 0.012971014999999753) -> ok
+  split, both legs in the fill hour: exit hour [1.0], ret [0.016879483439578458] (want 0.016879483439578458) -> ok
+  extra leg 2 not reached: same equity as the live engine True -> ok
+  leg 2 at market at the cycle + time stop from leg 1: exit hour [3.0] why [1.0] ret [-0.0476529694697605] (want -0.04765296946976072) -> ok
