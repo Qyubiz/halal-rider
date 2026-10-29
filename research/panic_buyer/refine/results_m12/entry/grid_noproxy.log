@@ -1,0 +1,235 @@
+[S1] 24h-high close -12.0% +1.5% 48h cd3 dist                   score +16.28 | n 94.8/+18.58/-64.4 w 93.7/ +8.23/-64.6 ddmed -64.4 fails 2
+[S1] 24h-high close -12.0% +1.5% 96h cd3 dist                   score +16.09 | n 96.5/+17.57/-65.5 w 96.1/ +9.31/-64.6 ddmed -65.5 fails 3
+[S1] 24h-high close -12.0% +1.5% 144h cd3 dist                  score +15.66 | n 97.4/+17.27/-64.4 w 96.8/ +7.93/-64.6 ddmed -60.9 fails 2
+[S1] 24h-high close -12.0% +2.0% 48h cd3 dist                   score +17.20 | n 91.7/+17.04/-64.4 w 90.8/ +7.63/-70.1 ddmed -61.4 fails 4
+[S1] 24h-high close -12.0% +2.0% 96h cd3 dist                   score +17.08 | n 94.6/+15.94/-64.4 w 93.8/ +8.09/-70.5 ddmed -64.9 fails 2
+[S1] 24h-high close -12.0% +2.0% 144h cd3 dist                  score +14.87 | n 95.4/+13.46/-64.4 w 94.7/ +5.41/-73.0 ddmed -63.7 fails 2
+[S1] 24h-high close -12.0% +2.5% 48h cd3 dist                   score +16.60 | n 89.0/+14.76/-64.6 w 87.6/ +7.65/-68.6 ddmed -64.6 fails 5
+[S1] 24h-high close -12.0% +2.5% 96h cd3 dist                   score +16.27 | n 92.0/+13.36/-69.4 w 91.0/ +6.27/-74.2 ddmed -69.4 fails 5
+[S1] 24h-high close -12.0% +2.5% 144h cd3 dist                  score +12.56 | n 93.1/ +9.85/-79.6 w 91.8/ +3.92/-79.3 ddmed -79.6 fails 5
+[S1] 24h-high close -12.0% +3.0% 48h cd3 dist                   score +17.54 | n 87.3/+15.72/-64.4 w 86.2/ +8.04/-73.5 ddmed -64.4 fails 4
+[S1] 24h-high close -12.0% +3.0% 96h cd3 dist                   score +17.01 | n 90.3/+13.99/-69.1 w 90.1/ +9.89/-65.6 ddmed -65.5 fails 4
+[S1] 24h-high close -12.0% +3.0% 144h cd3 dist                  score +13.92 | n 91.6/+11.13/-67.0 w 90.8/ +6.49/-72.0 ddmed -67.0 fails 6
+[S1] 24h-high close -12.0% +3.5% 48h cd3 dist                   score +17.79 | n 85.6/+15.30/-72.5 w 84.6/+10.91/-72.9 ddmed -71.2 fails 4
+[S1] 24h-high close -12.0% +3.5% 96h cd3 dist                   score +17.15 | n 89.1/+15.39/-64.4 w 88.2/+11.28/-72.2 ddmed -62.7 fails 3
+[S1] 24h-high close -12.0% +3.5% 144h cd3 dist                  score +13.25 | n 90.2/+11.12/-81.0 w 90.2/ +8.76/-89.2 ddmed -84.9 fails 6
+[S1] 24h-high close -12.0% +4.0% 48h cd3 dist                   score +17.79 | n 82.8/+16.29/-72.0 w 81.9/+11.01/-72.4 ddmed -70.8 fails 4
+[S1] 24h-high close -12.0% +4.0% 96h cd3 dist                   score +17.67 | n 87.7/+17.50/-64.4 w 86.2/+11.76/-64.6 ddmed -62.6 fails 3
+[S1] 24h-high close -12.0% +4.0% 144h cd3 dist                  score +16.11 | n 90.4/+16.32/-72.9 w 88.7/+10.66/-78.0 ddmed -72.9 fails 4
+[S1] 24h-high close -13.0% +1.5% 48h cd3 dist                   score +12.33 | n 94.5/+12.23/-64.4 w 93.6/ +5.06/-69.6 ddmed -63.1 fails 3
+[S1] 24h-high close -13.0% +1.5% 96h cd3 dist                   score +13.03 | n 96.3/+13.37/-65.6 w 95.6/ +6.58/-73.4 ddmed -65.6 fails 3
+[S1] 24h-high close -13.0% +1.5% 144h cd3 dist                  score +12.51 | n 96.8/+12.68/-67.4 w 96.5/ +6.19/-76.0 ddmed -67.4 fails 4
+[S1] 24h-high close -13.0% +2.0% 48h cd3 dist                   score +15.03 | n 92.7/+14.72/-64.4 w 92.3/ +8.74/-74.1 ddmed -64.4 fails 3
+[S1] 24h-high close -13.0% +2.0% 96h cd3 dist                   score +15.62 | n 95.2/+15.53/-67.5 w 94.7/+10.12/-68.7 ddmed -67.5 fails 2
+[S1] 24h-high close -13.0% +2.0% 144h cd3 dist                  score +14.60 | n 96.1/+13.95/-66.4 w 96.0/ +9.80/-67.3 ddmed -65.8 fails 2
+[S1] 24h-high close -13.0% +2.5% 48h cd3 dist                   score +16.48 | n 90.9/+15.14/-73.0 w 89.1/ +7.09/-73.4 ddmed -64.6 fails 5
+[S1] 24h-high close -13.0% +2.5% 96h cd3 dist                   score +17.38 | n 93.7/+16.32/-67.6 w 92.9/ +9.97/-70.4 ddmed -67.6 fails 2
+[S1] 24h-high close -13.0% +2.5% 144h cd3 dist                  score +17.77 | n 95.2/+16.16/-68.4 w 94.5/ +9.33/-69.7 ddmed -68.4 fails 3
+[S1] 24h-high close -13.0% +3.0% 48h cd3 dist                   score +16.15 | n 87.6/+14.41/-72.3 w 86.2/ +8.76/-74.1 ddmed -64.2 fails 5
+[S1] 24h-high close -13.0% +3.0% 96h cd3 dist                   score +17.94 | n 92.2/+16.85/-66.7 w 91.3/+11.77/-64.6 ddmed -66.7 fails 4
+[S1] 24h-high close -13.0% +3.0% 144h cd3 dist                  score +17.05 | n 93.8/+15.42/-67.1 w 92.9/ +9.04/-64.6 ddmed -67.1 fails 3
+[S1] 24h-high close -13.0% +3.5% 48h cd3 dist                   score +16.10 | n 84.9/+13.88/-73.4 w 84.7/ +9.69/-73.7 ddmed -71.2 fails 5
+[S1] 24h-high close -13.0% +3.5% 96h cd3 dist                   score +19.10 | n 90.1/+16.67/-64.4 w 90.1/+13.14/-64.6 ddmed -60.6 fails 3
+[S1] 24h-high close -13.0% +3.5% 144h cd3 dist                  score +16.79 | n 92.0/+13.86/-64.4 w 92.2/+10.65/-64.6 ddmed -61.6 fails 3
+[S1] 24h-high close -13.0% +4.0% 48h cd3 dist                   score +17.99 | n 82.9/+15.01/-73.0 w 82.8/+12.36/-66.0 ddmed -70.8 fails 4
+[S1] 24h-high close -13.0% +4.0% 96h cd3 dist                   score +20.07 | n 89.1/+17.73/-64.4 w 88.7/+13.60/-64.6 ddmed -60.6 fails 3
+[S1] 24h-high close -13.0% +4.0% 144h cd3 dist                  score +16.98 | n 90.8/+14.07/-64.4 w 90.5/+10.05/-64.6 ddmed -62.2 fails 3
+[S1] 24h-high close -14.0% +1.5% 48h cd3 dist                   score +13.53 | n 95.2/+13.98/-64.4 w 94.4/ +6.97/-70.7 ddmed -60.6 fails 2
+[S1] 24h-high close -14.0% +1.5% 96h cd3 dist                   score +12.03 | n 95.9/+12.04/-68.4 w 95.8/ +6.99/-74.2 ddmed -68.4 fails 4
+[S1] 24h-high close -14.0% +1.5% 144h cd3 dist                  score +11.59 | n 96.3/+11.60/-72.3 w 96.2/ +7.39/-76.1 ddmed -72.3 fails 4
+[S1] 24h-high close -14.0% +2.0% 48h cd3 dist                   score +13.25 | n 93.0/+13.26/-64.4 w 91.9/ +6.71/-66.0 ddmed -63.9 fails 3
+[S1] 24h-high close -14.0% +2.0% 96h cd3 dist                   score +13.31 | n 95.0/+12.87/-66.5 w 94.4/ +7.21/-70.4 ddmed -66.4 fails 4
+[S1] 24h-high close -14.0% +2.0% 144h cd3 dist                  score +13.10 | n 95.6/+12.75/-69.9 w 95.2/ +6.68/-72.9 ddmed -69.7 fails 4
+[S1] 24h-high close -14.0% +2.5% 48h cd3 dist                   score +12.71 | n 91.3/+12.78/-64.4 w 90.3/ +6.41/-74.0 ddmed -60.6 fails 5
+[S1] 24h-high close -14.0% +2.5% 96h cd3 dist                   score +13.93 | n 93.8/+13.17/-64.4 w 93.4/ +9.79/-65.9 ddmed -62.6 fails 3
+[S1] 24h-high close -14.0% +2.5% 144h cd3 dist                  score +13.15 | n 94.7/+12.50/-65.2 w 94.0/ +8.23/-68.7 ddmed -65.2 fails 4
+[S1] 24h-high close -14.0% +3.0% 48h cd3 dist                   score +14.80 | n 89.3/+12.93/-73.0 w 88.1/ +7.46/-73.5 ddmed -60.6 fails 6
+[S1] 24h-high close -14.0% +3.0% 96h cd3 dist                   score +15.66 | n 92.6/+14.29/-64.4 w 92.3/+10.36/-64.6 ddmed -64.2 fails 2
+[S1] 24h-high close -14.0% +3.0% 144h cd3 dist                  score +14.40 | n 93.4/+12.72/-64.4 w 93.2/ +8.95/-65.5 ddmed -64.4 fails 3
+[S1] 24h-high close -14.0% +3.5% 48h cd3 dist                   score +14.92 | n 87.1/+13.31/-72.5 w 86.9/+10.33/-72.9 ddmed -62.5 fails 4
+[S1] 24h-high close -14.0% +3.5% 96h cd3 dist                   score +16.00 | n 90.7/+14.32/-64.4 w 91.3/+13.03/-64.6 ddmed -61.1 fails 3
+[S1] 24h-high close -14.0% +3.5% 144h cd3 dist                  score +15.92 | n 92.9/+14.11/-64.4 w 93.9/+13.47/-64.6 ddmed -62.6 fails 1
+[S1] 24h-high close -14.0% +4.0% 48h cd3 dist                   score +16.08 | n 85.1/+15.22/-72.0 w 83.7/+10.25/-72.4 ddmed -62.8 fails 4
+[S1] 24h-high close -14.0% +4.0% 96h cd3 dist                   score +18.41 | n 91.0/+18.58/-64.4 w 90.0/+14.37/-64.6 ddmed -60.6 fails 3
+[S1] 24h-high close -14.0% +4.0% 144h cd3 dist                  score +17.50 | n 93.3/+17.93/-64.4 w 92.6/+13.75/-64.6 ddmed -60.6 fails 1
+[S1] 24h-high close -15.0% +1.5% 48h cd3 dist                   score +13.31 | n 95.9/+13.59/-60.6 w 94.7/ +6.58/-60.8 ddmed -60.6 fails 1
+[S1] 24h-high close -15.0% +1.5% 96h cd3 dist                   score +11.01 | n 96.8/+11.47/-68.9 w 96.2/ +6.81/-72.6 ddmed -68.9 fails 4
+[S1] 24h-high close -15.0% +1.5% 144h cd3 dist                  score +12.46 | n 97.1/+13.13/-73.1 w 96.5/ +7.98/-76.0 ddmed -73.1 fails 4
+[S1] 24h-high close -15.0% +2.0% 48h cd3 dist                   score +13.89 | n 93.9/+13.65/-60.6 w 93.2/ +7.87/-71.9 ddmed -60.6 fails 2
+[S1] 24h-high close -15.0% +2.0% 96h cd3 dist                   score +12.38 | n 95.4/+11.96/-64.4 w 95.0/ +7.94/-70.8 ddmed -64.4 fails 3
+[S1] 24h-high close -15.0% +2.0% 144h cd3 dist                  score +12.92 | n 95.7/+12.93/-69.2 w 95.3/ +8.76/-74.4 ddmed -69.2 fails 4
+[S1] 24h-high close -15.0% +2.5% 48h cd3 dist                   score +13.61 | n 92.7/+13.34/-71.0 w 91.7/ +8.15/-71.5 ddmed -71.0 fails 4
+[S1] 24h-high close -15.0% +2.5% 96h cd3 dist                   score +13.92 | n 94.5/+13.60/-60.6 w 93.7/+10.14/-64.6 ddmed -60.6 fails 1
+[S1] 24h-high close -15.0% +2.5% 144h cd3 dist                  score +12.65 | n 94.9/+13.62/-67.8 w 93.8/ +8.65/-70.7 ddmed -67.8 fails 3
+[S1] 24h-high close -15.0% +3.0% 48h cd3 dist                   score +13.63 | n 90.4/+12.77/-70.6 w 88.7/ +7.79/-71.1 ddmed -70.6 fails 6
+[S1] 24h-high close -15.0% +3.0% 96h cd3 dist                   score +16.31 | n 93.1/+15.40/-60.6 w 92.7/+11.22/-63.1 ddmed -60.6 fails 0 PASS+P
+[S1] 24h-high close -15.0% +3.0% 144h cd3 dist                  score +14.92 | n 93.5/+14.08/-66.5 w 93.1/+10.40/-68.2 ddmed -65.4 fails 2
+[S1] 24h-high close -15.0% +3.5% 48h cd3 dist                   score +12.85 | n 87.4/+11.58/-70.1 w 87.6/ +8.51/-70.7 ddmed -70.1 fails 6
+[S1] 24h-high close -15.0% +3.5% 96h cd3 dist                   score +15.72 | n 91.7/+14.35/-60.6 w 91.7/+12.24/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -15.0% +3.5% 144h cd3 dist                  score +14.13 | n 92.5/+12.91/-65.1 w 93.0/+11.75/-65.4 ddmed -65.1 fails 3
+[S1] 24h-high close -15.0% +4.0% 48h cd3 dist                   score +14.05 | n 86.6/+13.36/-69.7 w 85.8/+10.12/-71.2 ddmed -69.7 fails 4
+[S1] 24h-high close -15.0% +4.0% 96h cd3 dist                   score +17.66 | n 91.5/+17.16/-60.6 w 90.6/+13.48/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -15.0% +4.0% 144h cd3 dist                  score +16.20 | n 92.8/+16.40/-64.9 w 92.2/+13.24/-65.3 ddmed -64.9 fails 3
+[S1] 24h-high close -16.0% +1.5% 48h cd3 dist                   score +12.14 | n 96.4/+11.89/-60.6 w 95.4/ +6.54/-61.3 ddmed -60.6 fails 2
+[S1] 24h-high close -16.0% +1.5% 96h cd3 dist                   score +11.22 | n 97.1/+11.34/-60.6 w 97.0/ +7.78/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -16.0% +1.5% 144h cd3 dist                  score +13.67 | n 97.0/+13.97/-60.6 w 96.9/+10.52/-60.8 ddmed -60.6 fails 0 PASS+P
+[S1] 24h-high close -16.0% +2.0% 48h cd3 dist                   score +13.29 | n 95.4/+12.53/-60.6 w 95.3/ +9.18/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -16.0% +2.0% 96h cd3 dist                   score +12.12 | n 96.5/+11.68/-60.6 w 96.4/ +8.79/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -16.0% +2.0% 144h cd3 dist                  score +14.25 | n 96.3/+14.06/-60.6 w 96.3/+11.01/-60.8 ddmed -60.6 fails 0 PASS+P
+[S1] 24h-high close -16.0% +2.5% 48h cd3 dist                   score +14.69 | n 94.5/+14.54/-60.6 w 93.0/ +9.92/-60.8 ddmed -60.6 fails 0 PASS+P
+[S1] 24h-high close -16.0% +2.5% 96h cd3 dist                   score +11.56 | n 95.7/+11.75/-60.6 w 95.1/ +7.91/-65.5 ddmed -60.6 fails 3
+[S1] 24h-high close -16.0% +2.5% 144h cd3 dist                  score +13.14 | n 95.4/+13.61/-60.6 w 94.8/ +9.64/-64.0 ddmed -60.6 fails 1
+[S1] 24h-high close -16.0% +3.0% 48h cd3 dist                   score +12.92 | n 91.2/+12.22/-60.6 w 90.1/ +7.89/-71.5 ddmed -60.6 fails 5
+[S1] 24h-high close -16.0% +3.0% 96h cd3 dist                   score +11.85 | n 93.4/+11.02/-60.6 w 92.9/ +8.16/-63.0 ddmed -60.6 fails 2
+[S1] 24h-high close -16.0% +3.0% 144h cd3 dist                  score +11.13 | n 92.9/+10.46/-60.6 w 92.4/ +7.89/-61.7 ddmed -60.6 fails 3
+[S1] 24h-high close -16.0% +3.5% 48h cd3 dist                   score +13.44 | n 90.2/+12.40/-70.8 w 89.8/ +9.71/-71.2 ddmed -70.8 fails 6
+[S1] 24h-high close -16.0% +3.5% 96h cd3 dist                   score +12.87 | n 92.2/+11.97/-61.7 w 92.2/+10.45/-63.7 ddmed -60.6 fails 3
+[S1] 24h-high close -16.0% +3.5% 144h cd3 dist                  score +12.53 | n 92.1/+12.02/-60.6 w 92.1/+10.33/-62.1 ddmed -60.6 fails 3
+[S1] 24h-high close -16.0% +4.0% 48h cd3 dist                   score +13.03 | n 88.7/+12.46/-70.5 w 86.4/ +7.78/-71.9 ddmed -70.5 fails 6
+[S1] 24h-high close -16.0% +4.0% 96h cd3 dist                   score +13.22 | n 91.2/+13.35/-62.4 w 90.5/+10.22/-64.9 ddmed -60.6 fails 3
+[S1] 24h-high close -16.0% +4.0% 144h cd3 dist                  score +12.49 | n 91.5/+13.23/-64.9 w 90.7/+10.82/-65.3 ddmed -64.9 fails 4
+[S1] 24h-high close -17.0% +1.5% 48h cd3 dist                   score  +9.34 | n 96.2/ +9.45/-60.6 w 95.7/ +6.35/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -17.0% +1.5% 96h cd3 dist                   score  +9.20 | n 96.5/ +8.83/-60.6 w 96.1/ +4.91/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -17.0% +1.5% 144h cd3 dist                  score +11.14 | n 96.6/+11.06/-60.6 w 96.2/ +7.63/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -17.0% +2.0% 48h cd3 dist                   score +12.86 | n 95.9/+12.89/-60.6 w 94.8/ +7.07/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -17.0% +2.0% 96h cd3 dist                   score +11.99 | n 96.4/+11.13/-60.6 w 95.9/ +6.55/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -17.0% +2.0% 144h cd3 dist                  score +14.17 | n 96.2/+13.59/-60.6 w 95.7/ +8.88/-60.8 ddmed -60.6 fails 1
+[S1] 24h-high close -17.0% +2.5% 48h cd3 dist                   score +12.77 | n 94.3/+12.44/-60.6 w 93.8/ +9.07/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -17.0% +2.5% 96h cd3 dist                   score +10.72 | n 95.0/ +9.95/-60.6 w 94.4/ +7.08/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -17.0% +2.5% 144h cd3 dist                  score +12.08 | n 94.7/+11.70/-60.6 w 94.0/ +9.11/-61.8 ddmed -60.6 fails 2
+[S1] 24h-high close -17.0% +3.0% 48h cd3 dist                   score +14.97 | n 93.3/+13.72/-60.6 w 92.6/+10.54/-60.8 ddmed -60.6 fails 0 PASS+P
+[S1] 24h-high close -17.0% +3.0% 96h cd3 dist                   score +12.51 | n 94.2/+11.39/-60.6 w 93.5/ +6.73/-70.1 ddmed -60.6 fails 3
+[S1] 24h-high close -17.0% +3.0% 144h cd3 dist                  score +13.79 | n 93.8/+13.11/-60.6 w 93.5/ +7.65/-77.5 ddmed -60.6 fails 3
+[S1] 24h-high close -17.0% +3.5% 48h cd3 dist                   score +14.55 | n 91.9/+13.79/-60.6 w 92.2/+11.88/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -17.0% +3.5% 96h cd3 dist                   score +11.77 | n 93.3/+10.49/-64.9 w 93.8/ +9.33/-67.9 ddmed -63.8 fails 4
+[S1] 24h-high close -17.0% +3.5% 144h cd3 dist                  score +12.17 | n 93.3/+11.30/-73.5 w 93.9/+10.28/-75.7 ddmed -72.6 fails 3
+[S1] 24h-high close -17.0% +4.0% 48h cd3 dist                   score +15.31 | n 90.8/+15.38/-60.6 w 89.5/+11.45/-60.8 ddmed -60.6 fails 2
+[S1] 24h-high close -17.0% +4.0% 96h cd3 dist                   score +13.88 | n 92.7/+13.70/-62.6 w 91.4/+10.12/-64.5 ddmed -61.4 fails 2
+[S1] 24h-high close -17.0% +4.0% 144h cd3 dist                  score +12.25 | n 92.6/+12.15/-71.0 w 91.2/ +8.28/-72.5 ddmed -71.0 fails 5
+[S1b] 24h-high close -15.0% +3.0% 72h cd3 dist                   score +18.34 | n 93.0/+17.87/-60.6 w 92.2/+12.46/-60.8 ddmed -60.6 fails 1
+[S1b] 24h-high close -15.0% +3.0% 120h cd3 dist                  score +13.46 | n 93.1/+12.30/-61.6 w 92.7/ +8.41/-65.2 ddmed -61.6 fails 3
+[S1b] 24h-high close -15.0% +3.0% 96h cd0 dist                   score +18.32 | n 93.5/+17.68/-60.6 w 93.1/+13.22/-61.4 ddmed -60.6 fails 0 PASS+P
+[S1b] 24h-high close -15.0% +3.0% 96h cd1 dist                   score +18.07 | n 93.5/+17.68/-60.6 w 93.1/+13.22/-61.4 ddmed -60.6 fails 0 PASS+P
+[S1b] 24h-high close -15.0% +3.0% 96h cd2 dist                   score +17.04 | n 93.5/+17.43/-60.6 w 93.1/+12.94/-61.4 ddmed -60.6 fails 0 PASS+P
+[S1b] 24h-high close -15.0% +3.0% 96h cd4 dist                   score +15.56 | n 93.7/+15.57/-60.6 w 93.3/+11.50/-61.4 ddmed -60.6 fails 0 PASS+P
+[S1b] 24h-high close -15.0% +3.0% 96h cd6 dist                   score +16.11 | n 94.1/+16.46/-60.6 w 93.3/+11.00/-62.8 ddmed -60.6 fails 0 PASS+P
+[S1b] 24h-high close -17.0% +3.0% 72h cd3 dist                   score +13.88 | n 93.6/+13.20/-60.6 w 92.9/ +8.57/-64.9 ddmed -60.6 fails 2
+[S1b] 24h-high close -17.0% +3.0% 120h cd3 dist                  score +12.34 | n 94.0/+11.24/-60.6 w 93.4/ +6.90/-67.6 ddmed -60.6 fails 3
+[S1b] 24h-high close -17.0% +3.0% 48h cd0 dist                   score +13.02 | n 93.6/+13.15/-61.6 w 92.5/ +9.04/-60.8 ddmed -61.6 fails 2
+[S1b] 24h-high close -17.0% +3.0% 48h cd1 dist                   score +13.71 | n 93.6/+13.15/-61.6 w 92.5/ +9.04/-60.8 ddmed -61.6 fails 2
+[S1b] 24h-high close -17.0% +3.0% 48h cd2 dist                   score +13.98 | n 93.3/+13.84/-60.6 w 92.7/+10.95/-60.8 ddmed -60.6 fails 0 PASS+P
+[S1b] 24h-high close -17.0% +3.0% 48h cd4 dist                   score +15.05 | n 94.1/+15.88/-60.6 w 93.0/+11.12/-60.8 ddmed -60.6 fails 0 PASS+P
+[S1b] 24h-high close -17.0% +3.0% 48h cd6 dist                   score +14.03 | n 94.0/+14.46/-60.6 w 92.9/ +9.94/-60.8 ddmed -60.6 fails 0 PASS+P
+[S1b] 24h-high close -16.0% +2.5% 72h cd3 dist                   score +13.34 | n 95.1/+13.55/-60.6 w 94.2/ +9.72/-60.8 ddmed -60.6 fails 1
+[S1b] 24h-high close -16.0% +2.5% 120h cd3 dist                  score +11.46 | n 95.6/+11.62/-60.6 w 95.0/ +7.71/-64.1 ddmed -60.6 fails 2
+[S1b] 24h-high close -16.0% +2.5% 48h cd0 dist                   score +14.21 | n 94.3/+13.93/-60.6 w 92.8/ +8.48/-60.8 ddmed -60.6 fails 1
+[S1b] 24h-high close -16.0% +2.5% 48h cd1 dist                   score +14.89 | n 94.3/+13.93/-60.6 w 92.8/ +8.48/-60.8 ddmed -60.6 fails 1
+[S1b] 24h-high close -16.0% +2.5% 48h cd2 dist                   score +15.26 | n 94.5/+15.54/-60.6 w 93.3/+10.63/-60.8 ddmed -60.6 fails 0 PASS+P
+[S1b] 24h-high close -16.0% +2.5% 48h cd4 dist                   score +13.93 | n 94.2/+13.48/-60.6 w 93.1/ +9.42/-60.8 ddmed -60.6 fails 1
+[S1b] 24h-high close -16.0% +2.5% 48h cd6 dist                   score +12.27 | n 93.9/+12.05/-60.6 w 92.8/ +7.30/-60.8 ddmed -60.6 fails 2
+[S1b] 24h-high close -16.0% +2.0% 72h cd3 dist                   score +13.47 | n 95.7/+13.14/-60.6 w 95.6/+10.08/-60.8 ddmed -60.6 fails 1
+[S1b] 24h-high close -16.0% +2.0% 120h cd3 dist                  score +12.36 | n 96.4/+11.86/-60.6 w 96.4/ +8.81/-60.8 ddmed -60.6 fails 2
+[S1b] 24h-high close -16.0% +2.0% 144h cd0 dist                  score +12.52 | n 95.7/+12.59/-60.6 w 95.5/ +9.09/-60.8 ddmed -60.6 fails 2
+[S1b] 24h-high close -16.0% +2.0% 144h cd1 dist                  score +13.46 | n 95.7/+12.59/-60.6 w 95.5/ +9.09/-60.8 ddmed -60.6 fails 2
+[S1b] 24h-high close -16.0% +2.0% 144h cd2 dist                  score +13.87 | n 96.1/+14.15/-60.6 w 96.1/+10.92/-60.8 ddmed -60.6 fails 0 PASS+P
+[S1b] 24h-high close -16.0% +2.0% 144h cd4 dist                  score +14.30 | n 96.6/+14.70/-60.6 w 96.6/+11.55/-60.8 ddmed -60.6 fails 0 PASS+P
+[S1b] 24h-high close -16.0% +2.0% 144h cd6 dist                  score +12.51 | n 96.1/+12.08/-60.6 w 95.9/ +9.62/-60.8 ddmed -60.6 fails 2
+[S2] 24h-high high -15.0% +3.0% 96h cd0 dist                    score +16.10 | n 90.7/+15.59/-62.9 w 90.2/+10.63/-76.8 ddmed -62.9 fails 3
+[S2] 24h-high high -16.0% +3.0% 96h cd0 dist                    score +20.41 | n 92.7/+19.94/-60.6 w 92.2/+13.96/-61.6 ddmed -60.6 fails 1
+[S2] 24h-mean close -13.0% +3.0% 96h cd0 dist                   score +11.91 | n 97.5/+12.08/-46.5 w 96.6/ +9.20/-53.1 ddmed -46.5 fails 2
+[S2] 24h-mean close -12.0% +3.0% 96h cd0 dist                   score +12.94 | n 96.7/+13.18/-45.1 w 95.6/+10.71/-48.1 ddmed -45.1 fails 0 PASS+P
+[S2] 24h-mean close -11.0% +3.0% 96h cd0 dist                   score +12.40 | n 94.5/+12.70/-45.6 w 93.4/ +8.99/-52.2 ddmed -45.6 fails 2
+[S2] 24h-high close -15.0% +3.0% 96h cd0 liq(near 1%)           score +19.50 | n 93.7/+18.55/-60.6 w 93.0/+12.84/-61.4 ddmed -60.6 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd0 liq(near 3%)           score +19.22 | n 94.4/+18.37/-60.6 w 93.8/+13.10/-61.4 ddmed -60.6 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd0 size(near 1%)          score +18.46 | n 93.5/+17.65/-62.3 w 93.1/+13.08/-61.4 ddmed -62.3 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd0 size(near 3%)          score +18.57 | n 94.5/+17.72/-62.3 w 94.2/+13.65/-61.4 ddmed -62.3 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd0 bounce(near 1%)        score +17.86 | n 93.5/+17.08/-60.9 w 93.1/+12.47/-61.4 ddmed -60.9 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd0 bounce(near 3%)        score +18.85 | n 94.5/+18.07/-64.7 w 94.3/+13.97/-65.9 ddmed -64.7 fails 2
+[S2] 24h-high close -15.0% +3.0% 96h cd0 d7deep(near 1%)        score +19.58 | n 93.8/+18.86/-60.6 w 93.1/+12.95/-61.4 ddmed -60.6 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd0 d7deep(near 3%)        score +20.08 | n 94.6/+19.24/-60.6 w 94.0/+13.65/-65.9 ddmed -60.6 fails 1
+[S2] 24h-high close -15.0% +3.0% 96h cd0 d7shal(near 1%)        score +17.59 | n 93.5/+16.72/-60.9 w 93.1/+12.25/-61.4 ddmed -60.9 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd0 d7shal(near 3%)        score +16.99 | n 93.9/+16.17/-63.0 w 93.6/+11.98/-62.4 ddmed -63.0 fails 0 PASS+P
+[S2] 24h-high high -15.0% +3.0% 96h cd1 dist                    score +15.21 | n 90.7/+15.59/-62.9 w 90.2/+10.63/-76.8 ddmed -62.9 fails 3
+[S2] 24h-high high -16.0% +3.0% 96h cd1 dist                    score +19.80 | n 92.7/+19.94/-60.6 w 92.2/+13.96/-61.6 ddmed -60.6 fails 1
+[S2] 24h-mean close -13.0% +3.0% 96h cd1 dist                   score +11.95 | n 97.5/+12.08/-46.5 w 96.6/ +9.20/-53.1 ddmed -46.5 fails 2
+[S2] 24h-mean close -12.0% +3.0% 96h cd1 dist                   score +12.80 | n 96.7/+13.18/-45.1 w 95.6/+10.71/-48.1 ddmed -45.1 fails 0 PASS+P
+[S2] 24h-mean close -11.0% +3.0% 96h cd1 dist                   score +12.99 | n 94.5/+12.70/-45.6 w 93.4/ +8.99/-52.2 ddmed -45.6 fails 2
+[S2] 24h-high close -15.0% +3.0% 96h cd1 liq(near 1%)           score +19.13 | n 93.7/+18.55/-60.6 w 93.0/+12.84/-61.4 ddmed -60.6 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd1 liq(near 3%)           score +18.82 | n 94.4/+18.37/-60.6 w 93.8/+13.10/-61.4 ddmed -60.6 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd1 size(near 1%)          score +18.08 | n 93.5/+17.65/-62.3 w 93.1/+13.08/-61.4 ddmed -62.3 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd1 size(near 3%)          score +18.07 | n 94.5/+17.72/-62.3 w 94.2/+13.65/-61.4 ddmed -62.3 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd1 bounce(near 1%)        score +17.62 | n 93.5/+17.08/-60.9 w 93.1/+12.47/-61.4 ddmed -60.9 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd1 bounce(near 3%)        score +18.58 | n 94.5/+18.07/-64.7 w 94.3/+13.97/-65.9 ddmed -64.7 fails 2
+[S2] 24h-high close -15.0% +3.0% 96h cd1 d7deep(near 1%)        score +19.21 | n 93.8/+18.86/-60.6 w 93.1/+12.95/-61.4 ddmed -60.6 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd1 d7deep(near 3%)        score +19.61 | n 94.6/+19.24/-60.6 w 94.0/+13.65/-65.9 ddmed -60.6 fails 1
+[S2] 24h-high close -15.0% +3.0% 96h cd1 d7shal(near 1%)        score +17.13 | n 93.5/+16.72/-60.9 w 93.1/+12.25/-61.4 ddmed -60.9 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd1 d7shal(near 3%)        score +16.60 | n 93.9/+16.17/-63.0 w 93.6/+11.98/-62.4 ddmed -63.0 fails 0 PASS+P
+[S2] 24h-high high -15.0% +3.0% 96h cd2 dist                    score +14.34 | n 90.7/+14.91/-60.8 w 90.4/ +9.60/-72.8 ddmed -60.8 fails 4
+[S2] 24h-high high -16.0% +3.0% 96h cd2 dist                    score +18.98 | n 92.7/+18.66/-60.6 w 92.3/+12.93/-61.8 ddmed -60.6 fails 1
+[S2] 24h-mean close -13.0% +3.0% 96h cd2 dist                   score +11.93 | n 97.5/+12.25/-46.6 w 97.4/+10.76/-48.5 ddmed -46.6 fails 1
+[S2] 24h-mean close -12.0% +3.0% 96h cd2 dist                   score +12.53 | n 96.7/+12.66/-50.5 w 94.9/ +9.03/-51.1 ddmed -50.5 fails 2
+[S2] 24h-mean close -11.0% +3.0% 96h cd2 dist                   score +13.31 | n 95.0/+13.97/-45.6 w 93.3/ +9.11/-52.2 ddmed -45.6 fails 1
+[S2] 24h-high close -15.0% +3.0% 96h cd2 liq(near 1%)           score +18.07 | n 93.7/+18.55/-60.6 w 93.0/+12.78/-61.4 ddmed -60.6 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd2 liq(near 3%)           score +17.75 | n 94.3/+18.12/-60.6 w 93.7/+12.85/-61.4 ddmed -60.6 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd2 size(near 1%)          score +16.87 | n 93.4/+17.29/-62.3 w 93.1/+12.86/-61.4 ddmed -62.3 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd2 size(near 3%)          score +16.69 | n 94.4/+16.89/-62.3 w 94.1/+12.94/-61.4 ddmed -62.3 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd2 bounce(near 1%)        score +16.39 | n 93.5/+16.55/-60.9 w 93.0/+11.86/-61.4 ddmed -60.9 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd2 bounce(near 3%)        score +17.36 | n 94.2/+17.33/-64.7 w 93.9/+13.35/-65.9 ddmed -64.7 fails 2
+[S2] 24h-high close -15.0% +3.0% 96h cd2 d7deep(near 1%)        score +18.00 | n 93.7/+18.33/-60.6 w 93.0/+12.59/-61.4 ddmed -60.6 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd2 d7deep(near 3%)        score +18.45 | n 94.5/+18.46/-60.6 w 93.9/+12.91/-65.9 ddmed -60.6 fails 1
+[S2] 24h-high close -15.0% +3.0% 96h cd2 d7shal(near 1%)        score +16.00 | n 93.4/+15.95/-60.9 w 93.0/+11.58/-61.4 ddmed -60.9 fails 0 PASS+P
+[S2] 24h-high close -15.0% +3.0% 96h cd2 d7shal(near 3%)        score +15.49 | n 93.8/+15.51/-63.0 w 93.5/+11.50/-61.4 ddmed -63.0 fails 0 PASS+P
+[S3] 24h-high close -maj 13.0% / other 15.0% +3.0% 96h cd0 d7deep(near 1%) score +18.51 | n 93.8/+18.04/-60.6 w 92.7/+11.74/-60.8 ddmed -60.6 fails 0 PASS+P
+[S3] 24h-high close -maj 14.0% / other 15.0% +3.0% 96h cd0 d7deep(near 1%) score +19.62 | n 94.0/+19.01/-60.6 w 93.4/+13.12/-61.4 ddmed -60.6 fails 0 PASS+P
+[S3] 24h-high close -maj 16.0% / other 15.0% +3.0% 96h cd0 d7deep(near 1%) score +17.38 | n 93.4/+16.85/-60.6 w 92.7/+11.07/-61.6 ddmed -60.6 fails 0 PASS+P
+[S3] 24h-high close -maj 17.0% / other 15.0% +3.0% 96h cd0 d7deep(near 1%) score +19.13 | n 94.1/+18.61/-60.6 w 93.3/+12.36/-61.6 ddmed -60.6 fails 0 PASS+P
+[S3] 24h-high close -9x rng30 [10-25%] +3.0% 96h cd0 d7deep(near 1%) score  +9.70 | n 89.8/ +9.53/-60.6 w 88.6/ +6.38/-60.7 ddmed -60.6 fails 4
+[S3] 24h-high close -11x rng30 [10-25%] +3.0% 96h cd0 d7deep(near 1%) score  +6.15 | n 87.5/ +6.29/-68.1 w 87.4/ +4.71/-71.2 ddmed -68.1 fails 6
+[S3] 24h-high close -12x rng30 [10-25%] +3.0% 96h cd0 d7deep(near 1%) score  +6.47 | n 89.5/ +6.48/-66.5 w 88.1/ +4.19/-66.6 ddmed -66.5 fails 6
+[S3] 24h-high close -13x rng30 [10-25%] +3.0% 96h cd0 d7deep(near 1%) score  +4.36 | n 89.2/ +4.42/-66.1 w 88.5/ +2.51/-66.3 ddmed -66.1 fails 6
+[S3] 24h-high close -15x rng30 [10-25%] +3.0% 96h cd0 d7deep(near 1%) score  +4.20 | n 91.7/ +4.39/-60.4 w 91.5/ +3.23/-60.4 ddmed -60.4 fails 4
+[S3] 24h-high close -17x rng30 [10-25%] +3.0% 96h cd0 d7deep(near 1%) score  +4.24 | n 93.9/ +4.41/-60.4 w 93.9/ +3.51/-60.4 ddmed -60.4 fails 2
+[S3] 24h-high close -11x rng30 [12-25%] +3.0% 96h cd0 d7deep(near 1%) score  +6.40 | n 88.7/ +6.54/-66.0 w 87.8/ +3.92/-71.0 ddmed -66.0 fails 6
+[S3] 24h-high close -13x rng30 [12-25%] +3.0% 96h cd0 d7deep(near 1%) score  +4.35 | n 91.7/ +4.40/-65.9 w 90.0/ +2.04/-67.9 ddmed -65.9 fails 6
+[S3] 24h-high close -15x rng30 [12-25%] +3.0% 96h cd0 d7deep(near 1%) score  +3.71 | n 92.7/ +3.87/-60.4 w 92.4/ +2.62/-60.4 ddmed -60.4 fails 3
+[S3] 24h-high close -maj 13.0% / other 15.0% +3.0% 96h cd0 liq(near 1%) score +18.71 | n 93.7/+18.19/-60.6 w 92.7/+11.97/-60.8 ddmed -60.6 fails 0 PASS+P
+[S3] 24h-high close -maj 14.0% / other 15.0% +3.0% 96h cd0 liq(near 1%) score +19.48 | n 94.0/+18.68/-60.6 w 93.4/+12.94/-61.4 ddmed -60.6 fails 0 PASS+P
+[S3] 24h-high close -maj 16.0% / other 15.0% +3.0% 96h cd0 liq(near 1%) score +17.41 | n 93.4/+16.70/-60.6 w 92.7/+11.09/-61.6 ddmed -60.6 fails 0 PASS+P
+[S3] 24h-high close -maj 17.0% / other 15.0% +3.0% 96h cd0 liq(near 1%) score +19.02 | n 94.0/+18.27/-60.6 w 93.3/+12.22/-61.6 ddmed -60.6 fails 0 PASS+P
+[S3] 24h-high close -9x rng30 [10-25%] +3.0% 96h cd0 liq(near 1%) score  +7.83 | n 89.3/ +7.65/-64.8 w 88.2/ +4.79/-68.8 ddmed -64.8 fails 6
+[S3] 24h-high close -11x rng30 [10-25%] +3.0% 96h cd0 liq(near 1%) score  +6.09 | n 87.6/ +6.22/-68.1 w 87.4/ +4.55/-71.2 ddmed -68.1 fails 6
+[S3] 24h-high close -12x rng30 [10-25%] +3.0% 96h cd0 liq(near 1%) score  +6.57 | n 89.6/ +6.56/-66.5 w 88.1/ +4.19/-66.6 ddmed -66.5 fails 6
+[S3] 24h-high close -13x rng30 [10-25%] +3.0% 96h cd0 liq(near 1%) score  +2.96 | n 87.7/ +2.98/-66.1 w 87.1/ +1.25/-72.8 ddmed -66.1 fails 6
+[S3] 24h-high close -15x rng30 [10-25%] +3.0% 96h cd0 liq(near 1%) score  +3.98 | n 91.7/ +4.09/-60.4 w 91.5/ +3.01/-60.4 ddmed -60.4 fails 4
+[S3] 24h-high close -17x rng30 [10-25%] +3.0% 96h cd0 liq(near 1%) score  +3.86 | n 93.8/ +4.00/-60.4 w 93.7/ +3.12/-60.4 ddmed -60.4 fails 2
+[S3] 24h-high close -11x rng30 [12-25%] +3.0% 96h cd0 liq(near 1%) score  +5.42 | n 88.0/ +5.55/-67.7 w 87.7/ +3.74/-71.4 ddmed -67.7 fails 6
+[S3] 24h-high close -13x rng30 [12-25%] +3.0% 96h cd0 liq(near 1%) score  +4.07 | n 91.5/ +4.11/-65.9 w 90.1/ +1.98/-67.9 ddmed -65.9 fails 6
+[S3] 24h-high close -15x rng30 [12-25%] +3.0% 96h cd0 liq(near 1%) score  +3.37 | n 92.6/ +3.45/-60.4 w 92.3/ +2.28/-60.4 ddmed -60.4 fails 3
+[S3] 24h-high close -maj 13.0% / other 15.0% +3.0% 96h cd0 liq(near 3%) score +17.69 | n 94.3/+17.09/-60.6 w 93.4/+11.83/-60.8 ddmed -60.6 fails 0 PASS+P
+[S3] 24h-high close -maj 14.0% / other 15.0% +3.0% 96h cd0 liq(near 3%) score +18.12 | n 94.3/+17.39/-60.6 w 93.8/+12.40/-61.4 ddmed -60.6 fails 0 PASS+P
+[S3] 24h-high close -maj 16.0% / other 15.0% +3.0% 96h cd0 liq(near 3%) score +16.86 | n 93.5/+16.13/-60.6 w 92.9/+10.94/-61.4 ddmed -60.6 fails 0 PASS+P
+[S3] 24h-high close -maj 17.0% / other 15.0% +3.0% 96h cd0 liq(near 3%) score +18.75 | n 93.9/+18.01/-60.6 w 93.3/+12.25/-61.4 ddmed -60.6 fails 0 PASS+P
+[S3] 24h-high close -9x rng30 [10-25%] +3.0% 96h cd0 liq(near 3%) score  +7.78 | n 88.1/ +7.52/-64.6 w 87.4/ +4.64/-64.9 ddmed -64.6 fails 6
+[S3] 24h-high close -11x rng30 [10-25%] +3.0% 96h cd0 liq(near 3%) score  +5.43 | n 88.0/ +5.54/-68.8 w 87.9/ +3.87/-73.3 ddmed -68.8 fails 6
+[S3] 24h-high close -12x rng30 [10-25%] +3.0% 96h cd0 liq(near 3%) score  +6.52 | n 89.4/ +6.59/-66.5 w 88.0/ +4.31/-66.6 ddmed -66.5 fails 6
+[S3] 24h-high close -13x rng30 [10-25%] +3.0% 96h cd0 liq(near 3%) score  +3.36 | n 87.9/ +3.47/-66.1 w 87.5/ +1.99/-66.3 ddmed -66.1 fails 6
+[S3] 24h-high close -15x rng30 [10-25%] +3.0% 96h cd0 liq(near 3%) score  +4.26 | n 89.9/ +4.36/-60.4 w 89.8/ +3.36/-60.4 ddmed -60.4 fails 4
+[S3] 24h-high close -17x rng30 [10-25%] +3.0% 96h cd0 liq(near 3%) score  +5.46 | n 93.9/ +5.62/-60.4 w 93.8/ +4.71/-60.4 ddmed -60.4 fails 2
+[S3] 24h-high close -11x rng30 [12-25%] +3.0% 96h cd0 liq(near 3%) score  +5.53 | n 89.5/ +5.64/-69.4 w 88.1/ +3.40/-73.9 ddmed -69.4 fails 6
+[S3] 24h-high close -13x rng30 [12-25%] +3.0% 96h cd0 liq(near 3%) score  +3.32 | n 90.6/ +3.40/-65.9 w 89.1/ +1.29/-74.6 ddmed -65.9 fails 6
+[S3] 24h-high close -15x rng30 [12-25%] +3.0% 96h cd0 liq(near 3%) score  +3.97 | n 90.8/ +4.06/-60.4 w 90.4/ +2.90/-60.4 ddmed -60.4 fails 4
+[S4] 24h-mean close -maj 11.0% / other 12.0% +3.0% 96h cd0 d7deep(near 1%) score +13.01 | n 96.4/+13.21/-45.7 w 95.7/+11.04/-48.6 ddmed -45.7 fails 0 PASS+P
+
+221 designs scored (125s). Passing bars: 57, bars+proxy: 57
+[nb] 24h-high close -maj 14.0% / other 15.0% +2.5% 96h cd0 d7deep(near 1%) score +16.80 | n 94.5/+16.33/-60.6 w 94.3/+12.63/-60.8 ddmed -60.6 fails 0 PASS+P
+[nb] 24h-high close -maj 14.0% / other 15.0% +3.5% 96h cd0 d7deep(near 1%) score +18.96 | n 93.0/+18.44/-60.6 w 92.0/+13.08/-60.8 ddmed -60.6 fails 1
+[nb] 24h-high close -maj 14.0% / other 15.0% +3.0% 72h cd0 d7deep(near 1%) score +19.48 | n 93.9/+19.02/-60.6 w 92.9/+13.05/-60.8 ddmed -60.6 fails 0 PASS+P
+[nb] 24h-high close -maj 14.0% / other 15.0% +3.0% 120h cd0 d7deep(near 1%) score +17.04 | n 94.6/+16.43/-60.6 w 94.0/+10.85/-63.8 ddmed -60.6 fails 0 PASS+P
+[nb] 24h-high close -maj 14.0% / other 15.0% +3.0% 96h cd1 d7deep(near 1%) score +19.48 | n 94.0/+19.01/-60.6 w 93.4/+13.12/-61.4 ddmed -60.6 fails 0 PASS+P
+[nb] 24h-high close -maj 14.0% / other 14.0% +3.0% 96h cd0 d7deep(near 1%) score +17.59 | n 92.8/+17.34/-60.6 w 92.5/+12.01/-65.5 ddmed -60.6 fails 1
+[nb] 24h-high close -maj 14.0% / other 16.0% +3.0% 96h cd0 d7deep(near 1%) score +14.02 | n 93.9/+13.67/-60.6 w 93.6/+10.24/-60.8 ddmed -60.6 fails 0 PASS+P
+[nb] 24h-high close -maj 15.0% / other 15.0% +3.0% 96h cd0 d7deep(near 1%) score +19.58 | n 93.8/+18.86/-60.6 w 93.1/+12.95/-61.4 ddmed -60.6 fails 0 PASS+P
+[nb] 24h-high close -maj 14.0% / other 15.0% +3.0% 96h cd0 d7deep(near 2%) score +18.68 | n 94.1/+17.96/-60.6 w 93.4/+12.20/-65.9 ddmed -60.6 fails 1
+try 24h-high close -maj 14.0% / other 15.0% +3.0% 96h cd0 d7deep(near 1%) score +19.62: 10 neighbours median n 93.9/+18.00/-60.6 w 93.2/+12.41/-61.1 -> PASS
+total designs incl. neighbours: 230
+PICK: 24h-high close -maj 14.0% / other 15.0% +3.0% 96h cd0 d7deep(near 1%)  {"anchor": "c", "cd": 0, "depth": 0.15, "dmaj": 0.14, "guard": 0.35, "hm": 96, "near": 0.01, "rank": "d7deep", "tp": 0.03, "vhi": 0.25, "vk": 0.0, "vlo": 0.1}

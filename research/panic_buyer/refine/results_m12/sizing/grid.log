@@ -1,0 +1,260 @@
+=== m12 sizing grid Thu Oct 29 04:33:47 2026  90% mode: n 13.17 w 9.79 robust 13.93
+vol quantiles 2021-23 (50/70/90%): {'c24': [0.00828, 0.01148, 0.01857], 'c168': [0.00914, 0.01216, 0.01888], 'm24': [0.00828, 0.01051, 0.01578], 'm168': [0.00915, 0.01089, 0.01665]}
+[1/A] fs0.5 slots1 bids1                                           n  93.8/ +7.28/-32.8 w  93.4/ +5.57/-34.0 rob  +7.57 size 0.50 fails 3
+[1/A] fs0.5 slots2 bids1                                           n  93.4/ +9.80/-56.8 w  93.0/ +6.54/-61.1 rob  +9.99 size 0.50 fails 3
+[1/A] fs0.5 slots2 bids2                                           n  93.7/+11.55/-55.2 w  93.2/ +7.71/-62.4 rob +11.30 size 0.50 fails 3
+[1/A] fs0.6 slots1 bids1                                           n  93.8/ +8.60/-38.8 w  93.4/ +6.55/-40.2 rob  +8.97 size 0.60 fails 3
+[1/A] fs0.6 slots2 bids1                                           n  93.4/+10.83/-59.5 w  93.0/ +7.22/-63.8 rob +10.99 size 0.60 fails 3
+[1/A] fs0.6 slots2 bids2                                           n  93.7/+11.54/-58.2 w  93.2/ +7.52/-65.1 rob +11.29 size 0.60 fails 4
+[1/A] fs0.7 slots1 bids1                                           n  93.8/ +9.86/-45.1 w  93.4/ +7.47/-46.1 rob +10.32 size 0.70 fails 3
+[1/A] fs0.7 slots2 bids1                                           n  93.4/+11.69/-59.4 w  93.0/ +8.00/-63.9 rob +11.84 size 0.70 fails 3
+[1/A] fs0.7 slots2 bids2                                           n  93.7/+11.56/-58.2 w  93.2/ +7.45/-65.1 rob +11.31 size 0.70 fails 4
+[1/A] fs0.8 slots1 bids1                                           n  93.8/+11.05/-51.5 w  93.4/ +8.32/-52.9 rob +11.60 size 0.80 fails 3
+[1/A] fs0.8 slots2 bids1                                           n  93.4/+12.49/-59.9 w  93.0/ +8.73/-64.2 rob +12.63 size 0.80 fails 3
+[1/A] fs0.8 slots2 bids2                                           n  93.7/+11.56/-58.2 w  93.2/ +7.45/-65.1 rob +11.31 size 0.80 fails 4
+[1/A] fs0.9 slots1 bids1                                           n  93.8/+12.16/-58.0 w  93.4/ +9.10/-59.5 rob +12.81 size 0.90 fails 3
+[1/A] fs0.9 slots2 bids1                                           n  93.4/+13.21/-60.7 w  93.0/ +9.42/-64.9 rob +13.35 size 0.90 fails 3
+[1/A] fs0.9 slots2 bids2                                           n  93.7/+11.56/-58.2 w  93.2/ +7.45/-65.1 rob +11.31 size 0.90 fails 4
+[1/A] fs0.4 slots3 bids1                                           n  92.6/ +8.58/-43.7 w  92.4/ +6.14/-46.4 rob  +8.66 size 0.40 fails 4
+[1/A] fs0.5 slots3 bids1                                           n  92.5/ +9.80/-49.1 w  92.3/ +6.99/-51.4 rob +10.07 size 0.50 fails 4
+  family A best: fs0.9 slots2 bids1 fails 3 rob 13.35   (3s)
+[1/B] streak1 x0.5 min0.25 +0.25/win                               n  93.8/+12.03/-65.3 w  93.4/ +8.74/-68.9 rob +12.88 size 0.95 fails 5
+[1/B] fs1 slots2 bids1 | streak1 x0.5 min0.25 +0.25/win            n  94.2/+12.97/-64.4 w  93.8/ +9.88/-67.6 rob +13.75 size 0.95 fails 4
+[1/B] streak1 x0.5 min0.25 +1/win                                  n  93.8/+12.58/-64.4 w  93.4/ +9.26/-68.2 rob +13.41 size 0.97 fails 5
+[1/B] fs1 slots2 bids1 | streak1 x0.5 min0.25 +1/win               n  94.0/+13.02/-64.4 w  93.7/ +9.89/-67.1 rob +13.83 size 0.96 fails 4
+[1/B] streak1 x0.5 min0.5 +0.25/win                                n  93.8/+12.17/-65.3 w  93.4/ +8.86/-68.9 rob +12.99 size 0.96 fails 5
+[1/B] fs1 slots2 bids1 | streak1 x0.5 min0.5 +0.25/win             n  94.1/+12.86/-64.4 w  93.8/ +9.77/-67.6 rob +13.65 size 0.95 fails 5
+[1/B] streak1 x0.5 min0.5 +1/win                                   n  93.8/+12.56/-64.4 w  93.4/ +9.23/-68.2 rob +13.39 size 0.97 fails 5
+[1/B] fs1 slots2 bids1 | streak1 x0.5 min0.5 +1/win                n  94.0/+13.02/-64.4 w  93.7/ +9.89/-67.1 rob +13.83 size 0.96 fails 4
+[1/B] streak1 x0.75 min0.25 +0.25/win                              n  93.8/+12.83/-64.4 w  93.4/ +9.49/-67.1 rob +13.63 size 0.98 fails 5
+[1/B] fs1 slots2 bids1 | streak1 x0.75 min0.25 +0.25/win           n  94.0/+13.03/-64.4 w  93.7/ +9.85/-66.5 rob +13.81 size 0.98 fails 4
+[1/B] streak1 x0.75 min0.25 +1/win                                 n  93.8/+12.88/-64.4 w  93.4/ +9.53/-67.1 rob +13.67 size 0.98 fails 5
+[1/B] fs1 slots2 bids1 | streak1 x0.75 min0.25 +1/win              n  94.0/+13.03/-64.4 w  93.7/ +9.85/-66.5 rob +13.81 size 0.98 fails 4
+[1/B] streak1 x0.75 min0.5 +0.25/win                               n  93.8/+12.85/-64.4 w  93.4/ +9.50/-67.1 rob +13.65 size 0.98 fails 5
+[1/B] fs1 slots2 bids1 | streak1 x0.75 min0.5 +0.25/win            n  94.0/+13.03/-64.4 w  93.7/ +9.85/-66.5 rob +13.81 size 0.98 fails 4
+[1/B] streak1 x0.75 min0.5 +1/win                                  n  93.8/+12.88/-64.4 w  93.4/ +9.53/-67.1 rob +13.68 size 0.98 fails 5
+[1/B] fs1 slots2 bids1 | streak1 x0.75 min0.5 +1/win               n  94.0/+13.03/-64.4 w  93.7/ +9.85/-66.5 rob +13.81 size 0.98 fails 4
+[1/B] streak2 x0.5 min0.25 +0.25/win                               n  93.8/+13.12/-64.4 w  93.4/ +9.76/-65.9 rob +13.88 size 0.99 fails 5
+[1/B] fs1 slots2 bids1 | streak2 x0.5 min0.25 +0.25/win            n  93.9/+13.25/-64.4 w  93.4/ +9.88/-65.9 rob +14.03 size 1.00 fails 2
+[1/B] streak2 x0.5 min0.25 +1/win                                  n  93.8/+13.20/-64.4 w  93.4/ +9.84/-65.9 rob +13.97 size 1.00 fails 2
+[1/B] fs1 slots2 bids1 | streak2 x0.5 min0.25 +1/win               n  93.9/+13.29/-64.4 w  93.4/ +9.92/-65.9 rob +14.06 size 1.00 fails 2
+[1/B] streak2 x0.5 min0.5 +0.25/win                                n  93.8/+13.18/-64.4 w  93.4/ +9.82/-65.9 rob +13.95 size 1.00 fails 2
+[1/B] fs1 slots2 bids1 | streak2 x0.5 min0.5 +0.25/win             n  93.9/+13.25/-64.4 w  93.4/ +9.88/-65.9 rob +14.03 size 1.00 fails 2
+[1/B] streak2 x0.5 min0.5 +1/win                                   n  93.8/+13.22/-64.4 w  93.4/ +9.85/-65.9 rob +13.99 size 1.00 fails 2
+[1/B] fs1 slots2 bids1 | streak2 x0.5 min0.5 +1/win                n  93.9/+13.29/-64.4 w  93.4/ +9.92/-65.9 rob +14.06 size 1.00 fails 2
+[1/B] streak2 x0.75 min0.25 +0.25/win                              n  93.8/+13.17/-64.4 w  93.4/ +9.80/-65.9 rob +13.93 size 1.00 fails 4
+[1/B] fs1 slots2 bids1 | streak2 x0.75 min0.25 +0.25/win           n  93.9/+13.23/-64.4 w  93.4/ +9.85/-65.9 rob +14.00 size 1.00 fails 2
+[1/B] streak2 x0.75 min0.25 +1/win                                 n  93.8/+13.18/-64.4 w  93.4/ +9.81/-65.9 rob +13.95 size 1.00 fails 2
+[1/B] fs1 slots2 bids1 | streak2 x0.75 min0.25 +1/win              n  93.9/+13.23/-64.4 w  93.4/ +9.85/-65.9 rob +14.00 size 1.00 fails 2
+[1/B] streak2 x0.75 min0.5 +0.25/win                               n  93.8/+13.17/-64.4 w  93.4/ +9.80/-65.9 rob +13.93 size 1.00 fails 4
+[1/B] fs1 slots2 bids1 | streak2 x0.75 min0.5 +0.25/win            n  93.9/+13.23/-64.4 w  93.4/ +9.85/-65.9 rob +14.00 size 1.00 fails 2
+[1/B] streak2 x0.75 min0.5 +1/win                                  n  93.8/+13.18/-64.4 w  93.4/ +9.81/-65.9 rob +13.95 size 1.00 fails 2
+[1/B] fs1 slots2 bids1 | streak2 x0.75 min0.5 +1/win               n  93.9/+13.23/-64.4 w  93.4/ +9.85/-65.9 rob +14.00 size 1.00 fails 2
+[1/B] streak3 x0.5 min0.25 +0.25/win                               n  93.8/+13.11/-64.4 w  93.4/ +9.74/-65.9 rob +13.88 size 1.00 fails 5
+[1/B] fs1 slots2 bids1 | streak3 x0.5 min0.25 +0.25/win            n  93.8/+13.11/-64.4 w  93.4/ +9.74/-65.9 rob +13.88 size 1.00 fails 5
+[1/B] streak3 x0.5 min0.25 +1/win                                  n  93.8/+13.13/-64.4 w  93.4/ +9.76/-65.9 rob +13.90 size 1.00 fails 5
+[1/B] fs1 slots2 bids1 | streak3 x0.5 min0.25 +1/win               n  93.8/+13.13/-64.4 w  93.4/ +9.76/-65.9 rob +13.90 size 1.00 fails 5
+[1/B] streak3 x0.5 min0.5 +0.25/win                                n  93.8/+13.11/-64.4 w  93.4/ +9.74/-65.9 rob +13.88 size 1.00 fails 5
+[1/B] fs1 slots2 bids1 | streak3 x0.5 min0.5 +0.25/win             n  93.8/+13.11/-64.4 w  93.4/ +9.74/-65.9 rob +13.88 size 1.00 fails 5
+[1/B] streak3 x0.5 min0.5 +1/win                                   n  93.8/+13.13/-64.4 w  93.4/ +9.76/-65.9 rob +13.90 size 1.00 fails 5
+[1/B] fs1 slots2 bids1 | streak3 x0.5 min0.5 +1/win                n  93.8/+13.13/-64.4 w  93.4/ +9.76/-65.9 rob +13.90 size 1.00 fails 5
+[1/B] streak3 x0.75 min0.25 +0.25/win                              n  93.8/+13.15/-64.4 w  93.4/ +9.77/-65.9 rob +13.92 size 1.00 fails 5
+[1/B] fs1 slots2 bids1 | streak3 x0.75 min0.25 +0.25/win           n  93.8/+13.15/-64.4 w  93.4/ +9.77/-65.9 rob +13.92 size 1.00 fails 5
+[1/B] streak3 x0.75 min0.25 +1/win                                 n  93.8/+13.15/-64.4 w  93.4/ +9.77/-65.9 rob +13.92 size 1.00 fails 5
+[1/B] fs1 slots2 bids1 | streak3 x0.75 min0.25 +1/win              n  93.8/+13.15/-64.4 w  93.4/ +9.77/-65.9 rob +13.92 size 1.00 fails 5
+[1/B] streak3 x0.75 min0.5 +0.25/win                               n  93.8/+13.15/-64.4 w  93.4/ +9.77/-65.9 rob +13.92 size 1.00 fails 5
+[1/B] fs1 slots2 bids1 | streak3 x0.75 min0.5 +0.25/win            n  93.8/+13.15/-64.4 w  93.4/ +9.77/-65.9 rob +13.92 size 1.00 fails 5
+[1/B] streak3 x0.75 min0.5 +1/win                                  n  93.8/+13.15/-64.4 w  93.4/ +9.77/-65.9 rob +13.92 size 1.00 fails 5
+[1/B] fs1 slots2 bids1 | streak3 x0.75 min0.5 +1/win               n  93.8/+13.15/-64.4 w  93.4/ +9.77/-65.9 rob +13.92 size 1.00 fails 5
+  family B best: fs1 slots2 bids1 | streak2 x0.5 min0.25 +1/win fails 2 rob 14.06   (11s)
+[1/C] dd>0.1 k1 min0.25                                            n  93.8/+11.18/-64.4 w  93.4/ +8.23/-64.6 rob +12.13 size 0.90 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.1 k1 min0.25                         n  93.7/+11.43/-64.4 w  93.6/ +8.19/-67.8 rob +12.50 size 0.88 fails 5
+[1/C] dd>0.1 k1 min0.25 pw720                                      n  93.8/+11.52/-65.8 w  93.4/ +8.53/-69.2 rob +12.49 size 0.95 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.1 k1 min0.25 pw720                   n  94.4/+11.89/-64.4 w  94.0/ +9.08/-67.4 rob +12.96 size 0.93 fails 5
+[1/C] dd>0.1 k1 min0.5                                             n  93.8/+11.18/-64.4 w  93.4/ +8.23/-64.6 rob +12.13 size 0.90 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.1 k1 min0.5                          n  93.7/+11.43/-64.4 w  93.6/ +8.19/-67.8 rob +12.50 size 0.88 fails 5
+[1/C] dd>0.1 k1 min0.5 pw720                                       n  93.8/+11.52/-65.8 w  93.4/ +8.53/-69.2 rob +12.49 size 0.95 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.1 k1 min0.5 pw720                    n  94.4/+11.89/-64.4 w  94.0/ +9.08/-67.4 rob +12.96 size 0.93 fails 5
+[1/C] dd>0.1 k2 min0.25                                            n  93.8/ +7.65/-64.4 w  93.4/ +5.39/-64.6 rob  +9.11 size 0.72 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.1 k2 min0.25                         n  93.7/ +8.36/-64.4 w  93.6/ +6.12/-64.6 rob  +9.72 size 0.66 fails 5
+[1/C] dd>0.1 k2 min0.25 pw720                                      n  93.8/ +9.13/-69.9 w  93.4/ +6.88/-72.5 rob +10.38 size 0.86 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.1 k2 min0.25 pw720                   n  94.3/+10.48/-67.0 w  93.9/ +7.93/-70.4 rob +11.73 size 0.84 fails 5
+[1/C] dd>0.1 k2 min0.5                                             n  93.8/ +9.36/-64.4 w  93.4/ +7.02/-64.6 rob +10.64 size 0.81 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.1 k2 min0.5                          n  93.8/+10.31/-64.4 w  93.7/ +7.65/-66.5 rob +11.52 size 0.78 fails 5
+[1/C] dd>0.1 k2 min0.5 pw720                                       n  93.8/ +9.82/-68.1 w  93.4/ +7.38/-70.8 rob +11.09 size 0.89 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.1 k2 min0.5 pw720                    n  94.4/+11.25/-64.6 w  94.1/ +8.63/-68.1 rob +12.43 size 0.87 fails 5
+[1/C] dd>0.1 k4 min0.25                                            n  93.8/ +3.85/-64.4 w  93.4/ +2.14/-64.6 rob  +5.97 size 0.51 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.1 k4 min0.25                         n  94.0/ +6.34/-64.4 w  93.8/ +5.26/-64.6 rob  +8.02 size 0.51 fails 5
+[1/C] dd>0.1 k4 min0.25 pw720                                      n  93.8/ +8.07/-69.6 w  93.4/ +6.22/-71.8 rob  +9.43 size 0.80 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.1 k4 min0.25 pw720                   n  94.3/ +9.08/-68.3 w  93.9/ +7.20/-70.7 rob +10.29 size 0.75 fails 5
+[1/C] dd>0.1 k4 min0.5                                             n  93.8/ +8.16/-64.4 w  93.4/ +6.30/-64.6 rob  +9.62 size 0.74 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.1 k4 min0.5                          n  93.8/ +9.98/-64.4 w  93.6/ +7.71/-64.6 rob +11.27 size 0.74 fails 5
+[1/C] dd>0.1 k4 min0.5 pw720                                       n  93.8/ +9.35/-66.4 w  93.4/ +7.08/-69.3 rob +10.58 size 0.86 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.1 k4 min0.5 pw720                    n  94.5/+11.07/-64.4 w  94.0/ +8.54/-66.4 rob +12.37 size 0.83 fails 5
+[1/C] dd>0.2 k1 min0.25                                            n  93.8/+11.84/-64.4 w  93.4/ +8.74/-64.9 rob +12.66 size 0.94 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.2 k1 min0.25                         n  93.7/+11.97/-65.2 w  93.3/ +8.66/-68.6 rob +12.88 size 0.93 fails 5
+[1/C] dd>0.2 k1 min0.25 pw720                                      n  93.8/+12.30/-64.9 w  93.4/ +9.12/-68.6 rob +13.15 size 0.97 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.2 k1 min0.25 pw720                   n  94.2/+12.35/-64.4 w  93.8/ +9.33/-67.3 rob +13.28 size 0.96 fails 5
+[1/C] dd>0.2 k1 min0.5                                             n  93.8/+11.84/-64.4 w  93.4/ +8.74/-64.9 rob +12.66 size 0.94 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.2 k1 min0.5                          n  93.7/+11.97/-65.2 w  93.3/ +8.66/-68.6 rob +12.88 size 0.93 fails 5
+[1/C] dd>0.2 k1 min0.5 pw720                                       n  93.8/+12.30/-64.9 w  93.4/ +9.12/-68.6 rob +13.15 size 0.97 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.2 k1 min0.5 pw720                    n  94.2/+12.35/-64.4 w  93.8/ +9.33/-67.3 rob +13.28 size 0.96 fails 5
+[1/C] dd>0.2 k2 min0.25                                            n  93.8/+10.02/-64.4 w  93.4/ +7.23/-64.6 rob +10.95 size 0.85 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.2 k2 min0.25                         n  93.9/ +9.06/-71.2 w  93.4/ +6.40/-71.7 rob +10.39 size 0.75 fails 5
+[1/C] dd>0.2 k2 min0.25 pw720                                      n  93.8/+11.03/-68.3 w  93.4/ +8.14/-71.4 rob +12.05 size 0.94 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.2 k2 min0.25 pw720                   n  94.2/+11.62/-65.1 w  93.8/ +8.85/-68.8 rob +12.75 size 0.92 fails 5
+[1/C] dd>0.2 k2 min0.5                                             n  93.8/+10.55/-64.4 w  93.4/ +7.84/-64.6 rob +11.46 size 0.88 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.2 k2 min0.5                          n  93.9/+10.46/-67.2 w  93.4/ +7.76/-69.7 rob +11.64 size 0.84 fails 5
+[1/C] dd>0.2 k2 min0.5 pw720                                       n  93.8/+11.12/-68.3 w  93.4/ +8.25/-71.4 rob +12.12 size 0.94 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.2 k2 min0.5 pw720                    n  94.2/+11.70/-65.1 w  93.8/ +8.93/-68.7 rob +12.79 size 0.92 fails 5
+[1/C] dd>0.2 k4 min0.25                                            n  93.8/ +6.55/-64.4 w  93.4/ +5.20/-64.6 rob  +7.70 size 0.66 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.2 k4 min0.25                         n  93.7/ +8.39/-64.4 w  93.4/ +5.95/-64.6 rob  +9.54 size 0.63 fails 5
+[1/C] dd>0.2 k4 min0.25 pw720                                      n  93.8/ +8.59/-73.0 w  93.4/ +6.79/-75.0 rob  +9.77 size 0.84 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.2 k4 min0.25 pw720                   n  94.2/ +9.49/-71.4 w  93.7/ +7.27/-73.8 rob +10.76 size 0.81 fails 5
+[1/C] dd>0.2 k4 min0.5                                             n  93.8/ +9.53/-64.4 w  93.4/ +7.54/-64.6 rob +10.64 size 0.83 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.2 k4 min0.5                          n  93.8/+10.37/-65.3 w  93.4/ +7.98/-67.1 rob +11.50 size 0.79 fails 5
+[1/C] dd>0.2 k4 min0.5 pw720                                       n  93.8/+10.19/-69.2 w  93.4/ +7.69/-71.8 rob +11.34 size 0.91 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.2 k4 min0.5 pw720                    n  94.2/+11.37/-65.6 w  93.8/ +8.78/-68.9 rob +12.51 size 0.89 fails 5
+[1/C] dd>0.3 k1 min0.25                                            n  93.8/+12.24/-67.0 w  93.4/ +8.91/-68.7 rob +13.03 size 0.97 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.3 k1 min0.25                         n  94.0/+12.20/-65.0 w  93.1/ +8.90/-69.1 rob +13.11 size 0.97 fails 5
+[1/C] dd>0.3 k1 min0.25 pw720                                      n  93.8/+12.82/-64.4 w  93.4/ +9.50/-67.3 rob +13.62 size 0.99 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.3 k1 min0.25 pw720                   n  94.1/+12.58/-64.4 w  93.8/ +9.49/-66.7 rob +13.51 size 0.99 fails 5
+[1/C] dd>0.3 k1 min0.5                                             n  93.8/+12.24/-67.0 w  93.4/ +8.91/-68.7 rob +13.03 size 0.97 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.3 k1 min0.5                          n  94.0/+12.20/-65.0 w  93.1/ +8.90/-69.1 rob +13.11 size 0.97 fails 5
+[1/C] dd>0.3 k1 min0.5 pw720                                       n  93.8/+12.82/-64.4 w  93.4/ +9.50/-67.3 rob +13.62 size 0.99 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.3 k1 min0.5 pw720                    n  94.1/+12.58/-64.4 w  93.8/ +9.49/-66.7 rob +13.51 size 0.99 fails 5
+[1/C] dd>0.3 k2 min0.25                                            n  93.8/+10.84/-65.9 w  93.4/ +7.78/-66.0 rob +11.66 size 0.90 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.3 k2 min0.25                         n  93.8/+10.76/-69.8 w  93.4/ +7.16/-73.2 rob +11.69 size 0.89 fails 5
+[1/C] dd>0.3 k2 min0.25 pw720                                      n  93.8/+12.38/-64.9 w  93.4/ +9.13/-68.9 rob +13.22 size 0.98 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.3 k2 min0.25 pw720                   n  94.2/+12.34/-64.4 w  93.8/ +9.28/-67.6 rob +13.31 size 0.97 fails 5
+[1/C] dd>0.3 k2 min0.5                                             n  93.8/+11.03/-65.9 w  93.4/ +8.01/-65.9 rob +11.84 size 0.91 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.3 k2 min0.5                          n  93.8/+10.96/-68.7 w  93.4/ +7.75/-71.9 rob +11.97 size 0.91 fails 5
+[1/C] dd>0.3 k2 min0.5 pw720                                       n  93.8/+12.38/-64.9 w  93.4/ +9.13/-68.9 rob +13.22 size 0.98 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.3 k2 min0.5 pw720                    n  94.2/+12.34/-64.4 w  93.8/ +9.28/-67.6 rob +13.31 size 0.97 fails 5
+[1/C] dd>0.3 k4 min0.25                                            n  93.8/ +8.74/-64.4 w  93.4/ +6.29/-64.6 rob  +9.74 size 0.78 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.3 k4 min0.25                         n  94.0/ +9.04/-64.4 w  93.4/ +6.25/-64.6 rob +10.20 size 0.72 fails 5
+[1/C] dd>0.3 k4 min0.25 pw720                                      n  93.8/+10.84/-69.4 w  93.4/ +7.77/-72.7 rob +11.94 size 0.93 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.3 k4 min0.25 pw720                   n  94.2/+11.45/-66.0 w  93.8/ +8.47/-69.8 rob +12.57 size 0.92 fails 5
+[1/C] dd>0.3 k4 min0.5                                             n  93.8/+10.64/-64.4 w  93.4/ +7.98/-64.6 rob +11.46 size 0.88 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.3 k4 min0.5                          n  94.0/+10.22/-70.4 w  93.4/ +7.56/-71.4 rob +11.31 size 0.83 fails 5
+[1/C] dd>0.3 k4 min0.5 pw720                                       n  93.8/+11.42/-68.7 w  93.4/ +8.37/-72.1 rob +12.36 size 0.95 fails 5
+[1/C] fs1 slots2 bids1 | dd>0.3 k4 min0.5 pw720                    n  94.2/+11.91/-65.2 w  93.8/ +8.93/-69.0 rob +12.95 size 0.94 fails 5
+  family C best: dd>0.3 k1 min0.25 pw720 fails 5 rob 13.62   (27s)
+[1/D] vol c24 vt0.008277 min0.25                                   n  93.8/ +5.88/-23.9 w  93.4/ +4.62/-24.3 rob  +5.98 size 0.39 fails 3
+[1/D] fs1 slots2 bids1 | vol c24 vt0.008277 min0.25                n  93.4/ +7.26/-42.0 w  92.9/ +5.09/-44.4 rob  +7.39 size 0.40 fails 3
+[1/D] vol c24 vt0.008277 min0.5                                    n  93.8/ +7.59/-32.2 w  93.4/ +5.81/-33.2 rob  +7.89 size 0.52 fails 3
+[1/D] fs1 slots2 bids1 | vol c24 vt0.008277 min0.5                 n  93.4/ +9.52/-56.7 w  92.9/ +6.29/-61.1 rob  +9.70 size 0.52 fails 3
+[1/D] vol c24 vt0.01148 min0.25                                    n  93.8/ +7.82/-31.3 w  93.4/ +6.19/-32.9 rob  +7.92 size 0.52 fails 3
+[1/D] fs1 slots2 bids1 | vol c24 vt0.01148 min0.25                 n  93.3/ +9.08/-47.5 w  92.8/ +6.42/-52.5 rob  +9.28 size 0.53 fails 3
+[1/D] vol c24 vt0.01148 min0.5                                     n  93.8/ +8.73/-35.3 w  93.4/ +6.66/-36.9 rob  +8.96 size 0.59 fails 3
+[1/D] fs1 slots2 bids1 | vol c24 vt0.01148 min0.5                  n  93.3/+10.07/-57.7 w  92.8/ +6.70/-62.4 rob +10.24 size 0.60 fails 3
+[1/D] vol c24 vt0.018567 min0.25                                   n  93.8/+11.07/-50.6 w  93.4/ +8.72/-52.3 rob +11.23 size 0.75 fails 3
+[1/D] fs1 slots2 bids1 | vol c24 vt0.018567 min0.25                n  92.7/+12.06/-64.4 w  92.2/ +8.56/-68.0 rob +12.22 size 0.76 fails 6
+[1/D] vol c24 vt0.018567 min0.5                                    n  93.8/+11.24/-50.6 w  93.4/ +8.72/-52.3 rob +11.49 size 0.77 fails 3
+[1/D] fs1 slots2 bids1 | vol c24 vt0.018567 min0.5                 n  92.7/+11.94/-63.9 w  92.2/ +8.16/-67.6 rob +12.23 size 0.78 fails 5
+[1/D] vol c168 vt0.009139 min0.25                                  n  93.8/ +6.57/-34.5 w  93.4/ +5.32/-35.8 rob  +6.63 size 0.47 fails 3
+[1/D] fs1 slots2 bids1 | vol c168 vt0.009139 min0.25               n  93.3/ +7.63/-53.5 w  92.9/ +5.14/-58.2 rob  +7.86 size 0.48 fails 3
+[1/D] vol c168 vt0.009139 min0.5                                   n  93.8/ +7.84/-37.4 w  93.4/ +5.97/-38.8 rob  +8.08 size 0.56 fails 3
+[1/D] fs1 slots2 bids1 | vol c168 vt0.009139 min0.5                n  93.3/ +9.47/-60.2 w  92.9/ +6.18/-64.5 rob  +9.72 size 0.57 fails 4
+[1/D] vol c168 vt0.012157 min0.25                                  n  93.8/ +8.33/-45.6 w  93.4/ +6.80/-47.0 rob  +8.40 size 0.60 fails 3
+[1/D] fs1 slots2 bids1 | vol c168 vt0.012157 min0.25               n  93.3/ +9.75/-63.7 w  92.8/ +6.68/-67.2 rob  +9.96 size 0.61 fails 4
+[1/D] vol c168 vt0.012157 min0.5                                   n  93.8/ +8.62/-46.4 w  93.4/ +6.76/-47.9 rob  +8.82 size 0.64 fails 3
+[1/D] fs1 slots2 bids1 | vol c168 vt0.012157 min0.5                n  93.3/+10.41/-62.6 w  92.8/ +6.91/-66.3 rob +10.58 size 0.65 fails 4
+[1/D] vol c168 vt0.018876 min0.25                                  n  93.8/+11.75/-56.8 w  93.4/ +9.76/-58.3 rob +11.91 size 0.82 fails 3
+[1/D] fs1 slots2 bids1 | vol c168 vt0.018876 min0.25               n  93.4/+13.48/-64.3 w  92.9/ +9.63/-68.0 rob +13.52 size 0.82 fails 3
+[1/D] vol c168 vt0.018876 min0.5                                   n  93.8/+11.52/-56.8 w  93.4/ +9.41/-58.3 rob +11.80 size 0.83 fails 3
+[1/D] fs1 slots2 bids1 | vol c168 vt0.018876 min0.5                n  93.4/+13.10/-64.3 w  92.9/ +9.18/-68.0 rob +13.23 size 0.83 fails 4
+[1/D] vol m24 vt0.008276 min0.25                                   n  93.8/+10.74/-43.2 w  93.4/ +8.20/-44.9 rob +11.14 size 0.71 fails 3
+[1/D] fs1 slots2 bids1 | vol m24 vt0.008276 min0.25                n  93.8/+12.52/-55.8 w  93.3/ +8.81/-60.3 rob +12.81 size 0.67 fails 3
+[1/D] vol m24 vt0.008276 min0.5                                    n  93.8/+10.64/-44.3 w  93.4/ +8.17/-45.9 rob +11.10 size 0.73 fails 3
+[1/D] fs1 slots2 bids1 | vol m24 vt0.008276 min0.5                 n  93.8/+12.57/-57.0 w  93.3/ +8.73/-61.4 rob +12.86 size 0.69 fails 3
+[1/D] vol m24 vt0.010507 min0.25                                   n  93.8/+11.65/-56.9 w  93.4/ +8.66/-61.1 rob +12.16 size 0.83 fails 3
+[1/D] fs1 slots2 bids1 | vol m24 vt0.010507 min0.25                n  93.8/+13.31/-59.4 w  93.3/ +9.36/-63.7 rob +13.70 size 0.78 fails 2
+[1/D] vol m24 vt0.010507 min0.5                                    n  93.8/+11.56/-56.7 w  93.4/ +8.63/-61.0 rob +12.10 size 0.83 fails 3
+[1/D] fs1 slots2 bids1 | vol m24 vt0.010507 min0.5                 n  93.8/+13.22/-59.8 w  93.3/ +9.25/-64.1 rob +13.62 size 0.79 fails 2
+[1/D] vol m24 vt0.015778 min0.25                                   n  93.8/+13.50/-64.4 w  93.4/ +9.88/-64.8 rob +14.09 size 0.96 fails 2
+[1/D] fs1 slots2 bids1 | vol m24 vt0.015778 min0.25                n  93.4/+13.54/-64.4 w  93.0/ +9.67/-65.5 rob +14.10 size 0.94 fails 3
+[1/D] vol m24 vt0.015778 min0.5                                    n  93.8/+13.51/-64.4 w  93.4/ +9.89/-64.8 rob +14.10 size 0.96 fails 2
+[1/D] fs1 slots2 bids1 | vol m24 vt0.015778 min0.5                 n  93.4/+13.56/-64.4 w  93.0/ +9.68/-65.5 rob +14.12 size 0.94 fails 3
+[1/D] vol m168 vt0.009154 min0.25                                  n  93.8/ +9.86/-63.7 w  93.4/ +7.14/-67.1 rob +10.12 size 0.75 fails 4
+[1/D] fs1 slots2 bids1 | vol m168 vt0.009154 min0.25               n  94.1/+12.66/-63.2 w  93.7/ +8.89/-67.0 rob +12.83 size 0.72 fails 4
+[1/D] vol m168 vt0.009154 min0.5                                   n  93.8/ +9.91/-63.4 w  93.4/ +7.22/-66.9 rob +10.23 size 0.76 fails 4
+[1/D] fs1 slots2 bids1 | vol m168 vt0.009154 min0.5                n  94.1/+12.74/-62.9 w  93.7/ +8.90/-66.7 rob +12.90 size 0.73 fails 4
+[1/D] vol m168 vt0.010893 min0.25                                  n  93.8/+11.32/-62.9 w  93.4/ +8.26/-66.6 rob +11.66 size 0.83 fails 4
+[1/D] fs1 slots2 bids1 | vol m168 vt0.010893 min0.25               n  94.4/+13.32/-62.5 w  93.9/ +9.40/-66.5 rob +13.53 size 0.79 fails 3
+[1/D] vol m168 vt0.010893 min0.5                                   n  93.8/+11.36/-62.8 w  93.4/ +8.31/-66.5 rob +11.72 size 0.84 fails 4
+[1/D] fs1 slots2 bids1 | vol m168 vt0.010893 min0.5                n  94.4/+13.23/-62.4 w  93.9/ +9.30/-66.4 rob +13.45 size 0.80 fails 3
+[1/D] vol m168 vt0.016653 min0.25                                  n  93.8/+13.12/-64.4 w  93.4/ +9.56/-66.8 rob +13.67 size 0.96 fails 5
+[1/D] fs1 slots2 bids1 | vol m168 vt0.016653 min0.25               n  94.4/+14.90/-64.4 w  94.0/+10.78/-66.5 rob +14.95 size 0.94 fails 2
+[1/D] vol m168 vt0.016653 min0.5                                   n  93.8/+13.13/-64.4 w  93.4/ +9.57/-66.8 rob +13.68 size 0.96 fails 5
+[1/D] fs1 slots2 bids1 | vol m168 vt0.016653 min0.5                n  94.4/+14.89/-64.4 w  94.0/+10.77/-66.5 rob +14.94 size 0.94 fails 2
+  family D best: fs1 slots2 bids1 | vol m168 vt0.016653 min0.25 fails 2 rob 14.95   (36s)
+[1/E] guard<-0.15 x0.33                                            n  93.8/+12.33/-36.5 w  93.4/ +9.92/-37.1 rob +12.26 size 0.68 fails 2
+[1/E] fs1 slots2 bids1 | guard<-0.15 x0.33                         n  93.5/+13.76/-40.9 w  93.0/+10.45/-41.4 rob +13.67 size 0.64 fails 1
+[1/E] guard<-0.15 x0.5                                             n  93.8/+12.81/-41.9 w  93.4/+10.11/-43.2 rob +12.93 size 0.76 fails 2
+[1/E] fs1 slots2 bids1 | guard<-0.15 x0.5                          n  93.5/+14.05/-50.1 w  93.0/+10.05/-52.0 rob +14.28 size 0.73 fails 0
+[1/E] guard<-0.15 x0.75                                            n  93.8/+13.22/-51.3 w  93.4/+10.14/-52.8 rob +13.64 size 0.88 fails 1
+[1/E] fs1 slots2 bids1 | guard<-0.15 x0.75                         n  93.5/+13.93/-55.7 w  93.0/ +9.73/-60.6 rob +14.35 size 0.86 fails 1
+[1/E] guard<-0.2 x0.33                                             n  93.8/+12.64/-64.4 w  93.4/ +9.45/-64.6 rob +13.90 size 0.79 fails 5
+[1/E] fs1 slots2 bids1 | guard<-0.2 x0.33                          n  92.7/+11.61/-64.4 w  92.3/ +9.27/-64.6 rob +13.69 size 0.75 fails 6
+[1/E] guard<-0.2 x0.5                                              n  93.8/+12.95/-64.4 w  93.4/ +9.67/-64.6 rob +14.11 size 0.84 fails 4
+[1/E] fs1 slots2 bids1 | guard<-0.2 x0.5                           n  92.7/+11.97/-64.4 w  92.3/ +8.88/-64.6 rob +13.62 size 0.82 fails 6
+[1/E] guard<-0.2 x0.75                                             n  93.8/+13.21/-64.4 w  93.4/ +9.84/-64.6 rob +14.19 size 0.92 fails 2
+[1/E] fs1 slots2 bids1 | guard<-0.2 x0.75                          n  92.7/+12.11/-64.4 w  92.3/ +9.27/-64.6 rob +13.68 size 0.91 fails 6
+[1/E] guard<-0.25 x0.33                                            n  93.8/+11.62/-64.4 w  93.4/ +8.13/-64.6 rob +12.45 size 0.88 fails 5
+[1/E] fs1 slots2 bids1 | guard<-0.25 x0.33                         n  93.4/+11.05/-64.4 w  92.9/ +8.38/-64.6 rob +12.41 size 0.86 fails 5
+[1/E] guard<-0.25 x0.5                                             n  93.8/+12.08/-64.4 w  93.4/ +8.58/-64.6 rob +12.89 size 0.91 fails 5
+[1/E] fs1 slots2 bids1 | guard<-0.25 x0.5                          n  93.4/+11.73/-64.4 w  92.9/ +8.34/-64.6 rob +12.80 size 0.90 fails 5
+[1/E] guard<-0.25 x0.75                                            n  93.8/+12.68/-64.4 w  93.4/ +9.20/-64.6 rob +13.47 size 0.96 fails 5
+[1/E] fs1 slots2 bids1 | guard<-0.25 x0.75                         n  93.4/+12.02/-64.4 w  92.9/ +8.96/-64.6 rob +13.21 size 0.95 fails 5
+[1/E] guard<-0.3 x0.33                                             n  93.8/+12.73/-65.6 w  93.4/ +8.43/-69.1 rob +13.40 size 0.95 fails 5
+[1/E] fs1 slots2 bids1 | guard<-0.3 x0.33                          n  93.8/+11.46/-65.6 w  93.5/ +8.59/-69.1 rob +12.62 size 0.95 fails 5
+[1/E] guard<-0.3 x0.5                                              n  93.8/+12.89/-64.6 w  93.4/ +8.77/-68.3 rob +13.58 size 0.96 fails 5
+[1/E] fs1 slots2 bids1 | guard<-0.3 x0.5                           n  93.8/+11.92/-64.6 w  93.5/ +8.93/-68.3 rob +12.93 size 0.96 fails 5
+[1/E] guard<-0.3 x0.75                                             n  93.8/+13.07/-64.4 w  93.4/ +9.28/-67.2 rob +13.80 size 0.98 fails 5
+[1/E] fs1 slots2 bids1 | guard<-0.3 x0.75                          n  93.8/+12.19/-64.4 w  93.5/ +9.36/-67.2 rob +13.32 size 0.98 fails 5
+  family E best: fs1 slots2 bids1 | guard<-0.15 x0.5 fails 0 rob 14.28   (40s)
+[1/F] fs1 slots2 bids1 | kelly10 c0.05 min0.25                     n  94.1/ +9.42/-64.4 w  93.7/ +7.30/-65.2 rob +10.52 size 0.69 fails 5
+[1/F] fs1 slots2 bids1 | kelly10 c0.05 min0.5                      n  94.1/+11.17/-64.4 w  93.7/ +8.65/-68.8 rob +12.28 size 0.79 fails 5
+[1/F] fs1 slots2 bids1 | kelly10 c0.1 min0.25                      n  94.0/ +9.99/-64.4 w  93.3/ +7.23/-63.5 rob +10.80 size 0.71 fails 4
+[1/F] fs1 slots2 bids1 | kelly10 c0.1 min0.5                       n  94.0/+11.55/-64.4 w  93.3/ +8.69/-66.5 rob +12.46 size 0.80 fails 5
+[1/F] fs1 slots2 bids1 | kelly10 c0.2 min0.25                      n  94.4/ +9.97/-64.4 w  93.7/ +6.91/-66.5 rob +10.69 size 0.76 fails 5
+[1/F] fs1 slots2 bids1 | kelly10 c0.2 min0.5                       n  94.4/+11.97/-64.4 w  93.7/ +8.79/-64.9 rob +12.68 size 0.83 fails 5
+[1/F] fs1 slots2 bids1 | kelly20 c0.05 min0.25                     n  93.7/ +7.52/-64.4 w  93.1/ +4.94/-64.6 rob  +8.24 size 0.52 fails 5
+[1/F] fs1 slots2 bids1 | kelly20 c0.05 min0.5                      n  93.7/+10.22/-64.4 w  93.1/ +7.01/-64.6 rob +10.97 size 0.67 fails 5
+[1/F] fs1 slots2 bids1 | kelly20 c0.1 min0.25                      n  93.8/ +7.79/-64.4 w  93.4/ +5.00/-64.6 rob  +8.65 size 0.58 fails 5
+[1/F] fs1 slots2 bids1 | kelly20 c0.1 min0.5                       n  93.8/+10.56/-64.4 w  93.4/ +7.37/-64.6 rob +11.33 size 0.70 fails 5
+[1/F] fs1 slots2 bids1 | kelly20 c0.2 min0.25                      n  94.2/ +8.53/-64.4 w  94.1/ +6.53/-64.6 rob  +9.96 size 0.69 fails 5
+[1/F] fs1 slots2 bids1 | kelly20 c0.2 min0.5                       n  94.2/+10.14/-64.4 w  94.1/ +8.03/-64.6 rob +11.54 size 0.76 fails 5
+[1/F] fs1 slots2 bids1 | kelly40 c0.05 min0.25                     n  93.6/ +3.85/-64.4 w  93.3/ +1.97/-65.0 rob  +4.74 size 0.37 fails 5
+[1/F] fs1 slots2 bids1 | kelly40 c0.05 min0.5                      n  93.6/ +8.29/-64.4 w  93.3/ +5.48/-66.2 rob  +9.05 size 0.56 fails 5
+[1/F] fs1 slots2 bids1 | kelly40 c0.1 min0.25                      n  93.7/ +5.86/-64.4 w  93.5/ +3.49/-64.6 rob  +6.97 size 0.46 fails 5
+[1/F] fs1 slots2 bids1 | kelly40 c0.1 min0.5                       n  93.7/ +8.98/-64.4 w  93.5/ +6.13/-64.6 rob  +9.84 size 0.61 fails 5
+[1/F] fs1 slots2 bids1 | kelly40 c0.2 min0.25                      n  93.5/ +8.85/-64.4 w  93.4/ +5.48/-64.6 rob  +9.98 size 0.65 fails 5
+[1/F] fs1 slots2 bids1 | kelly40 c0.2 min0.5                       n  93.5/+10.22/-64.4 w  93.4/ +6.68/-64.6 rob +11.27 size 0.72 fails 5
+  family F best: fs1 slots2 bids1 | kelly10 c0.1 min0.25 fails 4 rob 10.80   (44s)
+[1/G] fs0.5 slots2 bids1 | deep0.02 x1.5                           n  93.4/ +9.55/-56.8 w  93.0/ +6.25/-61.2 rob  +9.86 size 0.52 fails 3
+[1/G] fs0.5 slots2 bids1 | deep0.02 x2                             n  93.4/ +8.73/-64.4 w  93.1/ +5.65/-64.5 rob  +9.47 size 0.54 fails 5
+[1/G] fs0.5 slots2 bids1 | deep0.05 x1.5                           n  93.4/+10.02/-56.8 w  93.0/ +6.61/-61.1 rob  +9.94 size 0.51 fails 3
+[1/G] fs0.5 slots2 bids1 | deep0.05 x2                             n  93.4/+10.06/-56.8 w  92.9/ +6.42/-61.1 rob  +9.72 size 0.51 fails 3
+[1/G] fs0.5 slots2 bids1 | deep0.1 x1.5                            n  93.4/+10.00/-56.8 w  93.0/ +6.73/-61.1 rob  +9.91 size 0.50 fails 3
+[1/G] fs0.5 slots2 bids1 | deep0.1 x2                              n  93.5/+10.04/-56.8 w  93.0/ +6.68/-61.1 rob  +9.66 size 0.50 fails 3
+[1/G] fs0.7 slots2 bids1 | deep0.02 x1.5                           n  93.4/+10.90/-64.4 w  93.1/ +7.48/-64.5 rob +11.46 size 0.73 fails 5
+[1/G] fs0.7 slots2 bids1 | deep0.02 x2                             n  93.4/+10.90/-64.4 w  93.1/ +7.48/-64.5 rob +11.46 size 0.73 fails 5
+[1/G] fs0.7 slots2 bids1 | deep0.05 x1.5                           n  93.4/+11.91/-59.4 w  92.9/ +7.93/-63.9 rob +11.66 size 0.71 fails 3
+[1/G] fs0.7 slots2 bids1 | deep0.05 x2                             n  93.4/+11.91/-59.4 w  92.9/ +7.93/-63.9 rob +11.66 size 0.71 fails 3
+[1/G] fs0.7 slots2 bids1 | deep0.1 x1.5                            n  93.5/+11.89/-59.4 w  93.0/ +8.11/-63.9 rob +11.62 size 0.70 fails 3
+[1/G] fs0.7 slots2 bids1 | deep0.1 x2                              n  93.5/+11.89/-59.4 w  93.0/ +8.11/-63.9 rob +11.62 size 0.70 fails 3
+  family G best: fs0.7 slots2 bids1 | deep0.05 x1.5 fails 3 rob 11.66   (46s)
+stage 2 families: ['E', 'D', 'B', 'A']
+[2/ED] fs1 slots2 bids1 | vol m168 vt0.016653 min0.25 | guard<-0.15 x0.5 n  93.8/+14.57/-50.1 w  93.2/+10.66/-52.9 rob +14.53 size 0.70 fails 0
+[2/EB] fs1 slots2 bids1 | streak2 x0.5 min0.25 +1/win | guard<-0.15 x0.5 n  93.5/+13.88/-50.1 w  93.0/ +9.91/-53.2 rob +14.11 size 0.73 fails 0
+[2/EA] fs0.9 slots2 bids1 | guard<-0.15 x0.5                        n  93.4/+13.42/-45.9 w  93.0/ +9.84/-47.4 rob +13.18 size 0.66 fails 1
+[2/DB] fs1 slots2 bids1 | streak2 x0.5 min0.25 +1/win | vol m168 vt0.016653 min0.25 n  94.4/+14.90/-64.4 w  94.0/+10.80/-66.5 rob +15.00 size 0.94 fails 2
+[2/DA] fs0.9 slots2 bids1 | vol m168 vt0.016653 min0.25             n  93.4/+13.35/-61.4 w  93.0/ +9.58/-65.5 rob +13.57 size 0.86 fails 3
+[2/BA] fs0.9 slots2 bids1 | streak2 x0.5 min0.25 +1/win             n  93.4/+12.94/-62.5 w  93.0/ +9.17/-66.4 rob +13.13 size 0.89 fails 4
+designs scored: 245  passing all bars: 3
+ranking tier: normal 2021-23 drop >= -0.57: 3 designs
+  try fs1 slots2 bids1 | vol m168 vt0.016653 min0.25 | guard<-0.15 x0.5: 10 neighbours, median n 93.8/+14.21/-50.1 w 93.2/+10.36/-52.9 fails 0
+PICK: fs1 slots2 bids1 | vol m168 vt0.016653 min0.25 | guard<-0.15 x0.5 {"g1": 0.15, "gf": 0.5, "nbid": 1, "nslots": 2, "vmin": 0.25, "vsrc": "m168", "vt": 0.016653}
+done in 48s
