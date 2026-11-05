@@ -1,0 +1,19 @@
+/home/user/halal-rider/research/panic_buyer/refine/m15_earlycut_lib.py:165: RuntimeWarning: Mean of empty slice
+  x = np.nancumsum(np.nanmean(lr.values, axis=1))
+2021-23 trades 406, losers 25 (6.2%), why of losers {1.0: 25}
+log-growth from winners +10.076, from losers -5.626 (losers eat 56% of the winners' growth)
+avg loser -18.97% acct, median -15.18, worst -50.29; avg winner +2.70
+   6h losers             n= 25 coin close  -4.1% (q25  -7.5) BTC  -1.2% idx19  -0.6% | coin<=-5% & idx<=-3%: 5
+   6h winners still open n=101 coin close  -2.2% (q25  -4.8) BTC  -0.6% idx19  -0.7% | coin<=-5% & idx<=-3%: 10
+   6h losers already exited (open6=False): 0
+  12h losers             n= 25 coin close  -7.3% (q25 -11.3) BTC  -1.6% idx19  -2.8% | coin<=-5% & idx<=-3%: 11
+  12h winners still open n= 54 coin close  -2.7% (q25  -6.2) BTC  -0.8% idx19  -0.9% | coin<=-5% & idx<=-3%: 10
+  12h losers already exited (open12=False): 0
+  24h losers             n= 25 coin close  -7.7% (q25 -15.4) BTC  -2.1% idx19  -2.4% | coin<=-5% & idx<=-3%: 11
+  24h winners still open n= 29 coin close  -5.5% (q25 -11.3) BTC  -2.0% idx19  -1.5% | coin<=-5% & idx<=-3%: 9
+  24h losers already exited (open24=False): 0
+  48h losers             n= 25 coin close -11.7% (q25 -17.6) BTC  -2.6% idx19  -1.8% | coin<=-5% & idx<=-3%: 11
+  48h winners still open n=  9 coin close  -6.7% (q25  -8.5) BTC  -1.1% idx19  -1.3% | coin<=-5% & idx<=-3%: 1
+  48h losers already exited (open48=False): 0
+compounded trade product 2021-23: actual x85.65 (+13.16%/mo); oracle best-close exit for losers x19783.2 (+31.63%/mo); losers at 0 x23772.2 (+32.30%/mo)
+losers' best close during hold vs entry (after fees): median -0.19% share >0: 44%
