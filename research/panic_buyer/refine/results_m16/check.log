@@ -1,0 +1,7 @@
+2021-26 normal  identical=True  d: 93.8/+13.17/-64.4  t: 92.6/+6.89/-35.4  s: 93.2/+5.80/-22.6
+2021-26 worse   identical=True  d: 93.4/+9.79/-65.9  t: 92.1/+5.31/-37.5  s: 92.6/+4.56/-22.7
+2021-26 stress  identical=True  d: 93.7/+10.96/-65.0  t: 91.7/+5.49/-30.3  s: 92.6/+4.44/-22.7
+2018-20 normal  identical=True  h: 92.5/+10.82/-66.3
+2018-20 worse   identical=True  h: 92.0/+7.41/-69.9
+2018-20 stress  identical=True  h: 91.4/+6.00/-69.5
+built 77930 22 (77930, 22, 49) 18663 guarded candidates
