@@ -42,3 +42,8 @@ for x in rows[:25]:
 print("n grid", len(grid), "pass bar1", sum(x[3] for x in rows), "pass all", sum(x[2] for x in rows))
 pk = [x for x in rows if x[2]]
 json.dump(dict(pick=pk[0][0] if pk else None, npass=len(pk)), open(os.path.join(os.environ["PB_OUT"], "pick.json"), "w"))
+print("--- candidates with n_wr>=92.5 (why they fail)")
+for x in sorted([x for x in rows if x[4] >= .925], key=lambda x: -x[1])[:14]:
+    s = res[x[0]]
+    print(x[0], f"robust {x[1]*100:.2f} n {s['n_wr']*100:.1f}/{s['n_mo']*100:.2f}/{s['n_dd']*100:.1f} w {s['w_wr']*100:.1f}/{s['w_mo']*100:.2f}/{s['w_dd']*100:.1f} ok5 {ok5(s)}",
+          " ".join(f"{t}:{s[t+'_wr']*100:.1f}/{s[t+'_dd']*100:.1f}" for t in ("cm", "cp", "bt", "ls")))
