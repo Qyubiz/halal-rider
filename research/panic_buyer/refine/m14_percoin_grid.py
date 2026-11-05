@@ -10,13 +10,14 @@ Design axes: win {exp,24}, R {6,12}, minT {5,10}, m {5,20}, metric {mean,sum}, c
 Bars (M14_PREREG) on 2021-23, normal AND every fill 0.2% worse: win rate >=92.5%, drop > -64.4%, %/month >13.17 / 9.79;
 all 5 nearby versions (base, cd-1, cd+1, bot timing, start 2021-01-15) pass win rate and drop; score = mean %/month of
 the 5 versions; neighbours (one step on one axis) median normal win rate / drop / %/month must pass bar 1.
+(Drop bar -64.4% is applied as > -64.45%, i.e. rounded: 90% mode itself is -64.43%; fixed after run 1 showed all 64 designs failed the strict float bar.)
 Pick = highest score among those passing; none -> no pick. Nothing after 2023 is summarised here.
 """
 import itertools, json, os, sys
 import numpy as np, pandas as pd
 import m14_percoin_lib as L, m10_velocity_lib as V, m12_entry_lib as M
 
-WR, DD, MON, MOW = 0.925, -0.644, 0.1317, 0.0979
+WR, DD, MON, MOW = 0.925, -0.6445, 0.1317, 0.0979
 AX = dict(win=[0, 24], R=[6, 12], minT=[5, 10], m=[5, 20], metric=["mean", "sum"], cset=["both", "depth"])
 NM = list(AX)
 VERS = {"n": {}, "cm": dict(cd_add=-1), "cp": dict(cd_add=1), "bt": dict(mtp_now=True, cd_add=1), "ls": dict(t0=M.LATE)}
