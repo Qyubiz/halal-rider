@@ -53,7 +53,7 @@ def _read(kind, sym):
 
 def known_series(kind, sym, idx):
     """Value known at the OPEN of each hour of idx (NaN = no data)."""
-    d = _read(kind, sym)
+    d = _read({"prem": "premium"}.get(kind, kind), sym)
     if d is None:
         return pd.Series(np.nan, idx)
     if kind == "oi":
@@ -61,7 +61,7 @@ def known_series(kind, sym, idx):
         s.index = s.index + pd.Timedelta(hours=1)   # known when the bucket closes
         return s.reindex(idx).ffill(limit=2)
     if kind == "prem":
-        s = _read("premium", sym)["c"].copy()
+        s = d["c"].copy()
         s.index = s.index + pd.Timedelta(hours=1)
         return s.reindex(idx).ffill(limit=2)
     if kind == "funding":
@@ -89,7 +89,7 @@ def signal(P, idx, sig, N, x):
             r = v.values if sig == "fund" else (v - v.rolling(72, min_periods=1).max()).values
             S[:, j] = np.where(np.isnan(r), np.nan, (r <= (x if sig == "fund" else -x)).astype(float))
         elif sig == "prem":
-            r = known_series("prem", s, idx).values if _read("premium", s) is not None else np.full(len(idx), np.nan)
+            r = known_series("prem", s, idx).values
             S[:, j] = np.where(np.isnan(r), np.nan, (r <= -x).astype(float))
         else:
             raise ValueError(sig)
