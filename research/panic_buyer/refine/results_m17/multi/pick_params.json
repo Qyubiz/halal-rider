@@ -1,0 +1,1 @@
+{"d1": 0.14, "fast": 3, "tp": 0.025, "P": 1, "design": {"tiers": [{"ref": 24, "depth": 0.14, "tp": 0.025, "hm": 96, "cdw": 0, "cdl": 3, "fs": 1.0}, {"ref": 6, "depth": 0.1, "tp": 0.025, "hm": 48, "cdw": 0, "cdl": 3, "fs": 1.0}], "nbid": 1, "nslots": 1}}
