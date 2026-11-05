@@ -1,0 +1,5 @@
+8640 settings
+pass bar 1: 1126 of 8640
+90% mode row:
+                               ix     n_wr     n_mo      n_dd    w_wr     w_mo      w_dd  pass1
+[2, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0] 0.938424 0.131678 -0.644342 0.93401 0.097887 -0.659376  False

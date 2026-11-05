@@ -1,0 +1,5 @@
+wfparams: mean monthly edge vs 90% mode 2024-26 -0.40 pts (p 0.6416), 2018-20 -3.11 pts (p 0.9250); luck check fail (needs p < 0.0017 in both)
+longwin: mean monthly edge vs 90% mode 2024-26 -2.20 pts (p 0.9179), 2018-20 -10.01 pts (p 1.0000); luck check fail (needs p < 0.0017 in both)
+sleeves: mean monthly edge vs 90% mode 2024-26 -2.22 pts (p 0.9776), 2018-20 -1.29 pts (p 0.7828); luck check fail (needs p < 0.0017 in both)
+idio: mean monthly edge vs 90% mode 2024-26 -3.18 pts (p 0.9985), 2018-20 -3.05 pts (p 0.8640); luck check fail (needs p < 0.0017 in both)
+bars4h: mean monthly edge vs 90% mode 2024-26 -5.12 pts (p 0.9968), 2018-20 -8.00 pts (p 0.9867); luck check fail (needs p < 0.0017 in both)
