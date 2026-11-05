@@ -1,0 +1,18 @@
+dead=False live 8x20% +1.5%   pen=0.0: engine x15.0003 idle-off x15.0003 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 2565/2565/2565 logs identical True -> OK
+dead=False live 8x20% +1.5%   pen=0.002: engine x9.4335 idle-off x9.4335 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 2552/2552/2552 logs identical True -> OK
+dead=False 2x50% +5%          pen=0.0: engine x549.8628 idle-off x549.8628 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 1343/1343/1343 logs identical True -> OK
+dead=False 2x50% +5%          pen=0.002: engine x288.4421 idle-off x288.4421 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 1325/1325/1325 logs identical True -> OK
+dead=False 2x50% +3%          pen=0.0: engine x625.8013 idle-off x625.8013 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 1505/1505/1505 logs identical True -> OK
+dead=False 2x50% +3%          pen=0.002: engine x228.0339 idle-off x228.0339 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 1481/1481/1481 logs identical True -> OK
+dead=False 1x100% +3%         pen=0.0: engine x3537.7198 idle-off x3537.7198 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 716/716/716 logs identical True -> OK
+dead=False 1x100% +3%         pen=0.002: engine x640.4275 idle-off x640.4275 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 688/688/688 logs identical True -> OK
+dead=True  live 8x20% +1.5%   pen=0.0: engine x13.5865 idle-off x13.5865 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 2855/2855/2855 logs identical True -> OK
+dead=True  live 8x20% +1.5%   pen=0.002: engine x8.4478 idle-off x8.4478 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 2842/2842/2842 logs identical True -> OK
+dead=True  2x50% +5%          pen=0.0: engine x171.0389 idle-off x171.0389 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 1455/1455/1455 logs identical True -> OK
+dead=True  2x50% +5%          pen=0.002: engine x102.5017 idle-off x102.5017 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 1451/1451/1451 logs identical True -> OK
+dead=True  2x50% +3%          pen=0.0: engine x312.0997 idle-off x312.0997 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 1659/1659/1659 logs identical True -> OK
+dead=True  2x50% +3%          pen=0.002: engine x102.3162 idle-off x102.3162 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 1617/1617/1617 logs identical True -> OK
+dead=True  1x100% +3%         pen=0.0: engine x0.0871 idle-off x0.0871 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 678/678/678 logs identical True -> OK
+dead=True  1x100% +3%         pen=0.002: engine x0.0485 idle-off x0.0485 (max diff 0.0e+00) idle-zero-weights max diff 0.0e+00; trades 649/649/649 logs identical True -> OK
+parking alone, BTC buy and hold: x2.880122 vs expected x2.880122, trades {'forced': np.float64(0.0), 'band_sells': np.float64(0.0), 'buys': np.float64(1.0), 'watch_sells': np.float64(0.0), 'turnover': np.float64(1.0), 'costs': np.float64(0.0011997600479903836)}
+ALL OK

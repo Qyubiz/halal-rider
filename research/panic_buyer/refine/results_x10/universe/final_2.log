@@ -1,0 +1,78 @@
+
+=== A  honest pick r1: {'univ': 'T30Q', 'mode': 'watch', 'N': 2, 'fmax': 0.5, 'depth': 0.12, 'tp': 0.015, 'cd': 24, 'hm': 48}
+  (1) 2024-01..2026-10   continuous:  +5.81%/month  worst drop -33.8%  x6.71  trades 800  worst trade -14.2% of account  P&L outside the 19: +111 of +220 points
+  (2) since 2025-01-01   continuous:  +3.12%/month  worst drop -33.8%  x1.95  trades 466  worst trade -14.2% of account  P&L outside the 19: +38 of +86 points
+  (3) 2021-23            continuous: +18.59%/month  worst drop -47.6%  x460  trades 1308  worst trade -26.5% of account  P&L outside the 19: +603 of +718 points
+  fresh start 2024-01-01:  +5.81%/month  worst drop -33.8%  x6.71  worst trade -14.2% of account  P&L outside the 19: +111 of +220 points
+  fresh start 2025-01-01:  +3.12%/month  worst drop -33.8%  x1.95  worst trade -14.2% of account  P&L outside the 19: +38 of +86 points
+  years: 2021 +4122% 2022 +313% 2023 +164% 2024 +252% 2025 +31% 2026 +49%
+  2024-26 months: median +6.0%, months >= +10%: 11 of 34, losing months: 9, worst month -29.3%
+  2024-26 account P&L by coin (points): best FETUSDT +27 (52), SEIUSDT +17 (28), FILUSDT +16 (21), SAGAUSDT +14 (14), RENDERUSDT +14 (25), DOGEUSDT +14 (19) | worst ENSUSDT -8 (4), FTMUSDT -9 (6), APTUSDT -18 (16), SYNUSDT -34 (16)
+  worst 2024-26 trades: 2026-07-21 SYNUSDT -14.2%, 2026-06-04 NEARUSDT -13.3%, 2025-12-01 ZECUSDT -13.0%, 2026-09-04 HEMIUSDT -12.2%
+  adversarial in-hour order +0.3% on watch fills: 24-26 +2.02%/mo DD  -50% | 25-26 -0.23%/mo DD  -50% | 21-23 +6.85%/mo DD  -80%; fresh 2024 start +2.02%/month DD -50%
+  (4) fills 0.2% worse + FTT + LUNA/FTT/SRM always eligible: 24-26 +4.48%/mo DD  -36% | 25-26 +2.03%/mo DD  -36% | 21-23 +10.13%/mo DD  -74%; worst trade 21-23 -49.8%, 24-26 -14.2% of account; fresh 2024 start +4.48%/month DD -36%
+
+=== A2 pick r2: {'univ': 'L30T', 'mode': 'watch', 'N': 1, 'fmax': 1.0, 'depth': 0.12, 'tp': 0.015, 'cd': 24, 'hm': 48}
+  (1) 2024-01..2026-10   continuous:  +6.00%/month  worst drop -32.4%  x7.11  trades 224  worst trade -15.0% of account  P&L outside the 19: +55 of +206 points
+  (2) since 2025-01-01   continuous:  +4.86%/month  worst drop -22.9%  x2.79  trades 136  worst trade -11.4% of account  P&L outside the 19: +38 of +109 points
+  (3) 2021-23            continuous: +10.83%/month  worst drop -43.1%  x40.3  trades 402  worst trade -33.2% of account  P&L outside the 19: +201 of +399 points
+  fresh start 2024-01-01:  +6.00%/month  worst drop -32.4%  x7.11  worst trade -15.0% of account  P&L outside the 19: +55 of +206 points
+  fresh start 2025-01-01:  +4.86%/month  worst drop -22.9%  x2.79  worst trade -11.4% of account  P&L outside the 19: +38 of +109 points
+  years: 2021 +1580% 2022 +33% 2023 +80% 2024 +155% 2025 +100% 2026 +40%
+  2024-26 months: median +5.3%, months >= +10%: 8 of 34, losing months: 7, worst month -17.6%
+  2024-26 account P&L by coin (points): best SUIUSDT +43 (31), DOGEUSDT +40 (32), ZECUSDT +35 (21), XRPUSDT +26 (15), XLMUSDT +14 (2), GALAUSDT +12 (2) | worst OPUSDT -8 (1), MASKUSDT -9 (1), WALUSDT -9 (4), AVAXUSDT -13 (13)
+  worst 2024-26 trades: 2024-04-12 AVAXUSDT -15.0%, 2026-10-15 WALUSDT -11.4%, 2025-03-03 SOLUSDT -9.8%, 2025-02-02 AVAXUSDT -9.1%
+  adversarial in-hour order +0.3% on watch fills: 24-26 +3.02%/mo DD  -47% | 25-26 +1.92%/mo DD  -47% | 21-23 -9.66%/mo DD -100%; fresh 2024 start +3.02%/month DD -47%
+  (4) fills 0.2% worse + FTT + LUNA/FTT/SRM always eligible: 24-26 +4.98%/mo DD  -33% | 25-26 +4.35%/mo DD  -23% | 21-23 -11.97%/mo DD -100%; worst trade 21-23 -99.6%, 24-26 -15.2% of account; fresh 2024 start +4.98%/month DD -33%
+
+=== H3 hindsight r3: {'univ': 'L50T', 'mode': 'watch', 'N': 1, 'fmax': 1.0, 'depth': 0.15, 'tp': 0.05, 'cd': 12, 'hm': 48}
+  (1) 2024-01..2026-10   continuous:  +8.52%/month  worst drop -41.6%  x15.7  trades 155  worst trade -25.1% of account  P&L outside the 19: +130 of +295 points
+  (2) since 2025-01-01   continuous:  +5.78%/month  worst drop -41.6%  x3.37  trades 97  worst trade -25.1% of account  P&L outside the 19: +84 of +135 points
+  (3) 2021-23            continuous:  -1.95%/month  worst drop -99.6%  x0.492  trades 232  worst trade -99.6% of account  P&L outside the 19: +111 of +415 points
+  fresh start 2024-01-01:  +8.52%/month  worst drop -41.6%  x15.7  worst trade -25.1% of account  P&L outside the 19: +130 of +295 points
+  fresh start 2025-01-01:  +5.78%/month  worst drop -41.6%  x3.37  worst trade -25.1% of account  P&L outside the 19: +84 of +135 points
+  years: 2021 +2806% 2022 -99% 2023 +111% 2024 +366% 2025 +184% 2026 +19%
+  2024-26 months: median +7.0%, months >= +10%: 12 of 34, losing months: 6, worst month -31.0%
+  2024-26 account P&L by coin (points): best DOGEUSDT +53 (11), ZECUSDT +35 (10), AVAXUSDT +24 (5), SUIUSDT +19 (4), SAGAUSDT +15 (2), XRPUSDT +14 (3) | worst BAKEUSDT -7 (2), IOUSDT -8 (1), STRKUSDT -18 (3), SAHARAUSDT -25 (1)
+  worst 2024-26 trades: 2026-06-09 SAHARAUSDT -25.1%, 2026-06-04 NEARUSDT -9.9%, 2026-09-07 HEMIUSDT -9.9%, 2025-05-30 TRBUSDT -9.7%
+  adversarial in-hour order +0.3% on watch fills: 24-26 +0.00%/mo DD    0% | 25-26 +0.00%/mo DD    0% | 21-23 -12.14%/mo DD -100%; fresh 2024 start +5.98%/month DD -42%
+  (4) fills 0.2% worse + FTT + LUNA/FTT/SRM always eligible: 24-26 +7.63%/mo DD  -42% | 25-26 +5.20%/mo DD  -42% | 21-23 -3.42%/mo DD -100%; worst trade 21-23 -99.6%, 24-26 -25.2% of account; fresh 2024 start +7.63%/month DD -42%
+
+=== H4 hindsight r4 (>=10%): {'univ': 'U19L50T+g35', 'mode': 'watch', 'N': 1, 'fmax': 1.0, 'depth': 0.14, 'tp': 0.05, 'cd': 24, 'hm': 48}
+  (1) 2024-01..2026-10   continuous: +11.04%/month  worst drop -29.7%  x34  trades 196  worst trade -25.4% of account  P&L outside the 19: +93 of +382 points
+  (2) since 2025-01-01   continuous:  +8.56%/month  worst drop -25.9%  x5.92  trades 116  worst trade -25.4% of account  P&L outside the 19: +87 of +194 points
+  (3) 2021-23            continuous: +14.71%/month  worst drop -62.8%  x139  trades 340  worst trade -54.2% of account  P&L outside the 19: +49 of +608 points
+  fresh start 2024-01-01: +11.04%/month  worst drop -29.7%  x34  worst trade -25.4% of account  P&L outside the 19: +93 of +382 points
+  fresh start 2025-01-01:  +8.56%/month  worst drop -25.9%  x5.92  worst trade -25.4% of account  P&L outside the 19: +87 of +194 points
+  years: 2021 +3004% 2022 +31% 2023 +243% 2024 +475% 2025 +198% 2026 +99%
+  2024-26 months: median +7.0%, months >= +10%: 14 of 34, losing months: 8, worst month -13.8%
+  2024-26 account P&L by coin (points): best FETUSDT +79 (25), NEARUSDT +47 (13), RENDERUSDT +34 (14), DOGEUSDT +29 (6), ADAUSDT +27 (5), XRPUSDT +27 (5) | worst IOUSDT -9 (1), STRKUSDT -9 (1), IDUSDT -9 (1), SAHARAUSDT -25 (1)
+  worst 2024-26 trades: 2026-06-09 SAHARAUSDT -25.4%, 2024-04-24 HBARUSDT -23.6%, 2025-11-20 NEARUSDT -11.2%, 2025-05-30 ARBUSDT -10.6%
+  adversarial in-hour order +0.3% on watch fills: 24-26 +8.14%/mo DD  -39% | 25-26 +7.45%/mo DD  -39% | 21-23 +13.71%/mo DD  -62%; fresh 2024 start +8.14%/month DD -39%
+  (4) fills 0.2% worse + FTT + LUNA/FTT/SRM always eligible: 24-26 +10.27%/mo DD  -30% | 25-26 +7.85%/mo DD  -26% | 21-23 +11.52%/mo DD  -77%; worst trade 21-23 -54.2%, 24-26 -25.5% of account; fresh 2024 start +10.27%/month DD -30%
+
+=== H4b hindsight r4 point-in-time: {'univ': 'L40T+g35', 'mode': 'watch', 'N': 1, 'fmax': 1.0, 'depth': 0.15, 'tp': 0.05, 'cd': 6, 'hm': 96}
+  (1) 2024-01..2026-10   continuous:  +9.24%/month  worst drop -24.5%  x19.6  trades 117  worst trade -15.4% of account  P&L outside the 19: +108 of +310 points
+  (2) since 2025-01-01   continuous:  +7.67%/month  worst drop -24.5%  x4.96  trades 70  worst trade -15.4% of account  P&L outside the 19: +77 of +168 points
+  (3) 2021-23            continuous: +12.77%/month  worst drop -34.2%  x75.5  trades 180  worst trade -20.9% of account  P&L outside the 19: +182 of +459 points
+  fresh start 2024-01-01:  +9.24%/month  worst drop -24.5%  x19.6  worst trade -15.4% of account  P&L outside the 19: +108 of +310 points
+  fresh start 2025-01-01:  +7.67%/month  worst drop -24.5%  x4.96  worst trade -15.4% of account  P&L outside the 19: +77 of +168 points
+  years: 2021 +1538% 2022 +120% 2023 +110% 2024 +296% 2025 +160% 2026 +90%
+  2024-26 months: median +4.8%, months >= +10%: 14 of 34, losing months: 4, worst month -11.4%
+  2024-26 account P&L by coin (points): best DOGEUSDT +54 (12), ZECUSDT +54 (12), ADAUSDT +29 (6), SUIUSDT +29 (6), SOLUSDT +24 (5), AVAXUSDT +19 (4) | worst UNIUSDT -8 (1), OPUSDT -10 (1), STRKUSDT -12 (2), IOUSDT -15 (1)
+  worst 2024-26 trades: 2025-02-01 IOUSDT -15.4%, 2026-10-12 STRKUSDT -11.1%, 2026-02-19 OPUSDT -9.5%, 2024-04-11 UNIUSDT -8.0%
+  adversarial in-hour order +0.3% on watch fills: 24-26 +6.68%/mo DD  -25% | 25-26 +5.42%/mo DD  -25% | 21-23 +9.51%/mo DD  -44%; fresh 2024 start +6.68%/month DD -25%
+  (4) fills 0.2% worse + FTT + LUNA/FTT/SRM always eligible: 24-26 +7.78%/mo DD  -25% | 25-26 +5.71%/mo DD  -25% | 21-23 +8.51%/mo DD  -89%; worst trade 21-23 -88.2%, 24-26 -23.2% of account; fresh 2024 start +7.78%/month DD -25%
+
+=== A4 rule A on hindsight grid r4: {'univ': 'L50T+g35', 'mode': 'watch', 'N': 1, 'fmax': 1.0, 'depth': 0.15, 'tp': 0.05, 'cd': 12, 'hm': 96}
+  (1) 2024-01..2026-10   continuous:  +7.53%/month  worst drop -44.9%  x11.5  trades 136  worst trade -25.3% of account  P&L outside the 19: +88 of +265 points
+  (2) since 2025-01-01   continuous:  +5.24%/month  worst drop -44.9%  x3.02  trades 84  worst trade -25.3% of account  P&L outside the 19: +56 of +126 points
+  (3) 2021-23            continuous: +14.35%/month  worst drop -31.7%  x124  trades 197  worst trade -20.9% of account  P&L outside the 19: +206 of +509 points
+  fresh start 2024-01-01:  +7.53%/month  worst drop -44.9%  x11.5  worst trade -25.3% of account  P&L outside the 19: +88 of +265 points
+  fresh start 2025-01-01:  +5.24%/month  worst drop -44.9%  x3.02  worst trade -25.3% of account  P&L outside the 19: +56 of +126 points
+  years: 2021 +2526% 2022 +115% 2023 +121% 2024 +282% 2025 +212% 2026 -3%
+  2024-26 months: median +4.8%, months >= +10%: 12 of 34, losing months: 8, worst month -27.8%
+  2024-26 account P&L by coin (points): best DOGEUSDT +48 (10), ZECUSDT +37 (9), AVAXUSDT +24 (5), SUIUSDT +24 (5), ADAUSDT +19 (4), SOLUSDT +17 (5) | worst TRBUSDT -12 (5), STRKUSDT -12 (2), IOUSDT -15 (1), SAHARAUSDT -25 (1)
+  worst 2024-26 trades: 2026-06-09 SAHARAUSDT -25.3%, 2026-08-21 HEMIUSDT -18.0%, 2025-02-01 IOUSDT -15.4%, 2026-02-12 BERAUSDT -11.6%
+  adversarial in-hour order +0.3% on watch fills: 24-26 +5.74%/mo DD  -45% | 25-26 +4.81%/mo DD  -45% | 21-23 +11.19%/mo DD  -43%; fresh 2024 start +5.74%/month DD -45%
+  (4) fills 0.2% worse + FTT + LUNA/FTT/SRM always eligible: 24-26 +6.76%/mo DD  -45% | 25-26 +4.65%/mo DD  -45% | 21-23 +14.29%/mo DD  -55%; worst trade 21-23 -45.3%, 24-26 -25.3% of account; fresh 2024 start +6.76%/month DD -45%

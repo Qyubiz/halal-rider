@@ -1,0 +1,45 @@
+611 distinct designs; columns: 2021-23/2024-26/since 2025
+2024-26 %/month: max 8.57, designs >= 8%: 4, >= 10%: 0; since 2025 max 5.86; designs with >= 10% in BOTH 2021-23 and 2024-26: 0
+designs with win rate >= 90% in BOTH 2021-23 and 2024-26: 164
+
+FRONTIER (no drop cap): best worst-of-3 %/month at each both-period win-rate floor
+  win >=  60%: A N1 d13 tp8 g35 hm96      win 75.4/69.6/69.0% | %/mo +17.29/+7.64/+5.86 | drop -75/-58/-47% (24-26 minute marks -84%) | trades 240/115
+  win >=  70%: C N1 d15 tp3.5 g35 hm96    win 92.3/91.8/90.4% | %/mo +10.35/+7.07/+5.78 | drop -65/-37/-30% (24-26 minute marks -80%) | trades 271/110
+  win >=  80%: C N1 d15 tp3.5 g35 hm96    win 92.3/91.8/90.4% | %/mo +10.35/+7.07/+5.78 | drop -65/-37/-30% (24-26 minute marks -80%) | trades 271/110  (same)
+  win >=  85%: C N1 d15 tp3.5 g35 hm96    win 92.3/91.8/90.4% | %/mo +10.35/+7.07/+5.78 | drop -65/-37/-30% (24-26 minute marks -80%) | trades 271/110  (same)
+  win >=  88%: C N1 d15 tp3.5 g35 hm96    win 92.3/91.8/90.4% | %/mo +10.35/+7.07/+5.78 | drop -65/-37/-30% (24-26 minute marks -80%) | trades 271/110  (same)
+  win >=  90%: C N1 d15 tp3.5 g35 hm96    win 92.3/91.8/90.4% | %/mo +10.35/+7.07/+5.78 | drop -65/-37/-30% (24-26 minute marks -80%) | trades 271/110  (same)
+  win >=  92%: C N1 d14 tp2.5 g45 hm96    win 94.4/94.2/91.9% | %/mo +11.78/+7.11/+5.15 | drop -65/-32/-32% (24-26 minute marks -81%) | trades 390/154
+  win >=  94%: C N1 d14 tp2.5 g45 hm96    win 94.4/94.2/91.9% | %/mo +11.78/+7.11/+5.15 | drop -65/-32/-32% (24-26 minute marks -81%) | trades 390/154  (same)
+  win >=  95%: B N1 d12 tp1 g0 hm48       win 97.2/95.6/95.2% | %/mo  +8.24/+4.49/+4.22 | drop -50/-36/-33% (24-26 minute marks -81%) | trades 882/383
+  win >=  96%: B N3 d14 tp1 g0 hm48       win 96.6/96.0/94.3% | %/mo  +2.18/+1.48/+0.73 | drop -46/-23/-23% (24-26 minute marks -66%) | trades 981/401
+
+FRONTIER (worst drop in every period shallower than -40%): best worst-of-3 %/month at each both-period win-rate floor
+  win >=  60%: B N2 d12 tp2 g35 hm48      win 92.1/89.3/89.0% | %/mo  +9.66/+5.26/+3.91 | drop -35/-31/-31% (24-26 minute marks -77%) | trades 922/440
+  win >=  70%: B N2 d12 tp2 g35 hm48      win 92.1/89.3/89.0% | %/mo  +9.66/+5.26/+3.91 | drop -35/-31/-31% (24-26 minute marks -77%) | trades 922/440  (same)
+  win >=  80%: B N2 d12 tp2 g35 hm48      win 92.1/89.3/89.0% | %/mo  +9.66/+5.26/+3.91 | drop -35/-31/-31% (24-26 minute marks -77%) | trades 922/440  (same)
+  win >=  85%: B N2 d12 tp2 g35 hm48      win 92.1/89.3/89.0% | %/mo  +9.66/+5.26/+3.91 | drop -35/-31/-31% (24-26 minute marks -77%) | trades 922/440  (same)
+  win >=  88%: B N2 d12 tp2 g35 hm48      win 92.1/89.3/89.0% | %/mo  +9.66/+5.26/+3.91 | drop -35/-31/-31% (24-26 minute marks -77%) | trades 922/440  (same)
+  win >=  90%: D N3 d14 tp3 g35 hm96      win 93.0/92.4/89.5% | %/mo  +8.71/+5.23/+3.65 | drop -34/-22/-22% (24-26 minute marks -66%) | trades 646/276
+  win >=  92%: D N3 d14 tp3 g35 hm96      win 93.0/92.4/89.5% | %/mo  +8.71/+5.23/+3.65 | drop -34/-22/-22% (24-26 minute marks -66%) | trades 646/276  (same)
+  win >=  94%: D N2 d14 tp2 g35 hm96      win 95.8/95.1/92.8% | %/mo  +8.19/+4.75/+3.32 | drop -35/-27/-27% (24-26 minute marks -73%) | trades 617/266
+  win >=  95%: D N2 d14 tp2 g35 hm96      win 95.8/95.1/92.8% | %/mo  +8.19/+4.75/+3.32 | drop -35/-27/-27% (24-26 minute marks -73%) | trades 617/266  (same)
+  win >=  96%: B N8 d14 tp1 g0 hm48       win 96.8/96.3/94.4% | %/mo  +1.98/+1.03/+0.49 | drop -23/-17/-17% (24-26 minute marks -56%) | trades 1158/515
+
+FRONTIER (worst drop in every period shallower than -30%): best worst-of-3 %/month at each both-period win-rate floor
+  win >=  60%: B N2 d14 tp2 g35 hm48      win 93.9/93.1/91.1% | %/mo  +7.72/+4.42/+2.96 | drop -30/-28/-28% (24-26 minute marks -73%) | trades 635/274
+  win >=  70%: B N2 d14 tp2 g35 hm48      win 93.9/93.1/91.1% | %/mo  +7.72/+4.42/+2.96 | drop -30/-28/-28% (24-26 minute marks -73%) | trades 635/274  (same)
+  win >=  80%: B N2 d14 tp2 g35 hm48      win 93.9/93.1/91.1% | %/mo  +7.72/+4.42/+2.96 | drop -30/-28/-28% (24-26 minute marks -73%) | trades 635/274  (same)
+  win >=  85%: B N2 d14 tp2 g35 hm48      win 93.9/93.1/91.1% | %/mo  +7.72/+4.42/+2.96 | drop -30/-28/-28% (24-26 minute marks -73%) | trades 635/274  (same)
+  win >=  88%: B N2 d14 tp2 g35 hm48      win 93.9/93.1/91.1% | %/mo  +7.72/+4.42/+2.96 | drop -30/-28/-28% (24-26 minute marks -73%) | trades 635/274  (same)
+  win >=  90%: B N2 d14 tp2 g35 hm48      win 93.9/93.1/91.1% | %/mo  +7.72/+4.42/+2.96 | drop -30/-28/-28% (24-26 minute marks -73%) | trades 635/274  (same)
+  win >=  92%: B N2 d14 tp2 g35 hm48      win 93.9/93.1/91.1% | %/mo  +7.72/+4.42/+2.96 | drop -30/-28/-28% (24-26 minute marks -73%) | trades 635/274  (same)
+  win >=  94%: B N8 d14 tp1.5 g35 hm48    win 95.3/95.2/92.3% | %/mo  +2.95/+2.12/+1.26 | drop -24/-19/-19% (24-26 minute marks -53%) | trades 1018/499
+  win >=  95%: B N8 d14 tp1.5 g35 hm48    win 95.3/95.2/92.3% | %/mo  +2.95/+2.12/+1.26 | drop -24/-19/-19% (24-26 minute marks -53%) | trades 1018/499  (same)
+  win >=  96%: B N8 d14 tp1 g0 hm48       win 96.8/96.3/94.4% | %/mo  +1.98/+1.03/+0.49 | drop -23/-17/-17% (24-26 minute marks -56%) | trades 1158/515
+
+reference rows (same watch bot):
+  B N8 d12 tp1.5 g0 hm48     win 94.8/92.8/91.3% | %/mo  +5.45/+3.02/+2.16 | drop -39/-24/-24% (24-26 minute marks -66%) | trades 1649/793
+  B N8 d12 tp1.5 g35 hm48    win 94.5/92.8/91.3% | %/mo  +4.95/+3.00/+2.15 | drop -34/-24/-24% (24-26 minute marks -66%) | trades 1545/791
+  A N1 d14 tp5 g35 hm48      win 81.6/73.6/66.7% | %/mo +16.01/+6.29/+3.58 | drop -63/-35/-35% (24-26 minute marks -82%) | trades 316/121
+  A N1 d14 tp5 g0 hm48       win 83.0/73.0/65.6% | %/mo +21.15/+5.92/+3.02 | drop -67/-35/-35% (24-26 minute marks -82%) | trades 329/122

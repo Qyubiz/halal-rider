@@ -1,0 +1,67 @@
+90% mode, trades bought 2021-23: 406, win rate 93.8%, avg win +2.70%, avg loss -18.97%  (per-trade expectancy +1.36%)
+
+hours to exit (winners): {'count': 381.0, 'mean': 7.2, 'std': 12.7, 'min': 1.0, '25%': 1.0, '50%': 2.0, '75%': 7.0, '90%': 18.0, 'max': 78.0}
+winners sold at the first hourly check: 163 (43%), avg ret +3.23%; of these opened above the target (overshoot): 41%
+
+winners: how much higher price went in the next 24/48h after the take-profit (max high vs entry):
+       max_next24  max_next48  close_next24  close_next48
+count    381.0000    381.0000      381.0000      381.0000
+mean       0.1482      0.1973        0.0440        0.0580
+std        0.3845      0.4168        0.1969        0.2184
+min       -0.0571     -0.0571       -0.3107       -0.4579
+10%        0.0396      0.0444       -0.0919       -0.1005
+25%        0.0591      0.0757       -0.0254       -0.0518
+50%        0.1003      0.1254        0.0299        0.0227
+75%        0.1544      0.2087        0.0904        0.1091
+90%        0.2352      0.3566        0.1583        0.2396
+max        7.1630      7.1630        3.0977        2.2251
+
+losers (time stop at 96h):
+              k    ret    mfe    mae  max_next24  max_next96  max_next168  close_next96  close_next168
+12     HBARUSDT -0.118  0.012 -0.294       0.050       0.301        0.956         0.133          0.890
+23     HBARUSDT -0.096  0.015 -0.242      -0.067      -0.056       -0.056        -0.146         -0.129
+32     DOGEUSDT -0.503 -0.001 -0.681      -0.493      -0.141        0.254        -0.294          0.148
+69      XRPUSDT -0.236  0.023 -0.347      -0.178      -0.178       -0.115        -0.220         -0.187
+100     FETUSDT -0.086  0.011 -0.190      -0.020      -0.010        0.019        -0.184         -0.156
+101     TRXUSDT -0.054  0.018 -0.179       0.012       0.239        0.428         0.152          0.302
+120    DOGEUSDT -0.228 -0.004 -0.546      -0.177      -0.010        0.065        -0.123          0.051
+139    DOGEUSDT -0.123 -0.003 -0.371       0.056       0.056        0.056        -0.116         -0.284
+148     BNBUSDT -0.428 -0.002 -0.429      -0.317      -0.114       -0.114        -0.154         -0.240
+169     DOTUSDT -0.159  0.013 -0.278      -0.136      -0.084       -0.055        -0.095         -0.182
+204    NEARUSDT -0.152  0.017 -0.219      -0.039      -0.019        0.059        -0.105         -0.230
+209    HBARUSDT -0.245  0.013 -0.337      -0.238      -0.167       -0.167        -0.267         -0.297
+224    NEARUSDT -0.039  0.005 -0.166      -0.020       0.024        0.024        -0.066         -0.162
+244  RENDERUSDT -0.118  0.007 -0.217      -0.095      -0.063       -0.063        -0.175         -0.173
+249  RENDERUSDT -0.205  0.016 -0.369      -0.149      -0.000        0.323        -0.007          0.224
+274  RENDERUSDT -0.081  0.010 -0.115      -0.064      -0.010        0.001        -0.071         -0.128
+281  RENDERUSDT -0.260  0.019 -0.272      -0.205      -0.205       -0.205        -0.424         -0.366
+284    NEARUSDT -0.257 -0.003 -0.422      -0.176      -0.176       -0.176        -0.346         -0.324
+295  RENDERUSDT -0.457  0.008 -0.459      -0.295      -0.295       -0.024        -0.474         -0.275
+311    NEARUSDT -0.039  0.007 -0.110      -0.003       0.008        0.008        -0.119         -0.094
+328  RENDERUSDT -0.377 -0.006 -0.549      -0.327      -0.308       -0.308        -0.409         -0.451
+353     FETUSDT -0.195  0.022 -0.283      -0.154      -0.048       -0.048        -0.090         -0.153
+382  RENDERUSDT -0.104  0.025 -0.148      -0.044      -0.006        0.319        -0.059          0.277
+383     SUIUSDT -0.102  0.022 -0.146      -0.089      -0.089       -0.089        -0.194         -0.228
+384     SOLUSDT -0.080  0.000 -0.228      -0.073      -0.027        0.038        -0.061          0.016
+
+losers whose MFE before the stop reached: >=+1%: 56%  >=+0.5%: 68%  >=+0.25%: 72%  >=0%: 76%
+losers reaching entry+0.5% within 168h after the stop: 48%; +2.5%: 36%
+
+MAE of winners (deepest dip before the take-profit): {'count': 381.0, 'mean': -0.042, 'std': 0.05, 'min': -0.291, '10%': -0.103, '50%': -0.024, '90%': -0.004, '99%': -0.001, 'max': -0.0}
+
+hold time of winners vs MFE: winners held >= 24h: 29 ; >= 48h: 10
+vol7: median at 2021-23 entries 0.1090; winners 0.1091, losers 0.1038
+rng24: median at 2021-23 entries 0.2074; winners 0.2079, losers 0.1827
+dd7: median at 2021-23 entries 0.1441; winners 0.1421, losers 0.1719
+
+Spearman rank corr. of the entry feature with the best price in the 96h after the buy, and with ret:
+  vol7: vs mfe96 +0.101  vs loss (ret<=0) -0.027
+  rng24: vs mfe96 +0.118  vs loss (ret<=0) -0.044
+  dd7: vs mfe96 -0.032  vs loss (ret<=0) +0.072
+
+quantiles of mfe96 by vol7 tercile:
+      count    mean     std     min     10%     25%     50%     75%     max
+vq                                                                         
+low   133.0  0.1679  0.1609  0.0005  0.0376  0.0675  0.1090  0.2181  0.9828
+mid   133.0  0.2408  0.2711 -0.0034  0.0574  0.0924  0.1752  0.3219  2.6549
+high  133.0  0.2798  0.6547 -0.0060  0.0368  0.0636  0.1445  0.2754  7.1630

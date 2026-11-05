@@ -1,0 +1,27 @@
+======================================================================================================================================================
+F1 wr90 pick: N1 x100% d15 tp4 hm96 cd24 re-arm-after-win guard35/168
+   2021-23 +17.60%/mo dd  -61% win 91.1% n  303 | 2024-26  +8.27%/mo dd  -37% win 90.3% n  103 | since 2025  +6.96%/mo dd  -22% win 90.0% | worst trade (acct) -48% / -27% / -11%
+   STRESSED 2021-23 +15.73% dd  -59% | 2024-26  +5.60% dd  -38% | since 2025  +4.44% dd  -31% | win 90.6/88.4/87.2% | worst trade -45% / -27% / -15%
+   holdout function reproduces evaluate(): normal True, stressed True
+   live-bot config: {'n_orders': 1, 'max_order_pct': 100.0, 'depth_pct': 15.0, 'take_profit_pct': 4.0, 'max_hours': 96, 'cooldown_hours': 24, 'crash_guard_pct': 35.0, 'cooldown_after_win_hours': 0}
+   config-only fallback (no re-arm code change, plain 24h cooldown)
+   2021-23 +13.41%/mo dd  -61% win 91.0% n  256 | 2024-26  +7.31%/mo dd  -36% win 90.7% n   97 | since 2025  +5.84%/mo dd  -22% win 89.4% | worst trade (acct) -48% / -27% / -11%
+   STRESSED 2021-23 +13.00% dd  -60% | 2024-26  +5.50% dd  -37% | since 2025  +4.14% dd  -31% | win 90.4/89.2/87.0% | worst trade -45% / -27% / -15%
+   years: 2021 +7206% 2022 +52% 2023 +206% 2024 +239% 2025 +211% 2026 +38%
+======================================================================================================================================================
+F2 robust 95% win: N1 x100% d13 tp1.5 hm96 cd24 re-arm-after-win guard35/168
+   2021-23 +15.92%/mo dd  -64% win 96.2% n  660 | 2024-26  +7.10%/mo dd  -35% win 95.3% n  236 | since 2025  +6.70%/mo dd  -23% win 95.9% | worst trade (acct) -48% / -27% / -13%
+   STRESSED 2021-23  +9.57% dd  -68% | 2024-26  +4.48% dd  -37% | since 2025  +4.05% dd  -24% | win 96.3/94.6/95.7% | worst trade -47% / -24% / -13%
+   holdout function reproduces evaluate(): normal True, stressed True
+   live-bot config: {'n_orders': 1, 'max_order_pct': 100.0, 'depth_pct': 13.0, 'take_profit_pct': 1.5, 'max_hours': 96, 'cooldown_hours': 24, 'crash_guard_pct': 35.0, 'cooldown_after_win_hours': 0}
+   config-only fallback (no re-arm code change, plain 24h cooldown)
+   2021-23  +6.14%/mo dd  -68% win 95.5% n  470 | 2024-26  +6.30%/mo dd  -28% win 95.9% n  197 | since 2025  +4.15%/mo dd  -23% win 94.8% | worst trade (acct) -48% / -27% / -13%
+   STRESSED 2021-23  +2.95% dd  -68% | 2024-26  +5.44% dd  -24% | since 2025  +2.81% dd  -24% | win 94.8/95.9/93.7% | worst trade -47% / -13% / -13%
+   years: 2021 +5828% 2022 +19% 2023 +189% 2024 +147% 2025 +201% 2026 +35%
+======================================================================================================================================================
+F3 ten-direction, config only: N1 x100% d15 tp6 hm48 cd24 guard40/168
+   2021-23 +17.99%/mo dd  -49% win 81.3% n  252 | 2024-26  +7.98%/mo dd  -36% win 76.1% n   92 | since 2025  +6.87%/mo dd  -27% win 75.0% | worst trade (acct) -45% / -22% / -10%
+   STRESSED 2021-23  +6.72% dd  -71% | 2024-26  +7.08% dd  -37% | since 2025  +5.93% dd  -27% | win 76.8/73.9/70.8% | worst trade -52% / -21% / -10%
+   holdout function reproduces evaluate(): normal True, stressed True
+   live-bot config: {'n_orders': 1, 'max_order_pct': 100.0, 'depth_pct': 15.0, 'take_profit_pct': 6.0, 'max_hours': 48, 'cooldown_hours': 24, 'crash_guard_pct': 40.0}
+   years: 2021 +8781% 2022 +34% 2023 +223% 2024 +215% 2025 +130% 2026 +83%

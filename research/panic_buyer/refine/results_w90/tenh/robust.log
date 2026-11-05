@@ -1,0 +1,72 @@
+============================================================================================================================================
+C0 10% mode d14 tp5 hm48 cd24 g35
+   2021-23 +15.03%/mo dd  -61% win 81.1% n  297 | 2024-26  +8.13%/mo dd  -30% win 76.5% n  115 | since 2025  +6.08%/mo dd  -29% win 75.0% | worst trade (acct) -54% / -22% / -11%
+   STRESSED 2021-23 +12.20% dd  -75% | 2024-26  +6.47% dd  -30% | since 2025  +4.60% dd  -29% | win 79.9/76.1/73.2% | worst trade -44% / -21% / -13%
+   bot timing only                            2021-23 +17.02% dd  -59% | 2024-26  +7.70% dd  -29% | since 2025  +5.32% | win 81.6/75.7/73.2%
+   buys+sells 0.2% worse only                 2021-23 +11.24% dd  -65% | 2024-26  +6.66% dd  -31% | since 2025  +5.35% | win 79.5/75.2/73.2%
+   REFINE ref: bot timing + buys 0.2% worse   2021-23 +14.39% dd  -64% | 2024-26  +7.19% dd  -29% | since 2025  +5.14% | win 79.9/76.1/73.2%
+   LUNA/FTT/SRM only (sold at last hour)      2021-23 +15.07% dd  -70% | 2022 +97% | worst trade -54% of account
+   13 neighbours: worst-of-three median +5.43% min +2.40% max +7.02% | 2024-26 median +7.01% (min +5.47) | since 2025 median +5.43% | win (lower of 21-23/24-26) median 75.4% min 68.7% | 21-23 dd median -62%
+   fresh starts 2024-01-01+0..29d: 2024-26 +7.86..+8.31%/mo (median +8.10) | 2025-01-01+0..29d: since 2025 +5.88..+6.42%/mo (median +6.17)
+   years: 2021 +3837% 2022 +39% 2023 +182% 2024 +287% 2025 +93% 2026 +86% | 2024-26 months: 34, >=+10%: 12, losing: 5, worst -16%, median +4.8%
+   worst trades (% of account): DOGE 2021-01-29 -54%; RENDER 2022-11-07 -43%; SOL 2021-05-21 -38%; RENDER 2022-01-20 -25%; LINK 2022-06-10 -22%
+============================================================================================================================================
+C1 d14 tp5 hm48 cd24 re-arm g35
+   2021-23 +17.37%/mo dd  -61% win 80.7% n  332 | 2024-26  +7.50%/mo dd  -32% win 75.4% n  118 | since 2025  +7.02%/mo dd  -29% win 74.6% | worst trade (acct) -54% / -22% / -11%
+   STRESSED 2021-23 +11.57% dd  -75% | 2024-26  +4.87% dd  -37% | since 2025  +4.44% dd  -29% | win 79.1/73.5/71.9% | worst trade -39% / -21% / -13%
+   bot timing only                            2021-23 +19.17% dd  -58% | 2024-26  +6.71% dd  -32% | since 2025  +5.77% | win 81.2/75.0/74.1%
+   buys+sells 0.2% worse only                 2021-23 +12.31% dd  -63% | 2024-26  +5.62% dd  -37% | since 2025  +5.64% | win 78.6/73.9/72.4%
+   REFINE ref: bot timing + buys 0.2% worse   2021-23 +16.14% dd  -61% | 2024-26  +5.58% dd  -36% | since 2025  +4.99% | win 79.5/73.5/71.9%
+   LUNA/FTT/SRM only (sold at last hour)      2021-23 +15.83% dd  -69% | 2022 +18% | worst trade -54% of account
+   13 neighbours: worst-of-three median +5.84% min +3.21% max +7.02% | 2024-26 median +6.86% (min +4.57) | since 2025 median +6.08% | win (lower of 21-23/24-26) median 75.4% min 67.0% | 21-23 dd median -61%
+   fresh starts 2024-01-01+0..29d: 2024-26 +7.22..+7.65%/mo (median +7.46) | 2025-01-01+0..29d: since 2025 +6.60..+7.30%/mo (median +7.08)
+   years: 2021 +6167% 2022 +41% 2023 +260% 2024 +163% 2025 +140% 2026 +81% | 2024-26 months: 34, >=+10%: 11, losing: 8, worst -11%, median +4.8%
+   worst trades (% of account): DOGE 2021-01-29 -54%; SOL 2021-05-21 -38%; RENDER 2022-11-06 -38%; RENDER 2022-01-20 -25%; LINK 2022-06-10 -22%
+============================================================================================================================================
+C2 d15 tp6 hm48 cd24 re-arm g35
+   2021-23 +17.65%/mo dd  -61% win 79.9% n  274 | 2024-26  +7.01%/mo dd  -36% win 73.6% n   91 | since 2025  +7.29%/mo dd  -27% win 73.5% | worst trade (acct) -54% / -22% / -10%
+   STRESSED 2021-23 +10.32% dd  -80% | 2024-26  +5.72% dd  -37% | since 2025  +5.74% dd  -27% | win 77.8/71.1/68.8% | worst trade -52% / -21% / -10%
+   bot timing only                            2021-23 +15.99% dd  -61% | 2024-26  +6.66% dd  -35% | since 2025  +6.66% | win 79.3/73.3/72.9%
+   buys+sells 0.2% worse only                 2021-23 +13.31% dd  -61% | 2024-26  +6.04% dd  -38% | since 2025  +6.33% | win 77.6/71.4/69.4%
+   REFINE ref: bot timing + buys 0.2% worse   2021-23 +15.11% dd  -61% | 2024-26  +6.29% dd  -36% | since 2025  +6.21% | win 77.7/72.2/70.8%
+   LUNA/FTT/SRM only (sold at last hour)      2021-23 +15.24% dd  -71% | 2022 +93% | worst trade -54% of account
+   13 neighbours: worst-of-three median +5.86% min +3.76% max +7.55% | 2024-26 median +6.13% (min +4.03) | since 2025 median +6.10% | win (lower of 21-23/24-26) median 72.8% min 60.5% | 21-23 dd median -61%
+   fresh starts 2024-01-01+0..29d: 2024-26 +6.52..+7.02%/mo (median +6.78) | 2025-01-01+0..29d: since 2025 +6.95..+7.51%/mo (median +7.34)
+   years: 2021 +5488% 2022 +75% 2023 +253% 2024 +113% 2025 +160% 2026 +77% | 2024-26 months: 34, >=+10%: 11, losing: 6, worst -19%, median +5.8%
+   worst trades (% of account): DOGE 2021-01-29 -54%; SOL 2021-05-21 -38%; RENDER 2022-11-06 -37%; RENDER 2022-06-11 -35%; DOGE 2021-04-20 -22%
+============================================================================================================================================
+C3 d15 tp4 hm96 cd24 re-arm g35
+   2021-23 +17.60%/mo dd  -61% win 91.1% n  303 | 2024-26  +8.27%/mo dd  -37% win 90.3% n  103 | since 2025  +6.96%/mo dd  -22% win 90.0% | worst trade (acct) -48% / -27% / -11%
+   STRESSED 2021-23 +15.73% dd  -59% | 2024-26  +5.60% dd  -38% | since 2025  +4.44% dd  -31% | win 90.6/88.4/87.2% | worst trade -45% / -27% / -15%
+   bot timing only                            2021-23 +19.52% dd  -58% | 2024-26  +7.77% dd  -36% | since 2025  +6.35% | win 91.9/90.1/89.8%
+   buys+sells 0.2% worse only                 2021-23 +14.04% dd  -61% | 2024-26  +6.30% dd  -38% | since 2025  +5.01% | win 90.3/88.9/87.5%
+   REFINE ref: bot timing + buys 0.2% worse   2021-23 +17.69% dd  -58% | 2024-26  +6.20% dd  -37% | since 2025  +4.89% | win 91.1/88.4/87.2%
+   LUNA/FTT/SRM only (sold at last hour)      2021-23 +17.91% dd  -61% | 2022 +203% | worst trade -48% of account
+   12 neighbours: worst-of-three median +5.74% min +4.00% max +6.96% | 2024-26 median +7.18% (min +5.33) | since 2025 median +5.74% | win (lower of 21-23/24-26) median 89.1% min 81.5% | 21-23 dd median -61%
+   fresh starts 2024-01-01+0..29d: 2024-26 +7.82..+8.29%/mo (median +7.89) | 2025-01-01+0..29d: since 2025 +6.02..+7.03%/mo (median +6.91)
+   years: 2021 +7206% 2022 +52% 2023 +206% 2024 +239% 2025 +211% 2026 +38% | 2024-26 months: 34, >=+10%: 11, losing: 4, worst -11%, median +6.9%
+   worst trades (% of account): DOGE 2021-01-29 -48%; RENDER 2022-06-11 -44%; RENDER 2022-11-07 -37%; HBAR 2024-04-24 -27%; RENDER 2022-05-05 -25%
+============================================================================================================================================
+C4 d13 tp1.5 hm96 cd24 re-arm g35
+   2021-23 +15.92%/mo dd  -64% win 96.2% n  660 | 2024-26  +7.10%/mo dd  -35% win 95.3% n  236 | since 2025  +6.70%/mo dd  -23% win 95.9% | worst trade (acct) -48% / -27% / -13%
+   STRESSED 2021-23  +9.57% dd  -68% | 2024-26  +4.48% dd  -37% | since 2025  +4.05% dd  -24% | win 96.3/94.6/95.7% | worst trade -47% / -24% / -13%
+   bot timing only                            2021-23 +15.75% dd  -65% | 2024-26  +6.78% dd  -26% | since 2025  +5.60% | win 96.9/95.4/95.8%
+   buys+sells 0.2% worse only                 2021-23  +8.31% dd  -70% | 2024-26  +5.05% dd  -42% | since 2025  +4.94% | win 95.6/94.7/95.7%
+   REFINE ref: bot timing + buys 0.2% worse   2021-23 +12.10% dd  -68% | 2024-26  +5.87% dd  -34% | since 2025  +5.17% | win 96.3/94.6/95.7%
+   LUNA/FTT/SRM only (sold at last hour)      2021-23 +19.45% dd  -64% | 2022 +126% | worst trade -48% of account
+   11 neighbours: worst-of-three median +5.60% min +3.81% max +6.75% | 2024-26 median +6.60% (min +5.88) | since 2025 median +5.60% | win (lower of 21-23/24-26) median 95.2% min 92.6% | 21-23 dd median -65%
+   fresh starts 2024-01-01+0..29d: 2024-26 +6.76..+7.11%/mo (median +6.91) | 2025-01-01+0..29d: since 2025 +5.75..+6.84%/mo (median +6.44)
+   years: 2021 +5828% 2022 +19% 2023 +189% 2024 +147% 2025 +201% 2026 +35% | 2024-26 months: 34, >=+10%: 10, losing: 6, worst -10%, median +6.2%
+   worst trades (% of account): DOGE 2021-01-29 -48%; RENDER 2022-06-11 -46%; BNB 2021-05-19 -43%; RENDER 2022-11-07 -35%; HBAR 2021-09-16 -29%
+============================================================================================================================================
+C5 d15 tp6 hm48 cd24 g40
+   2021-23 +17.99%/mo dd  -49% win 81.3% n  252 | 2024-26  +7.98%/mo dd  -36% win 76.1% n   92 | since 2025  +6.87%/mo dd  -27% win 75.0% | worst trade (acct) -45% / -22% / -10%
+   STRESSED 2021-23  +6.72% dd  -71% | 2024-26  +7.08% dd  -37% | since 2025  +5.93% dd  -27% | win 76.8/73.9/70.8% | worst trade -52% / -21% / -10%
+   bot timing only                            2021-23 +14.36% dd  -71% | 2024-26  +8.04% dd  -35% | since 2025  +6.85% | win 80.5/76.1/75.0%
+   buys+sells 0.2% worse only                 2021-23 +13.13% dd  -53% | 2024-26  +7.02% dd  -38% | since 2025  +5.94% | win 78.2/73.9/70.8%
+   REFINE ref: bot timing + buys 0.2% worse   2021-23 +11.23% dd  -71% | 2024-26  +7.67% dd  -36% | since 2025  +6.40% | win 77.7/75.0/72.9%
+   LUNA/FTT/SRM only (sold at last hour)      2021-23 +15.30% dd  -67% | 2022 +3% | worst trade -45% of account
+   13 neighbours: worst-of-three median +5.50% min +4.00% max +7.33% | 2024-26 median +6.90% (min +5.16) | since 2025 median +6.09% | win (lower of 21-23/24-26) median 74.4% min 61.3% | 21-23 dd median -56%
+   fresh starts 2024-01-01+0..29d: 2024-26 +7.51..+8.00%/mo (median +7.78) | 2025-01-01+0..29d: since 2025 +6.52..+7.08%/mo (median +6.92)
+   years: 2021 +8781% 2022 +34% 2023 +223% 2024 +215% 2025 +130% 2026 +83% | 2024-26 months: 34, >=+10%: 11, losing: 5, worst -19%, median +5.8%
+   worst trades (% of account): RENDER 2022-11-07 -45%; XRP 2021-02-01 -39%; SOL 2021-05-21 -38%; RENDER 2022-06-11 -35%; HBAR 2024-04-24 -22%

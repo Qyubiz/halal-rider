@@ -1,0 +1,56 @@
+
+################ x10_velocity_grid3: N1 f0.7 | trail a3 | hm24 | flash3h8 | redip3/60m | lossCD 72h
+  settings: {'cyc': 1, 'rearm': 1, 'N': 1, 'fmax': 0.7, 'xmode': 1, 'arm': 0.03, 'trail': 0.0, 'cap': 0.08, 'delay': 1, 'hm': 24, 'look2': 3, 'depth2': 0.08, 'cdm': 0, 'redip': 0.03, 'rewin': 60, 'cdl': 4320}
+  24-26 +9.23%/mo DD  -32% | 25-26 +7.72%/mo DD  -27% | 21-23 +22.25%/mo DD  -47%
+  by period: 2021 +54.8%/mo (DD -47%) | 2022 +4.3%/mo (DD -43%) | 2023 +13.1%/mo (DD -27%) | 2024 H1 +12.0%/mo (DD -25%) | 2024 H2 +12.0%/mo (DD -32%) | 2025 H1 +8.7%/mo (DD -27%) | 2025 H2 +11.1%/mo (DD -20%) | 2026 to 22 Oct +5.1%/mo (DD -26%)
+  2024-26 months: 34; >= 10%: 12; >= 5%: 17; losing: 8; median +4.8%; worst -10.0% (2026-06); best +84.5% (2024-11)
+  2024-26 trades 588: sum of log gains 3.046 (= x21.03); the 10 best trades give 17% of it, the 30 best 35%; exits: {'trailing': 442, 'time stop': 136, 'tp/cap': 10}
+  by coin (share of 2024-26 log gain): RENDERUSDT +28%, FETUSDT +19%, DOGEUSDT +16%, ARBUSDT +14%, SUIUSDT +9%, NEARUSDT +8%, XRPUSDT +8%, AVAXUSDT +5%, BCHUSDT +4%, DOTUSDT +4%, SOLUSDT +2%, ETHUSDT +1%, LTCUSDT -0%, BNBUSDT -0%, TRXUSDT -2%, ADAUSDT -3%, HBARUSDT -3%, LINKUSDT -11%
+  holding time 2024-26: median 4.8h, mean 9.3h; invested 11% of the time-weighted equity; worst trade -21.2% of the account (HBARUSDT)
+  jitter: depth 11.9% 24-26 +9.00%/mo DD -32% | depth 12.1% 24-26 +8.73%/mo DD -32%
+  fresh 2024 starts +0..29 days: 24-26 +8.67..+9.25%/mo (median +8.85), DD -32..-32%; starts reaching 10%/mo: 0/30
+  fills 0.05% worse (buys and sells): 24-26 +8.33%/mo DD  -32% | 25-26 +6.83%/mo DD  -27% | 21-23 +19.94%/mo DD  -47%
+  fills 0.10% worse (buys and sells): 24-26 +7.02%/mo DD  -35% | 25-26 +5.67%/mo DD  -27% | 21-23 +17.76%/mo DD  -48%
+  fills 0.20% worse (buys and sells): 24-26 +5.59%/mo DD  -39% | 25-26 +4.59%/mo DD  -30% | 21-23 +14.13%/mo DD  -57%
+
+################ x10_velocity_grid3: N1 f1 | trail a3 | hm24 | flash3h8 | redip3/60m | lossCD 24h
+  settings: {'cyc': 1, 'rearm': 1, 'N': 1, 'fmax': 1.0, 'xmode': 1, 'arm': 0.03, 'trail': 0.0, 'cap': 0.08, 'delay': 1, 'hm': 24, 'look2': 3, 'depth2': 0.08, 'cdm': 0, 'redip': 0.03, 'rewin': 60, 'cdl': 1440}
+  24-26 +11.71%/mo DD  -39% | 25-26 +10.06%/mo DD  -31% | 21-23 +24.89%/mo DD  -60%
+  by period: 2021 +68.8%/mo (DD -57%) | 2022 -1.1%/mo (DD -60%) | 2023 +16.7%/mo (DD -32%) | 2024 H1 +12.0%/mo (DD -33%) | 2024 H2 +17.5%/mo (DD -39%) | 2025 H1 +11.7%/mo (DD -26%) | 2025 H2 +16.6%/mo (DD -17%) | 2026 to 22 Oct +5.2%/mo (DD -31%)
+  2024-26 months: 34; >= 10%: 16; >= 5%: 18; losing: 7; median +8.1%; worst -19.7% (2024-12); best +120.4% (2024-11)
+  2024-26 trades 368: sum of log gains 3.729 (= x41.62); the 10 best trades give 18% of it, the 30 best 39%; exits: {'trailing': 277, 'time stop': 84, 'tp/cap': 7}
+  by coin (share of 2024-26 log gain): RENDERUSDT +25%, FETUSDT +24%, ARBUSDT +20%, SUIUSDT +15%, DOGEUSDT +13%, XRPUSDT +8%, NEARUSDT +4%, BCHUSDT +3%, ETHUSDT +3%, DOTUSDT +3%, SOLUSDT +3%, AVAXUSDT +3%, BNBUSDT +1%, HBARUSDT -1%, LTCUSDT -2%, TRXUSDT -2%, ADAUSDT -6%, LINKUSDT -12%
+  holding time 2024-26: median 4.9h, mean 9.3h; invested 14% of the time-weighted equity; worst trade -30.4% of the account (HBARUSDT)
+  jitter: depth 11.9% 24-26 +11.69%/mo DD -39% | depth 12.1% 24-26 +10.63%/mo DD -39%
+  fresh 2024 starts +0..29 days: 24-26 +11.22..+11.86%/mo (median +11.51), DD -39..-39%; starts reaching 10%/mo: 30/30
+  fills 0.05% worse (buys and sells): 24-26 +10.14%/mo DD  -39% | 25-26 +8.37%/mo DD  -31% | 21-23 +22.40%/mo DD  -63%
+  fills 0.10% worse (buys and sells): 24-26 +8.48%/mo DD  -40% | 25-26 +6.71%/mo DD  -31% | 21-23 +19.44%/mo DD  -67%
+  fills 0.20% worse (buys and sells): 24-26 +6.73%/mo DD  -45% | 25-26 +5.38%/mo DD  -31% | 21-23 +13.02%/mo DD  -71%
+
+################ x10_velocity_grid3: N1 f1 | trail a3 | hm12 | flash3h8 | redip3/60m | lossCD 168h
+  settings: {'cyc': 1, 'rearm': 1, 'N': 1, 'fmax': 1.0, 'xmode': 1, 'arm': 0.03, 'trail': 0.0, 'cap': 0.08, 'delay': 1, 'hm': 12, 'look2': 3, 'depth2': 0.08, 'cdm': 0, 'redip': 0.03, 'rewin': 60, 'cdl': 10080}
+  24-26 +10.51%/mo DD  -36% | 25-26 +8.65%/mo DD  -27% | 21-23 +25.34%/mo DD  -60%
+  by period: 2021 +62.4%/mo (DD -60%) | 2022 +7.1%/mo (DD -38%) | 2023 +13.2%/mo (DD -36%) | 2024 H1 +12.8%/mo (DD -35%) | 2024 H2 +15.1%/mo (DD -26%) | 2025 H1 +9.6%/mo (DD -27%) | 2025 H2 +17.1%/mo (DD -16%) | 2026 to 22 Oct +3.2%/mo (DD -22%)
+  2024-26 months: 34; >= 10%: 11; >= 5%: 17; losing: 10; median +5.5%; worst -17.7% (2024-04); best +110.2% (2025-10)
+  2024-26 trades 392: sum of log gains 3.366 (= x28.96); the 10 best trades give 20% of it, the 30 best 43%; exits: {'trailing': 253, 'time stop': 132, 'tp/cap': 7}
+  by coin (share of 2024-26 log gain): FETUSDT +28%, RENDERUSDT +21%, ARBUSDT +17%, SUIUSDT +14%, DOGEUSDT +13%, XRPUSDT +6%, ETHUSDT +5%, AVAXUSDT +5%, NEARUSDT +4%, BCHUSDT +1%, DOTUSDT +1%, LTCUSDT +1%, BNBUSDT +0%, SOLUSDT -1%, LINKUSDT -1%, TRXUSDT -2%, ADAUSDT -4%, HBARUSDT -8%
+  holding time 2024-26: median 5.2h, mean 6.5h; invested 10% of the time-weighted equity; worst trade -24.5% of the account (HBARUSDT)
+  jitter: depth 11.9% 24-26 +9.96%/mo DD -41% | depth 12.1% 24-26 +8.67%/mo DD -35%
+  fresh 2024 starts +0..29 days: 24-26 +10.09..+10.66%/mo (median +10.27), DD -36..-36%; starts reaching 10%/mo: 30/30
+  fills 0.05% worse (buys and sells): 24-26 +9.12%/mo DD  -41% | 25-26 +7.35%/mo DD  -27% | 21-23 +20.93%/mo DD  -61%
+  fills 0.10% worse (buys and sells): 24-26 +7.83%/mo DD  -44% | 25-26 +6.65%/mo DD  -27% | 21-23 +18.86%/mo DD  -61%
+  fills 0.20% worse (buys and sells): 24-26 +5.66%/mo DD  -46% | 25-26 +4.97%/mo DD  -27% | 21-23 +11.99%/mo DD  -50%
+
+################ x10_velocity_grid2: N2 | 15min | trail a3 | hm48 | flash3h8 | cd24h
+  settings: {'N': 2, 'fmax': 0.5, 'cyc': 15, 'rearm': 1, 'xmode': 1, 'arm': 0.03, 'trail': 0.0, 'cap': 0.08, 'delay': 1, 'hm': 48, 'look2': 3, 'depth2': 0.08, 'cdm': -1, 'cd': 24}
+  24-26 +5.81%/mo DD  -30% | 25-26 +4.34%/mo DD  -28% | 21-23 +16.36%/mo DD  -45%
+  by period: 2021 +36.5%/mo (DD -45%) | 2022 +5.2%/mo (DD -38%) | 2023 +9.7%/mo (DD -22%) | 2024 H1 +9.5%/mo (DD -27%) | 2024 H2 +7.5%/mo (DD -25%) | 2025 H1 +5.2%/mo (DD -28%) | 2025 H2 +3.9%/mo (DD -24%) | 2026 to 22 Oct +4.1%/mo (DD -18%)
+  2024-26 months: 34; >= 10%: 10; >= 5%: 19; losing: 10; median +6.3%; worst -11.3% (2024-04); best +41.1% (2024-11)
+  2024-26 trades 571: sum of log gains 1.942 (= x6.97); the 10 best trades give 11% of it, the 30 best 29%; exits: {'trailing': 466, 'time stop': 104, 'tp/cap': 1}
+  by coin (share of 2024-26 log gain): DOGEUSDT +16%, FETUSDT +15%, ARBUSDT +11%, RENDERUSDT +11%, NEARUSDT +10%, SUIUSDT +10%, DOTUSDT +6%, XRPUSDT +5%, AVAXUSDT +4%, SOLUSDT +4%, HBARUSDT +4%, BCHUSDT +3%, ADAUSDT +3%, ETHUSDT +2%, TRXUSDT +2%, BNBUSDT +1%, LTCUSDT -2%, LINKUSDT -4%
+  holding time 2024-26: median 6.4h, mean 15.6h; invested 11% of the time-weighted equity; worst trade -14.2% of the account (HBARUSDT)
+  jitter: depth 11.9% 24-26 +5.36%/mo DD -29% | depth 12.1% 24-26 +5.78%/mo DD -30%
+  fresh 2024 starts +0..29 days: 24-26 +5.49..+5.82%/mo (median +5.62), DD -30..-30%; starts reaching 10%/mo: 0/30
+  fills 0.05% worse (buys and sells): 24-26 +5.03%/mo DD  -31% | 25-26 +3.74%/mo DD  -28% | 21-23 +15.13%/mo DD  -44%
+  fills 0.10% worse (buys and sells): 24-26 +4.10%/mo DD  -32% | 25-26 +3.02%/mo DD  -28% | 21-23 +13.97%/mo DD  -44%
+  fills 0.20% worse (buys and sells): 24-26 +3.14%/mo DD  -34% | 25-26 +2.21%/mo DD  -28% | 21-23 +10.44%/mo DD  -52%

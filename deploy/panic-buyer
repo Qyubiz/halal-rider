@@ -1,8 +1,22 @@
 #!/usr/bin/env bash
-# panic-buyer check|status|log|stop|start|panic|update
+# panic-buyer check|status|log|stop|start|panic|update|paper start|paper status|paper log NAME|paper stop
 set -euo pipefail
 APP=/opt/panic-buyer/app
 run() { sudo -u panicbot bash -c "set -a; source /etc/panic-buyer.env; set +a; python3 $APP/panic_buyer.py $1"; }
+PAPERS="normal 90wr ensemble"
+paper_run() { sudo -u panicbot bash -c "set -a; [ -f /etc/panic-buyer.env ] && source /etc/panic-buyer.env; PAPER=yes; PAPER_NAME=$1; PAPER_USDT=650; COMPOUND=yes; PAPER_DATA=/opt/panic-buyer/paper-$1; PANIC_CONFIG=$APP/panic_config.$1.example.json; set +a; python3 $APP/panic_buyer.py $2"; }
+if [ "${1:-}" = "paper" ]; then
+  case "${2:-status}" in
+    start)  for n in $PAPERS; do sudo mkdir -p /opt/panic-buyer/paper-$n; sudo chown panicbot:panicbot /opt/panic-buyer/paper-$n; sudo systemctl enable --now panic-paper@$n >/dev/null 2>&1; done
+            echo "Paper trading started for: $PAPERS (650 USDT pretend money each, real prices). See: panic-buyer paper status" ;;
+    status) for n in $PAPERS; do echo "===== $n"; paper_run $n status; systemctl is-active --quiet panic-paper@$n && echo "Service: RUNNING" || echo "Service: STOPPED"; done ;;
+    log)    tail -n 50 -f /opt/panic-buyer/paper-${3:-90wr}/panic.log ;;
+    stop)   for n in $PAPERS; do sudo systemctl disable --now panic-paper@$n >/dev/null 2>&1; done; echo "Paper trading stopped (results kept in /opt/panic-buyer/paper-*)." ;;
+    reset)  for n in $PAPERS; do sudo systemctl disable --now panic-paper@$n >/dev/null 2>&1; sudo rm -rf /opt/panic-buyer/paper-$n; done; echo "Paper trading stopped and its results deleted." ;;
+    *) echo "usage: panic-buyer paper start|status|log [normal|90wr|ensemble]|stop|reset" ;;
+  esac
+  exit 0
+fi
 case "${1:-status}" in
   check)  run check ;;
   status) run status; systemctl is-active --quiet panic-buyer && echo "Service: RUNNING" || echo "Service: STOPPED" ;;
@@ -11,5 +25,5 @@ case "${1:-status}" in
   start)  sudo systemctl start panic-buyer; echo "Started." ;;
   panic)  sudo systemctl stop panic-buyer; run panic ;;
   update) curl -sL https://raw.githubusercontent.com/Qyubiz/halal-rider/main/deploy/panic-install.sh | sudo bash ;;
-  *) echo "usage: panic-buyer check|status|log|stop|start|panic|update" ;;
+  *) echo "usage: panic-buyer check|status|log|stop|start|panic|update, or: panic-buyer paper start|status|log|stop|reset" ;;
 esac

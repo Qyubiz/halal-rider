@@ -1,0 +1,24 @@
+normal         identical=True  final 806.936 vs 806.936
+  90% mode
+   2021-23 WR  93.8% +13.17%/mo drop -64.4% worst trade  -50.3% acct |  11.3 trades/mo | no position 80.5% of hours, avg cash 80.5%
+   2024-26 WR  92.6%  +6.89%/mo drop -35.4% worst trade  -27.3% acct |   4.4 trades/mo | no position 90.4% of hours, avg cash 90.4%
+   since-25 WR  93.2%  +5.80%/mo drop -22.6% worst trade  -11.8% acct |   3.4 trades/mo | no position 92.0% of hours, avg cash 92.0%
+worse          identical=True  final 164.236 vs 164.236
+  90% mode
+   2021-23 WR  93.4%  +9.79%/mo drop -65.9% worst trade  -50.5% acct |  11.0 trades/mo | no position 80.0% of hours, avg cash 80.0%
+   2024-26 WR  92.1%  +5.31%/mo drop -37.5% worst trade  -27.6% acct |   4.2 trades/mo | no position 90.1% of hours, avg cash 90.1%
+   since-25 WR  92.6%  +4.56%/mo drop -22.7% worst trade  -12.2% acct |   3.1 trades/mo | no position 91.8% of hours, avg cash 91.8%
+stressed       identical=True  final 254.937 vs 254.937
+  90% mode
+   2021-23 WR  93.7% +10.96%/mo drop -65.0% worst trade  -45.9% acct |  11.9 trades/mo | no position 78.9% of hours, avg cash 78.9%
+   2024-26 WR  91.7%  +5.49%/mo drop -30.3% worst trade  -19.1% acct |   4.3 trades/mo | no position 90.0% of hours, avg cash 90.0%
+   since-25 WR  92.6%  +4.44%/mo drop -22.7% worst trade  -12.2% acct |   3.1 trades/mo | no position 91.8% of hours, avg cash 91.8%
+holdout        identical=True  final 75.8687 vs 75.8687
+  90% mode
+   2018-20 WR  92.5% +10.82%/mo drop -66.3% worst trade  -37.3% acct |  10.0 trades/mo | no position 82.4% of hours, avg cash 82.4%
+holdout worse  identical=True  final 22.7345 vs 22.7345
+  90% mode
+   2018-20 WR  92.0%  +7.41%/mo drop -69.9% worst trade  -37.5% acct |   9.7 trades/mo | no position 82.0% of hours, avg cash 82.0%
+2021-23 cut run == full run on 2021-23: True
+design_scores(90% mode): {'n_wr': 0.9384, 'n_mo': 0.1317, 'n_dd': -0.6443, 'n_tpm': 11.2855, 'n_wt': -0.5029, 'n_size': 1.0, 'w_wr': 0.934, 'w_mo': 0.0979, 'w_dd': -0.6594, 'cm_wr': 0.9403, 'cm_mo': 0.14, 'cm_dd': -0.6062, 'cp_wr': 0.9409, 'cp_mo': 0.1374, 'cp_dd': -0.6165, 'bt_wr': 0.9461, 'bt_mo': 0.1591, 'bt_dd': -0.626, 'ls_wr': 0.9389, 'ls_mo': 0.1286, 'ls_dd': -0.6443, 'robust': 0.1393, 'rmin': 0.1286}
+ALL OK

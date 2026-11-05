@@ -1,0 +1,48 @@
+lrun, ladder off, dead=False pen=0.0 mtp=False 21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%  identical to engine.run: True
+lrun, ladder off, dead=True pen=0.0 mtp=False  21-23 x 5.22 DD  -31% 2022   +1% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%  identical to engine.run: True
+lrun, ladder off, dead=False pen=0.002 mtp=False 21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%  identical to engine.run: True
+lrun, ladder off, dead=True pen=0.002 mtp=False 21-23 x 3.58 DD  -32% 2022  -16% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%  identical to engine.run: True
+lrun, ladder off, dead=False pen=0.0 mtp=True  21-23 x 4.73 DD  -30% 2022  +20% | 24-26 x 2.66 DD  -15% worst-mo  -3% up-mo  88%  identical to engine.run: True
+lrun, ladder off, dead=True pen=0.0 mtp=True   21-23 x 5.69 DD  -34% 2022  +20% | 24-26 x 2.66 DD  -15% worst-mo  -3% up-mo  88%  identical to engine.run: True
+lrun with d2=99.9% and w=1 identical: True
+  1 split, cap 25%: trades 1, leg2 [1.0], exit hour [2.0], budget [0.25], ret [0.012971014999999975] (want 0.012971014999999975) -> ok
+  2 both legs in the fill hour: exit hour [1.0], ret [0.016879483439578902] (want 0.016879483439578902) -> ok
+  3 leg 2 not reached: exit hour [2.0], amt [0.13333333333333333] (want 0.13333333333333333), equity after 1.001729468667 (want 1.001729468667) -> ok
+  4 leg 2 at hour 3 + time stop from leg 1: exit hour [4.0] why [1.0] ret [-0.05972151903547651] (want -0.05972151903547673) -> ok
+  5 two coins, cap 20%: budgets [0.2, 0.2], leg-1 money [0.1, 0.1] -> ok
+  6 mtp_now market buy, take-profit in the buy hour: exit hour [0.0] ret [0.012971014999999975] (want 0.012971014999999975) -> ok
+  7 mtp_now, both legs in the buy hour: exit hour [1.0] leg2 [1.0] -> ok
+
+######## r3 ladder: split ladder, coin's total capped at 1/N (25% on 4 coins, 20% on 5)
+LIVE SETTINGS                                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+split 50% at 12% / rest at 18%, 4 coins, cap 25% 21-23 x 8.85 DD  -23% 2022  +39% | 24-26 x 2.67 DD  -15% worst-mo  -4% up-mo  85%  <- beats live in both
+split 50% at 12% / rest at 20%, 4 coins, cap 25% 21-23 x 7.64 DD  -21% 2022  +23% | 24-26 x 2.51 DD  -17% worst-mo  -3% up-mo  85%
+split 50% at 12% / rest at 18%, 5 coins, cap 20% 21-23 x 7.41 DD  -23% 2022  +33% | 24-26 x 2.47 DD  -14% worst-mo  -4% up-mo  91%
+split 50% at 12% / rest at 20%, 5 coins, cap 20% 21-23 x 6.25 DD  -18% 2022  +20% | 24-26 x 2.34 DD  -18% worst-mo  -4% up-mo  88%
+split 67% at 12% / rest at 18%, 4 coins, cap 25% 21-23 x 7.49 DD  -40% 2022  +41% | 24-26 x 3.09 DD  -17% worst-mo  -5% up-mo  85%
+split 67% at 12% / rest at 20%, 4 coins, cap 25% 21-23 x 6.96 DD  -40% 2022  +35% | 24-26 x 2.91 DD  -19% worst-mo  -3% up-mo  85%
+split 67% at 12% / rest at 18%, 5 coins, cap 20% 21-23 x 6.90 DD  -32% 2022  +33% | 24-26 x 2.73 DD  -17% worst-mo  -5% up-mo  88%
+split 67% at 12% / rest at 20%, 5 coins, cap 20% 21-23 x 6.61 DD  -25% 2022  +30% | 24-26 x 2.59 DD  -19% worst-mo  -4% up-mo  88%
+8 variants | beat live in 2021-23: 5 | in 2024-26: 3 | in both: 1
+PICK (2021-23 only): split 50% at 12% / rest at 18%, 4 coins, cap 25%
+  pick                                         21-23 x 8.85 DD  -23% 2022  +39% | 24-26 x 2.67 DD  -15% worst-mo  -4% up-mo  85%
+  2024-26 check: BEATS the live settings
+  live, +LUNA/FTT/SRM                          21-23 x 5.22 DD  -31% 2022   +1% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  pick, +LUNA/FTT/SRM                          21-23 x 5.16 DD  -44% 2022  +14% | 24-26 x 2.67 DD  -15% worst-mo  -4% up-mo  85%  FAILS
+  live, fills 0.2% worse                       21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+  pick, fills 0.2% worse                       21-23 x 7.41 DD  -22% 2022  +35% | 24-26 x 2.49 DD  -15% worst-mo  -4% up-mo  85%  ok
+  VERDICT: rejected, live bot unchanged
+  anatomy LIVE SETTINGS 21-23: 1681 trades | TP: 1573 (sum +9.84, avg +1.8%) | time stop: 108 (sum -5.09, avg -11.5%) | with leg 2: 0 (avg +nan%, time stops 0) | max budget 20.0% of equity | worst -42.6%
+  anatomy LIVE SETTINGS 24-26: 884 trades | TP: 817 (sum +14.44, avg +1.8%) | time stop: 67 (sum -5.18, avg -7.2%) | with leg 2: 0 (avg +nan%, time stops 0) | max budget 20.0% of equity | worst -21.7%
+  anatomy split 50% at 12% / rest at 18%, 4 coins, cap 25% 21-23: 1633 trades | TP: 1582 (sum +13.25, avg +1.8%) | time stop: 51 (sum -5.40, avg -11.0%) | with leg 2: 387 (avg +0.3%, time stops 46) | max budget 25.0% of equity | worst -40.5%
+  anatomy split 50% at 12% / rest at 18%, 4 coins, cap 25% 24-26: 793 trades | TP: 759 (sum +21.83, avg +1.7%) | time stop: 34 (sum -7.04, avg -5.6%) | with leg 2: 172 (avg +0.5%, time stops 28) | max budget 25.0% of equity | worst -21.4%
+  anatomy LIVE SETTINGS +dead 21-23: 1971 trades | TP: 1842 (sum +10.63, avg +1.8%) | time stop: 129 (sum -6.40, avg -12.7%) | with leg 2: 0 (avg +nan%, time stops 0) | max budget 20.0% of equity | worst -100.0%
+  anatomy LIVE SETTINGS +dead 24-26: 884 trades | TP: 817 (sum +13.11, avg +1.8%) | time stop: 67 (sum -4.71, avg -7.2%) | with leg 2: 0 (avg +nan%, time stops 0) | max budget 20.0% of equity | worst -21.7%
+    LUNAUSDT: 103 closed trades, sum contrib +0.7% of equity, max budget 20.0%, worst -100.0%
+    FTTUSDT: 64 closed trades, sum contrib +2.4% of equity, max budget 20.0%, worst -25.8%
+    SRMUSDT: 130 closed trades, sum contrib +3.4% of equity, max budget 20.0%, worst -36.3%
+  anatomy split 50% at 12% / rest at 18%, 4 coins, cap 25% +dead 21-23: 1884 trades | TP: 1815 (sum +10.19, avg +1.8%) | time stop: 69 (sum -6.03, avg -13.4%) | with leg 2: 453 (avg -0.3%, time stops 63) | max budget 25.0% of equity | worst -100.0%
+  anatomy split 50% at 12% / rest at 18%, 4 coins, cap 25% +dead 24-26: 793 trades | TP: 759 (sum +12.74, avg +1.7%) | time stop: 34 (sum -4.11, avg -5.6%) | with leg 2: 172 (avg +0.5%, time stops 28) | max budget 25.0% of equity | worst -21.4%
+    LUNAUSDT: 100 closed trades, sum contrib -21.7% of equity, max budget 25.0%, worst -100.0%
+    FTTUSDT: 58 closed trades, sum contrib +1.7% of equity, max budget 25.0%, worst -24.9%
+    SRMUSDT: 127 closed trades, sum contrib +0.7% of equity, max budget 25.0%, worst -32.2%

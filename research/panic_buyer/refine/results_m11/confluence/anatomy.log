@@ -1,0 +1,53 @@
+
+90% mode: 406 trades, win 93.8%, mean +1.36%
+  vol   on:  300 tr win  95.0% mean  +1.52% | off:  106 tr win  90.6% mean  +0.93%
+  fast  on:  110 tr win  92.7% mean  +1.40% | off:  296 tr win  94.3% mean  +1.35%
+  deep  on:   33 tr win  90.9% mean  -0.79% | off:  373 tr win  94.1% mean  +1.55%
+  btc   on:  291 tr win  93.5% mean  +1.26% | off:  115 tr win  94.8% mean  +1.63%
+  brd   on:  339 tr win  94.4% mean  +1.44% | off:   67 tr win  91.0% mean  +0.95%
+  rng   on:  212 tr win  94.8% mean  +1.48% | off:  194 tr win  92.8% mean  +1.24%
+  red1  on:  306 tr win  95.8% mean  +1.74% | off:  100 tr win  88.0% mean  +0.20%
+  score(vol,fast,btc,brd)=0:   18 tr win  83.3% mean  +0.60%
+  score(vol,fast,btc,brd)=1:   48 tr win  93.8% mean  +1.00%
+  score(vol,fast,btc,brd)=2:   99 tr win  94.9% mean  +1.53%
+  score(vol,fast,btc,brd)=3:  170 tr win  95.3% mean  +1.52%
+  score(vol,fast,btc,brd)=4:   71 tr win  91.5% mean  +1.19%
+
+re-armed entries (rak 0): 106 trades, win 95.3%, mean +2.12%
+  vol   on:   95 tr win  95.8% mean  +2.27% | off:   11 tr win  90.9% mean  +0.79%
+  fast  on:   31 tr win 100.0% mean  +2.95% | off:   75 tr win  93.3% mean  +1.77%
+  deep  on:   14 tr win  92.9% mean  +1.52% | off:   92 tr win  95.7% mean  +2.21%
+  btc   on:   86 tr win  95.3% mean  +2.16% | off:   20 tr win  95.0% mean  +1.94%
+  brd   on:   91 tr win  95.6% mean  +2.17% | off:   15 tr win  93.3% mean  +1.80%
+  rng   on:   88 tr win  94.3% mean  +2.05% | off:   18 tr win 100.0% mean  +2.46%
+  red1  on:   54 tr win  94.4% mean  +2.28% | off:   52 tr win  96.2% mean  +1.95%
+  score(vol,fast,btc,brd)=1:    9 tr win  88.9% mean  +1.17%
+  score(vol,fast,btc,brd)=2:   19 tr win  94.7% mean  +1.72%
+  score(vol,fast,btc,brd)=3:   56 tr win  94.6% mean  +1.97%
+  score(vol,fast,btc,brd)=4:   22 tr win 100.0% mean  +3.22%
+
+12h -13% trigger (tier B trades): 178 trades, win 90.4%, mean +2.00%
+  vol   on:  141 tr win  92.2% mean  +2.21% | off:   37 tr win  83.8% mean  +1.19%
+  fast  on:  160 tr win  90.0% mean  +1.89% | off:   18 tr win  94.4% mean  +2.96%
+  deep  on:    6 tr win  83.3% mean  -5.76% | off:  172 tr win  90.7% mean  +2.27%
+  btc   on:  144 tr win  89.6% mean  +1.82% | off:   34 tr win  94.1% mean  +2.75%
+  brd   on:  164 tr win  89.6% mean  +1.89% | off:   14 tr win 100.0% mean  +3.25%
+  rng   on:  109 tr win  91.7% mean  +2.30% | off:   69 tr win  88.4% mean  +1.51%
+  red1  on:  141 tr win  92.9% mean  +2.57% | off:   37 tr win  81.1% mean  -0.19%
+  score(vol,fast,btc,brd)=0:    1 tr win 100.0% mean  +2.79%
+  score(vol,fast,btc,brd)=1:    4 tr win  75.0% mean  +1.58%
+  score(vol,fast,btc,brd)=2:   20 tr win  95.0% mean  +2.93%
+  score(vol,fast,btc,brd)=3:   47 tr win  91.5% mean  +1.89%
+  score(vol,fast,btc,brd)=4:  106 tr win  89.6% mean  +1.88%
+
+extra coins top-20 at 24% (tier X trades): 26 trades, win 84.6%, mean +0.31%
+  vol   on:   26 tr win  84.6% mean  +0.31% | off:   -
+  fast  on:    6 tr win  66.7% mean  -5.58% | off:   20 tr win  90.0% mean  +2.08%
+  deep  on:   26 tr win  84.6% mean  +0.31% | off:   -
+  btc   on:   25 tr win  84.0% mean  +0.23% | off:    1 tr win 100.0% mean  +2.30%
+  brd   on:   25 tr win  88.0% mean  +0.97% | off:    1 tr win   0.0% mean -16.12%
+  rng   on:   26 tr win  84.6% mean  +0.31% | off:   -
+  red1  on:   22 tr win  81.8% mean  -0.29% | off:    4 tr win 100.0% mean  +3.60%
+  score(vol,fast,btc,brd)=2:    2 tr win  50.0% mean  -6.91%
+  score(vol,fast,btc,brd)=3:   18 tr win  94.4% mean  +3.08%
+  score(vol,fast,btc,brd)=4:    6 tr win  66.7% mean  -5.58%

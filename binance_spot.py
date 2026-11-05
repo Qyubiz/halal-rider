@@ -113,6 +113,13 @@ class BinanceSpot:
         acc = self._send("GET", "/api/v3/account", {"omitZeroBalances": "true"}, signed=True)
         return {b["asset"]: {"free": float(b["free"]), "locked": float(b["locked"])} for b in acc["balances"]}
 
+    def book_ticker(self, symbol):
+        r = self._send("GET", "/api/v3/ticker/bookTicker", {"symbol": symbol})
+        return float(r["bidPrice"]), float(r["askPrice"])
+
+    def get_order_by_cid(self, symbol, client_order_id):
+        return self._send("GET", "/api/v3/order", {"symbol": symbol, "origClientOrderId": client_order_id}, signed=True)
+
     def get_order(self, symbol, order_id):
         return self._send("GET", "/api/v3/order", {"symbol": symbol, "orderId": order_id}, signed=True)
 

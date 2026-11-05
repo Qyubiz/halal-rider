@@ -1,0 +1,16 @@
+qualifiers: 45 of 153
+  AE-s1-near6-pre0-g3  score +21.85  base +25.50  cd-1 +20.01  cd+1 +20.07  timing +19.75  start+2w +23.91  win +95.32  dd -60.19  w_win +94.06  w_dd -61.19  w_mo +15.93
+  AEF-s1-near6-pre0-g3  score +20.06  base +20.10  cd-1 +19.64  cd+1 +21.68  timing +21.06  start+2w +17.83  win +94.67  dd -64.38  w_win +94.11  w_dd -64.38  w_mo +13.38
+  AEF-s1-near3-pre0-g3  score +19.29  base +19.74  cd-1 +19.03  cd+1 +20.26  timing +19.87  start+2w +17.53  win +94.81  dd -64.38  w_win +94.34  w_dd -64.38  w_mo +12.84
+  AF-s1-near3-pre0-g3  score +18.90  base +19.73  cd-1 +17.75  cd+1 +19.75  timing +19.69  start+2w +17.56  win +94.67  dd -64.38  w_win +94.25  w_dd -64.38  w_mo +12.74
+  AEF-s2-near3-pre1-g3  score +18.55  base +19.61  cd-1 +19.21  cd+1 +15.88  timing +18.76  start+2w +19.27  win +94.93  dd -58.42  w_win +94.36  w_dd -62.49  w_mo +13.75
+  AEF-s2-near6-pre1-g3  score +18.20  base +19.15  cd-1 +19.01  cd+1 +15.44  timing +18.62  start+2w +18.80  win +94.82  dd -58.66  w_win +94.19  w_dd -64.01  w_mo +13.43
+  AF-s1-near6-pre0-g3  score +18.71  base +19.05  cd-1 +17.26  cd+1 +20.24  timing +20.11  start+2w +16.91  win +94.62  dd -64.38  w_win +94.25  w_dd -64.38  w_mo +12.52
+  AF-s2-near3-pre1-g3  score +18.57  base +18.65  cd-1 +18.65  cd+1 +19.56  timing +17.78  start+2w +18.19  win +94.84  dd -54.27  w_win +94.56  w_dd -56.01  w_mo +13.83
+  AEF-s1-near6-pre1-g3  score +18.66  base +17.91  cd-1 +19.23  cd+1 +20.39  timing +18.16  start+2w +17.59  win +94.42  dd -64.38  w_win +93.98  w_dd -64.38  w_mo +12.84
+  AEF-s3-near3-pre0-g3  score +16.67  base +17.73  cd-1 +15.95  cd+1 +16.33  timing +17.04  start+2w +16.31  win +95.35  dd -56.22  w_win +94.98  w_dd -60.64  w_mo +12.53
+  AF-s1-near3-pre1-g3  score +18.02  base +17.68  cd-1 +17.63  cd+1 +20.30  timing +17.16  start+2w +17.33  win +94.40  dd -64.38  w_win +94.04  w_dd -64.38  w_mo +11.64
+  AEF-s3-near6-pre0-g3  score +17.37  base +17.68  cd-1 +17.06  cd+1 +17.63  timing +18.26  start+2w +16.22  win +95.11  dd -54.27  w_win +94.63  w_dd -54.37  w_mo +12.78
+
+PICK: AE-s1-near6-pre0-g3  score +21.85%/mo
+{"A": 1, "E": 1, "F": 0, "nslots": 1, "fsE": 1.0, "fsF": 1.0, "nordF": 1, "nmaxF": 1, "nearA": 0.06, "pre": 0, "gEF": 0.03}

@@ -1,0 +1,15 @@
+D. single-coin bots, 2021-23: totals over the 19 coins
+                     variant  trades  time-stop %  avg ret %  TS avg %  median coin multiple  coins up  mean log multiple
+                       cd 0h    3491        7.075      0.779   -12.484                 2.161        17              1.197
+                      cd 12h    2186        6.450      0.939   -12.688                 1.904        18              0.938
+               cd 24h (live)    1723        6.384      1.036   -11.335                 1.719        18              0.853
+                      cd 48h    1390        6.906      1.004   -10.927                 1.822        19              0.665
+                      cd 96h    1073        7.456      0.986   -10.400                 1.560        18              0.505
+ cd 24h, 72h after time stop    1679        6.373      1.060   -11.150                 1.737        18              0.853
+cd 24h, 168h after time stop    1596        6.454      1.050   -11.299                 1.677        18              0.800
+
+E. 108 time stops in 2021-23: price path of the coin after the time-stop sale (close vs the sale-hour close)
+  + 24h: n 108, median close +0.6%, mean +1.3%, share lower 47%, median lowest low -6.1%, share with a further -12% low 17%
+  + 48h: n 108, median close +0.6%, mean +2.2%, share lower 45%, median lowest low -7.0%, share with a further -12% low 27%
+  + 96h: n 108, median close -0.3%, mean +1.7%, share lower 53%, median lowest low -10.1%, share with a further -12% low 41%
+  +168h: n 108, median close -0.6%, mean +2.0%, share lower 55%, median lowest low -11.2%, share with a further -12% low 48%

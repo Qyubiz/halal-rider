@@ -1,0 +1,15 @@
+mr     done in   120s | 2021-23 normal WR  94.9% +12.96%/mo DD  -31.8%  14.1 tr/mo | worse WR  93.6%  +7.23%/mo DD  -41.0%  13.9 tr/mo
+Traceback (most recent call last):
+  File "/home/user/halal-rider/research/panic_buyer/refine/m11_allocator_sleeves.py", line 269, in <module>
+    main()
+    ~~~~^^
+  File "/home/user/halal-rider/research/panic_buyer/refine/m11_allocator_sleeves.py", line 252, in main
+    run_scalp(idxm, idxh)
+    ~~~~~~~~~^^^^^^^^^^^^
+  File "/home/user/halal-rider/research/panic_buyer/refine/m11_allocator_sleeves.py", line 202, in run_scalp
+    U, eb, xb = to_target(e.index, e.values, lg.eb.values, lg.xb.values, idxm)
+                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/halal-rider/research/panic_buyer/refine/m11_allocator_sleeves.py", line 62, in to_target
+    assert (pos >= 0).all(), "run hours outside the target index"
+           ~~~~~~~~~~~~~~^^
+AssertionError: run hours outside the target index

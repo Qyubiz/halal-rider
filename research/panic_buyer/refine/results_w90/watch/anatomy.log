@@ -1,0 +1,923 @@
+
+######## F1 wr90 rule pick: 1x100%, d15 tp3.5 g35 hm96
+  base: 21-23 +10.35%/mo wr  92.3% DD  -65% (min  -66%) | 24-26  +7.07%/mo wr  91.8% DD  -37% (min  -80%) | 25-26  +5.78%/mo wr  90.4% DD  -30% (min  -80%) | trades 271/110 | worst trade -50.7%/-29.3%
+  years: 2021 +1549%, 2022 -27%, 2023 +187%, 2024 +196%, 2025 +137%, 2026 +42%
+  2021-23   : trades 271, wins 250 (92.3%), avg win +3.29%, avg loss -18.12% (worst -50.7%), take-profits 250, time stops 21 (of which 0 profitable), longest losing streak 2
+  2024-26   : trades 110, wins 101 (91.8%), avg win +3.29%, avg loss -9.86% (worst -29.3%), take-profits 101, time stops 9 (of which 0 profitable), longest losing streak 1
+  since 2025: trades 52, wins 47 (90.4%), avg win +3.29%, avg loss -5.87% (worst -10.6%), take-profits 47, time stops 5 (of which 0 profitable), longest losing streak 1
+  2024-26 P&L by coin (log points, total +2.30): best FETUSDT +0.39, RENDERUSDT +0.39, ARBUSDT +0.32, SUIUSDT +0.32, NEARUSDT +0.20 | worst HBARUSDT -0.24, LINKUSDT +0.03, SOLUSDT +0.05
+  10 Oct 2025: RENDERUSDT bought 2025-10-10 20:59:00 @ 2.816, sold 2025-10-13 18:20:00 @ 2.915 (take-profit) +3.3% = +3.3% of the account
+  10 Oct 2025: account before 20:00 x207.305; lowest minute-close mark x40.516 (-80%); lowest hourly mark x144.565 (-30%)
+  STRESSED: 21-23  +7.94%/mo wr  90.9% DD  -65% (min  -66%) | 24-26  +5.97%/mo wr  90.1% DD  -39% (min  -80%) | 25-26  +4.34%/mo wr  86.3% DD  -30% (min  -80%) | trades 286/111 | worst trade -50.9%/-29.6%
+    dead-coin trade: SRMUSDT 2021-01-08 08:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-01-17 07:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-01-20 11:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-01-21 21:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-01-27 13:00 +3.1% = +3.1% of the account
+    dead-coin trade: LUNAUSDT 2021-02-03 10:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-02-06 03:00 +3.1% = +3.1% of the account
+    dead-coin trade: LUNAUSDT 2021-02-09 01:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-02-17 04:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-02-26 17:00 -18.9% = -18.9% of the account
+    dead-coin trade: SRMUSDT 2021-03-04 18:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-03-15 12:00 -5.3% = -5.3% of the account
+    dead-coin trade: SRMUSDT 2021-03-23 07:00 +3.1% = +3.1% of the account
+    dead-coin trade: LUNAUSDT 2021-03-23 21:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-04-26 21:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-04-28 05:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-05-04 23:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-05-19 02:00 -46.1% = -46.1% of the account
+    dead-coin trade: LUNAUSDT 2021-05-28 14:00 +3.1% = +3.1% of the account
+    dead-coin trade: LUNAUSDT 2021-06-04 01:00 +3.1% = +3.1% of the account
+    dead-coin trade: LUNAUSDT 2021-06-05 21:00 +3.1% = +3.1% of the account
+    dead-coin trade: LUNAUSDT 2021-06-07 23:00 +3.1% = +3.1% of the account
+    dead-coin trade: LUNAUSDT 2021-06-12 01:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-06-12 07:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-07-08 20:00 -3.3% = -3.3% of the account
+    dead-coin trade: LUNAUSDT 2021-07-14 01:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-07-20 03:00 +3.1% = +3.1% of the account
+    dead-coin trade: FTTUSDT 2021-08-16 23:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-08-17 22:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-08-25 08:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-08-31 22:00 +3.1% = +3.1% of the account
+    dead-coin trade: FTTUSDT 2021-09-03 00:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-09-10 07:00 +3.1% = +3.1% of the account
+    dead-coin trade: FTTUSDT 2021-09-24 09:00 +3.1% = +3.1% of the account
+    dead-coin trade: LUNAUSDT 2021-11-10 21:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2021-12-04 15:00 -0.9% = -0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-12-11 00:00 +3.1% = +3.1% of the account
+    dead-coin trade: LUNAUSDT 2022-01-27 02:00 +3.1% = +3.1% of the account
+    dead-coin trade: LUNAUSDT 2022-01-28 08:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2022-03-21 01:00 +3.1% = +3.1% of the account
+    dead-coin trade: FTTUSDT 2022-04-18 06:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2022-07-21 02:00 +3.1% = +3.1% of the account
+    dead-coin trade: FTTUSDT 2022-11-06 15:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2022-11-17 08:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2022-11-19 21:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2022-11-20 23:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2022-11-22 00:00 +3.1% = +3.1% of the account
+    dead-coin trade: SRMUSDT 2022-11-25 17:00 +3.1% = +3.1% of the account
+    stressed trades per year: 2021 170, 2022 73, 2023 43, 2024 60, 2025 32, 2026 19
+
+######## F2 wr90 low-drop: 3x33%, d14 tp3 g35 hm96
+  base: 21-23  +8.71%/mo wr  93.0% DD  -34% (min  -41%) | 24-26  +5.23%/mo wr  92.4% DD  -22% (min  -66%) | 25-26  +3.65%/mo wr  89.5% DD  -22% (min  -66%) | trades 646/276 | worst trade -16.9%/-9.8%
+  years: 2021 +1055%, 2022 +14%, 2023 +53%, 2024 +156%, 2025 +97%, 2026 +10%
+  2021-23   : trades 646, wins 601 (93.0%), avg win +2.79%, avg loss -15.67% (worst -50.7%), take-profits 600, time stops 46 (of which 1 profitable), longest losing streak 3
+  2024-26   : trades 276, wins 255 (92.4%), avg win +2.79%, avg loss -8.57% (worst -29.3%), take-profits 254, time stops 22 (of which 1 profitable), longest losing streak 3
+  since 2025: trades 143, wins 128 (89.5%), avg win +2.78%, avg loss -7.64% (worst -22.1%), take-profits 127, time stops 16 (of which 1 profitable), longest losing streak 3
+  2024-26 P&L by coin (log points, total +1.74): best FETUSDT +0.40, RENDERUSDT +0.31, SUIUSDT +0.19, DOGEUSDT +0.18, ADAUSDT +0.10 | worst HBARUSDT -0.02, BCHUSDT +0.02, TRXUSDT +0.02
+  10 Oct 2025: RENDERUSDT bought 2025-10-10 20:57:00 @ 2.872, sold 2025-10-13 19:10:00 @ 2.959 (take-profit) +2.8% = +0.9% of the account
+  10 Oct 2025: LINKUSDT bought 2025-10-10 21:00:00 @ 19.54, sold 2025-10-13 20:58:00 @ 20.13 (take-profit) +2.8% = +0.9% of the account
+  10 Oct 2025: ARBUSDT bought 2025-10-10 21:00:00 @ 0.3644, sold 2025-10-14 21:59:00 @ 0.3435 (time stop) -5.9% = -2.0% of the account
+  10 Oct 2025: account before 20:00 x82.174; lowest minute-close mark x27.854 (-66%); lowest hourly mark x63.964 (-22%)
+  STRESSED: 21-23  +4.87%/mo wr  91.6% DD  -57% (min  -57%) | 24-26  +3.24%/mo wr  91.6% DD  -18% (min  -49%) | 25-26  +2.08%/mo wr  89.0% DD  -18% (min  -49%) | trades 645/215 | worst trade -17.0%/-9.9%
+    dead-coin trade: SRMUSDT 2021-01-08 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-10 12:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-17 07:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-20 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-21 18:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-27 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-03 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-06 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-09 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-10 12:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-10 15:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-02-10 15:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-12 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-13 11:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-15 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-17 03:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-19 05:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-20 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-22 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-22 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-24 06:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-24 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-26 15:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-28 05:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-03-04 18:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-03-17 09:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-03-15 07:00 -9.5% = -3.2% of the account
+    dead-coin trade: SRMUSDT 2021-03-22 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-03-23 05:00 -2.3% = -0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-06 14:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-07 19:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-16 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-23 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-26 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-28 03:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-04 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-05-04 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-05 04:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-05-13 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-13 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-17 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-05-20 16:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-19 01:00 -45.5% = -15.2% of the account
+    dead-coin trade: LUNAUSDT 2021-05-28 14:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-28 14:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-06-04 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-06-05 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-06-07 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-06-07 23:00 -14.8% = -4.9% of the account
+    dead-coin trade: LUNAUSDT 2021-06-12 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-07-08 07:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-07-08 07:00 -2.9% = -1.0% of the account
+    dead-coin trade: LUNAUSDT 2021-07-14 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-07-19 12:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-07-27 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-08-16 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-08-17 20:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-08-25 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-08-25 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-08-26 16:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-08-31 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-09-02 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-09-10 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-09-10 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-09-13 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-09-13 14:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-09-13 16:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-09-21 06:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-09-20 00:00 -11.9% = -4.0% of the account
+    dead-coin trade: FTTUSDT 2021-09-24 09:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-09-28 17:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-10-27 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-10-27 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-11-10 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-11-16 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-12-04 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-12-04 15:00 -1.5% = -0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-12-09 20:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-12-10 23:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-12-13 23:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-01-06 01:00 -10.6% = -3.5% of the account
+    dead-coin trade: LUNAUSDT 2022-01-27 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2022-01-28 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-03-21 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-04-01 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-04-06 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-04-11 19:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2022-04-18 05:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-05-11 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-07-02 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-07-21 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2022-11-06 15:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2022-11-08 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-11-16 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-11-19 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-11-20 23:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-11-22 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-11-25 13:00 +2.6% = +0.9% of the account
+    STILL OPEN at the end (stuck, slot blocked): [('LUNAUSDT', np.float64(57.4934), '2022-05-09 16:00:00')]
+    stressed trades per year: 2021 426, 2022 146, 2023 73, 2024 106, 2025 73, 2026 36
+
+######## F3 10% mode as a watch bot (d14 tp5 g35 hm48)
+  base: 21-23 +16.01%/mo wr  81.6% DD  -63% (min  -66%) | 24-26  +6.29%/mo wr  73.6% DD  -35% (min  -82%) | 25-26  +3.58%/mo wr  66.7% DD  -35% (min  -82%) | trades 316/121 | worst trade -56.6%/-22.7%
+  years: 2021 +7265%, 2022 -9%, 2023 +213%, 2024 +264%, 2025 +35%, 2026 +59%
+  2021-23   : trades 316, wins 258 (81.6%), avg win +4.74%, avg loss -10.05% (worst -56.6%), take-profits 254, time stops 62 (of which 4 profitable), longest losing streak 3
+  2024-26   : trades 121, wins 89 (73.6%), avg win +4.63%, avg loss -5.86% (worst -22.7%), take-profits 83, time stops 38 (of which 6 profitable), longest losing streak 3
+  since 2025: trades 60, wins 40 (66.7%), avg win +4.68%, avg loss -5.14% (worst -12.1%), take-profits 38, time stops 22 (of which 2 profitable), longest losing streak 3
+  2024-26 P&L by coin (log points, total +2.05): best FETUSDT +0.78, RENDERUSDT +0.33, XRPUSDT +0.26, DOGEUSDT +0.23, NEARUSDT +0.22 | worst HBARUSDT -0.12, SUIUSDT -0.07, LTCUSDT -0.06
+  10 Oct 2025: RENDERUSDT bought 2025-10-10 20:57:00 @ 2.872, sold 2025-10-12 20:59:00 @ 2.763 (time stop) -4.0% = -4.0% of the account
+  10 Oct 2025: account before 20:00 x991.413; lowest minute-close mark x189.986 (-81%); lowest hourly mark x677.881 (-32%)
+  STRESSED: 21-23 +12.39%/mo wr  80.4% DD  -67% (min  -68%) | 24-26  +4.62%/mo wr  72.3% DD  -36% (min  -82%) | 25-26  +2.38%/mo wr  65.5% DD  -36% (min  -82%) | trades 331/119 | worst trade -56.8%/-23.0%
+    dead-coin trade: SRMUSDT 2021-01-09 00:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-01-11 04:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-01-17 07:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-01-21 12:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-01-27 16:00 +4.6% = +4.6% of the account
+    dead-coin trade: LUNAUSDT 2021-02-03 10:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-02-06 04:00 -3.5% = -3.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-09 00:00 +4.6% = +4.6% of the account
+    dead-coin trade: LUNAUSDT 2021-02-23 00:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-02-24 06:00 +4.6% = +4.6% of the account
+    dead-coin trade: LUNAUSDT 2021-02-28 20:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-03-04 18:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-03-15 08:00 -10.1% = -10.1% of the account
+    dead-coin trade: SRMUSDT 2021-03-23 10:00 -11.9% = -11.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-26 21:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-04-28 03:00 -6.2% = -6.2% of the account
+    dead-coin trade: SRMUSDT 2021-05-19 01:00 -21.7% = -21.7% of the account
+    dead-coin trade: LUNAUSDT 2021-05-28 14:00 -2.1% = -2.1% of the account
+    dead-coin trade: LUNAUSDT 2021-06-04 01:00 +4.6% = +4.6% of the account
+    dead-coin trade: LUNAUSDT 2021-06-05 21:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-07-08 07:00 -7.0% = -7.0% of the account
+    dead-coin trade: LUNAUSDT 2021-07-14 00:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-07-20 02:00 +4.6% = +4.6% of the account
+    dead-coin trade: FTTUSDT 2021-08-16 22:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-08-17 22:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-08-25 08:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-08-31 21:00 +4.6% = +4.6% of the account
+    dead-coin trade: FTTUSDT 2021-09-02 22:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-09-10 07:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-09-20 00:00 -27.2% = -27.2% of the account
+    dead-coin trade: LUNAUSDT 2021-09-28 17:00 +4.6% = +4.6% of the account
+    dead-coin trade: LUNAUSDT 2021-11-10 21:00 +4.6% = +4.6% of the account
+    dead-coin trade: LUNAUSDT 2021-12-04 00:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2021-12-04 17:00 -7.4% = -7.4% of the account
+    dead-coin trade: LUNAUSDT 2021-12-09 20:00 +4.6% = +4.6% of the account
+    dead-coin trade: FTTUSDT 2022-01-23 00:00 +4.6% = +4.6% of the account
+    dead-coin trade: LUNAUSDT 2022-01-27 01:00 +4.6% = +4.6% of the account
+    dead-coin trade: LUNAUSDT 2022-01-28 09:00 -4.6% = -4.6% of the account
+    dead-coin trade: SRMUSDT 2022-03-21 01:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2022-04-01 02:00 +4.6% = +4.6% of the account
+    dead-coin trade: FTTUSDT 2022-04-18 05:00 +4.6% = +4.6% of the account
+    dead-coin trade: LUNAUSDT 2022-05-07 21:00 -38.0% = -38.0% of the account
+    dead-coin trade: SRMUSDT 2022-07-02 02:00 +4.6% = +4.6% of the account
+    dead-coin trade: FTTUSDT 2022-11-06 15:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2022-11-16 22:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2022-11-19 21:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2022-11-22 13:00 +4.6% = +4.6% of the account
+    dead-coin trade: SRMUSDT 2022-11-25 13:00 +4.6% = +4.6% of the account
+    stressed trades per year: 2021 198, 2022 87, 2023 46, 2024 61, 2025 35, 2026 23
+
+######## alt N2 d14 tp2 g35 hm96
+  base: 21-23  +8.19%/mo wr  95.8% DD  -35% (min  -37%) | 24-26  +4.75%/mo wr  95.1% DD  -27% (min  -73%) | 25-26  +3.32%/mo wr  92.8% DD  -27% (min  -73%) | trades 617/266 | worst trade -25.4%/-14.7%
+  years: 2021 +667%, 2022 +40%, 2023 +58%, 2024 +135%, 2025 +93%, 2026 +5%
+  2021-23   : trades 617, wins 591 (95.8%), avg win +1.80%, avg loss -16.84% (worst -50.7%), take-profits 590, time stops 27 (of which 1 profitable), longest losing streak 2
+  2024-26   : trades 266, wins 253 (95.1%), avg win +1.80%, avg loss -9.96% (worst -29.3%), take-profits 253, time stops 13 (of which 0 profitable), longest losing streak 2
+  since 2025: trades 139, wins 129 (92.8%), avg win +1.80%, avg loss -8.35% (worst -22.1%), take-profits 129, time stops 10 (of which 0 profitable), longest losing streak 2
+  2024-26 P&L by coin (log points, total +1.59): best FETUSDT +0.39, RENDERUSDT +0.28, SUIUSDT +0.22, DOGEUSDT +0.17, ADAUSDT +0.13 | worst NEARUSDT -0.08, HBARUSDT -0.06, BCHUSDT +0.01
+  10 Oct 2025: RENDERUSDT bought 2025-10-10 20:57:00 @ 2.872, sold 2025-10-13 18:27:00 @ 2.93 (take-profit) +1.8% = +0.9% of the account
+  10 Oct 2025: ARBUSDT bought 2025-10-10 21:00:00 @ 0.3644, sold 2025-10-14 21:59:00 @ 0.3435 (time stop) -5.9% = -3.0% of the account
+  10 Oct 2025: account before 20:00 x65.337; lowest minute-close mark x17.721 (-73%); lowest hourly mark x47.853 (-27%)
+  STRESSED: 21-23  +1.28%/mo wr  94.2% DD  -65% (min  -66%) | 24-26  +2.56%/mo wr  95.7% DD  -16% (min  -40%) | 25-26  +1.50%/mo wr  92.1% DD  -16% (min  -40%) | trades 591/164 | worst trade -25.5%/-14.8%
+    dead-coin trade: SRMUSDT 2021-01-08 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-10 12:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-17 07:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-20 10:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-21 16:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-27 13:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-03 10:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-06 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-09 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-10 12:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-10 15:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-12 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-13 11:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-15 03:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-15 02:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-17 03:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-19 05:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-20 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-22 12:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-22 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-24 15:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-24 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-26 17:00 -18.9% = -9.3% of the account
+    dead-coin trade: SRMUSDT 2021-03-04 18:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-03-15 07:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-03-17 09:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-03-22 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-03-23 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-03-25 18:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-06 14:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-07 19:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-16 13:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-18 02:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-20 09:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-26 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-28 03:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-05-04 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-05-04 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-05-13 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-05-13 03:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-05-13 17:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-05-17 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-05-19 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-05-28 14:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-05-28 19:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-06-04 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-06-05 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-06-07 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-06-07 23:00 -14.8% = -7.4% of the account
+    dead-coin trade: LUNAUSDT 2021-06-12 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-07-08 13:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-07-08 07:00 -2.9% = -1.4% of the account
+    dead-coin trade: LUNAUSDT 2021-07-14 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-07-19 12:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-07-27 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-08-16 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-08-17 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-08-25 08:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-08-26 12:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-08-31 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-09-02 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-09-10 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-09-13 02:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-09-13 14:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-09-13 16:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-09-20 00:00 -11.9% = -6.0% of the account
+    dead-coin trade: FTTUSDT 2021-09-24 09:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-09-28 17:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-10-27 08:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-10-27 12:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-11-10 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-12-04 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-12-04 15:00 -1.4% = -0.7% of the account
+    dead-coin trade: LUNAUSDT 2021-12-09 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-12-10 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-12-13 23:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-01-07 15:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-01-27 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-01-28 08:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-01-31 03:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-03-21 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-04-01 02:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-04-06 13:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2022-04-18 05:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-05-07 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-05-11 08:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-07-02 02:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2022-11-06 15:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-11-16 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-11-19 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-11-20 23:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-11-22 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-11-25 13:00 +1.6% = +0.8% of the account
+    STILL OPEN at the end (stuck, slot blocked): [('LUNAUSDT', np.float64(57.4934), '2022-05-09 16:00:00')]
+    stressed trades per year: 2021 402, 2022 128, 2023 61, 2024 88, 2025 49, 2026 27
+
+######## alt N3 d12 tp2 g35 hm48
+  base: 21-23  +8.22%/mo wr  92.3% DD  -33% (min  -45%) | 24-26  +4.90%/mo wr  90.1% DD  -29% (min  -72%) | 25-26  +3.47%/mo wr  89.0% DD  -29% (min  -72%) | trades 1122/548 | worst trade -18.9%/-8.4%
+  years: 2021 +616%, 2022 +49%, 2023 +60%, 2024 +139%, 2025 +62%, 2026 +29%
+  2021-23   : trades 1122, wins 1036 (92.3%), avg win +1.79%, avg loss -10.92% (worst -56.6%), take-profits 1033, time stops 89 (of which 3 profitable), longest losing streak 4
+  2024-26   : trades 548, wins 494 (90.1%), avg win +1.79%, avg loss -7.13% (worst -25.2%), take-profits 493, time stops 55 (of which 1 profitable), longest losing streak 3
+  since 2025: trades 292, wins 260 (89.0%), avg win +1.79%, avg loss -7.30% (worst -20.8%), take-profits 259, time stops 33 (of which 1 profitable), longest losing streak 3
+  2024-26 P&L by coin (log points, total +1.64): best SUIUSDT +0.23, NEARUSDT +0.20, RENDERUSDT +0.20, FETUSDT +0.18, DOGEUSDT +0.16 | worst TRXUSDT +0.01, BNBUSDT +0.01, LTCUSDT +0.02
+  10 Oct 2025: LTCUSDT bought 2025-10-11 18:00:00 @ 97.53, sold 2025-10-12 16:45:00 @ 99.48 (take-profit) +1.8% = +0.6% of the account
+  10 Oct 2025: ARBUSDT bought 2025-10-10 20:57:00 @ 0.3763, sold 2025-10-12 20:59:00 @ 0.3403 (time stop) -9.7% = -3.2% of the account
+  10 Oct 2025: RENDERUSDT bought 2025-10-10 20:55:00 @ 2.941, sold 2025-10-12 20:59:00 @ 2.763 (time stop) -6.3% = -2.1% of the account
+  10 Oct 2025: account before 20:00 x65.867; lowest minute-close mark x18.561 (-72%); lowest hourly mark x48.070 (-27%)
+  STRESSED: 21-23  +3.89%/mo wr  91.0% DD  -45% (min  -46%) | 24-26  +2.98%/mo wr  89.3% DD  -31% (min  -73%) | 25-26  +2.05%/mo wr  88.2% DD  -31% (min  -73%) | trades 1191/534 | worst trade -18.9%/-8.5%
+    dead-coin trade: SRMUSDT 2021-01-06 20:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-01-07 23:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-01-08 06:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-01-09 01:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-01-10 11:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-01-10 20:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-01-13 03:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-01-15 15:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-01-16 22:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-01-20 04:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-01-20 09:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-01-21 09:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-01-21 15:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-01-25 21:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-01-26 14:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-01-27 09:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-01-27 23:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-01-29 19:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-01-30 03:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-03 10:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-02-06 01:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-07 04:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-02-07 04:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-09 00:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-10 12:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-02-10 13:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-02-10 15:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-11 20:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-02-13 11:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-15 06:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-02-15 01:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-02-16 18:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-17 08:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-18 17:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-21 04:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-02-20 21:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-22 21:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-02-24 06:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-24 15:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-02-25 22:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-02-25 18:00 -21.9% = -7.3% of the account
+    dead-coin trade: LUNAUSDT 2021-02-28 03:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-03-03 15:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-03-04 18:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-03-07 20:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-03-12 13:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-03-15 06:00 -11.3% = -3.8% of the account
+    dead-coin trade: LUNAUSDT 2021-03-17 09:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-03-22 20:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-03-22 21:00 -18.0% = -6.0% of the account
+    dead-coin trade: SRMUSDT 2021-03-24 22:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-04-06 11:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-04-07 12:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-04-12 16:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-04-14 14:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-04-16 10:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-04-20 01:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-04-19 23:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-04-24 11:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-04-26 16:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-04-27 19:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-04-28 05:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-04-28 21:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-05-04 00:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-05-04 00:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-05-05 03:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-05-07 03:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-05-12 22:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-05-12 23:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-05-15 16:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-05-20 16:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-05-19 01:00 -23.3% = -7.8% of the account
+    dead-coin trade: LUNAUSDT 2021-05-28 14:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-05-28 17:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-05-31 03:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-06-04 01:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-06-04 23:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-06-05 20:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-06-07 20:00 -4.2% = -1.4% of the account
+    dead-coin trade: SRMUSDT 2021-06-07 22:00 -3.8% = -1.3% of the account
+    dead-coin trade: LUNAUSDT 2021-06-11 21:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-06-12 01:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-06-19 03:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-06-21 06:00 -13.6% = -4.5% of the account
+    dead-coin trade: LUNAUSDT 2021-06-23 20:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-06-25 16:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-06-25 16:00 -2.9% = -1.0% of the account
+    dead-coin trade: LUNAUSDT 2021-07-01 08:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-07-08 04:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-07-08 05:00 -9.0% = -3.0% of the account
+    dead-coin trade: LUNAUSDT 2021-07-13 19:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-07-16 09:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-07-19 13:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-07-19 09:00 -6.2% = -2.1% of the account
+    dead-coin trade: LUNAUSDT 2021-07-26 21:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-08-02 01:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-08-12 14:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-08-14 12:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-08-16 20:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-08-16 22:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-08-18 01:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-08-17 21:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-08-21 11:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-08-24 16:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-08-24 16:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-08-26 05:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-08-31 18:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-08-31 17:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-09-02 21:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-09-06 12:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-09-06 12:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-09-07 14:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-09-09 12:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-09-10 08:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-09-10 13:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-09-11 17:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-09-11 20:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-09-13 14:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-09-13 01:00 -7.1% = -2.4% of the account
+    dead-coin trade: LUNAUSDT 2021-09-17 10:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-09-17 21:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-09-20 00:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-09-19 22:00 -28.3% = -9.4% of the account
+    dead-coin trade: LUNAUSDT 2021-09-22 01:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2021-09-24 09:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-09-24 15:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-09-28 15:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-10-06 08:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-10-27 12:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-10-27 08:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-11-10 21:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-11-16 04:00 -5.9% = -2.0% of the account
+    dead-coin trade: SRMUSDT 2021-11-19 02:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-11-24 17:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-11-26 23:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-12-04 00:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-12-06 04:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-12-04 15:00 -8.4% = -2.8% of the account
+    dead-coin trade: LUNAUSDT 2021-12-09 18:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-12-11 00:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-12-10 22:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-12-22 23:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-12-27 22:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2021-12-28 16:00 -6.1% = -2.0% of the account
+    dead-coin trade: SRMUSDT 2022-01-05 20:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2022-01-06 05:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-01-07 04:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-01-08 19:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-01-10 14:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-01-17 21:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2022-01-23 02:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-01-24 10:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-01-24 10:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-01-27 01:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-01-28 08:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-01-31 00:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-02-03 02:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-03-05 00:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-03-11 19:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-03-20 17:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-04-01 01:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-04-06 00:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-04-08 22:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-04-11 10:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-04-11 10:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2022-04-18 04:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-05-01 00:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-05-07 21:00 +1.6% = +0.5% of the account
+    dead-coin trade: LUNAUSDT 2022-05-09 12:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-05-11 06:00 -15.5% = -5.2% of the account
+    dead-coin trade: SRMUSDT 2022-05-16 15:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-06-13 15:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-06-16 19:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-06-19 03:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-06-29 11:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-07-02 02:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-07-20 20:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-08-07 00:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2022-11-06 15:00 +1.6% = +0.5% of the account
+    dead-coin trade: FTTUSDT 2022-11-08 02:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-11-08 17:00 -43.8% = -14.6% of the account
+    dead-coin trade: SRMUSDT 2022-11-16 20:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-11-19 08:00 +1.6% = +0.5% of the account
+    dead-coin trade: SRMUSDT 2022-11-21 06:00 -17.0% = -5.7% of the account
+    dead-coin trade: SRMUSDT 2022-11-25 13:00 +1.6% = +0.5% of the account
+    stressed trades per year: 2021 718, 2022 324, 2023 149, 2024 245, 2025 197, 2026 92
+
+######## alt N2 d12 tp2 g35 hm48
+  base: 21-23  +9.66%/mo wr  92.1% DD  -35% (min  -44%) | 24-26  +5.26%/mo wr  89.3% DD  -31% (min  -77%) | 25-26  +3.91%/mo wr  89.0% DD  -31% (min  -77%) | trades 922/440 | worst trade -28.3%/-12.6%
+  years: 2021 +1060%, 2022 +32%, 2023 +80%, 2024 +145%, 2025 +81%, 2026 +27%
+  2021-23   : trades 922, wins 849 (92.1%), avg win +1.79%, avg loss -10.84% (worst -56.6%), take-profits 847, time stops 75 (of which 2 profitable), longest losing streak 3
+  2024-26   : trades 440, wins 393 (89.3%), avg win +1.79%, avg loss -7.26% (worst -25.2%), take-profits 392, time stops 48 (of which 1 profitable), longest losing streak 3
+  since 2025: trades 237, wins 211 (89.0%), avg win +1.79%, avg loss -7.71% (worst -20.8%), take-profits 210, time stops 27 (of which 1 profitable), longest losing streak 2
+  2024-26 P&L by coin (log points, total +1.75): best SUIUSDT +0.28, RENDERUSDT +0.21, DOGEUSDT +0.20, NEARUSDT +0.20, FETUSDT +0.20 | worst BNBUSDT +0.01, HBARUSDT +0.01, ETHUSDT +0.01
+  10 Oct 2025: LTCUSDT bought 2025-10-11 18:00:00 @ 97.53, sold 2025-10-12 16:45:00 @ 99.48 (take-profit) +1.8% = +0.9% of the account
+  10 Oct 2025: RENDERUSDT bought 2025-10-10 20:55:00 @ 2.941, sold 2025-10-12 20:59:00 @ 2.763 (time stop) -6.3% = -3.1% of the account
+  10 Oct 2025: account before 20:00 x118.626; lowest minute-close mark x28.520 (-76%); lowest hourly mark x84.823 (-28%)
+  STRESSED: 21-23  +4.22%/mo wr  91.1% DD  -64% (min  -64%) | 24-26  +2.49%/mo wr  88.1% DD  -34% (min  -78%) | 25-26  +1.10%/mo wr  86.4% DD  -34% (min  -78%) | trades 953/420 | worst trade -28.4%/-12.7%
+    dead-coin trade: SRMUSDT 2021-01-06 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-07 23:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-09 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-10 11:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-01-13 03:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-16 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-20 04:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-01-20 09:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-21 09:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-01-21 15:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-25 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-01-26 14:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-01-27 09:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-01-27 23:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-01-29 19:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-01-30 11:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-03 10:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-06 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-07 04:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-07 04:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-09 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-10 13:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-02-11 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-11 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-13 11:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-15 06:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-15 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-18 17:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-20 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-24 10:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-24 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-02-26 02:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-02-25 18:00 -21.9% = -11.0% of the account
+    dead-coin trade: LUNAUSDT 2021-02-28 14:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-03-03 15:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-03-04 18:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-03-07 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-03-12 13:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-03-15 06:00 -11.3% = -5.7% of the account
+    dead-coin trade: LUNAUSDT 2021-03-17 09:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-03-22 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-03-22 21:00 -18.0% = -9.0% of the account
+    dead-coin trade: SRMUSDT 2021-03-24 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-06 11:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-12 16:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-16 10:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-04-20 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-19 23:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-24 11:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-26 16:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-27 19:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-04-28 05:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-28 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-05-04 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-05-04 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-05-07 03:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-05-15 16:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-05-19 01:00 -23.3% = -11.7% of the account
+    dead-coin trade: LUNAUSDT 2021-05-28 14:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-05-28 19:00 -4.6% = -2.3% of the account
+    dead-coin trade: LUNAUSDT 2021-05-31 03:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-06-04 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-06-04 23:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-06-05 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-06-07 20:00 -4.2% = -2.1% of the account
+    dead-coin trade: LUNAUSDT 2021-06-11 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-06-12 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-06-19 03:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-06-21 07:00 -12.1% = -6.0% of the account
+    dead-coin trade: LUNAUSDT 2021-06-23 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-06-25 16:00 -2.9% = -1.4% of the account
+    dead-coin trade: LUNAUSDT 2021-07-01 08:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-07-08 04:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-07-08 06:00 -8.4% = -4.2% of the account
+    dead-coin trade: LUNAUSDT 2021-07-13 19:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-07-16 09:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-07-19 09:00 -6.2% = -3.1% of the account
+    dead-coin trade: SRMUSDT 2021-08-02 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-08-12 14:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-08-14 12:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-08-16 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-08-16 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-08-17 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-08-21 11:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-08-24 16:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-08-24 23:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-08-26 05:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-08-31 17:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-08-31 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-09-02 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-09-06 12:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-09-06 12:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-09-07 14:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-09-09 12:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2021-09-10 08:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-09-10 13:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-09-11 17:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-09-11 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-09-14 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-09-13 01:00 -7.1% = -3.6% of the account
+    dead-coin trade: LUNAUSDT 2021-09-17 10:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-09-20 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-09-19 22:00 -28.3% = -14.1% of the account
+    dead-coin trade: FTTUSDT 2021-09-24 09:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-09-28 15:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-10-28 02:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-10-27 08:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-11-11 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-11-24 17:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-12-04 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-12-04 15:00 -8.4% = -4.2% of the account
+    dead-coin trade: LUNAUSDT 2021-12-10 22:00 -1.8% = -0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-12-22 23:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2021-12-27 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2021-12-28 16:00 -6.1% = -3.0% of the account
+    dead-coin trade: SRMUSDT 2022-01-05 21:00 -9.3% = -4.7% of the account
+    dead-coin trade: LUNAUSDT 2022-01-07 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-01-10 14:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2022-01-23 02:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-01-24 10:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-01-24 16:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-01-27 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-01-28 08:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-01-31 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-02-03 02:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-03-05 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-03-11 19:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-03-20 17:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-04-01 01:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-04-06 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-04-08 22:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-04-11 10:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-04-11 11:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2022-04-18 04:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-05-01 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: LUNAUSDT 2022-05-07 21:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-05-11 06:00 -15.5% = -7.7% of the account
+    dead-coin trade: SRMUSDT 2022-05-16 15:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-06-13 09:00 +1.6% = +0.7% of the account
+    dead-coin trade: SRMUSDT 2022-06-19 03:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-06-29 11:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-07-02 02:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-07-20 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-08-07 00:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2022-11-06 15:00 +1.6% = +0.8% of the account
+    dead-coin trade: FTTUSDT 2022-11-08 02:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-11-16 20:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-11-19 08:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-11-21 23:00 +1.6% = +0.8% of the account
+    dead-coin trade: SRMUSDT 2022-11-25 13:00 +1.6% = +0.8% of the account
+    stressed trades per year: 2021 571, 2022 252, 2023 130, 2024 199, 2025 149, 2026 72
+
+######## alt N3 d14 tp3 g45 hm96
+  base: 21-23 +10.11%/mo wr  93.5% DD  -41% (min  -45%) | 24-26  +5.26%/mo wr  92.4% DD  -22% (min  -66%) | 25-26  +3.69%/mo wr  89.6% DD  -22% (min  -66%) | trades 677/277 | worst trade -14.8%/-9.8%
+  years: 2021 +1414%, 2022 +38%, 2023 +53%, 2024 +156%, 2025 +99%, 2026 +10%
+  2021-23   : trades 677, wins 633 (93.5%), avg win +2.79%, avg loss -14.91% (worst -44.3%), take-profits 632, time stops 45 (of which 1 profitable), longest losing streak 3
+  2024-26   : trades 277, wins 256 (92.4%), avg win +2.79%, avg loss -8.57% (worst -29.3%), take-profits 255, time stops 22 (of which 1 profitable), longest losing streak 3
+  since 2025: trades 144, wins 129 (89.6%), avg win +2.78%, avg loss -7.64% (worst -22.1%), take-profits 128, time stops 16 (of which 1 profitable), longest losing streak 3
+  2024-26 P&L by coin (log points, total +1.75): best FETUSDT +0.41, RENDERUSDT +0.31, SUIUSDT +0.19, DOGEUSDT +0.18, ADAUSDT +0.10 | worst HBARUSDT -0.02, BCHUSDT +0.02, TRXUSDT +0.02
+  10 Oct 2025: RENDERUSDT bought 2025-10-10 20:57:00 @ 2.872, sold 2025-10-13 19:10:00 @ 2.959 (take-profit) +2.8% = +0.9% of the account
+  10 Oct 2025: LINKUSDT bought 2025-10-10 21:00:00 @ 19.54, sold 2025-10-13 20:58:00 @ 20.13 (take-profit) +2.8% = +0.9% of the account
+  10 Oct 2025: ARBUSDT bought 2025-10-10 21:00:00 @ 0.3644, sold 2025-10-14 21:59:00 @ 0.3435 (time stop) -5.9% = -2.0% of the account
+  10 Oct 2025: account before 20:00 x130.052; lowest minute-close mark x44.082 (-66%); lowest hourly mark x101.232 (-22%)
+  STRESSED: 21-23  +5.75%/mo wr  92.2% DD  -52% (min  -53%) | 24-26  +3.26%/mo wr  91.7% DD  -18% (min  -49%) | 25-26  +2.12%/mo wr  89.1% DD  -18% (min  -49%) | trades 664/216 | worst trade -15.2%/-9.9%
+    dead-coin trade: SRMUSDT 2021-01-08 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-10 12:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-17 07:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-20 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-21 18:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-27 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-03 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-06 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-09 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-10 12:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-10 15:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-02-10 15:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-12 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-13 11:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-15 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-17 03:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-19 05:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-20 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-22 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-22 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-24 06:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-24 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-26 15:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-28 03:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-28 14:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-03-02 20:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-03-04 18:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-03-17 09:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-03-15 07:00 -9.5% = -3.2% of the account
+    dead-coin trade: SRMUSDT 2021-03-22 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-03-23 05:00 -2.3% = -0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-06 14:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-07 19:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-16 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-23 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-26 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-28 03:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-04 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-05-04 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-05 04:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-05-13 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-13 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-17 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-05-20 16:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-19 01:00 -45.5% = -15.2% of the account
+    dead-coin trade: FTTUSDT 2021-05-23 07:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-05-26 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-05-28 05:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-28 14:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-06-04 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-06-05 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-06-07 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-06-07 23:00 -14.8% = -4.9% of the account
+    dead-coin trade: LUNAUSDT 2021-06-12 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-07-08 07:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-07-08 07:00 -2.9% = -1.0% of the account
+    dead-coin trade: LUNAUSDT 2021-07-14 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-07-19 12:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-07-27 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-08-16 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-08-17 20:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-08-25 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-08-25 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-08-26 16:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-08-31 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-09-02 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-09-10 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-09-10 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-09-13 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-09-13 14:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-09-13 16:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-09-21 06:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-09-20 00:00 -11.9% = -4.0% of the account
+    dead-coin trade: FTTUSDT 2021-09-24 09:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-09-28 17:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-10-27 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-10-27 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-11-10 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-11-16 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-12-04 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-12-04 15:00 -1.5% = -0.5% of the account
+    dead-coin trade: LUNAUSDT 2021-12-09 20:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-12-10 23:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-12-13 23:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-01-06 01:00 -10.6% = -3.5% of the account
+    dead-coin trade: LUNAUSDT 2022-01-27 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2022-01-28 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-03-21 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-04-01 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-04-06 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-04-11 19:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2022-04-18 05:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-05-11 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-07-02 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-07-21 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2022-11-06 15:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2022-11-08 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-11-16 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-11-18 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-11-21 18:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-11-25 13:00 +2.6% = +0.9% of the account
+    STILL OPEN at the end (stuck, slot blocked): [('LUNAUSDT', np.float64(57.4934), '2022-05-09 16:00:00')]
+    stressed trades per year: 2021 435, 2022 156, 2023 73, 2024 106, 2025 74, 2026 36
+
+######## alt N3 d14 tp3 g25 hm96
+  base: 21-23  +7.15%/mo wr  93.0% DD  -43% (min  -43%) | 24-26  +4.85%/mo wr  92.7% DD  -22% (min  -66%) | 25-26  +3.23%/mo wr  89.3% DD  -22% (min  -66%) | trades 587/259 | worst trade -16.9%/-9.8%
+  years: 2021 +778%, 2022 -8%, 2023 +49%, 2024 +148%, 2025 +76%, 2026 +13%
+  2021-23   : trades 587, wins 546 (93.0%), avg win +2.79%, avg loss -17.03% (worst -50.7%), take-profits 545, time stops 42 (of which 1 profitable), longest losing streak 3
+  2024-26   : trades 259, wins 240 (92.7%), avg win +2.79%, avg loss -9.23% (worst -29.3%), take-profits 239, time stops 20 (of which 1 profitable), longest losing streak 2
+  since 2025: trades 131, wins 117 (89.3%), avg win +2.78%, avg loss -7.97% (worst -22.1%), take-profits 116, time stops 15 (of which 1 profitable), longest losing streak 2
+  2024-26 P&L by coin (log points, total +1.62): best FETUSDT +0.33, RENDERUSDT +0.25, SUIUSDT +0.17, DOGEUSDT +0.17, ADAUSDT +0.11 | worst HBARUSDT -0.02, TRXUSDT +0.02, BCHUSDT +0.03
+  10 Oct 2025: RENDERUSDT bought 2025-10-10 20:57:00 @ 2.872, sold 2025-10-13 19:10:00 @ 2.959 (take-profit) +2.8% = +0.9% of the account
+  10 Oct 2025: LINKUSDT bought 2025-10-10 21:00:00 @ 19.54, sold 2025-10-13 20:58:00 @ 20.13 (take-profit) +2.8% = +0.9% of the account
+  10 Oct 2025: ARBUSDT bought 2025-10-10 21:00:00 @ 0.3644, sold 2025-10-14 21:59:00 @ 0.3435 (time stop) -5.9% = -2.0% of the account
+  10 Oct 2025: account before 20:00 x43.973; lowest minute-close mark x14.905 (-66%); lowest hourly mark x34.229 (-22%)
+  STRESSED: 21-23  +5.59%/mo wr  91.3% DD  -43% (min  -43%) | 24-26  +3.77%/mo wr  91.6% DD  -23% (min  -66%) | 25-26  +2.57%/mo wr  89.0% DD  -23% (min  -66%) | trades 621/251 | worst trade -17.0%/-9.9%
+    dead-coin trade: SRMUSDT 2021-01-08 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-10 12:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-17 07:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-20 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-21 18:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-01-27 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-03 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-06 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-09 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-10 12:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-10 15:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-02-10 15:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-12 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-13 11:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-15 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-17 03:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-19 05:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-20 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-22 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-22 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-24 06:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-02-24 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-02-25 20:00 -20.6% = -6.9% of the account
+    dead-coin trade: SRMUSDT 2021-03-05 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-03-17 09:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-03-15 07:00 -9.5% = -3.2% of the account
+    dead-coin trade: SRMUSDT 2021-03-22 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-03-25 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-03-23 05:00 -2.3% = -0.8% of the account
+    dead-coin trade: SRMUSDT 2021-04-06 14:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-07 19:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-16 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-22 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-04-23 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-04-23 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-23 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-26 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-04-28 03:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-04 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-05-04 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-05 04:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-05-13 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-13 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-17 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-05-19 01:00 -45.5% = -15.2% of the account
+    dead-coin trade: SRMUSDT 2021-05-28 14:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-06-04 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-06-05 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-06-07 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-06-07 23:00 -14.8% = -4.9% of the account
+    dead-coin trade: LUNAUSDT 2021-06-12 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-07-08 07:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-07-08 07:00 -2.9% = -1.0% of the account
+    dead-coin trade: LUNAUSDT 2021-07-14 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-07-19 12:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-07-27 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-08-16 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-08-17 20:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-08-25 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-08-25 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-08-26 16:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-08-31 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-09-02 22:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-09-10 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-09-10 13:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-09-13 11:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-09-13 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2021-09-13 14:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-09-20 00:00 -11.9% = -4.0% of the account
+    dead-coin trade: FTTUSDT 2021-09-24 09:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-09-28 17:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-10-27 08:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2021-10-27 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-11-10 21:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-11-16 10:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-12-04 00:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-12-09 20:00 +2.6% = +0.9% of the account
+    dead-coin trade: LUNAUSDT 2021-12-10 23:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-01-06 01:00 -10.6% = -3.5% of the account
+    dead-coin trade: SRMUSDT 2022-03-21 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-04-01 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2022-04-18 05:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2022-05-11 12:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-06-13 01:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-07-02 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-07-21 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-08-19 18:00 -1.0% = -0.3% of the account
+    dead-coin trade: FTTUSDT 2022-11-06 15:00 +2.6% = +0.9% of the account
+    dead-coin trade: FTTUSDT 2022-11-08 02:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-11-20 20:00 +2.6% = +0.9% of the account
+    dead-coin trade: SRMUSDT 2022-11-25 13:00 +2.6% = +0.9% of the account
+    stressed trades per year: 2021 406, 2022 135, 2023 80, 2024 124, 2025 82, 2026 45

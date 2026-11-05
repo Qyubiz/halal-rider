@@ -1,0 +1,24 @@
+big base    retrain 2018-06: 908 rows, 1s
+mae base    retrain 2018-06: 908 rows, 1s
+mae fut    retrain 2018-06: 908 rows, 1s
+big base    retrain 2020-06: 3806 rows, 7s
+mae base    retrain 2020-06: 3806 rows, 8s
+mae fut    retrain 2020-06: 3806 rows, 8s
+mae base    retrain 2022-06: 13113 rows, 23s
+big base    retrain 2022-06: 13113 rows, 24s
+mae fut    retrain 2022-06: 13113 rows, 25s
+mae base    retrain 2024-06: 15599 rows, 40s
+big base    retrain 2024-06: 15599 rows, 44s
+mae fut    retrain 2024-06: 15599 rows, 46s
+mae base    retrain 2026-06: 18425 rows, 59s
+done mae base
+big base    retrain 2026-06: 18425 rows, 66s
+mae fut    retrain 2026-06: 18425 rows, 69s
+done big base
+done mae fut
+big fut    retrain 2018-06: 908 rows, 1s
+big fut    retrain 2020-06: 3806 rows, 7s
+big fut    retrain 2022-06: 13113 rows, 24s
+big fut    retrain 2024-06: 15599 rows, 49s
+big fut    retrain 2026-06: 18425 rows, 77s
+done big fut

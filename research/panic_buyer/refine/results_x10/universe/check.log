@@ -1,0 +1,27 @@
+19 coins dead=False {}: IDENTICAL (x15.0003 vs x15.0003, 2565 trades)
+19 coins dead=False {'N': 2, 'fmax': 0.5, 'tp': 0.03, 'cd': 12, 'depth': 0.1}: IDENTICAL (x245.2478 vs x245.2478, 2460 trades)
+19 coins dead=False {'N': 1, 'fmax': 1.0, 'tp': 0.05, 'cd': 6, 'depth': 0.15, 'hm': 96}: IDENTICAL (x5098.0827 vs x5098.0827, 359 trades)
+19 coins dead=False {'N': 3, 'fmax': 0.33, 'tp': 0.015, 'cd': 24, 'mtp_now': True}: IDENTICAL (x50.2375 vs x50.2375, 2239 trades)
+19 coins dead=False {'N': 5, 'fmax': 0.2, 'part': 0.5, 'tp2': 0.04, 'cd': 12}: IDENTICAL (x60.1202 vs x60.1202, 2451 trades)
+19 coins dead=False {'N': 4, 'fmax': 0.25, 'part': 0.5, 'trail': 0.03, 'tpwait': 2, 'tprest': False, 'pen': 0.002}: IDENTICAL (x27.5870 vs x27.5870, 2080 trades)
+19 coins dead=True {}: IDENTICAL (x13.6228 vs x13.6228, 2855 trades)
+19 coins dead=True {'N': 2, 'fmax': 0.5, 'tp': 0.03, 'cd': 12, 'depth': 0.1}: IDENTICAL (x188.9773 vs x188.9773, 2599 trades)
+19 coins dead=True {'N': 1, 'fmax': 1.0, 'tp': 0.05, 'cd': 6, 'depth': 0.15, 'hm': 96}: IDENTICAL (x0.0005 vs x0.0005, 201 trades)
+19 coins dead=True {'N': 3, 'fmax': 0.33, 'tp': 0.015, 'cd': 24, 'mtp_now': True}: IDENTICAL (x54.8064 vs x54.8064, 2443 trades)
+19 coins dead=True {'N': 5, 'fmax': 0.2, 'part': 0.5, 'tp2': 0.04, 'cd': 12}: IDENTICAL (x60.9034 vs x60.9034, 2745 trades)
+19 coins dead=True {'N': 4, 'fmax': 0.25, 'part': 0.5, 'trail': 0.03, 'tpwait': 2, 'tprest': False, 'pen': 0.002}: IDENTICAL (x17.4450 vs x17.4450, 2335 trades)
+
+universe panel: 322 screened coins with 30+ days, 271 ever in the monthly top 50 or live; 50883 hours 2021-01-01 00:00:00 .. 2026-10-22 02:00:00
+universe top 20 {}: IDENTICAL (x8.5417 vs x8.5417)
+universe top 20 {'N': 2, 'fmax': 0.5, 'tp': 0.03, 'cd': 12, 'depth': 0.1}: IDENTICAL (x4.2760 vs x4.2760)
+universe top 20 {'N': 1, 'fmax': 1.0, 'tp': 0.05, 'cd': 6, 'depth': 0.15, 'hm': 96}: IDENTICAL (x10.0689 vs x10.0689)
+universe top 50 {}: IDENTICAL (x9.6375 vs x9.6375)
+universe top 50 {'N': 2, 'fmax': 0.5, 'tp': 0.03, 'cd': 12, 'depth': 0.1}: IDENTICAL (x0.6883 vs x0.6883)
+universe top 50 {'N': 1, 'fmax': 1.0, 'tp': 0.05, 'cd': 6, 'depth': 0.15, 'hm': 96}: IDENTICAL (x0.1699 vs x0.1699)
+
+ALL IDENTICAL
+coins in the 0.02% slippage tier per hour: median 50
+top 20: of the 20 monthly picks, on average 12.7 are live coins
+top 30: of the 30 monthly picks, on average 15.1 are live coins
+top 50: of the 50 monthly picks, on average 16.5 are live coins
+peak RSS MB 2371.00390625

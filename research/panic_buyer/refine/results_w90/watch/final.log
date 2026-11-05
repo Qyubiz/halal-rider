@@ -1,0 +1,164 @@
+
+######## F1 wr90 rule pick: 1x100%, d15 tp3.5 g35 hm96
+  base (19 coins)                              21-23 +10.35%/mo wr  92.3% DD  -65% (min  -66%) | 24-26  +7.07%/mo wr  91.8% DD  -37% (min  -80%) | 25-26  +5.78%/mo wr  90.4% DD  -30% (min  -80%) | trades 271/110 | worst trade -50.7%/-29.3% | 2024-26 months >=10%: 13/34, losing 3, worst -11.3%
+  STRESSED (22 coins, fills 0.2% worse, cd+1h) 21-23  +7.94%/mo wr  90.9% DD  -65% (min  -66%) | 24-26  +5.97%/mo wr  90.1% DD  -39% (min  -80%) | 25-26  +4.34%/mo wr  86.3% DD  -30% (min  -80%) | trades 286/111 | worst trade -50.9%/-29.6%
+  LUNA/FTT/SRM added only                      21-23 +10.53%/mo wr  91.4% DD  -63% (min  -66%) | 24-26  +7.07%/mo wr  91.8% DD  -37% (min  -80%) | 25-26  +5.78%/mo wr  90.4% DD  -30% (min  -80%) | trades 290/110 | worst trade -50.7%/-29.3%
+  close under trigger (1/min poll)             21-23  +9.69%/mo wr  91.9% DD  -64% (min  -66%) | 24-26  +6.65%/mo wr  91.4% DD  -35% (min  -80%) | 25-26  +5.32%/mo wr  89.8% DD  -30% (min  -80%) | trades 272/105 | worst trade -50.7%/-28.3%
+  original wicks                               21-23 +10.59%/mo wr  92.1% DD  -63% (min  -66%) | 24-26  +8.21%/mo wr  92.6% DD  -37% (min  -80%) | 25-26  +7.05%/mo wr  91.7% DD  -20% (min  -80%) | trades 279/121 | worst trade -50.7%/-29.3%
+  same-minute coins in coin order              21-23 +10.15%/mo wr  92.2% DD  -65% (min  -66%) | 24-26  +7.18%/mo wr  91.9% DD  -35% (min  -80%) | 25-26  +5.78%/mo wr  90.4% DD  -30% (min  -80%) | trades 269/111 | worst trade -50.7%/-29.3%
+  market slippage 0.1%                         21-23 +10.08%/mo wr  92.2% DD  -65% (min  -66%) | 24-26  +6.76%/mo wr  90.8% DD  -38% (min  -80%) | 25-26  +5.32%/mo wr  88.2% DD  -30% (min  -80%) | trades 269/109 | worst trade -50.8%/-29.4%
+  take-profit active 1h after the fill         21-23 +10.04%/mo wr  91.6% DD  -64% (min  -66%) | 24-26  +6.05%/mo wr  90.3% DD  -46% (min  -80%) | 25-26  +5.46%/mo wr  90.0% DD  -30% (min  -80%) | trades 263/103 | worst trade -50.7%/-29.3%
+  time stop to the minute                      21-23 +10.12%/mo wr  92.3% DD  -65% (min  -66%) | 24-26  +6.91%/mo wr  91.8% DD  -37% (min  -80%) | 25-26  +5.59%/mo wr  90.4% DD  -30% (min  -80%) | trades 271/110 | worst trade -49.5%/-29.4%
+  buys 0.2% worse only (engine convention)     21-23  +9.72%/mo wr  91.8% DD  -64% (min  -66%) | 24-26  +6.67%/mo wr  90.1% DD  -38% (min  -80%) | 25-26  +4.83%/mo wr  86.3% DD  -30% (min  -80%) | trades 269/111 | worst trade -50.8%/-29.5%
+  fresh starts Jan-Feb 2024 (5): 2024-26 %/month +6.60 .. +7.07
+  same settings, HOURLY resting bid (engine)   21-23 +11.14%/mo wr  91.5% DD  -62% | 24-26  +6.36%/mo wr  91.2% DD  -37% | 25-26  +5.89%/mo wr  92.2% DD  -22% | trades 260/102 | worst trade -47.9%/-27.3%
+    hourly bid, stressed (engine convention)   21-23 +12.79%/mo wr  91.4% DD  -61% | 24-26  +5.87%/mo wr  90.1% DD  -38% | 25-26  +5.36%/mo wr  90.2% DD  -22% | trades 279/101 | worst trade -45.2%/-27.3%
+    hourly bid on minutes, wicks 1% (critic kernel) 21-23 +10.65%/mo wr  91.4% DD  -62% | 24-26  +6.24%/mo wr  91.1% DD  -37% | 25-26  +5.89%/mo wr  92.2% DD  -29% | trades 257/101 | worst trade -47.9%/-27.3%
+  worst 3 trades (% of account): DOGEUSDT 2021-01-29 -50.7%; RENDERUSDT 2022-06-11 -44.1%; NEARUSDT 2021-05-19 -38.2%
+
+######## F2 wr90 low-drop: 3x33%, d14 tp3 g35 hm96
+  base (19 coins)                              21-23  +8.71%/mo wr  93.0% DD  -34% (min  -41%) | 24-26  +5.23%/mo wr  92.4% DD  -22% (min  -66%) | 25-26  +3.65%/mo wr  89.5% DD  -22% (min  -66%) | trades 646/276 | worst trade -16.9%/-9.8% | 2024-26 months >=10%: 8/34, losing 4, worst -10.6%
+  STRESSED (22 coins, fills 0.2% worse, cd+1h) 21-23  +4.87%/mo wr  91.6% DD  -57% (min  -57%) | 24-26  +3.24%/mo wr  91.6% DD  -18% (min  -49%) | 25-26  +2.08%/mo wr  89.0% DD  -18% (min  -49%) | trades 645/215 | worst trade -17.0%/-9.9%
+  LUNA/FTT/SRM added only                      21-23  +7.57%/mo wr  92.8% DD  -48% (min  -48%) | 24-26  +4.25%/mo wr  92.9% DD  -18% (min  -49%) | 25-26  +2.79%/mo wr  90.3% DD  -18% (min  -49%) | trades 677/225 | worst trade -16.9%/-9.8%
+  close under trigger (1/min poll)             21-23  +7.16%/mo wr  92.9% DD  -36% (min  -39%) | 24-26  +5.11%/mo wr  93.6% DD  -23% (min  -72%) | 25-26  +3.38%/mo wr  91.0% DD  -23% (min  -72%) | trades 605/267 | worst trade -16.9%/-9.8%
+  original wicks                               21-23  +7.81%/mo wr  92.4% DD  -37% (min  -39%) | 24-26  +5.33%/mo wr  92.1% DD  -20% (min  -66%) | 25-26  +3.94%/mo wr  90.0% DD  -20% (min  -66%) | trades 645/291 | worst trade -16.9%/-9.8%
+  same-minute coins in coin order              21-23  +8.40%/mo wr  92.9% DD  -34% (min  -41%) | 24-26  +5.24%/mo wr  92.7% DD  -22% (min  -66%) | 25-26  +3.72%/mo wr  90.1% DD  -22% (min  -66%) | trades 645/275 | worst trade -16.9%/-9.8%
+  market slippage 0.1%                         21-23  +8.22%/mo wr  92.5% DD  -34% (min  -41%) | 24-26  +5.10%/mo wr  92.3% DD  -23% (min  -66%) | 25-26  +3.46%/mo wr  89.3% DD  -23% (min  -66%) | trades 640/273 | worst trade -16.9%/-9.8%
+  take-profit active 1h after the fill         21-23  +7.76%/mo wr  92.6% DD  -34% (min  -45%) | 24-26  +4.83%/mo wr  92.2% DD  -24% (min  -66%) | 25-26  +3.63%/mo wr  89.9% DD  -22% (min  -66%) | trades 620/258 | worst trade -16.9%/-9.8%
+  time stop to the minute                      21-23  +8.76%/mo wr  92.9% DD  -33% (min  -41%) | 24-26  +5.20%/mo wr  92.4% DD  -22% (min  -66%) | 25-26  +3.61%/mo wr  89.5% DD  -22% (min  -66%) | trades 646/276 | worst trade -16.5%/-9.8%
+  buys 0.2% worse only (engine convention)     21-23  +7.56%/mo wr  92.0% DD  -34% (min  -41%) | 24-26  +4.67%/mo wr  91.8% DD  -23% (min  -66%) | 25-26  +3.35%/mo wr  89.1% DD  -23% (min  -66%) | trades 624/267 | worst trade -16.9%/-9.8%
+  fresh starts Jan-Feb 2024 (5): 2024-26 %/month +4.87 .. +5.23
+  same settings, HOURLY resting bid (engine)   21-23  +7.68%/mo wr  91.7% DD  -35% | 24-26  +4.85%/mo wr  91.5% DD  -21% | 25-26  +3.13%/mo wr  90.2% DD  -21% | trades 807/330 | worst trade -16.0%/-9.1%
+    hourly bid, stressed (engine convention)   21-23  +6.71%/mo wr  91.0% DD  -45% | 24-26  +4.56%/mo wr  91.2% DD  -21% | 25-26  +2.90%/mo wr  89.5% DD  -21% | trades 899/331 | worst trade -15.3%/-9.1%
+    hourly bid on minutes, wicks 1% (critic kernel) 21-23  +7.17%/mo wr  91.5% DD  -32% | 24-26  +4.40%/mo wr  91.0% DD  -24% | 25-26  +2.88%/mo wr  89.5% DD  -21% | trades 784/310 | worst trade -16.0%/-9.1%
+  worst 3 trades (% of account): DOGEUSDT 2021-01-29 -16.9%; RENDERUSDT 2022-06-11 -14.8%; NEARUSDT 2021-05-19 -12.8%
+
+######## F3 10% mode as a watch bot (d14 tp5 g35 hm48)
+  base (19 coins)                              21-23 +16.01%/mo wr  81.6% DD  -63% (min  -66%) | 24-26  +6.29%/mo wr  73.6% DD  -35% (min  -82%) | 25-26  +3.58%/mo wr  66.7% DD  -35% (min  -82%) | trades 316/121 | worst trade -56.6%/-22.7% | 2024-26 months >=10%: 11/34, losing 8, worst -18.4%
+  STRESSED (22 coins, fills 0.2% worse, cd+1h) 21-23 +12.39%/mo wr  80.4% DD  -67% (min  -68%) | 24-26  +4.62%/mo wr  72.3% DD  -36% (min  -82%) | 25-26  +2.38%/mo wr  65.5% DD  -36% (min  -82%) | trades 331/119 | worst trade -56.8%/-23.0%
+  LUNA/FTT/SRM added only                      21-23 +15.42%/mo wr  80.8% DD  -63% (min  -66%) | 24-26  +6.29%/mo wr  73.6% DD  -35% (min  -82%) | 25-26  +3.58%/mo wr  66.7% DD  -35% (min  -82%) | trades 333/121 | worst trade -56.6%/-22.7%
+  close under trigger (1/min poll)             21-23 +12.52%/mo wr  80.7% DD  -63% (min  -66%) | 24-26  +6.94%/mo wr  74.8% DD  -33% (min  -81%) | 25-26  +4.27%/mo wr  67.8% DD  -33% (min  -81%) | trades 301/115 | worst trade -56.6%/-22.7%
+  original wicks                               21-23 +17.19%/mo wr  82.2% DD  -63% (min  -66%) | 24-26  +6.67%/mo wr  72.9% DD  -31% (min  -83%) | 25-26  +3.86%/mo wr  67.2% DD  -31% (min  -83%) | trades 325/129 | worst trade -56.6%/-22.7%
+  same-minute coins in coin order              21-23 +16.19%/mo wr  81.5% DD  -63% (min  -66%) | 24-26  +6.33%/mo wr  73.8% DD  -36% (min  -82%) | 25-26  +4.03%/mo wr  68.9% DD  -36% (min  -82%) | trades 314/122 | worst trade -56.6%/-22.7%
+  market slippage 0.1%                         21-23 +17.03%/mo wr  81.8% DD  -63% (min  -66%) | 24-26  +6.17%/mo wr  73.6% DD  -35% (min  -82%) | 25-26  +3.48%/mo wr  66.7% DD  -35% (min  -82%) | trades 318/121 | worst trade -56.6%/-22.8%
+  take-profit active 1h after the fill         21-23 +14.25%/mo wr  81.0% DD  -63% (min  -66%) | 24-26  +5.70%/mo wr  72.6% DD  -35% (min  -82%) | 25-26  +3.14%/mo wr  65.5% DD  -35% (min  -82%) | trades 306/117 | worst trade -56.6%/-22.7%
+  time stop to the minute                      21-23 +16.66%/mo wr  81.5% DD  -63% (min  -66%) | 24-26  +5.99%/mo wr  73.6% DD  -35% (min  -82%) | 25-26  +3.28%/mo wr  66.7% DD  -35% (min  -82%) | trades 319/121 | worst trade -55.0%/-22.2%
+  buys 0.2% worse only (engine convention)     21-23 +16.24%/mo wr  81.3% DD  -63% (min  -66%) | 24-26  +4.96%/mo wr  71.2% DD  -35% (min  -82%) | 25-26  +2.93%/mo wr  65.5% DD  -35% (min  -82%) | trades 315/118 | worst trade -56.7%/-22.8%
+  fresh starts Jan-Feb 2024 (5): 2024-26 %/month +6.24 .. +6.56
+  same settings, HOURLY resting bid (engine)   21-23 +15.03%/mo wr  81.1% DD  -61% | 24-26  +8.13%/mo wr  76.5% DD  -30% | 25-26  +6.08%/mo wr  75.0% DD  -29% | trades 297/115 | worst trade -54.1%/-21.7%
+    hourly bid, stressed (engine convention)   21-23 +14.24%/mo wr  79.9% DD  -74% | 24-26  +7.19%/mo wr  76.1% DD  -29% | 25-26  +5.14%/mo wr  73.2% DD  -29% | trades 318/113 | worst trade -44.4%/-20.5%
+    hourly bid on minutes, wicks 1% (critic kernel) 21-23 +13.83%/mo wr  80.5% DD  -61% | 24-26  +7.62%/mo wr  75.9% DD  -30% | 25-26  +5.76%/mo wr  74.5% DD  -29% | trades 293/112 | worst trade -54.1%/-21.7%
+  worst 3 trades (% of account): DOGEUSDT 2021-01-29 -56.6%; RENDERUSDT 2022-11-07 -43.2%; ADAUSDT 2021-05-21 -30.0%
+
+######## a  wr90 plateau: 1x100%, d14 tp3 g45 hm96
+  base (19 coins)                              21-23 +15.38%/mo wr  93.6% DD  -59% (min  -60%) | 24-26  +7.33%/mo wr  91.6% DD  -33% (min  -81%) | 25-26  +5.29%/mo wr  90.0% DD  -32% (min  -81%) | trades 374/143 | worst trade -44.3%/-29.3% | 2024-26 months >=10%: 16/34, losing 6, worst -13.6%
+  STRESSED (22 coins, fills 0.2% worse, cd+1h) 21-23 +11.84%/mo wr  92.8% DD  -68% (min  -72%) | 24-26  +5.40%/mo wr  90.6% DD  -38% (min  -81%) | 25-26  +4.32%/mo wr  89.9% DD  -33% (min  -81%) | trades 376/138 | worst trade -45.5%/-29.6%
+  LUNA/FTT/SRM added only                      21-23 +14.86%/mo wr  93.0% DD  -63% (min  -67%) | 24-26  +7.33%/mo wr  91.6% DD  -33% (min  -81%) | 25-26  +5.29%/mo wr  90.0% DD  -32% (min  -81%) | trades 385/143 | worst trade -45.3%/-29.3%
+  close under trigger (1/min poll)             21-23 +12.74%/mo wr  93.3% DD  -62% (min  -63%) | 24-26  +6.63%/mo wr  92.1% DD  -36% (min  -80%) | 25-26  +3.93%/mo wr  89.1% DD  -36% (min  -80%) | trades 343/139 | worst trade -44.3%/-29.3%
+  original wicks                               21-23 +16.35%/mo wr  93.6% DD  -59% (min  -59%) | 24-26  +7.05%/mo wr  90.8% DD  -42% (min  -81%) | 25-26  +5.96%/mo wr  90.7% DD  -23% (min  -81%) | trades 375/152 | worst trade -44.3%/-29.3%
+  same-minute coins in coin order              21-23 +15.94%/mo wr  93.7% DD  -60% (min  -61%) | 24-26  +6.59%/mo wr  90.1% DD  -35% (min  -81%) | 25-26  +4.55%/mo wr  88.2% DD  -32% (min  -81%) | trades 381/142 | worst trade -44.3%/-29.3%
+  market slippage 0.1%                         21-23 +14.23%/mo wr  93.0% DD  -60% (min  -60%) | 24-26  +7.23%/mo wr  91.6% DD  -33% (min  -81%) | 25-26  +5.16%/mo wr  90.0% DD  -33% (min  -81%) | trades 370/143 | worst trade -44.4%/-29.4%
+  take-profit active 1h after the fill         21-23 +13.75%/mo wr  93.0% DD  -59% (min  -60%) | 24-26  +5.87%/mo wr  90.6% DD  -37% (min  -81%) | 25-26  +4.62%/mo wr  89.2% DD  -32% (min  -81%) | trades 359/128 | worst trade -44.3%/-29.3%
+  time stop to the minute                      21-23 +15.37%/mo wr  93.6% DD  -60% (min  -60%) | 24-26  +7.24%/mo wr  91.6% DD  -33% (min  -81%) | 25-26  +5.07%/mo wr  90.0% DD  -32% (min  -81%) | trades 374/143 | worst trade -45.8%/-29.4%
+  buys 0.2% worse only (engine convention)     21-23 +13.87%/mo wr  93.4% DD  -59% (min  -59%) | 24-26  +6.27%/mo wr  90.6% DD  -38% (min  -81%) | 25-26  +4.99%/mo wr  89.9% DD  -33% (min  -81%) | trades 363/138 | worst trade -44.4%/-29.5%
+  fresh starts Jan-Feb 2024 (5): 2024-26 %/month +7.04 .. +7.33
+  same settings, HOURLY resting bid (engine)   21-23 +12.57%/mo wr  92.1% DD  -56% | 24-26  +6.51%/mo wr  91.1% DD  -31% | 25-26  +4.51%/mo wr  90.0% DD  -27% | trades 341/123 | worst trade -45.7%/-27.3%
+    hourly bid, stressed (engine convention)   21-23 +14.31%/mo wr  92.8% DD  -56% | 24-26  +6.22%/mo wr  91.0% DD  -31% | 25-26  +4.18%/mo wr  89.8% DD  -27% | trades 363/122 | worst trade -45.8%/-27.3%
+    hourly bid on minutes, wicks 1% (critic kernel) 21-23 +12.23%/mo wr  92.0% DD  -56% | 24-26  +6.03%/mo wr  90.8% DD  -31% | 25-26  +4.19%/mo wr  89.8% DD  -30% | trades 339/120 | worst trade -45.8%/-27.3%
+  worst 3 trades (% of account): RENDERUSDT 2022-06-11 -44.3%; NEARUSDT 2021-05-19 -39.9%; RENDERUSDT 2022-11-07 -35.9%
+
+######## b  wr90 plateau: 1x100%, d14 tp2.5 g45 hm96
+  base (19 coins)                              21-23 +11.78%/mo wr  94.4% DD  -65% (min  -65%) | 24-26  +7.11%/mo wr  94.2% DD  -32% (min  -81%) | 25-26  +5.15%/mo wr  91.9% DD  -32% (min  -81%) | trades 390/154 | worst trade -44.3%/-29.3% | 2024-26 months >=10%: 11/34, losing 5, worst -12.2%
+  STRESSED (22 coins, fills 0.2% worse, cd+1h) 21-23 +10.01%/mo wr  93.6% DD  -67% (min  -67%) | 24-26  +6.32%/mo wr  94.1% DD  -33% (min  -81%) | 25-26  +4.38%/mo wr  91.9% DD  -32% (min  -81%) | trades 409/153 | worst trade -44.6%/-29.6%
+  LUNA/FTT/SRM added only                      21-23 +12.57%/mo wr  93.6% DD  -63% (min  -64%) | 24-26  +7.11%/mo wr  94.2% DD  -32% (min  -81%) | 25-26  +5.15%/mo wr  91.9% DD  -32% (min  -81%) | trades 408/154 | worst trade -44.3%/-29.3%
+  close under trigger (1/min poll)             21-23 +10.61%/mo wr  94.5% DD  -67% (min  -68%) | 24-26  +5.99%/mo wr  93.8% DD  -30% (min  -80%) | 25-26  +3.84%/mo wr  91.0% DD  -30% (min  -80%) | trades 385/144 | worst trade -45.1%/-29.3%
+  original wicks                               21-23 +12.81%/mo wr  94.4% DD  -63% (min  -64%) | 24-26  +7.78%/mo wr  94.0% DD  -30% (min  -81%) | 25-26  +6.04%/mo wr  92.7% DD  -22% (min  -81%) | trades 392/167 | worst trade -44.3%/-29.3%
+  same-minute coins in coin order              21-23 +11.60%/mo wr  94.4% DD  -66% (min  -66%) | 24-26  +6.81%/mo wr  93.5% DD  -32% (min  -81%) | 25-26  +4.48%/mo wr  90.3% DD  -32% (min  -81%) | trades 394/153 | worst trade -44.3%/-29.3%
+  market slippage 0.1%                         21-23 +11.47%/mo wr  94.3% DD  -65% (min  -65%) | 24-26  +7.08%/mo wr  94.2% DD  -32% (min  -81%) | 25-26  +5.13%/mo wr  91.9% DD  -32% (min  -81%) | trades 387/154 | worst trade -44.4%/-29.4%
+  take-profit active 1h after the fill         21-23 +10.06%/mo wr  93.8% DD  -65% (min  -65%) | 24-26  +6.25%/mo wr  93.7% DD  -32% (min  -81%) | 25-26  +4.50%/mo wr  91.2% DD  -32% (min  -81%) | trades 372/142 | worst trade -44.3%/-29.3%
+  time stop to the minute                      21-23 +11.78%/mo wr  94.4% DD  -65% (min  -66%) | 24-26  +7.00%/mo wr  94.2% DD  -32% (min  -81%) | 25-26  +4.90%/mo wr  91.9% DD  -32% (min  -81%) | trades 390/154 | worst trade -45.8%/-29.4%
+  buys 0.2% worse only (engine convention)     21-23 +11.29%/mo wr  94.3% DD  -65% (min  -65%) | 24-26  +7.22%/mo wr  94.1% DD  -33% (min  -81%) | 25-26  +4.99%/mo wr  91.8% DD  -32% (min  -81%) | trades 385/152 | worst trade -44.4%/-29.5%
+  fresh starts Jan-Feb 2024 (5): 2024-26 %/month +6.75 .. +7.11
+  same settings, HOURLY resting bid (engine)   21-23 +10.29%/mo wr  93.0% DD  -59% | 24-26  +6.15%/mo wr  92.6% DD  -28% | 25-26  +5.14%/mo wr  92.6% DD  -23% | trades 359/135 | worst trade -52.7%/-27.3%
+    hourly bid, stressed (engine convention)   21-23 +11.39%/mo wr  93.5% DD  -58% | 24-26  +6.82%/mo wr  93.2% DD  -26% | 25-26  +4.40%/mo wr  92.1% DD  -23% | trades 385/132 | worst trade -45.8%/-12.0%
+    hourly bid on minutes, wicks 1% (critic kernel) 21-23  +9.90%/mo wr  93.0% DD  -59% | 24-26  +5.66%/mo wr  92.4% DD  -28% | 25-26  +4.82%/mo wr  92.5% DD  -23% | trades 357/132 | worst trade -52.8%/-27.3%
+  worst 3 trades (% of account): RENDERUSDT 2022-06-11 -44.3%; NEARUSDT 2021-05-19 -39.9%; RENDERUSDT 2022-11-07 -36.1%
+
+######## c  wr90: 2x50%, d14 tp3 g35 hm96
+  base (19 coins)                              21-23  +9.23%/mo wr  92.7% DD  -52% (min  -52%) | 24-26  +6.35%/mo wr  92.9% DD  -27% (min  -73%) | 25-26  +4.14%/mo wr  90.3% DD  -27% (min  -73%) | trades 532/225 | worst trade -25.4%/-14.7% | 2024-26 months >=10%: 11/34, losing 4, worst -15.8%
+  STRESSED (22 coins, fills 0.2% worse, cd+1h) 21-23  +5.14%/mo wr  92.1% DD  -64% (min  -65%) | 24-26  +2.74%/mo wr  90.5% DD  -20% (min  -41%) | 25-26  +2.14%/mo wr  89.7% DD  -17% (min  -41%) | trades 509/137 | worst trade -25.5%/-14.8%
+  LUNA/FTT/SRM added only                      21-23  +7.93%/mo wr  92.9% DD  -65% (min  -65%) | 24-26  +3.68%/mo wr  91.5% DD  -17% (min  -40%) | 25-26  +2.62%/mo wr  89.9% DD  -16% (min  -40%) | trades 537/142 | worst trade -25.4%/-14.7%
+  close under trigger (1/min poll)             21-23  +7.94%/mo wr  92.7% DD  -53% (min  -53%) | 24-26  +6.19%/mo wr  93.8% DD  -26% (min  -73%) | 25-26  +4.11%/mo wr  91.3% DD  -26% (min  -73%) | trades 506/210 | worst trade -25.4%/-14.7%
+  original wicks                               21-23  +9.53%/mo wr  92.8% DD  -51% (min  -51%) | 24-26  +6.34%/mo wr  92.4% DD  -23% (min  -73%) | 25-26  +4.46%/mo wr  90.7% DD  -23% (min  -73%) | trades 543/237 | worst trade -25.4%/-14.7%
+  same-minute coins in coin order              21-23  +9.35%/mo wr  92.7% DD  -54% (min  -54%) | 24-26  +6.07%/mo wr  93.0% DD  -23% (min  -67%) | 25-26  +4.23%/mo wr  90.9% DD  -23% (min  -67%) | trades 533/215 | worst trade -25.4%/-14.7%
+  market slippage 0.1%                         21-23  +8.53%/mo wr  92.2% DD  -52% (min  -52%) | 24-26  +6.17%/mo wr  92.8% DD  -27% (min  -73%) | 25-26  +3.87%/mo wr  90.0% DD  -27% (min  -73%) | trades 524/222 | worst trade -25.4%/-14.7%
+  take-profit active 1h after the fill         21-23  +8.35%/mo wr  92.7% DD  -51% (min  -51%) | 24-26  +5.43%/mo wr  92.1% DD  -27% (min  -73%) | 25-26  +3.74%/mo wr  89.5% DD  -27% (min  -73%) | trades 509/202 | worst trade -25.4%/-14.7%
+  time stop to the minute                      21-23  +9.31%/mo wr  92.5% DD  -51% (min  -51%) | 24-26  +6.25%/mo wr  92.9% DD  -27% (min  -73%) | 25-26  +4.04%/mo wr  90.3% DD  -27% (min  -73%) | trades 532/225 | worst trade -24.7%/-14.7%
+  buys 0.2% worse only (engine convention)     21-23  +8.67%/mo wr  91.9% DD  -51% (min  -51%) | 24-26  +5.48%/mo wr  91.6% DD  -27% (min  -73%) | 25-26  +3.52%/mo wr  88.9% DD  -27% (min  -73%) | trades 519/215 | worst trade -25.4%/-14.7%
+  fresh starts Jan-Feb 2024 (5): 2024-26 %/month +5.96 .. +6.35
+  same settings, HOURLY resting bid (engine)   21-23  +9.01%/mo wr  91.8% DD  -45% | 24-26  +6.03%/mo wr  92.9% DD  -25% | 25-26  +4.06%/mo wr  91.0% DD  -22% | trades 638/254 | worst trade -24.0%/-13.7%
+    hourly bid, stressed (engine convention)   21-23  +6.85%/mo wr  91.8% DD  -71% | 24-26  +5.65%/mo wr  92.5% DD  -25% | 25-26  +3.74%/mo wr  90.2% DD  -22% | trades 668/252 | worst trade -22.9%/-13.7%
+    hourly bid on minutes, wicks 1% (critic kernel) 21-23  +8.28%/mo wr  91.7% DD  -46% | 24-26  +5.49%/mo wr  92.3% DD  -25% | 25-26  +3.59%/mo wr  90.1% DD  -22% | trades 630/235 | worst trade -24.0%/-13.7%
+  worst 3 trades (% of account): DOGEUSDT 2021-01-29 -25.4%; SOLUSDT 2022-11-08 -22.6%; RENDERUSDT 2022-06-11 -22.2%
+
+######## d  best 2024-26: 1x100%, d12 tp3 g35 hm48
+  base (19 coins)                              21-23 +18.00%/mo wr  89.1% DD  -63% (min  -66%) | 24-26  +8.57%/mo wr  83.6% DD  -42% (min  -77%) | 25-26  +5.06%/mo wr  82.3% DD  -42% (min  -77%) | trades 515/244 | worst trade -56.6%/-25.2% | 2024-26 months >=10%: 17/34, losing 9, worst -23.5%
+  STRESSED (22 coins, fills 0.2% worse, cd+1h) 21-23 +12.40%/mo wr  87.9% DD  -72% (min  -72%) | 24-26  +5.66%/mo wr  82.6% DD  -44% (min  -78%) | 25-26  +2.84%/mo wr  80.8% DD  -44% (min  -78%) | trades 535/236 | worst trade -39.3%/-25.5%
+  LUNA/FTT/SRM added only                      21-23 +18.92%/mo wr  89.1% DD  -63% (min  -65%) | 24-26  +8.57%/mo wr  83.6% DD  -42% (min  -77%) | 25-26  +5.06%/mo wr  82.3% DD  -42% (min  -77%) | trades 548/244 | worst trade -39.1%/-25.2%
+  close under trigger (1/min poll)             21-23 +19.12%/mo wr  89.6% DD  -63% (min  -66%) | 24-26  +7.78%/mo wr  82.9% DD  -42% (min  -77%) | 25-26  +3.42%/mo wr  79.5% DD  -42% (min  -77%) | trades 512/234 | worst trade -56.6%/-25.2%
+  original wicks                               21-23 +20.80%/mo wr  89.8% DD  -63% (min  -66%) | 24-26  +7.98%/mo wr  82.9% DD  -42% (min  -77%) | 25-26  +4.54%/mo wr  81.9% DD  -42% (min  -77%) | trades 531/246 | worst trade -56.6%/-25.2%
+  same-minute coins in coin order              21-23 +17.81%/mo wr  89.3% DD  -63% (min  -66%) | 24-26  +8.37%/mo wr  83.1% DD  -42% (min  -77%) | 25-26  +5.21%/mo wr  81.7% DD  -42% (min  -77%) | trades 515/242 | worst trade -56.6%/-25.2%
+  market slippage 0.1%                         21-23 +17.28%/mo wr  88.8% DD  -63% (min  -66%) | 24-26  +8.00%/mo wr  83.0% DD  -42% (min  -77%) | 25-26  +4.43%/mo wr  81.1% DD  -42% (min  -77%) | trades 511/241 | worst trade -56.6%/-25.3%
+  take-profit active 1h after the fill         21-23 +15.26%/mo wr  88.3% DD  -63% (min  -66%) | 24-26  +7.19%/mo wr  82.3% DD  -42% (min  -77%) | 25-26  +4.73%/mo wr  82.0% DD  -42% (min  -77%) | trades 496/232 | worst trade -56.6%/-25.2%
+  time stop to the minute                      21-23 +18.14%/mo wr  88.8% DD  -63% (min  -66%) | 24-26  +8.59%/mo wr  83.2% DD  -42% (min  -77%) | 25-26  +5.06%/mo wr  81.5% DD  -42% (min  -77%) | trades 519/244 | worst trade -55.0%/-24.9%
+  buys 0.2% worse only (engine convention)     21-23 +15.56%/mo wr  88.1% DD  -63% (min  -66%) | 24-26  +7.07%/mo wr  82.4% DD  -42% (min  -77%) | 25-26  +3.99%/mo wr  80.8% DD  -42% (min  -77%) | trades 504/238 | worst trade -56.7%/-25.3%
+  fresh starts Jan-Feb 2024 (5): 2024-26 %/month +8.48 .. +8.91
+  same settings, HOURLY resting bid (engine)   21-23 +14.47%/mo wr  88.2% DD  -72% | 24-26  +7.54%/mo wr  81.8% DD  -41% | 25-26  +4.08%/mo wr  80.0% DD  -41% | trades 474/225 | worst trade -54.1%/-21.7%
+    hourly bid, stressed (engine convention)   21-23 +12.57%/mo wr  86.9% DD  -75% | 24-26  +5.66%/mo wr  80.2% DD  -42% | 25-26  +2.28%/mo wr  77.9% DD  -42% | trades 488/217 | worst trade -41.7%/-20.7%
+    hourly bid on minutes, wicks 1% (critic kernel) 21-23 +13.62%/mo wr  88.0% DD  -72% | 24-26  +7.25%/mo wr  81.4% DD  -42% | 25-26  +3.64%/mo wr  79.3% DD  -42% | trades 467/221 | worst trade -54.1%/-21.7%
+  worst 3 trades (% of account): DOGEUSDT 2021-01-29 -56.6%; XRPUSDT 2021-05-21 -30.8%; RENDERUSDT 2022-01-20 -26.8%
+
+######## e  best worst-of-3 overall: 1x100%, d13 tp8 g35 hm96
+  base (19 coins)                              21-23 +17.29%/mo wr  75.4% DD  -75% (min  -76%) | 24-26  +7.64%/mo wr  69.6% DD  -58% (min  -84%) | 25-26  +5.86%/mo wr  69.0% DD  -47% (min  -84%) | trades 240/115 | worst trade -48.5%/-31.2% | 2024-26 months >=10%: 14/34, losing 7, worst -39.6%
+  STRESSED (22 coins, fills 0.2% worse, cd+1h) 21-23 +10.19%/mo wr  74.4% DD  -71% (min  -71%) | 24-26  +0.00%/mo wr   nan% DD    0% (min    0%) | 25-26  +0.00%/mo wr   nan% DD    0% (min    0%) | trades 199/0 | worst trade -48.7%/+nan%
+  LUNA/FTT/SRM added only                      21-23 +12.36%/mo wr  74.6% DD  -68% (min  -68%) | 24-26  +0.00%/mo wr   nan% DD    0% (min    0%) | 25-26  +0.00%/mo wr   nan% DD    0% (min    0%) | trades 201/0 | worst trade -48.5%/+nan%
+  close under trigger (1/min poll)             21-23 +15.52%/mo wr  75.5% DD  -80% (min  -80%) | 24-26  +7.33%/mo wr  69.6% DD  -52% (min  -84%) | 25-26  +4.75%/mo wr  67.9% DD  -48% (min  -84%) | trades 229/112 | worst trade -48.5%/-30.4%
+  original wicks                               21-23 +17.79%/mo wr  76.3% DD  -79% (min  -80%) | 24-26  +7.04%/mo wr  69.0% DD  -63% (min  -85%) | 25-26  +5.71%/mo wr  68.3% DD  -47% (min  -85%) | trades 245/116 | worst trade -48.5%/-31.2%
+  same-minute coins in coin order              21-23 +15.71%/mo wr  75.2% DD  -74% (min  -74%) | 24-26  +8.20%/mo wr  69.8% DD  -56% (min  -83%) | 25-26  +5.47%/mo wr  67.2% DD  -47% (min  -83%) | trades 238/116 | worst trade -48.5%/-31.2%
+  market slippage 0.1%                         21-23 +17.09%/mo wr  75.4% DD  -76% (min  -76%) | 24-26  +7.41%/mo wr  69.6% DD  -59% (min  -84%) | 25-26  +5.59%/mo wr  69.0% DD  -48% (min  -84%) | trades 240/115 | worst trade -48.6%/-31.3%
+  take-profit active 1h after the fill         21-23 +16.36%/mo wr  75.1% DD  -75% (min  -76%) | 24-26  +7.17%/mo wr  69.0% DD  -58% (min  -84%) | 25-26  +5.49%/mo wr  68.4% DD  -47% (min  -84%) | trades 237/113 | worst trade -48.5%/-31.2%
+  time stop to the minute                      21-23 +17.70%/mo wr  75.5% DD  -76% (min  -76%) | 24-26  +7.57%/mo wr  69.6% DD  -59% (min  -84%) | 25-26  +5.83%/mo wr  69.0% DD  -47% (min  -84%) | trades 241/115 | worst trade -48.3%/-31.3%
+  buys 0.2% worse only (engine convention)     21-23 +15.66%/mo wr  74.9% DD  -76% (min  -77%) | 24-26  +7.25%/mo wr  69.6% DD  -59% (min  -84%) | 25-26  +5.44%/mo wr  69.0% DD  -48% (min  -84%) | trades 239/115 | worst trade -48.6%/-31.3%
+  fresh starts Jan-Feb 2024 (5): 2024-26 %/month +7.51 .. +7.89
+  same settings, HOURLY resting bid (engine)   21-23 +19.36%/mo wr  77.4% DD  -72% | 24-26  +4.72%/mo wr  66.7% DD  -61% | 25-26  +2.78%/mo wr  66.0% DD  -49% | trades 234/105 | worst trade -48.5%/-27.3%
+    hourly bid, stressed (engine convention)   21-23 +13.29%/mo wr  76.8% DD  -61% | 24-26  +0.00%/mo wr   nan% DD    0% | 25-26  +0.00%/mo wr   nan% DD    0% | trades 194/0 | worst trade -48.6%/+nan%
+    hourly bid on minutes, wicks 1% (critic kernel) 21-23 +18.89%/mo wr  77.0% DD  -72% | 24-26  +5.16%/mo wr  67.0% DD  -59% | 25-26  +2.95%/mo wr  66.0% DD  -49% | trades 230/106 | worst trade -41.5%/-27.3%
+  worst 3 trades (% of account): RENDERUSDT 2022-11-06 -48.5%; NEARUSDT 2021-05-19 -38.6%; HBARUSDT 2024-04-24 -31.2%
+
+F1 neighbourhood in the grids (depth +-1, tp +-0.5, hm 72-120, any guard): 54 designs, worst-of-3 %/month median 4.08, min 1.56, max 5.78; both-period win rate >= 90% in 29
+rule, goal wr90: 164 of 611 grid designs qualify; pick C N1 d15 tp3.5 g35 hm96 worst-of-3 5.78%/month
+rule, goal ten: 0 of 611 grid designs qualify
+max 2024-26 %/month in the grids: 8.57; max since 2025: 5.86
+
+FRONTIER (grids A-D, 611 designs): best worst-of-3 %/month at each win-rate floor (both periods)
+  win >=   65%: A N1 d13 tp8 g35 hm96        win 75.4/69.6/69.0% | %/mo +17.29/+7.64/+5.86 | drop -75/-58/-47% (minute marks 24-26 -84%)
+  win >=   70%: C N1 d15 tp3.5 g35 hm96      win 92.3/91.8/90.4% | %/mo +10.35/+7.07/+5.78 | drop -65/-37/-30% (minute marks 24-26 -80%)
+  win >=   75%: C N1 d15 tp3.5 g35 hm96      win 92.3/91.8/90.4% | %/mo +10.35/+7.07/+5.78 | drop -65/-37/-30% (minute marks 24-26 -80%)
+  win >=   80%: C N1 d15 tp3.5 g35 hm96      win 92.3/91.8/90.4% | %/mo +10.35/+7.07/+5.78 | drop -65/-37/-30% (minute marks 24-26 -80%)
+  win >=   85%: C N1 d15 tp3.5 g35 hm96      win 92.3/91.8/90.4% | %/mo +10.35/+7.07/+5.78 | drop -65/-37/-30% (minute marks 24-26 -80%)
+  win >=   88%: C N1 d15 tp3.5 g35 hm96      win 92.3/91.8/90.4% | %/mo +10.35/+7.07/+5.78 | drop -65/-37/-30% (minute marks 24-26 -80%)
+  win >=   90%: C N1 d15 tp3.5 g35 hm96      win 92.3/91.8/90.4% | %/mo +10.35/+7.07/+5.78 | drop -65/-37/-30% (minute marks 24-26 -80%)
+  win >=   92%: C N1 d14 tp2.5 g45 hm96      win 94.4/94.2/91.9% | %/mo +11.78/+7.11/+5.15 | drop -65/-32/-32% (minute marks 24-26 -81%)
+  win >=   94%: C N1 d14 tp2.5 g45 hm96      win 94.4/94.2/91.9% | %/mo +11.78/+7.11/+5.15 | drop -65/-32/-32% (minute marks 24-26 -81%)
+  win >=   95%: B N1 d12 tp1 g0 hm48         win 97.2/95.6/95.2% | %/mo +8.24/+4.49/+4.22 | drop -50/-36/-33% (minute marks 24-26 -81%)
+  win >=   96%: B N3 d14 tp1 g0 hm48         win 96.6/96.0/94.3% | %/mo +2.18/+1.48/+0.73 | drop -46/-23/-23% (minute marks 24-26 -66%)
+same, only designs whose worst drop in all three periods is shallower than -40%:
+  win >=   80%: B N2 d12 tp2 g35 hm48        win 92.1/89.3/89.0% | %/mo +9.66/+5.26/+3.91 | drop -35/-31/-31%
+  win >=   85%: B N2 d12 tp2 g35 hm48        win 92.1/89.3/89.0% | %/mo +9.66/+5.26/+3.91 | drop -35/-31/-31%
+  win >=   90%: D N3 d14 tp3 g35 hm96        win 93.0/92.4/89.5% | %/mo +8.71/+5.23/+3.65 | drop -34/-22/-22%
+  win >=   92%: D N3 d14 tp3 g35 hm96        win 93.0/92.4/89.5% | %/mo +8.71/+5.23/+3.65 | drop -34/-22/-22%
+  win >=   94%: D N2 d14 tp2 g35 hm96        win 95.8/95.1/92.8% | %/mo +8.19/+4.75/+3.32 | drop -35/-27/-27%
+  win >=   95%: D N2 d14 tp2 g35 hm96        win 95.8/95.1/92.8% | %/mo +8.19/+4.75/+3.32 | drop -35/-27/-27%
+
+holdout runner check (2026 window): float64 minute_panel trades 19, final x1.423263; float32 cache trades 19, final x1.423263
+done in 176s

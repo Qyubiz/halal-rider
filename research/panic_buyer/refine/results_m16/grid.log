@@ -1,0 +1,25 @@
+90% mode 2021-23 buys: 406, losses < -10%: 18
+skill 2021-23 mae  base : spearman(risk, -mae) +0.261  AUC(loss<-10%) 0.509
+skill 2021-23 mae  fut  : spearman(risk, -mae) +0.255  AUC(loss<-10%) 0.546
+skill 2021-23 big  base : spearman(risk, -mae) +0.034  AUC(loss<-10%) 0.614
+skill 2021-23 big  fut  : spearman(risk, -mae) +0.069  AUC(loss<-10%) 0.593
+
+base 90% mode 2021-23: 93.8 / +13.17 / -64.4 (worse 93.4 / +9.79 / -65.9)
+designs 60, pass1 2, pass1+2 2, all 0
+big_base_q0.9_f0.5           score +13.54  n 93.8/+13.29/-60.6  w 93.4/+10.49/-62.2  wt -45.7  p 110
+big_base_q0.9_f0.375         score +13.33  n 93.8/+13.18/-60.6  w 93.4/+10.53/-62.2  wt -45.7  p 110
+big_base_q0.9_f0.25          score +13.09  n 93.8/+13.03/-60.6  w 93.4/+10.53/-62.2  wt -45.7  p 010
+big_base_q0.8_f0.5           score +12.96  n 93.8/+12.56/-49.6  w 93.4/+10.14/-39.4  wt -42.8  p 010
+mae_base_q0.9_f0.5           score +12.95  n 93.8/+12.62/-64.6  w 93.4/+9.68/-68.3  wt -45.7  p 000
+mae_fut_q0.9_f0.5            score +12.82  n 93.8/+12.29/-62.9  w 93.4/+9.31/-67.0  wt -45.7  p 000
+big_fut_q0.8_f0.5            score +12.74  n 93.8/+12.58/-53.7  w 93.4/+10.05/-54.1  wt -42.8  p 010
+mae_base_q0.9_f0.375         score +12.63  n 93.8/+12.38/-65.3  w 93.4/+9.56/-68.9  wt -45.7  p 000
+big_base_q0.8_f0.375         score +12.53  n 93.8/+12.20/-49.6  w 93.4/+10.02/-36.9  wt -42.8  p 010
+mae_fut_q0.9_f0.375          score +12.47  n 93.8/+11.98/-63.3  w 93.4/+9.09/-67.2  wt -45.7  p 000
+big_fut_q0.9_f0.5            score +12.30  n 93.8/+11.70/-66.8  w 93.4/+8.89/-70.0  wt -45.7  p 000
+mae_base_q0.9_f0.25          score +12.28  n 93.8/+12.11/-66.0  w 93.4/+9.40/-69.4  wt -45.7  p 000
+big_fut_q0.8_f0.375          score +12.27  n 93.8/+12.23/-53.7  w 93.4/+9.93/-54.1  wt -42.8  p 010
+mae_fut_q0.9_f0.25           score +12.10  n 93.8/+11.64/-63.6  w 93.4/+8.85/-67.5  wt -45.7  p 000
+mae_fut_q0.8_f0.5            score +12.05  n 93.8/+11.64/-65.7  w 93.4/+8.94/-69.2  wt -45.7  p 000
+drop range over all designs (normal): -71.1 .. -49.6 mo range +5.69 .. +13.29
+PICK: null

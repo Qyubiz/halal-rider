@@ -1,0 +1,11 @@
+panel (3052980, 19), 2021-01-01 00:00:00 .. 2026-10-22 02:00:00
+  {}                                                           trades 2565 vs 2565 log identical True max rel eq diff 6.7e-16 x14.9498 vs x14.9498  (6s / 5s)
+  {'N': 1, 'fmax': 1.0, 'tp': 0.025, 'hm': 96, 'cd': 3}        trades 782 vs 782 log identical True max rel eq diff 0.0e+00 x625.2582 vs x625.2582  (0s / 0s)
+  {'cyc': 1, 'delay': 1, 'cdm': 0, 'N': 2, 'fmax': 0.5, 'tp': 0.01} trades 6586 vs 6586 log identical True max rel eq diff 0.0e+00 x88.6557 vs x88.6557  (4s / 3s)
+  {'cyc': 5, 'rearm': 1, 'near': 0.02, 'delay': 3, 'tp': 0.02} trades 2387 vs 2387 log identical True max rel eq diff 3.3e-16 x20.6473 vs x20.6473  (1s / 0s)
+  {'pen': 0.002, 'spen': 0.002}                                trades 2552 vs 2552 log identical True max rel eq diff 2.2e-16 x5.3643 vs x5.3643  (1s / 0s)
+  W=60 depth=0.02 wick=0.005: 10189 trades; entries at the lagged W-max trigger 7694, market at/under trigger 2495, other 0; resting fills with trimmed low through 100.0%; exits in the fill minute 0; take-profits with trimmed high through 100.0%
+  W=240 depth=0.03 wick=0.0: 9542 trades; entries at the lagged W-max trigger 6902, market at/under trigger 2640, other 0; resting fills with trimmed low through 100.0%; exits in the fill minute 0; take-profits with trimmed high through 100.0%
+  W=15 depth=0.01 wick=0.01: 14791 trades; entries at the lagged W-max trigger 10505, market at/under trigger 4286, other 0; resting fills with trimmed low through 100.0%; exits in the fill minute 0; take-profits with trimmed high through 100.0%
+  wick 0 vs wick 1e6: x0.088084 vs x0.088084
+M10 SCALP KERNEL CHECK PASSED

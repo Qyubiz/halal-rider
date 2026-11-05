@@ -1,0 +1,62 @@
+market ready 16s
+  0/189 17s
+  20/189 33s
+  40/189 49s
+  60/189 64s
+  80/189 80s
+  100/189 94s
+  120/189 110s
+  140/189 124s
+  160/189 139s
+  180/189 154s
+
+199 designs, 169s. Literal bar passed by 20; worse-fills bar used: win >= 93.8%, drop >= -64.50%. Eligible after the neighbour test: 15
+
+Top 25 by robust 2021-23 %/month (all designs):
+                                                              name   n_wr   n_mo    n_dd   w_wr   w_mo    w_dd  rob_mo   n_tpm    n_wt
+(4, None, 4, 5, 4, None)      kA4skip tpScaled>=4 B12h>=5 rearm>=4 0.9335 0.2304 -0.5427 0.9295 0.1816 -0.5437  0.2281 11.2855 -0.4430
+(4, None, 4, 5, 0, None)      kA4skip tpScaled>=4 B12h>=5 rearm>=0 0.9335 0.2304 -0.5427 0.9295 0.1816 -0.5437  0.2281 11.2855 -0.4430
+(4, 0.2, 4, 4, 0, None)      kA4@0.20 tpScaled>=4 B12h>=4 rearm>=0 0.9326 0.2237 -0.6062 0.9272 0.1624 -0.6078  0.2275 11.9526 -0.4791
+(4, 0.2, 4, 4, 4, None)      kA4@0.20 tpScaled>=4 B12h>=4 rearm>=4 0.9324 0.2209 -0.6062 0.9272 0.1623 -0.6078  0.2257 11.9248 -0.4791
+(4, 0.2, 4, 4, None, None)    kA4@0.20 tpScaled>=4 B12h>=4 norearm 0.9332 0.2260 -0.5427 0.9305 0.1731 -0.5341  0.2223 11.6469 -0.4430
+(4, None, 4, 4, 4, None)      kA4skip tpScaled>=4 B12h>=4 rearm>=4 0.9318 0.2181 -0.5576 0.9298 0.1846 -0.5437  0.2221 11.8136 -0.4537
+(4, None, 4, 4, 0, None)      kA4skip tpScaled>=4 B12h>=4 rearm>=0 0.9318 0.2181 -0.5576 0.9298 0.1846 -0.5437  0.2221 11.8136 -0.4537
+(4, 0.2, 5, 4, 0, None)      kA4@0.20 tpScaled>=5 B12h>=4 rearm>=0 0.9351 0.2151 -0.6062 0.9287 0.1653 -0.6078  0.2188 12.4252 -0.4791
+(4, 0.2, 5, 4, 4, None)      kA4@0.20 tpScaled>=5 B12h>=4 rearm>=4 0.9351 0.2142 -0.6062 0.9287 0.1653 -0.6078  0.2180 12.4252 -0.4791
+(4, None, 5, 4, 0, None)      kA4skip tpScaled>=5 B12h>=4 rearm>=0 0.9353 0.2145 -0.5576 0.9314 0.1870 -0.5437  0.2167 12.4530 -0.4537
+(4, None, 5, 4, 4, None)      kA4skip tpScaled>=5 B12h>=4 rearm>=4 0.9353 0.2145 -0.5576 0.9314 0.1870 -0.5437  0.2167 12.4530 -0.4537
+(4, None, 4, 4, None, None)    kA4skip tpScaled>=4 B12h>=4 norearm 0.9320 0.2180 -0.5427 0.9293 0.1651 -0.5341  0.2163 11.4523 -0.4430
+(4, None, 4, 5, None, None)    kA4skip tpScaled>=4 B12h>=5 norearm 0.9322 0.2100 -0.5427 0.9326 0.1646 -0.5344  0.2147 11.0631 -0.4430
+(4, None, 4, None, 0, None)       kA4skip tpScaled>=4 noB rearm>=0 0.9398 0.2163 -0.5691 0.9362 0.1682 -0.5943  0.2141 10.6184 -0.4430
+(4, None, 4, None, 4, None)       kA4skip tpScaled>=4 noB rearm>=4 0.9398 0.2163 -0.5691 0.9362 0.1682 -0.5943  0.2141 10.6184 -0.4430
+(4, 0.2, 4, 5, None, None)    kA4@0.20 tpScaled>=4 B12h>=5 norearm 0.9332 0.2158 -0.5427 0.9338 0.1716 -0.5344  0.2135 11.2299 -0.4430
+(4, 0.2, 5, 4, None, None)    kA4@0.20 tpScaled>=5 B12h>=4 norearm 0.9350 0.2131 -0.5427 0.9346 0.1751 -0.5385  0.2134 11.9804 -0.4430
+(4, 0.2, None, 4, 0, None)         kA4@0.20 tp2.5 B12h>=4 rearm>=0 0.9398 0.2085 -0.6062 0.9335 0.1564 -0.6078  0.2132 12.9255 -0.4791
+(0, None, 4, 4, 0, None)          kA0 tpScaled>=4 B12h>=4 rearm>=0 0.9220 0.2097 -0.6062 0.9185 0.1544 -0.6078  0.2132 12.1194 -0.4791
+(2, None, 4, 4, 0, None)      kA2skip tpScaled>=4 B12h>=4 rearm>=0 0.9220 0.2094 -0.6062 0.9185 0.1542 -0.6078  0.2128 12.1194 -0.4791
+(2, 0.2, 4, 4, 0, None)      kA2@0.20 tpScaled>=4 B12h>=4 rearm>=0 0.9220 0.2094 -0.6062 0.9185 0.1542 -0.6078  0.2128 12.1194 -0.4791
+(2, 0.2, 4, 4, 4, None)      kA2@0.20 tpScaled>=4 B12h>=4 rearm>=4 0.9218 0.2089 -0.6062 0.9185 0.1544 -0.6078  0.2128 12.0916 -0.4791
+(2, None, 4, 4, 4, None)      kA2skip tpScaled>=4 B12h>=4 rearm>=4 0.9218 0.2089 -0.6062 0.9185 0.1544 -0.6078  0.2128 12.0916 -0.4791
+(0, None, 4, 4, 4, None)          kA0 tpScaled>=4 B12h>=4 rearm>=4 0.9218 0.2089 -0.6062 0.9185 0.1544 -0.6078  0.2128 12.0916 -0.4791
+(4, None, None, 4, 0, None)         kA4skip tp2.5 B12h>=4 rearm>=0 0.9402 0.2094 -0.5576 0.9361 0.1769 -0.5437  0.2126 13.0089 -0.4537
+
+90% mode in this grid: win 93.84% +13.17%/mo drop -64.4% | worse 93.40% +9.79% -65.9% | robust +13.97%
+
+Eligible designs (pass bar + neighbour median), best first:
+  kA4@0.20 tpScaled>=5 noB norearm                        win 95.05% +20.26%/mo drop -59.8% | worse 94.82% +17.08% -62.8% | robust +20.23% | neighbours 6
+  kA4@0.20 tp2.5 B12h>=5 norearm                          win 94.66% +20.54%/mo drop -54.3% | worse 94.46% +14.84% -53.8% | robust +20.14% | neighbours 6
+  kA4@0.20 tp2.5 B12h>=5 rearm>=4                         win 94.46% +19.60%/mo drop -60.6% | worse 93.93% +15.26% -60.8% | robust +20.08% | neighbours 7
+  kA4skip tp2.5 B12h>=5 rearm>=4                          win 94.49% +19.74%/mo drop -55.8% | worse 93.88% +14.90% -55.8% | robust +20.05% | neighbours 7
+  kA4@0.20 tpScaled>=5 noB rearm>=4                       win 94.71% +19.44%/mo drop -60.6% | worse 94.15% +14.89% -61.0% | robust +19.80% | neighbours 7
+  kA4skip tp2.5 B12h>=5 norearm                           win 94.82% +19.98%/mo drop -54.3% | worse 94.65% +14.34% -53.8% | robust +19.73% | neighbours 6
+  kA4skip tpScaled>=5 noB norearm                         win 95.20% +19.53%/mo drop -59.8% | worse 95.03% +16.56% -62.8% | robust +19.59% | neighbours 6
+  kA4skip tpScaled>=5 noB rearm>=0                        win 94.65% +18.92%/mo drop -59.0% | worse 94.10% +14.59% -61.0% | robust +19.16% | neighbours 6
+  kA4skip tpScaled>=5 noB rearm>=4                        win 94.65% +18.92%/mo drop -59.0% | worse 94.10% +14.59% -61.0% | robust +19.16% | neighbours 7
+  kA4@0.20 tp2.5 B12h>=5 norearm X20@24%>=5               win 94.22% +20.86%/mo drop -55.7% | worse 94.01% +15.07% -56.0% | robust +18.58% | neighbours 3
+  kA4@0.20 tp2.5 B12h>=5 norearm X20@24%>=4               win 94.29% +20.81%/mo drop -56.8% | worse 93.81% +14.38% -62.8% | robust +18.30% | neighbours 3
+  kA4@0.20 tp2.5 noB rearm>=4                             win 95.01% +17.68%/mo drop -60.6% | worse 94.71% +13.25% -63.7% | robust +18.05% | neighbours 6
+  kA4@0.20 tp2.5 noB rearm>=0                             win 95.01% +17.68%/mo drop -60.6% | worse 94.71% +13.25% -63.7% | robust +18.05% | neighbours 5
+  kA4skip tp2.5 noB rearm>=0                              win 94.99% +17.33%/mo drop -59.5% | worse 94.67% +12.88% -63.7% | robust +17.60% | neighbours 5
+  kA4skip tp2.5 noB rearm>=4                              win 94.99% +17.33%/mo drop -59.5% | worse 94.67% +12.88% -63.7% | robust +17.60% | neighbours 6
+
+PICK: kA4@0.20 tpScaled>=5 noB norearm  key=(4, 0.2, 5, None, None, None)

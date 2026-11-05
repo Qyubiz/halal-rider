@@ -1,0 +1,205 @@
+#### grid4: 85 designs | qualify ten (>=10%/mo in 2021-23 AND 2024-26): 0 | qualify wr90: 22 | max 2024-26 8.38%/mo | max since-2025 7.46%/mo | max worst-of-three 7.24%/mo
+
+Top 15 by worst-of-three %/month (all designs):
+  d14 tp5 hm48 w1 | tpf0.55 mkt                21-23 +16.5% dd -64 w 79 | 24-26  +7.5% dd -31 w 75 n112 | 25-  +7.2% dd -29 w 76 | min +7.24% wtrade -55%
+  d14 tp5 hm48 w1 | tpf0.4 mkt                 21-23 +17.1% dd -61 w 79 | 24-26  +7.4% dd -32 w 75 n114 | 25-  +7.1% dd -29 w 76 | min +7.10% wtrade -54%
+  d14 tp5 hm48 w1 | tpf0.25 mkt                21-23 +17.7% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.03% wtrade -54%
+  d14 tp5 hm48 w1 | tpf0.25 all                21-23 +17.7% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.03% wtrade -54%
+  d14 tp5 hm48 w1 | base                       21-23 +17.4% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+  d14 tp5 hm48 w1 | cd48 w1                    21-23 +17.0% dd -61 w 81 | 24-26  +7.1% dd -32 w 74 n117 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+  d14 tp5 hm48 cd24 | cd48 w1                  21-23 +17.0% dd -61 w 81 | 24-26  +7.1% dd -32 w 74 n117 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+  d15 tp6 hm48 w1 | base                       21-23 +17.7% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+  d15 tp6 hm48 w1 | tpf0.25 mkt                21-23 +18.1% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+  d15 tp6 hm48 w1 | tpf0.25 all                21-23 +18.1% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+  d15 tp6 hm48 w1 | cd48 w1                    21-23 +17.1% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+  d15 tp4 hm96 w1 | tpf0.4 mkt                 21-23 +16.0% dd -61 w 90 | 24-26  +8.4% dd -37 w 90 n101 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | tpf0.25 mkt                21-23 +17.3% dd -61 w 91 | 24-26  +8.4% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | cd12 w1                    21-23 +17.7% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+
+Top 10 by 2024-26 %/month:
+  d15 tp4 hm96 w1 | tpf0.4 mkt                 21-23 +16.0% dd -61 w 90 | 24-26  +8.4% dd -37 w 90 n101 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | tpf0.25 mkt                21-23 +17.3% dd -61 w 91 | 24-26  +8.4% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | tpf0.55 mkt                21-23 +15.2% dd -76 w 90 | 24-26  +8.3% dd -37 w 90 n 98 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | cd48 w1                    21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | cd12 w1                    21-23 +17.7% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d14 tp5 hm48 cd24 | tpf0.55 mkt              21-23 +17.9% dd -59 w 80 | 24-26  +8.3% dd -30 w 76 n112 | 25-  +6.3% dd -29 w 75 | min +6.33% wtrade -43%
+  d14 tp5 hm48 cd24 | tpf0.25 mkt              21-23 +16.1% dd -61 w 81 | 24-26  +8.2% dd -30 w 77 n115 | 25-  +6.1% dd -29 w 75 | min +6.13% wtrade -54%
+  d14 tp5 hm48 cd24 | tpf0.25 all              21-23 +16.1% dd -61 w 81 | 24-26  +8.2% dd -30 w 77 n115 | 25-  +6.1% dd -29 w 75 | min +6.13% wtrade -54%
+  d14 tp5 hm48 cd24 | base                     21-23 +15.0% dd -61 w 81 | 24-26  +8.1% dd -30 w 77 n115 | 25-  +6.1% dd -29 w 75 | min +6.08% wtrade -54%
+
+Top 10 by since-2025 %/month:
+  d15 tp6 hm48 w1 | tpf0.55 mkt                21-23 +16.4% dd -64 w 78 | 24-26  +6.8% dd -36 w 73 n 86 | 25-  +7.5% dd -27 w 75 | min +6.80% wtrade -55%
+  d15 tp6 hm48 w1 | tpf0.4 mkt                 21-23 +18.1% dd -61 w 79 | 24-26  +6.8% dd -36 w 74 n 88 | 25-  +7.3% dd -27 w 75 | min +6.81% wtrade -54%
+  d15 tp6 hm48 w1 | base                       21-23 +17.7% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+  d15 tp6 hm48 w1 | tpf0.25 mkt                21-23 +18.1% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+  d15 tp6 hm48 w1 | tpf0.25 all                21-23 +18.1% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+  d15 tp6 hm48 w1 | cd48 w1                    21-23 +17.1% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+  d14 tp5 hm48 w1 | tpf0.55 mkt                21-23 +16.5% dd -64 w 79 | 24-26  +7.5% dd -31 w 75 n112 | 25-  +7.2% dd -29 w 76 | min +7.24% wtrade -55%
+  d15 tp6 hm48 w1 | cd12 w1                    21-23 +17.7% dd -61 w 80 | 24-26  +6.9% dd -36 w 73 n 92 | 25-  +7.1% dd -27 w 72 | min +6.90% wtrade -54%
+  d14 tp5 hm48 w1 | tpf0.4 mkt                 21-23 +17.1% dd -61 w 79 | 24-26  +7.4% dd -32 w 75 n114 | 25-  +7.1% dd -29 w 76 | min +7.10% wtrade -54%
+  d14 tp5 hm48 w1 | tpf0.25 mkt                21-23 +17.7% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.03% wtrade -54%
+
+Qualifiers q_ten (0), best 8 by the rule:
+
+Qualifiers q_wr90 (22), best 8 by the rule:
+  d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | tpf0.25 mkt                21-23 +17.3% dd -61 w 91 | 24-26  +8.4% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | cd12 w1                    21-23 +17.7% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | cd48 w1                    21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d13 tp1.5 hm96 w1 | base                     21-23 +15.9% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n236 | 25-  +6.7% dd -23 w 96 | min +6.70% wtrade -48%
+  d13 tp1.5 hm96 w1 | cd12 w1                  21-23 +16.0% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n236 | 25-  +6.7% dd -23 w 96 | min +6.70% wtrade -48%
+  d13 tp1.5 hm96 w1 | cd48 w1                  21-23 +15.8% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n235 | 25-  +6.6% dd -23 w 96 | min +6.63% wtrade -48%
+  d13 tp1.5 hm96 w1 | tpf0.25 mkt              21-23 +19.6% dd -63 w 96 | 24-26  +7.0% dd -34 w 94 n217 | 25-  +6.3% dd -26 w 94 | min +6.33% wtrade -48%
+
+Frontier: best design at each win-rate level (win rate = lower of 2021-23 and 2024-26):
+  win 90-100%: d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  win 85-90%: d15 tp4 hm96 w1 | tpf0.4 mkt                 21-23 +16.0% dd -61 w 90 | 24-26  +8.4% dd -37 w 90 n101 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  win 80-85%: d15 tp6 hm48 w1 | ladder 60% +4pts           21-23 +14.5% dd -61 w 84 | 24-26  +7.0% dd -29 w 80 n 97 | 25-  +6.1% dd -23 w 80 | min +6.13% wtrade -54%
+  win 75-80%: d14 tp5 hm48 w1 | tpf0.55 mkt                21-23 +16.5% dd -64 w 79 | 24-26  +7.5% dd -31 w 75 n112 | 25-  +7.2% dd -29 w 76 | min +7.24% wtrade -55%
+  win 70-75%: d14 tp5 hm48 w1 | cd48 w1                    21-23 +17.0% dd -61 w 81 | 24-26  +7.1% dd -32 w 74 n117 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+  win 0-70%: d15 tp6 hm48 w1 | tpf0.4 all                 21-23 +17.1% dd -61 w 75 | 24-26  +5.8% dd -36 w 65 n 83 | 25-  +6.4% dd -27 w 65 | min +5.83% wtrade -54%
+
+Pareto set (win rate, worst-of-three %/mo, worst drop): 26 designs
+  d15 tp6 hm48 w1 | tpf0.4 mkt                 21-23 +18.1% dd -61 w 79 | 24-26  +6.8% dd -36 w 74 n 88 | 25-  +7.3% dd -27 w 75 | min +6.81% wtrade -54%
+  d14 tp5 hm48 w1 | tpf0.55 mkt                21-23 +16.5% dd -64 w 79 | 24-26  +7.5% dd -31 w 75 n112 | 25-  +7.2% dd -29 w 76 | min +7.24% wtrade -55%
+  d14 tp5 hm48 w1 | tpf0.4 mkt                 21-23 +17.1% dd -61 w 79 | 24-26  +7.4% dd -32 w 75 n114 | 25-  +7.1% dd -29 w 76 | min +7.10% wtrade -54%
+  d14 tp5 hm48 cd24 | tpf0.55 mkt              21-23 +17.9% dd -59 w 80 | 24-26  +8.3% dd -30 w 76 n112 | 25-  +6.3% dd -29 w 75 | min +6.33% wtrade -43%
+  d14 tp5 hm48 cd24 | tpf0.25 mkt              21-23 +16.1% dd -61 w 81 | 24-26  +8.2% dd -30 w 77 n115 | 25-  +6.1% dd -29 w 75 | min +6.13% wtrade -54%
+  d14 tp5 hm48 cd24 | tpf0.25 all              21-23 +16.1% dd -61 w 81 | 24-26  +8.2% dd -30 w 77 n115 | 25-  +6.1% dd -29 w 75 | min +6.13% wtrade -54%
+  d14 tp5 hm48 w1 | N2 x50%                    21-23 +13.3% dd -47 w 79 | 24-26  +6.6% dd -26 w 79 n257 | 25-  +5.7% dd -24 w 78 | min +5.72% wtrade -27%
+  d14 tp5 hm48 cd24 | N2 x50%                  21-23 +11.4% dd -42 w 80 | 24-26  +6.8% dd -26 w 79 n234 | 25-  +4.9% dd -24 w 77 | min +4.92% wtrade -27%
+  d14 tp5 hm48 cd24 | ladder 80% +4pts         21-23 +13.3% dd -61 w 83 | 24-26  +7.7% dd -28 w 80 n115 | 25-  +5.7% dd -28 w 79 | min +5.73% wtrade -54%
+  d15 tp4 hm96 w1 | tpf0.4 mkt                 21-23 +16.0% dd -61 w 90 | 24-26  +8.4% dd -37 w 90 n101 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | tpf0.25 mkt                21-23 +17.3% dd -61 w 91 | 24-26  +8.4% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | cd48 w1                    21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d15 tp4 hm96 w1 | cd12 w1                    21-23 +17.7% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+  d13 tp1.5 hm96 w1 | tpf0.4 mkt               21-23 +17.4% dd -62 w 94 | 24-26  +6.6% dd -33 w 91 n207 | 25-  +6.1% dd -26 w 92 | min +6.14% wtrade -48%
+  d15 tp4 hm96 w1 | ladder 80% +7pts           21-23 +15.6% dd -61 w 93 | 24-26  +7.5% dd -34 w 92 n107 | 25-  +5.9% dd -20 w 90 | min +5.94% wtrade -48%
+  d15 tp4 hm96 w1 | ladder 60% +7pts           21-23 +12.8% dd -61 w 95 | 24-26  +6.7% dd -30 w 93 n111 | 25-  +5.1% dd -19 w 92 | min +5.09% wtrade -48%
+  d13 tp1.5 hm96 w1 | tpf0.25 mkt              21-23 +19.6% dd -63 w 96 | 24-26  +7.0% dd -34 w 94 n217 | 25-  +6.3% dd -26 w 94 | min +6.33% wtrade -48%
+  d13 tp1.5 hm96 w1 | N2 f1 near3%             21-23 +15.5% dd -61 w 96 | 24-26  +5.4% dd -39 w 95 n353 | 25-  +5.4% dd -26 w 95 | min +5.40% wtrade -48%
+  d13 tp1.5 hm96 w1 | cd48 w1                  21-23 +15.8% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n235 | 25-  +6.6% dd -23 w 96 | min +6.63% wtrade -48%
+  d13 tp1.5 hm96 w1 | cd12 w1                  21-23 +16.0% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n236 | 25-  +6.7% dd -23 w 96 | min +6.70% wtrade -48%
+  d13 tp1.5 hm96 w1 | base                     21-23 +15.9% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n236 | 25-  +6.7% dd -23 w 96 | min +6.70% wtrade -48%
+  d13 tp1.5 hm96 w1 | ladder 80% +7pts         21-23 +13.9% dd -62 w 97 | 24-26  +5.9% dd -36 w 95 n240 | 25-  +5.5% dd -22 w 96 | min +5.50% wtrade -48%
+  d13 tp1.5 hm96 w1 | N2 x50%                  21-23 +12.5% dd -48 w 96 | 24-26  +6.3% dd -26 w 96 n535 | 25-  +5.1% dd -23 w 95 | min +5.07% wtrade -24%
+  d13 tp1.5 hm96 w1 | ladder 80% +4pts         21-23 +15.5% dd -64 w 97 | 24-26  +6.6% dd -37 w 96 n244 | 25-  +5.9% dd -24 w 97 | min +5.92% wtrade -48%
+  d13 tp1.5 hm96 w1 | ladder 60% +7pts         21-23 +12.2% dd -61 w 98 | 24-26  +4.9% dd -34 w 96 n248 | 25-  +4.2% dd -28 w 97 | min +4.16% wtrade -48%
+
+Stressed version (bot timing cd+1, buys and sells 0.2% worse, +LUNA/FTT/SRM sold at their last hour):
+d14 tp5 hm48 w1 | tpf0.55 mkt
+   2021-23 +16.53%/mo dd  -64% win 78.8% n  312 | 2024-26  +7.47%/mo dd  -31% win 75.0% n  112 | since 2025  +7.24%/mo dd  -29% win 75.9% | worst trade (acct) -55% / -22% / -11%
+   STRESSED 2021-23 +12.11% dd  -69% | 2024-26  +5.44% dd  -37% | since 2025  +5.24% dd  -29% | win 76.9/73.9/73.2% | worst trade -39% / -21% / -12%
+d14 tp5 hm48 w1 | tpf0.4 mkt
+   2021-23 +17.05%/mo dd  -61% win 79.4% n  321 | 2024-26  +7.35%/mo dd  -32% win 75.4% n  114 | since 2025  +7.10%/mo dd  -29% win 75.9% | worst trade (acct) -54% / -22% / -11%
+   STRESSED 2021-23 +11.08% dd  -68% | 2024-26  +5.31% dd  -37% | since 2025  +5.10% dd  -29% | win 77.9/73.9/73.2% | worst trade -52% / -21% / -12%
+d14 tp5 hm48 w1 | tpf0.25 mkt
+   2021-23 +17.71%/mo dd  -61% win 80.7% n  331 | 2024-26  +7.53%/mo dd  -32% win 75.4% n  118 | since 2025  +7.03%/mo dd  -29% win 74.6% | worst trade (acct) -54% / -22% / -11%
+   STRESSED 2021-23 +11.12% dd  -66% | 2024-26  +5.38% dd  -37% | since 2025  +5.19% dd  -29% | win 79.7/73.5/71.9% | worst trade -52% / -21% / -12%
+d14 tp5 hm48 w1 | tpf0.25 all
+   2021-23 +17.71%/mo dd  -61% win 80.7% n  331 | 2024-26  +7.53%/mo dd  -32% win 75.4% n  118 | since 2025  +7.03%/mo dd  -29% win 74.6% | worst trade (acct) -54% / -22% / -11%
+   STRESSED 2021-23 +11.12% dd  -66% | 2024-26  +5.38% dd  -37% | since 2025  +5.19% dd  -29% | win 79.7/73.5/71.9% | worst trade -52% / -21% / -12%
+d14 tp5 hm48 w1 | base
+   2021-23 +17.37%/mo dd  -61% win 80.7% n  332 | 2024-26  +7.50%/mo dd  -32% win 75.4% n  118 | since 2025  +7.02%/mo dd  -29% win 74.6% | worst trade (acct) -54% / -22% / -11%
+   STRESSED 2021-23 +11.57% dd  -75% | 2024-26  +4.87% dd  -37% | since 2025  +4.44% dd  -29% | win 79.1/73.5/71.9% | worst trade -39% / -21% / -13%
+d14 tp5 hm48 w1 | cd48 w1
+   2021-23 +16.98%/mo dd  -61% win 80.9% n  330 | 2024-26  +7.15%/mo dd  -32% win 74.4% n  117 | since 2025  +7.02%/mo dd  -29% win 74.6% | worst trade (acct) -54% / -22% / -11%
+   STRESSED 2021-23 +11.80% dd  -71% | 2024-26  +4.53% dd  -37% | since 2025  +4.44% dd  -29% | win 79.1/72.3/71.9% | worst trade -41% / -21% / -13%
+
+d14 tp5 hm48 w1:
+   d14 tp5 hm48 w1 | base                       21-23 +17.4% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+   d14 tp5 hm48 w1 | tpf0.25 mkt                21-23 +17.7% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.03% wtrade -54%
+   d14 tp5 hm48 w1 | tpf0.25 all                21-23 +17.7% dd -61 w 81 | 24-26  +7.5% dd -32 w 75 n118 | 25-  +7.0% dd -29 w 75 | min +7.03% wtrade -54%
+   d14 tp5 hm48 w1 | tpf0.4 mkt                 21-23 +17.1% dd -61 w 79 | 24-26  +7.4% dd -32 w 75 n114 | 25-  +7.1% dd -29 w 76 | min +7.10% wtrade -54%
+   d14 tp5 hm48 w1 | tpf0.4 all                 21-23 +17.9% dd -61 w 75 | 24-26  +5.2% dd -33 w 63 n101 | 25-  +6.3% dd -29 w 65 | min +5.18% wtrade -54%
+   d14 tp5 hm48 w1 | tpf0.55 mkt                21-23 +16.5% dd -64 w 79 | 24-26  +7.5% dd -31 w 75 n112 | 25-  +7.2% dd -29 w 76 | min +7.24% wtrade -55%
+   d14 tp5 hm48 w1 | tpf0.55 all                21-23 +11.3% dd -68 w 65 | 24-26  +5.2% dd -47 w 59 n 95 | 25-  +5.8% dd -29 w 61 | min +5.21% wtrade -55%
+   d14 tp5 hm48 w1 | ladder 60% +4pts           21-23 +15.9% dd -62 w 86 | 24-26  +6.6% dd -30 w 81 n123 | 25-  +5.4% dd -29 w 80 | min +5.38% wtrade -54%
+   d14 tp5 hm48 w1 | ladder 60% +7pts           21-23 +14.2% dd -61 w 87 | 24-26  +7.0% dd -22 w 80 n126 | 25-  +5.3% dd -22 w 77 | min +5.33% wtrade -54%
+   d14 tp5 hm48 w1 | ladder 80% +4pts           21-23 +15.2% dd -63 w 83 | 24-26  +6.9% dd -30 w 78 n119 | 25-  +6.4% dd -28 w 78 | min +6.42% wtrade -54%
+   d14 tp5 hm48 w1 | ladder 80% +7pts           21-23 +14.9% dd -62 w 83 | 24-26  +6.8% dd -28 w 77 n119 | 25-  +6.3% dd -26 w 76 | min +6.33% wtrade -54%
+   d14 tp5 hm48 w1 | N2 x50%                    21-23 +13.3% dd -47 w 79 | 24-26  +6.6% dd -26 w 79 n257 | 25-  +5.7% dd -24 w 78 | min +5.72% wtrade -27%
+   d14 tp5 hm48 w1 | N2 f1 near1%               21-23 +16.7% dd -61 w 79 | 24-26  +4.0% dd -33 w 72 n127 | 25-  +3.8% dd -31 w 67 | min +3.79% wtrade -54%
+   d14 tp5 hm48 w1 | N2 f1 near3%               21-23 +15.2% dd -62 w 80 | 24-26  +4.0% dd -33 w 74 n156 | 25-  +3.7% dd -29 w 74 | min +3.73% wtrade -54%
+   d14 tp5 hm48 w1 | N2 f1 near6%               21-23 +15.6% dd -68 w 79 | 24-26  +4.6% dd -34 w 78 n209 | 25-  +4.3% dd -24 w 77 | min +4.27% wtrade -54%
+   d14 tp5 hm48 w1 | cd12 w1                    21-23 +17.7% dd -61 w 81 | 24-26  +7.3% dd -32 w 75 n119 | 25-  +6.7% dd -29 w 73 | min +6.71% wtrade -54%
+   d14 tp5 hm48 w1 | cd48 w1                    21-23 +17.0% dd -61 w 81 | 24-26  +7.1% dd -32 w 74 n117 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+
+d15 tp6 hm48 w1:
+   d15 tp6 hm48 w1 | base                       21-23 +17.7% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+   d15 tp6 hm48 w1 | tpf0.25 mkt                21-23 +18.1% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+   d15 tp6 hm48 w1 | tpf0.25 all                21-23 +18.1% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+   d15 tp6 hm48 w1 | tpf0.4 mkt                 21-23 +18.1% dd -61 w 79 | 24-26  +6.8% dd -36 w 74 n 88 | 25-  +7.3% dd -27 w 75 | min +6.81% wtrade -54%
+   d15 tp6 hm48 w1 | tpf0.4 all                 21-23 +17.1% dd -61 w 75 | 24-26  +5.8% dd -36 w 65 n 83 | 25-  +6.4% dd -27 w 65 | min +5.83% wtrade -54%
+   d15 tp6 hm48 w1 | tpf0.55 mkt                21-23 +16.4% dd -64 w 78 | 24-26  +6.8% dd -36 w 73 n 86 | 25-  +7.5% dd -27 w 75 | min +6.80% wtrade -55%
+   d15 tp6 hm48 w1 | tpf0.55 all                21-23 +12.6% dd -69 w 65 | 24-26  +5.0% dd -45 w 58 n 77 | 25-  +6.5% dd -27 w 60 | min +4.95% wtrade -55%
+   d15 tp6 hm48 w1 | ladder 60% +4pts           21-23 +14.5% dd -61 w 84 | 24-26  +7.0% dd -29 w 80 n 97 | 25-  +6.1% dd -23 w 80 | min +6.13% wtrade -54%
+   d15 tp6 hm48 w1 | ladder 60% +7pts           21-23 +14.0% dd -61 w 86 | 24-26  +6.9% dd -26 w 81 n 96 | 25-  +5.7% dd -20 w 82 | min +5.65% wtrade -54%
+   d15 tp6 hm48 w1 | ladder 80% +4pts           21-23 +15.6% dd -61 w 82 | 24-26  +6.5% dd -30 w 77 n 93 | 25-  +6.4% dd -25 w 78 | min +6.39% wtrade -54%
+   d15 tp6 hm48 w1 | ladder 80% +7pts           21-23 +13.5% dd -61 w 82 | 24-26  +7.4% dd -32 w 78 n 94 | 25-  +6.7% dd -24 w 78 | min +6.67% wtrade -54%
+   d15 tp6 hm48 w1 | N2 x50%                    21-23 +12.1% dd -47 w 78 | 24-26  +6.3% dd -26 w 78 n185 | 25-  +4.9% dd -26 w 76 | min +4.85% wtrade -27%
+   d15 tp6 hm48 w1 | N2 f1 near1%               21-23  +9.1% dd -63 w 76 | 24-26  +3.5% dd -37 w 71 n 96 | 25-  +3.1% dd -37 w 64 | min +3.14% wtrade -54%
+   d15 tp6 hm48 w1 | N2 f1 near3%               21-23 +12.0% dd -61 w 79 | 24-26  +4.8% dd -30 w 76 n117 | 25-  +4.2% dd -29 w 72 | min +4.18% wtrade -54%
+   d15 tp6 hm48 w1 | N2 f1 near6%               21-23 +16.3% dd -61 w 77 | 24-26  +5.0% dd -35 w 77 n137 | 25-  +3.9% dd -29 w 73 | min +3.92% wtrade -54%
+   d15 tp6 hm48 w1 | cd12 w1                    21-23 +17.7% dd -61 w 80 | 24-26  +6.9% dd -36 w 73 n 92 | 25-  +7.1% dd -27 w 72 | min +6.90% wtrade -54%
+   d15 tp6 hm48 w1 | cd48 w1                    21-23 +17.1% dd -61 w 80 | 24-26  +7.0% dd -36 w 74 n 91 | 25-  +7.3% dd -27 w 73 | min +7.01% wtrade -54%
+
+d15 tp4 hm96 w1:
+   d15 tp4 hm96 w1 | base                       21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+   d15 tp4 hm96 w1 | tpf0.25 mkt                21-23 +17.3% dd -61 w 91 | 24-26  +8.4% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+   d15 tp4 hm96 w1 | tpf0.25 all                21-23 +17.3% dd -61 w 90 | 24-26  +7.6% dd -37 w 88 n 97 | 25-  +6.3% dd -30 w 88 | min +6.33% wtrade -48%
+   d15 tp4 hm96 w1 | tpf0.4 mkt                 21-23 +16.0% dd -61 w 90 | 24-26  +8.4% dd -37 w 90 n101 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+   d15 tp4 hm96 w1 | tpf0.4 all                 21-23 +18.4% dd -61 w 82 | 24-26  +5.0% dd -43 w 69 n 78 | 25-  +4.8% dd -38 w 66 | min +4.78% wtrade -48%
+   d15 tp4 hm96 w1 | tpf0.55 mkt                21-23 +15.2% dd -76 w 90 | 24-26  +8.3% dd -37 w 90 n 98 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+   d15 tp4 hm96 w1 | tpf0.55 all                21-23 +12.8% dd -76 w 72 | 24-26  +4.0% dd -51 w 60 n 70 | 25-  +3.8% dd -47 w 57 | min +3.77% wtrade -48%
+   d15 tp4 hm96 w1 | ladder 60% +4pts           21-23 +15.3% dd -61 w 94 | 24-26  +6.5% dd -34 w 92 n110 | 25-  +4.9% dd -22 w 90 | min +4.88% wtrade -48%
+   d15 tp4 hm96 w1 | ladder 60% +7pts           21-23 +12.8% dd -61 w 95 | 24-26  +6.7% dd -30 w 93 n111 | 25-  +5.1% dd -19 w 92 | min +5.09% wtrade -48%
+   d15 tp4 hm96 w1 | ladder 80% +4pts           21-23 +15.4% dd -61 w 92 | 24-26  +7.5% dd -35 w 91 n107 | 25-  +5.9% dd -22 w 90 | min +5.92% wtrade -48%
+   d15 tp4 hm96 w1 | ladder 80% +7pts           21-23 +15.6% dd -61 w 93 | 24-26  +7.5% dd -34 w 92 n107 | 25-  +5.9% dd -20 w 90 | min +5.94% wtrade -48%
+   d15 tp4 hm96 w1 | N2 x50%                    21-23 +12.0% dd -50 w 89 | 24-26  +6.8% dd -25 w 90 n213 | 25-  +4.9% dd -23 w 87 | min +4.91% wtrade -24%
+   d15 tp4 hm96 w1 | N2 f1 near1%               21-23 +11.9% dd -61 w 91 | 24-26  +5.4% dd -37 w 89 n122 | 25-  +5.8% dd -27 w 88 | min +5.40% wtrade -48%
+   d15 tp4 hm96 w1 | N2 f1 near3%               21-23 +14.4% dd -61 w 91 | 24-26  +5.8% dd -41 w 88 n139 | 25-  +5.8% dd -26 w 88 | min +5.76% wtrade -48%
+   d15 tp4 hm96 w1 | N2 f1 near6%               21-23 +16.6% dd -61 w 90 | 24-26  +5.5% dd -45 w 89 n156 | 25-  +4.5% dd -26 w 89 | min +4.45% wtrade -48%
+   d15 tp4 hm96 w1 | cd12 w1                    21-23 +17.7% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+   d15 tp4 hm96 w1 | cd48 w1                    21-23 +17.6% dd -61 w 91 | 24-26  +8.3% dd -37 w 90 n103 | 25-  +7.0% dd -22 w 90 | min +6.96% wtrade -48%
+
+d14 tp5 hm48 cd24:
+   d14 tp5 hm48 cd24 | base                     21-23 +15.0% dd -61 w 81 | 24-26  +8.1% dd -30 w 77 n115 | 25-  +6.1% dd -29 w 75 | min +6.08% wtrade -54%
+   d14 tp5 hm48 cd24 | tpf0.25 mkt              21-23 +16.1% dd -61 w 81 | 24-26  +8.2% dd -30 w 77 n115 | 25-  +6.1% dd -29 w 75 | min +6.13% wtrade -54%
+   d14 tp5 hm48 cd24 | tpf0.25 all              21-23 +16.1% dd -61 w 81 | 24-26  +8.2% dd -30 w 77 n115 | 25-  +6.1% dd -29 w 75 | min +6.13% wtrade -54%
+   d14 tp5 hm48 cd24 | tpf0.4 mkt               21-23 +13.7% dd -61 w 79 | 24-26  +8.0% dd -30 w 76 n112 | 25-  +6.1% dd -29 w 75 | min +6.13% wtrade -54%
+   d14 tp5 hm48 cd24 | tpf0.4 all               21-23 +12.4% dd -61 w 73 | 24-26  +5.0% dd -33 w 64 n 99 | 25-  +5.4% dd -29 w 63 | min +5.01% wtrade -54%
+   d14 tp5 hm48 cd24 | tpf0.55 mkt              21-23 +17.9% dd -59 w 80 | 24-26  +8.3% dd -30 w 76 n112 | 25-  +6.3% dd -29 w 75 | min +6.33% wtrade -43%
+   d14 tp5 hm48 cd24 | tpf0.55 all              21-23 +10.5% dd -68 w 65 | 24-26  +5.1% dd -47 w 59 n 93 | 25-  +4.8% dd -29 w 60 | min +4.77% wtrade -54%
+   d14 tp5 hm48 cd24 | ladder 60% +4pts         21-23 +11.4% dd -61 w 84 | 24-26  +7.4% dd -26 w 84 n119 | 25-  +5.5% dd -22 w 83 | min +5.46% wtrade -54%
+   d14 tp5 hm48 cd24 | ladder 60% +7pts         21-23 +12.5% dd -61 w 85 | 24-26  +7.3% dd -24 w 80 n123 | 25-  +5.0% dd -22 w 78 | min +5.01% wtrade -54%
+   d14 tp5 hm48 cd24 | ladder 80% +4pts         21-23 +13.3% dd -61 w 83 | 24-26  +7.7% dd -28 w 80 n115 | 25-  +5.7% dd -28 w 79 | min +5.73% wtrade -54%
+   d14 tp5 hm48 cd24 | ladder 80% +7pts         21-23 +12.8% dd -61 w 83 | 24-26  +7.7% dd -26 w 79 n117 | 25-  +5.6% dd -26 w 77 | min +5.63% wtrade -54%
+   d14 tp5 hm48 cd24 | N2 x50%                  21-23 +11.4% dd -42 w 80 | 24-26  +6.8% dd -26 w 79 n234 | 25-  +4.9% dd -24 w 77 | min +4.92% wtrade -27%
+   d14 tp5 hm48 cd24 | N2 f1 near1%             21-23 +14.2% dd -61 w 80 | 24-26  +4.1% dd -34 w 72 n123 | 25-  +3.2% dd -31 w 65 | min +3.16% wtrade -54%
+   d14 tp5 hm48 cd24 | N2 f1 near3%             21-23 +13.3% dd -73 w 81 | 24-26  +4.3% dd -29 w 74 n148 | 25-  +3.1% dd -29 w 71 | min +3.10% wtrade -54%
+   d14 tp5 hm48 cd24 | N2 f1 near6%             21-23 +12.2% dd -73 w 80 | 24-26  +5.7% dd -27 w 78 n192 | 25-  +3.9% dd -24 w 77 | min +3.87% wtrade -54%
+   d14 tp5 hm48 cd24 | cd12 w1                  21-23 +17.7% dd -61 w 81 | 24-26  +7.3% dd -32 w 75 n119 | 25-  +6.7% dd -29 w 73 | min +6.71% wtrade -54%
+   d14 tp5 hm48 cd24 | cd48 w1                  21-23 +17.0% dd -61 w 81 | 24-26  +7.1% dd -32 w 74 n117 | 25-  +7.0% dd -29 w 75 | min +7.02% wtrade -54%
+
+d13 tp1.5 hm96 w1:
+   d13 tp1.5 hm96 w1 | base                     21-23 +15.9% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n236 | 25-  +6.7% dd -23 w 96 | min +6.70% wtrade -48%
+   d13 tp1.5 hm96 w1 | tpf0.25 mkt              21-23 +19.6% dd -63 w 96 | 24-26  +7.0% dd -34 w 94 n217 | 25-  +6.3% dd -26 w 94 | min +6.33% wtrade -48%
+   d13 tp1.5 hm96 w1 | tpf0.25 all              21-23 +20.2% dd -61 w 90 | 24-26  +6.2% dd -46 w 83 n148 | 25-  +4.5% dd -31 w 82 | min +4.47% wtrade -48%
+   d13 tp1.5 hm96 w1 | tpf0.4 mkt               21-23 +17.4% dd -62 w 94 | 24-26  +6.6% dd -33 w 91 n207 | 25-  +6.1% dd -26 w 92 | min +6.14% wtrade -48%
+   d13 tp1.5 hm96 w1 | tpf0.4 all               21-23 +19.6% dd -61 w 83 | 24-26  +2.0% dd -62 w 67 n114 | 25-  +1.7% dd -40 w 67 | min +1.68% wtrade -48%
+   d13 tp1.5 hm96 w1 | tpf0.55 mkt              21-23 +18.5% dd -76 w 94 | 24-26  +6.0% dd -35 w 90 n197 | 25-  +5.5% dd -26 w 91 | min +5.50% wtrade -46%
+   d13 tp1.5 hm96 w1 | tpf0.55 all              21-23 +20.4% dd -66 w 76 | 24-26  +4.7% dd -61 w 65 n106 | 25-  +3.5% dd -48 w 67 | min +3.48% wtrade -48%
+   d13 tp1.5 hm96 w1 | ladder 60% +4pts         21-23 +12.1% dd -63 w 97 | 24-26  +4.6% dd -38 w 96 n260 | 25-  +4.1% dd -29 w 97 | min +4.10% wtrade -48%
+   d13 tp1.5 hm96 w1 | ladder 60% +7pts         21-23 +12.2% dd -61 w 98 | 24-26  +4.9% dd -34 w 96 n248 | 25-  +4.2% dd -28 w 97 | min +4.16% wtrade -48%
+   d13 tp1.5 hm96 w1 | ladder 80% +4pts         21-23 +15.5% dd -64 w 97 | 24-26  +6.6% dd -37 w 96 n244 | 25-  +5.9% dd -24 w 97 | min +5.92% wtrade -48%
+   d13 tp1.5 hm96 w1 | ladder 80% +7pts         21-23 +13.9% dd -62 w 97 | 24-26  +5.9% dd -36 w 95 n240 | 25-  +5.5% dd -22 w 96 | min +5.50% wtrade -48%
+   d13 tp1.5 hm96 w1 | N2 x50%                  21-23 +12.5% dd -48 w 96 | 24-26  +6.3% dd -26 w 96 n535 | 25-  +5.1% dd -23 w 95 | min +5.07% wtrade -24%
+   d13 tp1.5 hm96 w1 | N2 f1 near1%             21-23 +12.9% dd -66 w 96 | 24-26  +5.1% dd -35 w 95 n287 | 25-  +5.0% dd -26 w 96 | min +4.96% wtrade -48%
+   d13 tp1.5 hm96 w1 | N2 f1 near3%             21-23 +15.5% dd -61 w 96 | 24-26  +5.4% dd -39 w 95 n353 | 25-  +5.4% dd -26 w 95 | min +5.40% wtrade -48%
+   d13 tp1.5 hm96 w1 | N2 f1 near6%             21-23 +12.3% dd -61 w 96 | 24-26  +5.2% dd -32 w 96 n467 | 25-  +4.1% dd -23 w 94 | min +4.10% wtrade -48%
+   d13 tp1.5 hm96 w1 | cd12 w1                  21-23 +16.0% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n236 | 25-  +6.7% dd -23 w 96 | min +6.70% wtrade -48%
+   d13 tp1.5 hm96 w1 | cd48 w1                  21-23 +15.8% dd -64 w 96 | 24-26  +7.1% dd -35 w 95 n235 | 25-  +6.6% dd -23 w 96 | min +6.63% wtrade -48%

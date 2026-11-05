@@ -1,0 +1,2 @@
+idea,variants,beat_design,beat_test,beat_both,pick,passes,pick_d_mult,pick_t_mult,pick_d_dd,pick_t_dd,base_d_mult,base_t_mult,base_d_dd,base_t_dd,check +LUNA/FTT/SRM,check fills 0.2% worse
+"r3 ladder: split ladder, coin's total capped at 1/N (25% on 4 coins, 20% on 5)",8,5,3,1,"split 50% at 12% / rest at 18%, 4 coins, cap 25%",False,8.846864770950326,2.6723039756948026,-0.22570606095109735,-0.15119880312202172,5.749960679975606,2.608768648326897,-0.2923819336224197,-0.1628454245693458,False,True

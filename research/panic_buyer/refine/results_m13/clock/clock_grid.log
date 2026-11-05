@@ -1,0 +1,50 @@
+{"len": 4, "start": 0, "typ": "none", "wk": "none"}     score +13.93 n 93.8/+13.17/-64.4 w 93.4/ +9.79/-65.9 tpm 11.3 fails 3
+{"len": 4, "start": 0, "typ": "off", "wk": "none"}      score +10.91 n 93.5/+10.00/-64.4 w 93.0/ +6.22/-68.1 tpm 10.2 fails 3
+{"len": 4, "start": 0, "typ": "shal", "wk": "none"}     score +17.51 n 94.2/+16.61/-64.4 w 93.6/+11.21/-64.6 tpm 12.5 fails 1
+{"len": 4, "start": 0, "typ": "deep", "wk": "none"}     score +10.75 n 93.3/ +9.29/-63.6 w 92.8/ +5.04/-67.5 tpm 10.4 fails 3
+{"len": 4, "start": 4, "typ": "off", "wk": "none"}      score +13.74 n 94.2/+13.44/-60.6 w 93.8/+10.31/-65.2 tpm 11.0 fails 1
+{"len": 4, "start": 4, "typ": "shal", "wk": "none"}     score +16.25 n 93.8/+15.79/-64.4 w 92.5/ +9.92/-73.7 tpm 12.6 fails 1
+{"len": 4, "start": 4, "typ": "deep", "wk": "none"}     score +14.44 n 94.3/+14.40/-64.4 w 93.6/+10.48/-64.6 tpm 11.2 fails 1
+{"len": 4, "start": 8, "typ": "off", "wk": "none"}      score +14.64 n 94.1/+15.20/-64.4 w 93.5/+10.90/-64.6 tpm 10.8 fails 1
+{"len": 4, "start": 8, "typ": "shal", "wk": "none"}     score +12.79 n 92.7/+12.65/-70.3 w 92.2/ +9.02/-74.0 tpm 12.1 fails 5
+{"len": 4, "start": 8, "typ": "deep", "wk": "none"}     score +15.07 n 94.3/+14.94/-64.4 w 93.9/+11.37/-64.6 tpm 11.3 fails 1
+{"len": 4, "start": 12, "typ": "off", "wk": "none"}     score +14.38 n 94.2/+13.52/-64.4 w 93.8/+10.23/-65.9 tpm 11.1 fails 1
+{"len": 4, "start": 12, "typ": "shal", "wk": "none"}    score +16.21 n 93.9/+16.69/-64.4 w 92.9/+11.46/-64.6 tpm 12.8 fails 1
+{"len": 4, "start": 12, "typ": "deep", "wk": "none"}    score +14.44 n 94.2/+14.27/-64.4 w 93.7/+10.72/-68.9 tpm 11.4 fails 1
+{"len": 4, "start": 16, "typ": "off", "wk": "none"}     score +12.40 n 93.6/+12.24/-64.4 w 93.5/ +9.59/-68.2 tpm 10.9 fails 3
+{"len": 4, "start": 16, "typ": "shal", "wk": "none"}    score +10.80 n 91.7/ +9.71/-69.0 w 91.4/ +6.75/-73.8 tpm 11.7 fails 6
+{"len": 4, "start": 16, "typ": "deep", "wk": "none"}    score +13.67 n 94.0/+13.56/-65.2 w 93.6/+10.25/-68.8 tpm 11.2 fails 2
+{"len": 4, "start": 20, "typ": "off", "wk": "none"}     score +12.64 n 93.4/+11.66/-64.4 w 93.2/ +8.90/-64.8 tpm 11.0 fails 3
+{"len": 4, "start": 20, "typ": "shal", "wk": "none"}    score +12.25 n 92.5/+10.29/-64.4 w 91.8/ +6.81/-66.2 tpm 11.8 fails 5
+{"len": 4, "start": 20, "typ": "deep", "wk": "none"}    score +14.99 n 94.2/+14.45/-64.4 w 93.4/ +9.92/-64.6 tpm 11.4 fails 1
+{"len": 6, "start": 0, "typ": "off", "wk": "none"}      score +10.45 n 94.0/+10.09/-65.2 w 93.8/ +6.74/-68.8 tpm 10.2 fails 4
+{"len": 6, "start": 0, "typ": "shal", "wk": "none"}     score +17.40 n 93.9/+15.97/-64.4 w 93.2/+10.56/-64.6 tpm 12.7 fails 1
+{"len": 6, "start": 0, "typ": "deep", "wk": "none"}     score +10.50 n 93.6/ +9.41/-63.6 w 93.0/ +5.37/-67.4 tpm 10.4 fails 3
+{"len": 6, "start": 6, "typ": "off", "wk": "none"}      score +15.01 n 94.1/+15.38/-60.6 w 93.5/+11.18/-60.7 tpm 10.3 fails 0
+{"len": 6, "start": 6, "typ": "shal", "wk": "none"}     score +14.48 n 93.2/+14.42/-70.6 w 92.2/ +9.67/-74.3 tpm 12.7 fails 4
+{"len": 6, "start": 6, "typ": "deep", "wk": "none"}     score +14.81 n 94.4/+14.74/-64.4 w 93.9/+11.18/-64.6 tpm 11.0 fails 1
+{"len": 6, "start": 12, "typ": "off", "wk": "none"}     score +11.51 n 93.6/+10.37/-64.7 w 93.2/ +7.69/-68.2 tpm 10.1 fails 4
+{"len": 6, "start": 12, "typ": "shal", "wk": "none"}    score +16.10 n 93.6/+16.22/-64.8 w 92.9/+11.09/-67.4 tpm 13.1 fails 2
+{"len": 6, "start": 12, "typ": "deep", "wk": "none"}    score +14.31 n 94.4/+14.64/-64.4 w 93.9/+11.01/-69.4 tpm 11.3 fails 1
+{"len": 6, "start": 18, "typ": "off", "wk": "none"}     score +12.14 n 93.8/+12.19/-64.4 w 93.6/ +9.44/-68.0 tpm 10.8 fails 3
+{"len": 6, "start": 18, "typ": "shal", "wk": "none"}    score +12.22 n 92.4/+10.27/-68.5 w 91.3/ +5.74/-77.0 tpm 12.0 fails 6
+{"len": 6, "start": 18, "typ": "deep", "wk": "none"}    score +14.98 n 94.4/+14.79/-64.4 w 93.4/+10.02/-69.6 tpm 11.4 fails 1
+{"len": 8, "start": 0, "typ": "off", "wk": "none"}      score +10.95 n 94.2/ +9.77/-63.9 w 93.6/ +6.46/-68.4 tpm 9.6 fails 3
+{"len": 8, "start": 0, "typ": "shal", "wk": "none"}     score +17.31 n 93.6/+16.03/-64.4 w 92.8/+10.55/-64.6 tpm 13.1 fails 1
+{"len": 8, "start": 0, "typ": "deep", "wk": "none"}     score +11.40 n 94.0/+10.25/-63.0 w 92.9/ +5.88/-66.9 tpm 10.2 fails 3
+{"len": 8, "start": 8, "typ": "off", "wk": "none"}      score +16.71 n 94.6/+16.58/-64.4 w 93.8/+10.88/-64.6 tpm 10.4 fails 1
+{"len": 8, "start": 8, "typ": "shal", "wk": "none"}     score +16.06 n 93.5/+16.69/-64.4 w 92.3/+10.70/-68.0 tpm 13.6 fails 2
+{"len": 8, "start": 8, "typ": "deep", "wk": "none"}     score +15.13 n 94.6/+15.53/-64.4 w 94.1/+11.79/-67.4 tpm 11.3 fails 1
+{"len": 8, "start": 16, "typ": "off", "wk": "none"}     score +10.32 n 93.7/+10.44/-64.4 w 93.5/ +7.77/-67.8 tpm 10.1 fails 3
+{"len": 8, "start": 16, "typ": "shal", "wk": "none"}    score +11.24 n 91.9/ +9.42/-69.7 w 91.3/ +5.63/-73.4 tpm 12.3 fails 6
+{"len": 8, "start": 16, "typ": "deep", "wk": "none"}    score +14.87 n 94.6/+14.87/-64.4 w 93.6/+10.18/-69.5 tpm 11.3 fails 1
+{"len": 4, "start": 0, "typ": "none", "wk": "off"}      score  +9.38 n 92.3/ +8.16/-64.4 w 92.0/ +5.87/-64.6 tpm 9.0 fails 5
+{"len": 4, "start": 0, "typ": "none", "wk": "shal"}     score +14.05 n 93.5/+12.08/-64.9 w 92.6/ +7.22/-68.9 tpm 12.3 fails 4
+{"len": 4, "start": 0, "typ": "none", "wk": "deep"}     score +12.14 n 93.4/+11.34/-64.4 w 92.8/ +7.77/-65.4 tpm 10.5 fails 3
+43 scored in 16s; bar-passers (excl. weekend/none): 1
+{"len": 6, "start": 5, "typ": "off", "wk": "none"}      score +13.14 n 94.3/+12.49/-60.6 w 94.2/+10.54/-60.7 tpm 10.3 fails 1
+{"len": 6, "start": 7, "typ": "off", "wk": "none"}      score +15.12 n 93.9/+15.36/-64.4 w 93.0/ +9.63/-64.6 tpm 10.5 fails 2
+{"len": 4, "start": 6, "typ": "off", "wk": "none"}      score +12.98 n 93.5/+12.60/-61.7 w 93.0/ +9.12/-65.6 tpm 10.7 fails 3
+{"len": 8, "start": 6, "typ": "off", "wk": "none"}      score +14.99 n 93.8/+16.40/-54.3 w 93.1/+11.83/-54.4 tpm 9.9 fails 0
+try {"typ": "off", "start": 6, "len": 6, "wk": "none"} score +15.01: nb median n 93.9/+13.98/-61.1 w 93.1/+10.08 -> PASS
+PICK: {"typ": "off", "start": 6, "len": 6, "wk": "none"}

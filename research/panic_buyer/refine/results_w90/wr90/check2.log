@@ -1,0 +1,17 @@
+19 coins g0.0 {'depth': 0.12, 'N': 8, 'fmax': 0.2, 'tp': 0.015, 'hm': 48, 'cd': 24}: engine x15.000317 wrun x15.000317 trades 2565/2565 IDENTICAL
+19 coins g0.35 {'depth': 0.12, 'N': 8, 'fmax': 0.2, 'tp': 0.015, 'hm': 48, 'cd': 24}: engine x14.842853 wrun x14.842853 trades 2461/2461 IDENTICAL
+19 coins g0.0 {'depth': 0.14, 'N': 1, 'fmax': 1.0, 'tp': 0.05, 'hm': 48, 'cd': 24}: engine x8814.041925 wrun x8814.041925 trades 431/431 IDENTICAL
+19 coins g0.35 {'depth': 0.14, 'N': 1, 'fmax': 1.0, 'tp': 0.05, 'hm': 48, 'cd': 24}: engine x2141.489229 wrun x2141.489229 trades 412/412 IDENTICAL
+19 coins g0.0 {'depth': 0.12, 'N': 2, 'fmax': 0.5, 'tp': 0.02, 'hm': 96, 'cd': 6, 'mtp_now': True, 'pen': 0.002}: engine x72.062151 wrun x72.062151 trades 1915/1915 IDENTICAL
+19 coins g0.35 {'depth': 0.12, 'N': 2, 'fmax': 0.5, 'tp': 0.02, 'hm': 96, 'cd': 6, 'mtp_now': True, 'pen': 0.002}: engine x79.856217 wrun x79.856217 trades 1854/1854 IDENTICAL
+19 coins g0.0 {'depth': 0.16, 'N': 4, 'fmax': 0.25, 'tp': 0.01, 'hm': 168, 'cd': 12, 'tpwait': 2}: engine x14.824799 wrun x14.824799 trades 1131/1131 IDENTICAL
+19 coins g0.35 {'depth': 0.16, 'N': 4, 'fmax': 0.25, 'tp': 0.01, 'hm': 168, 'cd': 12, 'tpwait': 2}: engine x14.934583 wrun x14.934583 trades 1041/1041 IDENTICAL
+22 coins g0.0 {'depth': 0.12, 'N': 8, 'fmax': 0.2, 'tp': 0.015, 'hm': 48, 'cd': 24}: engine x13.622758 wrun x13.622758 trades 2855/2855 IDENTICAL
+22 coins g0.35 {'depth': 0.12, 'N': 8, 'fmax': 0.2, 'tp': 0.015, 'hm': 48, 'cd': 24}: engine x16.031298 wrun x16.031298 trades 2727/2727 IDENTICAL
+22 coins g0.0 {'depth': 0.14, 'N': 1, 'fmax': 1.0, 'tp': 0.05, 'hm': 48, 'cd': 24}: engine x0.256557 wrun x0.256557 trades 412/412 IDENTICAL
+22 coins g0.35 {'depth': 0.14, 'N': 1, 'fmax': 1.0, 'tp': 0.05, 'hm': 48, 'cd': 24}: engine x2191.549370 wrun x2191.549370 trades 439/439 IDENTICAL
+22 coins g0.0 {'depth': 0.12, 'N': 2, 'fmax': 0.5, 'tp': 0.02, 'hm': 96, 'cd': 6, 'mtp_now': True, 'pen': 0.002}: engine x62.168085 wrun x62.168085 trades 2060/2060 IDENTICAL
+22 coins g0.35 {'depth': 0.12, 'N': 2, 'fmax': 0.5, 'tp': 0.02, 'hm': 96, 'cd': 6, 'mtp_now': True, 'pen': 0.002}: engine x72.026529 wrun x72.026529 trades 1989/1989 IDENTICAL
+22 coins g0.0 {'depth': 0.16, 'N': 4, 'fmax': 0.25, 'tp': 0.01, 'hm': 168, 'cd': 12, 'tpwait': 2}: engine x10.700614 wrun x10.700614 trades 1236/1236 IDENTICAL
+22 coins g0.35 {'depth': 0.16, 'N': 4, 'fmax': 0.25, 'tp': 0.01, 'hm': 168, 'cd': 12, 'tpwait': 2}: engine x10.418982 wrun x10.418982 trades 1137/1137 IDENTICAL
+ALL CHECKS PASS

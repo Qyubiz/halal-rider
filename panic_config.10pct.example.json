@@ -1,0 +1,9 @@
+{
+  "n_orders": 1,
+  "max_order_pct": 100.0,
+  "depth_pct": 14.0,
+  "take_profit_pct": 5.0,
+  "max_hours": 48,
+  "cooldown_hours": 24,
+  "crash_guard_pct": 35.0
+}

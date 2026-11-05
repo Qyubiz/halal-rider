@@ -1,0 +1,26 @@
+minutes (3052980, 22), hours 50883 2021-01-01 00:00:00 .. 2026-10-22 02:00:00
+K=19 wick=None N1 f1 d14 tp5 cyc60 g35                trades   443 vs   443 log identical True max rel eq diff 0.0e+00 final x15599.5 vs x15599.5 (8.6s / 3.3s) OK
+K=19 wick=None N1 f1 d14 tp5 cyc1 rearm g35           trades   446 vs   446 log identical True max rel eq diff 0.0e+00 final x9518.78 vs x9518.78 (3.1s / 2.7s) OK
+K=19 wick=None N3 f.33 d12 tp1.5 cyc60 nog worse      trades  1637 vs  1637 log identical True max rel eq diff 0.0e+00 final x3.36771 vs x3.36771 (0.7s / 0.8s) OK
+K=19 wick=None N1 f1 d14 tp5 cyc1 rearm delay1 g35    trades   504 vs   504 log identical True max rel eq diff 0.0e+00 final x8183.7 vs x8183.7 (3.2s / 2.8s) OK
+K=19 wick=0.01 N1 f1 d14 tp5 cyc60 g35                trades   424 vs   424 log identical True max rel eq diff 0.0e+00 final x3715.31 vs x3715.31 (0.8s / 0.5s) OK
+K=19 wick=0.01 N1 f1 d14 tp5 cyc1 rearm g35           trades   427 vs   427 log identical True max rel eq diff 0.0e+00 final x2466.7 vs x2466.7 (3.4s / 2.3s) OK
+K=19 wick=0.01 N3 f.33 d12 tp1.5 cyc60 nog worse      trades  1589 vs  1589 log identical True max rel eq diff 0.0e+00 final x1.63849 vs x1.63849 (0.5s / 0.5s) OK
+K=19 wick=0.01 N1 f1 d14 tp5 cyc1 rearm delay1 g35    trades   484 vs   484 log identical True max rel eq diff 0.0e+00 final x1592.28 vs x1592.28 (2.9s / 2.5s) OK
+K=22 wick=None N1 f1 d14 tp5 cyc60 g35                trades   466 vs   466 log identical True max rel eq diff 0.0e+00 final x8368.35 vs x8368.35 (5.5s / 5.5s) OK
+K=22 wick=None N1 f1 d14 tp5 cyc1 rearm g35           trades   460 vs   460 log identical True max rel eq diff 0.0e+00 final x4146.04 vs x4146.04 (4.2s / 3.3s) OK
+K=22 wick=None N3 f.33 d12 tp1.5 cyc60 nog worse      trades  1752 vs  1752 log identical True max rel eq diff 0.0e+00 final x1.73571 vs x1.73571 (0.6s / 0.5s) OK
+K=22 wick=None N1 f1 d14 tp5 cyc1 rearm delay1 g35    trades   525 vs   525 log identical True max rel eq diff 0.0e+00 final x1886.24 vs x1886.24 (3.0s / 2.5s) OK
+K=22 wick=0.01 N1 f1 d14 tp5 cyc60 g35                trades   447 vs   447 log identical True max rel eq diff 0.0e+00 final x1994.39 vs x1994.39 (4.9s / 3.7s) OK
+K=22 wick=0.01 N1 f1 d14 tp5 cyc1 rearm g35           trades   444 vs   444 log identical True max rel eq diff 0.0e+00 final x1226.1 vs x1226.1 (2.8s / 2.5s) OK
+K=22 wick=0.01 N3 f.33 d12 tp1.5 cyc60 nog worse      trades  1710 vs  1710 log identical True max rel eq diff 0.0e+00 final x0.76122 vs x0.76122 (0.5s / 0.5s) OK
+K=22 wick=0.01 N1 f1 d14 tp5 cyc1 rearm delay1 g35    trades   507 vs   507 log identical True max rel eq diff 0.0e+00 final x349.791 vs x349.791 (3.0s / 3.3s) OK
+guard_ref 0.25: identical to x10_critic_lib.guard_ref True
+guard_ref 0.35: identical to x10_critic_lib.guard_ref True
+guard_ref 0.45: identical to x10_critic_lib.guard_ref True
+audit 10% mode watch, K19, wicks 1%: 437 trades, 0 violations OK
+audit tp3 d12 hm24, K19, original wicks: 898 trades, 0 violations OK
+    note: trade fm=2022-11-15 04:00:00+14m k=FTTUSDT held 7468h: no trading at the 48h mark (halt), sold when it resumed
+audit no guard, K22, wicks 1%: 427 trades, 0 violations OK
+audit close detection, cd+1h, K19: 414 trades, 0 violations OK
+WATCH CHECK PASSED

@@ -1,0 +1,29 @@
+PICK: fs1 slots2 bids1 | vol m168 vt0.016653 min0.25 | guard<-0.15 x0.5 {"g1": 0.15, "gf": 0.5, "nbid": 1, "nslots": 2, "vmin": 0.25, "vsrc": "m168", "vt": 0.016653}
+pick      normal   2021-23  WR  93.8  +14.57%/mo  drop  -50.1%  worst trade  -26.0% acct   15.6 trades/mo
+pick      normal   2024-26  WR  93.0   +6.32%/mo  drop  -25.2%  worst trade  -13.7% acct    5.5 trades/mo
+pick      normal   since-25 WR  93.8   +4.93%/mo  drop  -24.4%  worst trade  -11.3% acct    4.4 trades/mo
+pick      normal   2018-20  WR  92.2   +9.88%/mo  drop  -62.2%  worst trade  -37.3% acct   13.1 trades/mo
+pick      worse    2021-23  WR  93.2  +10.66%/mo  drop  -52.9%  worst trade  -26.3% acct   15.2 trades/mo
+pick      worse    2024-26  WR  91.9   +4.52%/mo  drop  -25.2%  worst trade  -13.8% acct    5.1 trades/mo
+pick      worse    since-25 WR  92.0   +3.19%/mo  drop  -24.5%  worst trade  -11.5% acct    4.0 trades/mo
+pick      worse    2018-20  WR  91.7   +7.04%/mo  drop  -64.7%  worst trade  -37.5% acct   12.7 trades/mo
+pick      stressed 2021-23  WR  93.4  +10.92%/mo  drop  -50.7%  worst trade  -26.3% acct   16.4 trades/mo
+pick      stressed 2024-26  WR  92.3   +4.93%/mo  drop  -25.2%  worst trade  -13.1% acct    5.4 trades/mo
+pick      stressed since-25 WR  92.0   +3.16%/mo  drop  -24.5%  worst trade  -11.5% acct    4.0 trades/mo
+90% mode  normal   2021-23  WR  93.8  +13.17%/mo  drop  -64.4%  worst trade  -50.3% acct   11.3 trades/mo
+90% mode  normal   2024-26  WR  92.6   +6.89%/mo  drop  -35.4%  worst trade  -27.3% acct    4.4 trades/mo
+90% mode  normal   since-25 WR  93.2   +5.80%/mo  drop  -22.6%  worst trade  -11.8% acct    3.4 trades/mo
+90% mode  normal   2018-20  WR  92.5  +10.82%/mo  drop  -66.3%  worst trade  -37.3% acct   10.0 trades/mo
+90% mode  worse    2021-23  WR  93.4   +9.79%/mo  drop  -65.9%  worst trade  -50.5% acct   11.0 trades/mo
+90% mode  worse    2024-26  WR  92.1   +5.31%/mo  drop  -37.5%  worst trade  -27.6% acct    4.2 trades/mo
+90% mode  worse    since-25 WR  92.6   +4.56%/mo  drop  -22.7%  worst trade  -12.2% acct    3.1 trades/mo
+90% mode  worse    2018-20  WR  92.0   +7.41%/mo  drop  -69.9%  worst trade  -37.5% acct    9.7 trades/mo
+90% mode  stressed 2021-23  WR  93.7  +10.96%/mo  drop  -65.0%  worst trade  -45.9% acct   11.9 trades/mo
+90% mode  stressed 2024-26  WR  91.7   +5.49%/mo  drop  -30.3%  worst trade  -19.1% acct    4.3 trades/mo
+90% mode  stressed since-25 WR  92.6   +4.44%/mo  drop  -22.7%  worst trade  -12.2% acct    3.1 trades/mo
+stressed 2021-23 worst drop (whole run to 2023-12-31): -50.7%
+pass item 1: FAIL
+pass item 2: FAIL
+pass item 3: FAIL
+pass item 4: FAIL
+DOES NOT BEAT 90% MODE

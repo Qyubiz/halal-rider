@@ -1,0 +1,71 @@
+(0, 0, 0, 0, 0, 0) wr 0.939 mo 0.1648 dd -0.720 | worse mo 0.1139 | rob 0.1624 p1 False v False
+(0, 0, 0, 0, 0, 1) wr 0.945 mo 0.1323 dd -0.681 | worse mo 0.0884 | rob 0.1329 p1 False v False
+(0, 0, 0, 0, 1, 0) wr 0.923 mo 0.1481 dd -0.739 | worse mo 0.0950 | rob 0.1529 p1 False v False
+(0, 0, 0, 0, 1, 1) wr 0.917 mo 0.1384 dd -0.665 | worse mo 0.0751 | rob 0.1618 p1 False v False
+(0, 0, 0, 1, 0, 0) wr 0.939 mo 0.1655 dd -0.720 | worse mo 0.1153 | rob 0.1647 p1 False v False
+(0, 0, 0, 1, 0, 1) wr 0.945 mo 0.1333 dd -0.681 | worse mo 0.0893 | rob 0.1339 p1 False v False
+(0, 0, 0, 1, 1, 0) wr 0.923 mo 0.1481 dd -0.739 | worse mo 0.0950 | rob 0.1529 p1 False v False
+(0, 0, 0, 1, 1, 1) wr 0.917 mo 0.1384 dd -0.665 | worse mo 0.0751 | rob 0.1618 p1 False v False
+(0, 0, 1, 0, 0, 0) wr 0.938 mo 0.1610 dd -0.720 | worse mo 0.1105 | rob 0.1586 p1 False v False
+(0, 0, 1, 0, 0, 1) wr 0.945 mo 0.1323 dd -0.681 | worse mo 0.0884 | rob 0.1329 p1 False v False
+(0, 0, 1, 0, 1, 0) wr 0.922 mo 0.1472 dd -0.739 | worse mo 0.0941 | rob 0.1520 p1 False v False
+(0, 0, 1, 0, 1, 1) wr 0.917 mo 0.1377 dd -0.665 | worse mo 0.0744 | rob 0.1610 p1 False v False
+(0, 0, 1, 1, 0, 0) wr 0.938 mo 0.1617 dd -0.720 | worse mo 0.1119 | rob 0.1609 p1 False v False
+(0, 0, 1, 1, 0, 1) wr 0.945 mo 0.1333 dd -0.681 | worse mo 0.0893 | rob 0.1339 p1 False v False
+(0, 0, 1, 1, 1, 0) wr 0.922 mo 0.1472 dd -0.739 | worse mo 0.0941 | rob 0.1520 p1 False v False
+(0, 0, 1, 1, 1, 1) wr 0.917 mo 0.1377 dd -0.665 | worse mo 0.0744 | rob 0.1610 p1 False v False
+(0, 1, 0, 0, 0, 0) wr 0.943 mo 0.1614 dd -0.674 | worse mo 0.1107 | rob 0.1642 p1 False v False
+(0, 1, 0, 0, 0, 1) wr 0.941 mo 0.1337 dd -0.681 | worse mo 0.0835 | rob 0.1387 p1 False v False
+(0, 1, 0, 0, 1, 0) wr 0.923 mo 0.1541 dd -0.739 | worse mo 0.1014 | rob 0.1620 p1 False v False
+(0, 1, 0, 0, 1, 1) wr 0.920 mo 0.1481 dd -0.658 | worse mo 0.0828 | rob 0.1707 p1 False v False
+(0, 1, 0, 1, 0, 0) wr 0.942 mo 0.1589 dd -0.683 | worse mo 0.1092 | rob 0.1630 p1 False v False
+(0, 1, 0, 1, 0, 1) wr 0.942 mo 0.1405 dd -0.681 | worse mo 0.0893 | rob 0.1454 p1 False v False
+(0, 1, 0, 1, 1, 0) wr 0.923 mo 0.1541 dd -0.739 | worse mo 0.1014 | rob 0.1620 p1 False v False
+(0, 1, 0, 1, 1, 1) wr 0.920 mo 0.1481 dd -0.658 | worse mo 0.0828 | rob 0.1707 p1 False v False
+(0, 1, 1, 0, 0, 0) wr 0.943 mo 0.1614 dd -0.674 | worse mo 0.1107 | rob 0.1642 p1 False v False
+(0, 1, 1, 0, 0, 1) wr 0.941 mo 0.1337 dd -0.681 | worse mo 0.0835 | rob 0.1387 p1 False v False
+(0, 1, 1, 0, 1, 0) wr 0.923 mo 0.1541 dd -0.739 | worse mo 0.1014 | rob 0.1620 p1 False v False
+(0, 1, 1, 0, 1, 1) wr 0.920 mo 0.1481 dd -0.658 | worse mo 0.0828 | rob 0.1707 p1 False v False
+(0, 1, 1, 1, 0, 0) wr 0.942 mo 0.1589 dd -0.683 | worse mo 0.1092 | rob 0.1630 p1 False v False
+(0, 1, 1, 1, 0, 1) wr 0.942 mo 0.1405 dd -0.681 | worse mo 0.0893 | rob 0.1454 p1 False v False
+(0, 1, 1, 1, 1, 0) wr 0.923 mo 0.1541 dd -0.739 | worse mo 0.1014 | rob 0.1620 p1 False v False
+(0, 1, 1, 1, 1, 1) wr 0.920 mo 0.1481 dd -0.658 | worse mo 0.0828 | rob 0.1707 p1 False v False
+(1, 0, 0, 0, 0, 0) wr 0.939 mo 0.1735 dd -0.695 | worse mo 0.1165 | rob 0.1701 p1 False v False
+(1, 0, 0, 0, 0, 1) wr 0.946 mo 0.1367 dd -0.663 | worse mo 0.0919 | rob 0.1375 p1 False v False
+(1, 0, 0, 0, 1, 0) wr 0.925 mo 0.1524 dd -0.732 | worse mo 0.0958 | rob 0.1615 p1 False v False
+(1, 0, 0, 0, 1, 1) wr 0.918 mo 0.1294 dd -0.665 | worse mo 0.0639 | rob 0.1545 p1 False v False
+(1, 0, 0, 1, 0, 0) wr 0.939 mo 0.1735 dd -0.695 | worse mo 0.1165 | rob 0.1701 p1 False v False
+(1, 0, 0, 1, 0, 1) wr 0.946 mo 0.1359 dd -0.663 | worse mo 0.0929 | rob 0.1363 p1 False v False
+(1, 0, 0, 1, 1, 0) wr 0.925 mo 0.1524 dd -0.732 | worse mo 0.0958 | rob 0.1615 p1 False v False
+(1, 0, 0, 1, 1, 1) wr 0.918 mo 0.1294 dd -0.665 | worse mo 0.0639 | rob 0.1545 p1 False v False
+(1, 0, 1, 0, 0, 0) wr 0.937 mo 0.1645 dd -0.695 | worse mo 0.1093 | rob 0.1611 p1 False v False
+(1, 0, 1, 0, 0, 1) wr 0.946 mo 0.1367 dd -0.663 | worse mo 0.0919 | rob 0.1375 p1 False v False
+(1, 0, 1, 0, 1, 0) wr 0.925 mo 0.1515 dd -0.732 | worse mo 0.0950 | rob 0.1605 p1 False v False
+(1, 0, 1, 0, 1, 1) wr 0.918 mo 0.1287 dd -0.665 | worse mo 0.0633 | rob 0.1537 p1 False v False
+(1, 0, 1, 1, 0, 0) wr 0.937 mo 0.1645 dd -0.695 | worse mo 0.1093 | rob 0.1611 p1 False v False
+(1, 0, 1, 1, 0, 1) wr 0.946 mo 0.1359 dd -0.663 | worse mo 0.0929 | rob 0.1363 p1 False v False
+(1, 0, 1, 1, 1, 0) wr 0.925 mo 0.1515 dd -0.732 | worse mo 0.0950 | rob 0.1605 p1 False v False
+(1, 0, 1, 1, 1, 1) wr 0.918 mo 0.1287 dd -0.665 | worse mo 0.0633 | rob 0.1537 p1 False v False
+(1, 1, 0, 0, 0, 0) wr 0.941 mo 0.1695 dd -0.674 | worse mo 0.1130 | rob 0.1704 p1 False v False
+(1, 1, 0, 0, 0, 1) wr 0.942 mo 0.1360 dd -0.655 | worse mo 0.0882 | rob 0.1409 p1 False v False
+(1, 1, 0, 0, 1, 0) wr 0.923 mo 0.1540 dd -0.732 | worse mo 0.0970 | rob 0.1628 p1 False v False
+(1, 1, 0, 0, 1, 1) wr 0.920 mo 0.1385 dd -0.658 | worse mo 0.0731 | rob 0.1629 p1 False v False
+(1, 1, 0, 1, 0, 0) wr 0.941 mo 0.1688 dd -0.674 | worse mo 0.1124 | rob 0.1699 p1 False v False
+(1, 1, 0, 1, 0, 1) wr 0.942 mo 0.1367 dd -0.655 | worse mo 0.0904 | rob 0.1414 p1 False v False
+(1, 1, 0, 1, 1, 0) wr 0.923 mo 0.1540 dd -0.732 | worse mo 0.0970 | rob 0.1628 p1 False v False
+(1, 1, 0, 1, 1, 1) wr 0.920 mo 0.1385 dd -0.658 | worse mo 0.0731 | rob 0.1629 p1 False v False
+(1, 1, 1, 0, 0, 0) wr 0.941 mo 0.1695 dd -0.674 | worse mo 0.1130 | rob 0.1704 p1 False v False
+(1, 1, 1, 0, 0, 1) wr 0.942 mo 0.1360 dd -0.655 | worse mo 0.0882 | rob 0.1409 p1 False v False
+(1, 1, 1, 0, 1, 0) wr 0.923 mo 0.1540 dd -0.732 | worse mo 0.0970 | rob 0.1628 p1 False v False
+(1, 1, 1, 0, 1, 1) wr 0.920 mo 0.1385 dd -0.658 | worse mo 0.0731 | rob 0.1629 p1 False v False
+(1, 1, 1, 1, 0, 0) wr 0.941 mo 0.1688 dd -0.674 | worse mo 0.1124 | rob 0.1699 p1 False v False
+(1, 1, 1, 1, 0, 1) wr 0.942 mo 0.1367 dd -0.655 | worse mo 0.0904 | rob 0.1414 p1 False v False
+(1, 1, 1, 1, 1, 0) wr 0.923 mo 0.1540 dd -0.732 | worse mo 0.0970 | rob 0.1628 p1 False v False
+(1, 1, 1, 1, 1, 1) wr 0.920 mo 0.1385 dd -0.658 | worse mo 0.0731 | rob 0.1629 p1 False v False
+designs 64 pass1 0 eligible 0
+top by robust regardless:
+{'ix': (0, 1, 0, 0, 1, 1), 'des': {'win': 0, 'R': 12, 'minT': 5, 'm': 5, 'metric': 'sum', 'cset': 'depth'}, 'robust': 0.1706533166030048, 'pass1': False, 'ok_versions': False, 'nbok': False, 'npass': 0.0}
+{'ix': (0, 1, 0, 1, 1, 1), 'des': {'win': 0, 'R': 12, 'minT': 5, 'm': 20, 'metric': 'sum', 'cset': 'depth'}, 'robust': 0.1706533166030048, 'pass1': False, 'ok_versions': False, 'nbok': False, 'npass': 0.0}
+{'ix': (0, 1, 1, 0, 1, 1), 'des': {'win': 0, 'R': 12, 'minT': 10, 'm': 5, 'metric': 'sum', 'cset': 'depth'}, 'robust': 0.1706533166030048, 'pass1': False, 'ok_versions': False, 'nbok': False, 'npass': 0.0}
+{'ix': (0, 1, 1, 1, 1, 1), 'des': {'win': 0, 'R': 12, 'minT': 10, 'm': 20, 'metric': 'sum', 'cset': 'depth'}, 'robust': 0.1706533166030048, 'pass1': False, 'ok_versions': False, 'nbok': False, 'npass': 0.0}
+{'ix': (1, 1, 0, 0, 0, 0), 'des': {'win': 24, 'R': 12, 'minT': 5, 'm': 5, 'metric': 'mean', 'cset': 'both'}, 'robust': 0.1704311813484131, 'pass1': False, 'ok_versions': False, 'nbok': False, 'npass': 0.0}

@@ -15,7 +15,9 @@ chown -R panicbot:panicbot /opt/panic-buyer
 install -m 755 "$APP/deploy/panic-buyer-setup" /usr/local/bin/panic-buyer-setup
 install -m 755 "$APP/deploy/panic-buyer" /usr/local/bin/panic-buyer
 install -m 644 "$APP/deploy/panic-buyer.service" /etc/systemd/system/panic-buyer.service
+install -m 644 "$APP/deploy/panic-paper@.service" /etc/systemd/system/panic-paper@.service
 systemctl daemon-reload
+for n in normal 90wr ensemble; do systemctl is-active --quiet "panic-paper@$n" && systemctl restart "panic-paper@$n"; done || true
 if systemctl is-active --quiet panic-buyer; then systemctl restart panic-buyer; echo "Updated and restarted."; fi
 echo ""
 echo "Installed. This server's public IP (must be allowed on your Binance API key): $(curl -s https://checkip.amazonaws.com || echo unknown)"

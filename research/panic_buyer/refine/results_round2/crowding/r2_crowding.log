@@ -1,0 +1,55 @@
+crun, ladder off, dead=False pen=0.0           21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%  identical to engine.run: True
+crun, ladder off, dead=True pen=0.0            21-23 x 5.29 DD  -31% 2022   +1% | 24-26 x 2.46 DD  -15% worst-mo  -6% up-mo  88%  identical to engine.run: True
+crun, ladder off, dead=False pen=0.002         21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%  identical to engine.run: True
+crun, ladder off, dead=True pen=0.002          21-23 x 3.63 DD  -32% 2022  -16% | 24-26 x 2.24 DD  -15% worst-mo  -6% up-mo  85%  identical to engine.run: True
+  extra leg 2: trades 1, leg2 [1.0], exit hour [2.0], ret [0.012971014999999753] (want 0.012971014999999753) -> ok
+  split leg 2: trades 1, leg2 [1.0], exit hour [2.0], ret [0.012971014999999753] (want 0.012971014999999753) -> ok
+  split, both legs in the fill hour: exit hour [1.0], ret [0.016879483439578458] (want 0.016879483439578458) -> ok
+  extra leg 2 not reached: same equity as the live engine True -> ok
+  leg 2 at market at the cycle + time stop from leg 1: exit hour [3.0] why [1.0] ret [-0.0476529694697605] (want -0.04765296946976072) -> ok
+
+######## r2 crowding H1: extra leg 2, funded first from free cash
+LIVE SETTINGS                                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+extra leg 2: 0.5x at 16%                       21-23 x 5.82 DD  -36% 2022  +42% | 24-26 x 2.65 DD  -20% worst-mo  -9% up-mo  88%
+extra leg 2: 0.5x at 18%                       21-23 x 6.84 DD  -29% 2022  +42% | 24-26 x 2.72 DD  -20% worst-mo -10% up-mo  91%
+extra leg 2: 0.5x at 20%                       21-23 x 7.25 DD  -30% 2022  +33% | 24-26 x 2.65 DD  -18% worst-mo  -7% up-mo  91%
+extra leg 2: 0.5x at 24%                       21-23 x 6.48 DD  -30% 2022  +20% | 24-26 x 2.48 DD  -17% worst-mo  -5% up-mo  88%
+extra leg 2: 1x at 16%                         21-23 x 6.47 DD  -37% 2022  +53% | 24-26 x 2.71 DD  -20% worst-mo  -9% up-mo  85%
+extra leg 2: 1x at 18%                         21-23 x 6.37 DD  -38% 2022  +47% | 24-26 x 2.74 DD  -20% worst-mo -10% up-mo  88%
+extra leg 2: 1x at 20%                         21-23 x 7.04 DD  -33% 2022  +28% | 24-26 x 2.68 DD  -19% worst-mo  -7% up-mo  88%
+extra leg 2: 1x at 24%                         21-23 x 7.51 DD  -30% 2022  +32% | 24-26 x 2.37 DD  -17% worst-mo  -7% up-mo  85%
+8 variants | beat live in 2021-23: 4 | in 2024-26: 0 | in both: 0
+PICK (2021-23 only): extra leg 2: 1x at 24%
+  pick                                         21-23 x 7.51 DD  -30% 2022  +32% | 24-26 x 2.37 DD  -17% worst-mo  -7% up-mo  85%
+  2024-26 check: does NOT beat the live settings
+  live, +LUNA/FTT/SRM                          21-23 x 5.29 DD  -31% 2022   +1% | 24-26 x 2.46 DD  -15% worst-mo  -6% up-mo  88%
+  pick, +LUNA/FTT/SRM                          21-23 x 5.52 DD  -33% 2022   -0% | 24-26 x 2.12 DD  -15% worst-mo  -6% up-mo  88%  FAILS
+  live, fills 0.2% worse                       21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+  pick, fills 0.2% worse                       21-23 x 5.38 DD  -30% 2022  +10% | 24-26 x 2.30 DD  -17% worst-mo  -7% up-mo  88%  FAILS
+  VERDICT: rejected, live bot unchanged
+
+######## r2 crowding H2: split ladder on fewer coins
+LIVE SETTINGS                                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+split 50% at 12% / rest at 16%, 4 coins        21-23 x 6.03 DD  -41% 2022  +33% | 24-26 x 2.93 DD  -13% worst-mo  -4% up-mo  82%
+split 50% at 12% / rest at 18%, 4 coins        21-23 x 9.07 DD  -23% 2022  +42% | 24-26 x 2.67 DD  -15% worst-mo  -4% up-mo  85%  <- beats live in both
+split 50% at 12% / rest at 20%, 4 coins        21-23 x 7.79 DD  -22% 2022  +24% | 24-26 x 2.51 DD  -17% worst-mo  -3% up-mo  85%
+split 50% at 12% / rest at 24%, 4 coins        21-23 x 6.17 DD  -23% 2022  +14% | 24-26 x 2.39 DD  -15% worst-mo  -3% up-mo  85%
+split 67% at 12% / rest at 16%, 5 coins        21-23 x 5.95 DD  -34% 2022  +30% | 24-26 x 2.60 DD  -20% worst-mo  -6% up-mo  91%
+split 67% at 12% / rest at 18%, 5 coins        21-23 x 6.74 DD  -34% 2022  +34% | 24-26 x 2.73 DD  -17% worst-mo  -5% up-mo  88%
+split 67% at 12% / rest at 20%, 5 coins        21-23 x 6.61 DD  -30% 2022  +31% | 24-26 x 2.59 DD  -19% worst-mo  -4% up-mo  88%
+split 67% at 12% / rest at 24%, 5 coins        21-23 x 6.45 DD  -24% 2022  +17% | 24-26 x 2.55 DD  -17% worst-mo  -4% up-mo  88%
+8 variants | beat live in 2021-23: 4 | in 2024-26: 3 | in both: 1
+PICK (2021-23 only): split 50% at 12% / rest at 18%, 4 coins
+  pick                                         21-23 x 9.07 DD  -23% 2022  +42% | 24-26 x 2.67 DD  -15% worst-mo  -4% up-mo  85%
+  2024-26 check: BEATS the live settings
+  live, +LUNA/FTT/SRM                          21-23 x 5.29 DD  -31% 2022   +1% | 24-26 x 2.46 DD  -15% worst-mo  -6% up-mo  88%
+  pick, +LUNA/FTT/SRM                          21-23 x 4.96 DD  -49% 2022  +15% | 24-26 x 2.35 DD  -14% worst-mo  -3% up-mo  85%  FAILS
+  live, fills 0.2% worse                       21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+  pick, fills 0.2% worse                       21-23 x 7.56 DD  -22% 2022  +37% | 24-26 x 2.49 DD  -15% worst-mo  -4% up-mo  85%  ok
+  VERDICT: rejected, live bot unchanged
+  anatomy LIVE SETTINGS 21-23: 1681 trades | TP: 1573 (+9.84, avg +1.8%) | time stop: 108 (-5.09, avg -11.5%) | with leg 2: 0 (avg +nan%, time stops 0) | worst -42.6%
+  anatomy LIVE SETTINGS 24-26: 884 trades | TP: 817 (+14.44, avg +1.8%) | time stop: 67 (-5.18, avg -7.2%) | with leg 2: 0 (avg +nan%, time stops 0) | worst -21.7%
+  anatomy extra leg 2: 1x at 24% 21-23: 1655 trades | TP: 1585 (+11.04, avg +1.9%) | time stop: 70 (-4.53, avg -9.9%) | with leg 2: 125 (avg -2.8%, time stops 34) | worst -38.1%
+  anatomy extra leg 2: 1x at 24% 24-26: 830 trades | TP: 778 (+16.42, avg +1.7%) | time stop: 52 (-6.14, avg -6.0%) | with leg 2: 67 (avg -1.5%, time stops 21) | worst -18.3%
+  anatomy split 50% at 12% / rest at 18%, 4 coins 21-23: 1633 trades | TP: 1582 (+13.57, avg +1.8%) | time stop: 51 (-5.50, avg -11.0%) | with leg 2: 386 (avg +0.3%, time stops 46) | worst -40.5%
+  anatomy split 50% at 12% / rest at 18%, 4 coins 24-26: 793 trades | TP: 759 (+22.39, avg +1.7%) | time stop: 34 (-7.22, avg -5.6%) | with leg 2: 172 (avg +0.5%, time stops 28) | worst -21.4%

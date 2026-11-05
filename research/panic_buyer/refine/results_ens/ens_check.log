@@ -1,0 +1,25 @@
+19 coins LIVE                                   engine.run x   15.0003 erun x   15.0003 trades 2565/2565 IDENTICAL
+19 coins 90% mode                               engine.run x  806.9361 erun x  806.9361 trades 554/554 IDENTICAL
+19 coins 10% mode                               engine.run x 2141.4892 erun x 2141.4892 trades 412/412 IDENTICAL
+19 coins 90% mode bot timing + pen              engine.run x  841.8402 erun x  841.8402 trades 557/557 IDENTICAL
+19 coins confluence 14%/+2.5% half/+5% 96h      engine.run x  632.8386 erun x  632.8386 trades 549/549 IDENTICAL
+19 coins 2 coins x50% partial 0.7               engine.run x  162.1680 erun x  162.1680 trades 966/966 IDENTICAL
+19 coins sleeves 0.5/0.5 vs weighted sum: max rel diff 0.0e+00 OK
+19 coins sleeves 0.7/0.3 vs weighted sum: max rel diff 4.9e-15 OK
+19 coins sleeves 0.3/0.7 vs weighted sum: max rel diff 3.1e-15 OK
+19 coins non-binding guardrails: IDENTICAL
+22 coins LIVE                                   engine.run x   13.6228 erun x   13.6228 trades 2855/2855 IDENTICAL
+   + liquidate, pens 0.2%: wrun x    7.3717 erun x    7.3717 IDENTICAL
+22 coins 90% mode                               engine.run x 1909.8856 erun x 1909.8856 trades 577/577 IDENTICAL
+   + liquidate, pens 0.2%: wrun x  560.4700 erun x  560.4700 IDENTICAL
+22 coins 10% mode                               engine.run x 2191.5494 erun x 2191.5494 trades 439/439 IDENTICAL
+   + liquidate, pens 0.2%: wrun x  901.3378 erun x  901.3378 IDENTICAL
+22 coins 90% mode bot timing + pen              engine.run x  805.7434 erun x  805.7434 trades 572/572 IDENTICAL
+   + liquidate, pens 0.2%: wrun x  254.9375 erun x  254.9375 IDENTICAL
+22 coins confluence 14%/+2.5% half/+5% 96h      engine.run x 1204.2271 erun x 1204.2271 trades 598/598 IDENTICAL
+22 coins 2 coins x50% partial 0.7               engine.run x   86.3106 erun x   86.3106 trades 1051/1051 IDENTICAL
+22 coins sleeves 0.5/0.5 vs weighted sum: max rel diff 0.0e+00 OK
+22 coins sleeves 0.7/0.3 vs weighted sum: max rel diff 4.8e-15 OK
+22 coins sleeves 0.3/0.7 vs weighted sum: max rel diff 4.1e-15 OK
+22 coins non-binding guardrails: IDENTICAL
+ALL CHECKS PASS

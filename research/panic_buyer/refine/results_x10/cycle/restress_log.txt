@@ -1,0 +1,25 @@
+  sanity {'C': np.float64(15.0), 'W': 1, 'depth': np.float64(0.04), 'tp': np.float64(0.015), 'hm': 2, 'cd': 0, 'N': 1, 'fmax': np.float64(1.0), 'lcd': 0, 'stop': 0.0, 'skip': 0.0, 'exit': 'plain', 'dual': 0.0}: same
+  sanity {'C': np.float64(15.0), 'W': 3, 'depth': np.float64(0.04), 'tp': np.float64(0.03), 'hm': 2, 'cd': 2, 'N': 3, 'fmax': 0.3333333333333333, 'lcd': 0, 'stop': 0.0, 'skip': 0.0, 'exit': 'plain', 'dual': 0.0}: same
+  sanity {'C': np.float64(15.0), 'W': 3, 'depth': np.float64(0.05), 'tp': np.float64(0.015), 'hm': 2, 'cd': 2, 'N': 3, 'fmax': 0.3333333333333333, 'lcd': 0, 'stop': 0.0, 'skip': 0.0, 'exit': 'plain', 'dual': 0.0}: same
+  sanity {'C': np.float64(15.0), 'W': 1, 'depth': np.float64(0.05), 'tp': np.float64(0.01), 'hm': 2, 'cd': 0, 'N': 3, 'fmax': 0.3333333333333333, 'lcd': 0, 'stop': 0.0, 'skip': 0.0, 'exit': 'plain', 'dual': 0.0}: same
+  sanity {'C': np.float64(15.0), 'W': 1, 'depth': np.float64(0.05), 'tp': np.float64(0.03), 'hm': 6, 'cd': 2, 'N': 1, 'fmax': np.float64(1.0), 'lcd': 0, 'stop': 0.0, 'skip': 0.0, 'exit': 'plain', 'dual': 0.0}: same
+  sanity {'C': np.float64(15.0), 'W': 3, 'depth': np.float64(0.05), 'tp': np.float64(0.015), 'hm': 4, 'cd': 2, 'N': 2, 'fmax': np.float64(0.5), 'lcd': 0, 'stop': 0.0, 'skip': 0.0, 'exit': 'plain', 'dual': 0.0}: same
+  sanity {'C': 15, 'W': 1, 'depth': 0.1, 'tp': 0.03, 'hm': 12, 'cd': 0, 'N': 2, 'fmax': 0.5, 'lcd': 0, 'stop': 0.15, 'skip': 0.0, 'exit': 'plain', 'dual': 0.0}: same
+  sanity {'C': 15, 'W': 1, 'depth': 0.1, 'tp': 0.03, 'hm': 6, 'cd': 0, 'N': 3, 'fmax': 0.3333333333333333, 'lcd': 0, 'stop': 0.15, 'skip': 0.3, 'exit': 'plain', 'dual': 0.0}: same
+  sanity {'C': 15, 'W': 1, 'depth': 0.08, 'tp': 0.015, 'hm': 6, 'cd': 0, 'N': 1, 'fmax': 1.0, 'lcd': 72, 'stop': 0.15, 'skip': 0.3, 'exit': 'wait', 'dual': 0.12}: same
+  sanity {'C': 15, 'W': 1, 'depth': 0.06, 'tp': 0.03, 'hm': 12, 'cd': 0, 'N': 2, 'fmax': 0.5, 'lcd': 72, 'stop': 0.15, 'skip': 0.0, 'exit': 'plain', 'dual': 0.12}: same
+  sanity {'C': 15, 'W': 3, 'depth': 0.1, 'tp': 0.015, 'hm': 6, 'cd': 0, 'N': 3, 'fmax': 0.3333333333333333, 'lcd': 72, 'stop': 0.0, 'skip': 0.0, 'exit': 'trail', 'dual': 0.12}: same
+  sanity {'C': 15, 'W': 1, 'depth': 0.08, 'tp': 0.015, 'hm': 12, 'cd': 0, 'N': 2, 'fmax': 0.5, 'lcd': 0, 'stop': 0.0, 'skip': 0.3, 'exit': 'plain', 'dual': 0.0}: same
+  done phase 1: 960 + 0 runs, 200s
+  done phase 1: 1920 + 0 runs, 203s
+  done phase 1: 2880 + 0 runs, 398s
+  done phase 1: 3840 + 0 runs, 409s
+  done phase 1: 4800 + 0 runs, 508s
+  done phase 1: 5760 + 0 runs, 521s
+  done phase 1: 6720 + 0 runs, 626s
+  done phase 1: 7680 + 0 runs, 645s
+  done phase 2: 7680 + 1728 runs, 998s
+  done phase 2: 7680 + 3456 runs, 1021s
+  done phase 2: 7680 + 5184 runs, 1219s
+  done phase 2: 7680 + 6912 runs, 1243s
+saved 7680 + 6912 runs

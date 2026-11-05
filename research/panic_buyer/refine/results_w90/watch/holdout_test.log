@@ -1,0 +1,10 @@
+1-min  F1 wr90 rule pick: 1x100%, d15 tp3.5 g35 hm96    21-23 +10.35%/mo wr  92.3% DD  -65% | 24-26  +7.07%/mo wr  91.8% DD  -37% | 25-26  +5.78%/mo wr  90.4% DD  -30% | trades 271/110 | worst trade -50.7%/-29.3%
+  stressed spec (19 coins here) keys ok: ['N', 'cd', 'cdx', 'depth', 'fmax', 'guard', 'hm', 'pen', 'spen', 'tp']
+1-min  F2 wr90 low-drop: 3x33%, d14 tp3 g35 hm96        21-23  +8.71%/mo wr  93.0% DD  -34% | 24-26  +5.23%/mo wr  92.4% DD  -22% | 25-26  +3.65%/mo wr  89.5% DD  -22% | trades 646/276 | worst trade -16.9%/-9.8%
+  stressed spec (19 coins here) keys ok: ['N', 'cd', 'cdx', 'depth', 'fmax', 'guard', 'hm', 'pen', 'spen', 'tp']
+1-min  F3 10% mode as a watch bot (d14 tp5 g35 hm48)    21-23 +16.01%/mo wr  81.6% DD  -63% | 24-26  +6.29%/mo wr  73.6% DD  -35% | 25-26  +3.58%/mo wr  66.7% DD  -35% | trades 316/121 | worst trade -56.6%/-22.7%
+  stressed spec (19 coins here) keys ok: ['N', 'cd', 'cdx', 'depth', 'fmax', 'guard', 'hm', 'pen', 'spen', 'tp']
+hourly F1 wr90 rule pick: 1x100%, d15 tp3.5 g35 hm96 [hourly bid, config only] 21-23 +11.14%/mo wr  91.5% DD  -62% | 24-26  +6.36%/mo wr  91.2% DD  -37% | 25-26  +5.89%/mo wr  92.2% DD  -22% | trades 260/102 | worst trade -47.9%/-27.3%
+hourly F2 wr90 low-drop: 3x33%, d14 tp3 g35 hm96 [hourly bid, config only] 21-23  +7.68%/mo wr  91.7% DD  -35% | 24-26  +4.85%/mo wr  91.5% DD  -21% | 25-26  +3.13%/mo wr  90.2% DD  -21% | trades 807/330 | worst trade -16.0%/-9.1%
+hourly F3 10% mode as a watch bot (d14 tp5 g35 hm48) [hourly bid, config only] 21-23 +15.03%/mo wr  81.1% DD  -61% | 24-26  +8.13%/mo wr  76.5% DD  -30% | 25-26  +6.08%/mo wr  75.0% DD  -29% | trades 297/115 | worst trade -54.1%/-21.7%
+holdout_candidate() -> F1 wr90 rule pick: 1x100%, d15 tp3.5 g35 hm96: {'N': 1, 'fmax': 1.0, 'depth': 0.15, 'tp': 0.035, 'guard': 0.35, 'hm': 96, 'cd': 24}, runner _runner

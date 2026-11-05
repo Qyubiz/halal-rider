@@ -1,0 +1,37 @@
+
+90% mode
+  normal    2021-23          win  93.8% | +13.17%/mo | max drop  -64.4% | worst trade  -50.3% of acct |  11.3 trades/mo
+  normal    2024-26          win  92.6% |  +6.89%/mo | max drop  -35.4% | worst trade  -27.3% of acct |   4.4 trades/mo
+  normal    since 2025       win  93.2% |  +5.80%/mo | max drop  -22.6% | worst trade  -11.8% of acct |   3.4 trades/mo
+  normal    2018-20 holdout  win  92.5% | +10.82%/mo | max drop  -66.3% | worst trade  -37.3% of acct |  10.0 trades/mo
+  normal years: 2021 +3038% 2022 +6% 2023 +158% 2024 +178% 2025 +151% 2026 +35%
+  worse     2021-23          win  93.4% |  +9.79%/mo | max drop  -65.9% | worst trade  -50.5% of acct |  11.0 trades/mo
+  worse     2024-26          win  92.1% |  +5.31%/mo | max drop  -37.5% | worst trade  -27.6% of acct |   4.2 trades/mo
+  worse     since 2025       win  92.6% |  +4.56%/mo | max drop  -22.7% | worst trade  -12.2% of acct |   3.1 trades/mo
+  worse     2018-20 holdout  win  92.0% |  +7.41%/mo | max drop  -69.9% | worst trade  -37.5% of acct |   9.7 trades/mo
+  worse years: 2021 +1530% 2022 -17% 2023 +112% 2024 +117% 2025 +114% 2026 +23%
+  stressed  2021-23          win  93.7% | +10.96%/mo | max drop  -65.0% | worst trade  -45.9% of acct |  11.9 trades/mo
+  stressed  2024-26          win  91.7% |  +5.49%/mo | max drop  -30.3% | worst trade  -19.1% of acct |   4.3 trades/mo
+  stressed  since 2025       win  92.6% |  +4.44%/mo | max drop  -22.7% | worst trade  -12.2% of acct |   3.1 trades/mo
+  stressed  2018-20 holdout  win  91.4% |  +6.00%/mo | max drop  -69.5% | worst trade  -37.5% of acct |   9.7 trades/mo
+  stressed years: 2021 +1724% 2022 +12% 2023 +107% 2024 +136% 2025 +108% 2026 +23%
+
+PICK kA4@0.20 tpScaled>=5 noB norearm
+  normal    2021-23          win  95.0% | +20.26%/mo | max drop  -59.8% | worst trade  -44.3% of acct |  11.2 trades/mo
+  normal    2024-26          win  90.6% |  +5.97%/mo | max drop  -37.6% | worst trade  -30.0% of acct |   4.1 trades/mo
+  normal    since 2025       win  92.8% |  +5.01%/mo | max drop  -29.7% | worst trade  -22.4% of acct |   3.2 trades/mo
+  normal    2018-20 holdout  win  90.8% |  +7.86%/mo | max drop  -67.9% | worst trade  -37.3% of acct |   8.5 trades/mo
+     2021-23: score>=4 (14% bid) 393 trades win 94.9% | score<=3 (20% bid) 11 trades win 100.0% | scaled TP (score>=5) 221 trades
+     2024-26: score>=4 (14% bid) 134 trades win 90.3% | score<=3 (20% bid) 5 trades win 100.0% | scaled TP (score>=5) 38 trades
+     holdout: score>=4 (14% bid) 290 trades win 90.3% | score<=3 (20% bid) 15 trades win 100.0% | scaled TP (score>=5) 110 trades
+  normal years: 2021 +15865% 2022 +25% 2023 +281% 2024 +144% 2025 +138% 2026 +21%
+  worse     2021-23          win  94.8% | +17.08%/mo | max drop  -62.8% | worst trade  -44.5% of acct |  10.7 trades/mo
+  worse     2024-26          win  90.1% |  +4.22%/mo | max drop  -39.7% | worst trade  -30.3% of acct |   3.9 trades/mo
+  worse     since 2025       win  90.5% |  +2.70%/mo | max drop  -37.8% | worst trade  -22.7% of acct |   2.9 trades/mo
+  worse     2018-20 holdout  win  90.1% |  +4.55%/mo | max drop  -70.2% | worst trade  -37.5% of acct |   8.1 trades/mo
+  worse years: 2021 +9448% 2022 -2% 2023 +210% 2024 +126% 2025 +96% 2026 -9%
+  stressed  2021-23          win  94.7% | +16.99%/mo | max drop  -64.0% | worst trade  -45.8% of acct |  11.5 trades/mo
+  stressed  2024-26          win  89.9% |  +3.80%/mo | max drop  -39.7% | worst trade  -30.3% of acct |   3.8 trades/mo
+  stressed  since 2025       win  90.3% |  +2.57%/mo | max drop  -37.8% | worst trade  -22.7% of acct |   2.9 trades/mo
+  stressed  2018-20 holdout  win  88.8% |  +1.61%/mo | max drop  -69.9% | worst trade  -37.5% of acct |   7.9 trades/mo
+  stressed years: 2021 +6786% 2022 +33% 2023 +209% 2024 +103% 2025 +93% 2026 -10%

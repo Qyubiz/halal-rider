@@ -1,0 +1,72 @@
+x10_velocity_grid3.py sha256 303d44ddf524106ad3ba310b1026ff70b768ad6997d93ac7c23c5cba8c9f87cb
+192 designs x 2 panels
+grid done in 551s
+
+######## SELECTION (2021-23 only): 36 of 192 designs eligible
+  N1 f0.7 | trail a3 | hm24 | flash3h8 | redip3/60m | lossCD 72h   21-23 +22.25%/mo DD  -47% | +LUNA/FTT/SRM +21.16%/mo DD  -57% | 2022  +66%
+  N1 f0.7 | trail a3 | hm24 | noflash | redip3/60m | lossCD 168h   21-23 +19.84%/mo DD  -48% | +LUNA/FTT/SRM +19.56%/mo DD  -52% | 2022  +21%
+  N1 f0.7 | trail a3 | hm24 | noflash | redip3/60m | lossCD 72h    21-23 +19.85%/mo DD  -50% | +LUNA/FTT/SRM +18.75%/mo DD  -59% | 2022   +9%
+  N1 f0.7 | trail a3 | hm12 | noflash | redip3/60m | lossCD 168h   21-23 +18.82%/mo DD  -35% | +LUNA/FTT/SRM +18.49%/mo DD  -47% | 2022  +72%
+  N1 f1 | trail a3 | hm12 | noflash | redip2/60m | lossCD 168h     21-23 +19.94%/mo DD  -46% | +LUNA/FTT/SRM +17.82%/mo DD  -60% | 2022 +207%
+  N1 f0.7 | trail a3 | hm12 | flash3h8 | redip3/60m | lossCD 168h  21-23 +18.32%/mo DD  -45% | +LUNA/FTT/SRM +17.16%/mo DD  -51% | 2022  +66%
+  N1 f0.7 | tp3 | hm12 | flash3h8 | redip3/60m | lossCD 168h       21-23 +16.77%/mo DD  -50% | +LUNA/FTT/SRM +17.03%/mo DD  -53% | 2022  +28%
+  N1 f0.7 | trail a3 | hm12 | flash3h8 | redip2/60m | lossCD 168h  21-23 +16.07%/mo DD  -43% | +LUNA/FTT/SRM +16.90%/mo DD  -52% | 2022  +36%
+
+######## ROUND-3 PICK (2021-23 rule inside a hindsight-located grid): N1 f0.7 | trail a3 | hm24 | flash3h8 | redip3/60m | lossCD 72h
+    19 coins                         24-26 +9.23%/mo DD  -32% | 25-26 +7.72%/mo DD  -27% | 21-23 +22.25%/mo DD  -47% | 2022 +66% | worst trade 24-26 -21.2% (HBARUSDT), 21-23 -39.6% (DOGEUSDT)
+                                     per year 2021 +18728% 2022 +66% 2023 +340% 2024 +291% 2025 +210% 2026 +61% | trades 24-26 588
+    +LUNA/FTT/SRM                    24-26 +9.23%/mo DD  -32% | 25-26 +7.72%/mo DD  -27% | 21-23 +21.16%/mo DD  -57% | 2022 -4% | worst trade 24-26 -21.2% (HBARUSDT), 21-23 -39.6% (DOGEUSDT)
+                                     per year 2021 +23567% 2022 -4% 2023 +340% 2024 +291% 2025 +210% 2026 +61% | trades 24-26 588
+    fills 0.1% worse                 24-26 +7.02%/mo DD  -35% | 25-26 +5.67%/mo DD  -27% | 21-23 +17.76%/mo DD  -48% | 2022 +9% | worst trade 24-26 -21.3% (HBARUSDT), 21-23 -39.6% (DOGEUSDT)
+                                     per year 2021 +8612% 2022 +9% 2023 +276% 2024 +198% 2025 +142% 2026 +36% | trades 24-26 568
+    fills 0.2% worse                 24-26 +5.59%/mo DD  -39% | 25-26 +4.59%/mo DD  -30% | 21-23 +14.13%/mo DD  -57% | 2022 -9% | worst trade 24-26 -21.4% (HBARUSDT), 21-23 -26.9% (NEARUSDT)
+                                     per year 2021 +3330% 2022 -9% 2023 +271% 2024 +136% 2025 +113% 2026 +24% | trades 24-26 558
+    fills 0.2% worse +LUNA/FTT/SRM   24-26 +5.59%/mo DD  -39% | 25-26 +4.59%/mo DD  -30% | 21-23 +13.82%/mo DD  -71% | 2022 -51% | worst trade 24-26 -21.4% (HBARUSDT), 21-23 -26.9% (NEARUSDT)
+                                     per year 2021 +5632% 2022 -51% 2023 +271% 2024 +136% 2025 +113% 2026 +24% | trades 24-26 558
+
+######## HINDSIGHT: top 12 of the round-3 grid by 19-coin 2024-26 %/month
+  N1 f1 | trail a3 | hm24 | flash3h8 | redip3/60m | lossCD 24h     24-26 +11.71%/mo DD  -39% | 25-26 +10.06%/mo DD  -31% | 21-23 +24.89%/mo DD  -60% | +LUNA/FTT/SRM 21-23 +13.05%/mo DD  -97%
+  N1 f1 | trail a3 | hm12 | flash3h8 | redip3/60m | lossCD off     24-26 +11.60%/mo DD  -32% | 25-26 +8.13%/mo DD  -30% | 21-23 +20.63%/mo DD  -74% | +LUNA/FTT/SRM 21-23 -14.30%/mo DD -100%
+  N1 f1 | trail a3 | hm12 | flash3h8 | redip3/60m | lossCD 24h     24-26 +11.60%/mo DD  -31% | 25-26 +9.49%/mo DD  -27% | 21-23 +22.19%/mo DD  -66% | +LUNA/FTT/SRM 21-23  +8.66%/mo DD  -99%
+  N1 f1 | trail a3 | hm12 | flash3h8 | redip3/60m | lossCD 72h     24-26 +11.54%/mo DD  -32% | 25-26 +9.40%/mo DD  -27% | 21-23 +22.04%/mo DD  -65% | +LUNA/FTT/SRM 21-23 +12.25%/mo DD  -92%
+  N1 f1 | trail a3 | hm12 | flash3h8 | redip2/60m | lossCD off     24-26 +11.22%/mo DD  -36% | 25-26 +8.05%/mo DD  -29% | 21-23 +20.57%/mo DD  -71% | +LUNA/FTT/SRM 21-23 -16.86%/mo DD -100%
+  N1 f1 | trail a3 | hm24 | flash3h8 | redip3/60m | lossCD off     24-26 +11.17%/mo DD  -39% | 25-26 +9.52%/mo DD  -31% | 21-23 +25.22%/mo DD  -67% | +LUNA/FTT/SRM 21-23 -11.32%/mo DD -100%
+  N1 f1 | trail a3 | hm24 | flash3h8 | redip3/60m | lossCD 72h     24-26 +11.15%/mo DD  -39% | 25-26 +9.69%/mo DD  -31% | 21-23 +20.20%/mo DD  -63% | +LUNA/FTT/SRM 21-23  -6.57%/mo DD -100%
+  N1 f0.7 | trail a3 | hm12 | flash3h8 | redip3/60m | lossCD off   24-26 +11.14%/mo DD  -28% | 25-26 +8.06%/mo DD  -28% | 21-23 +19.93%/mo DD  -73% | +LUNA/FTT/SRM 21-23  +6.07%/mo DD  -99%
+  N1 f1 | trail a3 | hm12 | flash3h8 | redip2/60m | lossCD 24h     24-26 +10.84%/mo DD  -34% | 25-26 +8.80%/mo DD  -27% | 21-23 +21.07%/mo DD  -60% | +LUNA/FTT/SRM 21-23  +6.60%/mo DD  -99%
+  N1 f1 | trail a3 | hm12 | flash3h8 | redip2/60m | lossCD 72h     24-26 +10.53%/mo DD  -36% | 25-26 +8.62%/mo DD  -27% | 21-23 +19.64%/mo DD  -59% | +LUNA/FTT/SRM 21-23  +9.89%/mo DD  -93%
+  N1 f1 | trail a3 | hm12 | flash3h8 | redip3/60m | lossCD 168h    24-26 +10.51%/mo DD  -36% | 25-26 +8.65%/mo DD  -27% | 21-23 +25.34%/mo DD  -60% | +LUNA/FTT/SRM 21-23 +22.46%/mo DD  -62%
+  N1 f1 | trail a3 | hm24 | flash3h8 | redip2/60m | lossCD 24h     24-26 +10.45%/mo DD  -39% | 25-26 +9.49%/mo DD  -30% | 21-23 +19.66%/mo DD  -60% | +LUNA/FTT/SRM 21-23  +8.67%/mo DD  -95%
+
+######## HINDSIGHT BEST (round 3): N1 f1 | trail a3 | hm24 | flash3h8 | redip3/60m | lossCD 24h
+    19 coins                         24-26 +11.71%/mo DD  -39% | 25-26 +10.06%/mo DD  -31% | 21-23 +24.89%/mo DD  -60% | 2022 -12% | worst trade 24-26 -30.4% (HBARUSDT), 21-23 -56.5% (DOGEUSDT)
+                                     per year 2021 +52999% 2022 -12% 2023 +535% 2024 +422% 2025 +390% 2026 +63% | trades 24-26 368
+    +LUNA/FTT/SRM                    24-26 +11.71%/mo DD  -39% | 25-26 +10.06%/mo DD  -31% | 21-23 +13.05%/mo DD  -97% | 2022 -94% | worst trade 24-26 -30.4% (HBARUSDT), 21-23 -83.5% (LUNAUSDT)
+                                     per year 2021 +82995% 2022 -94% 2023 +63% 2024 +422% 2025 +390% 2026 +63% | trades 24-26 368
+    fills 0.1% worse                 24-26 +8.48%/mo DD  -40% | 25-26 +6.71%/mo DD  -31% | 21-23 +19.44%/mo DD  -67% | 2022 -38% | worst trade 24-26 -30.5% (HBARUSDT), 21-23 -56.6% (DOGEUSDT)
+                                     per year 2021 +19061% 2022 -38% 2023 +406% 2024 +280% 2025 +208% 2026 +32% | trades 24-26 357
+    fills 0.2% worse                 24-26 +6.73%/mo DD  -45% | 25-26 +5.38%/mo DD  -31% | 21-23 +13.02%/mo DD  -71% | 2022 -48% | worst trade 24-26 -30.6% (HBARUSDT), 21-23 -53.9% (DOGEUSDT)
+                                     per year 2021 +3167% 2022 -48% 2023 +378% 2024 +188% 2025 +159% 2026 +20% | trades 24-26 353
+    fills 0.2% worse +LUNA/FTT/SRM   24-26 +6.73%/mo DD  -45% | 25-26 +5.38%/mo DD  -31% | 21-23 +5.09%/mo DD  -99% | 2022 -98% | worst trade 24-26 -30.6% (HBARUSDT), 21-23 -83.6% (LUNAUSDT)
+                                     per year 2021 +4937% 2022 -98% 2023 +378% 2024 +188% 2025 +159% 2026 +20% | trades 24-26 353
+
+######## HINDSIGHT BEST that survives LUNA/FTT/SRM (22-coin 2021-23 drop shallower than -95%): N1 f1 | trail a3 | hm12 | flash3h8 | redip3/60m | lossCD 72h
+    19 coins                         24-26 +11.54%/mo DD  -32% | 25-26 +9.40%/mo DD  -27% | 21-23 +22.04%/mo DD  -65% | 2022 +22% | worst trade 24-26 -24.5% (HBARUSDT), 21-23 -44.5% (XRPUSDT)
+                                     per year 2021 +27648% 2022 +22% 2023 +284% 2024 +466% 2025 +422% 2026 +34% | trades 24-26 417
+    +LUNA/FTT/SRM                    24-26 +11.54%/mo DD  -32% | 25-26 +9.40%/mo DD  -27% | 21-23 +12.25%/mo DD  -92% | 2022 -88% | worst trade 24-26 -24.5% (HBARUSDT), 21-23 -89.6% (LUNAUSDT)
+                                     per year 2021 +13261% 2022 -88% 2023 +284% 2024 +466% 2025 +422% 2026 +34% | trades 24-26 417
+    fills 0.1% worse                 24-26 +8.00%/mo DD  -40% | 25-26 +6.47%/mo DD  -27% | 21-23 +15.98%/mo DD  -70% | 2022 -19% | worst trade 24-26 -24.7% (HBARUSDT), 21-23 -44.6% (XRPUSDT)
+                                     per year 2021 +7513% 2022 -19% 2023 +236% 2024 +243% 2025 +283% 2026 +2% | trades 24-26 405
+    fills 0.2% worse                 24-26 +5.99%/mo DD  -40% | 25-26 +4.66%/mo DD  -31% | 21-23 +13.01%/mo DD  -78% | 2022 -39% | worst trade 24-26 -24.8% (HBARUSDT), 21-23 -42.7% (XRPUSDT)
+                                     per year 2021 +4750% 2022 -39% 2023 +176% 2024 +164% 2025 +194% 2026 -9% | trades 24-26 404
+    fills 0.2% worse +LUNA/FTT/SRM   24-26 +5.99%/mo DD  -40% | 25-26 +4.66%/mo DD  -31% | 21-23 +3.51%/mo DD  -97% | 2022 -95% | worst trade 24-26 -24.8% (HBARUSDT), 21-23 -89.6% (LUNAUSDT)
+                                     per year 2021 +2394% 2022 -95% 2023 +176% 2024 +164% 2025 +194% 2026 -9% | trades 24-26 404
+
+round-3 grid: 2024-26 %/month max 11.71, median 7.02; >= 10%: 16; of those surviving LUNA/FTT/SRM (22-coin 21-23 drop > -95%): 3; since 2025 max 10.06%/month
+  by sizing: N1 f1: 24-26 med +8.70 max +11.71, 22-coin 21-23 DD med -99% | N1 f0.7: 24-26 med +7.53 max +11.14, 22-coin 21-23 DD med -80% | N2: 24-26 med +5.76 max +7.22, 22-coin 21-23 DD med -57%
+  by exit: trail a3: 24-26 med +7.82 max +11.71, 22-coin 21-23 DD med -69% | tp3: 24-26 med +6.35 max +10.44, 22-coin 21-23 DD med -84%
+  by time stop: hm12: 24-26 med +7.14 max +11.60, 22-coin 21-23 DD med -80% | hm24: 24-26 med +6.98 max +11.71, 22-coin 21-23 DD med -74%
+  by flash: flash3h8: 24-26 med +7.82 max +11.71, 22-coin 21-23 DD med -76% | noflash: 24-26 med +6.49 max +9.39, 22-coin 21-23 DD med -79%
+  by re-entry: redip3/60m: 24-26 med +7.22 max +11.71, 22-coin 21-23 DD med -78% | redip2/60m: 24-26 med +6.90 max +11.22, 22-coin 21-23 DD med -79%
+  by loss cooldown: lossCD off: 24-26 med +7.84 max +11.60, 22-coin 21-23 DD med -94% | lossCD 24h: 24-26 med +7.13 max +11.71, 22-coin 21-23 DD med -86% | lossCD 72h: 24-26 med +7.05 max +11.54, 22-coin 21-23 DD med -80% | lossCD 168h: 24-26 med +6.26 max +10.51, 22-coin 21-23 DD med -57%
+done in 605s

@@ -1,0 +1,29 @@
+ck, all votes off (90% mode) (25s)
+  normal    2021-23          win  93.8% | +13.17%/mo | max drop  -64.4% | worst trade  -50.3% of acct |  11.3 trades/mo
+  normal    2024-26          win  92.6% |  +6.89%/mo | max drop  -35.4% | worst trade  -27.3% of acct |   4.4 trades/mo
+  normal    since 2025       win  93.2% |  +5.80%/mo | max drop  -22.6% | worst trade  -11.8% of acct |   3.4 trades/mo
+  worse     2021-23          win  93.4% |  +9.79%/mo | max drop  -65.9% | worst trade  -50.5% of acct |  11.0 trades/mo
+  worse     2024-26          win  92.1% |  +5.31%/mo | max drop  -37.5% | worst trade  -27.6% of acct |   4.2 trades/mo
+  worse     since 2025       win  92.6% |  +4.56%/mo | max drop  -22.7% | worst trade  -12.2% of acct |   3.1 trades/mo
+  stressed  2021-23          win  93.7% | +10.96%/mo | max drop  -65.0% | worst trade  -45.9% of acct |  11.9 trades/mo
+  stressed  2024-26          win  91.7% |  +5.49%/mo | max drop  -30.3% | worst trade  -19.1% of acct |   4.3 trades/mo
+  stressed  since 2025       win  92.6% |  +4.44%/mo | max drop  -22.7% | worst trade  -12.2% of acct |   3.1 trades/mo
+  normal    2018-20 holdout  win  92.5% | +10.82%/mo | max drop  -66.3% | worst trade  -37.3% of acct |  10.0 trades/mo
+  worse     2018-20 holdout  win  92.0% |  +7.41%/mo | max drop  -69.9% | worst trade  -37.5% of acct |   9.7 trades/mo
+  stressed  2018-20 holdout  win  91.4% |  +6.00%/mo | max drop  -69.5% | worst trade  -37.5% of acct |   9.7 trades/mo
+
+reference: m10_velocity_lib.vk MODE90
+  DIFF normal t mo: ck 0.068867 vk 0.068870
+  DIFF normal t tpm: ck 4.394342 vk 4.394521
+  DIFF normal s mo: ck 0.057962 vk 0.057966
+  DIFF normal s tpm: ck 3.371041 vk 3.371254
+  DIFF worse t mo: ck 0.053073 vk 0.053075
+  DIFF worse t tpm: ck 4.156810 vk 4.156979
+  DIFF worse s mo: ck 0.045568 vk 0.045571
+  DIFF worse s tpm: ck 3.140148 vk 3.140346
+  DIFF stressed t mo: ck 0.054904 vk 0.054906
+  DIFF stressed t tpm: ck 4.305268 vk 4.305443
+  DIFF stressed s mo: ck 0.044359 vk 0.044362
+  DIFF stressed s tpm: ck 3.140148 vk 3.140346
+12 metrics differ
+maxrss MB 2288.6484375
