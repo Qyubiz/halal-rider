@@ -1,0 +1,66 @@
+2021-23 trades: 1681 | TP 1573 sum ret*amt +9.84 | time stops 108 avg -11.5% sum -5.09
+
+same_h:
+bucket  trades avg_ret ts_share ts_avg  sum_ret_x_amt  avg_amt
+     1     608  +1.12%     5.1% -12.5%          2.186    0.391
+     2     292  +1.08%     6.2% -11.1%          1.049    0.349
+   3-4     372  +1.24%     3.8% -12.7%          1.361    0.349
+   5-6     209  +0.64%     8.1% -11.4%          0.332    0.317
+   7-8     200  +0.27%    14.0% -10.3%         -0.178    0.313
+
+prev24:
+bucket  trades avg_ret ts_share ts_avg  sum_ret_x_amt  avg_amt
+     0     396  +1.34%     4.5% -10.2%          2.349    0.451
+   1-3     582  +1.15%     5.8%  -8.8%          1.894    0.348
+   4-7     393  +0.25%     8.7% -15.5%         -0.555    0.295
+  8-15     306  +1.13%     7.2% -10.8%          1.031    0.322
+   16+       4  +1.30%     0.0%  +nan%          0.030    0.587
+
+open0:
+bucket  trades avg_ret ts_share ts_avg  sum_ret_x_amt  avg_amt
+     0     783  +1.03%     6.0% -11.8%          2.924    0.411
+   1-2     508  +0.81%     7.5% -10.1%          1.077    0.350
+   3-4     179  +1.10%     5.6% -14.0%          0.329    0.281
+   5-6     105  +0.23%     9.5% -14.7%          0.106    0.301
+   7-8      79  +1.82%     3.8%  -6.6%          0.242    0.164
+    9+      27  +2.49%     0.0%  +nan%          0.071    0.162
+
+inv0:
+bucket  trades avg_ret ts_share ts_avg  sum_ret_x_amt  avg_amt
+     0     783  +1.03%     6.0% -11.8%          2.924    0.411
+  <25%     456  +0.69%     8.1% -10.2%          0.728    0.352
+25-50%     216  +1.28%     5.1% -13.0%          0.812    0.305
+50-75%     103  +0.73%     6.8% -14.4%          0.114    0.273
+  >75%     123  +1.42%     4.9% -11.8%          0.172    0.181
+
+hours with the most fills (2021-23):
+  2021-01-04 09:00:00  fills  8  avg  +1.7%  time stops  0  sum ret*amt +0.015
+  2023-08-17 21:00:00  fills  8  avg  +1.3%  time stops  1  sum ret*amt +0.061
+  2022-08-19 06:00:00  fills  8  avg  -3.5%  time stops  5  sum ret*amt -0.152
+  2021-11-10 21:00:00  fills  8  avg  +1.4%  time stops  0  sum ret*amt +0.044
+  2021-05-12 23:00:00  fills  8  avg  +0.9%  time stops  1  sum ret*amt +0.019
+  2021-02-15 02:00:00  fills  8  avg  +1.3%  time stops  0  sum ret*amt +0.020
+  2023-06-10 04:00:00  fills  8  avg  -3.7%  time stops  5  sum ret*amt -0.159
+  2021-09-07 14:00:00  fills  8  avg  -1.6%  time stops  3  sum ret*amt -0.049
+  2021-01-15 16:00:00  fills  8  avg  +5.2%  time stops  0  sum ret*amt +0.040
+  2021-10-27 08:00:00  fills  8  avg  +1.8%  time stops  0  sum ret*amt +0.053
+  2021-11-26 08:00:00  fills  8  avg  +0.3%  time stops  1  sum ret*amt +0.010
+  2021-04-22 21:00:00  fills  7  avg  +1.8%  time stops  1  sum ret*amt +0.029
+
+fills per calendar day vs that day's sum ret*amt:
+  1-2 fills/day:  242 days, sum ret*amt +1.950, avg per day +0.0081, losing days 2%
+  3-5 fills/day:   87 days, sum ret*amt +1.071, avg per day +0.0123, losing days 16%
+  6-9 fills/day:   53 days, sum ret*amt +1.905, avg per day +0.0359, losing days 9%
+  10-99 fills/day:   50 days, sum ret*amt -0.176, avg per day -0.0035, losing days 26%
+
+B. second leg: share of 2021-23 trades whose price traded down to ref*(1-d2) before the exit, and a crude per-trade replay (profit per unit of the coin's budget, summed over trades x order size)
+  live (all money at 12%): sum ret*amt +4.750
+  replay check, w=1: sum +4.750 (should be close to live; differences = replay simplifications)
+  d2=16% w=0.50: leg2 filled  32.6% of trades | sum +3.992 | time stops 59 sum -2.841 | TP sum +6.834 | worst trade -41.3% of budget
+  d2=16% w=0.67: leg2 filled  32.6% of trades | sum +4.188 | time stops 77 sum -3.590 | TP sum +7.778 | worst trade -41.7% of budget
+  d2=18% w=0.50: leg2 filled  22.7% of trades | sum +4.161 | time stops 52 sum -2.152 | TP sum +6.313 | worst trade -40.5% of budget
+  d2=18% w=0.67: leg2 filled  22.7% of trades | sum +4.282 | time stops 72 sum -3.160 | TP sum +7.443 | worst trade -41.2% of budget
+  d2=20% w=0.50: leg2 filled  15.6% of trades | sum +3.702 | time stops 66 sum -2.213 | TP sum +5.915 | worst trade -39.8% of budget
+  d2=20% w=0.67: leg2 filled  15.6% of trades | sum +4.189 | time stops 76 sum -3.029 | TP sum +7.218 | worst trade -40.7% of budget
+  d2=24% w=0.50: leg2 filled   9.1% of trades | sum +3.737 | time stops 60 sum -1.750 | TP sum +5.486 | worst trade -38.1% of budget
+  d2=24% w=0.67: leg2 filled   9.1% of trades | sum +3.947 | time stops 80 sum -2.973 | TP sum +6.920 | worst trade -39.6% of budget

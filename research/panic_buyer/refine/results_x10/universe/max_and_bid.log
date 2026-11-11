@@ -1,0 +1,13 @@
+grid.csv 1512 max 24-26 %/mo 7.76 {'univ': 'U19+T20Q', 'mode': 'watch', 'N': 1, 'depth': 0.12, 'tp': 0.03, 'cd': 12, 'hm': 48}
+grid2.csv 1080 max 24-26 %/mo 7.42 {'univ': 'L30T', 'mode': 'watch', 'N': 1, 'depth': 0.15, 'tp': 0.05, 'cd': 24, 'hm': 48}
+grid3.csv 1536 max 24-26 %/mo 8.52 {'univ': 'L50T', 'mode': 'watch', 'N': 1, 'depth': 0.15, 'tp': 0.05, 'cd': 12, 'hm': 48}
+grid4.csv 864 max 24-26 %/mo 11.04 {'univ': 'U19L50T+g35', 'mode': 'watch', 'N': 1, 'depth': 0.14, 'tp': 0.05, 'cd': 24, 'hm': 48}
+grid5.csv 192 max 24-26 %/mo 5.99 {'univ': 'B30k10', 'mode': 'watch', 'N': 1, 'depth': 0.15, 'tp': 0.03, 'cd': 24, 'hm': 96}
+plateau_U19L50T.csv 135 max 11.04 {'depth': 0.14, 'tp': 0.05, 'cd': 24.0, 'g': 0.35, 'mo2426': 0.1104147167928495, 'dd2426': -0.2965048775592023, 'mo2526': 0.0855664089515935, 'mo2123': 0.1470634411896294, 'dd2123': -0.6275615846157241}
+plateau_L40T.csv 135 max 11.45 {'depth': 0.145, 'tp': 0.045, 'cd': 6.0, 'g': 0.3, 'mo2426': 0.1144886471122377, 'dd2426': -0.2141610170647278, 'mo2526': 0.0988054459876548, 'mo2123': 0.0998142898921006, 'dd2123': -0.4832311648321217}
+variants in grids+plateaus: 5454
+H4 settings, bid mode: 24-26 +8.19%/mo DD  -35% | 25-26 +6.88%/mo DD  -35% | 21-23 +14.69%/mo DD  -61%
+H4 settings, watch mode: 24-26 +11.04%/mo DD  -30% | 25-26 +8.56%/mo DD  -26% | 21-23 +14.71%/mo DD  -63%
+H4 settings, watch, N2x50%: 24-26 +7.80%/mo DD  -25% | 25-26 +5.73%/mo DD  -23% | 21-23 +12.61%/mo DD  -48%
+H4 settings without crash guard: 24-26 +9.65%/mo DD  -33% | 25-26 +6.22%/mo DD  -33% | 21-23 +21.27%/mo DD  -61%
+H4 settings on the 19 coins only (guard 35%): 24-26 +10.51%/mo DD  -30% | 25-26 +6.89%/mo DD  -28% | 21-23 +17.04%/mo DD  -61%

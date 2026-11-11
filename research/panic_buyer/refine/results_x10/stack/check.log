@@ -1,0 +1,41 @@
+dead=False live                               switches off == engine.run: True
+dead=False N2 cap50 tp3 cd3                   switches off == engine.run: True
+dead=False N1 cap100 tp3 cd0 tpwait3          switches off == engine.run: True
+dead=False N2 cap50 no resting tp, tpwait4    switches off == engine.run: True
+dead=False N3 part .5 tp2 5%                  switches off == engine.run: True
+dead=False N2 trail                           switches off == engine.run: True
+dead=False mtp_now pen .002                   switches off == engine.run: True
+dead=False BTC-falling arrays                 switches off == engine.run: True
+dead=False slip vector                        switches off == engine.run: True
+dead=False ladder live 50/18                  ladder == r3_ladder.lrun: True
+dead=False ladder N2 cap50 67/16 cd2          ladder == r3_ladder.lrun: True
+dead=False ladder N1 cap100 50/20 tpwait3     ladder == r3_ladder.lrun: True
+dead=False ladder N2 no rest mtp pen          ladder == r3_ladder.lrun: True
+dead=False ladder part/tp2                    ladder == r3_ladder.lrun: True
+dead=False tpf .10 floor 1.5%                 tpfm=2 == r3_tphigh.trun: True
+dead=False tpf .20 no floor N2                tpfm=2 == r3_tphigh.trun: True
+dead=False tpf .15 floor 3% cd2 tpwait2       tpfm=2 == r3_tphigh.trun: True
+dead=True  live                               switches off == engine.run: True
+dead=True  N2 cap50 tp3 cd3                   switches off == engine.run: True
+dead=True  N1 cap100 tp3 cd0 tpwait3          switches off == engine.run: True
+dead=True  N2 cap50 no resting tp, tpwait4    switches off == engine.run: True
+dead=True  N3 part .5 tp2 5%                  switches off == engine.run: True
+dead=True  N2 trail                           switches off == engine.run: True
+dead=True  mtp_now pen .002                   switches off == engine.run: True
+dead=True  BTC-falling arrays                 switches off == engine.run: True
+dead=True  slip vector                        switches off == engine.run: True
+dead=True  ladder live 50/18                  ladder == r3_ladder.lrun: True
+dead=True  ladder N2 cap50 67/16 cd2          ladder == r3_ladder.lrun: True
+dead=True  ladder N1 cap100 50/20 tpwait3     ladder == r3_ladder.lrun: True
+dead=True  ladder N2 no rest mtp pen          ladder == r3_ladder.lrun: True
+dead=True  ladder part/tp2                    ladder == r3_ladder.lrun: True
+dead=True  tpf .10 floor 1.5%                 tpfm=2 == r3_tphigh.trun: True
+dead=True  tpf .20 no floor N2                tpfm=2 == r3_tphigh.trun: True
+dead=True  tpf .15 floor 3% cd2 tpwait2       tpfm=2 == r3_tphigh.trun: True
+A pens: ret [0.010945072969999803] want 0.010945072970000025 -> True
+B tpfm=1 market buy: target 88.0136, sold at hour [4.0] (open 88.5 >= target) -> True
+B tpfm=1 limit fill keeps +1.5%: exit hour [2.0] ret [0.012971014999999975] -> True
+C tpf after leg 2: avg 84.894 target 86.405; sold at hour [3.0] at the 86.5 open -> True
+D release: equity hour 2 same True; B leg-1 money with release +0.0196 vs without +0.0000
+D release: B bought only with release -> True
+ALL CHECKS PASS

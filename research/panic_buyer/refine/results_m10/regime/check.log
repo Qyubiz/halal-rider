@@ -1,0 +1,10 @@
+90% mode = {'N': 1, 'fmax': 1.0, 'depth': 0.14, 'tp': 0.025, 'hm': 96, 'cd': 3, 'guard': 0.35}
+[d] normal          d: WR  93.8% +13.17%/mo DD  -64% wt  -50% 11.3tr/mo (25L) | t: WR  92.6%  +6.89%/mo DD  -35% wt  -27%  4.4tr/mo (11L) | s: WR  93.2%  +5.80%/mo DD  -23% wt  -12%  3.4tr/mo (5L)
+[d] never-true rule gives identical equity: True
+[d] fills 0.2% worse d: WR  93.4%  +9.79%/mo DD  -66% wt  -50% 11.0tr/mo (26L) | t: WR  92.1%  +5.31%/mo DD  -38% wt  -28%  4.2tr/mo (11L) | s: WR  92.6%  +4.56%/mo DD  -23% wt  -12%  3.1tr/mo (5L)
+[d] w90_wr90_lib.evaluate: WR 93.8/92.6/93.2 %/mo +13.17/+6.89/+5.80 DD -64/-35/-23
+[dx] bot timing + fills 0.2% worse + LUNA/FTT/SRM d: WR  93.7% +10.96%/mo DD  -65% wt  -46% 11.9tr/mo (27L) | t: WR  91.7%  +5.49%/mo DD  -30% wt  -19%  4.3tr/mo (12L) | s: WR  92.6%  +4.44%/mo DD  -23% wt  -12%  3.1tr/mo (5L)
+[h] normal          h: WR  92.5% +10.82%/mo DD  -66% wt  -37% 10.0tr/mo (27L)
+[h] never-true rule gives identical equity: True
+[h] fills 0.2% worse h: WR  92.0%  +7.41%/mo DD  -70% wt  -38%  9.7tr/mo (28L)
+done 15s

@@ -1,0 +1,56 @@
+
+90% mode
+  normal   2021-23    WR  93.8% | +13.17%/mo | drop  -64.4% | worst trade  -50.3% acct |  11.3 tr/mo
+  normal   2024-26    WR  92.6% |  +6.89%/mo | drop  -35.4% | worst trade  -27.3% acct |   4.4 tr/mo
+  normal   since 2025 WR  93.2% |  +5.80%/mo | drop  -22.6% | worst trade  -11.8% acct |   3.4 tr/mo
+  normal   2018-20    WR  92.5% | +10.82%/mo | drop  -66.3% | worst trade  -37.3% acct |  10.0 tr/mo
+  worse    2021-23    WR  93.4% |  +9.79%/mo | drop  -65.9% | worst trade  -50.5% acct |  11.0 tr/mo
+  worse    2024-26    WR  92.1% |  +5.31%/mo | drop  -37.5% | worst trade  -27.6% acct |   4.2 tr/mo
+  worse    since 2025 WR  92.6% |  +4.56%/mo | drop  -22.7% | worst trade  -12.2% acct |   3.1 tr/mo
+  worse    2018-20    WR  92.0% |  +7.41%/mo | drop  -69.9% | worst trade  -37.5% acct |   9.7 tr/mo
+  stressed 2021-23    WR  93.7% | +10.96%/mo | drop  -65.0% | worst trade  -45.9% acct |  11.9 tr/mo
+  stressed 2024-26    WR  91.7% |  +5.49%/mo | drop  -30.3% | worst trade  -19.1% acct |   4.3 tr/mo
+  stressed since 2025 WR  92.6% |  +4.44%/mo | drop  -22.7% | worst trade  -12.2% acct |   3.1 tr/mo
+
+PICK B wrgate g0.93 L12 M
+  normal   2021-23    WR  94.5% | +17.10%/mo | drop  -64.4% | worst trade  -50.3% acct |  11.6 tr/mo
+  normal   2024-26    WR  92.1% |  +5.48%/mo | drop  -43.9% | worst trade  -30.0% acct |   3.8 tr/mo
+  normal   since 2025 WR  91.2% |  +3.85%/mo | drop  -29.7% | worst trade  -22.4% acct |   2.6 tr/mo
+  normal   2018-20    WR  91.3% |  +5.01%/mo | drop  -49.6% | worst trade  -26.5% acct |   5.4 tr/mo
+  worse    2021-23    WR  95.3% |  +9.34%/mo | drop  -54.4% | worst trade  -38.0% acct |  13.5 tr/mo
+  worse    2024-26    WR  91.7% |  +3.73%/mo | drop  -45.0% | worst trade  -30.3% acct |   3.2 tr/mo
+  worse    since 2025 WR  90.9% |  +2.15%/mo | drop  -30.5% | worst trade  -22.7% acct |   2.0 tr/mo
+  worse    2018-20    WR  91.8% |  +2.65%/mo | drop  -53.3% | worst trade  -26.8% acct |   4.7 tr/mo
+  stressed 2021-23    WR  94.6% |  +9.01%/mo | drop  -54.4% | worst trade  -45.4% acct |   9.9 tr/mo
+  stressed 2024-26    WR  91.0% |  +3.25%/mo | drop  -45.0% | worst trade  -30.3% acct |   3.3 tr/mo
+  stressed since 2025 WR  90.9% |  +1.83%/mo | drop  -30.5% | worst trade  -22.7% acct |   2.0 tr/mo
+
+PICK robustness (normal fills, information only):
+  rebalance day 15  2021-23    WR  94.1% | +18.20%/mo | drop  -64.4% | worst trade  -50.3% acct |  11.3 tr/mo
+  rebalance day 15  2024-26    WR  91.2% |  +4.88%/mo | drop  -41.3% | worst trade  -30.0% acct |   3.7 tr/mo
+  rebalance day 15  since 2025 WR  89.1% |  +3.14%/mo | drop  -29.7% | worst trade  -22.4% acct |   2.5 tr/mo
+  start 2021-01-15  2021-23    WR  94.6% | +16.83%/mo | drop  -64.4% | worst trade  -50.3% acct |  11.4 tr/mo
+  start 2021-01-15  2024-26    WR  92.1% |  +5.48%/mo | drop  -43.9% | worst trade  -30.0% acct |   3.8 tr/mo
+  start 2021-01-15  since 2025 WR  91.2% |  +3.85%/mo | drop  -29.7% | worst trade  -22.4% acct |   2.6 tr/mo
+
+months per sleeve by year (2018-20 holdout, normal fills):
+col_0  cash  m90  mr  reg  vel
+row_0                         
+2017      0    1   0    0    0
+2018      0   12   0    0    0
+2019      8    0   1    3    0
+2020      9    0   0    2    1
+trades taken per sleeve (whole run): m90 143 (93.7% won); vel 15 (86.7% won); reg 45 (88.9% won); mr 23 (87.0% won)
+last 6 monthly choices: 2020-07 cash, 2020-08 reg, 2020-09 reg, 2020-10 vel, 2020-11 cash, 2020-12 cash
+
+months per sleeve by year (2021-26, normal fills):
+col_0  m90  mr  reg  vel
+row_0                   
+2021     1   1    0   10
+2022     0   0    9    3
+2023     2   0   10    0
+2024     8   0    4    0
+2025     1   0    6    5
+2026     6   0    4    0
+trades taken per sleeve (whole run): m90 106 (94.3% won); vel 240 (92.9% won); reg 135 (94.1% won); mr 64 (96.9% won)
+last 6 monthly choices: 2026-05 reg, 2026-06 reg, 2026-07 m90, 2026-08 reg, 2026-09 m90, 2026-10 m90

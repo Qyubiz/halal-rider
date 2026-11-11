@@ -1,0 +1,9 @@
+designs searched: A 54 + B 84
+5 designs pass (literal rule)
+B1 S2c 24h-10% +1% 96h pm0 armx0.02 0.2x5            avg of 5 versions +14.88%/mo [+14.19 +15.83 +14.12 +16.72 +13.53] WR 95.2 worse WR 94.8 dd -54.3 worse dd -60.4
+B1 S2c 24h-10% +1% 96h pm0 armx0.05 0.2x5            avg of 5 versions +17.96%/mo [+17.76 +19.16 +15.82 +19.98 +17.06] WR 95.7 worse WR 95.1 dd -54.3 worse dd -63.5
+B2 S2c pm0 armx0.08 0.2x5                            avg of 5 versions +17.01%/mo [+17.03 +16.74 +16.30 +18.74 +16.25] WR 95.7 worse WR 95.0 dd -54.3 worse dd -62.7
+B2 S2c pm0 armx0.05 0.2x5 watch                      avg of 5 versions +17.82%/mo [+17.78 +17.87 +17.14 +19.28 +17.03] WR 95.6 worse WR 95.0 dd -54.3 worse dd -62.9
+B2 S2d pm0 armx0.08 0.2x5                            avg of 5 versions +17.45%/mo [+17.31 +17.40 +16.82 +19.20 +16.53] WR 94.5 worse WR 93.9 dd -55.6 worse dd -64.3
+PICK: B1 S2c 24h-10% +1% 96h pm0 armx0.05 0.2x5 {"s2": {"ref": 24, "d2": 0.1, "tp2": 0.01, "hm2": 96, "cd2": 24, "fs2": 0.2, "n2": 5}, "pm": 0, "armx": 0.05, "watch": 0}
+5s

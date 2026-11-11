@@ -1,0 +1,14 @@
+lrun, ladder off, dead=False pen=0.0 mtp=False 21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%  identical to engine.run: True
+lrun, ladder off, dead=True pen=0.0 mtp=False  21-23 x 5.22 DD  -31% 2022   +1% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%  identical to engine.run: True
+lrun, ladder off, dead=False pen=0.002 mtp=False 21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%  identical to engine.run: True
+lrun, ladder off, dead=True pen=0.002 mtp=False 21-23 x 3.58 DD  -32% 2022  -16% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%  identical to engine.run: True
+lrun, ladder off, dead=False pen=0.0 mtp=True  21-23 x 4.73 DD  -30% 2022  +20% | 24-26 x 2.66 DD  -15% worst-mo  -3% up-mo  88%  identical to engine.run: True
+lrun, ladder off, dead=True pen=0.0 mtp=True   21-23 x 5.69 DD  -34% 2022  +20% | 24-26 x 2.66 DD  -15% worst-mo  -3% up-mo  88%  identical to engine.run: True
+lrun with d2=99.9% and w=1 identical: True
+  1 split, cap 25%: trades 1, leg2 [1.0], exit hour [2.0], budget [0.25], ret [0.012971014999999975] (want 0.012971014999999975) -> ok
+  2 both legs in the fill hour: exit hour [1.0], ret [0.016879483439578902] (want 0.016879483439578902) -> ok
+  3 leg 2 not reached: exit hour [2.0], amt [0.13333333333333333] (want 0.13333333333333333), equity after 1.001729468667 (want 1.001729468667) -> ok
+  4 leg 2 at hour 3 + time stop from leg 1: exit hour [4.0] why [1.0] ret [-0.05972151903547651] (want -0.05972151903547673) -> ok
+  5 two coins, cap 20%: budgets [0.2, 0.2], leg-1 money [0.1, 0.1] -> ok
+  6 mtp_now market buy, take-profit in the buy hour: exit hour [0.0] ret [0.012971014999999975] (want 0.012971014999999975) -> ok
+  7 mtp_now, both legs in the buy hour: exit hour [1.0] leg2 [1.0] -> ok

@@ -1,0 +1,3 @@
+idea,variants,beat_design,beat_test,beat_both,pick,passes,pick_d_mult,pick_t_mult,pick_d_dd,pick_t_dd,base_d_mult,base_t_mult,base_d_dd,base_t_dd,check +LUNA/FTT/SRM,check fills 0.2% worse
+r2 losers H1: break-even target after X hours,8,4,0,0,break-even +0.5% after 6h,False,6.350332192250265,2.55216134926026,-0.2934897749607092,-0.1622395769757105,5.749960679975606,2.608768648326897,-0.2923819336224197,-0.1628454245693458,False,False
+r2 losers H2: stale-loser exit at hour X,8,8,0,0,stale exit at 18h if 3%..10% under,False,6.621445477851328,2.193724619999355,-0.23975316226807808,-0.15491250311311444,5.749960679975606,2.608768648326897,-0.2923819336224197,-0.1628454245693458,False,False

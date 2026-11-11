@@ -1,0 +1,29 @@
+90% mode     normal         vk x806.936 fk x806.936 trades 554/554 IDENTICAL (4.58s)
+90% mode     worse          vk x164.236 fk x164.236 trades 534/534 IDENTICAL (0.08s)
+90% mode     stressed       vk x254.937 fk x254.937 trades 572/572 IDENTICAL (0.12s)
+90% mode     holdout        vk x75.8687 fk x75.8687 trades 391/391 IDENTICAL (0.04s)
+90% mode     holdout worse  vk x22.7345 fk x22.7345 trades 380/380 IDENTICAL (0.02s)
+velocity U1  normal         vk x9357.06 fk x9357.06 trades 640/640 IDENTICAL (0.18s)
+velocity U1  worse          vk x1259.36 fk x1259.36 trades 607/607 IDENTICAL (0.12s)
+velocity U1  stressed       vk x832.54 fk x832.54 trades 641/641 IDENTICAL (0.26s)
+velocity U1  holdout        vk x104.093 fk x104.093 trades 416/416 IDENTICAL (0.04s)
+velocity U1  holdout worse  vk x26.0196 fk x26.0196 trades 405/405 IDENTICAL (0.03s)
+
+90% mode through fk (win / %/month / worst drop / worst trade % acct / trades per month)
+  normal    2021-23     93.8 +13.17  -64.4  -50.3  11.3
+  normal    2024-26     92.6  +6.89  -35.4  -27.3   4.4
+  normal    since 2025  93.2  +5.80  -22.6  -11.8   3.4
+  normal    2018-20     92.5 +10.82  -66.3  -37.3  10.0
+  worse     2021-23     93.4  +9.79  -65.9  -50.5  11.0
+  worse     2024-26     92.1  +5.31  -37.5  -27.6   4.2
+  worse     since 2025  92.6  +4.56  -22.7  -12.2   3.1
+  worse     2018-20     92.0  +7.41  -69.9  -37.5   9.7
+  stressed  2021-23     93.7 +10.96  -65.0  -45.9  11.9
+  stressed  2024-26     91.7  +5.49  -30.3  -19.1   4.3
+  stressed  since 2025  92.6  +4.44  -22.7  -12.2   3.1
+  stressed  2018-20     91.4  +6.00  -69.5  -37.5   9.7
+guardrails {'hs': 0.2}: ens x355.725 fk x355.725 trades 643/643 IDENTICAL
+guardrails {'killm': 0.3}: ens x450.101 fk x450.101 trades 520/520 IDENTICAL
+guardrails {'cln': 2, 'clT': 48}: ens x877.106 fk x877.106 trades 553/553 IDENTICAL
+guardrails {'hs': 0.15, 'zcap': 0.05}: ens x19.1432 fk x19.1432 trades 1368/1368 IDENTICAL
+guardrails {'hs': 0.2, 'killm': 0.3, 'cln': 2, 'clT': 48}: ens x337.358 fk x337.358 trades 596/596 IDENTICAL

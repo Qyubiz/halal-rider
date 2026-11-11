@@ -1,0 +1,13 @@
+12/20 w33:67 H1 cap100% tp2.5 hm336 cd24 g35                   med +13.48 minWR 98.5 | +LUNA/FTT/SRM +2.87%/mo dd -94% WR 98.8 worst trade -94% | stressed -0.87 dd -96%
+12/20 w33:67 H1 cap100% tp2 hm168 cd3 g0                       med +13.47 minWR 97.7 | +LUNA/FTT/SRM -23.90%/mo dd -100% WR 97.8 worst trade -100% | stressed -24.29 dd -100%
+12/20 w33:67 H1 cap100% tp2 hm336 cd3 g0                       med +13.42 minWR 99.0 | +LUNA/FTT/SRM -22.04%/mo dd -100% WR 98.7 worst trade -100% | stressed -25.37 dd -100%
+12/18/25 w20:30:50 H1 cap100% tp4 hm720 cd3 g35                med +13.10 minWR 99.0 | +LUNA/FTT/SRM +13.92%/mo dd -55% WR 99.1 worst trade -38% | stressed +12.13 dd -55%
+12/18/25 w20:30:50 H1 cap100% tp4 hm720 cd3 g0                 med +12.90 minWR 98.8 | +LUNA/FTT/SRM -20.75%/mo dd -100% WR 98.9 worst trade -100% | stressed -21.19 dd -100%
+13/21 w33:67 H1 cap100% tp4 hm336 cd3 g0                       med +12.68 minWR 97.2 | +LUNA/FTT/SRM -19.05%/mo dd -100% WR 97.3 worst trade -100% | stressed +9.67 dd -63%
+13/21 w33:67 H1 cap100% tp4 hm336 cd3 g35                      med +12.67 minWR 97.1 | +LUNA/FTT/SRM +16.45%/mo dd -63% WR 97.5 worst trade -46% | stressed +9.63 dd -63%
+12/18/25 w20:30:50 H1 cap100% tp4 hm720 cd24 g35               med +12.66 minWR 99.5 | +LUNA/FTT/SRM +1.70%/mo dd -94% WR 99.1 worst trade -94% | stressed +0.58 dd -95%
+12/20 w33:67 H1 cap100% tp2 hm336 cd3 g35 be0.3@168h           med +12.49 minWR 97.8 | +LUNA/FTT/SRM +13.83%/mo dd -54% WR 99.3 worst trade -47% | stressed +9.44 dd -61%
+12/20 w33:67 H1 cap100% tp2 hm168 cd3 g35                      med +12.47 minWR 97.7 | +LUNA/FTT/SRM +13.50%/mo dd -62% WR 98.1 worst trade -39% | stressed +9.81 dd -61%
+
+FINAL PICK (2021-23 only): 12/18/25 w20:30:50 H1 cap100% tp4 hm720 cd3 g35
+  spec {'legs': ((0.12, 2), (0.18, 3), (0.25, 5)), 'H': 1, 'fmax': 1.0, 'tp': 0.04, 'hm': 720, 'cd': 3, 'guard': 0.35}

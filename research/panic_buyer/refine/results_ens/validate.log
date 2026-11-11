@@ -1,0 +1,120 @@
+Per period (trades by entry hour; WR includes positions open at the end, marked at the last close)
+design                                       pan 21-23:     %mo      WR      DD      PF worstmo worsttr       n    size | 24-26:     %mo      WR      DD      PF worstmo worsttr       n    size | 25-:     %mo      WR      DD      PF worstmo worsttr       n    size
+90% mode                                     19  21-23:    13.2    93.8   -64.4     2.2   -30.2   -50.3     406   100.0 | 24-26:     6.9    92.6   -35.4     3.2   -11.8   -27.3     148   100.0 | 25-:     5.8    93.2   -22.6     4.2   -11.8   -11.8      73   100.0
+90% mode                                     22  21-23:    15.7    93.7   -64.4     2.4   -30.2   -50.3     426   100.0 | 24-26:     6.9    92.6   -35.4     3.2   -11.8   -27.3     148   100.0 | 25-:     5.8    93.2   -22.6     4.2   -11.8   -11.8      73   100.0
+90% mode                                     22 STRESS 21-23:    11.0    93.7   -65.0     2.0   -33.2   -45.9     427   100.0 | 24-26:     5.5    91.7   -30.3     2.7   -12.2   -19.1     145   100.0 | 25-:     4.4    92.6   -22.7     3.3   -12.2   -12.2      68   100.0
+10% mode                                     19  21-23:    15.0    81.1   -60.6     2.1   -20.5   -54.1     297   100.0 | 24-26:     8.1    76.5   -29.7     3.1   -15.7   -21.7     115   100.0 | 25-:     6.1    75.0   -28.7     3.1   -10.6   -11.2      56   100.0
+10% mode                                     22  21-23:    15.1    80.9   -70.2     2.0   -18.3   -54.1     324   100.0 | 24-26:     8.1    76.5   -29.7     3.1   -15.7   -21.7     115   100.0 | 25-:     6.1    75.0   -28.7     3.1   -10.6   -11.2      56   100.0
+10% mode                                     22 STRESS 21-23:    12.2    79.9   -74.5     1.8   -42.7   -44.5     318   100.0 | 24-26:     6.5    76.1   -29.8     2.4   -16.3   -20.7     113   100.0 | 25-:     4.6    73.2   -29.0     2.3   -14.1   -13.4      56   100.0
+ARCH 30/70 (no new guardrails)               19  21-23:    14.6    88.5   -61.7     2.1   -19.2   -39.1     703    47.0 | 24-26:     7.9    85.6   -25.7     3.1   -12.9   -14.2     263    47.7 | 25-:     6.0    85.3   -25.7     3.3    -9.2    -7.7     129    47.5
+ARCH 30/70 (no new guardrails)               22  21-23:    15.5    88.1   -61.8     2.0   -18.7   -38.4     750    47.6 | 24-26:     7.9    85.6   -25.7     3.1   -12.9   -14.2     263    47.7 | 25-:     6.0    85.3   -25.7     3.3    -9.2    -7.7     129    47.5
+ARCH 30/70 (no new guardrails)               22 STRESS 21-23:    12.0    87.8   -66.3     1.8   -39.7   -31.6     744    47.0 | 24-26:     6.3    84.9   -26.3     2.5   -13.5   -13.5     258    47.7 | 25-:     4.6    83.9   -26.1     2.5   -13.5    -9.4     124    48.2
+ARCH + PICK X15 Y25 S25 N2 T72               19  21-23:    12.0    86.0   -41.5     1.9   -23.5   -19.9     666    45.4 | 24-26:     3.6    82.1   -44.9     1.6   -24.0   -17.6     263    47.2 | 25-:     2.1    80.9   -34.9     1.5   -24.0   -17.6     131    47.5
+ARCH + PICK X15 Y25 S25 N2 T72               22  21-23:    11.8    85.8   -46.1     1.8   -33.6   -20.0     690    45.6 | 24-26:     3.6    82.1   -44.9     1.6   -24.0   -17.6     263    47.2 | 25-:     2.1    80.9   -34.9     1.5   -24.0   -17.6     131    47.5
+ARCH + PICK X15 Y25 S25 N2 T72               22 STRESS 21-23:    10.1    86.5   -56.7     1.7   -35.6   -18.9     704    45.6 | 24-26:     2.0    81.6   -46.3     1.4   -24.3   -17.7     261    47.0 | 25-:     0.7    79.5   -35.4     1.2   -24.3   -17.7     127    48.1
+ARCH + strictest X15 Y20 S25 Z10 N2 T72      19  21-23:     8.0    84.5   -36.1     1.7   -18.6   -10.1     747    33.0 | 24-26:     2.6    81.0   -36.4     1.5   -24.5   -10.1     316    32.8 | 25-:     1.8    79.4   -32.5     1.5   -24.5   -10.1     160    32.9
+ARCH + strictest X15 Y20 S25 Z10 N2 T72      22  21-23:     9.8    84.4   -35.4     1.8   -23.8   -10.1     803    32.8 | 24-26:     2.6    81.0   -36.4     1.5   -24.5   -10.1     316    32.8 | 25-:     1.8    79.4   -32.5     1.5   -24.5   -10.1     160    32.9
+ARCH + strictest X15 Y20 S25 Z10 N2 T72      22 STRESS 21-23:     7.6    84.5   -48.9     1.7   -29.0    -9.4     825    32.8 | 24-26:     1.9    81.1   -39.9     1.4   -25.7   -10.1     318    33.0 | 25-:     1.7    80.0   -31.7     1.5   -25.7   -10.1     160    33.1
+ARCH + kill 30d 30% only (post-hoc)          19  21-23:    13.5    88.3   -45.4     2.0   -26.8   -26.6     657    46.6 | 24-26:     7.9    85.6   -25.7     3.1   -12.9   -14.2     263    47.7 | 25-:     6.0    85.3   -25.7     3.3    -9.2    -7.7     129    47.5
+ARCH + kill 30d 30% only (post-hoc)          22  21-23:    15.9    88.0   -50.0     2.1   -25.6   -22.6     702    47.3 | 24-26:     7.9    85.6   -25.7     3.1   -12.9   -14.2     263    47.7 | 25-:     6.0    85.3   -25.7     3.3    -9.2    -7.7     129    47.5
+ARCH + kill 30d 30% only (post-hoc)          22 STRESS 21-23:    12.1    87.7   -51.1     1.9   -25.0   -23.1     699    46.7 | 24-26:     6.3    84.9   -26.3     2.5   -13.5   -13.5     258    47.7 | 25-:     4.6    83.9   -26.1     2.5   -13.5    -9.4     124    48.2
+ARCH + stop 20% + Z 10% only (post-hoc)      19  21-23:    11.3    85.4   -48.0     1.7   -24.4   -10.1    1018    34.2 | 24-26:     5.3    83.6   -23.4     2.0   -13.7   -10.1     371    34.0 | 25-:     4.1    82.4   -23.4     2.0    -8.0   -10.1     188    33.7
+ARCH + stop 20% + Z 10% only (post-hoc)      22  21-23:    12.8    84.7   -51.0     1.7   -19.9   -11.1    1088    34.1 | 24-26:     5.3    83.6   -23.4     2.0   -13.7   -10.1     371    34.0 | 25-:     4.1    82.4   -23.4     2.0    -8.0   -10.1     188    33.7
+ARCH + stop 20% + Z 10% only (post-hoc)      22 STRESS 21-23:     9.9    85.4   -57.6     1.6   -29.7   -11.4    1108    33.8 | 24-26:     4.3    83.4   -25.8     1.8   -14.6   -10.2     368    34.4 | 25-:     3.5    82.4   -21.8     1.9    -9.8   -10.2     182    34.3
+
+Guardrail invariants (all periods): worst trade as % of account, worst stopped trade's own return, largest order as % of account, kill-switch firings
+                                 design     panel  inv_worst_trade_acct  inv_worst_stopped_ret  inv_max_order_acct  kills_d  kills_m
+                               90% mode        19                 -50.3                    NaN               100.0        0        0
+                               90% mode        22                 -50.3                    NaN               100.0        0        0
+                               90% mode 22 STRESS                 -45.9                    NaN               100.0        0        0
+                               10% mode        19                 -54.1                    NaN               100.0        0        0
+                               10% mode        22                 -54.1                    NaN               100.0        0        0
+                               10% mode 22 STRESS                 -44.5                    NaN               100.0        0        0
+         ARCH 30/70 (no new guardrails)        19                 -39.1                    NaN                77.1        0        0
+         ARCH 30/70 (no new guardrails)        22                 -38.4                    NaN                80.7        0        0
+         ARCH 30/70 (no new guardrails) 22 STRESS                 -31.6                    NaN                79.8        0        0
+         ARCH + PICK X15 Y25 S25 N2 T72        19                 -19.9                  -25.2                85.5       19       14
+         ARCH + PICK X15 Y25 S25 N2 T72        22                 -20.0                  -25.2                82.8       18       15
+         ARCH + PICK X15 Y25 S25 N2 T72 22 STRESS                 -18.9                  -25.4                82.2       16       15
+ARCH + strictest X15 Y20 S25 Z10 N2 T72        19                 -10.1                  -29.5                40.0       15       15
+ARCH + strictest X15 Y20 S25 Z10 N2 T72        22                 -10.1                  -29.5                40.0       16       16
+ARCH + strictest X15 Y20 S25 Z10 N2 T72 22 STRESS                 -10.1                  -25.4                40.0       16       15
+    ARCH + kill 30d 30% only (post-hoc)        19                 -26.6                    NaN                77.1        0        8
+    ARCH + kill 30d 30% only (post-hoc)        22                 -22.6                    NaN                80.7        0        7
+    ARCH + kill 30d 30% only (post-hoc) 22 STRESS                 -23.1                    NaN                79.8        0        7
+ARCH + stop 20% + Z 10% only (post-hoc)        19                 -10.1                  -29.5                50.0        0        0
+ARCH + stop 20% + Z 10% only (post-hoc)        22                 -11.1                  -36.4                50.0        0        0
+ARCH + stop 20% + Z 10% only (post-hoc) 22 STRESS                 -11.4                  -36.6                50.0        0        0
+
+Worst regimes: 30-day windows of the equal-weight 19-coin index, +14 days after. Cells: design return over the window+14d / max drop inside it (22-coin panel, normal fills)
+
+2021-05-09..2021-06-08  index -40.5%
+   90% mode                                      -16.6/ -50.6
+   10% mode                                      -52.2/ -70.2
+   ARCH 30/70 (no new guardrails)                -42.7/ -60.7
+   ARCH + PICK X15 Y25 S25 N2 T72                -37.8/ -44.6
+   ARCH + strictest X15 Y20 S25 Z10 N2 T72       -13.9/ -21.0
+   ARCH + kill 30d 30% only (post-hoc)           -38.0/ -48.6
+   ARCH + stop 20% + Z 10% only (post-hoc)       -36.0/ -51.0
+
+2021-12-23..2022-01-22  index -36.8%
+   90% mode                                       -3.2/ -38.5
+   10% mode                                       -9.3/ -36.0
+   ARCH 30/70 (no new guardrails)                 -7.4/ -34.3
+   ARCH + PICK X15 Y25 S25 N2 T72                -12.7/ -29.1
+   ARCH + strictest X15 Y20 S25 Z10 N2 T72       -10.0/ -23.1
+   ARCH + kill 30d 30% only (post-hoc)           -16.3/ -31.9
+   ARCH + stop 20% + Z 10% only (post-hoc)        -4.5/ -34.8
+
+2022-04-12..2022-05-12  index -45.2%
+   90% mode                                      -26.2/ -53.7
+   10% mode                                       -0.1/ -47.8
+   ARCH 30/70 (no new guardrails)                 -8.3/ -47.0
+   ARCH + PICK X15 Y25 S25 N2 T72                 +1.3/ -25.4
+   ARCH + strictest X15 Y20 S25 Z10 N2 T72        -7.2/ -25.5
+   ARCH + kill 30d 30% only (post-hoc)            -7.2/ -31.7
+   ARCH + stop 20% + Z 10% only (post-hoc)        -2.7/ -34.8
+
+2022-05-31..2022-06-30  index -32.2%
+   90% mode                                      -15.9/ -45.7
+   10% mode                                       -0.5/ -37.9
+   ARCH 30/70 (no new guardrails)                 -5.1/ -39.2
+   ARCH + PICK X15 Y25 S25 N2 T72                 -6.1/ -25.7
+   ARCH + strictest X15 Y20 S25 Z10 N2 T72        -2.9/ -21.5
+   ARCH + kill 30d 30% only (post-hoc)           -10.9/ -31.5
+   ARCH + stop 20% + Z 10% only (post-hoc)        +4.0/ -30.2
+
+2025-10-05..2025-11-04  index -33.7%
+   90% mode                                      +32.6/ -13.9
+   10% mode                                      +18.9/ -13.9
+   ARCH 30/70 (no new guardrails)                +22.9/ -13.9
+   ARCH + PICK X15 Y25 S25 N2 T72                -11.7/ -32.2
+   ARCH + strictest X15 Y20 S25 Z10 N2 T72       -14.9/ -31.9
+   ARCH + kill 30d 30% only (post-hoc)           +22.9/ -13.9
+   ARCH + stop 20% + Z 10% only (post-hoc)        +8.0/ -22.4
+
+2026-01-06..2026-02-05  index -41.4%
+   90% mode                                       +9.5/ -15.4
+   10% mode                                      +15.1/ -15.4
+   ARCH 30/70 (no new guardrails)                +13.4/ -15.4
+   ARCH + PICK X15 Y25 S25 N2 T72                 +0.4/ -16.3
+   ARCH + strictest X15 Y20 S25 Z10 N2 T72       +10.4/ -12.6
+   ARCH + kill 30d 30% only (post-hoc)           +13.4/ -15.4
+   ARCH + stop 20% + Z 10% only (post-hoc)       +11.4/ -13.5
+
+2018-20 holdout: 16 coins, 2017-12-01 00:00:00 -> 2020-12-31 23:00:00 (normal fills / buys+sells 0.2% worse with bot timing). Cells: %/mo, max drop, win rate, PF, worst month, trades; plus the COVID crash 2020-02-20..2020-04-01
+                                 design  fills  pct_mo  max_dd      WR      PF  worst_mo  trades  covid_ret  covid_dd  kills
+                               90% mode normal    10.8   -66.3    92.5     2.0     -42.5     361      -29.5     -63.7      0
+                               90% mode stress     6.3   -69.5    91.7     1.6     -43.2     349      -35.6     -63.9      0
+                               10% mode normal    11.1   -61.3    80.5     2.1     -16.3     215       28.7     -58.5      0
+                               10% mode stress     8.9   -62.8    79.4     1.9     -17.2     214       23.9     -58.8      0
+         ARCH 30/70 (no new guardrails) normal    11.2   -62.7    88.0     2.1     -13.7     576       11.8     -60.1      0
+         ARCH 30/70 (no new guardrails) stress     8.4   -64.9    87.0     1.8     -16.4     563        5.8     -60.3      0
+         ARCH + PICK X15 Y25 S25 N2 T72 normal     8.0   -49.9    85.9     1.7     -20.7     576        8.8     -32.4     20
+         ARCH + PICK X15 Y25 S25 N2 T72 stress     5.1   -50.0    84.7     1.5     -28.0     555       14.8     -26.5     18
+ARCH + strictest X15 Y20 S25 Z10 N2 T72 normal     4.0   -42.0    82.3     1.4     -22.6     623       -8.5     -29.7     19
+ARCH + strictest X15 Y20 S25 Z10 N2 T72 stress     2.2   -48.3    81.2     1.3     -21.6     629      -11.2     -30.3     18
+    ARCH + kill 30d 30% only (post-hoc) normal     7.5   -56.4    87.6     1.7     -24.5     547      -14.9     -47.2      6
+    ARCH + kill 30d 30% only (post-hoc) stress     4.3   -58.1    86.3     1.5     -26.4     533      -18.5     -47.7      6
+ARCH + stop 20% + Z 10% only (post-hoc) normal     6.8   -61.1    84.2     1.5     -45.2     766      -37.6     -57.9      0
+ARCH + stop 20% + Z 10% only (post-hoc) stress     3.7   -58.0    83.3     1.3     -42.8     743      -35.8     -54.5      0

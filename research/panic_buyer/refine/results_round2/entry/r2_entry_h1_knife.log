@@ -1,0 +1,20 @@
+
+######## r2 entry H1: knife filter (coin falling before the dip + weak market)
+LIVE SETTINGS                                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+knife pre<=-3% br>=0.90 skip                   21-23 x 5.85 DD  -16% 2022  +16% | 24-26 x 2.06 DD  -16% worst-mo  -4% up-mo  79%
+knife pre<=0% br>=0.90 skip                    21-23 x 5.42 DD  -16% 2022   +7% | 24-26 x 1.92 DD  -12% worst-mo  -4% up-mo  76%
+knife pre<=-6% br>=0.90 skip                   21-23 x 7.17 DD  -18% 2022  +26% | 24-26 x 2.33 DD  -16% worst-mo  -4% up-mo  85%
+knife pre<=-3% br>=0.80 skip                   21-23 x 6.19 DD  -15% 2022  +14% | 24-26 x 2.06 DD  -16% worst-mo  -4% up-mo  79%
+knife pre<=-3% br>=0.95 skip                   21-23 x 6.68 DD  -20% 2022  +22% | 24-26 x 2.17 DD  -16% worst-mo  -7% up-mo  85%
+knife pre<=-3% br>=0.90 depth16%               21-23 x 6.75 DD  -23% 2022  +34% | 24-26 x 2.31 DD  -16% worst-mo  -3% up-mo  82%
+knife pre<=0% br>=0.90 depth16%                21-23 x 6.73 DD  -23% 2022  +32% | 24-26 x 2.32 DD  -12% worst-mo  -1% up-mo  76%
+knife pre<=-3% br>=0.80 depth16%               21-23 x 7.55 DD  -20% 2022  +33% | 24-26 x 2.28 DD  -16% worst-mo  -3% up-mo  85%
+8 variants | beat live in 2021-23: 7 | in 2024-26: 0 | in both: 0
+PICK (2021-23 only): knife pre<=-3% br>=0.80 skip
+  pick                                         21-23 x 6.19 DD  -15% 2022  +14% | 24-26 x 2.06 DD  -16% worst-mo  -4% up-mo  79%
+  2024-26 check: does NOT beat the live settings
+  live, +LUNA/FTT/SRM                          21-23 x 5.29 DD  -31% 2022   +1% | 24-26 x 2.46 DD  -15% worst-mo  -6% up-mo  88%
+  pick, +LUNA/FTT/SRM                          21-23 x 6.62 DD  -19% 2022  +14% | 24-26 x 2.06 DD  -16% worst-mo  -4% up-mo  79%  FAILS
+  live, fills 0.2% worse                       21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+  pick, fills 0.2% worse                       21-23 x 4.97 DD  -17% 2022   +5% | 24-26 x 1.89 DD  -16% worst-mo  -5% up-mo  79%  FAILS
+  VERDICT: rejected, live bot unchanged

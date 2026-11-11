@@ -1,0 +1,16 @@
+LIVE (1-minute engine)                         21-23 x 5.74 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+    per year: 2021:+262.0% 2022:+19.1% 2023:+33.3% 2024:+71.2% 2025:+27.7% 2026:+19.3%
+    2021-23 market buys 175: avg +1.21%, sold in the buy hour 0, take-profits 161 (avg +2.47%), time stops 14 (avg -13.21%), sum ret x size +0.34
+    2024-26 market buys 58: avg +1.25%, sold in the buy hour 0, take-profits 55 (avg +2.15%), time stops 3 (avg -15.22%), sum ret x size +0.14
+(f) both parts                                 21-23 x 4.72 DD  -30% 2022  +20% | 24-26 x 2.66 DD  -15% worst-mo  -3% up-mo  88%
+    per year: 2021:+194.9% 2022:+20.2% 2023:+33.1% 2024:+76.2% 2025:+26.3% 2026:+19.6%
+    2021-23 market buys 178: avg +0.10%, sold in the buy hour 103, take-profits 163 (avg +1.31%), time stops 15 (avg -13.03%), sum ret x size -0.08
+    2024-26 market buys 59: avg +0.86%, sold in the buy hour 32, take-profits 57 (avg +1.30%), time stops 2 (avg -11.63%), sum ret x size +0.21
+(f1) market-buy take-profit 1 min after the buy only 21-23 x 4.84 DD  -30% 2022  +19% | 24-26 x 2.66 DD  -15% worst-mo  -3% up-mo  88%
+    per year: 2021:+205.7% 2022:+18.8% 2023:+33.2% 2024:+76.3% 2025:+26.3% 2026:+19.3%
+    2021-23 market buys 179: avg +0.22%, sold in the buy hour 104, take-profits 166 (avg +1.31%), time stops 13 (avg -13.60%), sum ret x size -0.03
+    2024-26 market buys 59: avg +0.85%, sold in the buy hour 32, take-profits 57 (avg +1.30%), time stops 2 (avg -11.97%), sum ret x size +0.18
+(f2) market-buy time stop 1h earlier only      21-23 x 5.62 DD  -29% 2022  +20% | 24-26 x 2.62 DD  -16% worst-mo  -6% up-mo  88%
+    per year: 2021:+250.3% 2022:+20.5% 2023:+33.2% 2024:+71.4% 2025:+27.7% 2026:+19.6%
+    2021-23 market buys 174: avg +1.10%, sold in the buy hour 0, take-profits 158 (avg +2.49%), time stops 16 (avg -12.63%), sum ret x size +0.28
+    2024-26 market buys 58: avg +1.29%, sold in the buy hour 0, take-profits 55 (avg +2.15%), time stops 3 (avg -14.55%), sum ret x size +0.18

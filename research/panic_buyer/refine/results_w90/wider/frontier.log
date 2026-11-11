@@ -1,0 +1,77 @@
+388 distinct designs (grids 1-3 + win-rate grid). Columns: 2021-23 / 2024-26 / since 2025.
+
+== win rate >=90% in both periods: 29 designs; 10%-goal qualifiers 0
+   19 + top20 others by v30 @ 22% x0.75 tp2% | core 14% tp2% N1 f1 hm48 cd24 g35 [wrgrid]
+      WR 91.1/93.0/91.1% | %/mo +6.60/+7.97/+5.81 | drop -65/-28/-28% | STRESSED %/mo +5.30/+5.65/+2.69 worst drop -70%
+   19 + top20 others by v30 @ 20% x0.75 tp1.5% | core 12% tp1.5% N1 f1 hm48 cd24 g35 [wrgrid]
+      WR 93.9/91.1/89.4% | %/mo +12.33/+7.02/+5.53 | drop -61/-40/-40% | STRESSED %/mo +4.28/+3.88/+1.83 worst drop -65%
+   19 + top20 others by v30 @ 22% x0.75 tp1.5% | core 14% tp1.5% N1 f1 hm48 cd24 g35 [wrgrid]
+      WR 94.3/93.9/92.6% | %/mo +7.59/+5.86/+3.84 | drop -66/-35/-35% | STRESSED %/mo +3.27/+4.28/+0.88 worst drop -71%
+   shallowest drop within 1 pt of the best: 19 + top20 others by v30 @ 20% x0.75 tp1.5% | core 12% tp1.5% N1 f1 hm48 cd24 g35
+      WR 93.9/91.1/89.4% | %/mo +12.33/+7.02/+5.53 | drop -61/-40/-40% | STRESSED %/mo +4.28/+3.88/+1.83 worst drop -65%
+
+== win rate 85-90% in both periods: 21 designs; 10%-goal qualifiers 0
+   19 + top20 others by v30 @ 20% x0.75 tp2% | core 12% tp2% N1 f1 hm48 cd24 g35 [wrgrid]
+      WR 90.6/88.4/87.7% | %/mo +10.17/+7.38/+5.79 | drop -64/-41/-41% | STRESSED %/mo +1.65/+3.85/+1.67 worst drop -89%
+   19 + top20 others by v30 @ 22% x0.75 tp3% | core 14% tp3% N1 f1 hm48 cd24 g35 [wrgrid]
+      WR 88.6/86.8/85.7% | %/mo +7.44/+6.45/+4.86 | drop -72/-43/-43% | STRESSED %/mo +6.59/+4.47/+2.62 worst drop -68%
+   19 + top20 others by v30 @ 20% x0.75 tp3% | core 12% tp3% N3 f0.333333 hm48 cd24 g35 [wrgrid]
+      WR 86.4/85.5/84.0% | %/mo +7.94/+6.42/+4.84 | drop -36/-29/-29% | STRESSED %/mo +5.42/+4.38/+3.38 worst drop -45%
+   shallowest drop within 1 pt of the best: 19 + top20 others by v30 @ 20% x0.75 tp3% | core 12% tp3% N3 f0.333333 hm48 cd24 g35
+      WR 86.4/85.5/84.0% | %/mo +7.94/+6.42/+4.84 | drop -36/-29/-29% | STRESSED %/mo +5.42/+4.38/+3.38 worst drop -45%
+
+== win rate 80-85% in both periods: 11 designs; 10%-goal qualifiers 2
+   19 + top30 others by v365 @ 26% x1 tp5% | core 15% tp5% N1 f1 hm48 cd24 g35 [grid3]
+      WR 82.1/80.3/80.9% | %/mo +13.03/+10.03/+10.92 | drop -73/-33/-27% | STRESSED %/mo +13.11/+8.45/+8.84 worst drop -63%
+   19 + top20 others by v30 @ 20% x0.75 tp3% | core 12% tp3% N1 f1 hm48 cd24 g35 [wrgrid]
+      WR 87.8/84.0/84.0% | %/mo +11.90/+10.09/+8.61 | drop -72/-41/-41% | STRESSED %/mo +5.31/+6.57/+5.72 worst drop -82%
+   19 + top30 others by v30 @ 20% x0.5 tp5% | core 14% tp5% N2 f1 hm48 cd24 g35 [grid1]
+      WR 81.2/80.4/78.6% | %/mo +10.40/+7.52/+5.96 | drop -41/-26/-26% | STRESSED %/mo +7.74/+6.17/+4.62 worst drop -52%
+   shallowest drop within 1 pt of the best: 19 + top30 others by v365 @ 26% x1 tp5% | core 15% tp5% N1 f1 hm48 cd24 g35
+      WR 82.1/80.3/80.9% | %/mo +13.03/+10.03/+10.92 | drop -73/-33/-27% | STRESSED %/mo +13.11/+8.45/+8.84 worst drop -63%
+
+== win rate 75-80% in both periods: 219 designs; 10%-goal qualifiers 15
+   19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd12 g35 [grid3]
+      WR 80.3/77.6/80.0% | %/mo +16.01/+11.07/+12.01 | drop -58/-31/-29% | STRESSED %/mo +8.76/+8.15/+8.43 worst drop -91%
+   19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid2]
+      WR 81.1/78.1/80.0% | %/mo +15.12/+11.03/+11.37 | drop -61/-31/-29% | STRESSED %/mo +11.47/+8.43/+8.47 worst drop -75%
+   19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd36 g35 [grid3]
+      WR 80.1/78.0/79.7% | %/mo +14.28/+10.55/+11.11 | drop -61/-34/-29% | STRESSED %/mo +7.60/+7.26/+8.24 worst drop -92%
+   shallowest drop within 1 pt of the best: 19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd12 g35
+      WR 80.3/77.6/80.0% | %/mo +16.01/+11.07/+12.01 | drop -58/-31/-29% | STRESSED %/mo +8.76/+8.15/+8.43 worst drop -91%
+
+== all 10%-goal qualifiers (17):
+   19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd12 g35 [grid3]
+      WR 80.3/77.6/80.0% | %/mo +16.01/+11.07/+12.01 | drop -58/-31/-29% | STRESSED %/mo +8.76/+8.15/+8.43 worst drop -91%
+   19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid2]
+      WR 81.1/78.1/80.0% | %/mo +15.12/+11.03/+11.37 | drop -61/-31/-29% | STRESSED %/mo +11.47/+8.43/+8.47 worst drop -75%
+   19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd36 g35 [grid3]
+      WR 80.1/78.0/79.7% | %/mo +14.28/+10.55/+11.11 | drop -61/-34/-29% | STRESSED %/mo +7.60/+7.26/+8.24 worst drop -92%
+   19 + top20 others by v30 @ 20% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid2]
+      WR 79.6/78.3/77.8% | %/mo +10.96/+10.89/+10.35 | drop -67/-43/-43% | STRESSED %/mo +8.27/+8.34/+7.17 worst drop -74%
+   19 + top20 others by v30 @ 22% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid2]
+      WR 79.9/80.0/81.2% | %/mo +10.24/+10.95/+10.86 | drop -82/-35/-35% | STRESSED %/mo +6.61/+7.78/+7.14 worst drop -82%
+   19 + top30 others by v365 @ 26% x1 tp6% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid3]
+      WR 81.1/77.6/79.2% | %/mo +15.30/+10.34/+10.21 | drop -61/-31/-29% | STRESSED %/mo +11.65/+8.48/+8.45 worst drop -75%
+   19 + top15 others by v30 @ 22% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid3]
+      WR 80.3/79.5/80.0% | %/mo +10.81/+11.10/+10.14 | drop -79/-35/-35% | STRESSED %/mo +7.43/+8.20/+6.81 worst drop -81%
+   19 + top30 others by v365 @ 26% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid2]
+      WR 81.2/78.6/80.5% | %/mo +15.23/+10.34/+10.07 | drop -61/-30/-29% | STRESSED %/mo +11.82/+7.96/+7.51 worst drop -75%
+   19 + top30 others by v365 @ 26% x1 tp5% | core 15% tp5% N1 f1 hm48 cd24 g35 [grid3]
+      WR 82.1/80.3/80.9% | %/mo +13.03/+10.03/+10.92 | drop -73/-33/-27% | STRESSED %/mo +13.11/+8.45/+8.84 worst drop -63%
+   19 + top15 others by v30 @ 20% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid3]
+      WR 80.4/77.8/77.1% | %/mo +10.84/+11.09/+9.67 | drop -77/-52/-52% | STRESSED %/mo +7.90/+8.52/+6.43 worst drop -79%
+   19 + top20 others by v30 @ 22% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid2]
+      WR 80.4/79.3/80.6% | %/mo +11.98/+10.03/+9.45 | drop -66/-30/-29% | STRESSED %/mo +8.51/+7.36/+6.47 worst drop -75%
+   19 + top30 others by v30 @ 22% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid2]
+      WR 79.7/79.7/80.1% | %/mo +10.83/+10.41/+9.33 | drop -74/-42/-42% | STRESSED %/mo +7.25/+7.22/+5.61 worst drop -75%
+   19 + top15 others by v30 @ 22% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid3]
+      WR 80.7/79.5/80.0% | %/mo +12.50/+10.39/+9.17 | drop -62/-29/-29% | STRESSED %/mo +9.09/+7.79/+6.29 worst drop -75%
+   19 + top40 others by v365 @ 30% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid3]
+      WR 80.3/78.6/78.5% | %/mo +14.01/+10.36/+9.04 | drop -61/-30/-29% | STRESSED %/mo +11.51/+7.62/+5.93 worst drop -75%
+   19 + top35 others by v365 @ 30% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid3]
+      WR 80.9/78.6/78.5% | %/mo +14.68/+10.36/+9.04 | drop -61/-30/-29% | STRESSED %/mo +12.18/+7.62/+5.93 worst drop -75%
+   19 + top20 others by v30 @ 20% x0.75 tp3% | core 12% tp3% N1 f1 hm48 cd24 g35 [wrgrid]
+      WR 87.8/84.0/84.0% | %/mo +11.90/+10.09/+8.61 | drop -72/-41/-41% | STRESSED %/mo +5.31/+6.57/+5.72 worst drop -82%
+   19 + top15 others by v30 @ 20% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35 [grid3]
+      WR 80.2/77.3/76.1% | %/mo +11.75/+10.13/+8.55 | drop -65/-43/-43% | STRESSED %/mo +8.96/+7.82/+5.73 worst drop -74%

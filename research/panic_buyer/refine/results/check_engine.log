@@ -1,0 +1,6 @@
+gkernel == lab.dyn_kernel: x0.2927, 348 trades
+partial take-profit runs: x0.3134, exits by reason {2.0: 199, 1.0: 130}
+mkernel(delay=0) == hourly engine: x0.2927, 348 trades
+mkernel(delay=5): x0.2884, 348 trades, 8 sold in the hour they were bought
+mkernel(delay=1): x0.2884, 348 trades, 8 sold in the hour they were bought
+ENGINE CHECK PASSED

@@ -22,12 +22,15 @@ fi
 read -rp "Most USDT this bot may use, e.g. 300 (keep halal-rider's USDT on top of this): " CAP
 read -rp "Reinvest profits? (y/N; N = profits stay as USDT you can withdraw): " CMP
 case "${CMP:-N}" in y|Y|yes|YES) CMP=yes ;; *) CMP=no ;; esac
+read -rp "Do you pay Binance fees with BNB? (y/N; cheaper fees, needs some BNB kept in the account): " BNBF
+case "${BNBF:-N}" in y|Y|yes|YES) BNBF=yes ;; *) BNBF=no ;; esac
 umask 077
 cat > /etc/panic-buyer.env <<ENV
 BINANCE_API_KEY=$KEY
 BINANCE_API_SECRET=$SECRET
 CAPITAL_USDT=$CAP
 COMPOUND=$CMP
+BNB_FEES=$BNBF
 TELEGRAM_BOT_TOKEN=$TG
 TELEGRAM_CHAT_ID=$TGC
 PANIC_DATA=/opt/panic-buyer/data

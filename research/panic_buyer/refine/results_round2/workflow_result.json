@@ -1,0 +1,381 @@
+{
+  "summary": "Panic Buyer round 2: 5 lenses test new refinements under the fixed rule, adversarially verify any pass, then a completeness critic",
+  "agentCount": 6,
+  "logs": [],
+  "result": {
+    "results": [
+      {
+        "lens": "losers",
+        "result": {
+          "lens": "losers: cut the 48h time-stop losers without killing the take-profit winners",
+          "hypotheses": [
+            {
+              "name": "H1 break-even target after X hours",
+              "rationale": "Of the 2021-23 trades still open X hours after the fill, many trade back up to the entry price and then fall into the 48h time stop. So once a position is X hours old, the +1.5% take-profit limit is lowered to entry +0.2% (break-even after fees) or entry +0.5%. Same fill rules as the take-profit: an open already above the target sells at the open, otherwise the high must trade 0.1% through. The change is made at the hourly cycle after hour X closes.",
+              "script": "/home/user/halal-rider/research/panic_buyer/refine/r2_losers.py",
+              "variants": 8,
+              "verdict": "rejected",
+              "pick": "break-even +0.5% after 6h",
+              "pick_numbers": "pick  21-23 x 6.35 DD -29% 2022 +36% | 24-26 x 2.55 DD -16% worst-mo -6% up-mo 85% (exact: d_mult 6.3503, d_dd -0.2935, t_mult 2.5522, t_dd -0.1622; live 5.7500 / -0.2924 / 2.6088 / -0.1628). 2024-26 check: does NOT beat the live settings.",
+              "all_variants_summary": "break-even +0.2% after 6h: 21-23 x6.12 DD -29% (2022 +34%), 24-26 x2.49 DD -16%\nbreak-even +0.5% after 6h: 21-23 x6.35 DD -29% (2022 +36%), 24-26 x2.55 DD -16%\nbreak-even +0.2% after 12h: 21-23 x5.65 DD -29% (2022 +24%), 24-26 x2.49 DD -16%\nbreak-even +0.5% after 12h: 21-23 x6.03 DD -29% (2022 +30%), 24-26 x2.53 DD -16%\nbreak-even +0.2% after 18h: 21-23 x5.73 DD -29% (2022 +20%), 24-26 x2.51 DD -16%\nbreak-even +0.5% after 18h: 21-23 x5.98 DD -29% (2022 +24%), 24-26 x2.54 DD -16%\nbreak-even +0.2% after 24h: 21-23 x5.64 DD -29% (2022 +20%), 24-26 x2.56 DD -16%\nbreak-even +0.5% after 24h: 21-23 x5.70 DD -29% (2022 +21%), 24-26 x2.58 DD -16%\nLive is x5.75 DD -29% and x2.61 DD -16%. 4 of 8 beat live in 2021-23, 0 in 2024-26, 0 in both.",
+              "motivation_evidence_2021_23": "From r2_losers_motiv.py, using only trades that entered and exited before 2024. Trades still open at hour X that later traded at entry +0.2% or +0.5%, compared with selling there instead (crude sum of return x order size). be +0.2%: X=6 151 trades sold (29 actual losers), net +0.464; X=12 82, +0.283; X=18 44, +0.124; X=24 23, +0.045. be +0.5%: X=6 123, +0.535; X=12 74, +0.374; X=18 40, +0.160; X=24 20, +0.058. For scale, all 2021-23 take-profits sum to +9.84 and time stops to -5.09.",
+              "checks": "2024-26: x2.55 vs live x2.61, fails. With LUNA/FTT/SRM: pick 21-23 x5.81 DD -32% (2022 +14%), 24-26 x2.40 DD -15%, against live x5.29 DD -31% and x2.46 DD -15%: FAILS. With fills 0.2% worse: pick 21-23 x3.90 DD -30% (2022 +4%), 24-26 x2.23 DD -16%, against live x3.98 DD -29% and x2.37 DD -16%: FAILS. Exit anatomy for the pick: 2021-23 TP 1377 (+9.46), BE 237 (+0.30, avg +0.3%), time stop 86 (-4.41, avg -11.8%). 2024-26 TP 690 (+13.83), BE 151 (+0.56, avg +0.3%), time stop 48 (-4.53, avg -8.4%), against live TP 817 (+14.44) and time stop 67 (-5.18).",
+              "bugs_fixed": "none"
+            },
+            {
+              "name": "H2 stale-loser exit at hour X",
+              "rationale": "In 2021-23, positions 3-10% under water 18-30h after the fill mostly kept sliding into the time stop. Positions more than 10% under water were in a fresh panic and bounced, which is the bot's own thesis. So the bot checks once, at the close of the X-th hour after the fill hour. If entry*(1-sd) < close <= entry*(1-su), it sells at market (close x (1-slip), the same convention as the time stop). sd = none means a plain 'under water' exit. A hard stop-loss from entry was not gridded because the 2021-23 data argued against it at every level.",
+              "script": "/home/user/halal-rider/research/panic_buyer/refine/r2_losers.py",
+              "variants": 8,
+              "verdict": "rejected",
+              "pick": "stale exit at 18h if 3%..10% under",
+              "pick_numbers": "pick  21-23 x 6.62 DD -24% 2022 +32% | 24-26 x 2.19 DD -15% worst-mo -3% up-mo 79% (exact: d_mult 6.6214, d_dd -0.2398, t_mult 2.1937, t_dd -0.1549). 2024-26 check: does NOT beat the live settings.",
+              "all_variants_summary": "stale exit at 18h if 0%..10% under: 21-23 x6.57 DD -24% (2022 +29%), 24-26 x2.13 DD -15%\nstale exit at 18h if >=0% under: 21-23 x6.01 DD -25% (2022 +35%), 24-26 x1.97 DD -15%\nstale exit at 18h if 3%..10% under: 21-23 x6.62 DD -24% (2022 +32%), 24-26 x2.19 DD -15%\nstale exit at 18h if >=3% under: 21-23 x6.14 DD -25% (2022 +38%), 24-26 x2.02 DD -15%\nstale exit at 24h if 0%..10% under: 21-23 x7.34 DD -28% (2022 +24%), 24-26 x2.36 DD -15%\nstale exit at 24h if >=0% under: 21-23 x6.36 DD -28% (2022 +28%), 24-26 x2.14 DD -15%\nstale exit at 24h if 3%..10% under: 21-23 x7.43 DD -28% (2022 +24%), 24-26 x2.31 DD -15%\nstale exit at 24h if >=3% under: 21-23 x6.46 DD -27% (2022 +28%), 24-26 x2.10 DD -15%\n8 of 8 beat live in 2021-23, 0 in 2024-26, 0 in both.",
+              "motivation_evidence_2021_23": "From r2_losers_motiv.py, trades that entered and exited before 2024. Positions by hourly close at hour X: (-6%,-3%] and (-10%,-6%] later reached the take-profit only 20.5% / 18.2% of the time at h24 and 31.2% / 23.5% at h18. Selling them then instead of waiting gave crude sums of +0.338 / +0.419 at h24 and +0.170 / +0.235 at h18. Positions more than 10% under water bounced: selling them gave -0.316 at h24 and -0.122 at h18. Positions in (-3%,0] were neutral: -0.020 at h24, -0.076 at h18. A hard stop at an hourly close <= -x was net negative at every level: -5% -1.878 (138 of 242 stopped trades would have been take-profits), -7% -1.279, -10% -0.758, -12% -0.713, -15% -0.832, -20% -0.865. 15.3% of take-profit winners had an hourly close 3% or more under entry first.",
+              "checks": "2024-26: x2.19 vs live x2.61, fails. With LUNA/FTT/SRM: pick 21-23 x5.88 DD -27% (2022 +10%), 24-26 x2.08 DD -15%, against live x5.29 DD -31% and x2.46: FAILS. With fills 0.2% worse: pick 21-23 x5.06 DD -24% (2022 +19%), 24-26 x1.99 DD -16%, against live x3.98 DD -29% and x2.37: FAILS. Exit anatomy for the pick: 2021-23 TP 1590 (+10.52), stale 80 (-2.25, avg -6.2%), time stop 47 (-2.65, avg -13.3%), against live 1573 (+9.84) / 108 (-5.09). 2024-26 TP 797 (+15.22), stale 67 (-4.84, avg -5.8%), time stop 28 (-2.48, avg -8.0%), against live TP 817 (+14.44) / time stop 67 (-5.18).",
+              "bugs_fixed": "none"
+            }
+          ],
+          "key_findings": "Both hypotheses fail the pre-registered rule, so the live bot stays unchanged. Each grid was run once (log: /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_r2/losers/r2_losers.log; tables r2_losers_h1_breakeven.csv, r2_losers_h2_stale.csv and verdicts.csv in the same folder).\n\nCustom kernel: lkernel in /home/user/halal-rider/research/panic_buyer/refine/r2_losers.py is a copy of gkernel with two extra exits added. With both exits off it gives exactly the same equity curve and trade log as engine.run (np.array_equal True): live x5.75 / x2.61, +LUNA/FTT/SRM x5.29 / x2.46, fills 0.2% worse x3.98 / x2.37. Switches set so they never trigger also change nothing. Synthetic unit cases confirmed the exit timing and the price bands. study.study() ran unchanged, with engine.run pointed at lrun in memory only; no existing file was edited. The motivation script is /home/user/halal-rider/research/panic_buyer/refine/r2_losers_motiv.py and prints 2021-23 trades only.\n\nFindings:\n(1) A hard stop-loss from entry is unsupported even in 2021-23. At hourly closes from -5% to -20%, the stopped trades would on net have done better if held, because deep losers are fresh panics that bounce. It was therefore not gridded.\n(2) What happens to time-stop losers depends on the market regime. In 2021-23, selling positions 3-10% under water at 18-24h improved every variant: x6.01-7.43, worst drop cut to -24..-28%, 2022 +24..+38%. In 2024-26 the same positions mostly recovered, and all 8 variants lost to live: x1.97-2.36. For the pick, 67 stale exits at -5.8% cost -4.84 against -5.18 for all 67 live time stops, and 28 time stops still remained.\n(3) A break-even target turns future +1.5% winners into +0.3% exits. In 2024-26 the pick made 151 break-even exits at +0.3% while time stops only fell from 67 to 48, so all 8 variants were below live there (x2.49-2.58).\n\nThe lens's premise holds in-sample: the time-stop losers can be cut in 2021-23. It does not carry over to 2024-26, where the cut losers would mostly have recovered.",
+          "near_misses": "No variant beat live in both periods. Closest calls:\n- 'break-even +0.5% after 24h' reached 24-26 x2.58 DD -16.4%, very close to live's x2.61, but 21-23 x5.70 is below live's x5.75, so it never qualified as a pick.\n- 'break-even +0.5% after 6h' (H1 pick) beat live in 2021-23 at x6.35 but missed 24-26 at x2.55 vs x2.61.\n- 'stale exit at 24h if 3%..10% under' had the best 2021-23 multiple: x7.43 with a -28% drop (live x5.75, -29%). In 24-26 it reached only x2.31.\n- The H2 pick under fills 0.2% worse was far better than live in 2021-23 (x5.06, -24%, 2022 +19% vs x3.98, -29%, -2%) but worse in 24-26 (x1.99 vs x2.37).\n\nThe stale exit is a genuine 2021-23 drawdown reducer (-24% vs -29%) that costs return in the 2024-26 recovery market. It is not a better bot under the rule."
+        },
+        "verify": []
+      },
+      {
+        "lens": "entry",
+        "result": {
+          "lens": "entry: avoid buys likely to become time-stop losers (filters computed at the hour the order is placed, closed candles only)",
+          "hypotheses": [
+            {
+              "name": "H1 knife filter: coin already falling before the dip AND most of the market weak -> skip (smult=0) or 16% trigger",
+              "rationale": "The edge is a liquidation overshoot in an otherwise healthy market. A coin that was already sliding for days before the current 24h dip, inside a broad sell-off, is more likely being repriced, and a 48h hold doesn't survive that. Flag = pre3d (close[t-25]/close[t-97]-1) <= -a AND breadth (share of live coins whose last close is under their 7-day average close) >= b. Grid: thresholds a in {0,3,6}% and b in {0.80,0.90,0.95}, with action skip or 16% depth.",
+              "script": "/home/user/halal-rider/research/panic_buyer/refine/r2_entry_h1_knife.py (features in /home/user/halal-rider/research/panic_buyer/refine/r2_entry_feats.py; log /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_r2/entry/r2_entry_h1_knife.log)",
+              "variants": 8,
+              "verdict": "rejected",
+              "pick": "knife pre<=-3% br>=0.80 skip",
+              "pick_numbers": "pick  21-23 x 6.19 DD  -15% 2022  +14% | 24-26 x 2.06 DD  -16% worst-mo  -4% up-mo  79%  (live: 21-23 x 5.75 DD -29% 2022 +19% | 24-26 x 2.61 DD -16%). Exact: d_mult 6.1911, d_dd -0.1485, t_mult 2.0608, t_dd -0.1561, 606 trades in 2024-26 (live 884).",
+              "all_variants_summary": "knife pre<=-3% br>=0.90 skip: 21-23 x5.85 DD -16% (2022 +16%) | 24-26 x2.06 DD -16%\nknife pre<=0% br>=0.90 skip: x5.42 DD -16% (+7%) | x1.92 DD -12%\nknife pre<=-6% br>=0.90 skip: x7.17 DD -18% (+26%) | x2.33 DD -16%\nknife pre<=-3% br>=0.80 skip [PICK]: x6.19 DD -15% (+14%) | x2.06 DD -16%\nknife pre<=-3% br>=0.95 skip: x6.68 DD -20% (+22%) | x2.17 DD -16%\nknife pre<=-3% br>=0.90 depth16%: x6.75 DD -23% (+34%) | x2.31 DD -16%\nknife pre<=0% br>=0.90 depth16%: x6.73 DD -23% (+32%) | x2.32 DD -12%\nknife pre<=-3% br>=0.80 depth16%: x7.55 DD -20% (+33%) | x2.28 DD -16%\n7/8 beat live in 2021-23, 0/8 in 2024-26, 0 in both.",
+              "motivation_evidence_2021_23": "All from the 1,681 live-setting trades bought in 2021-23 (r2_entry_analysis*.py; no 2024-26 numbers printed before the grids ran). Breadth7 was the strongest single separator (AUC 0.613 for time stop; breadth > 0.938: 579 trades, 10.2% time stops, avg +0.25%, vs 2.9% and +1.95% when breadth <= 0.31). Coin downtrend before the dip: pre3d <= -3% averaged +0.58% (2021) / +0.31% (2022-23), against +1.54% / +0.96% otherwise. The joint 'knife' flag (pre3d <= -3% and breadth >= 0.9), 455 trades on 119 buy days, averaged +0.01% (2021, 11.3% time stops, contrib -0.26) and +0.15% (2022-23, 9.8%, contrib +0.05). The rest averaged +1.57%/+0.96%. The flag also caught the worst clusters: 2021-05-21 (breadth 1.0, r3d -26%), 2022-06-13 (breadth 1.0), 2021-12-04, 2022-01-21 and 2022-08-19. Features with no separation: volume surge (qv24/qv4 vs 30d, AUC 0.50), BTC 24h drop (0.50), BTC 30d-high distance (0.50), hours since the 24h high, a recent time stop on the same coin (AUC 0.49, slightly fewer time stops after one), idiosyncratic vs market drop, number of coins near trigger.",
+              "checks": "2024-26 check: does NOT beat live (x2.06 vs x2.61; drawdown -16% vs -16%). +LUNA/FTT/SRM: live 21-23 x5.29 DD -31% 2022 +1% | 24-26 x2.46 DD -15%; pick x6.62 DD -19% 2022 +14% | x2.06 DD -16% -> FAILS. Fills 0.2% worse: live x3.98 DD -29% 2022 -2% | x2.37 DD -16%; pick x4.97 DD -17% 2022 +5% | x1.89 DD -16% -> FAILS.",
+              "bugs_fixed": "No bug in the existing code. In my own feature file, before any grid ran: breadth liveness first used raw close[t-1].notna(). That made breadth 0 after the 14 hours when every coin's candle is missing (one 2021-23 trade: 2021-04-20 04:00 XRP, 0.875 -> 0). Changed to 'a real close in the last 24h', which also drops LUNA/FTT/SRM 24h after their cut. After the change it matched the analysis exactly (0 mismatches, 455 knife trades)."
+            },
+            {
+              "name": "H2 no cascade in progress: last closed hour up (r1h > x) -> skip or 16% trigger, alone or restricted to weak market / falling coin / knife",
+              "rationale": "The overshoot comes from cascades already under way. A coin whose last closed hour was up needs a fresh break inside the hour to fill, which looks more like news or repricing. In 2021-23 the knife buys whose last hour was up were by far the worst subgroup.",
+              "script": "/home/user/halal-rider/research/panic_buyer/refine/r2_entry_h2_cascade.py (log /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_r2/entry/r2_entry_h2_cascade.log)",
+              "variants": 8,
+              "verdict": "rejected",
+              "pick": "r1h>0 & knife(-3%,0.90) depth16%",
+              "pick_numbers": "pick  21-23 x 6.26 DD  -29% 2022  +18% | 24-26 x 2.60 DD  -15% worst-mo  -6% up-mo  88%  (live 21-23 x 5.75 DD -29% 2022 +19% | 24-26 x 2.61 DD -16%). Exact: d_mult 6.2622, d_dd -0.2857, t_mult 2.5985 vs live 2.6088, t_dd -0.1549 vs -0.1628.",
+              "all_variants_summary": "r1h>0 skip: 21-23 x4.65 DD -35% (2022 +15%) | 24-26 x2.57 DD -16%\nr1h>+1% skip: x5.73 DD -27% (+20%) | x2.51 DD -16%\nr1h>-1% skip: x4.38 DD -32% (+15%) | x2.77 DD -16%\nr1h>0 depth16%: x5.89 DD -28% (+20%) | x2.49 DD -15%\nr1h>0 & br>=0.90 skip: x4.70 DD -35% (+12%) | x2.74 DD -16%\nr1h>0 & pre<=-3% skip: x5.76 DD -32% (+15%) | x2.55 DD -16%\nr1h>0 & knife(-3%,0.90) skip: x5.56 DD -31% (+14%) | x2.59 DD -16%\nr1h>0 & knife(-3%,0.90) depth16% [PICK]: x6.26 DD -29% (+18%) | x2.60 DD -15%\n2/8 beat live in 2021-23, 2/8 in 2024-26 (r1h>-1% skip and r1h>0 & br>=0.90 skip, both worse in 2021-23), 0 in both.",
+              "motivation_evidence_2021_23": "Design trades with r1h > 0 (326 of 1,681): avg +0.25% (2021) / +0.26% (2022-23), time stops 10.2% / 9.4%, against +1.42% / +0.76% and 4.5% / 7.3% for r1h <= 0. AUC 0.553; the r1h (0.01, 0.03] bin was negative in both sub-periods. Inside the knife set, r1h > 0 trades (117) averaged -2.70% (2021, 23% time stops) and -0.71% (2022-23, 16%). Knife trades with r1h <= 0 averaged +1.06% / +0.43%.",
+              "checks": "2024-26 check: does NOT beat live (x2.60 vs x2.61, exact 2.5985 vs 2.6088; drawdown -15% vs -16%). +LUNA/FTT/SRM: live 21-23 x5.29 DD -31% 2022 +1% | 24-26 x2.46 DD -15%; pick x5.38 DD -33% 2022 +1% | x2.45 DD -15% -> FAILS. Fills 0.2% worse: live x3.98 DD -29% 2022 -2% | x2.37 DD -16%; pick x4.77 DD -29% 2022 +5% | x2.37 DD -16% -> FAILS.",
+              "bugs_fixed": "none (uses the same corrected feature file as H1)"
+            }
+          ],
+          "key_findings": "1. In 2021-23, time-stop losers can be predicted from information available when the order is placed. Market breadth (share of coins below their 7-day average) and the coin's own slide before the dip were the strongest signals. Volume surges, BTC's 24h drop, distance from the 30-day high and a recent time stop on the same coin added nothing. The 'knife' set (pre3d <= -3% and breadth >= 0.9) was 27% of 2021-23 trades and averaged about 0% (+0.01% in 2021, +0.15% in 2022-23), with roughly double the time-stop rate.\n2. Skipping those buys transforms 2021-23: the H1 pick goes to x6.19 with a -15% worst drop (live x5.75, -29%), and 7 of 8 variants beat live there. It does not carry over. In 2024-26 all 8 variants are lower (x1.92-x2.33 vs x2.61) and the worst drop doesn't improve (-16%, two variants -12%). The post-hoc split (r2_entry_posthoc.py, run after both grids) shows why. In 2024-26 the flagged trades were as good as the rest: knife pre<=-3% br>=0.80 averaged +0.95% with 8.2% time stops (343 trades) vs +1.17% and 7.2% unflagged. knife br>=0.90 averaged +1.00% with 6.9% time stops vs +1.13% and 7.9%. r1h>0 averaged +1.25% with 6.9% time stops vs +1.05% and 7.7%. The worst subgroup in 2021-23 (r1h>0 & knife, -1.51% avg, 18.8% time stops) had 0 time stops in 2024-26 (44 trades, +1.38%). The 2021-23 pattern was a bear-market and 2021-crash effect: losses in sustained broad sell-offs, which 2024-26 barely had.\n3. Both hypotheses rejected (16 variants run, each grid once): H1 pick 2024-26 x2.06, H2 pick 2024-26 x2.60 vs x2.61. Both also fail the LUNA/FTT/SRM and fills-0.2%-worse checks. Live bot unchanged.\n4. Takeaway for future entry filters: the time-stop losers in 2021-23 cluster in broad bear phases. Filters that cut them sharply lower 2021-23 drawdowns, but they give up 2024-26 return because the same conditions produced normal winners there. The 2024-26 worst drop (-16%) did not come from knife-type buys.\nFiles (all new, under /home/user/halal-rider/research/panic_buyer/refine/): r2_entry_analysis.py, r2_entry_analysis2.py, r2_entry_analysis3.py (design-only feature analysis), r2_entry_feats.py, r2_entry_h1_knife.py, r2_entry_h2_cascade.py, r2_entry_posthoc.py. Outputs: /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_r2/entry/ (logs, entry_trades_2021_23.csv, r2_entry_h1_knife.csv, r2_entry_h2_cascade.csv, verdicts.csv). No existing file edited and nothing committed.",
+          "near_misses": "H2 pick 'r1h>0 & knife(-3%,0.90) depth16%' missed the 2024-26 test by a hair: x2.5985 vs x2.6088, with a shallower drop (-15.5% vs -16.3%). It beat live in 2021-23 (x6.26 vs x5.75, DD -28.6% vs -29.2%). It still fails both robustness checks: with LUNA/FTT/SRM the 2021-23 drop is -33% vs -31% and 2024-26 is x2.45 vs x2.46; with fills 0.2% worse 2024-26 is x2.37 vs live x2.37, not higher. Two H2 variants beat live in 2024-26 only: r1h>-1% skip (x2.77, DD -16%) and r1h>0 & br>=0.90 skip (x2.74, DD -16%). Both were clearly worse in 2021-23 (x4.38 / DD -32% and x4.70 / DD -35%), so the rule could never pick them. H1's deeper-trigger variants (16% on flagged coins) kept more of 2024-26 than the skips (x2.28-x2.32 vs x1.92-x2.17), but all stay well below x2.61."
+        },
+        "verify": []
+      },
+      {
+        "lens": "crowding",
+        "result": {
+          "lens": "crowding",
+          "hypotheses": [
+            {
+              "name": "H1 extra leg 2, funded first from free cash",
+              "rationale": "The damage in a market-wide cascade sits in the first fills, which keep falling, and averaging down is what rescues them. The first leg stays exactly as live (12% trigger, 8 closest coins, cap 20%). From the hourly cycle after the first leg fills, a fully funded limit buy of x times the first leg's money rests at ref_fill*(1-d2), where ref_fill is the 24h high that set the trigger. If the hour's open is already under that level, it buys at market. These leg-2 orders are funded first from free cash (all scaled down together if cash is short); the rest of the cash goes to the usual first-leg orders. Unfilled leg-2 orders are cancelled and re-placed each hour. After leg 2 fills, the take-profit is the average cost x 1.015, placed at the next cycle (none in the leg-2 fill hour). The 48h time stop and 24h cooldown count from the first fill. Grid, fixed before any run: x in {0.5, 1.0} x d2 in {16, 18, 20, 24%} = 8 variants. Custom kernel ckernel (a copy of gkernel). With the ladder off it is bit-identical to engine.run: x5.75 / x2.61, and also with dead coins x5.29 / x2.46, fills 0.2% worse x3.98 / x2.37, and both x3.63 / x2.24. It also passes 5 hand-made one-coin path checks.",
+              "script": "/home/user/halal-rider/research/panic_buyer/refine/r2_crowding.py",
+              "variants": 8,
+              "verdict": "rejected",
+              "pick": "extra leg 2: 1x at 24%",
+              "pick_numbers": "pick 21-23 x 7.51 DD -30% 2022 +32% | 24-26 x 2.37 DD -17% worst-mo -7% up-mo 85%. 2024-26 check: does NOT beat the live settings (live 24-26 x2.61 DD -16%). Exact values from verdicts.csv: d_mult 7.5070, d_dd -0.2970, t_mult 2.3691, t_dd -0.1696 (live 5.7500 / -0.2924 / 2.6088 / -0.1628). Trade anatomy, 21-23: 1655 trades | TP 1585 (+11.04, avg +1.9%) | time stop 70 (-4.53, avg -9.9%) | with leg 2: 125 (avg -2.8%, 34 time stops) | worst -38.1%. 24-26: 830 trades | TP 778 (+16.42) | time stop 52 (-6.14, avg -6.0%) | with leg 2: 67 (avg -1.5%, 21 time stops) | worst -18.3%.",
+              "all_variants_summary": "extra leg 2: 0.5x at 16% | 21-23 x5.82 DD -36% 2022 +42% | 24-26 x2.65 DD -20%\nextra leg 2: 0.5x at 18% | 21-23 x6.84 DD -29% 2022 +42% | 24-26 x2.72 DD -20%\nextra leg 2: 0.5x at 20% | 21-23 x7.25 DD -30% 2022 +33% | 24-26 x2.65 DD -18%\nextra leg 2: 0.5x at 24% | 21-23 x6.48 DD -30% 2022 +20% | 24-26 x2.48 DD -17%\nextra leg 2: 1x at 16% | 21-23 x6.47 DD -37% 2022 +53% | 24-26 x2.71 DD -20%\nextra leg 2: 1x at 18% | 21-23 x6.37 DD -38% 2022 +47% | 24-26 x2.74 DD -20%\nextra leg 2: 1x at 20% | 21-23 x7.04 DD -33% 2022 +28% | 24-26 x2.68 DD -19%\nextra leg 2: 1x at 24% | 21-23 x7.51 DD -30% 2022 +32% | 24-26 x2.37 DD -17% (PICK)\n8 variants | beat live in 2021-23: 4 | in 2024-26: 0 | in both: 0",
+              "checks": "2024-26: FAILS (x2.37 < x2.61). +LUNA/FTT/SRM: live 21-23 x5.29 DD -31% 2022 +1% | 24-26 x2.46 DD -15%; pick 21-23 x5.52 DD -33% 2022 -0% | 24-26 x2.12 DD -15%, FAILS. Fills 0.2% worse: live 21-23 x3.98 DD -29% 2022 -2% | 24-26 x2.37 DD -16%; pick 21-23 x5.38 DD -30% 2022 +10% | 24-26 x2.30 DD -17%, FAILS. Post-hoc (r2_crowding_diag.py): LUNA closed-trade sum of ret x amt is -0.497 for the pick vs -0.214 for live.",
+              "motivation_evidence_2021_23": "Trades that entered and exited before 2024 (1,681): r2_crowding_motiv.py, r2_crowding_motiv2.py, r2_crowding_motiv3.py. (1) Crowded hours are worse: hours with 7-8 fills average +0.27% per trade, 14.0% time stops, sum -0.178; lone fills average +1.12%, 5.1% time stops. Days with 10+ fills: sum -0.176 (26% losing days). (2) 1-minute fill order inside hours with 5+ fills: ranks 1-2 avg -0.07% (13.4% time stops, sum -0.257); ranks 3-4 +0.25%; ranks 5-6 +1.57%; ranks 7-8 +1.82%. So it is the first fills that keep falling. (3) A second buy at ref*(1-d2) as its own money returns +2.33% / +3.21% / +3.47% / +5.00% for d2 = 16/18/20/24% (win 90/90/86/87%). That is 548/381/262/153 chances, on exactly the trades whose first leg did worst (live result there -0.95% / -1.99% / -3.25% / -6.01%, 20-50% time stops). Of those chances, 297/159/97/50 come in the fill hour and 251/222/165/103 later. (4) The live bot holds coins for only 5% of equity on average (median 0%; 84% of hours hold nothing), so cash for an extra leg is usually free.",
+              "bugs_fixed": "No engine bug. Before the grids ran, two of my own hand-made test paths in synthetic_check had highs and opens that did not reach the averaged take-profit (86.17). I fixed that test data (h[2] 86 -> 87, o3[1] 86 -> 86.5), then all 5 checks passed. No existing file was edited."
+            },
+            {
+              "name": "H2 split ladder on fewer coins",
+              "rationale": "This is the textbook ladder: each selected coin's budget is split, w at the 12% trigger and 1-w at ref*(1-d2), both resting from the hour start, so both can fill in the same hour. After the first leg fills, leg 2 keeps resting at that fixed price with its cash locked until it fills or the position is sold. The same exit rules as H1 apply. On 2021-23 data a split on the live 8 coins lowered the crude per-trade total in all 8 combinations (+3.70 to +4.28 vs +4.75 live), because half the first-leg money sits idle in the 70-90% of trades that never reach leg 2. So the first leg keeps about the live size by using fewer coins: w=1/2 on 4 coins and w=2/3 on 5 coins, with cap fmax = 20%/w per coin (so a coin's two legs can total 40% / 30% of equity). Grid, fixed before any run: 2 (w, N) x d2 in {16, 18, 20, 24%} = 8 variants. Same ckernel and equivalence proof as H1.",
+              "script": "/home/user/halal-rider/research/panic_buyer/refine/r2_crowding.py",
+              "variants": 8,
+              "verdict": "rejected",
+              "pick": "split 50% at 12% / rest at 18%, 4 coins",
+              "pick_numbers": "pick 21-23 x 9.07 DD -23% 2022 +42% | 24-26 x 2.67 DD -15% worst-mo -4% up-mo 85%. 2024-26 check: BEATS the live settings. Exact values from verdicts.csv: d_mult 9.0738, d_dd -0.2345, t_mult 2.6723, t_dd -0.1512 (live 5.7500 / -0.2924 / 2.6088 / -0.1628). Trade anatomy, 21-23: 1633 trades | TP 1582 (+13.57, avg +1.8%) | time stop 51 (-5.50, avg -11.0%) | with leg 2: 386 (avg +0.3%, 46 time stops) | worst -40.5%. 24-26: 793 trades | TP 759 (+22.39) | time stop 34 (-7.22, avg -5.6%) | with leg 2: 172 (avg +0.5%, 28 time stops) | worst -21.4%. Live for comparison: 21-23 TP +9.84 / time stop -5.09; 24-26 TP +14.44 / time stop -5.18.",
+              "all_variants_summary": "split 50% at 12% / rest at 16%, 4 coins | 21-23 x6.03 DD -41% 2022 +33% | 24-26 x2.93 DD -13%\nsplit 50% at 12% / rest at 18%, 4 coins | 21-23 x9.07 DD -23% 2022 +42% | 24-26 x2.67 DD -15% (PICK; beats live in both)\nsplit 50% at 12% / rest at 20%, 4 coins | 21-23 x7.79 DD -22% 2022 +24% | 24-26 x2.51 DD -17%\nsplit 50% at 12% / rest at 24%, 4 coins | 21-23 x6.17 DD -23% 2022 +14% | 24-26 x2.39 DD -15%\nsplit 67% at 12% / rest at 16%, 5 coins | 21-23 x5.95 DD -34% 2022 +30% | 24-26 x2.60 DD -20%\nsplit 67% at 12% / rest at 18%, 5 coins | 21-23 x6.74 DD -34% 2022 +34% | 24-26 x2.73 DD -17%\nsplit 67% at 12% / rest at 20%, 5 coins | 21-23 x6.61 DD -30% 2022 +31% | 24-26 x2.59 DD -19%\nsplit 67% at 12% / rest at 24%, 5 coins | 21-23 x6.45 DD -24% 2022 +17% | 24-26 x2.55 DD -17%\n8 variants | beat live in 2021-23: 4 | in 2024-26: 3 | in both: 1",
+              "checks": "2024-26: BEATS (x2.67 > x2.61, DD -15% vs -16%). +LUNA/FTT/SRM: live 21-23 x5.29 DD -31% 2022 +1% | 24-26 x2.46 DD -15%; pick 21-23 x4.96 DD -49% 2022 +15% | 24-26 x2.35 DD -14%, FAILS. Fills 0.2% worse: live 21-23 x3.98 DD -29% 2022 -2% | 24-26 x2.37 DD -16%; pick 21-23 x7.56 DD -22% 2022 +37% | 24-26 x2.49 DD -15%, ok. Post-hoc cause (r2_crowding_diag.py, diag_may2021.log): with the collapse coins added, the -49.0% drop runs from 2021-05-18 07:00 to 2021-05-23 18:00 (the May 2021 crash, not LUNA's 2022 collapse). One LUNA position entered 2021-05-22 00:00 at 40.0% of equity and lost 47.4%; SOL at 23.8% of equity lost 43.3%. LUNA closed-trade sum of ret x amt: -1.201 for the pick vs -0.214 for live. Without the collapse coins, the same window is -17.2% for the pick vs -26.2% for live.",
+              "motivation_evidence_2021_23": "Same 2021-23 evidence as H1, plus the following. Crude per-trade replay of a split on the live 8 coins, at d2 16/18/20/24% and w 0.5/0.67: total +3.70 to +4.28 vs +4.75 live, with time-stop losses falling to -1.75..-3.59 from -5.09. Leg 2 fills in 32.6% / 22.7% / 15.6% / 9.1% of trades. Keeping the first leg's size needs fewer coins: the old 960 grid's 2021-23 columns show 5 orders at 12% give x9.25 with a -30.4% drop (just past the 1-point tolerance), against 8 orders at x5.75 / -29.2%.",
+              "bugs_fixed": "No engine bug. The only fix was the test data in synthetic_check, described under H1."
+            }
+          ],
+          "key_findings": "Neither crowding rule passes, so the live bot stays unchanged. Each grid ran once through study.study(), with engine.run pointed at my kernel copy in memory. That kernel, with its switches off, is bit-identical to engine.run (x5.75 / x2.61).\n\n(1) Capping fills per hour is not worth testing, because the 2021-23 data points the other way. Inside crowded hours the first fills are the ones that keep falling: ranks 1-2 average -0.07% with 13.4% time stops. The late fills are the best trades: ranks 5-6 +1.57%, ranks 7-8 +1.82%. A cap that cancels resting buys after F fills would skip trades averaging +1.08% to +1.82% while keeping ones averaging +0.94% to +0.97%. Rolling 6/12/24h caps show no damage either. The fill order comes from 1-minute data (r2_crowding_fm.py, 0.00% mismatch with the hourly fills).\n\n(2) Averaging down does help. A second leg returns +2.3% to +5.0% on its own money on exactly the losing first legs. In the backtest:\n- H2 (split ladder, 50% at 12% / 50% at 18% on the 4 closest coins) beats live in both periods: x9.07 / -23% in 2021-23 and x2.67 / -15% in 2024-26. It also beats live with fills 0.2% worse (x7.56 / x2.49). It fails the LUNA/FTT/SRM check (21-23 x4.96 with a -49% drop; 24-26 x2.35 vs x2.46). The cause is concentration: the 40% per-coin cap let one LUNA trade in May 2021 take 40% of equity and lose 47.4%.\n- H1 (extra leg 2 from free cash) pushes 2021-23 to x7.51 / -30% but loses in 2024-26 (x2.37 / -17%). It also fails both robustness checks.\n\nOutputs are in /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_r2/crowding:\n- r2_crowding.log\n- r2_crowding_h1_extra.csv\n- r2_crowding_h2_split.csv\n- verdicts.csv\n- check.log\n- motiv.log, motiv2.log, motiv3.log\n- diag.log, diag_may2021.log\n\nNew scripts only, in /home/user/halal-rider/research/panic_buyer/refine:\n- r2_crowding.py\n- r2_crowding_fm.py\n- r2_crowding_motiv.py, r2_crowding_motiv2.py, r2_crowding_motiv3.py\n- r2_crowding_diag.py\n\nNo existing file was edited and nothing was committed.",
+          "near_misses": "The main near miss is the H2 pick, \"split 50% at 12% / rest at 18%, 4 coins\". It passed 3 of the 4 tests: the 2021-23 pick (x9.07, -23%, 2022 +42%), the 2024-26 check (x2.67, -15%) and the 0.2% worse-fill check (x7.56 / -22%, x2.49 / -15%). It failed only LUNA/FTT/SRM (21-23 x4.96 / -49%, 24-26 x2.35 vs x2.46). The failure is concentration by design: the 20%/w cap allows 40% of equity in one coin, and the May 2021 LUNA trade at 40% of equity lost 47.4%. A natural follow-up would cap the coin's total (both legs) at 20-25% of equity, but that needs its own pre-registered grid. Because it was found after seeing these results, it carries extra multiple-testing risk.\n\nOther variants that beat live in 2024-26 but failed the 2021-23 drawdown rule:\n- split 50% / 16%, 4 coins: x2.93 / -13% in 2024-26, but -41% in 2021-23.\n- split 67% / 18%, 5 coins: x2.73 / -17%, but -34% in 2021-23.\n\nOf the H1 variants, \"0.5x at 18%\" (x6.84 / -29% in 2021-23) and \"0.5x at 20%\" (x7.25 / -30%) beat live in 2021-23. Both dropped -18% to -20% in 2024-26, deeper than live's -16%. As in round 1, the ladders that earn more mostly earn it with deeper drops. Only the 4-coin split cut the drawdown in both periods, and it is fragile to collapsing coins."
+        },
+        "verify": []
+      },
+      {
+        "lens": "trigger",
+        "result": {
+          "lens": "trigger",
+          "hypotheses": [
+            {
+              "name": "H1: shorter reference window (trigger = highest close of the last w hours x (1 - depth))",
+              "rationale": "The edge should be the fast liquidation overshoot. A 12% fall spread over a day is more often a coin repricing. 2021-23 evidence: live trades by hours since the 24h highest close at entry: 1-6h avg +2.30% (152 trades), 7-12h +1.06%, 13-18h +0.51% (9.15% time stops), 19-24h +0.98%. Trades whose 24h high was already >=10% under the 72h high (multi-day slide): 217 trades, avg 0.00%, 9.22% time stops averaging -18.10%. Longer windows buy these slides earlier. One-coin bots on 2021-23 (live rules) with 12/24/36/48/72h windows: average trade +1.453/+1.036/+0.836/+0.635/+0.401%, time stops 5.25/6.38/7.97/9.22/11.29%. A high-based 24h reference was not motivated (avg +0.791%, mean log multiple 0.777 vs 0.853), so it was not tested as its own grid.",
+              "script": "/home/user/halal-rider/research/panic_buyer/refine/r2_trigger_h1_window.py",
+              "variants": 8,
+              "verdict": "rejected",
+              "pick": "ref = highest close 12h, depth 11%",
+              "pick_numbers": "ref = highest close 12h, depth 11%             21-23 x 6.25 DD  -20% 2022  +30% | 24-26 x 2.54 DD  -14% worst-mo  -5% up-mo  82%  (exact: d_mult 6.2466, d_dd -0.1982, t_mult 2.5424, t_dd -0.1423; live 5.7500/-0.2924, 2.6088/-0.1628)",
+              "all_variants_summary": "close 8h: 21-23 x4.72 DD -16% (2022 +24%) | 24-26 x2.03 DD -15%\nclose 12h: 21-23 x5.63 DD -18% (2022 +24%) | 24-26 x2.28 DD -17%\nclose 16h: 21-23 x4.56 DD -27% (2022 +25%) | 24-26 x2.61 (2.6139) DD -16%\nclose 20h: 21-23 x5.20 DD -28% (2022 +19%) | 24-26 x2.47 DD -16%\nclose 36h: 21-23 x5.31 DD -32% (2022 -3%) | 24-26 x2.44 DD -24%\nclose 48h: 21-23 x4.25 DD -39% (2022 -19%) | 24-26 x2.15 DD -23%\nclose 72h: 21-23 x2.24 DD -60% (2022 -47%) | 24-26 x1.86 DD -25%\nclose 12h, depth 11%: 21-23 x6.25 DD -20% (2022 +30%) | 24-26 x2.54 DD -14%\nBeat live in 2021-23: 1. In 2024-26: 1 (16h). In both: 0.",
+              "motivation_evidence_2021_23": "From /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_r2/trigger/r2_trigger_motiv.log (trades that entered and exited before 2024, one-coin bots on candles cut at 2024-01-01). Hours since the 24h max close at entry: 1-6h n=152 avg +2.30%; 7-12h n=301 +1.06%; 13-18h n=470 +0.51%; 19-24h n=758 +0.98%. 24h high <=-10% under the 72h high: n=217, avg 0.00%, sum ret*amt -0.19. One-coin bots by window: 12h 1,180 trades avg +1.453% log-mult 0.851; 24h 1,723 / +1.036% / 0.853; 36h 2,133 / +0.836% / 0.836; 48h 2,483 / +0.635% / 0.699; 72h 3,020 / +0.401% / 0.468; high 24h 2,147 / +0.791% / 0.777.",
+              "checks": "2024-26 (the pick): x2.54 DD -14% vs live x2.61 DD -16%, so it does NOT beat live. +LUNA/FTT/SRM: pick 21-23 x6.09 DD -22% 2022 +19% | 24-26 x2.54 DD -14%, vs live x5.29 DD -31% 2022 +1% | x2.46 DD -15%: ok. Fills 0.2% worse: pick 21-23 x4.42 DD -20% 2022 +12% | 24-26 x2.35 DD -17%, vs live x3.98 DD -29% 2022 -2% | x2.37 DD -16%: FAILS. Verdict: rejected.",
+              "bugs_fixed": "None. The custom engine r2_trigger_lib.trun/gkernel_t (engine.gkernel plus a custom ref and a cooldown after time stops) gives the same equity curve and trade log as engine.run, element for element, with the switches off (live x5.75/x2.61, also with +LUNA/FTT/SRM and with pen 0.002). Log: /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_r2/trigger/r2_trigger_check.log"
+            },
+            {
+              "name": "H2: shorter cooldown after a sale (live 24h)",
+              "rationale": "After a take-profit the coin is usually still about 10% under its 24h high, so it is still in the overshoot zone. A second dip there is the same edge, and blocking it for 24h leaves the edge unused. 2021-23 one-coin bots with cooldown 0/12/24/48/96h: 3,491/2,186/1,723/1,390/1,073 trades, avg trade +0.779/+0.939/+1.036/+1.004/+0.986%, mean log multiple 1.197/0.938/0.853/0.665/0.505. Live re-entries 24-36h after a take-profit: 388 trades, avg +0.71%, still positive. The other option, blocking re-buys for longer after a time stop, was contradicted by 2021-23 data. Re-entries after a time stop: 107 trades, avg +1.14%, time-stop rate 3.74%, vs 6.69% after a take-profit. One-coin bots with a 72h block barely changed (log multiple 0.853) and a 168h block was worse (0.800). It therefore got only one variant here, in reverse form: 6h after a take-profit, 24h after a time stop.",
+              "script": "/home/user/halal-rider/research/panic_buyer/refine/r2_trigger_h2_cooldown.py",
+              "variants": 8,
+              "verdict": "rejected",
+              "pick": "cooldown 18h",
+              "pick_numbers": "cooldown 18h                                   21-23 x 6.56 DD  -30% 2022  +31% | 24-26 x 2.51 DD  -17% worst-mo  -6% up-mo  85%  (exact: d_mult 6.5646, d_dd -0.2957, t_mult 2.5086, t_dd -0.1729; live 5.7500/-0.2924, 2.6088/-0.1628)",
+              "all_variants_summary": "cd 0h: 21-23 x9.87 DD -42% (2022 +18%) | 24-26 x3.13 DD -23%\ncd 3h: 21-23 x8.97 DD -39% (2022 +19%) | 24-26 x3.01 DD -23%\ncd 6h: 21-23 x7.21 DD -44% (2022 +19%) | 24-26 x2.57 DD -21%\ncd 12h: 21-23 x7.39 DD -33% (2022 +12%) | 24-26 x2.72 DD -19%\ncd 18h: 21-23 x6.56 DD -30% (2022 +31%) | 24-26 x2.51 DD -17%\ncd 48h: 21-23 x3.93 DD -30% (2022 +19%) | 24-26 x2.25 DD -16%\ncd 96h: 21-23 x2.80 DD -29% (2022 +17%) | 24-26 x2.00 DD -16%\ncd 6h after take-profit / 24h after time stop: 21-23 x7.55 DD -42% (2022 +19%) | 24-26 x2.63 DD -21%\nBeat live in 2021-23: 1. In 2024-26: 0. In both: 0.",
+              "motivation_evidence_2021_23": "From /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_r2/trigger/r2_trigger_motiv.log and r2_trigger_motiv2.log. By the gap since the previous take-profit: 24-47h n=548 avg +0.94% (TS 5.47%); 48-95h n=337 +1.20%; 96-167h n=237 +1.26%; 168-335h n=183 +0.76%; >=336h n=250 +0.52% (TS 12.00%). Within 36h of a take-profit: 388 trades, avg +0.71%, TS 7.2%. After a time stop: n=107, avg +1.14%. Within 48h of a time stop: 33 trades, avg +0.83%, sum ret*amt +0.093. After the 108 time stops, the coin's close 168h later had median -0.6% and mean +2.0%, and 48% saw a further -12% low. One-coin bots: cd 0h log-mult 1.197, 12h 0.938, 24h 0.853, 48h 0.665, 96h 0.505; 24h with a 72h block after a time stop 0.853, with a 168h block 0.800.",
+              "checks": "2024-26 (the pick): x2.51 DD -17% vs live x2.61 DD -16%, so it does NOT beat live. +LUNA/FTT/SRM: pick 21-23 x6.70 DD -33% 2022 +7% | 24-26 x2.51 DD -17%, vs live x5.29 DD -31% 2022 +1% | x2.46 DD -15%: FAILS (drops more than 1 point deeper). Fills 0.2% worse: pick 21-23 x4.91 DD -30% 2022 +20% | 24-26 x2.24 DD -18%, vs live x3.98 DD -29% 2022 -2% | x2.37 DD -16%: FAILS. Verdict: rejected.",
+              "bugs_fixed": "None (same engine check as H1: identical equity and trade log to engine.run with the switches off)."
+            }
+          ],
+          "key_findings": "Both trigger-mechanics hypotheses were rejected under the pre-registered rule. Live bot unchanged.\n\n(1) Reference window. Longer windows are clearly worse, which supports the thesis that the edge is the fast drop. 36h: 2022 -3%, DD -32%. 48h: 2022 -19%. 72h: 2022 -47%, DD -60%, 24-26 x1.86. Shorter windows cut drawdowns a lot (8h DD -16%, 12h DD -18% in 21-23) but also cut returns, because there are fewer trades. Results are not monotonic in the window (12h x5.63, 16h x4.56, 20h x5.20, 24h x5.75 in 21-23), a sign of path dependence and noise. The design pick (12h, depth 11%: 21-23 x6.25 DD -20%) earned less in 2024-26 (x2.54 vs x2.61) and failed the 0.2%-worse-fill check (24-26 x2.35 vs x2.37).\n\n(2) Cooldown. Shorter cooldowns raise returns in both periods but deepen drops (0h: x9.87/x3.13 at DD -42%/-23%; 3h: x8.97/x3.01 at -39%/-23%). This is the same more-return-for-more-risk trade-off found in earlier rounds, not a better bot. Longer cooldowns (48/96h) lose return with no drawdown benefit. The design pick (18h) failed 2024-26 (x2.51 vs x2.61) and both robustness checks.\n\n(3) Blocking re-buys after a time stop is contradicted by 2021-23 data. Re-entries after a time stop did better than average (107 trades, avg +1.14%, time-stop rate 3.74% vs 6.69% after take-profits), so it was not given its own grid.\n\n(4) The custom engine (r2_trigger_lib.gkernel_t/trun) gives exactly the same results as engine.run with its switches off. No code bugs found. Each grid was run once.\n\nFiles: scripts /home/user/halal-rider/research/panic_buyer/refine/r2_trigger_lib.py, r2_trigger_check.py, r2_trigger_motiv.py, r2_trigger_motiv2.py, r2_trigger_h1_window.py, r2_trigger_h2_cooldown.py. Logs/CSVs in /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_r2/trigger/ (r2_trigger_h1_window.log/.csv, r2_trigger_h2_cooldown.log/.csv, verdicts.csv, motivation and check logs).",
+          "near_misses": "12h window with depth 11%: shallower worst drop in both periods (-20% / -14% vs -29% / -16%), 2022 +30%, and it passed the LUNA/FTT/SRM check (x6.09/x2.54 vs x5.29/x2.46). It missed 2024-26 on return (x2.54 vs x2.61) and lost slightly with fills 0.2% worse (x2.35 vs x2.37). It is less return for less risk, not a strict improvement. 16h window: 2024-26 x2.6139 vs live x2.6088 at the same -16% drop, but 21-23 only x4.56. Cooldown 12h: x7.39/x2.72, but the 21-23 drop of -32.9% is 3.7 points deeper than live (-29.2%). Cooldown 0h/3h: highest multiples (x9.87/x3.13, x8.97/x3.01), but drops of -42%/-39% in 21-23 and -23% in 24-26. Cooldown 6h after take-profit / 24h after time stop: 24-26 x2.63, but drops of -42%/-21%."
+        },
+        "verify": []
+      },
+      {
+        "lens": "realism",
+        "result": {
+          "script": "/home/user/halal-rider/research/panic_buyer/refine/r2_realism.py (main study, run once; imports r2_realism_lib.py = engine.mkernel copied as rkernel with realism switches, all off = mkernel delay 0). /home/user/halal-rider/research/panic_buyer/refine/r2_realism_f.py = diagnostic written after the main run (splits row f; changes none of its numbers). Outputs in /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_r2/realism/: r2_realism.log (= r2_realism.stdout), r2_realism_runs.csv (all re-runs), r2_realism_fills.csv (one row per live limit fill), r2_realism_f.log.",
+          "checks": [
+            {
+              "name": "Kernel copy reproduces the live 1-minute engine",
+              "method": "r2_realism_lib.rrun with all switches off vs engine.mrun(delay=0) on the real 19-coin 1-minute panel: largest equity difference, and a cell-by-cell comparison of the trade logs",
+              "result": "Largest equity difference 0; trade logs identical: True. Both give 2021-23 x5.74 (worst drop -29%, 2022 +19%) and 2024-26 x2.61 (worst drop -16%). engine.run on the hourly archive gives x5.75 / x2.61. engine.run on hourly candles built from the same minutes gives x5.74 / x2.61, largest difference vs engine.mrun 0. The 1-minute baseline is x5.74, not x5.75, because the data differ, not the code (same as REFINE.md)."
+            },
+            {
+              "name": "Synthetic smoke test before the real run",
+              "method": "check_engine.synthetic prices (no real data): rrun with switches off vs engine.mrun, then every function and variant run end to end",
+              "result": "Equity difference 0.0, logs identical, 376 trades; all 15 variants ran and every fill followed its rule"
+            },
+            {
+              "name": "Every fill follows its rule",
+              "method": "verify_fills: for each variant, a Python twin of the buy rule recomputes the first allowed fill minute of every resting limit fill; every market-buy entry is checked against open / first-minute close / first-minute high x (1+slip) x (1+pen)",
+              "result": "kernel rule check: all fills follow their rule (0 violations across 15 variants)"
+            },
+            {
+              "name": "Fill minute of every live limit fill reproduced",
+              "method": "In anatomy(), assert first_fill(minute lows, limit) == the fill minute logged by the kernel, for each of the 2,332 resting limit fills",
+              "result": "Assertion passed for all 1,506 (2021-23) + 826 (2024-26) fills"
+            },
+            {
+              "name": "Trade counts match the brief",
+              "method": "Count the live-run trade log by entry period",
+              "result": "Trades 1681 / 884, time stops 108 / 67, average +0.98% / +1.09% (2021-23 / 2024-26), the same as the brief's trade anatomy"
+            },
+            {
+              "name": "Cost reference matches REFINE.md",
+              "method": "pen=0.002 (every fill 0.2% worse) on the 1-minute engine",
+              "result": "x3.98, drop -29%, 2022 -2% | x2.37, drop -16%; same as REFINE.md's hourly row (x3.98 / x2.37)"
+            },
+            {
+              "name": "No lookahead or strategy change",
+              "method": "Code review: the switches only change when and at what price an order the bot already decided on (from the hour open and closed candles) gets filled; trigger, ranking, sizing and exits are untouched",
+              "result": "OK. With 1-minute latency, a time stop executes at the close of the next hour's first minute: that is an execution price, not a signal. Cash is still usable only from the next hour."
+            },
+            {
+              "name": "No existing files changed",
+              "method": "git status / git diff --stat",
+              "result": "git diff is empty. Only new files: r2_realism.py, r2_realism_lib.py, r2_realism_f.py. Nothing committed. PYTHONDONTWRITEBYTECODE=1 and numba cache=False for the new kernel"
+            }
+          ],
+          "realistic_range": "Range rule fixed before the run. Low end = the worse of (g) and (g+f) by 2024-26 multiple. High end = the better of live and (f).\n- Low end, (g) realistic-strict (buys 0.3% through + take-profit 0.2% through + 1-minute latency): 2021-23 x3.70, worst drop -30%, 2022 -2%; 2024-26 x2.31, worst drop -18%.\n- High end, (f) live-bot timing for market buys with the engine's fill rules: 2021-23 x4.72, worst drop -30%, 2022 +20%; 2024-26 x2.66, worst drop -15%.\n- Envelope of the four rows that define the range (live, f, g, g+f): 2021-23 x3.31 to x5.74, worst drop -29% to -31%; 2024-26 x2.31 to x2.66, worst drop -15% to -18%.\n- Stress only, not realistic: (h) 2021-23 x1.43 / -34% / 2022 -17%, 2024-26 x1.46 / -19%. Every fill 0.2% worse: x3.98 / -29%, x2.37 / -16%.\n- What the live bot as written should expect: about x3.3 to x4.7 in 2021-23 and x2.35 to x2.66 in 2024-26, with worst drops of -30% to -31% and -15% to -17% (rows f and g+f).",
+          "summary": "LENS realism: 1-minute candles, live settings, 19 coins. No strategy change and no pick. The baseline is the 1-minute engine: 2021-23 x5.74, worst drop -29%, 2022 +19%; 2024-26 x2.61, worst drop -16%.\n\n(a) Anatomy of the live limit-buy fills (2021-23 / 2024-26)\n- Count: 1,506 / 826 resting limit fills, plus 175 / 58 market buys at the hour open.\n- Fill minute: median minute 26 of the hour. Only 28 (1.9%) / 13 (1.6%) fills happen in minute 0, before the bot's orders are really up.\n- How far through the limit the price traded (lowest low from the fill to the hour end): median 1.25% / 1.05%, 10th percentile 0.25% / 0.25%.\n  - Less than 0.3% through: 12.5% / 13.4% of fills.\n  - Less than 0.5% through: 22.2% / 25.9%.\n  - Less than 1% through: 42.2% / 47.7%.\n- How long the price stayed at or below the limit:\n  - Consecutive minutes with the low at or below the limit, in the run holding the fill minute: median 4 / 4. Under 2 minutes: 16.5% / 15.3%. Under 5 minutes: 52.1% / 54.5%.\n  - Longest run of minute closes at or below the limit: under 2 minutes for 27.1% / 29.4%, under 5 minutes for 47.9% / 49.8%.\n  - Minutes in the hour with the low at or below the limit: median 11 / 9.\n- The shallow fills are the best trades:\n  - 0-0.2% through: 96 fills averaging +1.76% (2021-23); 60 fills averaging +1.23% (2024-26).\n  - 0.2-0.3% through: +1.87% / +1.41%.\n  - 5% or more through: 143 fills averaging -1.43% with 29 time stops (2021-23); 77 fills averaging -0.49% (2024-26).\n- So every stricter rule removes winners. Fills dropped on the live path (counted against the same live trades, without re-running):\n  - 0.3% through: 189 fills averaging +1.81%, against +0.83% for the kept fills (2021-23); 111 averaging +1.32%, against +1.04% kept (2024-26).\n  - Low at or below the limit for 2 or more minutes: 139 averaging +2.23% (2021-23); 80 averaging +2.09% (2024-26).\n\n(b) Stricter buy fills, re-run (2021-23 multiple / worst drop / 2022 | 2024-26 multiple / worst drop)\n- Must trade 0.3% through: x4.25 / -29% / +11% | x2.34 / -18%.\n- Must trade 0.5% through: x3.22 / -30% / +8% | x2.11 / -18%.\n- Low at or below the limit for 2 or more minutes: x3.59 / -29% / +6% | x2.05 / -18%.\n- Low at or below the limit for 5 or more minutes: x1.66 / -30% / -8% | x1.53 / -20%.\n- Close at or below the limit for 2 or more minutes: x1.97 / -28% / -3% | x1.63 / -20%.\n- Close at or below the limit for 5 or more minutes: x1.29 / -33% / -9% | x1.28 / -20%.\n\n(c) Take-profit must trade 0.2% through: x5.17 / -29% / +13% | x2.59 / -16%.\n\n(d) Market buys at the hour open\n- The open is a fair price; it is not a systematic gift. Close of the first minute vs the open: mean +0.054%, median +0.059%, higher 52.0% of the time (2021-23); mean -0.004%, median +0.012%, higher 53.4% (2024-26).\n- The high of the first minute is +0.401% / +0.450% above the open on average.\n- Re-run at the first-minute close: x5.83 / -29% | x2.61 / -16%.\n- Re-run at the first-minute high (worst case): x5.50 / -29% | x2.59 / -16%.\n- Take-profits that sell at an open already above target: 488 of 1,573 (31%) at +3.05% (2021-23); 256 of 817 (31%) at +2.79% (2024-26). The first-minute close is only -0.037% / -0.062% lower than that open.\n\nExtra rows, all fixed before the run\n- (e) 1-minute latency on every hourly action: x5.78 / -29% / +16% | x2.58 / -16%. Order latency does not matter.\n- (f) The live bot's own timing for market buys: x4.72 / -30% / +20% | x2.66 / -15%. panic_buyer.py places the take-profit right after a market buy, while the backtest waits for the next hour, and it counts the 48h one hour earlier.\n- Split of (f), from r2_realism_f.py, written after the main run:\n  - Take-profit 1 minute after the buy only: x4.84 | x2.66.\n  - Time stop 1 hour earlier only: x5.62 | x2.62.\n  - Under (f), market buys in 2021-23 average +0.10% instead of +1.21%. 103 of 178 sell within the buy hour at about +1.31%, losing the next-hour overshoot (+2.47%). 2021 falls from +262% to +195%.\n  - This is a gap between the live bot and the backtest. It is not a fill-quality issue. Its sign is mixed: worse in 2021-23, slightly better in 2024-26. Nothing was changed.\n- (g) Realistic-strict: x3.70 / -30% / -2% | x2.31 / -18%.\n- (g+f): x3.31 / -31% / +4% | x2.35 / -17%.\n- (h) Stress: x1.43 / -34% / -17% | x1.46 / -19%.\n- Reference, every fill 0.2% worse: x3.98 / -29% / -2% | x2.37 / -16%.\n\nReading\n- The backtest depends mostly on the resting limit-buy fill rule, because shallow fills are the best trades. Even so, 0.3% through costs only about 10% of the 2024-26 multiple (x2.34 vs x2.61), while 2021-23 falls by about a quarter (x4.25 vs x5.74).\n- On Binance's price-time-priority book, any trade below the limit means a bid resting at the limit was already filled. So the engine's 0.1%-through rule is already conservative. The 'stays N minutes' rules model something a fill does not need; treat them as stress bounds.\n- The real fill risks (order not yet up in minute 0, price at the hour open, latency) are measured as small: within ±1% (e), and -4.2% / -0.5% for the first-minute high (d).\n- The largest realistic difference is the live bot's immediate take-profit after market buys (f).\n- Code bugs found: none.\n- Files: /home/user/halal-rider/research/panic_buyer/refine/r2_realism_lib.py, /home/user/halal-rider/research/panic_buyer/refine/r2_realism.py and /home/user/halal-rider/research/panic_buyer/refine/r2_realism_f.py. Logs are in /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_r2/realism/."
+        },
+        "verify": []
+      }
+    ],
+    "critic": {
+      "overall_assessment": "The live bot's settings should stay as they are. Round 2's work is sound: I found no rule violations, no lookahead and no number mismatches, and all 8 picks fail the rule. A cleaner +LUNA/FTT/SRM check does not rescue any of them. But the round left two problems that matter more than any refinement. First, the live bot as coded is not the strategy that was backtested. Second, the dead-coin robustness check is partly an artifact.\n\nWhat I checked:\n- Read every r2_*.py. All four custom kernels are line-by-line copies of gkernel/mkernel, and each one's equivalence proof passes in its log. The new features look only at the past: shift(1) or older, and refs are 24h closes shifted by 1. Stale/time-stop exits sell at the hour's close, the same as the existing time stop. The motivation scripts filter to before 2024.\n- Reran r2_crowding.py, r2_entry_h2_cascade.py and r2_losers.py into pb_out_r2/critic/. Every number is identical to the reports, including the split pick (2021-23 x9.07 / -23%, 2024-26 x2.67, +dead x4.96 / -49%, 0.2%-worse fills x7.56 / x2.49) and the entry H2 near miss (2024-26 x2.5985). The agents' own logs for entry H1 and trigger H1/H2 match their summaries.\n- The crowding claim that one LUNA trade was \"40% of equity\" is real. With fmax=0.4 it happens when only 1-2 coins are free to buy because the rest are held or cooling down.\n- Rebuilt realism row (f) on hourly candles with a new kernel (r2_critic_f.py; with its switches off it gives exactly the engine.run results). It gives 2021-23 x4.73 / 2024-26 x2.66, against the realism agent's 1-minute x4.72 / x2.66. The cause is confirmed in panic_buyer.py: open_position() calls place_tp() right after a market buy, so the +1.5% sell goes up inside the buy hour. And because opened_ms is the start of the buy hour, the 48h time stop fires one hour earlier than the backtest's.\n\nWhat matters for the live bot:\n1. The bot as coded backtests at x4.7 in 2021-23, not the advertised x5.75. Market buys in 2021-23 average +0.1% instead of +1.2%. The comparison is mixed. Backtest timing wins in 2021-23 (x5.75 vs x4.73), and with 0.2%-worse fills (x3.98 vs x3.38). Live timing wins slightly in 2024-26 (x2.66 vs x2.61), and with LUNA/FTT/SRM added (x5.69 vs x5.29, though with a -34% vs -31% drop). Neither version beats the other on every test. This is an implementation choice for the user, not a refinement that passed the rule.\n2. The split ladder (half at 12%, half at 18%, 4 coins) is the only real near miss. It is the only variant that beat live in both periods, and it survives 0.2%-worse fills. It fails only on concentration: up to 40% of equity can sit in one coin. A capped version has to be treated as a new, post-hoc hypothesis, because this ladder family has already been checked against 2024-26.\n\nThe other results are best read as in-sample effects. Cutting stale losers and filtering knife-catching entries improve 2021-23 drawdowns a lot (-15% to -24%), but the effect vanishes in 2024-26 because it came from bear-market conditions.",
+      "change_live_bot": false,
+      "rule_violations": "I found no violations.\n- Grids: every hypothesis has exactly 8 variants, set at the top of each script.\n- Picks: chosen through study.study() / engine.pick_on_design on 2021-23 only. Crowding and losers point engine.run at their own kernel in memory only; trigger does the same through use_trun(); entry uses the standard engine.\n- Checks: all checks ran for every pick, and each grid has a single log with consistent timestamps.\n- Motivation: the scripts restrict to trades that exited, or for entry were bought, before 2024. Entry's \"bought before 2024\" can include up to 48h of January 2024 prices, which is negligible.\n- Pre-run fixes: entry's breadth-liveness change and crowding's synthetic test data were fixed before the grids ran. Both are disclosed.\n\nSoft issues, not violations:\n(a) The agents had read REFINE.md and HANDOFF.md, which show 2024-26 results for related ideas, e.g. that fewer and larger orders and shorter cooldowns raise both return and drawdown. Lens choice was therefore not fully blind. About 16 picks across two rounds have now been checked against 2024-26, so it is no longer a clean holdout.\n(b) Crowding H2 used fmax = 20%/w. That breaks the live 20% per-coin cap by design, and it is exactly why the pick failed.",
+      "number_mismatches": "I found no mismatches. My reruns gave identical numbers:\n- crowding H1 pick: x7.51 / x2.37\n- crowding H2 pick: x9.07 / x2.67; +dead x4.96 / -49% / x2.35; 0.2%-worse fills x7.56 / x2.49\n- entry H2 pick: x6.26 / 2.5985; +dead x5.38 / -33% / x2.45; 0.2%-worse fills x2.37\n- losers H1 pick: x6.35 / x2.55\n- losers H2 pick: x6.62 / x2.19\n- all 16 losers rows\n\nRealism (f) was reproduced independently on hourly candles: x4.73 / x2.66 against x4.72 / x2.66. Trade anatomy matches the brief: 1,681 / 884 trades, time stops 108 / 67, take-profit sums +9.84 / +14.44 and time-stop sums -5.09 / -5.18. Minor wording: the losers script docstring says \"+0.76 at h24\", which is the sum of the two bins reported (+0.338 and +0.419).\n\nOne existing-engine artifact, not an agent error, distorts the +LUNA/FTT/SRM check. The FTT hourly data ends at 2022-11-15 04:00, but the cut in engine.DEAD is 2023-09-22. In that last candle the live bot market-buys FTT (open 1.4228, trigger 1.490). The position never exits, so its money stays stuck at the last FTT price for the rest of the run. Dropping that single hour changes the +dead live baseline from x5.29 / x2.46 to x5.48 / x2.61. That x2.46 is also the HANDOFF's \"RM14,753 with collapses\" figure for 2024-26. Re-measuring all 8 picks without that hour flips no verdict to a pass. Trigger H1's +dead leg goes from ok to FAILS (x2.54 vs x2.61); it had already failed the 0.2%-worse fill check. Crowding H2's 2024-26 +dead result becomes x2.67, which beats live, but its 2021-23 -49% drop (May 2021) still fails.",
+      "missing": [
+        "The live bot as coded differs from the validated backtest for market buys (realism row f, independently confirmed by r2_critic_f.py). The bot places the +1.5% sell immediately and counts 48h from the start of the buy hour, so it backtests at 2021-23 x4.73 vs x5.75. All round-2 variants were compared against the backtest timing, not the bot's actual behavior, and nobody tested which timing to adopt under the rule.",
+        "The +LUNA/FTT/SRM check has an artifact. A position still open when a coin's data ends stays valued at that coin's last price forever, and its money never comes back. The FTT market buy in the final FTT hour (2022-11-15 04:00) drives the 2024-26 leg of this check (live x2.46 vs x2.61 without that hour). engine.DEAD's FTT cut date (2023-09-22) also doesn't match where the data ends. No agent noticed it.",
+        "Split ladder with both legs capped at 20-25% of equity per coin: the obvious follow-up to the only variant that beat live in both periods. It is not tested. Because the ladder family has already been checked against 2024-26, it would need a pre-registered grid and an untouched holdout (a forward/paper run, or coins from univ/ outside the 19).",
+        "How market buys are handled (coin already under its trigger at the open: 175 / 58 trades) was never a hypothesis: e.g. TP timing, or a limit order at the trigger instead of a market buy. Row f shows this choice is worth about ±18% of the 2021-23 multiple.",
+        "Not independently verified by me: the realism 1-minute fill anatomy (fill-depth distribution, minute-0 fills, rows b-e/g/h); entry's 2024-26 post-hoc split; the crowding fill-rank analysis from 1-minute data (r2_crowding_fm.py); the trigger single-coin bot statistics; the losers motivation tables. The synthetic unit tests were only read, not rerun.",
+        "No uncertainty estimate on near misses. Gaps like x2.5985 vs x2.6088 (entry H2) or x2.6139 (trigger 16h) are far inside block-bootstrap noise. Without one, 'near miss' versus 'tie' is not meaningful.",
+        "Untested exit and entry ideas outside the rejected list: a take-profit relative to the 24h high (sell at a fraction of the way back to it) instead of a fixed +1.5%; time-of-day / weekend effects on entry quality (liquidations cluster in thin hours)."
+      ],
+      "recommended_next": [
+        "Have the user decide market-buy handling explicitly. Option 1: align panic_buyer.py with the validated backtest (for market buys, place the take-profit at the next cycle via manage_positions, and count 48h from the end of the buy hour). Option 2: re-baseline the backtest to the bot's real behavior and expect about x4.7 (2021-23) / x2.66 (2024-26). In either case, reconcile_live.py should log market-buy trades separately.",
+        "Fix the dead-coin convention before any further robustness checks. Force-close a position at the coin's last candle (at its last close minus a haircut, or at -100% for LUNA-type collapses), and set engine.DEAD's FTT cut to where the FTT data actually ends. Then rerun the live baseline +dead numbers in REFINE.md and HANDOFF.md, since x2.46 / RM14,753 is an artifact.",
+        "If the split ladder is pursued: pre-register at most 8 variants with the total per coin capped at 20-25% of equity (e.g. w 0.5/0.67 x d2 16/18/20% with N=4/5). Pick on 2021-23, and validate on data the round hasn't seen: forward paper trading from Nov 2026, or a top-20 to top-50 coin set from univ/ that excludes the 19. Don't count another 2024-26 check as out of sample.",
+        "Add a block-bootstrap (for example 3-month blocks) confidence band on the 2024-26 multiple and drawdown differences versus live, so near misses can be judged against noise.",
+        "Keep the live strategy settings unchanged. Use the realism range (2021-23 x3.3-4.7, 2024-26 x2.35-2.66) as the expectation for the bot as coded, and compare the first 2-4 live weeks to it with reconcile_live.py."
+      ]
+    }
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Test"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Verify"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 3,
+      "title": "Critic"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "test:losers",
+      "phaseIndex": 1,
+      "phaseTitle": "Test",
+      "agentId": "a40220906f4e5bd4b",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792640841140,
+      "queuedAt": 1792640841105,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "losers: cut the 48h time-stop losers without killing the ta…",
+      "promptPreview": "You are continuing research on the \"Panic Buyer\", a live Binance SPOT bot. Shariah rules: spot only, no leverage, margin, futures, shorting or interest. Repo: /home/user/halal-rider. First read research/panic_buyer/HANDOFF.md (sections 2-4) and research/panic_buyer/refine/REFINE.md, then research/panic_buyer/refine/engine.py, study.py and the idea*.py examples.\n\nLIVE STRATEGY: 19 coins (BTC ETH SO…",
+      "promptFramed": true,
+      "lastProgressAt": 1792641184670,
+      "tokens": 120058,
+      "toolCalls": 17,
+      "durationMs": 343529,
+      "resultPreview": "{\"lens\":\"losers: cut the 48h time-stop losers without killing the take-profit winners\",\"hypotheses\":[{\"name\":\"H1 break-even target after X hours\",\"rationale\":\"Of the 2021-23 trades still open X hours after the fill, many trade back up to the entry price and then fall into the 48h time stop. So once a position is X hours old, the +1.5% take-profit limit is lowered to entry +0.2% (break-even after f…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "test:entry",
+      "phaseIndex": 1,
+      "phaseTitle": "Test",
+      "agentId": "aba866f831de178c8",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792640841140,
+      "queuedAt": 1792640841105,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "entry: avoid buys likely to become time-stop losers (filter…",
+      "promptPreview": "You are continuing research on the \"Panic Buyer\", a live Binance SPOT bot. Shariah rules: spot only, no leverage, margin, futures, shorting or interest. Repo: /home/user/halal-rider. First read research/panic_buyer/HANDOFF.md (sections 2-4) and research/panic_buyer/refine/REFINE.md, then research/panic_buyer/refine/engine.py, study.py and the idea*.py examples.\n\nLIVE STRATEGY: 19 coins (BTC ETH SO…",
+      "promptFramed": true,
+      "lastProgressAt": 1792641237077,
+      "tokens": 130367,
+      "toolCalls": 25,
+      "durationMs": 395195,
+      "resultPreview": "{\"lens\":\"entry: avoid buys likely to become time-stop losers (filters computed at the hour the order is placed, closed candles only)\",\"hypotheses\":[{\"name\":\"H1 knife filter: coin already falling before the dip AND most of the market weak -> skip (smult=0) or 16% trigger\",\"rationale\":\"The edge is a liquidation overshoot in an otherwise healthy market. A coin that was already sliding for days before…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "test:crowding",
+      "phaseIndex": 1,
+      "phaseTitle": "Test",
+      "agentId": "aea59b187258c644a",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792641186864,
+      "queuedAt": 1792640841105,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "crowding",
+      "promptPreview": "You are continuing research on the \"Panic Buyer\", a live Binance SPOT bot. Shariah rules: spot only, no leverage, margin, futures, shorting or interest. Repo: /home/user/halal-rider. First read research/panic_buyer/HANDOFF.md (sections 2-4) and research/panic_buyer/refine/REFINE.md, then research/panic_buyer/refine/engine.py, study.py and the idea*.py examples.\n\nLIVE STRATEGY: 19 coins (BTC ETH SO…",
+      "promptFramed": true,
+      "lastProgressAt": 1792642058451,
+      "tokens": 184228,
+      "toolCalls": 29,
+      "durationMs": 871586,
+      "resultPreview": "{\"lens\":\"crowding\",\"hypotheses\":[{\"name\":\"H1 extra leg 2, funded first from free cash\",\"rationale\":\"The damage in a market-wide cascade sits in the first fills, which keep falling, and averaging down is what rescues them. The first leg stays exactly as live (12% trigger, 8 closest coins, cap 20%). From the hourly cycle after the first leg fills, a fully funded limit buy of x times the first leg's …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "test:trigger",
+      "phaseIndex": 1,
+      "phaseTitle": "Test",
+      "agentId": "aceff6c3cd108ec04",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792641238825,
+      "queuedAt": 1792640841106,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "trigger",
+      "promptPreview": "You are continuing research on the \"Panic Buyer\", a live Binance SPOT bot. Shariah rules: spot only, no leverage, margin, futures, shorting or interest. Repo: /home/user/halal-rider. First read research/panic_buyer/HANDOFF.md (sections 2-4) and research/panic_buyer/refine/REFINE.md, then research/panic_buyer/refine/engine.py, study.py and the idea*.py examples.\n\nLIVE STRATEGY: 19 coins (BTC ETH SO…",
+      "promptFramed": true,
+      "lastProgressAt": 1792641595571,
+      "tokens": 117372,
+      "toolCalls": 20,
+      "durationMs": 356746,
+      "resultPreview": "{\"lens\":\"trigger\",\"hypotheses\":[{\"name\":\"H1: shorter reference window (trigger = highest close of the last w hours x (1 - depth))\",\"rationale\":\"The edge should be the fast liquidation overshoot. A 12% fall spread over a day is more often a coin repricing. 2021-23 evidence: live trades by hours since the 24h highest close at entry: 1-6h avg +2.30% (152 trades), 7-12h +1.06%, 13-18h +0.51% (9.15% ti…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "test:realism",
+      "phaseIndex": 1,
+      "phaseTitle": "Test",
+      "agentId": "a5a8f14012e5f064f",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792641597731,
+      "queuedAt": 1792640841106,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "/home/user/halal-rider/research/panic_buyer/refine/r2_reali…",
+      "promptPreview": "You are continuing research on the \"Panic Buyer\", a live Binance SPOT bot. Shariah rules: spot only, no leverage, margin, futures, shorting or interest. Repo: /home/user/halal-rider. First read research/panic_buyer/HANDOFF.md (sections 2-4) and research/panic_buyer/refine/REFINE.md, then research/panic_buyer/refine/engine.py, study.py and the idea*.py examples.\n\nLIVE STRATEGY: 19 coins (BTC ETH SO…",
+      "promptFramed": true,
+      "lastProgressAt": 1792642320862,
+      "tokens": 173034,
+      "toolCalls": 23,
+      "durationMs": 723130,
+      "resultPreview": "{\"script\":\"/home/user/halal-rider/research/panic_buyer/refine/r2_realism.py (main study, run once; imports r2_realism_lib.py = engine.mkernel copied as rkernel with realism switches, all off = mkernel delay 0). /home/user/halal-rider/research/panic_buyer/refine/r2_realism_f.py = diagnostic written after the main run (splits row f; changes none of its numbers). Outputs in /tmp/claude-0/-home-user-h…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "critic",
+      "phaseIndex": 3,
+      "phaseTitle": "Critic",
+      "agentId": "a8d4d3e96ecb26774",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792642323158,
+      "queuedAt": 1792642323133,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "The live bot's settings should stay as they are. Round 2's …",
+      "promptPreview": "You are continuing research on the \"Panic Buyer\", a live Binance SPOT bot. Shariah rules: spot only, no leverage, margin, futures, shorting or interest. Repo: /home/user/halal-rider. First read research/panic_buyer/HANDOFF.md (sections 2-4) and research/panic_buyer/refine/REFINE.md, then research/panic_buyer/refine/engine.py, study.py and the idea*.py examples.\n\nLIVE STRATEGY: 19 coins (BTC ETH SO…",
+      "promptFramed": true,
+      "lastProgressAt": 1792642797300,
+      "tokens": 197890,
+      "toolCalls": 22,
+      "durationMs": 474140,
+      "resultPreview": "{\"overall_assessment\":\"The live bot's settings should stay as they are. Round 2's work is sound: I found no rule violations, no lookahead and no number mismatches, and all 8 picks fail the rule. A cleaner +LUNA/FTT/SRM check does not rescue any of them. But the round left two problems that matter more than any refinement. First, the live bot as coded is not the strategy that was backtested. Second…"
+    }
+  ],
+  "totalTokens": 922949,
+  "totalToolCalls": 136
+}

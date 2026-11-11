@@ -1,0 +1,25 @@
+10% mode
+   2021-23 +15.03%/mo dd  -61% win 81.1% n  297 | 2024-26  +8.13%/mo dd  -30% win 76.5% n  115 | since 2025  +6.08%/mo dd  -29% win 75.0% | worst trade (acct) -54% / -22% / -11%
+
+== d 2021-01-01..2024-01-01: 297 trades, 8.3/month, win 81.1%, avg win +4.84% avg loss -9.98%, hold median 10h
+  exits: tp 235, time 62 | market buys 41 (avg +0.18%), limit 256 (avg +2.35%)
+  time-stop exits: avg -8.83%, sum acct -548 pts; tp exits sum acct +1156 pts
+  by coin (n, win, sum acct pts): LINK 10 60% -19; LTC 4 25% -12; ARB 3 33% -4; BCH 6 67% -1; SUI 3 67% +0; TRX 5 60% +6; ETH 2 100% +10; DOT 5 80% +10; ADA 4 100% +19; SOL 23 74% +20; BNB 5 100% +21; XRP 8 100% +35; AVAX 33 76% +60; NEAR 27 81% +64; DOGE 30 83% +65; HBAR 20 95% +70; RENDER 52 83% +78; FET 57 88% +184
+  by vol tier at entry: calm n 9 win 78% avg +1.60% acct +14; mid n 34 win 65% avg -0.23% acct -8; wild n 238 win 83% avg +2.23% acct +532
+  share of hours holding a coin: 22%
+
+== t 2024-01-01..end: 115 trades, 3.4/month, win 76.5%, avg win +4.73% avg loss -5.04%, hold median 11h
+  exits: tp 83, time 32 | market buys 7 (avg +0.12%), limit 108 (avg +2.59%)
+  time-stop exits: avg -3.94%, sum acct -126 pts; tp exits sum acct +406 pts
+  by coin (n, win, sum acct pts): LTC 2 50% -5; ARB 6 50% -4; HBAR 9 67% -3; LINK 2 50% +1; TRX 2 50% +2; SUI 9 56% +9; SOL 2 100% +10; DOT 2 100% +10; AVAX 4 75% +10; BCH 8 62% +18; XRP 5 100% +24; ADA 5 100% +27; DOGE 6 100% +31; NEAR 11 91% +37; RENDER 16 75% +43; FET 26 81% +70
+  by vol tier at entry: calm n 3 win 100% avg +4.79% acct +14; mid n 13 win 62% avg +1.07% acct +14; wild n 99 win 78% avg +2.54% acct +252
+  share of hours holding a coin: 10%
+
+== s 2025-01-01..end: 56 trades, 2.6/month, win 75.0%, avg win +4.75% avg loss -4.59%, hold median 18h
+  exits: tp 40, time 16 | market buys 3 (avg +5.28%), limit 53 (avg +2.25%)
+  time-stop exits: avg -3.80%, sum acct -61 pts; tp exits sum acct +196 pts
+  by coin (n, win, sum acct pts): ARB 5 40% -9; AVAX 1 0% -4; LINK 1 0% -2; HBAR 4 50% +0; SOL 1 100% +5; XRP 1 100% +5; DOT 1 100% +5; DOGE 2 100% +10; BCH 4 75% +12; SUI 4 75% +13; NEAR 7 86% +18; ADA 4 100% +21; FET 11 82% +30; RENDER 10 80% +33
+  by vol tier at entry: calm n 2 win 100% avg +4.79% acct +10; mid n 6 win 67% avg +1.75% acct +10; wild n 48 win 75% avg +2.40% acct +115
+  share of hours holding a coin: 9%
+
+monthly 2025-26: 2501 +3 2502 +8 2503 +39 2504 +9 2505 -11 2506 -3 2507 +15 2508 +5 2509 -1 2510 +4 2511 +1 2512 +5 2601 +9 2602 +15 2603 +1 2604 +0 2605 +21 2606 +2 2607 +0 2608 +17 2609 -5 2610 +7

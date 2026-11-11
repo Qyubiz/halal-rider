@@ -1,0 +1,32 @@
+LIVE (normal)
+   2021-23 WR  93.6% (1681 tr)  +4.98%/mo drop -29.2% worst trade   -5.3% acct | avg win +1.84% loss -11.53%
+   2024-26 WR  92.5% ( 884 tr)  +2.89%/mo drop -16.3% worst trade   -2.7% acct | avg win +1.77% loss -7.32%
+   since-25 WR  91.5% ( 492 tr)  +1.96%/mo drop -15.5% worst trade   -2.0% acct | open at end 0
+LIVE | bot timing + buys 0.2% worse, 19 coins
+   2021-23 WR  92.6% (1669 tr)  +3.10%/mo drop -35.4% worst trade   -5.2% acct | avg win +1.67% loss -11.96%
+   2024-26 WR  92.0% ( 879 tr)  +2.66%/mo drop -16.2% worst trade   -2.1% acct | avg win +1.65% loss -6.87%
+   since-25 WR  90.4% ( 488 tr)  +1.72%/mo drop -15.7% worst trade   -2.1% acct | open at end 0
+LIVE | bot timing + buys 0.2% worse, 22 coins
+   2021-23 WR  92.7% (1959 tr)  +2.92%/mo drop -38.1% worst trade  -20.0% acct | avg win +1.64% loss -12.90%
+   2024-26 WR  92.0% ( 879 tr)  +2.66%/mo drop -16.2% worst trade   -2.1% acct | avg win +1.65% loss -6.87%
+   since-25 WR  90.4% ( 488 tr)  +1.72%/mo drop -15.7% worst trade   -2.1% acct | open at end 0
+LIVE | STRESSED (bot timing, buys+sells 0.2% worse, +LUNA/FTT/SRM)
+   2021-23 WR  92.7% (1959 tr)  +1.72%/mo drop -42.7% worst trade  -20.0% acct | avg win +1.44% loss -13.07%
+   2024-26 WR  92.0% ( 879 tr)  +2.11%/mo drop -16.4% worst trade   -2.1% acct | avg win +1.44% loss -7.05%
+   since-25 WR  90.4% ( 488 tr)  +1.24%/mo drop -15.9% worst trade   -2.1% acct | open at end 0
+10% mode (normal)
+   2021-23 WR  81.1% ( 297 tr) +15.03%/mo drop -60.6% worst trade  -54.1% acct | avg win +4.84% loss -9.98%
+   2024-26 WR  76.5% ( 115 tr)  +8.13%/mo drop -29.7% worst trade  -21.7% acct | avg win +4.73% loss -5.04%
+   since-25 WR  75.0% (  56 tr)  +6.08%/mo drop -28.7% worst trade  -11.2% acct | open at end 0
+10% mode | bot timing + buys 0.2% worse, 19 coins
+   2021-23 WR  79.9% ( 294 tr) +14.39%/mo drop -64.0% worst trade  -44.4% acct | avg win +4.74% loss -9.28%
+   2024-26 WR  76.1% ( 113 tr)  +7.19%/mo drop -29.1% worst trade  -20.5% acct | avg win +4.71% loss -5.70%
+   since-25 WR  73.2% (  56 tr)  +5.14%/mo drop -28.8% worst trade  -13.2% acct | open at end 0
+10% mode | bot timing + buys 0.2% worse, 22 coins
+   2021-23 WR  79.9% ( 318 tr) +14.21%/mo drop -74.0% worst trade  -44.4% acct | avg win +4.75% loss -9.83%
+   2024-26 WR  76.1% ( 113 tr)  +7.19%/mo drop -29.1% worst trade  -20.5% acct | avg win +4.71% loss -5.70%
+   since-25 WR  73.2% (  56 tr)  +5.14%/mo drop -28.8% worst trade  -13.2% acct | open at end 0
+10% mode | STRESSED (bot timing, buys+sells 0.2% worse, +LUNA/FTT/SRM)
+   2021-23 WR  79.9% ( 318 tr) +12.20%/mo drop -74.5% worst trade  -44.5% acct | avg win +4.54% loss -10.01%
+   2024-26 WR  76.1% ( 113 tr)  +6.47%/mo drop -29.8% worst trade  -20.7% acct | avg win +4.50% loss -5.88%
+   since-25 WR  73.2% (  56 tr)  +4.60%/mo drop -29.0% worst trade  -13.4% acct | open at end 0

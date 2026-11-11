@@ -1,0 +1,79 @@
+hr_pick.py sha256 74c393bc951a4b86bebac8fee06ef513ce40d934ef2d3ee422cb5cea74e0e109
+pick grid: 192 settings | frontier universe adds the 960-setting grid (cd 24)
+
+######## SELECTION (2021-23 only): 54 of 192 settings have 2022 >= 0% and 2021-23 drop >= -50%
+  d0.12 N2.0 f0.50 tp5.0% hm48.0 cd24.0  21-23 x  89.88 +13.32%/mo DD  -50% 2022   +46% worst-mo  -19%
+  d0.12 N2.0 f0.50 tp3.0% hm48.0 cd24.0  21-23 x  79.74 +12.94%/mo DD  -50% 2022   +35% worst-mo  -25%
+  d0.12 N2.0 f0.50 tp1.5% hm48.0 cd12.0  21-23 x  79.12 +12.92%/mo DD  -44% 2022   +50% worst-mo  -20%
+  d0.12 N2.0 f0.50 tp2.0% hm48.0 cd12.0  21-23 x  73.07 +12.67%/mo DD  -43% 2022   +10% worst-mo  -21%
+  d0.12 N2.0 f0.50 tp3.0% hm48.0 cd12.0  21-23 x  68.37 +12.46%/mo DD  -50% 2022    +3% worst-mo  -20%
+  d0.12 N3.0 f0.50 tp5.0% hm48.0 cd12.0  21-23 x  58.20 +11.96%/mo DD  -46% 2022   +50% worst-mo  -14%
+  d0.15 N2.0 f0.50 tp5.0% hm48.0 cd12.0  21-23 x  49.88 +11.48%/mo DD  -46% 2022   +26% worst-mo  -21%
+  d0.12 N2.0 f0.50 tp1.5% hm96.0 cd24.0  21-23 x  46.42 +11.26%/mo DD  -47% 2022   +27% worst-mo  -19%
+  d0.12 N2.0 f0.50 tp2.0% hm48.0 cd24.0  21-23 x  43.70 +11.07%/mo DD  -43% 2022   +22% worst-mo  -28%
+  d0.10 N3.0 f0.50 tp3.0% hm48.0 cd12.0  21-23 x  43.44 +11.05%/mo DD  -46% 2022    +5% worst-mo  -22%
+
+PICK: d0.12 N2 f0.50 tp5.0% hm48 cd24
+
+######## PICK vs LIVE, 2024-26 looked at once
+PICK: 21-23 x  89.88 +13.32%/mo DD  -50% 2022   +46% worst-mo  -19%
+      24-26 x  6.12 +5.53%/mo DD  -29% worst-mo  -21% up-mo  74%  trades 424 win 71% avg +1.51% worst trade -22%
+      per year: 2021 +1550% 2022 +46% 2023 +272% 2024 +247% 2025 +37% 2026 +29%
+      2024-26 months: 34, up 25, down 9, worst -21.3% (2024-04), best +49.3%, months below -10%: 2
+      2021-23 worst drop -49.6% peak 2021-05-18 trough 2021-06-22 recovered 2021-08-23; longest under a high 287 days; lowest vs period start -0.4%
+      2024-26 worst drop -28.7% peak 2024-12-09 trough 2025-02-03 recovered 2025-02-12; longest under a high 245 days; lowest vs period start -3.1%
+LIVE: 21-23 x   5.75 +4.98%/mo DD  -29% 2022   +19% worst-mo   -7%
+      24-26 x  2.61 +2.89%/mo DD  -16% worst-mo   -6% up-mo  88%  trades 884 win 93% avg +1.09% worst trade -22%
+      per year: 2021 +262% 2022 +19% 2023 +33% 2024 +71% 2025 +28% 2026 +19%
+      2024-26 months: 34, up 30, down 4, worst -6.3% (2024-04), best +13.8%, months below -10%: 0
+      2021-23 worst drop -29.2% peak 2021-05-21 trough 2021-05-23 recovered 2021-08-24; longest under a high 146 days; lowest vs period start +0.0%
+      2024-26 worst drop -16.3% peak 2024-04-02 trough 2024-04-13 recovered 2024-07-04; longest under a high 92 days; lowest vs period start +0.0%
+  pick reaches 5%/month in 2024-26: YES (5.53%/month)
+
+######## PLATEAU: 8 one-step neighbours of the pick
+  d0.10 N2 f0.50 tp5.0% hm48 cd24        21-23 x  46.02 +11.23%/mo DD  -66% 2022    -9% worst-mo  -30% | 24-26 x  2.38 +2.61%/mo DD  -43% worst-mo  -22% up-mo  56%
+  d0.15 N2 f0.50 tp5.0% hm48 cd24        21-23 x  23.90 +9.22%/mo DD  -47% 2022    +8% worst-mo  -22% | 24-26 x  5.45 +5.16%/mo DD  -26% worst-mo   -7% up-mo  71%  >=5%/mo
+  d0.12 N1 f0.50 tp5.0% hm48 cd24        21-23 x  60.13 +12.06%/mo DD  -56% 2022   +54% worst-mo  -19% | 24-26 x  5.04 +4.92%/mo DD  -33% worst-mo  -19% up-mo  68%
+  d0.12 N3 f0.50 tp5.0% hm48 cd24        21-23 x  32.66 +10.18%/mo DD  -44% 2022   +28% worst-mo  -18% | 24-26 x  5.18 +5.00%/mo DD  -30% worst-mo  -18% up-mo  76%  >=5%/mo
+  d0.12 N2 f0.50 tp3.0% hm48 cd24        21-23 x  79.74 +12.94%/mo DD  -50% 2022   +35% worst-mo  -25% | 24-26 x  7.85 +6.31%/mo DD  -30% worst-mo  -10% up-mo  79%  >=5%/mo
+  d0.12 N2 f0.50 tp5.0% hm96 cd24        21-23 x  59.22 +12.01%/mo DD  -58% 2022   -15% worst-mo  -23% | 24-26 x  4.23 +4.38%/mo DD  -40% worst-mo  -26% up-mo  71%
+  d0.12 N2 f0.50 tp5.0% hm48 cd12        21-23 x 150.28 +14.95%/mo DD  -51% 2022   +74% worst-mo  -15% | 24-26 x  5.10 +4.96%/mo DD  -30% worst-mo  -21% up-mo  71%
+  d0.12 N1 f1.00 tp5.0% hm48 cd24        21-23 x 548.44 +19.16%/mo DD  -60% 2022   +74% worst-mo  -15% | 24-26 x  6.32 +5.63%/mo DD  -52% worst-mo  -32% up-mo  65%  >=5%/mo
+  4 of 8 neighbours reach 5%/month in 2024-26 (50%); their 2024-26 drops: -52%, -30%, -30%, -26%
+  all neighbours: 2024-26 %/month median 4.98, min 2.61, max 6.31; 2024-26 drop median -31%, worst -52%; 2021-23 qualify under the rule: 3
+
+######## STRESS
+  PICK base                           21-23 x  89.88 +13.32%/mo DD  -50% 2022   +46% worst-mo  -19% | 24-26 x  6.12 +5.53%/mo DD  -29% worst-mo  -21% up-mo  74%
+                                      per year: 2021 +1550% 2022 +46% 2023 +272% 2024 +247% 2025 +37% 2026 +29%
+  PICK +LUNA/FTT/SRM                  21-23 x  28.32 +9.74%/mo DD  -62% 2022   -28% worst-mo  -35% | 24-26 x  6.12 +5.53%/mo DD  -29% worst-mo  -21% up-mo  74%
+                                      per year: 2021 +963% 2022 -28% 2023 +272% 2024 +247% 2025 +37% 2026 +29%
+  PICK fills 0.2% worse               21-23 x  56.25 +11.85%/mo DD  -54% 2022   +22% worst-mo  -20% | 24-26 x  5.13 +4.97%/mo DD  -31% worst-mo  -22% up-mo  74%
+                                      per year: 2021 +1236% 2022 +22% 2023 +244% 2024 +226% 2025 +27% 2026 +24%
+  PICK bot timing (mtp_now, cd 25)    21-23 x  95.67 +13.52%/mo DD  -46% 2022   +37% worst-mo  -19% | 24-26 x  5.85 +5.38%/mo DD  -29% worst-mo  -21% up-mo  74%
+                                      per year: 2021 +1824% 2022 +37% 2023 +263% 2024 +242% 2025 +39% 2026 +23%
+  PICK all three                      21-23 x  19.46 +8.60%/mo DD  -61% 2022   -36% worst-mo  -35% | 24-26 x  4.86 +4.80%/mo DD  -30% worst-mo  -21% up-mo  74%
+                                      per year: 2021 +801% 2022 -36% 2023 +236% 2024 +212% 2025 +29% 2026 +21%
+  LIVE base                           21-23 x   5.75 +4.98%/mo DD  -29% 2022   +19% worst-mo   -7% | 24-26 x  2.61 +2.89%/mo DD  -16% worst-mo   -6% up-mo  88%
+                                      per year: 2021 +262% 2022 +19% 2023 +33% 2024 +71% 2025 +28% 2026 +19%
+  LIVE +LUNA/FTT/SRM                  21-23 x   5.22 +4.70%/mo DD  -31% 2022    +1% worst-mo   -9% | 24-26 x  2.61 +2.89%/mo DD  -16% worst-mo   -6% up-mo  88%
+                                      per year: 2021 +306% 2022 +1% 2023 +28% 2024 +71% 2025 +28% 2026 +19%
+  LIVE fills 0.2% worse               21-23 x   3.98 +3.92%/mo DD  -29% 2022    -2% worst-mo  -15% | 24-26 x  2.37 +2.59%/mo DD  -16% worst-mo   -6% up-mo  85%
+                                      per year: 2021 +214% 2022 -2% 2023 +29% 2024 +65% 2025 +22% 2026 +17%
+  LIVE bot timing (mtp_now, cd 25)    21-23 x   4.13 +4.02%/mo DD  -34% 2022    +9% worst-mo  -11% | 24-26 x  2.67 +2.96%/mo DD  -16% worst-mo   -3% up-mo  85%
+                                      per year: 2021 +184% 2022 +9% 2023 +33% 2024 +74% 2025 +26% 2026 +22%
+  LIVE all three                      21-23 x   2.82 +2.93%/mo DD  -38% 2022   -25% worst-mo  -16% | 24-26 x  2.42 +2.66%/mo DD  -16% worst-mo   -4% up-mo  85%
+                                      per year: 2021 +194% 2022 -25% 2023 +29% 2024 +68% 2025 +20% 2026 +20%
+
+######## RISK FRONTIER over 1056 settings (re-run grid960 vs saved CSV: 960 matched, max |t_mult diff| 8.88e-16, max |d_mult diff| 2.84e-14)
+  3%/mo hindsight (483 reach it): d0.12 N8.0 f0.20 tp1.5% hm96.0 cd24.0  24-26 +3.14%/mo DD -16% (its 21-23: +5.57%/mo DD -32%)
+  3%/mo ranked on 21-23 (357 qualify): d0.15 N8.0 f1.00 tp1.5% hm48.0 cd24.0  21-23 +4.35%/mo DD -20% -> 24-26 +1.95%/mo DD -13% MISSED; 66% of the 357 reached 3% in 24-26
+  4%/mo hindsight (172 reach it): d0.12 N3.0 f0.33 tp1.5% hm96.0 cd24.0  24-26 +4.63%/mo DD -22% (its 21-23: +7.40%/mo DD -46%)
+  4%/mo ranked on 21-23 (353 qualify): d0.15 N8.0 f1.00 tp1.5% hm48.0 cd24.0  21-23 +4.35%/mo DD -20% -> 24-26 +1.95%/mo DD -13% MISSED; 27% of the 353 reached 4% in 24-26
+  5%/mo hindsight (46 reach it): d0.15 N2.0 f0.50 tp5.0% hm96.0 cd24.0  24-26 +5.06%/mo DD -26% (its 21-23: +10.50%/mo DD -53%)
+  5%/mo ranked on 21-23 (286 qualify): d0.15 N8.0 f0.33 tp5.0% hm96.0 cd24.0  21-23 +5.50%/mo DD -29% -> 24-26 +3.29%/mo DD -22% MISSED; 12% of the 286 reached 5% in 24-26
+  6%/mo hindsight (7 reach it): d0.12 N2.0 f0.50 tp3.0% hm96.0 cd24.0  24-26 +6.00%/mo DD -28% (its 21-23: +12.23%/mo DD -53%)
+  6%/mo ranked on 21-23 (228 qualify): d0.12 N8.0 f1.00 tp1.5% hm96.0 cd24.0  21-23 +6.16%/mo DD -30% -> 24-26 +3.14%/mo DD -16% MISSED; 2% of the 228 reached 6% in 24-26
+  7%/mo hindsight (1 reach it): d0.12 N1.0 f1.00 tp3.0% hm48.0 cd24.0  24-26 +7.00%/mo DD -49% (its 21-23: +17.79%/mo DD -61%)
+  7%/mo ranked on 21-23 (168 qualify): d0.12 N5.0 f1.00 tp1.5% hm96.0 cd24.0  21-23 +7.07%/mo DD -33% -> 24-26 +3.76%/mo DD -21% MISSED; 1% of the 168 reached 7% in 24-26
+
+duplicate check, N>=2 fmax 1.0 vs 0.5 (96 pairs): max relative diff 21-23 1.25e-01, 24-26 5.55e-15; pairs differing by >0.1%: 36

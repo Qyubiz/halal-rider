@@ -1,0 +1,12 @@
+holdout_candidate      normal            2021-23 x   212.8 dd  -58% | 2024-26 x 11.70 dd  -29% | trades since 2024 117
+holdout_candidate      fills 0.2% worse  2021-23 x   103.1 dd  -62% | 2024-26 x 10.29 dd  -29% | trades since 2024 114
+holdout_candidate      +LUNA/FTT/SRM     2021-23 x   361.2 dd  -64% | 2024-26 x 11.70 dd  -29% | trades since 2024 117
+holdout_candidate_F1   normal            2021-23 x   212.8 dd  -58% | 2024-26 x 11.70 dd  -29% | trades since 2024 117
+holdout_candidate_F1   fills 0.2% worse  2021-23 x   103.1 dd  -62% | 2024-26 x 10.29 dd  -29% | trades since 2024 114
+holdout_candidate_F1   +LUNA/FTT/SRM     2021-23 x   361.2 dd  -64% | 2024-26 x 11.70 dd  -29% | trades since 2024 117
+holdout_candidate_F2   normal            2021-23 x   153.9 dd  -61% | 2024-26 x 13.91 dd  -30% | trades since 2024 115
+holdout_candidate_F2   fills 0.2% worse  2021-23 x    82.7 dd  -64% | 2024-26 x 11.00 dd  -30% | trades since 2024 113
+holdout_candidate_F2   +LUNA/FTT/SRM     2021-23 x   156.0 dd  -70% | 2024-26 x 13.91 dd  -30% | trades since 2024 115
+holdout_candidate_F3   normal            2021-23 x   153.9 dd  -61% | 2024-26 x 13.91 dd  -30% | trades since 2024 115
+holdout_candidate_F3   fills 0.2% worse  2021-23 x    82.7 dd  -64% | 2024-26 x 11.00 dd  -30% | trades since 2024 113
+holdout_candidate_F3   +LUNA/FTT/SRM     2021-23 x   156.0 dd  -70% | 2024-26 x 13.91 dd  -30% | trades since 2024 115

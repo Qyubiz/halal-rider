@@ -1,0 +1,35 @@
+19 coins | live                   trades  2565 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True liq=1 identical True  OK
+19 coins | 10% mode               trades   412 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True liq=1 identical True  OK
+19 coins | 10% mode bot timing    trades   414 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True liq=1 identical True  OK
+19 coins | 10% mode pen 0.2%      trades   407 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True liq=1 identical True  OK
+19 coins | N1 tp3 cd0 hm96        trades   732 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True liq=1 identical True  OK
+19 coins | per-hour N/fmax        trades  1220 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True liq=1 identical True  OK
+19 coins | partial + trail        trades  1818 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True liq=1 identical True  OK
+19 coins | tpwait 3 no rest       trades  1341 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True liq=1 identical True  OK
+22 coins | live                   trades  2855 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True  OK
+22 coins | 10% mode               trades   439 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True  OK
+22 coins | 10% mode bot timing    trades   440 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True  OK
+22 coins | 10% mode pen 0.2%      trades   431 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True  OK
+22 coins | N1 tp3 cd0 hm96        trades   358 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True  OK
+22 coins | per-hour N/fmax        trades  1345 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True  OK
+22 coins | partial + trail        trades  2020 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True  OK
+22 coins | tpwait 3 no rest       trades  1435 logs identical True max rel eq diff 0.0e+00 cdw=cd identical True  OK
+
+ALL CHECKS PASS
+
+10% mode
+   2021-23 +15.03%/mo dd  -61% win 81.1% n  297 | 2024-26  +8.13%/mo dd  -30% win 76.5% n  115 | since 2025  +6.08%/mo dd  -29% win 75.0% | worst trade (acct) -54% / -22% / -11% | 2022 +39%
+10% mode, real bot timing
+   2021-23 +17.02%/mo dd  -59% win 81.6% n  299 | 2024-26  +7.70%/mo dd  -29% win 75.7% n  115 | since 2025  +5.32%/mo dd  -29% win 73.2% | worst trade (acct) -44% / -20% / -13% | 2022 +21%
+bot timing + buys 0.2% worse
+   2021-23 +14.39%/mo dd  -64% win 79.9% n  294 | 2024-26  +7.19%/mo dd  -29% win 76.1% n  113 | since 2025  +5.14%/mo dd  -29% win 73.2% | worst trade (acct) -44% / -21% / -13% | 2022 -15%
+bot timing + buys and sells 0.2% worse
+   2021-23 +12.53%/mo dd  -65% win 79.6% n  294 | 2024-26  +6.47%/mo dd  -30% win 76.1% n  113 | since 2025  +4.60%/mo dd  -29% win 73.2% | worst trade (acct) -44% / -21% / -13% | 2022 -27%
++LUNA/FTT/SRM (frozen, engine)
+   2021-23 +15.07%/mo dd  -70% win 80.9% n  324 | 2024-26  +8.13%/mo dd  -30% win 76.5% n  115 | since 2025  +6.08%/mo dd  -29% win 75.0% | worst trade (acct) -54% / -22% / -11% | 2022 +97%
++LUNA/FTT/SRM (sold at last hour)
+   2021-23 +15.07%/mo dd  -70% win 80.9% n  324 | 2024-26  +8.13%/mo dd  -30% win 76.5% n  115 | since 2025  +6.08%/mo dd  -29% win 75.0% | worst trade (acct) -54% / -22% / -11% | 2022 +97%
+
+10% mode + full stressed version
+   2021-23 +15.03%/mo dd  -61% win 81.1% n  297 | 2024-26  +8.13%/mo dd  -30% win 76.5% n  115 | since 2025  +6.08%/mo dd  -29% win 75.0% | worst trade (acct) -54% / -22% / -11%
+   STRESSED 2021-23 +12.20% dd  -75% | 2024-26  +6.47% dd  -30% | since 2025  +4.60% dd  -29% | win 79.9/76.1/73.2% | worst trade -44% / -21% / -13%

@@ -1,0 +1,74 @@
+######## 1. rule sensitivity (pick grid, 192 settings)
+  drop >= -50%, 2022 >= 0%: 54 qualify; pick d0.12 N2.0 f0.50 tp5.0% hm48.0 cd24.0 21-23 +13.32%/mo DD -50% -> 24-26 +5.53%/mo DD -29%; top-10: 3/10 reach 5%/mo, 24-26 %/mo median 4.92 [3.46..6.31], drop median -29% worst -32%
+  drop >= -45%, 2022 >= 0%: 31 qualify; pick d0.12 N2.0 f0.50 tp1.5% hm48.0 cd12.0 21-23 +12.92%/mo DD -44% -> 24-26 +4.00%/mo DD -28%; top-10: 2/10 reach 5%/mo, 24-26 %/mo median 4.37 [4.00..5.47], drop median -28% worst -30%
+  drop >= -40%, 2022 >= 0%: 8 qualify; pick d0.12 N3.0 f0.50 tp2.0% hm48.0 cd24.0 21-23 +8.94%/mo DD -39% -> 24-26 +4.36%/mo DD -26%; top-10: 0/10 reach 5%/mo, 24-26 %/mo median 3.56 [3.22..4.36], drop median -22% worst -26%
+  drop >= -35%, 2022 >= 0%: 1 qualify; pick d0.15 N3.0 f0.50 tp2.0% hm48.0 cd24.0 21-23 +7.09%/mo DD -35% -> 24-26 +3.25%/mo DD -22%; top-10: 0/10 reach 5%/mo, 24-26 %/mo median 3.25 [3.25..3.25], drop median -22% worst -22%
+  drop >= -50%, 2022 >= -100%: 72 qualify; pick d0.10 N1.0 f0.50 tp3.0% hm48.0 cd12.0 21-23 +13.60%/mo DD -50% -> 24-26 +2.35%/mo DD -46%; top-10: 3/10 reach 5%/mo, 24-26 %/mo median 4.73 [2.35..6.31], drop median -29% worst -46%
+  drop >= -40%, 2022 >= -100%: 8 qualify; pick d0.12 N3.0 f0.50 tp2.0% hm48.0 cd24.0 21-23 +8.94%/mo DD -39% -> 24-26 +4.36%/mo DD -26%; top-10: 0/10 reach 5%/mo, 24-26 %/mo median 3.56 [3.22..4.36], drop median -22% worst -26%
+  top 10 under the pre-registered rule, with their 2024-26:
+    d0.12 N2.0 f0.50 tp5.0% hm48.0 cd24.0  21-23 x  89.88 +13.32%/mo DD  -50% 2022   +46% worst-mo  -19% | 24-26 x  6.12 +5.53%/mo DD  -29% worst-mo  -21% up-mo  74%
+    d0.12 N2.0 f0.50 tp3.0% hm48.0 cd24.0  21-23 x  79.74 +12.94%/mo DD  -50% 2022   +35% worst-mo  -25% | 24-26 x  7.85 +6.31%/mo DD  -30% worst-mo  -10% up-mo  79%
+    d0.12 N2.0 f0.50 tp1.5% hm48.0 cd12.0  21-23 x  79.12 +12.92%/mo DD  -44% 2022   +50% worst-mo  -20% | 24-26 x  3.74 +4.00%/mo DD  -28% worst-mo  -15% up-mo  76%
+    d0.12 N2.0 f0.50 tp2.0% hm48.0 cd12.0  21-23 x  73.07 +12.67%/mo DD  -43% 2022   +10% worst-mo  -21% | 24-26 x  5.02 +4.91%/mo DD  -28% worst-mo  -11% up-mo  74%
+    d0.12 N2.0 f0.50 tp3.0% hm48.0 cd12.0  21-23 x  68.37 +12.46%/mo DD  -50% 2022    +3% worst-mo  -20% | 24-26 x  6.97 +5.94%/mo DD  -30% worst-mo  -11% up-mo  79%
+    d0.12 N3.0 f0.50 tp5.0% hm48.0 cd12.0  21-23 x  58.20 +11.96%/mo DD  -46% 2022   +50% worst-mo  -14% | 24-26 x  5.07 +4.94%/mo DD  -30% worst-mo  -14% up-mo  76%
+    d0.15 N2.0 f0.50 tp5.0% hm48.0 cd12.0  21-23 x  49.88 +11.48%/mo DD  -46% 2022   +26% worst-mo  -21% | 24-26 x  4.47 +4.55%/mo DD  -26% worst-mo   -9% up-mo  68%
+    d0.12 N2.0 f0.50 tp1.5% hm96.0 cd24.0  21-23 x  46.42 +11.26%/mo DD  -47% 2022   +27% worst-mo  -19% | 24-26 x  3.95 +4.17%/mo DD  -27% worst-mo  -13% up-mo  76%
+    d0.12 N2.0 f0.50 tp2.0% hm48.0 cd24.0  21-23 x  43.70 +11.07%/mo DD  -43% 2022   +22% worst-mo  -28% | 24-26 x  5.13 +4.97%/mo DD  -28% worst-mo  -13% up-mo  71%
+    d0.10 N3.0 f0.50 tp3.0% hm48.0 cd12.0  21-23 x  43.44 +11.05%/mo DD  -46% 2022    +5% worst-mo  -22% | 24-26 x  3.15 +3.46%/mo DD  -32% worst-mo  -18% up-mo  68%
+
+######## 2. rule re-applied with the skipped fmax 1.0 twins (N>=2) included
+  98 of 288 qualify; pick d0.12 N2.0 f1.00 tp5.0% hm48.0 cd24.0 21-23 x  89.88 +13.32%/mo DD  -50% 2022   +46% worst-mo  -19% | 24-26 x  6.12 +5.53%/mo DD  -29% worst-mo  -21% up-mo  74%
+    d0.12 N2.0 f1.00 tp5.0% hm48.0 cd24.0  21-23 x  89.88 +13.32%/mo DD  -50% 2022   +46% worst-mo  -19% | 24-26 x  6.12 +5.53%/mo DD  -29% worst-mo  -21% up-mo  74%
+    d0.12 N2.0 f0.50 tp5.0% hm48.0 cd24.0  21-23 x  89.88 +13.32%/mo DD  -50% 2022   +46% worst-mo  -19% | 24-26 x  6.12 +5.53%/mo DD  -29% worst-mo  -21% up-mo  74%
+    d0.12 N2.0 f1.00 tp3.0% hm48.0 cd24.0  21-23 x  80.39 +12.97%/mo DD  -50% 2022   +36% worst-mo  -25% | 24-26 x  7.85 +6.31%/mo DD  -30% worst-mo  -10% up-mo  79%
+    d0.12 N2.0 f0.50 tp3.0% hm48.0 cd24.0  21-23 x  79.74 +12.94%/mo DD  -50% 2022   +35% worst-mo  -25% | 24-26 x  7.85 +6.31%/mo DD  -30% worst-mo  -10% up-mo  79%
+    d0.12 N2.0 f0.50 tp1.5% hm48.0 cd12.0  21-23 x  79.12 +12.92%/mo DD  -44% 2022   +50% worst-mo  -20% | 24-26 x  3.74 +4.00%/mo DD  -28% worst-mo  -15% up-mo  76%
+
+######## 3. jitter around the pick
+  as picked    21-23 x  89.88 +13.32%/mo DD  -50% 2022   +46% worst-mo  -19% | 24-26 x  6.12 +5.53%/mo DD  -29% worst-mo  -21% up-mo  74%
+  depth 11.8%  21-23 x  84.52 +13.13%/mo DD  -54% 2022   +35% worst-mo  -17% | 24-26 x  6.30 +5.62%/mo DD  -32% worst-mo  -21% up-mo  74%
+  depth 11.9%  21-23 x  80.75 +12.98%/mo DD  -50% 2022   +46% worst-mo  -19% | 24-26 x  5.93 +5.43%/mo DD  -32% worst-mo  -21% up-mo  74%
+  depth 12.1%  21-23 x 105.98 +13.84%/mo DD  -47% 2022   +46% worst-mo  -19% | 24-26 x  4.79 +4.76%/mo DD  -33% worst-mo  -21% up-mo  68%
+  depth 12.2%  21-23 x 106.09 +13.84%/mo DD  -48% 2022   +32% worst-mo  -19% | 24-26 x  4.96 +4.87%/mo DD  -33% worst-mo  -20% up-mo  68%
+  tp 4.9%      21-23 x  97.86 +13.59%/mo DD  -46% 2022   +39% worst-mo  -20% | 24-26 x  5.83 +5.37%/mo DD  -29% worst-mo  -21% up-mo  74%
+  tp 5.1%      21-23 x  88.81 +13.28%/mo DD  -50% 2022   +52% worst-mo  -19% | 24-26 x  6.42 +5.68%/mo DD  -28% worst-mo  -21% up-mo  74%
+  fee 0.095%   21-23 x  92.52 +13.41%/mo DD  -50% 2022   +48% worst-mo  -19% | 24-26 x  6.21 +5.57%/mo DD  -29% worst-mo  -21% up-mo  74%
+  fee 0.105%   21-23 x  87.31 +13.23%/mo DD  -50% 2022   +45% worst-mo  -19% | 24-26 x  6.03 +5.48%/mo DD  -29% worst-mo  -21% up-mo  74%
+  eps 0.09%    21-23 x  89.88 +13.32%/mo DD  -50% 2022   +46% worst-mo  -19% | 24-26 x  6.07 +5.50%/mo DD  -32% worst-mo  -21% up-mo  74%
+  eps 0.11%    21-23 x  85.78 +13.17%/mo DD  -50% 2022   +43% worst-mo  -20% | 24-26 x  5.98 +5.45%/mo DD  -29% worst-mo  -21% up-mo  74%
+  jitter band 2024-26: 4.76 to 5.68 %/mo (x4.79 to x6.42), drop -33% to -28%; 2021-23 drop -54% to -46%
+
+######## 4. rolling windows from every start day (daily closes of the equity curve)
+  PICK             2021-26  30d: worst  -31.3%  5th pct  -12.2%  median   +5.9%  start days with a loss 25.3%  with < -10%  7.1%  (n=2091)
+  PICK             2021-26  91d: worst  -31.2%  5th pct  -11.6%  median  +17.4%  start days with a loss 12.9%  with < -10%  5.8%  (n=2030)
+  PICK             2021-26 182d: worst  -30.7%  5th pct   -4.9%  median  +51.7%  start days with a loss 10.6%  with < -10%  1.2%  (n=1939)
+  PICK             2021-26 365d: worst   -4.8%  5th pct   +9.6%  median +159.7%  start days with a loss  0.9%  with < -10%  0.0%  (n=1756)
+  PICK             2024-26  30d: worst  -23.7%  5th pct  -11.3%  median   +3.6%  start days with a loss 27.8%  with < -10%  6.3%  (n=996)
+  PICK             2024-26  91d: worst  -20.3%  5th pct  -12.5%  median  +12.8%  start days with a loss 16.4%  with < -10%  7.9%  (n=935)
+  PICK             2024-26 182d: worst  -19.1%  5th pct   -5.3%  median  +29.2%  start days with a loss 16.1%  with < -10%  1.1%  (n=844)
+  PICK             2024-26 365d: worst   -4.8%  5th pct   +1.9%  median  +54.1%  start days with a loss  2.3%  with < -10%  0.0%  (n=661)
+  PICK bot timing  2021-26  30d: worst  -31.3%  5th pct  -13.0%  median   +5.8%  start days with a loss 25.8%  with < -10%  7.4%  (n=2091)
+  PICK bot timing  2021-26  91d: worst  -28.5%  5th pct  -10.6%  median  +17.4%  start days with a loss 19.0%  with < -10%  5.6%  (n=2030)
+  PICK bot timing  2021-26 182d: worst  -27.4%  5th pct   -4.2%  median  +49.7%  start days with a loss 10.8%  with < -10%  1.6%  (n=1939)
+  PICK bot timing  2021-26 365d: worst   -7.6%  5th pct   +6.5%  median +150.7%  start days with a loss  2.0%  with < -10%  0.0%  (n=1756)
+  PICK bot timing  2024-26  30d: worst  -23.1%  5th pct  -11.5%  median   +3.4%  start days with a loss 29.2%  with < -10%  6.4%  (n=996)
+  PICK bot timing  2024-26  91d: worst  -19.4%  5th pct  -11.7%  median  +12.8%  start days with a loss 24.3%  with < -10%  7.3%  (n=935)
+  PICK bot timing  2024-26 182d: worst  -18.2%  5th pct   -4.2%  median  +29.1%  start days with a loss 16.5%  with < -10%  1.1%  (n=844)
+  PICK bot timing  2024-26 365d: worst   -7.6%  5th pct   -1.0%  median  +55.9%  start days with a loss  5.1%  with < -10%  0.0%  (n=661)
+  LIVE             2021-26  30d: worst  -16.2%  5th pct   -4.0%  median   +2.6%  start days with a loss 14.7%  with < -10%  0.1%  (n=2091)
+  LIVE             2021-26  91d: worst  -15.0%  5th pct   -1.5%  median   +7.1%  start days with a loss  9.6%  with < -10%  0.0%  (n=2030)
+  LIVE             2021-26 182d: worst   -6.1%  5th pct   +2.4%  median  +16.4%  start days with a loss  2.5%  with < -10%  0.0%  (n=1939)
+  LIVE             2021-26 365d: worst   +4.0%  5th pct   +9.5%  median  +40.7%  start days with a loss  0.0%  with < -10%  0.0%  (n=1756)
+  LIVE             2024-26  30d: worst   -7.0%  5th pct   -1.3%  median   +2.2%  start days with a loss  7.9%  with < -10%  0.0%  (n=996)
+  LIVE             2024-26  91d: worst   -3.9%  5th pct   +1.4%  median   +6.1%  start days with a loss  1.0%  with < -10%  0.0%  (n=935)
+  LIVE             2024-26 182d: worst   -0.3%  5th pct   +6.4%  median  +12.9%  start days with a loss  0.1%  with < -10%  0.0%  (n=844)
+  LIVE             2024-26 365d: worst  +16.7%  5th pct  +17.7%  median  +40.4%  start days with a loss  0.0%  with < -10%  0.0%  (n=661)
+
+######## 5. stricter fills on 1-minute candles (round-2 realistic-strict), pick vs live
+  PICK 1-min engine, live fills   21-23 x  89.85 +13.32%/mo DD  -50% 2022   +46% worst-mo  -19% | 24-26 x  6.12 +5.53%/mo DD  -29% worst-mo  -21% up-mo  74%
+  PICK strict 0.3%+tp0.2%+1min    21-23 x  61.12 +12.11%/mo DD  -49% 2022   +43% worst-mo  -20% | 24-26 x  3.96 +4.17%/mo DD  -34% worst-mo  -22% up-mo  68%
+  PICK strict + bot mkt timing    21-23 x  81.61 +13.02%/mo DD  -49% 2022   +43% worst-mo  -20% | 24-26 x  4.07 +4.25%/mo DD  -33% worst-mo  -22% up-mo  68%
+  LIVE 1-min engine, live fills   21-23 x   5.74 +4.98%/mo DD  -29% 2022   +19% worst-mo   -7% | 24-26 x  2.61 +2.89%/mo DD  -16% worst-mo   -6% up-mo  88%
+  LIVE strict 0.3%+tp0.2%+1min    21-23 x   3.70 +3.70%/mo DD  -30% 2022    -2% worst-mo  -15% | 24-26 x  2.31 +2.52%/mo DD  -18% worst-mo   -8% up-mo  85%
+  LIVE strict + bot mkt timing    21-23 x   3.31 +3.39%/mo DD  -31% 2022    +4% worst-mo  -11% | 24-26 x  2.35 +2.57%/mo DD  -17% worst-mo   -5% up-mo  85%

@@ -1,0 +1,88 @@
+x10_velocity_grid.py sha256 5c62fcc9eeffa63a5a1d820069e2d7dbb3d57af6520c84f325703045f0c691ce
+420 designs x 2 panels
+  1/422 done, 11s
+  41/422 done, 23s
+  81/422 done, 88s
+  121/422 done, 98s
+  161/422 done, 163s
+  201/422 done, 187s
+  241/422 done, 255s
+  281/422 done, 281s
+  321/422 done, 310s
+  361/422 done, 336s
+  401/422 done, 361s
+grid done in 388s
+
+######## SELECTION (2021-23 only): 88 of 420 designs eligible
+  S2 N2 | C4 1min | cd24h | E5 trail a3 t0 c8                21-23 +16.13%/mo DD  -45% | +LUNA/FTT/SRM +13.74%/mo DD  -56% | 2022  +66%
+  S2 N2 | C2 hourly+rearm | cd60m | E1 tp1.5                 21-23 +16.05%/mo DD  -44% | +LUNA/FTT/SRM +13.69%/mo DD  -54% | 2022  +31%
+  S3 N3 | C4 1min | cd0 | E6 trail a5 t0 c8                  21-23 +14.88%/mo DD  -43% | +LUNA/FTT/SRM +13.54%/mo DD  -56% | 2022  +61%
+  S3 N3 | C4 1min | cd60m | E6 trail a5 t0 c8                21-23 +14.98%/mo DD  -46% | +LUNA/FTT/SRM +13.46%/mo DD  -55% | 2022  +65%
+  S3 N3 | C4 1min | cd0 | E5 trail a3 t0 c8                  21-23 +14.25%/mo DD  -42% | +LUNA/FTT/SRM +13.35%/mo DD  -56% | 2022  +22%
+  S2 N2 | C1 hourly | cd60m | E1 tp1.5                       21-23 +15.39%/mo DD  -45% | +LUNA/FTT/SRM +13.31%/mo DD  -53% | 2022  +41%
+  S3 N3 | C4 1min | cd60m | E5 trail a3 t0 c8                21-23 +14.14%/mo DD  -47% | +LUNA/FTT/SRM +13.21%/mo DD  -58% | 2022  +17%
+  S2 N2 | C3 15min+rearm | cd24h | E5 trail a3 t0 c8         21-23 +15.25%/mo DD  -48% | +LUNA/FTT/SRM +13.21%/mo DD  -54% | 2022  +67%
+  S3 N3 | C4 1min | cd0 | E7 trail a3 t.5 c8                 21-23 +13.81%/mo DD  -42% | +LUNA/FTT/SRM +13.10%/mo DD  -57% | 2022  +22%
+  S3 N3 | C3 15min+rearm | cd0 | E6 trail a5 t0 c8           21-23 +14.30%/mo DD  -48% | +LUNA/FTT/SRM +12.90%/mo DD  -58% | 2022  +65%
+  S3 N3 | C4 1min | cd60m | E7 trail a3 t.5 c8               21-23 +13.61%/mo DD  -47% | +LUNA/FTT/SRM +12.86%/mo DD  -59% | 2022  +16%
+  S2 N2 | C4 1min | cd24h | E7 trail a3 t.5 c8               21-23 +15.00%/mo DD  -46% | +LUNA/FTT/SRM +12.85%/mo DD  -56% | 2022  +61%
+PICK: S2 N2 | C4 1min | cd24h | E5 trail a3 t0 c8
+
+######## PICK (2021-23 rule): S2 N2 | C4 1min | cd24h | E5 trail a3 t0 c8
+    19 coins                         24-26 +6.32%/mo DD  -27% | 25-26 +3.72%/mo DD  -27% | 21-23 +16.13%/mo DD  -45% | 2022 +66%
+                                     worst trade (% of account): 24-26 -12.6% (HBARUSDT), 21-23 -15.7% (ADAUSDT); trades 24-26 642, win 85%, avg +1.51%; invested 13% of the time-weighted equity
+    +LUNA/FTT/SRM                    24-26 +6.32%/mo DD  -27% | 25-26 +3.72%/mo DD  -27% | 21-23 +13.74%/mo DD  -56% | 2022 -22%
+                                     worst trade (% of account): 24-26 -12.6% (HBARUSDT), 21-23 -34.9% (LUNAUSDT); trades 24-26 642, win 85%, avg +1.51%; invested 13% of the time-weighted equity
+    fills 0.2% worse                 24-26 +3.87%/mo DD  -27% | 25-26 +2.23%/mo DD  -27% | 21-23 +10.70%/mo DD  -48% | 2022 +11%
+                                     worst trade (% of account): 24-26 -12.7% (HBARUSDT), 21-23 -15.9% (ADAUSDT); trades 24-26 635, win 83%, avg +1.13%; invested 13% of the time-weighted equity
+    fills 0.2% worse +LUNA/FTT/SRM   24-26 +3.87%/mo DD  -27% | 25-26 +2.23%/mo DD  -27% | 21-23 +8.44%/mo DD  -62% | 2022 -53%
+                                     worst trade (% of account): 24-26 -12.7% (HBARUSDT), 21-23 -34.4% (LUNAUSDT); trades 24-26 635, win 83%, avg +1.13%; invested 14% of the time-weighted equity
+
+######## REF live: REF live (N8 f0.2 tp1.5 hourly cd24h)
+    19 coins                         24-26 +2.89%/mo DD  -16% | 25-26 +1.96%/mo DD  -15% | 21-23 +4.97%/mo DD  -29% | 2022 +19%
+                                     worst trade (% of account): 24-26 -2.7% (HBARUSDT), 21-23 -5.3% (RENDERUSDT); trades 24-26 884, win 93%, avg +1.09%; invested 4% of the time-weighted equity
+    +LUNA/FTT/SRM                    24-26 +2.89%/mo DD  -16% | 25-26 +1.96%/mo DD  -15% | 21-23 +4.69%/mo DD  -31% | 2022 +0%
+                                     worst trade (% of account): 24-26 -2.7% (HBARUSDT), 21-23 -14.9% (LUNAUSDT); trades 24-26 884, win 93%, avg +1.09%; invested 6% of the time-weighted equity
+    fills 0.2% worse                 24-26 +2.04%/mo DD  -16% | 25-26 +1.20%/mo DD  -16% | 21-23 +2.82%/mo DD  -30% | 2022 -12%
+                                     worst trade (% of account): 24-26 -2.8% (HBARUSDT), 21-23 -5.4% (TRXUSDT); trades 24-26 882, win 92%, avg +0.79%; invested 4% of the time-weighted equity
+    fills 0.2% worse +LUNA/FTT/SRM   24-26 +2.04%/mo DD  -16% | 25-26 +1.20%/mo DD  -16% | 21-23 +2.40%/mo DD  -40% | 2022 -25%
+                                     worst trade (% of account): 24-26 -2.8% (HBARUSDT), 21-23 -14.9% (LUNAUSDT); trades 24-26 882, win 92%, avg +0.79%; invested 6% of the time-weighted equity
+
+######## REF 2-coin pick: REF earlier 2-coin pick (N2 tp5 hourly cd24h)
+    19 coins                         24-26 +5.52%/mo DD  -29% | 25-26 +2.65%/mo DD  -29% | 21-23 +13.26%/mo DD  -50% | 2022 +45%
+                                     worst trade (% of account): 24-26 -10.9% (HBARUSDT), 21-23 -19.5% (XRPUSDT); trades 24-26 424, win 71%, avg +1.51%; invested 18% of the time-weighted equity
+    +LUNA/FTT/SRM                    24-26 +5.52%/mo DD  -29% | 25-26 +2.65%/mo DD  -29% | 21-23 +9.65%/mo DD  -62% | 2022 -29%
+                                     worst trade (% of account): 24-26 -10.9% (HBARUSDT), 21-23 -24.1% (LUNAUSDT); trades 24-26 424, win 71%, avg +1.51%; invested 20% of the time-weighted equity
+    fills 0.2% worse                 24-26 +4.09%/mo DD  -34% | 25-26 +1.39%/mo DD  -34% | 21-23 +10.01%/mo DD  -58% | 2022 +3%
+                                     worst trade (% of account): 24-26 -11.0% (HBARUSDT), 21-23 -19.6% (XRPUSDT); trades 24-26 422, win 70%, avg +1.16%; invested 19% of the time-weighted equity
+    fills 0.2% worse +LUNA/FTT/SRM   24-26 +4.09%/mo DD  -34% | 25-26 +1.39%/mo DD  -34% | 21-23 +6.88%/mo DD  -64% | 2022 -40%
+                                     worst trade (% of account): 24-26 -11.0% (HBARUSDT), 21-23 -19.6% (XRPUSDT); trades 24-26 422, win 70%, avg +1.16%; invested 20% of the time-weighted equity
+
+######## HINDSIGHT: top 10 of the grid by 19-coin 2024-26 %/month (chosen by looking at 2024-26)
+  S1 N1 | C3 15min+rearm | cd24h | E6 trail a5 t0 c8         24-26 +7.62%/mo DD  -42% | 25-26 +3.56%/mo DD  -42% | 21-23 +23.57%/mo DD  -61% | +LUNA/FTT/SRM 24-26 +7.62%/mo DD  -42%
+  S4 N2 near1% | C4 1min | cd24h | E5 trail a3 t0 c8         24-26 +7.62%/mo DD  -45% | 25-26 +4.68%/mo DD  -45% | 21-23 +23.54%/mo DD  -57% | +LUNA/FTT/SRM 24-26 +7.62%/mo DD  -45%
+  S4 N2 near1% | C4 1min | cd24h | E4 tp3 d30                24-26 +7.60%/mo DD  -48% | 25-26 +4.42%/mo DD  -48% | 21-23 +21.65%/mo DD  -60% | +LUNA/FTT/SRM 24-26 +7.60%/mo DD  -48%
+  S1 N1 | C2 hourly+rearm | cd24h | E5 trail a3 t0 c8        24-26 +7.36%/mo DD  -46% | 25-26 +4.00%/mo DD  -46% | 21-23 +19.75%/mo DD  -62% | +LUNA/FTT/SRM 24-26 +7.36%/mo DD  -46%
+  S1 N1 | C4 1min | cd24h | E2 tp3                           24-26 +7.35%/mo DD  -48% | 25-26 +3.31%/mo DD  -48% | 21-23 +21.39%/mo DD  -61% | +LUNA/FTT/SRM 24-26 +7.35%/mo DD  -48%
+  S5 N3 near1% | C4 1min | cd24h | E4 tp3 d30                24-26 +7.32%/mo DD  -48% | 25-26 +4.04%/mo DD  -48% | 21-23 +21.17%/mo DD  -61% | +LUNA/FTT/SRM 24-26 +7.32%/mo DD  -48%
+  S1 N1 | C4 1min | cd24h | E4 tp3 d30                       24-26 +7.22%/mo DD  -48% | 25-26 +3.28%/mo DD  -48% | 21-23 +22.95%/mo DD  -61% | +LUNA/FTT/SRM 24-26 +7.22%/mo DD  -48%
+  S5 N3 near1% | C4 1min | cd24h | E5 trail a3 t0 c8         24-26 +7.21%/mo DD  -45% | 25-26 +4.21%/mo DD  -45% | 21-23 +23.15%/mo DD  -57% | +LUNA/FTT/SRM 24-26 +7.21%/mo DD  -45%
+  S4 N2 near1% | C4 1min | cd24h | E2 tp3                    24-26 +7.21%/mo DD  -49% | 25-26 +3.82%/mo DD  -49% | 21-23 +21.16%/mo DD  -61% | +LUNA/FTT/SRM 24-26 +7.21%/mo DD  -49%
+  S4 N2 near1% | C4 1min | cd24h | E7 trail a3 t.5 c8        24-26 +7.14%/mo DD  -46% | 25-26 +4.22%/mo DD  -46% | 21-23 +24.18%/mo DD  -57% | +LUNA/FTT/SRM 24-26 +7.14%/mo DD  -46%
+
+######## HINDSIGHT BEST: S1 N1 | C3 15min+rearm | cd24h | E6 trail a5 t0 c8
+    19 coins                         24-26 +7.62%/mo DD  -42% | 25-26 +3.56%/mo DD  -42% | 21-23 +23.57%/mo DD  -61% | 2022 +186%
+                                     worst trade (% of account): 24-26 -25.2% (HBARUSDT), 21-23 -27.2% (RENDERUSDT); trades 24-26 192, win 70%, avg +1.47%; invested 26% of the time-weighted equity
+    +LUNA/FTT/SRM                    24-26 +7.62%/mo DD  -42% | 25-26 +3.56%/mo DD  -42% | 21-23 -11.47%/mo DD -100% | 2022 -100%
+                                     worst trade (% of account): 24-26 -25.2% (HBARUSDT), 21-23 -100.0% (LUNAUSDT); trades 24-26 192, win 70%, avg +1.47%; invested 39% of the time-weighted equity
+    fills 0.2% worse                 24-26 +4.68%/mo DD  -53% | 25-26 +0.80%/mo DD  -53% | 21-23 +19.65%/mo DD  -64% | 2022 +73%
+                                     worst trade (% of account): 24-26 -25.5% (HBARUSDT), 21-23 -27.5% (RENDERUSDT); trades 24-26 186, win 68%, avg +1.01%; invested 26% of the time-weighted equity
+    fills 0.2% worse +LUNA/FTT/SRM   24-26 +4.68%/mo DD  -53% | 25-26 +0.80%/mo DD  -53% | 21-23 -14.68%/mo DD -100% | 2022 -100%
+                                     worst trade (% of account): 24-26 -25.5% (HBARUSDT), 21-23 -100.0% (LUNAUSDT); trades 24-26 186, win 68%, avg +1.01%; invested 39% of the time-weighted equity
+
+grid: 2024-26 %/month max 7.62, median 5.00; designs >= 10%/month in 2024-26: 0; >= 7%: 13; since 2025 max 5.51%/month
+  by sizing: S1 N1 24-26 med +5.62 max +7.62 | S2 N2 24-26 med +5.48 max +6.81 | S3 N3 24-26 med +4.93 max +5.83 | S4 N2 near1% 24-26 med +3.79 max +7.62 | S5 N3 near1% 24-26 med +3.53 max +7.32
+  by cycle: C1 hourly 24-26 med +4.60 max +7.00 | C2 hourly+rearm 24-26 med +4.71 max +7.36 | C3 15min+rearm 24-26 med +4.85 max +7.62 | C4 1min 24-26 med +5.43 max +7.62
+  by cooldown: cd24h 24-26 med +5.58 max +7.62 | cd60m 24-26 med +4.73 max +6.24 | cd0 24-26 med +4.95 max +6.94
+  by exit: E1 tp1.5 24-26 med +4.64 max +6.94 | E2 tp3 24-26 med +5.48 max +7.35 | E3 tp5 24-26 med +4.55 max +6.49 | E4 tp3 d30 24-26 med +5.33 max +7.60 | E5 trail a3 t0 c8 24-26 med +5.17 max +7.62 | E6 trail a5 t0 c8 24-26 med +4.88 max +7.62 | E7 trail a3 t.5 c8 24-26 med +4.97 max +7.14
+done in 408s

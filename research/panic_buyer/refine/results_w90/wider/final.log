@@ -1,0 +1,125 @@
+All numbers: wider panel (screened coins, delisted included), costs 0.1% fee/side, slippage 0.02% (monthly top 50 by 30d volume) or 0.1%, limit buys 0.1% through.
+Columns: win rate (trades bought in the period), %/month compounded, worst drop, for 2021-23 | 2024-26 | since 2025.
+
+================================================================================================================================================================
+F1: 19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd12 g35
+   live bot: depth_pct 14, n_orders 1, max_order_pct 100, take_profit_pct 5, max_hours 48, cooldown_hours 12, crash_guard_pct 35; CODE CHANGE: tier list = monthly top 30 non-19 screened coins by trailing 365-day USDT volume (ranked on the 1st of each month from daily klines, min 30 days listed), tier_depth_pct 26, tier_size_mult 1.0, same take-profit; per-coin depth in triggers()
+   normal    21-23 WR 80.3% +16.01%/mo dd  -58% | 24-26 WR 77.6% +11.07%/mo dd  -31% | 25-26 WR 80.0% +12.01%/mo dd  -29%
+   STRESSED  21-23 WR 79.6% +8.76%/mo dd  -91% | 24-26 WR 76.1% +8.15%/mo dd  -32% | 25-26 WR 76.9% +8.43%/mo dd  -29%
+   years normal:   2021 +4663% 2022 +42% 2023 +209% 2024 +195% 2025 +133% 2026 +400%
+   years stressed: 2021 +1961% 2022 -65% 2023 +184% 2024 +143% 2025 +86% 2026 +210%
+   trades 21-23/24-26/25-26: 310/143/80; outside the 19: 7/29/25
+   avg win / avg loss 24-26: +5.01% / -5.56%; 21-23: +4.95% / -9.82%
+   worst single trade, % of account: normal -42.56% / -21.86% / -11.19%; stressed -79.22% / -20.81% / -13.35%
+   2021-23: account P&L points +633, from coins outside the 19 +21 (3%)
+   2024-26: account P&L points +378, from coins outside the 19 +129 (34%)
+   since 2025: account P&L points +259, from coins outside the 19 +139 (54%)
+   same settings, 19 coins only:          21-23 WR 80.5% +15.98%/mo dd  -58% | 24-26 WR 75.2% +7.57%/mo dd  -29% | 25-26 WR 73.7% +5.77%/mo dd  -29%
+   same settings, 19 coins only, STRESSED: 21-23 WR 79.9% +9.29%/mo dd  -89% | 24-26 WR 74.6% +6.01%/mo dd  -30% | 25-26 WR 71.9% +4.28%/mo dd  -29%
+   2024-26 coins outside the 19 (19; P&L points, trades): HEMI +39 (4), BIO +12 (2), XPL +10 (2), ERA +10 (2), MOVE +10 (2), MIRA +10 (2), BERA +10 (2), ZEC +10 (2), AT +9 (1), TAO +8 (1), 0G +5 (1), WAL +5 (1), TRB +5 (1), ALT +5 (1), STRK +5 (1), SOMI +5 (1), OP -5 (1), MASK -8 (1), ID -12 (1)
+   since 2025 coins outside the 19 (15; P&L points, trades): HEMI +39 (4), BIO +12 (2), XPL +10 (2), ERA +10 (2), MOVE +10 (2), MIRA +10 (2), BERA +10 (2), ZEC +10 (2), AT +9 (1), TAO +8 (1), 0G +5 (1), WAL +5 (1), SOMI +5 (1), STRK +5 (1), OP -5 (1)
+   2021-23 coins outside the 19 (7; P&L points, trades): JASMY +5 (1), MANA +5 (1), ETC +5 (1), TLM +5 (1), SLP +5 (1), QTUM +5 (1), OMG -8 (1)
+   worst trades: RENDER 2022-11-07 -43% of account; SOL 2021-05-21 -38% of account; DOGE 2021-01-29 -35% of account; RENDER 2022-01-20 -25% of account; DOGE 2021-04-21 -25% of account; LINK 2022-06-10 -22% of account
+   trades bought 10-11 Oct 2025: LINK 10-10 20h -1.8% of account
+   no new buys 10 Oct 2025 20-24h UTC:  21-23 WR 80.3% +16.01%/mo dd  -58% | 24-26 WR 78.5% +11.44%/mo dd  -31% | 25-26 WR 81.5% +12.59%/mo dd  -29%
+   orders must trade 0.3% through:     21-23 WR 78.8% +12.82%/mo dd  -61% | 24-26 WR 76.7% +9.67%/mo dd  -31% | 25-26 WR 79.2% +11.04%/mo dd  -28%
+   orders must trade 1.0% through:     21-23 WR 76.1% +8.65%/mo dd  -60% | 24-26 WR 67.9% +5.20%/mo dd  -45% | 25-26 WR 69.7% +7.44%/mo dd  -28%
+   fresh starts 2024-01-01 +0/7/14/21/28 days, %/month to date: 11.07, 11.02, 11.43, 11.69, 11.78
+   fresh starts 2025-01-01 +0/7/14/21/28 days, %/month to date: 12.01, 12.15, 12.35, 11.99, 12.39
+      neighbour 19 + top25 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd12 g35: 21-23 WR 80.4% +16.16%/mo dd  -58% | 24-26 WR 76.5% +9.86%/mo dd  -31% | 25-26 WR 78.1% +10.11%/mo dd  -29%
+      neighbour 19 + top35 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd12 g35: 21-23 WR 80.3% +16.01%/mo dd  -58% | 24-26 WR 75.3% +10.13%/mo dd  -34% | 25-26 WR 76.5% +10.66%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 24% x1 tp5% | core 14% tp5% N1 f1 hm48 cd12 g35: 21-23 WR 80.3% +16.64%/mo dd  -58% | 24-26 WR 73.5% +7.29%/mo dd  -34% | 25-26 WR 72.6% +6.45%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 28% x1 tp5% | core 14% tp5% N1 f1 hm48 cd12 g35: 21-23 WR 80.3% +16.01%/mo dd  -58% | 24-26 WR 74.0% +7.97%/mo dd  -29% | 25-26 WR 72.7% +6.84%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 26% x0.5 tp5% | core 14% tp5% N1 f1 hm48 cd12 g35: 21-23 WR 80.6% +16.19%/mo dd  -58% | 24-26 WR 78.1% +9.37%/mo dd  -29% | 25-26 WR 80.5% +8.92%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 26% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd12 g35: 21-23 WR 80.6% +16.26%/mo dd  -58% | 24-26 WR 78.1% +10.23%/mo dd  -29% | 25-26 WR 80.5% +10.47%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 26% x1 tp5% | core 13% tp5% N1 f1 hm48 cd12 g35: 21-23 WR 80.2% +21.08%/mo dd  -56% | 24-26 WR 71.2% +8.06%/mo dd  -42% | 25-26 WR 71.1% +7.89%/mo dd  -42%
+      neighbour 19 + top30 others by v365 @ 26% x1 tp5% | core 15% tp5% N1 f1 hm48 cd12 g35: 21-23 WR 82.0% +14.47%/mo dd  -61% | 24-26 WR 79.2% +9.66%/mo dd  -35% | 25-26 WR 80.8% +11.72%/mo dd  -27%
+      neighbour 19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd0 g35: 21-23 WR 80.8% +17.46%/mo dd  -61% | 24-26 WR 74.0% +8.23%/mo dd  -32% | 25-26 WR 74.1% +9.21%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 81.1% +15.12%/mo dd  -61% | 24-26 WR 78.1% +11.03%/mo dd  -31% | 25-26 WR 80.0% +11.37%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 26% x1 tp4% | core 14% tp4% N1 f1 hm48 cd12 g35: 21-23 WR 85.1% +17.07%/mo dd  -58% | 24-26 WR 78.8% +8.42%/mo dd  -33% | 25-26 WR 80.5% +9.65%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 26% x1 tp6% | core 14% tp6% N1 f1 hm48 cd12 g35: 21-23 WR 75.5% +15.45%/mo dd  -59% | 24-26 WR 71.5% +9.02%/mo dd  -30% | 25-26 WR 73.0% +10.13%/mo dd  -29%
+   neighbours (12): worst-of-three %/month median 8.97, min 6.45, max 11.03; 2024-26 median 9.19; qualify for 10%: 3 of 12
+   holdout_candidate_F1 via holdout path, 19 coins (core only): 21-23 WR 80.5% +16.07%/mo dd  -58% | 24-26 WR 75.2% +7.58%/mo dd  -29% | 25-26 WR 73.7% +5.78%/mo dd  -29%
+   holdout_candidate_F1 via holdout path, 19 coins + LUNA/FTT/SRM (core only): 21-23 WR 81.4% +17.79%/mo dd  -64% | 24-26 WR 75.2% +7.58%/mo dd  -29% | 25-26 WR 73.7% +5.78%/mo dd  -29%
+
+================================================================================================================================================================
+F2: 19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35
+   live bot: depth_pct 14, n_orders 1, max_order_pct 100, take_profit_pct 5, max_hours 48, cooldown_hours 24, crash_guard_pct 35 (= panic_config.10pct.example.json); CODE CHANGE: tier list = monthly top 30 non-19 screened coins by trailing 365-day USDT volume, tier_depth_pct 26, tier_size_mult 1.0
+   normal    21-23 WR 81.1% +15.12%/mo dd  -61% | 24-26 WR 78.1% +11.03%/mo dd  -31% | 25-26 WR 80.0% +11.37%/mo dd  -29%
+   STRESSED  21-23 WR 79.5% +11.47%/mo dd  -75% | 24-26 WR 77.6% +8.43%/mo dd  -32% | 25-26 WR 78.4% +8.47%/mo dd  -29%
+   years normal:   2021 +3644% 2022 +44% 2023 +195% 2024 +229% 2025 +123% 2026 +363%
+   years stressed: 2021 +2478% 2022 -29% 2023 +171% 2024 +162% 2025 +101% 2026 +190%
+   trades 21-23/24-26/25-26: 301/137/75; outside the 19: 7/25/21
+   avg win / avg loss 24-26: +5.02% / -5.38%; 21-23: +4.84% / -9.97%
+   worst single trade, % of account: normal -54.16% / -21.86% / -11.19%; stressed -44.56% / -20.81% / -13.35%
+   2021-23: account P&L points +612, from coins outside the 19 +21 (3%)
+   2024-26: account P&L points +375, from coins outside the 19 +110 (29%)
+   since 2025: account P&L points +246, from coins outside the 19 +120 (49%)
+   same settings, 19 coins only:          21-23 WR 81.1% +14.95%/mo dd  -61% | 24-26 WR 76.5% +8.13%/mo dd  -30% | 25-26 WR 75.0% +6.08%/mo dd  -29%
+   same settings, 19 coins only, STRESSED: 21-23 WR 79.9% +12.16%/mo dd  -75% | 24-26 WR 76.1% +6.47%/mo dd  -30% | 25-26 WR 73.2% +4.60%/mo dd  -29%
+   2024-26 coins outside the 19 (19; P&L points, trades): HEMI +39 (4), MOVE +10 (2), MIRA +10 (2), ZEC +10 (2), AT +9 (1), TAO +8 (1), BIO +7 (1), ALT +5 (1), ERA +5 (1), BERA +5 (1), SOMI +5 (1), XPL +5 (1), TRB +5 (1), 0G +5 (1), WAL +5 (1), STRK +5 (1), OP -5 (1), MASK -8 (1), ID -12 (1)
+   since 2025 coins outside the 19 (15; P&L points, trades): HEMI +39 (4), MOVE +10 (2), ZEC +10 (2), MIRA +10 (2), AT +9 (1), TAO +8 (1), BIO +7 (1), SOMI +5 (1), XPL +5 (1), ERA +5 (1), BERA +5 (1), STRK +5 (1), WAL +5 (1), 0G +5 (1), OP -5 (1)
+   2021-23 coins outside the 19 (7; P&L points, trades): MANA +5 (1), ETC +5 (1), JASMY +5 (1), QTUM +5 (1), SLP +5 (1), TLM +5 (1), OMG -8 (1)
+   worst trades: DOGE 2021-01-29 -54% of account; RENDER 2022-11-07 -43% of account; SOL 2021-05-21 -38% of account; RENDER 2022-01-20 -25% of account; LINK 2022-06-10 -22% of account; HBAR 2024-04-24 -22% of account
+   trades bought 10-11 Oct 2025: LINK 10-10 20h -1.8% of account
+   no new buys 10 Oct 2025 20-24h UTC:  21-23 WR 81.1% +15.12%/mo dd  -61% | 24-26 WR 79.0% +11.39%/mo dd  -31% | 25-26 WR 81.6% +11.95%/mo dd  -29%
+   orders must trade 0.3% through:     21-23 WR 79.6% +12.29%/mo dd  -64% | 24-26 WR 76.9% +9.53%/mo dd  -31% | 25-26 WR 79.5% +10.56%/mo dd  -28%
+   orders must trade 1.0% through:     21-23 WR 76.8% +6.12%/mo dd  -73% | 24-26 WR 69.2% +5.67%/mo dd  -45% | 25-26 WR 70.3% +7.42%/mo dd  -28%
+   fresh starts 2024-01-01 +0/7/14/21/28 days, %/month to date: 11.03, 10.98, 11.39, 11.65, 11.73
+   fresh starts 2025-01-01 +0/7/14/21/28 days, %/month to date: 11.37, 11.50, 11.70, 11.33, 11.72
+      neighbour 19 + top25 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 81.1% +15.13%/mo dd  -61% | 24-26 WR 77.1% +9.97%/mo dd  -31% | 25-26 WR 78.3% +9.72%/mo dd  -29%
+      neighbour 19 + top35 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 81.1% +15.12%/mo dd  -61% | 24-26 WR 75.5% +9.93%/mo dd  -34% | 25-26 WR 75.9% +9.79%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 24% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 81.0% +15.60%/mo dd  -61% | 24-26 WR 75.5% +8.10%/mo dd  -34% | 25-26 WR 75.3% +7.14%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 28% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 80.9% +14.83%/mo dd  -61% | 24-26 WR 76.4% +9.58%/mo dd  -30% | 25-26 WR 76.1% +8.77%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 26% x0.5 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 81.2% +15.16%/mo dd  -61% | 24-26 WR 78.6% +9.62%/mo dd  -30% | 25-26 WR 80.5% +8.76%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 26% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 81.2% +15.23%/mo dd  -61% | 24-26 WR 78.6% +10.34%/mo dd  -30% | 25-26 WR 80.5% +10.07%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 26% x1 tp5% | core 13% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 79.8% +16.50%/mo dd  -71% | 24-26 WR 70.8% +7.83%/mo dd  -42% | 25-26 WR 69.9% +7.02%/mo dd  -42%
+      neighbour 19 + top30 others by v365 @ 26% x1 tp5% | core 15% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 82.1% +13.03%/mo dd  -73% | 24-26 WR 80.3% +10.03%/mo dd  -33% | 25-26 WR 80.9% +10.92%/mo dd  -27%
+      neighbour 19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd12 g35: 21-23 WR 80.3% +16.01%/mo dd  -58% | 24-26 WR 77.6% +11.07%/mo dd  -31% | 25-26 WR 80.0% +12.01%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 26% x1 tp5% | core 14% tp5% N1 f1 hm48 cd36 g35: 21-23 WR 80.1% +14.28%/mo dd  -61% | 24-26 WR 78.0% +10.55%/mo dd  -34% | 25-26 WR 79.7% +11.11%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 26% x1 tp4% | core 14% tp4% N1 f1 hm48 cd24 g35: 21-23 WR 83.8% +10.76%/mo dd  -72% | 24-26 WR 80.6% +9.09%/mo dd  -32% | 25-26 WR 80.3% +9.03%/mo dd  -29%
+      neighbour 19 + top30 others by v365 @ 26% x1 tp6% | core 14% tp6% N1 f1 hm48 cd24 g35: 21-23 WR 75.4% +12.55%/mo dd  -62% | 24-26 WR 71.8% +8.58%/mo dd  -29% | 25-26 WR 72.5% +9.31%/mo dd  -29%
+   neighbours (12): worst-of-three %/month median 9.38, min 7.02, max 11.07; 2024-26 median 9.78; qualify for 10%: 4 of 12
+   holdout_candidate_F2 via holdout path, 19 coins (core only): 21-23 WR 81.1% +15.03%/mo dd  -61% | 24-26 WR 76.5% +8.13%/mo dd  -30% | 25-26 WR 75.0% +6.08%/mo dd  -29%
+   holdout_candidate_F2 via holdout path, 19 coins + LUNA/FTT/SRM (core only): 21-23 WR 80.9% +15.07%/mo dd  -70% | 24-26 WR 76.5% +8.13%/mo dd  -30% | 25-26 WR 75.0% +6.08%/mo dd  -29%
+
+================================================================================================================================================================
+F3: 19 + top20 others by v30 @ 20% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35
+   live bot: depth_pct 14, n_orders 1, max_order_pct 100, take_profit_pct 5, max_hours 48, cooldown_hours 24, crash_guard_pct 35; CODE CHANGE: tier list = monthly top 20 non-19 screened coins by trailing 30-day USDT volume, tier_depth_pct 20, tier_size_mult 0.75 (order = 75% of cash)
+   normal    21-23 WR 79.6% +10.96%/mo dd  -67% | 24-26 WR 78.3% +10.89%/mo dd  -43% | 25-26 WR 77.8% +10.35%/mo dd  -43%
+   STRESSED  21-23 WR 78.9% +8.27%/mo dd  -74% | 24-26 WR 78.1% +8.34%/mo dd  -45% | 25-26 WR 76.9% +7.17%/mo dd  -45%
+   years normal:   2021 +4523% 2022 +7% 2023 -14% 2024 +286% 2025 +134% 2026 +260%
+   years stressed: 2021 +3201% 2022 -32% 2023 -22% 2024 +232% 2025 +103% 2026 +121%
+   trades 21-23/24-26/25-26: 353/207/135; outside the 19: 60/91/79
+   avg win / avg loss 24-26: +4.92% / -7.96%; 21-23: +4.85% / -12.37%
+   worst single trade, % of account: normal -54.16% / -23.51% / -23.51%; stressed -42.42% / -24.03% / -24.03%
+   2021-23: account P&L points +504, from coins outside the 19 -64 (-13%)
+   2024-26: account P&L points +380, from coins outside the 19 +130 (34%)
+   since 2025: account P&L points +234, from coins outside the 19 +117 (50%)
+   same settings, 19 coins only:          21-23 WR 81.1% +14.95%/mo dd  -61% | 24-26 WR 76.5% +8.13%/mo dd  -30% | 25-26 WR 75.0% +6.08%/mo dd  -29%
+   same settings, 19 coins only, STRESSED: 21-23 WR 79.9% +12.16%/mo dd  -75% | 24-26 WR 76.1% +6.47%/mo dd  -30% | 25-26 WR 73.2% +4.60%/mo dd  -29%
+   2024-26 coins outside the 19 (43; P&L points, trades): HEMI +26 (3), PROM +19 (4), DASH +18 (5), ZEC +14 (4), ZEN +13 (5), ACE +12 (4), COTI +11 (3), SOMI +11 (3), SYN +9 (5), XPL +8 (4), D +7 (2), SAGA +7 (2), MOVE +7 (2), VOXEL +6 (1), HIGH +5 (2), QNT +4 (1), LUNA2 +4 (1), ENS +4 (1), 0G +4 (1), APT +4 (1), UNI +4 (1), XLM +4 (1), FIDA +4 (1), KAITO +4 (1), API3 +4 (1), CKB +4 (1), ARKM +3 (3), FIL +3 (1), ZRO +1 (2), SOPH +1 (1), COOKIE -1 (1), DEGO -2 (2), TAO -2 (1), INIT -3 (2), SEI -5 (2), LPT -6 (1), KITE -6 (4), GUN -7 (1), BIO -7 (2), TROY -7 (3), YGG -10 (1), SIGN -15 (1), ENSO -16 (3)
+   since 2025 coins outside the 19 (37; P&L points, trades): HEMI +26 (3), PROM +19 (4), DASH +18 (5), ZEC +14 (4), ZEN +13 (5), ACE +12 (4), COTI +11 (3), SOMI +11 (3), SYN +9 (5), XPL +8 (4), D +7 (2), MOVE +7 (2), VOXEL +6 (1), HIGH +5 (2), QNT +4 (1), SEI +4 (1), XLM +4 (1), APT +4 (1), FIDA +4 (1), 0G +4 (1), KAITO +4 (1), API3 +4 (1), FIL +3 (1), ZRO +1 (2), SOPH +1 (1), COOKIE -1 (1), DEGO -2 (2), TAO -2 (1), INIT -3 (2), ARKM -4 (1), LPT -6 (1), KITE -6 (4), GUN -7 (1), BIO -7 (2), YGG -10 (1), SIGN -15 (1), ENSO -16 (3)
+   2021-23 coins outside the 19 (45; P&L points, trades): LOKA +11 (3), GALA +7 (2), MANA +7 (2), ETC +7 (2), MASK +7 (2), HOOK +7 (2), SAND +5 (2), OP +4 (1), MATIC +4 (1), LUNA +4 (1), CTXC +4 (1), GRT +4 (1), FTM +4 (1), NKN +4 (1), IOST +4 (1), COCOS +4 (1), HOT +4 (1), FIL +4 (1), FRONT +4 (1), TWT +4 (1), HIGH +4 (1), DATA +4 (1), DENT +4 (1), QTUM +4 (1), JASMY +4 (1), COTI +4 (1), ZIL +4 (1), CYBER +3 (1), STMX +1 (1), OXT -1 (1), VIB -1 (1), EOS -2 (2), EGLD -3 (1), SLP -3 (2), GMT -5 (1), OMG -6 (1), GAS -7 (3), MDX -8 (1), STORJ -11 (2), TRB -12 (2), APE -14 (1), WAVES -23 (1), PHA -26 (1), BNT -34 (1), LOOM -34 (2)
+   worst trades: DOGE 2021-01-29 -54% of account; LOOM 2023-10-17 -42% of account; SOL 2021-05-21 -38% of account; BNT 2023-11-13 -34% of account; PHA 2022-11-07 -26% of account; RENDER 2022-01-20 -25% of account
+   trades bought 10-11 Oct 2025: LINK 10-10 20h -1.8% of account
+   no new buys 10 Oct 2025 20-24h UTC:  21-23 WR 79.6% +10.96%/mo dd  -67% | 24-26 WR 78.2% +11.25%/mo dd  -43% | 25-26 WR 77.7% +10.91%/mo dd  -43%
+   orders must trade 0.3% through:     21-23 WR 78.8% +9.26%/mo dd  -67% | 24-26 WR 77.3% +9.62%/mo dd  -43% | 25-26 WR 76.7% +9.21%/mo dd  -43%
+   orders must trade 1.0% through:     21-23 WR 74.8% +1.50%/mo dd  -73% | 24-26 WR 70.9% +3.84%/mo dd  -45% | 25-26 WR 70.1% +4.01%/mo dd  -45%
+   fresh starts 2024-01-01 +0/7/14/21/28 days, %/month to date: 10.89, 10.88, 10.84, 11.10, 11.18
+   fresh starts 2025-01-01 +0/7/14/21/28 days, %/month to date: 10.35, 10.46, 10.41, 9.86, 10.22
+      neighbour 19 + top15 others by v30 @ 20% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 80.2% +11.75%/mo dd  -65% | 24-26 WR 77.3% +10.13%/mo dd  -43% | 25-26 WR 76.1% +8.55%/mo dd  -43%
+      neighbour 19 + top25 others by v30 @ 20% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 79.6% +10.89%/mo dd  -79% | 24-26 WR 76.3% +9.50%/mo dd  -49% | 25-26 WR 74.7% +7.99%/mo dd  -49%
+      neighbour 19 + top20 others by v30 @ 18% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 79.9% +12.00%/mo dd  -63% | 24-26 WR 74.3% +6.83%/mo dd  -41% | 25-26 WR 73.5% +4.68%/mo dd  -41%
+      neighbour 19 + top20 others by v30 @ 22% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 80.4% +11.98%/mo dd  -66% | 24-26 WR 79.3% +10.03%/mo dd  -30% | 25-26 WR 80.6% +9.45%/mo dd  -29%
+      neighbour 19 + top20 others by v30 @ 20% x0.5 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 79.6% +12.13%/mo dd  -61% | 24-26 WR 78.3% +9.77%/mo dd  -32% | 25-26 WR 77.8% +8.73%/mo dd  -32%
+      neighbour 19 + top20 others by v30 @ 20% x1 tp5% | core 14% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 79.0% +8.18%/mo dd  -81% | 24-26 WR 79.2% +12.54%/mo dd  -52% | 25-26 WR 79.7% +12.59%/mo dd  -52%
+      neighbour 19 + top20 others by v30 @ 20% x0.75 tp5% | core 13% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 79.7% +12.83%/mo dd  -71% | 24-26 WR 72.7% +9.00%/mo dd  -36% | 25-26 WR 71.1% +7.94%/mo dd  -36%
+      neighbour 19 + top20 others by v30 @ 20% x0.75 tp5% | core 15% tp5% N1 f1 hm48 cd24 g35: 21-23 WR 80.6% +9.78%/mo dd  -73% | 24-26 WR 80.2% +9.21%/mo dd  -56% | 25-26 WR 78.8% +8.69%/mo dd  -56%
+      neighbour 19 + top20 others by v30 @ 20% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd12 g35: 21-23 WR 79.4% +11.37%/mo dd  -69% | 24-26 WR 77.1% +9.64%/mo dd  -43% | 25-26 WR 77.3% +9.03%/mo dd  -43%
+      neighbour 19 + top20 others by v30 @ 20% x0.75 tp5% | core 14% tp5% N1 f1 hm48 cd36 g35: 21-23 WR 79.1% +11.77%/mo dd  -61% | 24-26 WR 78.1% +10.27%/mo dd  -43% | 25-26 WR 77.4% +9.93%/mo dd  -43%
+      neighbour 19 + top20 others by v30 @ 20% x0.75 tp4% | core 14% tp4% N1 f1 hm48 cd24 g35: 21-23 WR 81.4% +5.53%/mo dd  -76% | 24-26 WR 80.9% +8.21%/mo dd  -41% | 25-26 WR 79.3% +7.06%/mo dd  -41%
+      neighbour 19 + top20 others by v30 @ 20% x0.75 tp6% | core 14% tp6% N1 f1 hm48 cd24 g35: 21-23 WR 74.8% +7.98%/mo dd  -64% | 24-26 WR 73.2% +9.90%/mo dd  -39% | 25-26 WR 72.2% +10.32%/mo dd  -39%
+   neighbours (12): worst-of-three %/month median 8.37, min 4.68, max 9.93; 2024-26 median 9.70; qualify for 10%: 3 of 12
+   holdout_candidate_F3 via holdout path, 19 coins (core only): 21-23 WR 81.1% +15.03%/mo dd  -61% | 24-26 WR 76.5% +8.13%/mo dd  -30% | 25-26 WR 75.0% +6.08%/mo dd  -29%
+   holdout_candidate_F3 via holdout path, 19 coins + LUNA/FTT/SRM (core only): 21-23 WR 80.9% +15.07%/mo dd  -70% | 24-26 WR 76.5% +8.13%/mo dd  -30% | 25-26 WR 75.0% +6.08%/mo dd  -29%

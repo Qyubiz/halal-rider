@@ -1,0 +1,113 @@
+604 runs in 75s
+
+qualify on 2021-23 (2022 >= 0%, drop >= -50%): 191 of 604
+     base    park  pf  mode  armx  rebuy_wait   d_mo    d_dd  y2022
+2x50% +5% BTC f50 1.0     1  0.02         168 0.1448 -0.4960 0.3270
+2x50% +5% BTC f50 1.0     0  0.05          24 0.1446 -0.4960 0.3126
+2x50% +5% BTC f50 0.5     1  0.02         168 0.1426 -0.4960 0.3158
+2x50% +5% BTC f50 1.0     0  0.05         168 0.1423 -0.4960 0.3712
+2x50% +5% BTC f50 0.5     1  0.01         168 0.1399 -0.4960 0.3120
+2x50% +3% BTC f50 1.0     1  0.02         168 0.1394 -0.4955 0.1835
+2x50% +5% BTC f50 1.0     0  0.05          72 0.1391 -0.4960 0.2965
+2x50% +3% BTC f50 0.5     1  0.02         168 0.1388 -0.4955 0.2176
+2x50% +5% BTC f50 1.0     0  0.03         168 0.1387 -0.4960 0.1448
+2x50% +3% BTC f50 1.0     0  0.05          24 0.1382 -0.4955 0.2168
+2x50% +5% BTC f50 0.5     0  0.05         168 0.1378 -0.4960 0.4090
+2x50% +5% BTC f50 0.5     0  0.05          24 0.1376 -0.4960 0.3743
+
+==== ONE LOOK: honest pick (2021-23 only) and its base without parking
+PICK: 2x50% +5% | park BTC f50 x100% | mode 1 arm 2% | re-buy wait 168h
+  (1) 2024-26   +6.11%/mo  x   7.38  drop -33.9%
+  (2) 2025-26   +3.57%/mo  x   2.14  drop -29.0%
+  (3) 2021-23  +14.48%/mo  x 129.84  drop -49.6%  2022 +32.7%
+      trades 1343, worst trade -19.5% of account (2021-23 -19.5%, 2024-26 -10.9%)
+      avg cash share 21-23 64% / 24-26 59%, parked 21-23 14% / 24-26 26%; parking trades: 32 forced, 243 watcher, 21 other sells, 125 buys, turnover x199, costs 23.8% of equity (sum)
+  (4) fills 0.2% worse (all fills) + LUNA/FTT/SRM: 2024-26  +3.99%/mo drop -37.3% | 2025-26  +1.69%/mo drop -34.9% | 2021-23  +7.40%/mo drop -66.8% 2022 -46.4% | worst trade -19.6% of account
+      years: 2021 +1978% 2022 +33% 2023 +371% 2024 +245% 2025 +51% 2026 +41%
+ITS BASE, NO PARKING: 2x50% +5% | no parking
+  (1) 2024-26   +5.53%/mo  x   6.12  drop -28.7%
+  (2) 2025-26   +2.66%/mo  x   1.76  drop -28.6%
+  (3) 2021-23  +13.32%/mo  x  89.88  drop -49.6%  2022 +46.4%
+      trades 1343, worst trade -19.5% of account (2021-23 -19.5%, 2024-26 -10.9%)
+      avg cash share 21-23 78% / 24-26 85%, parked 21-23 0% / 24-26 0%
+  (4) fills 0.2% worse (all fills) + LUNA/FTT/SRM: 2024-26  +4.09%/mo drop -33.9% | 2025-26  +1.39%/mo drop -33.9% | 2021-23  +6.87%/mo drop -64.2% 2022 -39.6% | worst trade -19.6% of account
+      years: 2021 +1550% 2022 +46% 2023 +272% 2024 +247% 2025 +37% 2026 +29%
+
+==== Does parking add? per base: share of the 150 parking variants that beat the base without parking
+live 8x20% +1.5%   base 21-23 +4.98%/mo dd -29% | 24-26 +2.89%/mo dd -16% | since 2025 +1.96%/mo | parking variants higher: 21-23 67%, 24-26 94%, since 2025 91%; with drop no deeper (1pt) in 24-26: 0%; median 24-26 +3.55%/mo, median 24-26 drop -24%
+2x50% +5%          base 21-23 +13.32%/mo dd -50% | 24-26 +5.53%/mo dd -29% | since 2025 +2.66%/mo | parking variants higher: 21-23 25%, 24-26 77%, since 2025 89%; with drop no deeper (1pt) in 24-26: 3%; median 24-26 +5.89%/mo, median 24-26 drop -34%
+2x50% +3%          base 21-23 +12.94%/mo dd -50% | 24-26 +6.31%/mo dd -30% | since 2025 +3.71%/mo | parking variants higher: 21-23 26%, 24-26 61%, since 2025 86%; with drop no deeper (1pt) in 24-26: 3%; median 24-26 +6.48%/mo, median 24-26 drop -35%
+1x100% +3%         base 21-23 +17.79%/mo dd -61% | 24-26 +7.00%/mo dd -49% | since 2025 +3.27%/mo | parking variants higher: 21-23 8%, 24-26 69%, since 2025 82%; with drop no deeper (1pt) in 24-26: 39%; median 24-26 +7.23%/mo, median 24-26 drop -51%
+
+==== Median 2024-26 %/month by factor (all bases pooled, parking runs only)
+                     d_mo  t_mo  s_mo   t_dd  costs
+park                                               
+BTC f50             13.18  5.87  2.94 -33.53  31.42
+BTC+ETH f50         12.73  6.23  3.86 -34.15  30.16
+BTC+ETH f50 calm5   12.51  6.20  3.86 -34.23  33.37
+BTC/ETH f50 renorm  12.63  6.09  3.79 -35.51  36.49
+ETH f50             12.25  6.59  4.64 -35.92  29.83
+      d_mo  t_mo  s_mo   t_dd  costs
+pf                                  
+0.5  12.77  6.27  3.64 -33.14  25.11
+1.0  12.41  6.01  4.08 -37.82  43.52
+       d_mo  t_mo  s_mo   t_dd  costs
+mode                                 
+0     12.87  6.35  3.83 -33.82  35.09
+1     11.99  5.90  3.71 -36.37  27.47
+       d_mo  t_mo  s_mo   t_dd  costs
+armx                                 
+0.01  11.77  5.94  4.04 -36.62  27.09
+0.02  12.05  5.82  3.55 -36.15  28.29
+0.03  12.69  6.35  4.00 -35.22  29.86
+0.05  13.21  6.68  3.69 -34.16  35.01
+0.07  12.56  6.09  3.80 -31.64  42.98
+             d_mo  t_mo  s_mo   t_dd  costs
+rebuy_wait                                 
+24          12.30  5.80  3.64 -36.31  54.72
+72          12.51  6.09  3.54 -35.22  35.11
+168         13.03  6.89  4.12 -33.30  21.70
+
+==== HINDSIGHT: best of the grid by 2024-26 %/month, and each base's best parking variant by 2024-26
+HINDSIGHT BEST OF GRID 2: 1x100% +3% | park ETH f50 x100% | mode 0 arm 7% | re-buy wait 24h
+  (1) 2024-26   +9.95%/mo  x  24.42  drop -50.9%
+  (2) 2025-26   +7.74%/mo  x   5.03  drop -50.9%
+  (3) 2021-23  +16.23%/mo  x 223.83  drop -62.9%  2022  +6.7%
+      trades 714, worst trade -41.6% of account (2021-23 -41.6%, 2024-26 -21.7%)
+      avg cash share 21-23 63% / 24-26 64%, parked 21-23 14% / 24-26 21%; parking trades: 515 forced, 0 watcher, 2 other sells, 517 buys, turnover x1034, costs 124.1% of equity (sum)
+  (4) fills 0.2% worse (all fills) + LUNA/FTT/SRM: 2024-26  +4.49%/mo drop -58.5% | 2025-26  +3.44%/mo drop -58.5% | 2021-23 -16.56%/mo drop -100.0% 2022 -100.0% | worst trade -100.0% of account
+      years: 2021 +11032% 2022 +7% 2023 +88% 2024 +386% 2025 +148% 2026 +103%
+HINDSIGHT best parking for live 8x20% +1.5%: live 8x20% +1.5% | park ETH f50 x100% | mode 0 arm 3% | re-buy wait 168h
+  (1) 2024-26   +5.42%/mo  x   5.92  drop -33.9%
+  (2) 2025-26   +6.30%/mo  x   3.76  drop -22.6%
+  (3) 2021-23   +5.94%/mo  x   7.98  drop -37.2%  2022  +1.4%
+      trades 2484, worst trade -5.3% of account (2021-23 -5.3%, 2024-26 -2.7%)
+      avg cash share 21-23 67% / 24-26 64%, parked 21-23 29% / 24-26 33%; parking trades: 315 forced, 0 watcher, 36 other sells, 112 buys, turnover x157, costs 18.9% of equity (sum)
+  (4) fills 0.2% worse (all fills) + LUNA/FTT/SRM: 2024-26  +4.22%/mo drop -38.9% | 2025-26  +5.23%/mo drop -24.5% | 2021-23  +2.80%/mo drop -59.6% 2022 -38.4% | worst trade -14.9% of account
+      years: 2021 +377% 2022 +1% 2023 +65% 2024 +57% 2025 +154% 2026 +48%
+HINDSIGHT best parking for 2x50% +5%: 2x50% +5% | park ETH f50 x100% | mode 0 arm 3% | re-buy wait 168h
+  (1) 2024-26   +8.46%/mo  x  15.39  drop -35.9%
+  (2) 2025-26   +7.50%/mo  x   4.78  drop -35.8%
+  (3) 2021-23  +12.54%/mo  x  70.12  drop -52.5%  2022 +17.3%
+      trades 1342, worst trade -19.5% of account (2021-23 -19.5%, 2024-26 -10.9%)
+      avg cash share 21-23 63% / 24-26 61%, parked 21-23 16% / 24-26 24%; parking trades: 246 forced, 0 watcher, 19 other sells, 129 buys, turnover x201, costs 24.1% of equity (sum)
+  (4) fills 0.2% worse (all fills) + LUNA/FTT/SRM: 2024-26  +6.38%/mo drop -41.2% | 2025-26  +5.73%/mo drop -41.2% | 2021-23  +5.03%/mo drop -72.9% 2022 -56.3% | worst trade -19.6% of account
+      years: 2021 +1668% 2022 +17% 2023 +238% 2024 +222% 2025 +153% 2026 +89%
+HINDSIGHT best parking for 2x50% +3%: 2x50% +3% | park ETH f50 x100% | mode 0 arm 3% | re-buy wait 168h
+  (1) 2024-26   +8.45%/mo  x  15.36  drop -38.8%
+  (2) 2025-26   +7.97%/mo  x   5.26  drop -32.9%
+  (3) 2021-23  +11.97%/mo  x  58.49  drop -49.5%  2022 +12.8%
+      trades 1500, worst trade -20.8% of account (2021-23 -20.8%, 2024-26 -10.9%)
+      avg cash share 21-23 69% / 24-26 66%, parked 21-23 15% / 24-26 24%; parking trades: 244 forced, 0 watcher, 20 other sells, 130 buys, turnover x209, costs 25.0% of equity (sum)
+  (4) fills 0.2% worse (all fills) + LUNA/FTT/SRM: 2024-26  +6.20%/mo drop -41.7% | 2025-26  +6.30%/mo drop -36.1% | 2021-23  +4.47%/mo drop -74.8% 2022 -61.1% | worst trade -34.8% of account
+      years: 2021 +2232% 2022 +13% 2023 +122% 2024 +192% 2025 +180% 2026 +88%
+HINDSIGHT best parking for 1x100% +3%: 1x100% +3% | park ETH f50 x100% | mode 0 arm 7% | re-buy wait 24h
+  (1) 2024-26   +9.95%/mo  x  24.42  drop -50.9%
+  (2) 2025-26   +7.74%/mo  x   5.03  drop -50.9%
+  (3) 2021-23  +16.23%/mo  x 223.83  drop -62.9%  2022  +6.7%
+      trades 714, worst trade -41.6% of account (2021-23 -41.6%, 2024-26 -21.7%)
+      avg cash share 21-23 63% / 24-26 64%, parked 21-23 14% / 24-26 21%; parking trades: 515 forced, 0 watcher, 2 other sells, 517 buys, turnover x1034, costs 124.1% of equity (sum)
+  (4) fills 0.2% worse (all fills) + LUNA/FTT/SRM: 2024-26  +4.49%/mo drop -58.5% | 2025-26  +3.44%/mo drop -58.5% | 2021-23 -16.56%/mo drop -100.0% 2022 -100.0% | worst trade -100.0% of account
+      years: 2021 +11032% 2022 +7% 2023 +88% 2024 +386% 2025 +148% 2026 +103%
+
+MAX 2024-26 %/month of any round-2 run: 9.95%

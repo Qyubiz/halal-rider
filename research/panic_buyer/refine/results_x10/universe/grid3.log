@@ -1,0 +1,9 @@
+U19: 192 rows, 53s
+L10: 384 rows, 115s
+L20: 576 rows, 219s
+L20T: 768 rows, 352s
+L30T: 960 rows, 529s
+L50T: 1152 rows, 781s
+L30Tx8: 1344 rows, 954s
+L30Ts1: 1536 rows, 1127s
+grid3 done 1536

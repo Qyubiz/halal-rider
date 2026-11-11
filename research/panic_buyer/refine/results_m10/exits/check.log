@@ -1,0 +1,15 @@
+19 coins {'depth': 0.14, 'N': 1, 'fmax': 1.0, 'tp': 0.025, 'hm': 96, 'cd': 3, 'guard': 0.35}: wrun x806.936130 xrun x806.936130 trades 554/554 IDENTICAL
+19 coins {'depth': 0.12, 'N': 8, 'fmax': 0.2, 'tp': 0.015, 'hm': 48, 'cd': 24, 'guard': 0.0}: wrun x15.000317 xrun x15.000317 trades 2565/2565 IDENTICAL
+19 coins {'depth': 0.14, 'N': 1, 'fmax': 1.0, 'tp': 0.025, 'hm': 96, 'cd': 4, 'guard': 0.35, 'mtp_now': True, 'pen': 0.002, 'pens': 0.002}: wrun x276.020392 xrun x276.020392 trades 557/557 IDENTICAL
+19 coins {'depth': 0.13, 'N': 2, 'fmax': 0.5, 'tp': 0.02, 'hm': 72, 'cd': 6, 'guard': 0.25}: wrun x250.478088 xrun x250.478088 trades 1378/1378 IDENTICAL
+22 coins {'depth': 0.14, 'N': 1, 'fmax': 1.0, 'tp': 0.025, 'hm': 96, 'cd': 3, 'guard': 0.35}: wrun x1768.567598 xrun x1768.567598 trades 574/574 IDENTICAL
+22 coins {'depth': 0.12, 'N': 8, 'fmax': 0.2, 'tp': 0.015, 'hm': 48, 'cd': 24, 'guard': 0.0}: wrun x13.586483 xrun x13.586483 trades 2855/2855 IDENTICAL
+22 coins {'depth': 0.14, 'N': 1, 'fmax': 1.0, 'tp': 0.025, 'hm': 96, 'cd': 4, 'guard': 0.35, 'mtp_now': True, 'pen': 0.002, 'pens': 0.002}: wrun x254.937476 xrun x254.937476 trades 572/572 IDENTICAL
+22 coins {'depth': 0.13, 'N': 2, 'fmax': 0.5, 'tp': 0.02, 'hm': 72, 'cd': 6, 'guard': 0.25}: wrun x245.964129 xrun x245.964129 trades 1447/1447 IDENTICAL
+inactive schedule / underwater switches change nothing: True
+part=0.999999 (rest held to the time stop): x122.6082 vs x806.9361 (should be within 0.1%)
+SOME CHECK FAILED
+inactive schedule / underwater switches change nothing: True
+part=0.999999, dust sold at the next hourly close: x1408.8974 vs x806.9361 (close: the coin is blocked one more hour)
+INFO part=0.999999, dust held to the 96h time stop: x122.6082: a held rest blocks re-buying the same coin, which costs a lot (staged exits pay this)
+ALL CHECKS PASS

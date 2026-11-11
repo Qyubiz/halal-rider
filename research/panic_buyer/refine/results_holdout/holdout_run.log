@@ -1,0 +1,10 @@
+holdout coins: 16 (BTC, ETH, SOL, XRP, BNB, DOGE, ADA, TRX, LINK, AVAX, LTC, BCH, HBAR, DOT, NEAR, FET), 2018-01-01 -> 2021-01-01
+A live settings (backtest timing) | normal           2018-20 x 2.26 drop  -45% worst-mo -19% up-mo  81% | 2018:+41% 2019:+19% 2020:+34% | trades 927
+A live settings (backtest timing) | fills 0.2% worse 2018-20 x 1.84 drop  -45% worst-mo -19% up-mo  75% | 2018:+31% 2019:+15% 2020:+22% | trades 921
+A live settings (backtest timing) | +LUNA/FTT/SRM    2018-20 x 2.37 drop  -41% worst-mo -16% up-mo  81% | 2018:+41% 2019:+19% 2020:+41% | trades 983
+B live settings as coded (market-buy | normal        2018-20 x 2.14 drop  -45% worst-mo -19% up-mo  81% | 2018:+38% 2019:+20% 2020:+29% | trades 931
+B live settings as coded (market-buy | fills 0.2% worse 2018-20 x 1.74 drop  -45% worst-mo -20% up-mo  75% | 2018:+29% 2019:+15% 2020:+17% | trades 926
+B live settings as coded (market-buy | +LUNA/FTT/SRM 2018-20 x 2.24 drop  -40% worst-mo -17% up-mo  78% | 2018:+38% 2019:+20% 2020:+35% | trades 985
+
+DECISIONS (fixed in ROUND3_PREREG.md before this run)
+1. market-buy timing: B does not beat A on the holdout -> change the bot to match A (take-profit after a market buy at the next hourly cycle)

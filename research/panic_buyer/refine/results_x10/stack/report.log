@@ -1,0 +1,42 @@
+
+######## HONEST PICK: {'depth': 0.12, 'N': 2, 'fmax': 0.5, 'tp': 0.05, 'hm': 48, 'cd': 6, 'w': 0.5, 'd2': 0.18, 'tpf': 0.2, 'tpfm': 1}
+  normal                             21-23 +13.40%/mo DD  -47.4% | 24-26  +4.75%/mo DD -26.6% | 25-26  +2.28%/mo DD -26.6% | worst trade  -19.0% of acct
+  +LUNA/FTT/SRM only                 21-23 +13.21%/mo DD  -53.3% | 24-26  +4.75%/mo DD -26.6% | 25-26  +2.28%/mo DD -26.6% | worst trade  -19.0% of acct
+  fills 0.2% worse (buys+sells) only 21-23 +10.48%/mo DD  -47.9% | 24-26  +3.66%/mo DD -28.3% | 25-26  +1.19%/mo DD -26.9% | worst trade  -17.2% of acct
+  fills 0.2% worse (buys only)       21-23 +11.87%/mo DD  -47.7% | 24-26  +4.29%/mo DD -27.5% | 25-26  +1.69%/mo DD -26.8% | worst trade  -17.2% of acct
+  both (report 4)                    21-23  +9.90%/mo DD  -53.7% | 24-26  +3.66%/mo DD -28.3% | 25-26  +1.19%/mo DD -26.9% | worst trade  -17.2% of acct
+  bot timing: mtp_now, cd+1          21-23 +13.66%/mo DD  -47.4% | 24-26  +4.93%/mo DD -26.6% | 25-26  +2.63%/mo DD -26.6% | worst trade  -17.2% of acct
+  2024-26 months: 34, up 25, worst -14.4% (2024-04), best +44.9%, median +3.23%, months >= +10%: 5
+  per year: 2021 +1964% 2022 +85% 2023 +141% 2024 +193% 2025 +33% 2026 +22%
+
+######## GRID HINDSIGHT: {'depth': 0.12, 'N': 2, 'fmax': 0.5, 'tp': 0.03, 'hm': 48, 'cd': 6, 'tprest': False, 'tpwait': 3, 'tpf': 0.2, 'tpfm': 1}
+  normal                             21-23 +13.26%/mo DD  -51.3% | 24-26  +5.59%/mo DD -31.1% | 25-26  +3.67%/mo DD -30.7% | worst trade  -18.7% of acct
+  +LUNA/FTT/SRM only                 21-23 +11.09%/mo DD  -68.1% | 24-26  +5.59%/mo DD -31.1% | 25-26  +3.67%/mo DD -30.7% | worst trade  -20.6% of acct
+  fills 0.2% worse (buys+sells) only 21-23  +9.28%/mo DD  -51.8% | 24-26  +3.68%/mo DD -34.9% | 25-26  +1.99%/mo DD -31.4% | worst trade  -19.0% of acct
+  fills 0.2% worse (buys only)       21-23 +11.14%/mo DD  -51.6% | 24-26  +4.63%/mo DD -33.3% | 25-26  +2.77%/mo DD -30.9% | worst trade  -18.9% of acct
+  both (report 4)                    21-23  +7.06%/mo DD  -73.7% | 24-26  +3.68%/mo DD -34.9% | 25-26  +1.99%/mo DD -31.4% | worst trade  -20.7% of acct
+  bot timing: mtp_now, cd+1          21-23 +12.97%/mo DD  -51.0% | 24-26  +5.58%/mo DD -30.7% | 25-26  +3.69%/mo DD -30.7% | worst trade  -13.4% of acct
+  2024-26 months: 34, up 25, worst -16.9% (2025-10), best +40.8%, median +5.55%, months >= +10%: 9
+  per year: 2021 +1807% 2022 +35% 2023 +242% 2024 +186% 2025 +58% 2026 +38%
+
+######## CEILING (hindsight): {'depth': 0.12, 'N': 1, 'fmax': 1.0, 'tp': 0.03, 'hm': 48, 'cd': 24, 'tpwait': 3, 'tpf': 0.2, 'tpfm': 1}
+  normal                             21-23 +18.70%/mo DD  -64.3% | 24-26  +9.00%/mo DD -41.5% | 25-26  +4.87%/mo DD -41.5% | worst trade  -41.6% of acct
+  +LUNA/FTT/SRM only                 21-23 -10.36%/mo DD -100.0% | 24-26  +9.00%/mo DD -41.5% | 25-26  +4.87%/mo DD -41.5% | worst trade -100.0% of acct
+  fills 0.2% worse (buys+sells) only 21-23 +13.54%/mo DD  -70.3% | 24-26  +5.88%/mo DD -47.3% | 25-26  +2.20%/mo DD -47.3% | worst trade  -41.8% of acct
+  fills 0.2% worse (buys only)       21-23 +16.29%/mo DD  -65.3% | 24-26  +7.23%/mo DD -44.6% | 25-26  +3.24%/mo DD -44.6% | worst trade  -41.7% of acct
+  both (report 4)                    21-23 -13.32%/mo DD -100.0% | 24-26  +5.88%/mo DD -47.3% | 25-26  +2.20%/mo DD -47.3% | worst trade -100.0% of acct
+  bot timing: mtp_now, cd+1          21-23 +16.87%/mo DD  -59.5% | 24-26  +8.41%/mo DD -41.5% | 25-26  +4.35%/mo DD -41.5% | worst trade  -41.6% of acct
+  2024-26 months: 34, up 25, worst -23.3% (2025-10), best +76.1%, median +8.08%, months >= +10%: 15
+  per year: 2021 +13111% 2022 +6% 2023 +241% 2024 +551% 2025 +76% 2026 +59%
+
+######## HONEST PICK's one-step grid neighbours (9)
+  N2 cap50 cd2 lad 50/18 rest tp5 tpf mkt.20 none      21-23 +13.43%/mo DD -46.8% | stressed 21-23  +8.39%/mo DD -50.4% | 24-26  +4.46%/mo DD -26.6% | 25-26  +2.40%/mo
+  N2 cap50 cd6 lad off rest tp5 tpf mkt.20 none        21-23 +16.43%/mo DD -51.2% | stressed 21-23 +11.08%/mo DD -62.6% | 24-26  +5.13%/mo DD -30.4% | 25-26  +2.49%/mo
+  N2 cap50 cd6 lad 50/18 rest tp3 tpf mkt.20 none      21-23 +14.16%/mo DD -47.3% | stressed 21-23  +9.13%/mo DD -52.0% | 24-26  +4.68%/mo DD -26.4% | 25-26  +2.74%/mo
+  N2 cap50 cd6 lad 50/18 rest tp5 tpf none none        21-23 +13.04%/mo DD -47.4% | stressed 21-23  +9.48%/mo DD -53.7% | 24-26  +4.75%/mo DD -26.6% | 25-26  +2.29%/mo
+  N2 cap50 cd6 lad 50/18 rest tp5 tpf mkt.20 btc5      21-23 +13.60%/mo DD -46.9% | stressed 21-23  +9.13%/mo DD -55.8% | 24-26  +4.49%/mo DD -27.6% | 25-26  +1.98%/mo
+  N2 cap50 cd6 lad 50/18 norest3 tp5 tpf mkt.20 none   21-23 +12.29%/mo DD -44.3% | stressed 21-23  +7.26%/mo DD -74.2% | 24-26  +4.37%/mo DD -26.8% | 25-26  +2.16%/mo
+  N2 cap50 cd6 lad 67/18 rest tp5 tpf mkt.20 none      21-23 +14.51%/mo DD -48.5% | stressed 21-23  +8.78%/mo DD -64.9% | 24-26  +5.21%/mo DD -28.0% | 25-26  +2.42%/mo
+  N3 cap33 cd6 lad 50/18 rest tp5 tpf mkt.20 none      21-23 +10.38%/mo DD -40.2% | stressed 21-23  +8.25%/mo DD -47.3% | 24-26  +4.36%/mo DD -26.2% | 25-26  +2.25%/mo
+  N4 cap25 cd6 lad 50/18 rest tp5 tpf mkt.20 none      21-23  +8.79%/mo DD -43.4% | stressed 21-23  +7.35%/mo DD -44.4% | 24-26  +4.14%/mo DD -25.0% | 25-26  +2.29%/mo
+  neighbours 2024-26 %/month: median 4.49, min 4.14, max 5.21

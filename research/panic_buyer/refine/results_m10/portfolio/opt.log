@@ -1,0 +1,101 @@
+grid: 286 designs on 2021-23. 90% mode alone: up-months 72.2%, +13.17%/mo, DD -64.4%, CAGR/DD 5.29
+designs with at least as many up-months as 90% mode: 57
+top 8 by 2021-23 CAGR/|DD| among them:
+ wDIP  wMOM  wTREND  wCASH    pos_mo    pct_mo         dd   worst_mo        wr   calmar
+  1.0   0.0     0.0    0.0 72.222222 13.167819 -64.434169 -30.235516 93.842365 5.289001
+  0.9   0.0     0.1    0.0 75.000000 12.432738 -59.811034 -27.568392 90.930233 5.143825
+  0.8   0.0     0.2    0.0 75.000000 11.652957 -54.882523 -24.830471 90.930233 5.010990
+  0.7   0.0     0.3    0.0 75.000000 10.826215 -49.596986 -22.018898 90.930233 4.900275
+  0.9   0.0     0.0    0.1 72.222222 12.227391 -61.366229 -27.525214 93.842365 4.869424
+  0.9   0.1     0.0    0.0 72.222222 12.057673 -61.588611 -27.574371 50.495050 4.735380
+  0.8   0.0     0.1    0.1 75.000000 11.424089 -56.355019 -24.791066 90.930233 4.718315
+  0.7   0.0     0.2    0.1 75.000000 10.601803 -50.990095 -21.983485 90.930233 4.604840
+top 8 by 2021-23 up-months:
+ wDIP  wMOM  wTREND  wCASH  pos_mo    pct_mo         dd   worst_mo        wr
+  0.9   0.0     0.1    0.0    75.0 12.432738 -59.811034 -27.568392 90.930233
+  0.8   0.0     0.2    0.0    75.0 11.652957 -54.882523 -24.830471 90.930233
+  0.8   0.0     0.1    0.1    75.0 11.424089 -56.355019 -24.791066 90.930233
+  0.8   0.1     0.1    0.0    75.0 11.250858 -56.578277 -24.835928 50.380022
+  0.7   0.0     0.3    0.0    75.0 10.826215 -49.596986 -22.018898 90.930233
+  0.7   0.0     0.2    0.1    75.0 10.601803 -50.990095 -21.983485 90.930233
+  0.7   0.1     0.2    0.0    75.0 10.428262 -51.203923 -22.023802 50.380022
+  0.7   0.0     0.1    0.2    75.0 10.377574 -52.455721 -21.948187 91.079812
+best 2021-23 %/month with MOM > 0: 0.9 0.1 0.0 0.0 12.057673 -61.588611
+MAIN pick: DIP/MOM/TREND/CASH = [1.0, 0.0, 0.0, 0.0]
+ALT pick:  DIP/MOM/TREND/CASH = [0.9, 0.0, 0.1, 0.0]
+
+90% mode alone [normal]
+  2018-20    up-months  77.8% (36)  trade WR  92.5% (  361)  +10.82%/mo  maxDD  -66.3%  worst mo  -42.5%
+  2021-23    up-months  72.2% (36)  trade WR  93.8% (  406)  +13.17%/mo  maxDD  -64.4%  worst mo  -30.2%
+  2024-26    up-months  73.5% (34)  trade WR  92.6% (  148)   +6.89%/mo  maxDD  -35.4%  worst mo  -11.8%
+  since 2025 up-months  72.7% (22)  trade WR  93.2% (   73)   +5.80%/mo  maxDD  -22.6%  worst mo  -11.8%
+
+90% mode alone [fills 0.2% worse]
+  2018-20    up-months  72.2% (36)  trade WR  92.0% (  350)   +7.41%/mo  maxDD  -69.9%  worst mo  -45.0%
+  2021-23    up-months  66.7% (36)  trade WR  93.4% (  394)   +9.79%/mo  maxDD  -65.9%  worst mo  -32.6%
+  2024-26    up-months  70.6% (34)  trade WR  92.1% (  140)   +5.31%/mo  maxDD  -37.5%  worst mo  -12.2%
+  since 2025 up-months  68.2% (22)  trade WR  92.6% (   68)   +4.56%/mo  maxDD  -22.7%  worst mo  -12.2%
+
+MOM alone [normal]
+  2018-20    up-months  27.8% (36)  trade WR  38.4% (  907)   -0.75%/mo  maxDD  -38.6%  worst mo  -18.5%
+  2021-23    up-months  27.8% (36)  trade WR  38.0% ( 1412)   -1.44%/mo  maxDD  -64.2%  worst mo  -13.1%
+  2024-26    up-months  35.3% (34)  trade WR  40.7% (  642)   +0.95%/mo  maxDD  -28.5%  worst mo   -7.5%
+  since 2025 up-months  27.3% (22)  trade WR  42.8% (  269)   +0.74%/mo  maxDD  -23.8%  worst mo   -6.9%
+
+MOM alone [fills 0.2% worse]
+  2018-20    up-months  25.0% (36)  trade WR  36.4% (  907)   -2.72%/mo  maxDD  -67.1%  worst mo  -20.9%
+  2021-23    up-months  16.7% (36)  trade WR  36.3% ( 1412)   -4.46%/mo  maxDD  -83.8%  worst mo  -17.6%
+  2024-26    up-months  26.5% (34)  trade WR  38.3% (  642)   -0.57%/mo  maxDD  -39.6%  worst mo   -8.9%
+  since 2025 up-months  22.7% (22)  trade WR  39.8% (  269)   -0.26%/mo  maxDD  -32.7%  worst mo   -8.4%
+
+TREND alone [normal]
+  2018-20    up-months  27.8% (36)  trade WR  30.8% (   13)   +3.30%/mo  maxDD  -66.4%  worst mo  -32.7%
+  2021-23    up-months  44.4% (36)  trade WR  35.0% (   20)   +3.35%/mo  maxDD  -55.5%  worst mo  -21.7%
+  2024-26    up-months  41.2% (34)  trade WR  29.2% (   24)   +1.59%/mo  maxDD  -31.4%  worst mo  -16.0%
+  since 2025 up-months  36.4% (22)  trade WR  25.0% (   16)   +0.14%/mo  maxDD  -29.9%  worst mo  -15.8%
+
+TREND alone [fills 0.2% worse]
+  2018-20    up-months  27.8% (36)  trade WR  30.8% (   13)   +3.23%/mo  maxDD  -67.1%  worst mo  -32.9%
+  2021-23    up-months  44.4% (36)  trade WR  35.0% (   20)   +3.26%/mo  maxDD  -55.6%  worst mo  -21.9%
+  2024-26    up-months  41.2% (34)  trade WR  29.2% (   24)   +1.45%/mo  maxDD  -32.2%  worst mo  -16.0%
+  since 2025 up-months  36.4% (22)  trade WR  25.0% (   16)   -0.01%/mo  maxDD  -30.9%  worst mo  -15.8%
+
+MAIN [1.0, 0.0, 0.0, 0.0] [normal]
+  2018-20    up-months  77.8% (36)  trade WR  92.5% (  361)  +10.82%/mo  maxDD  -66.3%  worst mo  -42.5%
+  2021-23    up-months  72.2% (36)  trade WR  93.8% (  406)  +13.17%/mo  maxDD  -64.4%  worst mo  -30.2%
+  2024-26    up-months  73.5% (34)  trade WR  92.6% (  148)   +6.89%/mo  maxDD  -35.4%  worst mo  -11.8%
+  since 2025 up-months  72.7% (22)  trade WR  93.2% (   73)   +5.80%/mo  maxDD  -22.6%  worst mo  -11.8%
+
+MAIN [1.0, 0.0, 0.0, 0.0] [fills 0.2% worse]
+  2018-20    up-months  72.2% (36)  trade WR  92.0% (  350)   +7.41%/mo  maxDD  -69.9%  worst mo  -45.0%
+  2021-23    up-months  66.7% (36)  trade WR  93.4% (  394)   +9.79%/mo  maxDD  -65.9%  worst mo  -32.6%
+  2024-26    up-months  70.6% (34)  trade WR  92.1% (  140)   +5.31%/mo  maxDD  -37.5%  worst mo  -12.2%
+  since 2025 up-months  68.2% (22)  trade WR  92.6% (   68)   +4.56%/mo  maxDD  -22.7%  worst mo  -12.2%
+
+ALT [0.9, 0.0, 0.1, 0.0] [normal]
+  2018-20    up-months  80.6% (36)  trade WR  90.4% (  374)  +10.35%/mo  maxDD  -64.2%  worst mo  -41.7%
+  2021-23    up-months  75.0% (36)  trade WR  90.9% (  430)  +12.43%/mo  maxDD  -59.8%  worst mo  -27.6%
+  2024-26    up-months  73.5% (34)  trade WR  83.7% (  172)   +6.43%/mo  maxDD  -33.2%  worst mo  -10.7%
+  since 2025 up-months  72.7% (22)  trade WR  80.9% (   89)   +5.28%/mo  maxDD  -21.6%  worst mo  -10.7%
+
+ALT [0.9, 0.0, 0.1, 0.0] [fills 0.2% worse]
+  2018-20    up-months  72.2% (36)  trade WR  89.8% (  363)   +7.23%/mo  maxDD  -67.3%  worst mo  -44.2%
+  2021-23    up-months  69.4% (36)  trade WR  90.4% (  418)   +9.35%/mo  maxDD  -61.1%  worst mo  -29.6%
+  2024-26    up-months  73.5% (34)  trade WR  82.9% (  164)   +4.98%/mo  maxDD  -35.3%  worst mo  -11.0%
+  since 2025 up-months  72.7% (22)  trade WR  79.8% (   84)   +4.15%/mo  maxDD  -21.8%  worst mo  -11.0%
+MAIN, 2024-26 trades of the DIP sleeve: 148, win rate 92.6%
+MAIN, 2024-26 trades of the MOM sleeve: 0, win rate nan%
+MAIN, 2024-26 trades of the TREND sleeve: 0, win rate nan%
+MAIN holdout, SMA200 unknown = held: 2018-20    up-months  77.8% (36)  trade WR  92.5% (  361)  +10.82%/mo  maxDD  -66.3%  worst mo  -42.5%
+MAIN holdout, no rebalance (rb=0): 2018-20    up-months  77.8% (36)  trade WR  92.5% (  361)  +10.82%/mo  maxDD  -66.3%  worst mo  -42.5%
+MAIN no rebalance (rb=0, one start in 2021): 2021-23    up-months  72.2% (36)  trade WR  93.8% (  406)  +13.17%/mo  maxDD  -64.4%  worst mo  -30.2%
+MAIN no rebalance (rb=0, one start in 2021): 2024-26    up-months  73.5% (34)  trade WR  92.6% (  148)   +6.89%/mo  maxDD  -35.4%  worst mo  -11.8%
+MAIN no rebalance (rb=0, one start in 2021): since 2025 up-months  72.7% (22)  trade WR  93.2% (   73)   +5.80%/mo  maxDD  -22.6%  worst mo  -11.8%
+
+2021-23 monthly-return correlation, sleeves alone:
+                90% mode alone  MOM alone  TREND alone
+90% mode alone            1.00       0.36         0.41
+MOM alone                 0.36       1.00         0.20
+TREND alone               0.41       0.20         1.00
+
+saved /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_m10/portfolio/grid_2021_23.csv, periods.csv

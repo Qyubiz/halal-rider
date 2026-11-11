@@ -1,0 +1,9 @@
+18 coins, 2024-01-01 to 2026-10-22, bot capital 1,000 USDT, profits reinvested
+
+| case | bot money at the end | %/month | trades | wins | bot's own profit number | coins left unsold (USDT) | fees paid with BNB (USDT) |
+|---|---|---|---|---|---|---|---|
+| no position cap (before), account = capital | 16690 | +8.72 | 232 | 93.1% | +15691 | 0.00 | 0 |
+| one coin at a time, account = capital | 10710 | +7.30 | 145 | 91.7% | +9710 | 0.00 | 0 |
+| shared account, normal fees | 11219 | +7.44 | 145 | 91.7% | +10220 | 0.00 | 0 |
+| shared account, BNB fees, BNB_FEES=yes | 12085 | +7.68 | 145 | 91.7% | +11085 | 0.00 | 1096 |
+| shared account, BNB fees, no switch | 11427 | +7.50 | 145 | 91.7% | +10220 | 550.01 | 1042 |

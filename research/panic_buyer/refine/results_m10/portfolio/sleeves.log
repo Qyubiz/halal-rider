@@ -1,0 +1,61 @@
+
+==== MOM variants, all money in the sleeve, 2021-23 only
+  M0 price only          up-months  19.4%  WR  37.0% (2691)   -3.59%/mo  maxDD  -87.5%  worst mo  -29.5%  CAGR/DD -0.41
+  M1 range>=3x           up-months  27.8%  WR  38.0% (1412)   -1.44%/mo  maxDD  -64.2%  worst mo  -13.1%  CAGR/DD -0.25
+  M2 range>=2x           up-months  30.6%  WR  37.0% (2016)   -1.80%/mo  maxDD  -72.9%  worst mo  -18.1%  CAGR/DD -0.27
+  PICK (MOM, 2021-23 CAGR/|DD|): none made money in 2021-23
+  -> M1 range>=3x goes to the weight grid as the least-bad MOM variant (it may get 0%)
+
+==== TREND variants, all money in the sleeve, 2021-23 only
+  BTC close>SMA50        up-months  41.7%  WR  25.9% (  27)   +2.78%/mo  maxDD  -59.6%  worst mo  -14.0%  CAGR/DD  0.65
+  BTC close>SMA200       up-months  33.3%  WR  23.1% (  13)   +1.18%/mo  maxDD  -65.3%  worst mo  -41.8%  CAGR/DD  0.23
+  BTC SMA50>SMA200       up-months  27.8%  WR  75.0% (   4)   +1.10%/mo  maxDD  -58.7%  worst mo  -35.4%  CAGR/DD  0.24
+  BTC+ETH close>SMA50    up-months  47.2%  WR  26.7% (  60)   +3.17%/mo  maxDD  -57.3%  worst mo  -15.1%  CAGR/DD  0.79
+  BTC+ETH close>SMA200   up-months  44.4%  WR  35.0% (  20)   +3.35%/mo  maxDD  -55.5%  worst mo  -21.7%  CAGR/DD  0.87
+  BTC+ETH SMA50>SMA200   up-months  41.7%  WR  75.0% (   8)   +2.78%/mo  maxDD  -54.7%  worst mo  -20.3%  CAGR/DD  0.71
+  PICK (TREND, 2021-23 CAGR/|DD|): BTC+ETH close>SMA200
+
+==== picks on every period (all money in the sleeve), normal fills / fills 0.2% worse
+  90% mode alone [normal]
+    2018-20    up-months  77.8% (36)  trade WR  92.5% (  361)  +10.82%/mo  maxDD  -66.3%  worst mo  -42.5%
+    2021-23    up-months  72.2% (36)  trade WR  93.8% (  406)  +13.17%/mo  maxDD  -64.4%  worst mo  -30.2%
+    2024-26    up-months  73.5% (34)  trade WR  92.6% (  148)   +6.89%/mo  maxDD  -35.4%  worst mo  -11.8%
+    since 2025 up-months  72.7% (22)  trade WR  93.2% (   73)   +5.80%/mo  maxDD  -22.6%  worst mo  -11.8%
+  90% mode alone [fills 0.2% worse]
+    2018-20    up-months  72.2% (36)  trade WR  92.0% (  350)   +7.41%/mo  maxDD  -69.9%  worst mo  -45.0%
+    2021-23    up-months  66.7% (36)  trade WR  93.4% (  394)   +9.79%/mo  maxDD  -65.9%  worst mo  -32.6%
+    2024-26    up-months  70.6% (34)  trade WR  92.1% (  140)   +5.31%/mo  maxDD  -37.5%  worst mo  -12.2%
+    since 2025 up-months  68.2% (22)  trade WR  92.6% (   68)   +4.56%/mo  maxDD  -22.7%  worst mo  -12.2%
+  MOM M1 range>=3x [normal]
+    2018-20    up-months  27.8% (36)  trade WR  38.4% (  907)   -0.75%/mo  maxDD  -38.6%  worst mo  -18.5%
+    2021-23    up-months  27.8% (36)  trade WR  38.0% ( 1412)   -1.44%/mo  maxDD  -64.2%  worst mo  -13.1%
+    2024-26    up-months  35.3% (34)  trade WR  40.7% (  642)   +0.95%/mo  maxDD  -28.5%  worst mo   -7.5%
+    since 2025 up-months  27.3% (22)  trade WR  42.8% (  269)   +0.74%/mo  maxDD  -23.8%  worst mo   -6.9%
+  MOM M1 range>=3x [fills 0.2% worse]
+    2018-20    up-months  25.0% (36)  trade WR  36.4% (  907)   -2.72%/mo  maxDD  -67.1%  worst mo  -20.9%
+    2021-23    up-months  16.7% (36)  trade WR  36.3% ( 1412)   -4.46%/mo  maxDD  -83.8%  worst mo  -17.6%
+    2024-26    up-months  26.5% (34)  trade WR  38.3% (  642)   -0.57%/mo  maxDD  -39.6%  worst mo   -8.9%
+    since 2025 up-months  22.7% (22)  trade WR  39.8% (  269)   -0.26%/mo  maxDD  -32.7%  worst mo   -8.4%
+  TREND BTC+ETH close>SMA200 [normal]
+    2018-20    up-months  27.8% (36)  trade WR  30.8% (   13)   +3.30%/mo  maxDD  -66.4%  worst mo  -32.7%
+    2021-23    up-months  44.4% (36)  trade WR  35.0% (   20)   +3.35%/mo  maxDD  -55.5%  worst mo  -21.7%
+    2024-26    up-months  41.2% (34)  trade WR  29.2% (   24)   +1.59%/mo  maxDD  -31.4%  worst mo  -16.0%
+    since 2025 up-months  36.4% (22)  trade WR  25.0% (   16)   +0.14%/mo  maxDD  -29.9%  worst mo  -15.8%
+  TREND BTC+ETH close>SMA200 [fills 0.2% worse]
+    2018-20    up-months  27.8% (36)  trade WR  30.8% (   13)   +3.23%/mo  maxDD  -67.1%  worst mo  -32.9%
+    2021-23    up-months  44.4% (36)  trade WR  35.0% (   20)   +3.26%/mo  maxDD  -55.6%  worst mo  -21.9%
+    2024-26    up-months  41.2% (34)  trade WR  29.2% (   24)   +1.45%/mo  maxDD  -32.2%  worst mo  -16.0%
+    since 2025 up-months  36.4% (22)  trade WR  25.0% (   16)   -0.01%/mo  maxDD  -30.9%  worst mo  -15.8%
+
+2021-23 monthly-return correlation of the sleeves (each alone):
+                            90% mode alone  MOM M1 range>=3x  TREND BTC+ETH close>SMA200
+90% mode alone                        1.00              0.36                        0.41
+MOM M1 range>=3x                      0.36              1.00                        0.20
+TREND BTC+ETH close>SMA200            0.41              0.20                        1.00
+2024-26 (information only, not used for any choice):
+                            90% mode alone  MOM M1 range>=3x  TREND BTC+ETH close>SMA200
+90% mode alone                        1.00              0.18                        0.20
+MOM M1 range>=3x                      0.18              1.00                        0.42
+TREND BTC+ETH close>SMA200            0.20              0.42                        1.00
+
+saved /tmp/claude-0/-home-user-halal-rider/ec562e35-ea9e-5a74-ab92-4ff22c5eeb77/scratchpad/pb_out_m10/portfolio/sleeve_picks.json

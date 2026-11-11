@@ -1,0 +1,8 @@
+base          t 93.0/+6.32/-25.2  h 92.2/+9.88/-62.2  worse t +4.52 h +7.04 wr 91.9/91.7  items1-3 (False, False, False)
+cd-1          t 93.2/+7.16/-25.2  h 91.6/+8.94/-61.8  worse t +4.79 h +5.49 wr 92.0/90.9  items1-3 (True, False, False)
+cd+1          t 93.3/+6.47/-25.2  h 90.8/+8.26/-58.3  worse t +4.73 h +5.00 wr 92.2/90.0  items1-3 (False, False, False)
+mtp_now       t 93.1/+6.37/-25.2  h 92.7/+10.65/-56.2  worse t +4.59 h +7.12 wr 92.0/91.8  items1-3 (False, False, False)
+bot(mtp+cd1)  t 94.0/+7.23/-25.2  h 92.1/+9.62/-57.1  worse t +4.92 h +6.03 wr 92.3/91.1  items1-3 (True, False, False)
+start+2w      t 93.0/+6.32/-25.2  h 92.2/+9.88/-62.2  worse t +4.52 h +7.04 wr 91.9/91.7  items1-3 (False, False, False)
+vt0.8         t 93.2/+6.15/-25.2  h 92.1/+9.43/-61.2  worse t +4.41 h +6.69 wr 92.1/91.6  items1-3 (False, False, False)
+vt1.2         t 93.0/+6.34/-25.2  h 92.1/+9.93/-63.4  worse t +4.53 h +7.06 wr 91.9/91.6  items1-3 (False, False, False)

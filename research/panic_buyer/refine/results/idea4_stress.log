@@ -1,0 +1,32 @@
+
+######## idea 4: stress-aware sizing
+LIVE SETTINGS                                  21-23 x 5.75 DD  -29% 2022  +19% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+calm-size x=2% m=0.0                           21-23 x 5.71 DD  -26% 2022  +35% | 24-26 x 2.05 DD  -16% worst-mo  -6% up-mo  82%
+calm-size x=2% m=0.5                           21-23 x 4.56 DD  -30% 2022  +14% | 24-26 x 2.28 DD  -16% worst-mo  -5% up-mo  88%
+calm-size x=3% m=0.0                           21-23 x 4.07 DD  -27% 2022  +20% | 24-26 x 1.86 DD  -17% worst-mo  -6% up-mo  79%
+calm-size x=3% m=0.5                           21-23 x 4.08 DD  -30% 2022  +16% | 24-26 x 2.08 DD  -16% worst-mo  -5% up-mo  88%
+calm-size x=5% m=0.0                           21-23 x 2.64 DD  -30% 2022  +21% | 24-26 x 1.66 DD  -18% worst-mo  -4% up-mo  53%
+calm-size x=5% m=0.5                           21-23 x 3.32 DD  -30% 2022  +12% | 24-26 x 1.92 DD  -13% worst-mo  -4% up-mo  88%
+calm-deeper x=2% +2%                           21-23 x 5.54 DD  -31% 2022  +17% | 24-26 x 2.36 DD  -15% worst-mo  -7% up-mo  85%
+calm-deeper x=2% +4%                           21-23 x 5.77 DD  -29% 2022  +21% | 24-26 x 2.14 DD  -15% worst-mo  -7% up-mo  85%
+calm-deeper x=3% +2%                           21-23 x 5.27 DD  -31% 2022  +26% | 24-26 x 2.42 DD  -16% worst-mo  -7% up-mo  88%
+calm-deeper x=3% +4%                           21-23 x 4.64 DD  -29% 2022  +15% | 24-26 x 2.15 DD  -17% worst-mo  -7% up-mo  88%
+calm-deeper x=5% +2%                           21-23 x 4.16 DD  -33% 2022  +18% | 24-26 x 2.26 DD  -17% worst-mo  -4% up-mo  82%
+calm-deeper x=5% +4%                           21-23 x 3.57 DD  -27% 2022  +15% | 24-26 x 2.13 DD  -15% worst-mo  -2% up-mo  76%
+stress-N x=3% N=4                              21-23 x 6.88 DD  -32% 2022  +30% | 24-26 x 3.01 DD  -21% worst-mo  -7% up-mo  88%
+stress-N x=3% N=5                              21-23 x 6.88 DD  -31% 2022  +29% | 24-26 x 2.94 DD  -21% worst-mo  -7% up-mo  91%
+stress-N x=3% N=12                             21-23 x 5.27 DD  -30% 2022  +21% | 24-26 x 2.49 DD  -15% worst-mo  -4% up-mo  88%
+stress-N x=3% N=19                             21-23 x 4.94 DD  -30% 2022  +19% | 24-26 x 2.41 DD  -15% worst-mo  -4% up-mo  88%
+stress-N x=5% N=4                              21-23 x 5.89 DD  -33% 2022  +27% | 24-26 x 2.75 DD  -16% worst-mo  -5% up-mo  85%
+stress-N x=5% N=5                              21-23 x 5.96 DD  -31% 2022  +24% | 24-26 x 2.72 DD  -16% worst-mo  -6% up-mo  88%
+stress-N x=5% N=12                             21-23 x 5.69 DD  -30% 2022  +23% | 24-26 x 2.52 DD  -16% worst-mo  -7% up-mo  88%
+stress-N x=5% N=19                             21-23 x 5.56 DD  -30% 2022  +21% | 24-26 x 2.48 DD  -16% worst-mo  -7% up-mo  88%
+20 variants | beat live in 2021-23: 1 | in 2024-26: 2 | in both: 0
+PICK (2021-23 only): calm-deeper x=2% +4%
+  pick                                         21-23 x 5.77 DD  -29% 2022  +21% | 24-26 x 2.14 DD  -15% worst-mo  -7% up-mo  85%
+  2024-26 check: does NOT beat the live settings
+  live, +LUNA/FTT/SRM                          21-23 x 5.22 DD  -31% 2022   +1% | 24-26 x 2.61 DD  -16% worst-mo  -6% up-mo  88%
+  pick, +LUNA/FTT/SRM                          21-23 x 4.63 DD  -33% 2022   +3% | 24-26 x 2.14 DD  -15% worst-mo  -7% up-mo  85%  FAILS
+  live, fills 0.2% worse                       21-23 x 3.98 DD  -29% 2022   -2% | 24-26 x 2.37 DD  -16% worst-mo  -6% up-mo  85%
+  pick, fills 0.2% worse                       21-23 x 4.21 DD  -29% 2022   +3% | 24-26 x 1.97 DD  -16% worst-mo  -7% up-mo  85%  FAILS
+  VERDICT: rejected, live bot unchanged
