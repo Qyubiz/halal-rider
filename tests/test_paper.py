@@ -100,5 +100,25 @@ class Paper(unittest.TestCase):
         self.assertTrue(os.path.exists(os.path.join(root, "paper_account.json")))
 
 
+class PaperBots(unittest.TestCase):
+    def test_every_paper_bot_has_a_settings_file_that_loads(self):
+        root = os.path.dirname(HERE)
+        with open(os.path.join(root, "deploy", "panic-buyer")) as f:
+            line = next(x for x in f if x.startswith("PAPERS="))
+        names = line.split('"')[1].split()
+        self.assertEqual(names, ["normal", "90wr", "10pct", "ensemble"])
+        env = dict(os.environ)
+        try:
+            for n in names:
+                path = os.path.join(root, f"panic_config.{n}.example.json")
+                self.assertTrue(os.path.exists(path), path)
+                os.environ["PANIC_CONFIG"] = path
+                cfg = PB.load_cfg()
+                self.assertEqual(set(cfg) - set(PB.DEFAULT_CFG) - {"sleeves", "risk"}, set(), n)
+        finally:
+            os.environ.clear()
+            os.environ.update(env)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -3,7 +3,7 @@
 set -euo pipefail
 APP=/opt/panic-buyer/app
 run() { sudo -u panicbot bash -c "set -a; source /etc/panic-buyer.env; set +a; python3 $APP/panic_buyer.py $1"; }
-PAPERS="normal 90wr ensemble"
+PAPERS="normal 90wr 10pct ensemble"
 paper_run() { sudo -u panicbot bash -c "set -a; [ -f /etc/panic-buyer.env ] && source /etc/panic-buyer.env; PAPER=yes; PAPER_NAME=$1; PAPER_USDT=650; COMPOUND=yes; PAPER_DATA=/opt/panic-buyer/paper-$1; PANIC_CONFIG=$APP/panic_config.$1.example.json; set +a; python3 $APP/panic_buyer.py $2"; }
 if [ "${1:-}" = "paper" ]; then
   case "${2:-status}" in
@@ -13,7 +13,7 @@ if [ "${1:-}" = "paper" ]; then
     log)    tail -n 50 -f /opt/panic-buyer/paper-${3:-90wr}/panic.log ;;
     stop)   for n in $PAPERS; do sudo systemctl disable --now panic-paper@$n >/dev/null 2>&1; done; echo "Paper trading stopped (results kept in /opt/panic-buyer/paper-*)." ;;
     reset)  for n in $PAPERS; do sudo systemctl disable --now panic-paper@$n >/dev/null 2>&1; sudo rm -rf /opt/panic-buyer/paper-$n; done; echo "Paper trading stopped and its results deleted." ;;
-    *) echo "usage: panic-buyer paper start|status|log [normal|90wr|ensemble]|stop|reset" ;;
+    *) echo "usage: panic-buyer paper start|status|log [normal|90wr|10pct|ensemble]|stop|reset" ;;
   esac
   exit 0
 fi

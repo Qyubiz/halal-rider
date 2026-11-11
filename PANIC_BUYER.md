@@ -89,12 +89,13 @@ Setup can reuse halal-rider's Binance key and Telegram. Keep enough USDT in the 
 
 ## Paper trading (try it first, no real money)
 Runs the real bot logic on Binance's live prices with pretend money: nothing is sent to your Binance account and
-no API key is needed. Three paper bots run side by side, 650 USDT (about RM3,000) pretend money each, profits
-reinvested: `normal`, `90wr` (90% mode) and `ensemble` (combined mode with the risk limits).
+no API key is needed. Four paper bots run side by side, 650 USDT (about RM3,000) pretend money each, profits
+reinvested: `normal`, `90wr` (90% mode), `10pct` (10% mode, the highest average profit) and `ensemble` (combined
+mode with the risk limits).
 
-    panic-buyer paper start      start all three
+    panic-buyer paper start      start all four
     panic-buyer paper status     pretend profit, trades and win rate of each
-    panic-buyer paper log 90wr   live log of one (normal, 90wr or ensemble)
+    panic-buyer paper log 90wr   live log of one (normal, 90wr, 10pct or ensemble)
     panic-buyer paper stop       stop them (results are kept)
     panic-buyer paper reset      stop them and delete their results
 
