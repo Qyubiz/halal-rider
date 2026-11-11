@@ -195,5 +195,39 @@ class Money(unittest.TestCase):
         return {"AAAUSDT": series(rows), "BBBUSDT": series(flat(100.0, 40))}
 
 
+class OneCoin(unittest.TestCase):
+    """max_positions: the one-coin modes never add a second, small buy with the cash left over."""
+
+    @staticmethod
+    def two():
+        a = flat(100.0, 26) + [(85.0, 85.5, 84.5, 85.0)] * 6          # under its 88 trigger: bought at market
+        b = flat(100.0, 26) + [(90.0, 90.5, 89.5, 90.0)] * 6          # 2% above its trigger: a bid would wait
+        return {"AAAUSDT": series(a), "BBBUSDT": series(b)}
+
+    def test_no_second_buy_with_leftover_cash(self):
+        fake, bot = make(self.two(), 26, n_orders=1, max_order_pct=100.0, max_positions=1)
+        bot.cycle()
+        self.assertEqual(set(bot.state["positions"]), {"AAAUSDT"})
+        fake.advance()
+        bot.cycle()
+        self.assertEqual(bot.state["orders"], {})                           # holds one coin: no bid on the other
+        self.assertEqual(set(bot.state["positions"]), {"AAAUSDT"})
+
+    def test_without_the_cap_the_leftover_is_used(self):
+        fake, bot = make(self.two(), 26, n_orders=1, max_order_pct=100.0)   # default: no limit, as before
+        bot.cycle()
+        fake.advance()
+        bot.cycle()
+        self.assertEqual(set(bot.state["orders"]), {"BBBUSDT"})
+        self.assertLess(bot.state["orders"]["BBBUSDT"]["qty"] * 88.0, 25.0)  # the ~2% of cash that was left
+
+    def test_one_coin_modes_ship_with_the_cap(self):
+        import json
+        root = os.path.dirname(HERE)
+        for n in ("90wr", "10pct"):
+            with open(os.path.join(root, f"panic_config.{n}.example.json")) as f:
+                self.assertEqual(json.load(f)["max_positions"], 1, n)
+
+
 if __name__ == "__main__":
     unittest.main()

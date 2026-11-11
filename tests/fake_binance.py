@@ -3,6 +3,7 @@
 The bot runs 10 s after each candle opens; its market orders fill at that candle's open. Resting limit orders
 are then matched against the candle: a buy fills if the low trades `eps` through its price, a sell if the high
 does (same rule as the backtest). Fees are taken like Binance without BNB: buys in the coin, sells in USDT.
+With `bnb = True` the fee is paid with BNB instead: all bought coins arrive and sells pay out in full.
 """
 import os
 import sys
@@ -28,6 +29,10 @@ class FakeBinance:
         self.partial = {}                   # orderId -> share of the order to fill (tests)
         self.calls = []
         self.spread = {}                    # symbol -> bid/ask spread as a fraction (tests)
+        self.bnb = False                    # True: fees are paid with BNB (tests)
+        self.trades = {}                    # orderId -> fills, as Binance's trade list gives them
+        self.fail_trades = False            # True: the trade list cannot be read (tests)
+        self.bnb_paid = 0.0                 # USDT value of the fees paid with BNB (taken off value())
         self.ref = next(iter(candles))
 
     # --------------------------------------------------------------- time
@@ -102,13 +107,20 @@ class FakeBinance:
                 self._a("USDT")["free"] += qty * (float(o["price"]) - px)     # price improvement back
             else:
                 self._a("USDT")["free"] -= qty * px
-            self._a(base)["free"] += qty * (1 - self.fee)
+            self._a(base)["free"] += qty * (1 - (0 if self.bnb else self.fee))
+            com, asset = (qty * px * 0.00075, "BNB") if self.bnb else (qty * self.fee, base)
         else:
             if o["type"] == "LIMIT":
                 self._a(base)["locked"] -= qty
             else:
                 self._a(base)["free"] -= qty
-            self._a("USDT")["free"] += qty * px * (1 - self.fee)
+            self._a("USDT")["free"] += qty * px * (1 - (0 if self.bnb else self.fee))
+            com, asset = (qty * px * 0.00075, "BNB") if self.bnb else (qty * px * self.fee, "USDT")
+        if asset == "BNB":
+            self.bnb_paid += com
+        self.trades.setdefault(o["orderId"], []).append(
+            {"orderId": o["orderId"], "price": repr(px), "qty": repr(qty), "commission": repr(com),
+             "commissionAsset": asset})
         ex = float(o["executedQty"]) + qty
         o["executedQty"] = repr(ex)
         o["cummulativeQuoteQty"] = repr(float(o["cummulativeQuoteQty"]) + qty * px)
@@ -151,7 +163,13 @@ class FakeBinance:
             self._fill(o, qty, now_px)
         elif (side == "BUY" and float(price) >= now_px) or (side == "SELL" and float(price) <= now_px):
             self._fill(o, qty, now_px)                                     # marketable limit: fills at once
-        return dict(o)
+        return dict(o, fills=[dict(f) for f in self.trades.get(oid, [])])   # like Binance's FULL order reply
+
+    def my_trades(self, symbol, oid):
+        self.calls.append(("trades", symbol, oid))
+        if self.fail_trades:
+            raise BinanceError("HTTP 500: trade list not available")
+        return [dict(f) for f in self.trades.get(oid, [])]
 
     # --------------------------------------------------------------- the market moves
     def advance(self):
@@ -171,8 +189,8 @@ class FakeBinance:
         self.i += 1
 
     def value(self):
-        """Account value in USDT at the current price."""
-        tot = self.bal["USDT"]["free"] + self.bal["USDT"]["locked"]
+        """Account value in USDT at the current price (less the fees paid with BNB)."""
+        tot = self.bal["USDT"]["free"] + self.bal["USDT"]["locked"] - self.bnb_paid
         for a, v in self.bal.items():
             if a != "USDT" and a + "USDT" in self.k:
                 tot += (v["free"] + v["locked"]) * self.price(a + "USDT")

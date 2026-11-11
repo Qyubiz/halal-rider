@@ -7,7 +7,8 @@ with the same rules as the backtest:
   - a resting LIMIT order fills when a later 1-hour candle trades 0.1% through its price (a buy when the low is
     at least 0.1% under it, a sell when the high is at least 0.1% over it), at the limit or the candle's open
     if that is better;
-  - fee 0.1% per side: in the coin on buys, in USDT on sells (like Binance without BNB).
+  - fee 0.1% per side: in the coin on buys, in USDT on sells (like Binance without BNB). With bnb_fees the fee
+    is 0.075% a side and never taken from the coin (its value is taken from the pretend USDT instead).
 The pretend account (balances and orders) lives in paper_account.json in the bot's data folder.
 """
 import json
@@ -21,9 +22,10 @@ OPEN = ("NEW", "PARTIALLY_FILLED")
 
 
 class PaperExchange:
-    def __init__(self, root, usdt, market=None, fee=0.001, eps=0.001, clock=None):
+    def __init__(self, root, usdt, market=None, fee=0.001, eps=0.001, clock=None, bnb_fees=False):
         self.m = market or BinanceSpot(key="", secret="")     # public endpoints only
-        self.fee, self.eps = fee, eps
+        self.bnb = bool(bnb_fees)
+        self.fee, self.eps = (0.00075 if self.bnb else fee), eps
         self.clock = clock or (lambda: int(time.time() * 1000))
         self.path = os.path.join(root, "paper_account.json")
         os.makedirs(root, exist_ok=True)
@@ -79,6 +81,16 @@ class PaperExchange:
                 return dict(o)
         raise BinanceError("PAPER: Order does not exist.", -2013)
 
+    def my_trades(self, symbol, oid):
+        o = self.get_order(symbol, oid)
+        qty, quote = float(o["executedQty"]), float(o["cummulativeQuoteQty"])
+        if qty <= 0:
+            return []
+        buy = o["side"] == "BUY"
+        return [{"orderId": o["orderId"], "qty": o["executedQty"], "price": repr(quote / qty), "isBuyer": buy,
+                 "commission": repr((qty if buy and not self.bnb else quote) * self.fee),
+                 "commissionAsset": "BNB" if self.bnb else (symbol[:-4] if buy else "USDT")}]
+
     def cancel_order(self, symbol, oid):
         self._match()
         o = self.a["orders"].get(str(oid))
@@ -104,7 +116,11 @@ class PaperExchange:
                 self._b("USDT")["free"] += qty * (float(o["price"]) - px)
             else:
                 self._b("USDT")["free"] -= qty * px
-            self._b(base)["free"] += qty * (1 - self.fee)
+            if self.bnb:                                     # fee paid with BNB: all coins arrive
+                self._b(base)["free"] += qty
+                self._b("USDT")["free"] -= qty * px * self.fee
+            else:
+                self._b(base)["free"] += qty * (1 - self.fee)
         else:
             if o["type"] == "LIMIT":
                 self._b(base)["locked"] -= qty

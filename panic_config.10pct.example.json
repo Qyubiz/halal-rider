@@ -5,5 +5,6 @@
   "take_profit_pct": 5.0,
   "max_hours": 48,
   "cooldown_hours": 24,
-  "crash_guard_pct": 35.0
+  "crash_guard_pct": 35.0,
+  "max_positions": 1
 }

@@ -28,8 +28,8 @@ Biggest risk: a coin collapsing within 48 hours. In a stress test with LUNA adde
 order (about 13% of the bot's money). Keep the coin list to large, screened coins.
 
 ## Optional high-return modes (high risk, off by default)
-Both put all the bot's money on one coin at a time and skip any coin already more than 35% under its 7-day
-high (crash guard). Backtest per month, win rate and worst drop:
+Both put all the bot's money on one coin at a time (`max_positions: 1`: no other buy until that coin is sold) and
+skip any coin already more than 35% under its 7-day high (crash guard). Backtest per month, win rate and worst drop:
 
 | Period | Normal mode | 90% mode | 10% mode |
 |---|---|---|---|
@@ -79,6 +79,18 @@ The limits cut the worst drops in long bear markets (2018-20, 2021-23) but cost 
 2024-26 and make its worst drop deeper: they sell at the bottom of fast V-shaped crashes, which is where a
 dip-buyer earns its money. To keep the sleeves without the limits, delete the `"risk"` block (or set a value
 to 0 to switch off one limit). `panic-buyer status` shows the limits and any active lock.
+
+## Optional: cheaper fees with BNB
+Binance charges 0.1% on every buy and every sell, or 0.075% if you let it take the fee in BNB. In the backtest that
+adds about 0.1 to 0.6 points of profit a month (about +0.2 since 2024).
+
+1. In Binance's fee settings, switch on "Use BNB to pay for fees", and keep a little BNB in your Spot wallet.
+2. Run `sudo panic-buyer-setup` again and answer `y` to the BNB question.
+
+With that switch (`BNB_FEES=yes`) the bot reads the real fee of every buy from Binance, so it sells exactly what it
+bought. If the BNB runs out, Binance takes the normal fee in the coin again and the bot handles that by itself.
+Leave the switch off if you do not pay fees with BNB. Do not turn on BNB fees in Binance without it: the bot would
+then leave 0.1% of every buy unsold in your account.
 
 ## Install on the halal-rider server (Ubuntu)
     curl -sL https://raw.githubusercontent.com/Qyubiz/halal-rider/main/deploy/panic-install.sh | sudo bash

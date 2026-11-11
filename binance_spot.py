@@ -123,6 +123,10 @@ class BinanceSpot:
     def get_order(self, symbol, order_id):
         return self._send("GET", "/api/v3/order", {"symbol": symbol, "orderId": order_id}, signed=True)
 
+    def my_trades(self, symbol, order_id):
+        """The fills of one order: each has qty, commission and commissionAsset (the fee and what it was paid in)."""
+        return self._send("GET", "/api/v3/myTrades", {"symbol": symbol, "orderId": order_id}, signed=True)
+
     def cancel_order(self, symbol, order_id):
         return self._send("DELETE", "/api/v3/order", {"symbol": symbol, "orderId": order_id}, signed=True)
 

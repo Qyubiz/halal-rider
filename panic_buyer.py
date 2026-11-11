@@ -29,6 +29,7 @@ Environment (in /etc/panic-buyer.env on the server, never in git)
   BINANCE_API_KEY, BINANCE_API_SECRET   spot-trading key, withdrawals OFF, IP-restricted
   CAPITAL_USDT                          the most the bot may use (e.g. 300)
   COMPOUND                              "yes" reinvests profits (default: no)
+  BNB_FEES                              "yes" if you pay Binance fees with BNB (default: no)
   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID  optional phone alerts
   PANIC_DATA                            folder for state, log and trade list
 """
@@ -65,6 +66,8 @@ DEFAULT_CFG = {
     "cooldown_hours": 24,
     "fee_pct": 0.1,           # used for the P&L numbers only
     "crash_guard_pct": 0.0,   # skip a coin whose last close is this much under its 7-day high (0 = off)
+    "bnb_fees": False,        # True = fees are paid with BNB: read each buy's real fee from Binance
+    "max_positions": 0,       # most coins held at once (0 = no limit); 1 in the one-coin modes
 }
 
 
@@ -221,10 +224,30 @@ class PanicBuyer:
         out.sort()
         return out
 
-    # ------------------------------------------------------------- trading steps
-    def open_position(self, sym, qty_exec, px, fill_ms):
+    def coin_fee(self, sym, order):
+        """How much of a buy Binance kept as its fee in the coin itself (0 when the fee was paid with BNB), read
+        from the order's own fills or from Binance's trade list. None when it cannot be read."""
         base = self.info[sym]["base"]
-        qty = qty_exec * (1 - self.cfg["fee_pct"] / 100)
+        try:
+            fills = order.get("fills") or self.c.my_trades(sym, order["orderId"])
+            if sum(float(f["qty"]) for f in fills) < float(order.get("executedQty") or 0) * 0.999:
+                self.log(f"{sym}: Binance's trade list is not complete yet, assuming the fee was taken in the coin")
+                return None
+            return sum(float(f["commission"]) for f in fills if f.get("commissionAsset") == base)
+        except (BinanceError, KeyError, TypeError, ValueError) as err:
+            self.log(f"{sym}: could not read the fee of the buy ({err}), assuming it was taken in the coin")
+            return None
+
+    # ------------------------------------------------------------- trading steps
+    def open_position(self, sym, qty_exec, px, fill_ms, order=None):
+        base = self.info[sym]["base"]
+        fee_pct = self.cfg["fee_pct"]
+        fee = None
+        if self.cfg.get("bnb_fees"):
+            fee_pct = max(fee_pct, 0.1)     # if the real fee cannot be read: as if no BNB was used (never oversell)
+            if order is not None:
+                fee = self.coin_fee(sym, order)
+        qty = qty_exec - fee if fee is not None else qty_exec * (1 - fee_pct / 100)
         try:
             free = self.c.balances().get(base, {"free": 0.0})["free"]
             # if Binance took the fee in coins we hold a bit less; never count coins of another bot
@@ -317,7 +340,7 @@ class PanicBuyer:
                 del self.state["orders"][sym]
                 self.save()
                 if qty > 0:
-                    self.open_position(sym, qty, px, int(o.get("updateTime") or self.clock()))
+                    self.open_position(sym, qty, px, int(o.get("updateTime") or self.clock()), o)
             except BinanceError as err:
                 self.log(f"ALERT {sym}: checking the buy order failed: {err}", alert=True)
 
@@ -367,7 +390,10 @@ class PanicBuyer:
             return
         cand = [x for x in trig if x[1] not in self.state["positions"] and x[1] not in self.state["orders"]
                 and self.state["cooldown"].get(x[1], 0) <= t]
-        sel = cand[: self.cfg["n_orders"]]
+        room = len(cand)
+        if self.cfg.get("max_positions"):   # one-coin modes: no second, small buy with the cash left over
+            room = int(self.cfg["max_positions"]) - len(self.state["positions"]) - len(self.state["orders"])
+        sel = cand[: max(0, min(self.cfg["n_orders"], room))]
         if not sel:
             return
         usdt_free = self.c.balances().get("USDT", {"free": 0.0})["free"]
@@ -398,7 +424,7 @@ class PanicBuyer:
                     q, px = self.avg_fill(o)
                     if q > 0:
                         self.log(f"{sym}: {abs(dist) * 100:.1f}% under its trigger, bought at market")
-                        self.open_position(sym, q, px, t)
+                        self.open_position(sym, q, px, t, o)
                 else:
                     limit = self.px_str(sym, trigger)
                     qty = self.qty_str(sym, per / float(limit))
@@ -462,7 +488,7 @@ class PanicBuyer:
                 del self.state["orders"][sym]
                 self.save()
                 if q > 0:
-                    self.open_position(sym, q, px, int(o.get("updateTime") or self.clock()))
+                    self.open_position(sym, q, px, int(o.get("updateTime") or self.clock()), o)
             except BinanceError as err:
                 self.log(f"ALERT {sym}: cancel buy order failed, cancel it in the Binance app: {err}", alert=True)
         self.save()
@@ -565,12 +591,21 @@ def telegram(prefix="Panic buyer: "):
     return send
 
 
+YES = ("yes", "y", "true", "1")
+
+
 def load_cfg():
     path = os.environ.get("PANIC_CONFIG") or os.path.join(HERE, "panic_config.json")
     cfg = dict(DEFAULT_CFG)
+    user = {}
     if os.path.exists(path):
         with open(path) as f:
-            cfg.update(json.load(f))
+            user = json.load(f)
+    cfg.update(user)
+    if os.environ.get("BNB_FEES", "no").strip().lower() in YES:
+        cfg["bnb_fees"] = True
+    if cfg["bnb_fees"] and "fee_pct" not in user:
+        cfg["fee_pct"] = 0.075          # Binance's fee with the BNB discount, for the P&L numbers
     return cfg
 
 
@@ -579,13 +614,12 @@ def main(argv=None):
     ap.add_argument("command", choices=["check", "run", "status", "pause", "panic"])
     a = ap.parse_args(argv)
     cfg = load_cfg()
-    yes = ("yes", "y", "true", "1")
-    paper = os.environ.get("PAPER", "no").strip().lower() in yes
-    compound = os.environ.get("COMPOUND", "no").strip().lower() in yes
+    paper = os.environ.get("PAPER", "no").strip().lower() in YES
+    compound = os.environ.get("COMPOUND", "no").strip().lower() in YES
     if paper:   # real prices, pretend money: nothing is ever sent to the Binance account
         capital = float(os.environ.get("PAPER_USDT") or os.environ.get("CAPITAL_USDT") or 650)
         root = os.environ.get("PAPER_DATA") or os.environ.get("PANIC_DATA") or HERE   # never the live data folder
-        client = PaperExchange(root, capital)
+        client = PaperExchange(root, capital, bnb_fees=cfg["bnb_fees"])
         notify = telegram(f"[PAPER {os.environ.get('PAPER_NAME', 'test')}] ")
     else:
         capital = float(os.environ.get("CAPITAL_USDT", "0") or 0)
@@ -628,6 +662,9 @@ def main(argv=None):
             return 1
         print(f"Key works. USDT free {bal.get('USDT', {}).get('free', 0):.2f}, BNB {bal.get('BNB', {}).get('free', 0):.4f}")
         print(f"CAPITAL_USDT (the most this bot may use): {capital:.2f}, profits {'reinvested' if compound else 'set aside'}")
+        if cfg["bnb_fees"]:
+            print("Fees: paid with BNB (BNB_FEES=yes)." + ("" if bal.get("BNB", {}).get("free", 0) > 0 else
+                  " There is no BNB in the account now: Binance will take the normal fee in the coin until you add some."))
         near = bot.triggers(now_ms())[: cfg["n_orders"]]
         print("Coins closest to their buy trigger now: " + ", ".join(f"{s[:-4]} {d * 100:+.1f}%" for d, s, _, _ in near))
         print(ens.guard.status(now_ms()))
