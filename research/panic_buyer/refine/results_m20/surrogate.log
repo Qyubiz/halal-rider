@@ -1,0 +1,97 @@
+
+=== model flag top 10%: 17586 candidate hours with a score, 13.0% flagged; fit on 4234 rows before 2021
+  depth 1 before 2021: flags 47% of rows; catches 69% of the model's flags; 23% of its flags are the model's
+  depth 1 2021-23: flags 38% of rows; catches 46% of the model's flags; 14% of its flags are the model's
+  depth 1 2024-26: flags 70% of rows; catches 79% of the model's flags; 14% of its flags are the model's
+|--- vol168 <= 0.0158
+|   |--- class: 1
+|--- vol168 >  0.0158
+|   |--- class: 0
+
+  depth 2 before 2021: flags 56% of rows; catches 85% of the model's flags; 24% of its flags are the model's
+  depth 2 2021-23: flags 55% of rows; catches 59% of the model's flags; 13% of its flags are the model's
+  depth 2 2024-26: flags 79% of rows; catches 86% of the model's flags; 13% of its flags are the model's
+|--- vol168 <= 0.0158
+|   |--- btc_c1ref <= -0.1282
+|   |   |--- class: 0
+|   |--- btc_c1ref >  -0.1282
+|   |   |--- class: 1
+|--- vol168 >  0.0158
+|   |--- dow <= 1.5000
+|   |   |--- class: 1
+|   |--- dow >  1.5000
+|   |   |--- class: 0
+
+  depth 3 before 2021: flags 52% of rows; catches 88% of the model's flags; 27% of its flags are the model's
+  depth 3 2021-23: flags 46% of rows; catches 60% of the model's flags; 16% of its flags are the model's
+  depth 3 2024-26: flags 73% of rows; catches 85% of the model's flags; 14% of its flags are the model's
+|--- vol168 <= 0.0158
+|   |--- btc_c1ref <= -0.1282
+|   |   |--- pre3d <= -0.0415
+|   |   |   |--- class: 0
+|   |   |--- pre3d >  -0.0415
+|   |   |   |--- class: 0
+|   |--- btc_c1ref >  -0.1282
+|   |   |--- dd7 <= -0.2066
+|   |   |   |--- class: 1
+|   |   |--- dd7 >  -0.2066
+|   |   |   |--- class: 1
+|--- vol168 >  0.0158
+|   |--- dow <= 1.5000
+|   |   |--- low24_ref <= -0.2053
+|   |   |   |--- class: 0
+|   |   |--- low24_ref >  -0.2053
+|   |   |   |--- class: 1
+|   |--- dow >  1.5000
+|   |   |--- qv24 <= 8.3599
+|   |   |   |--- class: 0
+|   |   |--- qv24 >  8.3599
+|   |   |   |--- class: 1
+
+
+=== model flag top 20%: 17586 candidate hours with a score, 23.9% flagged; fit on 4234 rows before 2021
+  depth 1 before 2021: flags 84% of rows; catches 96% of the model's flags; 30% of its flags are the model's
+  depth 1 2021-23: flags 90% of rows; catches 92% of the model's flags; 24% of its flags are the model's
+  depth 1 2024-26: flags 95% of rows; catches 99% of the model's flags; 22% of its flags are the model's
+|--- btc_r7d <= 0.0938
+|   |--- class: 1
+|--- btc_r7d >  0.0938
+|   |--- class: 0
+
+  depth 2 before 2021: flags 79% of rows; catches 98% of the model's flags; 32% of its flags are the model's
+  depth 2 2021-23: flags 82% of rows; catches 96% of the model's flags; 28% of its flags are the model's
+  depth 2 2024-26: flags 87% of rows; catches 98% of the model's flags; 24% of its flags are the model's
+|--- btc_r7d <= 0.0938
+|   |--- mkt_c1ref <= -0.1740
+|   |   |--- class: 0
+|   |--- mkt_c1ref >  -0.1740
+|   |   |--- class: 1
+|--- btc_r7d >  0.0938
+|   |--- r7d <= 0.3724
+|   |   |--- class: 0
+|   |--- r7d >  0.3724
+|   |   |--- class: 1
+
+  depth 3 before 2021: flags 37% of rows; catches 59% of the model's flags; 42% of its flags are the model's
+  depth 3 2021-23: flags 38% of rows; catches 48% of the model's flags; 31% of its flags are the model's
+  depth 3 2024-26: flags 37% of rows; catches 50% of the model's flags; 29% of its flags are the model's
+|--- btc_r7d <= 0.0938
+|   |--- mkt_c1ref <= -0.1740
+|   |   |--- mkt_c1ref <= -0.1844
+|   |   |   |--- class: 0
+|   |   |--- mkt_c1ref >  -0.1844
+|   |   |   |--- class: 0
+|   |--- mkt_c1ref >  -0.1740
+|   |   |--- dd7 <= -0.2086
+|   |   |   |--- class: 0
+|   |   |--- dd7 >  -0.2086
+|   |   |   |--- class: 1
+|--- btc_r7d >  0.0938
+|   |--- r7d <= 0.3724
+|   |   |--- btc_r24 <= 0.0040
+|   |   |   |--- class: 0
+|   |   |--- btc_r24 >  0.0040
+|   |   |   |--- class: 0
+|   |--- r7d >  0.3724
+|   |   |--- class: 1
+
